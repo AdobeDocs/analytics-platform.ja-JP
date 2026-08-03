@@ -7,18 +7,11 @@ feature: Data Views
 role: Admin
 autotag-review: '2026-05-19T09:12:17.807Z'
 TQID: 'https://experienceleague.adobe.com/LYz2PLV0TlTYRDuRfh8yP8p457Q5LEnJbsowqY0XPqA'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 759
@@ -88,7 +81,7 @@ Customer Journey Analytics での通貨換算は、国際的に運営するビ�
 >通貨換算の指標の設定を開始する前に、次の点を考慮します。
 >
 >* 通貨換算に選択する指標は、数値タイプ（倍精度浮動小数点数、長整数、整数、短整数、バイト）である必要があります。
->* 通貨指標を含むすべてのイベントに対して通貨コードディメンションを保持するイベントデータセットを 1 つ以上含めるには、Customer Journey Analytics 接続を設定します。 この通貨コードディメンションでは、通貨を表すために [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 標準に準拠したアルファベットの通貨コードが使用されます。 これらの値は、$ の場合は USD、€ の場合は EUR、£ の場合は GBP のように、すべて大文字の形式で指定する必要があります。
+>* Customer Journey Analytics 接続には、通貨指標を含むすべてのイベントごとに通貨コードディメンションを保持するイベントデータセットを少なくとも 1 つ含めるように設定します。 この通貨コードディメンションでは、通貨を表すために [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) 標準に準拠したアルファベットの通貨コードが使用されます。 これらの値は、$ の場合は USD、€ の場合は EUR、£ の場合は GBP のように、すべて大文字の形式で指定する必要があります。
 
 特定の指標に対して表示および変換する通貨を決定するには：
 
@@ -110,15 +103,15 @@ Customer Journey Analytics での通貨換算は、国際的に運営するビ�
 
    * 「[!UICONTROL **通貨を換算および表示**]」フィールドで、データを換算する通貨を選択します。
 
-1. 追加の指標に通貨換算を適用する場合は、これらの手順を繰り返します。
+1. 追加の指標に通貨コンバージョンを適用する場合は、これらの手順を繰り返します。
 
 
 
 ### よくある質問
 
-+++ 通貨換算はどのように実行されますか？
++++ 通貨コンバージョンはどのように実行されますか？
 
-レポート時に、指標の値と元の通貨コードは USD に変換され、その後、表示用に設定された通貨に変換されます。 この変換には、イベントの期間に適用される毎日の通貨為替レートが使用されます。
+レポート時に、指標の値と元の通貨コードは USD に変換され、その後、表示用に設定された通貨に変換されます。 このコンバージョンには、イベントが発生した時点に適用される日次の通貨為替レートが使用されます。
 
 +++
 

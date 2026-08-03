@@ -6,45 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 TQID: https://experienceleague.adobe.com/3TqNaNKkAo2Ug92F5244fVbnv-Po6x5l2sAf3ZHZuCw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d13dba12-733d-4914-8d92-d643658bbe5d
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: d47d27f9-fcd6-414d-a127-a8a739dac811
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e0be3531-517c-451a-b2ff-6fcafd56ca0d
-  - id: e2ff1689-912e-40ed-a029-ed8d02d9f34a
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e634a07b-b7ca-4af3-a124-3024ce559e17
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d13dba12-733d-4914-8d92-d643658bbe5did: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: d47d27f9-fcd6-414d-a127-a8a739dac811id: ddf59f64-0e46-4986-a525-056acc143c70id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e0be3531-517c-451a-b2ff-6fcafd56ca0did: e2ff1689-912e-40ed-a029-ed8d02d9f34aid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
 source-wordcount: 3109
@@ -54,7 +20,7 @@ ht-degree: 100%
 
 # Customer Journey Analytics の機能のサポート
 
-次の表に、Customer Journey Analytics に一意の機能と、Customer Journey Analytics でサポートされている、部分的にサポートされている、またはサポートされていない Adobe Analytics 機能を示します。 これらのリストは、Customer Journey Analytics に機能が追加されるにつれて変更されます。
+次の表では、Customer Journey Analytics に固有の機能と、Customer Journey Analytics でサポートされている、部分的にサポートされている、またはサポートされていない Adobe Analytics の機能を一覧表示します。 これらのリストは、Customer Journey Analytics に機能が追加されるにつれて変更されます。
 
 ## Adobe Customer Journey Analytics に一意の機能 {#cja-not-aa}
 
@@ -67,7 +33,7 @@ ht-degree: 100%
 | **B2B Edition** | [Customer Journey Analytics B2B Edition](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition?lang=en) は、収益の増加を促進する実用的なアカウントインサイトを提供することで、B2B 企業のマーケティング、セールス、製品の各チームが連携できるよう支援します。 データモデルの中心となるのはアカウントなので、すべての分析はアカウントジャーニーに焦点を当てます。 ユーザーおよび時間ベースのイベントの上にエンティティ（アカウント、商談、購買グループ）の新しいレイヤーを追加すると、B2B マーケティングおよび収益のライフサイクルの全体像が作成されます。 |
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、Customer Journey Analytics を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。 この拡張機能を使用すると、Analysis Workspace や他の Customer Journey Analytics レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。 この拡張機能は、生データからレポート／指標を再作成する必要なく、Customer Journey Analytics の BI レポートを取得する簡単な方法です。 |
 | **Workspace プロジェクトのコメント** | コメントを使用すると、[Analysis Workspace プロジェクト](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=jp) のコンテキスト内でインサイトを共有し、質問できます。 これにより、データに関する議論を効率化して、議論の対象となっているデータのコンテキスト内に会話を維持できます。 |
-| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) を使用すると、マーケターは、ビジネスによって定義された主要業績評価指標に、コンテンツがどのように影響を与えるかを理解できます。 Content Analytics では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。 |
+| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) を使用すると、マーケターは、ビジネスによって定義された主要業績評価指標に、コンテンツがどのように影響を与えるかを理解できます。 Content Analytics では、行動データに加えて、コンテンツがどのように消費されるか、またコンテンツがどのような影響を与えるかに関するデータを収集します。 |
 | **クロスデバイス分析** | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。 Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。 Adobe Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
 | **Data Insights Agent** | Customer Journey Analytics の AI アシスタントの一部である [Data Insights Agent](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=en) は、生成 AI 会話エージェントです。 データビューのコンポーネントと実際のデータを使用して、関連するビジュアライゼーションを Analysis Workspace で構築することにより、データ中心の質問にすばやく効率的に回答します。 |
 | **ディメンションの機能強化** | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数のビルトインの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |
@@ -79,10 +45,10 @@ ht-degree: 100%
 | **インテリジェントキャプション** | [インテリジェントキャプション](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions)は、高度な機械学習と生成 AI を使用して、ワークスペースのビジュアライゼーションに貴重な自然言語のインサイトを提供します。 インテリジェントキャプションは、折れ線グラフ、複数の折れ線グラフ、棒グラフ、横棒グラフ、ドーナツグラフ、面グラフ、フロー、フォールアウトなどのビジュアライゼーションでサポートされます。 |
 | **ジャーニーキャンバス** | [ジャーニーキャンバス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=ja)は、Analysis Workspace 内のビジュアライゼーションで、ユーザーが定義済みのジャーニーをどのように進めたり、そこから離脱したりするかを分析できます。 |
 | **製品の使用状況** | [製品の使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview)では、組織が Customer Journey Analytics をどのように使用しているかを示します。 |
-| **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータを解釈できます。 実装を変更せずにデータを変更または削除できます。 部分文字列を使用してディメンションを操作できます。 任意の値から指標を作成、またはサブイベントをフィルタリングできます。 これらの変換はすべて非破壊的に行われます。 Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
+| **レポート時の変換** | Customer Journey Analytics の[データビュー](/help/data-views/data-views.md)を使用すると、接続からのデータを解釈できます。 実装を変更せずにデータを変更または削除できます。 部分文字列を使用してディメンションを操作できます。 任意の値から指標を作成したり、サブイベントをフィルターしたりできます。 これらの変換はすべて非破壊的に行われます。 Adobe Analytics は、仮想レポートスイートとカスタムセッションの長さを通じて限定された機能を提供します。 |
 | **データビューをまたいで指標とディメンションを共有** | 共有指標とディメンションを使用すると、[複数のデータビューをまたいでディメンションと指標の設定を適用](/help/data-views/shared-metrics-dimensions/smd-overview.md)できます。 共有ディメンションまたは指標に対する変更は、適用可能なすべてのデータビュー全体で、そのディメンションまたは指標のすべてのインスタンスに適用されます。 |
 | **SQL アクセス** | 「Data Distiller」オプションを使用すると、Customer Journey Analytics では、アドビのバックエンド処理で収集されるデータの制限を削除できます。 SQL を使用してデータを変更し、ビジネスに固有の値とデータセットを作成し、引き続き探索できます。 Analytics は、データへのいかなる種類の SQL アクセスもサポートしていません。 |
-| **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。 クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースです。 クロスチャネル分析では、共通の ID（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
+| **ステッチ** | [ステッチ](/help/stitching/overview.md)は、クロスチャネル分析に対するイベントデータセットの適合性を高める強力な機能です。 クロスチャネル分析は、Customer Journey Analytics で処理できる主なユースケースです。 クロスチャネル分析では、共通の識別子（ユーザー ID）に基づいて、異なるチャネルの複数のデータセットに関するレポートをシームレスに組み合わせて実行できます。 |
 | **Adobe Journey Optimizer のテンプレート** | Customer Journey Analytics で[テンプレート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=ja)を作成または編集し、Journey Optimizer のレポートページで使用するテンプレートを保存して、Adobe Journey Optimizer の新しいレポートインターフェイスをカスタマイズします。 |
 | **無制限の顧客ディメンションと指標** | Customer Journey Analytics のディメンションは無制限です。値には、数値、テキスト、オブジェクト、リスト、すべての組み合わせを使用できます。 ディメンションはネストまたは階層化できます。 <br/>これに対して、Adobe Analytics は、最大 75 の prop と 250 の eVar をサポートします。 |
 | **無制限の一意の値** | Customer Journey Analytics は、単一のディメンション内でレポートできる無制限の一意の値またはディメンション項目をサポートします。<p>[ディメンションには基数の制限](/help/components/dimensions/high-cardinality.md)がないので、あらゆる一意の値を表示してカウントできます。</p><p>このアプローチにより、大規模な Adobe Analytics の実装に存在する可能性があるレポートと分析の制限が解消され、その結果、[!UICONTROL 低トラフィック]ラベルが付けられます。</p><p>Customer Journey Analytics では、[!UICONTROL 超過したユニーク数]ラベルが表示されることがありますが、これらのラベルが表示される頻度は非常に低く、データにセグメントを適用することで軽減できます。</p> |
@@ -106,10 +72,10 @@ ht-degree: 100%
 | **リフトおよび信頼性レポート** | [実験パネル](/help/analysis-workspace/c-panels/experimentation.md)を介したフルサポート |
 | **リスト変数／リスト prop** | フルサポート。 Customer Journey Analytics では XDM を使用し、listVars と同様に使用できる無制限の文字列配列をサポートします。 |
 | **マーチャンダイジング eVar** | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)を介したフルサポート |
-| **指標** | フルサポート。Customer Journey Analytics ではエクスペリエンスデータモデル（XDM）を使用し、無制限の指標をサポートします。Adobe Analytics のカスタム成功イベントには関連付けられません。 一部の標準指標は、Adobe Analytics から名前が変更されました：訪問者数 = 人物、訪問数 = セッション、ヒット数 = イベント。 |
+| **指標** | フルサポート。Customer Journey Analytics ではエクスペリエンスデータモデル（XDM）を使用し、無制限の指標をサポートします。Adobe Analytics のカスタム成功イベントには関連付けられません。 一部の標準指標は、Adobe Analytics から名称が変更され、訪問者数 = 人物、訪問数 = セッション、ヒット数 = イベントとなっています。 |
 | **Adobe Analytics から Customer Journey Analytics へのプロジェクト、フィルター、計算指標の移行** | フルサポート。 |
 | **モバイルスコアカード／ダッシュボード** | フルサポート |
-| **パネル** | 次のパネルをフルサポート：空のパネル、属性、フリーフォーム、クイックインサイト、次または前の項目。 |
+| **パネル** | 次のパネルをフルサポート：空のパネル、アトリビューションパネル、フリーフォームパネル、クイックインサイトパネル、次または前の項目パネル。 |
 | **PDF への書き出し** | フルサポート |
 | **プロジェクトのキュレーション** | フルサポート |
 | **プロジェクトリンク** | フルサポート |
@@ -118,7 +84,7 @@ ht-degree: 100%
 | **レポート API へのアクセス** | フルサポート。[Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) を通じて使用できます。 |
 | **予定レポート／プロジェクト** | フルサポート |
 | **セグメント** | フルサポート。 セグメントは、以前は Customer Journey Analytics では&#x200B;*フィルター*&#x200B;と呼ばれていました。 |
-| **ストリーミングメディアコレクション** | ストリーミングメディアデータは、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として、Analytics ソースコネクタに使用できます。 |
+| **ストリーミングメディアコレクション** | ストリーミングメディアデータは、Analytics ソースコネクタを使用することで、Workspace のメディア同時閲覧者数パネルおよびメディア再生に費やした時間パネルの一部として利用できます。 |
 | **概要レベルデータソース** | フルサポート |
 | **仮想レポートスイート** | フルサポート。 [データビュー](/help/data-views/create-dataview.md)は、Customer Journey Analytics では Adobe Analytics のレポートスイートに相当します。 |
 | **仮想レポートスイートコンポーネントのキュレーション** | フルサポート。 コンポーネントのキュレーションは、データビュー機能の一部です。 |
@@ -136,21 +102,21 @@ ht-degree: 100%
 | **分類ルールビルダー** | Customer Journey Analytics で[部分文字列](/help/data-views/component-settings/substring.md)を使用してサポートされます。 ルックアップデータセットではなく、レポート時に文字列操作を使用します。 |
 | **カスタムセッションの長さ** | セッションの長さは、データビューの[セッション設定](../../data-views/create-dataview.md#session-settings)を介して設定できます。 詳しくは、[セッション設定](../../data-views/session-settings.md)を参照してください。 <br/>モバイルバックグラウンドイベントの処理は、Adobe Experience Platform Mobile SDK を介してサポートされます。 詳しくは、[Edge Network のライフサイクル](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)を参照してください。 |
 | **通貨換算** | データビューの[指標コンポーネントの書式設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/format)の一部としてサポートされます。 |
-| **顧客属性** | プロファイルデータセットは、顧客属性に相当します。 プロファイルデータセットは Experience Cloud から自動的に読み込まれませんが、Customer Journey Analytics で使用できるようにするには、Experience Platform にアップロードする必要があります。 |
+| **顧客属性** | プロファイルデータセットは、顧客アトリビューションに相当します。 プロファイルデータセットは Experience Cloud から自動的に読み込まれませんが、Customer Journey Analytics で使用できるようにするには、Experience Platform にアップロードする必要があります。 |
 | **データフィード** | データセットの第 1 世代のデータ書き出しは、[Experience Platform Data Access API](https://experienceleague.adobe.com/ja/docs/experience-platform/data-access/api) および [Experience Platform の宛先](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets)を通じて利用できます。 これらのオプションを使用すると、Experience Platform データレイクに収集または取り込まれるすべてのデータをイベント／行レベルで書き出すことができます。 Post 列はクエリ時に計算されるので、後処理データ列は使用できません。 Post 列の書き出しは、レポートを通じて使用できます。 |
 | **Data Warehouse レポート** | [Customer Journey Analytics の完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)は、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。 |
 | **入口、出口、滞在時間の各ディメンションと指標** | サポート対象（現在、入口と出口は、「セッション開始」および「セッション終了」と呼ばれています）ですが、計算方法が多少異なります。 |
-| **eVar の永続性設定** | eVar は Customer Journey Analytics の一部ではなくなりました。 ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。 永続性は、データ収集処理ではなく、レポート時の処理に基づいていることに注意してください。 データビュー内で設定されるディメンションの永続性は、最大 90 日間に制限されており、無制限の永続性はサポートされません。 |
+| **eVar の永続性設定** | eVar は Customer Journey Analytics の一部ではなくなりました。 ただし、永続性設定はデータビューの一部になり、すべてのディメンションで使用できます。 永続性は、データ収集処理ではなく、レポート期間処理に基づいていることに注意してください。 データビュー内で設定されるディメンションの永続性は、最大 90 日間に制限されており、無制限の永続性はサポートされません。 |
 | **地理セグメンテーションディメンション** | [フルサポート](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure) |
 | **グラフベースのステッチ** | [グラフベースのステッチ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/overview#graph-based-stitching)を使用すると、[Adobe Experience Platform ID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home)の ID グラフの機能を活用して、データセットを優先 ID に昇格させることができます。 |
 | **アラート** | Customer Journey Analytics で[アラート](/help/components/c-intelligent-alerts/intelligent-alerts.md)を使用するプロセスは、Adobe Analytics でアラートを使用するプロセスとほとんど同じです。 ただし、[重要な違い](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/alerts/alerts-feature-comparison)があります。 |
-| **IP の不明化** | Analytics ソースコネクタを使用している Customer Journey Analytics の顧客が Adobe Analytics から Customer Journey Analytics にデータを入力する場合：Adobe Analytics で適用された IP の不明化設定は、Customer Journey Analytics データを通じて送られます。 必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Customer Journey Analytics の顧客が Experience Platform Web SDK を使用して、Platform と Customer Journey Analytics にデータを直接入力する場合。 Platform のデータ収集用のデータ準備を使用して、会社の要件に基づいて IP アドレスを不明化するルールを設定できます。 |
+| **IP の不明化** | Customer Journey Analytics の顧客が Analytics ソースコネクタを使用して Adobe Analytics から Customer Journey Analytics にデータを取り込む場合：Adobe Analytics で適用された IP の不明化設定は、Customer Journey Analytics のデータにもそのまま反映されます。 必要に応じて、Adobe Analytics でこれらの設定を制御できます。<p>Customer Journey Analytics の顧客が Experience Platform Web SDK を使用して、Platform と Customer Journey Analytics にデータを直接入力する場合。 Platform のデータ収集用のデータ準備を使用して、会社の要件に基づいて IP アドレスを不明化するルールを設定できます。 |
 | **マーケティングチャネル** | Analytics ソースコネクタを使用すると、マーケティングチャネルデータがそのコネクタを通じて Customer Journey Analytics に送られます。 従来の Adobe Analytics でマーケティングチャネルのルールを設定します。一部のルールはサポートされません。 詳しくは、[Customer Journey Analytics マーケティングチャネル](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels)を参照してください。 <br/>WebSDK 実装では、レポート時のマーケティングチャネル処理ルールは、[派生フィールド](../../data-views/derived-fields/derived-fields.md)を通じてサポートされます。 |
 | **マーチャンダイジング変数の持続性** | [バインディングディメンションとバインディング指標](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)を介したフルサポート |
-| **指標の重複排除** | データビュー内の指標に対して設定されます。 指標の重複排除は、データセット、データビューまたは接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
-| **新規セッションレポートとリピートセッションレポート** | 以前は、訪問回数ディメンションを使用して達成されていました。 新規セッションとリピートセッションは、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases)でサポートされています。 |
+| **指標の重複排除** | データビュー内の指標に対して設定されます。 指標の重複排除は、データセット、データビュー、接続レベルではなく、ユーザーレベルまたはセッションレベルで行われます。 |
+| **新規セッションレポートとリピートセッションレポート** | 以前は、訪問回数ディメンションを使用して実現されていました。 新規セッションとリピートセッションは、[13 か月間のルックバックウィンドウ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases)でサポートされています。 |
 | **処理ルール、VISTA ルール、マーケティングチャネルの処理ルール** | WebSDK ベースのデータセットと Analytics ソースコネクタのデータの両方で、Adobe Experience Platform データ準備機能と[派生フィールド](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields)の使用がサポートされます。 |
-| **Products 変数** | Experience Platform 内では、ユーザーはデータセットスキーマ内のオブジェクトの配列を使用して、このユースケースを満たすことができます。 Customer Journey Analytics 内では、顧客は任意の数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
+| **Products 変数** | Adobe Experience Platform 内では、ユーザーはデータセットスキーマ内のオブジェクトの配列を使用して、このユースケースを満たすことができます。 Customer Journey Analytics 内では、顧客は任意の数の製品変数を使用できます。Adobe Analytics のように 1 つの変数には制限されません。 |
 | **プロジェクトの共有** | プロジェクトの共有は、Customer Journey Analytics のユーザー間でのみサポートされます。Customer Journey Analytics と従来の Analysis Workspace 間ではプロジェクトは共有されません。 |
 | **リアルタイムレポート** | Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。 |
 | **Report Builder** | Microsoft Excel 用の新しい Office 365 プラグインでサポートされます。 |
