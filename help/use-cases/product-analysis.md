@@ -122,8 +122,8 @@ Adobe CX Enterpriseでは、次の機能を利用して、インサイトを効�
 * Customer Journey Analyticsからアクティブ化する[&#x200B; オーディエンスを作成して公開](/help/components/audiences/publish.md)
 * CX Enterprise製品を通じてオーディエンスをアクティベーション：
   * [AJOとAdobe Targetで実験](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)を実行し、[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用してCustomer Journey Analyticsのバリエーションの影響を測定します
-  * [AJOのユーザーにアプリ内エンゲージメント &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)を配信します。
-* [Adobe Real-time CDPを使用して外部の宛先にオーディエンス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)をアクティベートします。
+  * [AJOのユーザーにアプリ内エンゲージメント &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/in-app/get-started-in-app)を配信します。
+* [Adobe Real-time CDPを使用して外部の宛先にオーディエンス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activation-overview)をアクティベートします。
 
 ## 組織全体でインサイトを共有
 
