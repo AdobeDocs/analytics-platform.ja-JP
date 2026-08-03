@@ -6,11 +6,22 @@ feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 TQID: https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 806
@@ -55,7 +66,7 @@ Adobe Analyticsでは、すべてのイベントがライブでデバイス ID�
 
 Customer Journey Analyticsでは、イベントは順番に収集されず、デバイス IDの代わりに個人IDが使用されるため、レポート時にCustomer Journey Analyticsでアトリビューションとセッションを更新できます。 こうしたデータ収集は、次のような柔軟性をもたらします。
 
-* 結合すると、匿名のイベントを既知のイベントに関連付けて、毎日または毎週&#x200B;_リプレイ_ データを再生できます。 詳しくは、[ ステッチ ](../../stitching/overview.md)を参照してください。
+* 結合すると、匿名のイベントを既知のイベントに関連付けて、毎日または毎週&#x200B;_リプレイ_ データを再生できます。 詳しくは、[&#x200B; ステッチ &#x200B;](../../stitching/overview.md)を参照してください。
 * セッション化と永続的な値は、常に変更されます
   * 新しいデータが収集されるか、
   * 結合すると、ユーザーの履歴にイベントが追加されます。
