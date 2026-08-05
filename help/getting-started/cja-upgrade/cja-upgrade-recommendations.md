@@ -170,7 +170,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
    派生フィールドの[マーケティングチャネル機能テンプレート](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"}を使用して、マーケティングチャネルの派生フィールドをすばやく作成します。
 
-1. [Adobe Analyticsのデータを、古い実装のデータと新しい実装のデータをCustomer Journey Analyticsのデータと比較して](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja)し、違いとその理由を理解していることを確認します。
+1. [Adobe Analyticsのデータを、古い実装のデータと新しい実装のデータをCustomer Journey Analyticsのデータと比較して](https://experienceleague.adobe.com/ja/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja)し、違いとその理由を理解していることを確認します。
 
 1. Analytics ソースコネクタを使用して、Adobe Analytics から履歴データを取り込みます。
 
