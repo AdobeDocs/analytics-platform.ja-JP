@@ -3,7 +3,6 @@ title: 最新のCustomer Journey Analytics リリースノート
 description: 最新の Customer Journey Analytics リリースノートを表示します。
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -28,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 64b257112d0d46aa6a6ca22d1f712376e461d5e4
+source-git-commit: b73d8eb73b0b65ca94f42d86b12cdfcc1ed99159
 workflow-type: tm+mt
-source-wordcount: 971
+source-wordcount: 975
 ht-degree: 28%
 
 ---
 
 # 最新のCustomer Journey Analytics リリースノート（2026年8月）
 
-**最終更新**: 2026年8月4日
+**最終更新**: 2026年8月5日
 
 これらのリリースノートは、2026年8月のリリース期間をカバーしています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -45,8 +44,8 @@ ht-degree: 28%
 
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
-| **ジャーニーキャンバスの機能強化**<br>&#x200B;次のジャーニーキャンバスの機能強化を利用できるようになりました。<ul><li>ジャーニーと過去の期間の比較。 現在のジャーニーを、4週間前、2四半期前、1年前、またはカスタム日付範囲と比較します。</li><li>選択したノードの場合、ジャーニーの任意のポイントで、選択したノードの後に来る最上位のディメンション項目を表示します。 選択したノードが分析の重要なイベントであり、その後のユーザーの行動を確認する場合に使用します。<p>以前は、選択したノードの前または後に表示できるのは、上位の即時ノードのみでした。 </p></li><li>ノード間の矢印の形状とスタイルを変更します。 ノード間で矢印をドラッグして矢印のシェイプ（曲率）を変更し、矢印を右クリックしてスタイルを次のいずれかに変更します：実線、破線、点線、点線、アニメーション。</li></ul><p></p>詳しくは、[ジャーニーキャンバスビジュアライゼーションの設定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)を参照してください。 |  | 2026年8月18日（PT） |
-| **追加のデータ使用ラベルのサポート**<br> Customer Journey Analyticsでは、データセット内のエレメントに対する次の追加のデータ使用ラベルがサポートされるようになりました。<ul><li>C2 - サードパーティデータの書き出しを制限（現在利用可能）</li><li>C3 – 直接識別可能なデータの組み合わせを制限（現在利用可能）</li><li>C9 - データサイエンスの制限（8月にリリース予定）</li></ul><p>詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。</p> | | 2026年8月 |
+| **ジャーニーキャンバスの機能強化**<br>&#x200B;次のジャーニーキャンバスの機能強化を利用できるようになりました。<ul><li>ジャーニーと過去の期間の比較。 現在のジャーニーを、4週間前、2四半期前、1年前、またはカスタム日付範囲と比較します。</li><li>選択したノードの場合、ジャーニーの任意のポイントで、選択したノードの後に来る最上位のディメンション項目を表示します。 選択したノードが分析の重要なイベントであり、その後のユーザーの行動を確認する場合に使用します。<p>以前は、選択したノードの前または後に表示できるのは、上位の即時ノードのみでした。 </p></li><li>ノード間の矢印の形状とスタイルを変更します。 ノード間で矢印をドラッグして矢印の形状（曲率）を変更し、矢印を右クリックして、スタイルをソリッド、破線、点線、点線、アニメーションのいずれかに変更します。</li></ul><p></p>詳しくは、[ジャーニーキャンバスビジュアライゼーションの設定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)を参照してください。 |  | 2026年8月18日（PT） |
+| **追加のデータ使用ラベルのサポート**<br> Customer Journey Analyticsでは、データセット内のエレメントに対する次の追加のデータ使用ラベルがサポートされるようになりました。<ul><li>C2 - サードパーティデータの書き出しを制限（現在利用可能）</li><li>C3 – 直接識別可能なデータの組み合わせを制限（現在利用可能）</li><li>C9 - データサイエンスの制限（8月または9月にリリース予定）</li></ul><p>詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。</p> | | 2026年8月または9月 |
 | **同意ポリシーのフィルタリングとレポート**<br> Adobe Experience Platformの同意ポリシーに一致する訪問者をレポートできるようになりました。 （同意ポリシーのディメンションと指標は、接続のデータビューに追加されます）。<p>さらに、同意しない訪問者をデータがCustomer Journey Analyticsに取り込まれる前に除外することもできます。</p><p>詳しくは、同意レポートとフィルタリングの概要を参照してください。</p> | | 2026年8月 |
 | **Content Analytics：有料メディアデータ** <br/>有料メディアは、Content Analyticsの3番目のチャネルとして利用できるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年8月31日（PT） |
 | **Migration Planner: Adobe AnalyticsからCustomer Journey Analyticsへの移行**<br> Migration Plannerは、Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関連する最も複雑で時間のかかる作業（XDM スキーマの作成とAppMeasurementからの移行、またはAnalytics拡張機能（タグ）からExperience Platform Web SDKへの移行など）を自動化する移行ウィザードを提供します。 <p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年8月末または9月末 |
