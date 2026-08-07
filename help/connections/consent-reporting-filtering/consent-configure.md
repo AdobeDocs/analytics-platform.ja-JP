@@ -5,22 +5,14 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 728
+source-wordcount: 770
 ht-degree: 2%
 
 ---
@@ -62,16 +54,20 @@ ht-degree: 2%
 
 1. 「**[!UICONTROL データビューを使用]**」を選択します。
 
-1. （オプション）「**[!UICONTROL フィルタリング]**」セクションでは、次のマーケティングアクションのフィルタリングを有効にできます。
+1. （オプション）「**[!UICONTROL フィルタリング]**」セクションで、「[!UICONTROL **フィルタリングを有効にする**]」を選択して、同意データをフィルタリングします。
+
+   フィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者が有効になっている同意ポリシーと一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
+
+1. （オプション）次のマーケティングアクションのフィルタリングを有効にします。
 
    >[!NOTE]
    >
-   >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
+   >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
 
    | マーケティングアクション | 説明 |
    |---------|----------|
-   | **[!UICONTROL Analytics]** | Analysis Workspaceの標準Customer Journey Analytics レポートに使用されるフィルターデータ。 |
-   | **[!UICONTROL データサイエンス]** | 高度な分析、マシンラーニング、データサイエンスのユースケースに使用されるデータをフィルタリングします。 |
+   | **[!UICONTROL Analytics データ]** | Analysis Workspaceの標準Customer Journey Analytics レポートに使用されるフィルターデータ。 |
+   | **[!UICONTROL データサイエンスデータ]** | 高度な分析、マシンラーニング、データサイエンスのユースケースに使用されるデータをフィルタリングします。 |
 
 1. **[!UICONTROL 作成]**&#x200B;を選択して、設定を作成します。
 
@@ -87,7 +83,7 @@ ht-degree: 2%
 
 [設定を作成した後](#create-a-configuration)、設定された接続の下のデータビューに同意ポリシーコンポーネントが追加されたことを確認できます。
 
-データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。
+データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。
 
 データビューで同意ポリシーコンポーネントを表示するには：
 
