@@ -19,10 +19,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 1058
-ht-degree: 2%
+source-wordcount: 1060
+ht-degree: 3%
 
 ---
 
@@ -81,8 +81,8 @@ ht-degree: 2%
 
   | マーケティングアクション | 説明 |
   |---------|----------|
-  | **[!UICONTROL Analytics]** | Analysis Workspaceの標準Customer Journey Analyticsレポート： |
-  | **[!UICONTROL データサイエンス]** | 高度な分析、マシンラーニング、データサイエンスのユースケース。 |
+  | **[!UICONTROL Analytics データ]** | Analysis Workspace の標準的な Customer Journey Analytics レポート。 |
+  | **[!UICONTROL データサイエンスデータ]** | 高度な分析、機械学習、データサイエンスのユースケース。 |
 
 * 訪問者のデータは、訪問者が該当する同意ポリシー&#x200B;**all**&#x200B;に一致する場合にのみ取り込まれます。 訪問者に該当するポリシーがない場合、その訪問者のデータは除外されます。
 

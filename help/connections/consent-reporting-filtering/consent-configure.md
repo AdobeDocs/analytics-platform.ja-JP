@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 728
+source-wordcount: 770
 ht-degree: 2%
 
 ---
@@ -62,7 +62,11 @@ ht-degree: 2%
 
 1. 「**[!UICONTROL データビューを使用]**」を選択します。
 
-1. （オプション）「**[!UICONTROL フィルタリング]**」セクションでは、次のマーケティングアクションのフィルタリングを有効にできます。
+1. （オプション）「**[!UICONTROL フィルタリング]**」セクションで、「[!UICONTROL **フィルタリングを有効にする**]」を選択して、同意データをフィルタリングします。
+
+   フィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者が有効になっている同意ポリシーと一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
+
+1. （オプション）次のマーケティングアクションのフィルタリングを有効にします。
 
    >[!NOTE]
    >
@@ -70,8 +74,8 @@ ht-degree: 2%
 
    | マーケティングアクション | 説明 |
    |---------|----------|
-   | **[!UICONTROL Analytics]** | Analysis Workspaceの標準Customer Journey Analytics レポートに使用されるフィルターデータ。 |
-   | **[!UICONTROL データサイエンス]** | 高度な分析、マシンラーニング、データサイエンスのユースケースに使用されるデータをフィルタリングします。 |
+   | **[!UICONTROL Analytics データ]** | Analysis Workspaceの標準Customer Journey Analytics レポートに使用されるフィルターデータ。 |
+   | **[!UICONTROL データサイエンスデータ]** | 高度な分析、マシンラーニング、データサイエンスのユースケースに使用されるデータをフィルタリングします。 |
 
 1. **[!UICONTROL 作成]**&#x200B;を選択して、設定を作成します。
 
