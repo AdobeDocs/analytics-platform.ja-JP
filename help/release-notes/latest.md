@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b73d8eb73b0b65ca94f42d86b12cdfcc1ed99159
+source-git-commit: 07846fea9f2d7fd966bcd924025aeae0c157cf9e
 workflow-type: tm+mt
-source-wordcount: 975
-ht-degree: 28%
+source-wordcount: 910
+ht-degree: 30%
 
 ---
 
@@ -48,7 +48,6 @@ ht-degree: 28%
 | **追加のデータ使用ラベルのサポート**<br> Customer Journey Analyticsでは、データセット内のエレメントに対する次の追加のデータ使用ラベルがサポートされるようになりました。<ul><li>C2 - サードパーティデータの書き出しを制限（現在利用可能）</li><li>C3 – 直接識別可能なデータの組み合わせを制限（現在利用可能）</li><li>C9 - データサイエンスの制限（8月または9月にリリース予定）</li></ul><p>詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。</p> | | 2026年8月または9月 |
 | **同意ポリシーのフィルタリングとレポート**<br> Adobe Experience Platformの同意ポリシーに一致する訪問者をレポートできるようになりました。 （同意ポリシーのディメンションと指標は、接続のデータビューに追加されます）。<p>さらに、同意しない訪問者をデータがCustomer Journey Analyticsに取り込まれる前に除外することもできます。</p><p>詳しくは、同意レポートとフィルタリングの概要を参照してください。</p> | | 2026年8月 |
 | **Content Analytics：有料メディアデータ** <br/>有料メディアは、Content Analyticsの3番目のチャネルとして利用できるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年8月31日（PT） |
-| **Migration Planner: Adobe AnalyticsからCustomer Journey Analyticsへの移行**<br> Migration Plannerは、Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関連する最も複雑で時間のかかる作業（XDM スキーマの作成とAppMeasurementからの移行、またはAnalytics拡張機能（タグ）からExperience Platform Web SDKへの移行など）を自動化する移行ウィザードを提供します。 <p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年8月末または9月末 |
 | **B2B：個人とアカウントの結合**<br> B2B アカウントの結合により、イベントデータセットがアカウント情報で強化され、Customer Journey Analyticsのカスタマージャーニー全体にわたって包括的な分析が可能になります。 <p>Customer Journey Analytics B2B editionで取り込む際に必要となるアカウント IDがイベントに欠けている場合、アカウントの結合は、ユーザーが提供した個人とアカウントのマッピングデータセットを使用して、その情報を自動的に導き出し、追加します。</p><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年8月末または9月末 |
 | **CJA レポート APIの最初の呼び出しガイド**<br> Adobe Customer Journey Analytics APIの最初の呼び出しガイドでは、基本的なレポートリクエストを設定するための手順と例を提供します。 | | 2026年8月10日（PT） |
 | **CJA レポート APIの日付傾向ガイド**<br> Adobe Customer Journey Analytics APIの日付傾向ガイドでは、基本的なレポートリクエストを設定するための手順と例を提供します。 | | 2026年8月17日（PT） |

@@ -20,16 +20,16 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 593dc8e9eb32e092545b74882ce2a85bcecc3c56
+source-git-commit: 6e2c1271de0e1ea82820c108eec08ec815d776f3
 workflow-type: tm+mt
-source-wordcount: 1349
-ht-degree: 9%
+source-wordcount: 1921
+ht-degree: 13%
 
 ---
 
 # B2B アカウントの連携
 
-B2B アカウントをつなぎ合わせることで、イベントデータセットをアカウント情報で強化し、Customer Journey Analyticsのカスタマージャーニー全体を包括的に分析できます。 Customer Journey Analytics B2B editionが取り込みに必要とするアカウント IDがイベントに欠落している場合、アカウントの結合は、指定した[人物とアカウントのマッピングデータセット &#x200B;](#prerequisites)を使用して、その情報を自動的に導き出し、追加します。
+B2B アカウントをつなぎ合わせることで、イベントデータセットをアカウント IDで強化し、Customer Journey Analyticsのカスタマージャーニー全体を通じて包括的に分析できます。 Customer Journey Analytics B2B editionが取り込みに必要とするアカウント IDがイベントに欠落している場合、アカウントの結合は、指定した[人物とアカウントのマッピングデータセット &#x200B;](#prerequisites)を使用して、その情報を自動的に導き出し、追加します。
 
 アカウントをつなぎ合わせないと、アカウント IDを含まないイベントは取り込み中にドロップされます。 アカウント結合は、各イベントのユーザーに関連付けられたアカウントを検索し、イベントが取り込まれる際と過去にさかのぼってアカウント IDを追加することで、この制限を解決します。
 
@@ -40,7 +40,93 @@ B2B アカウントをつなぎ合わせることで、イベントデータセ�
 アカウントの結合では、データセットに対して次の操作が実行されます。
 
 * **人物IDを昇格**：各イベントの人物IDは、ID グラフを使用して、設定されたID名前空間に昇格されます。
-* **欠落しているアカウント情報を追加**：人物IDを含むイベントの場合、[人物とアカウントのマッピング &#x200B;](#prerequisites)を使用して、アカウント情報を取得および追加します。 イベント自体のアカウント情報は、フォールバックメソッドとして使用されます。
+* **欠落しているアカウント IDを追加**：人物IDを含むイベントの場合、[人物とアカウントのマッピング &#x200B;](#prerequisites)を使用してアカウント IDを取得し、追加します。 イベント自体のアカウント IDは、フォールバックメソッドとして使用されます。
+
+## B2B アカウントの連携の仕組み
+
+B2B アカウントのステッチがどのように機能するかを示すために、以下に示すデータセットを出発点として使用します。
+
+### ベースイベントデータセット
+
+Customer Journey Analytics B2B editionでは、このステッチされていないイベントデータセットの例にアカウント IDのないイベントは無視され、取り込まれません（![DeleteOutline](/help/assets/icons/DeleteOutline.svg)）。
+
+| アクション | タイムスタンプ | 永続的 ID | アカウント ID | ユーザー ID | イベントタイプ |
+|:---:|--|--|---|---|---|
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | Ubiquity | cory@sky.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/7/25 | 4321 | 空 | emily@sky.com | コールセンター |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 5/5/25 | 6106 | | carmen@adobe.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 6/2/25 | 1111 |  | | |
+
+B2B アカウントのステッチにより、次の操作を使用してイベントが無視され、取り込まれなくなります。
+
+* [人物IDを昇格](#elevate-person-identities)。
+* [見つからないアカウント IDを追加](#add-missing-account-identitiers)。
+
+
+### 個人IDの向上
+
++++ 詳細
+
+B2B アカウントの結合をサポートするには、個人とアカウントのマッピングデータセットを提供します。 次に例を示します。
+
+| CRM ID | アカウント ID |
+|---|---|
+| 12hsd123 | Adobe |
+| f82jsd32 | 空 |
+| hg2023m2 | 空 |
+| b978bbw9 | Ubiquity |
+| fs453ghi | Adobe |
+
+グラフベースの合成により、個人と企業のマッピングデータセットが向上します。 例えば、使用する名前空間としてメールを指定します。 その結果、昇格された人物IDを持つ更新された個人とアカウントのマッピングデータセットが得られます。
+
+| CRM ID | 昇格されたユーザーID | アカウント ID |
+|---|---|---|
+| 12hsd123 | matt@adobe.com | Adobe |
+| f82jsd32 | emily@sky.com | 空 |
+| hg2023m2 | cory@sky.com | 空 |
+| b978bbw9 | cassidy@ubiquity.com | Ubiquity |
+| fs453ghi | carmen@adobe.com | Adobe |
+
+グラフベースの合成は、エクスペリエンスイベントデータセットの人物IDを昇格するためにも使用されます。 例えば、**emily@adobe.com**&#x200B;の更新された値を参照してください。
+
+| タイムスタンプ | 永続的 ID | 元のアカウント ID | 元のユーザーID | 昇格されたユーザーID |
+|--|--|---|---|---|
+| 1/3/25 | 1234 | Adobe | matt@adobe.com | matt@adobe.com |
+| 1/3/25 | 5678 |  | | **emily@adobe.com** |
+| 3/4/25 | 9012 | Ubiquity | cory@sky.com | cory@sky.com |
+| 3/7/25 | 4321 | 空 | emily@sky.com | emily@sky.com |
+| 5/5/25 | 6106 | | carmen@adobe.com | carmen@adobe.com |
+| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | 111 | 111 |
+
+
++++
+
+### 見つからないアカウント IDを追加
+
++++ 詳細
+
+個人からアカウントへのデータセットは、エクスペリエンスイベントデータセットのアカウント IDを昇格するために再度使用されます。 例えば、emily@sky.comの場合は&#x200B;**Sky**、carmen@adobe.comの場合は&#x200B;**Adobe**&#x200B;の付加値を参照してください。 cory@sky.comの値&#x200B;**Sky** （Ubiquityから）が更新されました。
+
+| タイムスタンプ | 永続的 ID | 元のアカウント ID | 元のユーザーID | 昇格されたアカウント ID | 昇格されたユーザーID |
+|---|---|---|---|---|---|
+| 1/3/25 | 1234 | Adobe | matt@adobe.com | Adobe | matt@adobe.com |
+| 1/3/25 | 5678 | | | **空** | **emily@sky.com** |
+| 3/4/25 | 9012 | Ubiquity | cory@sky.com | **空** | cory@sky.com |
+| 3/7/25 | 4321 | 空 | emily@sky.com | 空 | emily@sky.com |
+| 5/5/25 | 6106 | | carmen@adobe.com | **Adobe** | carmen@adobe.com |
+| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | Ubiquity | cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | 1111 |  | 1111 |
+
++++
+
+### 結果
+
+この例では、入力として指定した個人とアカウントのマッピングデータセットに基づいて、欠落している個人IDと欠落しているアカウント IDおよび不正確なアカウント IDを使用して、B2B アカウントの結合がエクスペリエンスイベントデータを更新する方法を示します。
+
 
 ## 前提条件
 
@@ -56,7 +142,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 
 ## アカウントの結合を有効にする {#enable-account-stitching}
 
-接続レベルでB2B アカウントステッチを有効にして設定し、その接続内の個々のイベントデータセットに対するアカウントステッチを有効にします。
+まず、接続レベルでB2B アカウントのステッチを有効にして設定します。 B2B アカウントのステッチが接続用に設定されている場合、その接続内の個々のイベントデータセットに対してアカウントステッチをアクティブ化できます。
 
 ### B2B ステッチの設定 {#configure-b2b-stitching-settings}
 
@@ -101,6 +187,8 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
 
 1. **[!UICONTROL Connection settings]**&#x200B;で、**[!UICONTROL プライマリID]**&#x200B;を![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**&#x200B;に設定します。
 
+1. B2B接続で使用する&#x200B;**[!UICONTROL オプションのコンテナ]**&#x200B;を選択してください。 B2B ステッチ設定を保存した後は、これらのコンテナの選択を変更することはできません。
+
 1. 「**[!UICONTROL B2B ステッチ設定を開く]**」を選択します。
 
    ![B2B アカウント結合設定](assets/b2b-account-stitching-configuration.png)
@@ -124,7 +212,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
       | **[!UICONTROL アカウント データセットへの人物]** | ![必須](/help/assets/icons/Required.svg) | 個人をアカウントにマッピングするルックアップ（レコードまたは非時系列データセット）を選択します。 |
       | **[!UICONTROL ユーザー ID]** | ![必須](/help/assets/icons/Required.svg) | ユーザー ID を含むデータセット内のフィールドを選択します。 このフィールドはIDとしてマークする必要があり、**[!UICONTROL アカウント ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
       | **[!UICONTROL アカウント ID]** | ![必須](/help/assets/icons/Required.svg) | アカウント ID を含むデータセットのフィールドを選択します。 このフィールドは、**[!UICONTROL 人物ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
-      | **作成時間のマッピング** | | オプションで、アカウントへの個人マッピングが作成された日時を表すフィールドを選択します。 人が複数のアカウントを時間をかけて切り替える場合に役立ちます。<br/><br/>**例** （**update_date** フィールドが選択されている場合）:<table><thead><tr><th>update_date</th><th>ユーザー</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>2026年5月1日より前の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAppleにマッピングされます。</li><li>2026年5月1日以降の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAdobeにマッピングされます。</li><ul> |
+      | **作成時間のマッピング** | | オプションで、アカウントへの個人マッピングが作成された日時を表すフィールドを選択します。 人が複数のアカウントを時間をかけて切り替える場合に役立ちます。<br/><br/>**例** （**update_date** フィールドが選択されている場合）:<table><thead><tr><th>update_date</th><th>ユーザー</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>2026年5月1日より前の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAppleにマッピングされます。</li><li>2026年5月1日以降の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAdobeにマッピングされます。</li></ul>マッピング時間が指定されていない場合、字形の最初のアカウントがにマッピングに使用されます。 この同じアルゴリズムは、2つの異なるアカウント名がまったく同じ&#x200B;**[!UICONTROL update_date]**&#x200B;値を持ち、マッピング作成時間が指定されている場合にも使用されます。 |
 
       >[!NOTE]
       >
@@ -185,7 +273,7 @@ B2B ステッチ設定を設定し、データセットの追加または編集�
 
 ## データ更新スケジュール
 
-アカウントの結合は、毎日[個の個人とアカウントのデータセット &#x200B;](#prerequisites)からID マップを取得し、この情報を使用して、次のスケジュールで結合が有効なデータセットを更新します。
+アカウントの結合は、毎日[個の個人とアカウントのデータセット &#x200B;](#prerequisites)からID マップを取得し、この情報を使用して、次のスケジュールで短期と長期の両方の結合が可能なデータセットを更新します。
 
 | 再生 | 頻度 | データウィンドウ |
 |---|---|---|

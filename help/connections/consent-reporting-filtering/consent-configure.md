@@ -4,7 +4,7 @@ description: プロビジョニングウィザードを使用して、Customer J
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hold: true
+hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
 feature_v2:
@@ -18,14 +18,50 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
+source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
 workflow-type: tm+mt
-source-wordcount: 770
-ht-degree: 2%
+source-wordcount: 981
+ht-degree: 14%
 
 ---
 
-# 同意に関するレポートとフィルタリングの設定
+# 同意に関するレポートとフィルタリングの設定 {#configure-consent-reporting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-merge-policy"
+>title="結合ポリシー"
+>abstract="結合ポリシーは、複数のデータセットのプロファイルデータを、オーディエンスの作成に使用する統合顧客プロファイルに組み合わせます。 複数の結合ポリシーが表示されていて、どちらを選択すればよいかわからない場合は、「デフォルトの時間ベース」を選択します。 または、データチームに問い合わせて、各結合ポリシーに関連付けられているオーディエンスを確認します。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-sandbox"
+>title="サンドボックス"
+>abstract="正しい Adobe Experience Platform プロファイルデータセットを含むサンドボックスを選択します。 これらのデータセットには、Analysis Workspaceでレポートする同意データが含まれている必要があります。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-person-id"
+>title="ユーザー ID"
+>abstract="人物IDを表すモデルベースのスキーマからフィールドを選択します。 選択は、「ID」としてマークされ、ID名前空間を持つスキーマ内のフィールドのリストに制限されます。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-identity-namespace"
+>title="プライマリ ID 名前空間を使用"
+>abstract="primary=true属性でマークされたID マップ内のIDをCustomer Journey Analyticsで検索し、そのIDをその行の人物IDとして使用する場合は、このオプションを有効にします。 この ID は、Adobe Experience Platform でのパーティション分割に使用されるプライマリキーです。 <br/>このオプションを無効のままにする場合は、下の ID 名前空間フィールドから名前空間を選択します。 Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。"
+
+<!-- markdownlint-enable MD034 -->
 
 システム管理者は、1つ以上の接続に対して、同意レポートおよびオプションで同意フィルタリングを有効にできます。 概要情報については、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)を参照してください。
 

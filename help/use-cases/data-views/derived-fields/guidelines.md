@@ -44,11 +44,11 @@ Customer Journey Analytics [派生フィールド &#x200B;](/help/data-views/der
 
 * **パフォーマンスを最適化**: クエリの実行を遅らせるパターンやシステム制限に達するパターンを特定して、ジョブに適したツールを選択します。
 
-   * [派生フィールド](/help/data-views/derived-fields/derived-fields.md)
-   * [データビュー設定](/help/data-views/component-settings/overview.md)
-   * [データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)
-   * [計算指標](/help/components/calc-metrics/calc-metr-overview.md)
-   * [ルックアップデータセット](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+  * [派生フィールド](/help/data-views/derived-fields/derived-fields.md)
+  * [データビュー設定](/help/data-views/component-settings/overview.md)
+  * [データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)
+  * [計算指標](/help/components/calc-metrics/calc-metr-overview.md)
+  * [ルックアップデータセット](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
 
 * **メンテナンス性を向上**：明確で、モジュール化され、更新しやすい派生フィールドロジックを構築します。
 * **正確性の確保**：分類、属性、データ変換で一般的な論理エラーを回避します。
@@ -105,8 +105,8 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
 **パターン**
 
 * 非常に大きな[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)は、複雑な&#x200B;**[!UICONTROL If]**&#x200B;および&#x200B;**[!UICONTROL Else If]** チェーンで機能します。
-   * 多くの条件（例：20を超える演算子）またはディープネスティング（ネストされた[&#x200B; ケースの3または4 レベルを超える ケース When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;および&#x200B;**[!UICONTROL その他If]** ロジック）。
-   * 同じフィールドで異なる値を持つ条件を繰り返しました。
+  * 多くの条件（例：20を超える演算子）またはディープネスティング（ネストされた[&#x200B; ケースの3または4 レベルを超える ケース When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;および&#x200B;**[!UICONTROL その他If]** ロジック）。
+  * 同じフィールドで異なる値を持つ条件を繰り返しました。
 * 定数文字列のマッチングを繰り返しました。
 
   +++ 例
@@ -138,26 +138,26 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
 **パターン**
 
 * 派生フィールドは、コンポーネント設定で既に使用可能な動作をレプリケートします。
-   * ケースの正規化、トリミング、または単純なフィルタリング（例：`unknown`、`undefined`または`null`を除く）で、追加の複雑さはありません。
-   * 数値範囲の基本的なグループ化。
+  * ケースの正規化、トリミング、または単純なフィルタリング（例：`unknown`、`undefined`または`null`を除く）で、追加の複雑さはありません。
+  * 数値範囲の基本的なグループ化。
 
-     +++ 例
+    +++ 例
 
-     ![基本グループの使用法が正しくありません](assets/best-practices-wrong-usage.png)
+    ![基本グループの使用法が正しくありません](assets/best-practices-wrong-usage.png)
 
-     +++
+    +++
 
-     代わりに、データビューのディメンションで[値のグループ化](/help/data-views/component-settings/value-bucketing.md)を使用してください。
-   * [次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)でコーディングされた永続性またはアトリビューションロジック、またはデータビュー[&#x200B; アトリビューション &#x200B;](/help/data-views/component-settings/attribution.md)と[有効期限](/help/data-views/component-settings/persistence.md)の設定で十分な手動シーケンスロジック。
-   * 条件の下にある既存の指標を単純にカウントする派生指標。
+    代わりに、データビューのディメンションで[値のグループ化](/help/data-views/component-settings/value-bucketing.md)を使用してください。
+  * [次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)でコーディングされた永続性またはアトリビューションロジック、またはデータビュー[&#x200B; アトリビューション &#x200B;](/help/data-views/component-settings/attribution.md)と[有効期限](/help/data-views/component-settings/persistence.md)の設定で十分な手動シーケンスロジック。
+  * 条件の下にある既存の指標を単純にカウントする派生指標。
 
-     +++ 例
+    +++ 例
 
-     ![条件付きロジックの使用法が正しくありません](assets/best-practices-wrong-usage-2.png)
+    ![条件付きロジックの使用法が正しくありません](assets/best-practices-wrong-usage-2.png)
 
-     +++
+    +++
 
-     このアプローチは、フィルタリングされた指標または[除外値を含める](/help/data-views/component-settings/include-exclude-values.md)が達成できる指標を再現します。
+    このアプローチは、フィルタリングされた指標または[除外値を含める](/help/data-views/component-settings/include-exclude-values.md)が達成できる指標を再現します。
 
 **リスク診断：データ品質、高いメンテナンス**
 
@@ -172,8 +172,8 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
 * 属性と永続性：[次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)またはその他のシーケンシャルロジックを使用して派生フィールドでディメンションをシミュレートする代わりに、データビュー[永続性](/help/data-views/component-settings/persistence.md)設定（**[!UICONTROL 配分モデル]**&#x200B;および&#x200B;**[!UICONTROL 有効期限]**）を使用します。
 * 数値のグループ化：派生フィールドを数値のままにし、データビューで、[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) チェーンのハードコーディング範囲ラベルではなく、上部にグループ化されたディメンションを作成できるようにします。
 * 条件付きロジック：単純な0または1のフラグロジックを次のいずれかに変換します。
-   * Analysis Workspaceで適用される「値を含める」または「値を除外」フィルターロジックを含む元の指標。
-   * データビューコンポーネント設定の設定を使用したフィルタリングされた指標。
+  * Analysis Workspaceで適用される「値を含める」または「値を除外」フィルターロジックを含む元の指標。
+  * データビューコンポーネント設定の設定を使用したフィルタリングされた指標。
 
 ## 指標とディメンションの誤分類
 
@@ -182,8 +182,8 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
 **パターン**
 
 * 派生フィールドは、次の要素を明確に生成します。
-   * 数値の出力（カウント、比率、または算術）ですが、コンポーネントはディメンションとして設定されます。
-   * カテゴリ出力（ラベルまたは文字列）ですが、コンポーネントは指標として設定されます。
+  * 数値の出力（カウント、比率、または算術）ですが、コンポーネントはディメンションとして設定されます。
+  * カテゴリ出力（ラベルまたは文字列）ですが、コンポーネントは指標として設定されます。
 * 派生フィールドは、0/1 フラグを文字列としてエンコードします。
 
 Customer Journey Analyticsでは、データビューレベルで数値フィールドをディメンションに、文字列フィールドを指標に変換することができますが、不整合があると混乱を招くレポートが作成される可能性があります。
@@ -195,10 +195,10 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 **レコメンデーション**
 
 * 出力が数値の場合：
-   * データビューでコンポーネントタイプを&#x200B;**[!UICONTROL 指標]**&#x200B;に設定します。
-   * コンポーネントがサブセット指標（例：**[!UICONTROL チェックアウトページビュー]**）を表す場合は、派生文字列と計算指標を上部に追加する代わりに、データビュー内でフィルタリングされた指標を使用します。
+  * データビューでコンポーネントタイプを&#x200B;**[!UICONTROL 指標]**&#x200B;に設定します。
+  * コンポーネントがサブセット指標（例：**[!UICONTROL チェックアウトページビュー]**）を表す場合は、派生文字列と計算指標を上部に追加する代わりに、データビュー内でフィルタリングされた指標を使用します。
 * 出力がラベルの場合：
-   * コンポーネントタイプを&#x200B;**[!UICONTROL Dimension]**&#x200B;に設定し、それに応じて[永続性](/help/data-views/component-settings/persistence.md)設定（**[!UICONTROL 配分モデル]**&#x200B;および&#x200B;**[!UICONTROL 有効期限]**）を設定します。
+  * コンポーネントタイプを&#x200B;**[!UICONTROL Dimension]**&#x200B;に設定し、それに応じて[永続性](/help/data-views/component-settings/persistence.md)設定（**[!UICONTROL 配分モデル]**&#x200B;および&#x200B;**[!UICONTROL 有効期限]**）を設定します。
 
 ## マーケティングチャネルとキャンペーンロジックの落とし穴
 
@@ -212,9 +212,9 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 * Customer Journey Analyticsのマーケティングチャネルは、多くの場合、派生フィールドを使用して実装されます。
 
-   * URL パラメーター、リファラー、ランディングページなどにもとづいて、マーケティングチャネルやキャンペーンのバケット化を実装する派生フィールド。
-   * 不審な順序：より特定のルールを適用する前に、汎用的なキャッチオールルールが表示されます。
-   * 考えられるすべてのオプションの処理が不完全です。**[!UICONTROL 参照ドメインの明示的なブランチが設定されていません]**、または&#x200B;**[!UICONTROL クエリパラメーターが設定されていません]**。
+  * URL パラメーター、リファラー、ランディングページなどにもとづいて、マーケティングチャネルやキャンペーンのバケット化を実装する派生フィールド。
+  * 不審な順序：より特定のルールを適用する前に、汎用的なキャッチオールルールが表示されます。
+  * 考えられるすべてのオプションの処理が不完全です。**[!UICONTROL 参照ドメインの明示的なブランチが設定されていません]**、または&#x200B;**[!UICONTROL クエリパラメーターが設定されていません]**。
 
 **リスク診断：データ品質**
 
@@ -301,8 +301,8 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 **リスク診断：データ品質**
 
 * ガバナンスとデザインに関する質問：算術演算は、次のように配置する方が適しています。
-   * 派生フィールド指標（派生フィールドをすべてのユーザーの管理された標準指標として使用する場合）。
-   * Analysis Workspaceの計算指標（計算指標が分析固有の場合）。
+  * 派生フィールド指標（派生フィールドをすべてのユーザーの管理された標準指標として使用する場合）。
+  * Analysis Workspaceの計算指標（計算指標が分析固有の場合）。
 
 **レコメンデーション**
 
@@ -340,8 +340,8 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 * 派生フィールドは、特定の[&#x200B; コンテナレベル &#x200B;](/help/getting-started/cja-b2b-concepts-features.md#containers) （イベント、セッション、またはユーザー）を暗黙的に想定していますが、
 
-   * 派生フィールドは、セッションまたは個人レベルの属性を参照しません。
-   * データ ビューのセッション設定が、意図したロジックと競合しています。
+  * 派生フィールドは、セッションまたは個人レベルの属性を参照しません。
+  * データ ビューのセッション設定が、意図したロジックと競合しています。
 
 **リスク診断：データ品質**
 
