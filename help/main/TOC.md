@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 2f745f65808e47fd6c0862fe23b6de6ca12ecfff
+source-git-commit: ba83c48866308eba6148230ea08bc759951d37af
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1477'
 ht-degree: 91%
 
 ---
@@ -423,6 +423,7 @@ ht-degree: 91%
     + データフィード {#cja-data-feeds}
       + {hide-from-toc}[&#x200B; データフィードの概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[Adobe Analytics データフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)
+      + {hide-from-toc}[Workspaceとデータフィードの比較](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
