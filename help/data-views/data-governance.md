@@ -23,10 +23,10 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 1254207526535e44c848dfeed0052339fbd8d65d
+source-git-commit: 0b6dc1d738b5f1a8aa430c990f8eb24df5d95653
 workflow-type: tm+mt
-source-wordcount: 745
-ht-degree: 66%
+source-wordcount: 770
+ht-degree: 65%
 
 ---
 
@@ -47,7 +47,7 @@ Experience Platform でデータセットを作成する場合、データセッ
 
 >[!NOTE]
 >
->データ使用状況ラベルは、ステッチされたデータセットに自動的に生成されません。 ただし、手動で追加することはできます。
+>データ使用状況ラベルは、ステッチされたデータセットに自動的には引き継がれません。 ただし、手動で追加することはできます。
 
 「ラベル付け」自体は、これらのデータ使用状況ラベルが適用されるという意味ではありません。 これを行うにはポリシーを使用します。 ポリシーは、[Experience Platform UI](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/policies/user-guide) を使用するか、Experience Platform で [Policy Service API](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/api/overview) を介して作成できます。
 
@@ -75,7 +75,7 @@ Experience Platform で自分または他のユーザーが作成したデータ
 
 {style="table-layout:auto"}
 
-## データビューのデータガバナンスラベルに対するフィルター
+## データビューでデータガバナンスラベルをフィルター
 
 データビューエディターで、左側のパネルの[!UICONTROL フィルター]アイコンを選択し、**[!UICONTROL データガバナンス]**&#x200B;および&#x200B;**[!UICONTROL ラベル]**&#x200B;のタイプで、データビューコンポーネントをフィルタリングします。
 
@@ -83,7 +83,7 @@ Experience Platform で自分または他のユーザーが作成したデータ
 
 「**[!UICONTROL 適用]**」をクリックして、どのコンポーネントにラベルが付いているかを確認します。
 
-## データビューでデータガバナンスポリシーをフィルタリング
+## データビューでデータガバナンスポリシーをフィルター
 
 ポリシー（例えば、自身が作成した、「**[!UICONTROL Analytics の適用]**」という名前のポリシー）がオンになっているかどうかを確認できます。 また、そのポリシーによって、分析またはデータの書き出しのための特定の Customer Journey Analytics データビュー要素の使用がブロックされるかどうかも確認できます。
 
@@ -95,7 +95,9 @@ Experience Platform で自分または他のユーザーが作成したデータ
 
 ## 有効なポリシーがデータビューに与える影響
 
-1つ以上のポリシーがC1、C2、C3、C8、C9またはC12 ラベルでオンになっている場合、特定のデータラベルが適用されているスキーマコンポーネントをデータビューに追加することはできません。
+C3またはC8で1つ以上のポリシーが有効になっている場合、特定のデータラベルが適用されているスキーマコンポーネントをデータビューに追加することはできません。
+
+C9で1つ以上のポリシーが有効になっている場合、C9でラベル付けされたスキーマコンポーネントは、[Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/)で使用できなくなります。
 
 これらのコンポーネントは、左側のパネルの[!UICONTROL スキーマフィールド]リストでグレー表示されます。
 
@@ -103,7 +105,7 @@ Experience Platform で自分または他のユーザーが作成したデータ
 
 また、ブロックされたフィールドがあるデータビューは保存できません。
 
-データビューで既にコンポーネントが定義されている Experience Platform のフィールドまたはフィールドグループに、アクセスラベルとデータガバナンスラベルを（ポリシーを通じて）適用する場合は注意が必要です。 このダイアログが表示される可能性があります。
+Adobe Experience Platform のフィールドまたはフィールドグループに、データビューで既にコンポーネントが定義されている場合に、アクセスラベルとデータガバナンスラベルを（ポリシーを通じて）適用しようとする際は注意が必要です。 このダイアログが表示される可能性があります。
 
 ![違反](assets/violation.png)
 
