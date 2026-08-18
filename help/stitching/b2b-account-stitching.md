@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 6e2c1271de0e1ea82820c108eec08ec815d776f3
+source-git-commit: a4ff89823bf1e4e4aa6d299b74567ed8cb486d06
 workflow-type: tm+mt
-source-wordcount: 1921
+source-wordcount: 1924
 ht-degree: 13%
 
 ---
@@ -51,7 +51,7 @@ B2B アカウントのステッチがどのように機能するかを示すた�
 Customer Journey Analytics B2B editionでは、このステッチされていないイベントデータセットの例にアカウント IDのないイベントは無視され、取り込まれません（![DeleteOutline](/help/assets/icons/DeleteOutline.svg)）。
 
 | アクション | タイムスタンプ | 永続的 ID | アカウント ID | ユーザー ID | イベントタイプ |
-|:---:|--|--|---|---|---|
+|:---:|--:|--|---|---|---|
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | Ubiquity | cory@sky.com |  |
@@ -212,7 +212,7 @@ B2B アカウントの結合を有効にする前に、Adobe Experience Platform
       | **[!UICONTROL アカウント データセットへの人物]** | ![必須](/help/assets/icons/Required.svg) | 個人をアカウントにマッピングするルックアップ（レコードまたは非時系列データセット）を選択します。 |
       | **[!UICONTROL ユーザー ID]** | ![必須](/help/assets/icons/Required.svg) | ユーザー ID を含むデータセット内のフィールドを選択します。 このフィールドはIDとしてマークする必要があり、**[!UICONTROL アカウント ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
       | **[!UICONTROL アカウント ID]** | ![必須](/help/assets/icons/Required.svg) | アカウント ID を含むデータセットのフィールドを選択します。 このフィールドは、**[!UICONTROL 人物ID]** フィールドまたは&#x200B;**[!UICONTROL 開始時間]** フィールドと同じにすることはできません。 |
-      | **作成時間のマッピング** | | オプションで、アカウントへの個人マッピングが作成された日時を表すフィールドを選択します。 人が複数のアカウントを時間をかけて切り替える場合に役立ちます。<br/><br/>**例** （**update_date** フィールドが選択されている場合）:<table><thead><tr><th>update_date</th><th>ユーザー</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>2026年5月1日より前の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAppleにマッピングされます。</li><li>2026年5月1日以降の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAdobeにマッピングされます。</li></ul>マッピング時間が指定されていない場合、字形の最初のアカウントがにマッピングに使用されます。 この同じアルゴリズムは、2つの異なるアカウント名がまったく同じ&#x200B;**[!UICONTROL update_date]**&#x200B;値を持ち、マッピング作成時間が指定されている場合にも使用されます。 |
+      | **作成時間のマッピング** | | オプションで、アカウントへの個人マッピングが作成された日時を表すフィールドを選択します。 人が複数のアカウントを時間をかけて切り替える場合に役立ちます。<br/><br/>**例** （**update_date** フィールドが選択されている場合）:<table><thead><tr><th>update_date</th><th>ユーザー</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>2026年5月1日より前の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAppleにマッピングされます。</li><li>2026年5月1日以降の&#x200B;**[!UICONTROL update_date]** フィールドにタイムスタンプを持つすべてのイベントの場合：a@b.comはAdobeにマッピングされます。</li></ul>マッピング時間が指定されていない場合は、字形の最初のアカウントが使用されます。 この同じアルゴリズムは、2つの異なるアカウント名がまったく同じ&#x200B;**[!UICONTROL update_date]**&#x200B;値を持ち、マッピング作成時間が指定されている場合にも使用されます。 |
 
       >[!NOTE]
       >
@@ -278,7 +278,7 @@ B2B ステッチ設定を設定し、データセットの追加または編集�
 | 再生 | 頻度 | データウィンドウ |
 |---|---|---|
 | 短期的 | 毎週 | 過去 7 日間 |
-| 長期的 | 毎月 | 最近の 3 か月間 |
+| 長期的 | 毎月 | 過去3か月間（Prime パッケージ） <br/>過去6か月間（Ultimate パッケージ） |
 
 ## プライバシーとデータの健全性
 
