@@ -7,28 +7,15 @@ role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
 workflow-type: tm+mt
-source-wordcount: 4177
-ht-degree: 65%
+source-wordcount: 4186
+ht-degree: 64%
 
 ---
 
@@ -43,7 +30,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->設定ウィザードでは、複数のデータビューとチャネルがサポートされており、単一のデータビューとweb チャネルのみをサポートしていた以前のバージョンとは異なります。 [&#x200B; データビュー](#data-views) セクションで1つ以上のデータビューを選択する前に、サンドボックスと接続を選択する必要があります。 **[!UICONTROL Experience capture]**、**[!UICONTROL データ収集]**、**[!UICONTROL ヘッダーの上書き]**&#x200B;の設定はチャネルに依存しており、[&#x200B; チャネル &#x200B;](#channels) セクションで設定する各チャネルの一部です。
+>設定ウィザードでは、複数のデータビューとチャネルがサポートされており、単一のデータビューとweb チャネルのみをサポートしていた以前のバージョンとは異なります。 [ データビュー](#data-views) セクションで1つ以上のデータビューを選択する前に、サンドボックスと接続を選択する必要があります。 **[!UICONTROL Experience capture]**、**[!UICONTROL データ収集]**、**[!UICONTROL ヘッダーの上書き]**&#x200B;の設定はチャネルに依存しており、[ チャネル ](#channels) セクションで設定する各チャネルの一部です。
 
 Content Analytics 設定にアクセスするには
 
@@ -67,7 +54,7 @@ Content Analytics 設定にアクセスするには
 
 Content Analytics **[!UICONTROL 設定]**&#x200B;画面から、新しい設定を作成したり、既存の設定を編集したりできます。
 
-新規フォルダーを作成するには：
+新しい設定を作成するには：
 
 * 「**[!UICONTROL 設定を作成]**」を選択します。 このアクションにより、[ガイド付き設定ウィザード](#guided-configuration-wizard)が開きます。
 
@@ -84,12 +71,12 @@ Content Analytics **[!UICONTROL 設定]**&#x200B;画面から、新しい設定�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="詳細"
->abstract="接続の名前を指定します。 **[!UICONTROL データビュー]**、**[!UICONTROL エクスペリエンスのキャプチャと定義]**、**[!UICONTROL データ収集]**&#x200B;の各セクションでは、Content Analytics が正しく設定されるように詳細を指定します。"
+>abstract="接続の名前を指定します。 設定の名前を指定し、分析するコンテンツ分析データを含むサンドボックスを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="詳細"
->abstract="このガイドでは、コンテンツ分析を設定するために必要な要件を設定します。 この設定の名前を指定してください。"
+>abstract="このガイドでは、Content Analytics を設定するために必要な要件を設定します。 この設定の名前を指定し、分析するコンテンツ分析データを含むサンドボックスを選択してください。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -119,7 +106,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 
 設定の接続を選択していない場合：
 
-1. ![&#x200B; データ &#x200B;](/help/assets/icons/Data.svg) **[!UICONTROL 接続を選択]**&#x200B;して、サンドボックスで使用可能なすべての接続を一覧表示する&#x200B;**[!UICONTROL 接続を選択]** ダイアログを開きます。
+1. ![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL 接続を選択]**&#x200B;して、サンドボックスで使用可能なすべての接続を一覧表示する&#x200B;**[!UICONTROL 接続を選択]** ダイアログを開きます。
 1. **[!UICONTROL 接続を選択]** ダイアログで、使用する接続を![SelectBox](/help/assets/icons/SelectBox.svg)選択します。 1つの接続のみを選択できます。
 1. 「**[!UICONTROL 接続を使用]**」を選択します。
 
@@ -135,12 +122,12 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="データビュー"
->abstract="Content Analytics を設定するには、既存のデータビューを選択する必要があります。 そのため、コンテンツ分析データを他のデータと結合できます。"
+>abstract="Content Analytics を設定するには、既存のデータビューを選択する必要があります。 そのため、Content Analytics データを他のデータと結合できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="データビュー"
->abstract="コンテンツ分析データを結合する Customer Journey Analytics の既存のデータビューを選択します。"
+>abstract="Content Analytics データを結合するために、Customer Journey Analytics の既存のデータビューを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -150,7 +137,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="新規データビュー"
->abstract="この設定用に新しいデータビューが選択されました。 新しいデータビューが更新され、コンテンツ分析指標とディメンションが含まれます。 これらの指標とディメンションは、最初に選択したデータビューから削除されます。<br/><br/>新しいデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析データセットは、最初に選択した接続から削除されません。"
+>abstract="この設定用に新しいデータビューが選択されました。 新しいデータビューが更新され、Content Analytics の指標とディメンションが含まれます。 これらの指標とディメンションは、最初に選択したデータビューから削除されます。<br/><br/>新しいデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析データセットは、最初に選択した接続から削除されません。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
@@ -160,23 +147,23 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="以前のデータビューのクリーンアップ"
->abstract="新しいデータビューが選択されました。 以前に選択したデータビューのコンテンツ分析設定は削除されます。"
+>abstract="新しいデータビューが選択されました。 以前に選択したデータビューの Content Analytics 設定は削除されます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_new_dialog"
 >title="新規データビュー"
->abstract="この設定用に新しいデータビューが選択されました。 新しいデータビューが更新され、コンテンツ分析指標とディメンションが含まれます。 同様の指標とディメンションは、既存のデータビューから削除されます。<br/>新しいデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 なお、コンテンツ分析データセットは、既存の設定から削除されません。"
+>abstract="この設定用に新しいデータビューが選択されました。 新しいデータビューが更新され、Content Analytics の指標とディメンションが含まれます。 同様の指標とディメンションは、既存のデータビューから削除されます。<br/>新しいデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 なお、Content Analytics データセットは、既存の設定から削除されません。"
 
 
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataviews_button"
 >title="データビュー"
->abstract="コンテンツ分析の設定には、1 つ以上のデータビューを選択する必要があります。 そのため、コンテンツ分析データを他のデータと結合できます。"
+>abstract="Content Analytics を設定するには、1 つ以上のデータビューを選択する必要があります。 そのため、Content Analytics データを他のデータと結合できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header"
 >title="データビュー"
->abstract="コンテンツ分析データを結合する Customer Journey Analytics の 1 つ以上の既存のデータビューを選択します。"
+>abstract="Content Analytics データを結合するために、Customer Journey Analytics の 1 つ以上の既存のデータビューを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
@@ -186,22 +173,22 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="選択したデータビュー"
->abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、コンテンツ分析指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前の選択したデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
+>abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、Content Analytics の指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前の選択したデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="選択したデータビュー"
->abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、コンテンツ分析指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前の選択したデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
+>abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、Content Analytics の指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前の選択したデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 Content Analytics データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="選択したデータビュー"
->abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、コンテンツ分析指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前の選択したデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
+>abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、Content Analytics の指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前のデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 Content Analytics データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="選択したデータビュー"
->abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、コンテンツ分析指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前の選択したデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 コンテンツ分析データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
+>abstract="この設定用に選択したデータビューが変更されました。 選択したデータビューが更新され、Content Analytics の指標とディメンションが含まれます。 これらの指標とディメンションは、選択されなくなった以前のデータビューから削除されます。<br/><br/>選択したデータビューに別の接続が関連付けられている場合、接続が更新され、コンテンツ分析データセットが含まれます。 Content Analytics データセットは、最初に選択した接続から削除されません。<br/><br/>選択したすべてのデータビューでは、この設定の一部であるチャネルが継承されます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
@@ -214,7 +201,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >abstract="設定用に 1 つ以上のチャネルを有効にして設定します。 設定の一部であるすべてのデータビューでは、有効なチャネルが継承されます。"
 
 
-設定には、1つ以上の[&#x200B; データビュー](/help/data-views/data-views.md)を選択する必要があります。
+設定には、1つ以上の[ データビュー](/help/data-views/data-views.md)を選択する必要があります。
 
 設定にデータビューを選択していない場合：
 
@@ -279,7 +266,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >title="モバイルアセットの URL のデータ収集"
 >abstract="コンテンツ分析のデータを収集する際に、**除外する** URL の場所を指定します。 個人を特定できるアセットの URL を除外していることを確認します。"
 
-モバイルチャネルの場合、[&#x200B; エクスペリエンスキャプチャと定義](#experience-capture-and-definition)、[&#x200B; データ収集](#data-collection)、[&#x200B; ヘッダーの上書き](#header-overrides)を設定できます。
+モバイルチャネルの場合、[ エクスペリエンスキャプチャと定義](#experience-capture-and-definition)、[ データ収集](#data-collection)、[ ヘッダーの上書き](#header-overrides)を設定できます。
 
 ##### エクスペリエンスのキャプチャと定義 {#mobile-experience-capture-and-definition}
 
@@ -297,21 +284,21 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 * 既存のモバイルタグプロパティを使用するか、新しいモバイルタグプロパティを作成します。
 
-   * 既存のモバイルタグプロパティを使用するには：
+  * 既存のモバイルタグプロパティを使用するには：
 
-      1. 「**[!UICONTROL 既存のものを選択]**」を選択します。
-      2. **[!UICONTROL タグプロパティ]**&#x200B;ドロップダウンメニューから既存のプロパティを選択します。 入力を開始して検索し、使用可能なオプションを制限できます。 別の実装されたContent Analytics設定で既に使用されているTags プロパティを選択することはできません。
+    1. 「**[!UICONTROL 既存のものを選択]**」を選択します。
+    2. **[!UICONTROL タグプロパティ]**&#x200B;ドロップダウンメニューから既存のプロパティを選択します。 入力を開始して検索し、使用可能なオプションを制限できます。 別の実装されたContent Analytics設定で既に使用されているTags プロパティを選択することはできません。
 
 
-   * 新しいモバイルタグプロパティを作成するには：
+  * 新しいモバイルタグプロパティを作成するには：
 
-      1. 「**[!UICONTROL 新規作成]**」を選択します。
-      1. 「**[!UICONTROL タグ名]**」を指定します（例：`ACA Test for Documentation`）。
-      1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
+    1. 「**[!UICONTROL 新規作成]**」を選択します。
+    1. 「**[!UICONTROL タグ名]**」を指定します（例：`ACA Test for Documentation`）。
+    1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
 
 * Content Analyticsのデータを収集する際に除外するエクスペリエンスの場所を指定します。 個人を特定できるエクスペリエンスの場所を除外していることを確認します。
 
-  **を除外する** エクスペリエンスの場所に&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*documentation).*`：すべてのドキュメント エクスペリエンスの場所をContent Analyticsから除外します。
+  ]**を除外する**[!UICONTROL  エクスペリエンスの場所に&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*documentation).*`：すべてのドキュメント エクスペリエンスの場所をContent Analyticsから除外します。
 
 * Content Analyticsのデータを収集する際に除外するアセットの場所を指定します。 個人を特定できるアセットの場所を除外していることを確認します。
 
@@ -319,7 +306,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 * Content Analyticsのデータを収集する際に除外するアセット URLを指定します。 個人を特定できるアセットの URL を除外していることを確認します。
 
-  **を除外する** アセット URLの&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*(logo\.jpg)).*$`:Content Analyticsからロゴ JPEG画像を参照するすべてのアセット URLを除外する
+  ]**を除外する**[!UICONTROL  アセット URLの&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*(logo\.jpg)).*$`:Content Analyticsからロゴ JPEG画像を参照するすべてのアセット URLを除外する
 
 
 ##### ヘッダーの上書き {#mobile-header-overrides}
@@ -328,7 +315,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 オプションとして、**[!UICONTROL ヘッダーの上書き]** セクションで、ヘッダー名とシークレットヘッダーの値を指定できます。  このヘッダーが設定を上書きすると、Content Analyticsがカスタム HTTP ヘッダーを送信して、ボット検出やトラフィックゲートテクノロジをバイパスしてモバイルアプリアセットを取得できるようになります。
 
-![&#x200B; ヘッダーがセクション &#x200B;](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
+![ ヘッダーがセクション ](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
 
 1. **[!UICONTROL ヘッダーオーバーライドの設定]**&#x200B;を有効にします。
 1. **[!UICONTROL ヘッダー名]**&#x200B;を入力します。 例：`x-asset-service`。
@@ -341,7 +328,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 #### Web {#web}
 
-Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと定義](#experience-capture-and-definition-1)、[&#x200B; データ収集](#data-collection-1)、[&#x200B; ヘッダーの上書き](#header-overrides-1)を設定できます。
+Web チャネルの場合、[ エクスペリエンスキャプチャと定義](#experience-capture-and-definition-1)、[ データ収集](#data-collection-1)、[ ヘッダーの上書き](#header-overrides-1)を設定できます。
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
@@ -376,7 +363,7 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="データ収集"
->abstract="使用するタグプロパティを定義するか、新しいタグプロパティを作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。<br/>タグに依存しない実装の場合は、「**[!UICONTROL 新規作成]**」を選択します。  タグプロパティが作成されますが、使用する必要はありません。"
+>abstract="使用するタグプロパティを指定するか、新しいタグプロパティを作成します。 また、正規表現を使用して、含めるまたは除外するページとアセットを定義します。<br/>タグに依存しない実装の場合は、「**[!UICONTROL 新規作成]**」を選択します。  タグプロパティが作成されますが、使用する必要はありません。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="コンテンツ分析のための JavaScript ライブラリ"
 
 
@@ -413,12 +400,12 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="データ収集"
->abstract="現在の設定に関連付けられたタグプロパティの Adobe コンテンツ分析拡張機能のアセットの設定を編集できます。"
+>abstract="現在の設定に関連付けられたタグプロパティの Adobe Content Analytics 拡張機能で、アセットの設定を編集できます。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tags_disabled_description "
 >title="タグプロパティが無効"
->abstract="コンテンツ分析拡張機能は既にアクティブです。"
+>abstract="Content Analytics 拡張機能は既にアクティブです。"
 
 
 <!-- For updated ACA -->
@@ -489,8 +476,8 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 
 * 「**[!UICONTROL エクスペリエンスを含める]**」を切り替えて有効または無効にします。
 
-   * Content Analytics イベントデータからエクスペリエンス属性を生成するプロセス
-   * Customer Journey Analytics のレポートテンプレート。
+  * Content Analytics イベントデータからエクスペリエンス属性を生成するプロセス
+  * Customer Journey Analytics のレポートテンプレート。
 
 * ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**&#x200B;を選択して、Content Analyticsでのエクスペリエンスのデータ収集の設定をさらに編集します。 現在の設定に関連付けられたタグプロパティの [Adobe Content Analytics 拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。
 
@@ -502,23 +489,23 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 * 既存のweb タグプロパティを使用するか、新しいweb タグプロパティを作成します。
 
-   * 既存のweb タグプロパティを使用するには：
+  * 既存のweb タグプロパティを使用するには：
 
-      1. 「**[!UICONTROL 既存のものを選択]**」を選択します。
-      2. **[!UICONTROL タグプロパティ]**&#x200B;ドロップダウンメニューから既存のプロパティを選択します。 入力を開始して検索し、使用可能なオプションを制限できます。 別の実装されたContent Analytics設定で既に使用されているTags プロパティを選択することはできません。
+    1. 「**[!UICONTROL 既存のものを選択]**」を選択します。
+    2. **[!UICONTROL タグプロパティ]**&#x200B;ドロップダウンメニューから既存のプロパティを選択します。 入力を開始して検索し、使用可能なオプションを制限できます。 別の実装されたContent Analytics設定で既に使用されているTags プロパティを選択することはできません。
 
 
-   * 新しいweb タグプロパティを作成するには：
+  * 新しいweb タグプロパティを作成するには：
 
-      1. 「**[!UICONTROL 新規作成]**」を選択します。
-      1. 「**[!UICONTROL タグ名]**」を指定します（例：`ACA Test for Documentation`）。
-      1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
+    1. 「**[!UICONTROL 新規作成]**」を選択します。
+    1. 「**[!UICONTROL タグ名]**」を指定します（例：`ACA Test for Documentation`）。
+    1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
 
-     [Content Analytics Javascript ライブラリ &#x200B;](/help/content-analytics/config/tags-agnostic.md)を使用して、web チャネルに対してTagsに依存しない実装を作成する場合は、新しいTags プロパティを使用します。 Tags プロパティが作成されますが、非依存の実装ではプロパティを使用しません。 ただし、ガイド付き設定ウィザードを少なくとも1回実行する必要があります。
+    [Content Analytics Javascript ライブラリ ](/help/content-analytics/config/tags-agnostic.md)を使用して、web チャネルに対してTagsに依存しない実装を作成する場合は、新しいTags プロパティを使用します。 Tags プロパティが作成されますが、非依存の実装ではプロパティを使用しません。 ただし、ガイド付き設定ウィザードを少なくとも1回実行する必要があります。
 
 * Content Analytics 用のデータを収集する際に、どのページを含めるか除外するかを指定します。 個人を特定できるページを除外していることを確認します。
 
-  **[!UICONTROL ページに対して**&#x200B;[!UICONTROL &#x200B;正規表現の文字列&#x200B;]&#x200B;**を指定して、含める/除外します]**。 <br/>例：Content Analytics からすべてのドキュメントページを除外する `^(?!.*documentation).*`。
+  **[!UICONTROL ページに対して**[!UICONTROL &#x200B;正規表現の文字列&#x200B;]**を指定して、含める/除外します]**。 <br/>例：Content Analytics からすべてのドキュメントページを除外する `^(?!.*documentation).*`。
 
 * Content Analytics 用のデータを収集する際に、どのアセットを含めるか除外するかを指定します。 個人を特定できるアセットを除外していることを確認します。
 
@@ -535,13 +522,13 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_header"
 >title="ヘッダーの上書き"
->abstract="ボット検出またはゲートトラフィックをバイパスする高度な機能。 コンテンツ分析には、エンドポイントの呼び出し時にカスタム HTTP ヘッダーが含まれます。"
+>abstract="ボット検出またはゲートトラフィックをバイパスする高度な機能。 Content Analytics は、エンドポイントを呼び出す際にカスタム HTTP ヘッダーを含めます。"
 
 <!-- needs modification for mobile channel -->
 
 オプションとして、**[!UICONTROL ヘッダーの上書き]** セクションで、ヘッダー名とシークレットヘッダーの値を指定できます。  このヘッダーの上書き設定により、Content Analyticsがカスタム HTTP ヘッダーを送信して、実装したボット検出やトラフィックゲーティングテクノロジーをバイパスできるようになります。
 
-![&#x200B; ヘッダーがセクション &#x200B;](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
+![ ヘッダーがセクション ](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
 
 1. **[!UICONTROL ヘッダーオーバーライドの設定]**&#x200B;を有効にします。
 1. **[!UICONTROL ヘッダー名]**&#x200B;を入力します。 例：`x-asset-service`。
@@ -574,7 +561,7 @@ Web チャネルの詳細を指定したら、**[!UICONTROL 保存]**&#x200B;を
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="実装の確認"
->abstract="「**[!UICONTROL 実装]**」を選択した場合は、このワークフローで指定した入力に基づいて Content Analytics を設定します。 コンテンツ分析に一般的に役立つ内容に基づいて、いくつかの設定がデフォルトで選択されていますが、ユーザー（データ管理者）は各アーティファクトの設定を確認し、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/>この設定に関連付けられたタグライブラリを手動で公開するまで、データは収集されません。<br/><br/>画像やテキストの属性を取得するために、アドビでは、次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーのサイト訪問時に取得されるページの URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされる画像にタグを付けないでください。"
+>abstract="「**[!UICONTROL 実装]**」を選択した場合は、このワークフローで指定した入力に基づいて Content Analytics を設定します。 Content Analytics に一般的に役立つ内容に基づいて、いくつかの設定がデフォルトで選択されていますが、データ管理者であるあなたは、各アーティファクトの設定を見直し、プライバシーポリシー、契約上の権利と義務、適用法に基づく同意要件に従って設定が実装されていることを確認する必要があります。<br/><br/>この設定に関連付けられたタグライブラリを手動で公開するまで、データは収集されません。<br/><br/>画像やテキストの属性を取得するために、アドビでは、次を使用して属性を取得します。<ol><li>設定したデータ収集設定に従って、ユーザーのサイト訪問時に取得されるページの URL。</li><li>画像がホストされる URL。</li></ol>サードパーティのサイトでホストされる画像にタグを付けないでください。"
 
 設定を作成または編集する際には、次のオプションがあります。
 
@@ -582,24 +569,24 @@ Web チャネルの詳細を指定したら、**[!UICONTROL 保存]**&#x200B;を
 * **[!UICONTROL 後のために保存]**：設定に行った変更が保存されます。 後のステージで設定を再度参照して、さらに変更を行ったり、設定を実装したりすることができます。 設定を保存するには、[!UICONTROL 名前]の値のみが必要です。
 * **[!UICONTROL 実装]**：設定に行った設定または変更が保存および実装されます。 ![必須](/help/assets/icons/Required.svg)としてマークされたすべてのフィールドには、適切な値が必要です。 実装は次で構成されます。
 
-   * **[!UICONTROL Customer Journey Analytics]** 設定：
-      * 選択したデータビューが更新され、Content Analytics ディメンションと指標が含まれます。
-      * 選択したデータビューに関連付けられた接続を変更すると、Content Analytics イベントと属性データセットが含まれます。
-      * Content Analytics レポートテンプレートが Workspace に追加されます。
+  * **[!UICONTROL Customer Journey Analytics]** 設定：
+    * 選択したデータビューが更新され、Content Analytics ディメンションと指標が含まれます。
+    * 選択したデータビューに関連付けられた接続を変更すると、Content Analytics イベントと属性データセットが含まれます。
+    * Content Analytics レポートテンプレートが Workspace に追加されます。
 
 
-   * **[!UICONTROL Adobe Experience Platform]** 設定：
-      * Content Analytics イベント、アセット属性および（設定した場合）エクスペリエンス属性をモデル化するスキーマの作成。
-      * Content Analytics イベント、アセット属性および（設定した場合）エクスペリエンス属性を収集するデータセットの作成。
-      * 機能サービスを使用して Content Analytics イベントからコンテンツ属性を生成および更新するデータフローの作成。
+  * **[!UICONTROL Adobe Experience Platform]** 設定：
+    * Content Analytics イベント、アセット属性および（設定した場合）エクスペリエンス属性をモデル化するスキーマの作成。
+    * Content Analytics イベント、アセット属性および（設定した場合）エクスペリエンス属性を収集するデータセットの作成。
+    * フィーチャライゼーションサービスを使用して Content Analytics イベントからコンテンツ属性を生成および更新するデータフローの作成。
 
 
-   * **[!UICONTROL データ収集]**&#x200B;設定：
-      * 新しいまたは既存のタグプロパティを設定すると、Content Analytics データ収集がサポートされます。 つまり、この設定には、タグ用の Adobe Content Analytics 拡張機能が含まれます。
-      * Content Analytics イベント用のデータストリームが作成されます。
-      * Adobe Content Analytics 拡張機能を設定すると、Content Analytics イベントが Content Analytics 用のデータストリームに送信されます。
-      * Web SDKまたはMobile SDKがTags プロパティ用に設定されていない場合は、新しいWeb SDKまたはMobile SDK設定が作成され、Content Analytics イベントのみが送信されます。
-      * Web SDKまたはMobile SDKがTags プロパティ用に設定されている場合、既存のWeb SDKまたはMobile SDK設定は変更されません。
+  * **[!UICONTROL データ収集]**&#x200B;設定：
+    * Content Analytics データ収集をサポートするように構成された、新規または既存のタグプロパティ。 つまり、この設定には、タグ用の Adobe Content Analytics 拡張機能が含まれます。
+    * Content Analytics イベント用のデータストリームが作成されます。
+    * Adobe Content Analytics 拡張機能を設定すると、Content Analytics イベントが Content Analytics 用のデータストリームに送信されます。
+    * Web SDKまたはMobile SDKがTags プロパティ用に設定されていない場合は、新しいWeb SDKまたはMobile SDK設定が作成され、Content Analytics イベントのみが送信されます。
+    * Web SDKまたはMobile SDKがTags プロパティ用に設定されている場合、既存のWeb SDKまたはMobile SDK設定は変更されません。
 
 
 * **[!UICONTROL 保存]**：実装した設定に行った変更は保存され、実装が更新されます。
