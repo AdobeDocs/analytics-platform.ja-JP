@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: 30194647c56e7eaa8441b915d16f53ba3ff1bd40
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 8%
+source-wordcount: '102'
+ht-degree: 9%
 
 ---
 
@@ -40,6 +40,6 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="接続"
+>title="データビュー
 >abstract="会話インサイト分析に使用する接続に関連付けられているデータビューを選択します。 会話インサイトの指標とディメンションは、選択したデータビューに追加されます。"
 
