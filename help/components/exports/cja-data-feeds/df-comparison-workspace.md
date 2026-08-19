@@ -4,9 +4,9 @@ keywords: クリックストリーム;データフィード;データフィー�
 title: Customer Journey AnalyticsとAdobe Analyticsのデータフィード機能の比較
 feature: Components
 hide: true
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+source-git-commit: 7fe885e928c495a2518038645ec841229d1f1852
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ## ルックバック日付範囲（データフィード）とレポート日付範囲（Analysis Workspace）の比較
 
-データフィードのルックバック日付範囲は、Customer Journey Analyticsがデータフィード配信に適格なイベントを検索する際に表示されるルックバック日付範囲を決定します。 例を含むルックバック日付範囲について詳しくは、[&#x200B; ルックバック日付範囲について](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range)を参照してください。
+データフィードのルックバック日付範囲は、Customer Journey Analyticsがデータフィード配信に適格なイベントを検索する際に表示されるルックバック日付範囲を決定します。 例を含むルックバック日付範囲について詳しくは、[ ルックバック日付範囲について](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range)を参照してください。
 
 この意味で、ルックバック日付範囲はAnalysis Workspaceのレポート日付範囲と似ています。 しかし、両者には重要な違いがあります。
 
 | 主な違い | レポート日付範囲（Analysis Workspace） | ルックバック日付範囲（データフィード） |
 |---------|---------|----------|
-| **データ境界**<br/> データがレポートまたはフィードに含まれているかどうか | 柔軟な<p>次のいずれかの要因によってイベントが影響を受ける場合、レポートの日付範囲外のイベントは、引き続きWorkspace レポートに含めることができます。</p><ul><li>**Dimensionの永続性**: レポートの日付範囲を超えて永続化できます。 データは集約されます。</li><li>**セグメントの選定**: セグメントは、デフォルトでレポート日付範囲を超えて拡張できます。<p>ユーザーは、セグメントを作成するときに、レポートの日付範囲にセグメントを制限することができます。<!--add link to new docs--></p></li><li>**セッション計算**: セッションは、レポートの日付範囲を超えて拡張できます。 </li><li>**派生フィールド変換**</li></ul> | 固定<p>ルックバック日付範囲外のイベントは、次の要因の影響を受けるかどうかにかかわらず、データフィードに含まれません。</p></p><ul><li>**Dimensionの永続性**: ルックバック日付範囲を超えて永続化できません。 データは集約されません。</li><li>**セグメントの選定**：常にルックバック日付範囲に制限されます。</li><li>**セッション計算**：常にルックバック日付範囲に制限されます。</li><li>**派生フィールド変換**: コンテナを参照する派生フィールド関数は、データフィードの書き出しでルックバック日付範囲を使用します。</li></ul><p>ルックバック日付範囲の設定について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-a-data-feed)を参照してください。</p> |
+| **データ境界**<br/> データがレポートまたはフィードに含まれているかどうか | 柔軟な<p>次のいずれかの要因によってイベントが影響を受ける場合、レポートの日付範囲外のイベントは、引き続きWorkspace レポートに含めることができます。</p><ul><li>**Dimensionの永続性**: セッション、カスタム時間、または指標[有効期限](/help/data-views/component-settings/persistence.md#expiration-settings)を使用する場合、レポートの日付範囲を超えて永続化できます。 ユーザー報告ウィンドウ [有効期限](/help/data-views/component-settings/persistence.md#expiration-settings)を使用する場合のレポート日付範囲と同じです。 データは集約されます。</li><li>**セグメントの選定**: セグメントは、デフォルトでレポート日付範囲を超えて拡張できます。<p>ユーザーは、セグメントを作成するときに、レポートの日付範囲にセグメントを制限することができます。<!--add link to new docs--></p></li><li>**セッション計算**: セッションは、レポートの日付範囲を超えて拡張できます。 </li><li>**派生フィールド変換**</li></ul> | 固定<p>ルックバック日付範囲外のイベントは、次の要因の影響を受けるかどうかにかかわらず、データフィードに含まれません。</p></p><ul><li>**Dimensionの永続性**: [有効期限の設定](/help/data-views/component-settings/persistence.md#expiration-settings)に関係なく、ルックバック日付範囲を超えて永続化することはできません。 データは集約されません。</li><li>**セグメントの選定**：常にルックバック日付範囲に制限されます。</li><li>**セッション計算**：常にルックバック日付範囲に制限されます。</li><li>**派生フィールド変換**: コンテナを参照する派生フィールド関数は、データフィードの書き出しでルックバック日付範囲を使用します。</li></ul><p>ルックバック日付範囲の設定について詳しくは、[ データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-a-data-feed)を参照してください。</p> |
 | **レポート期間**<br/> レポートする期間 | レポートウィンドウ（レポートする時間枠）と同じです。 | レポートを作成する時間枠と同じではありません。 <p>レポートする時間枠は「頻度」ウィンドウで、1時間または1日にすることができます。</p> |
 
 >[!BEGINSHADEBOX]
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 イベント Aは85日前に発生し、90日間の永続性設定（キャンペーンとクリックのアトリビューションウィンドウなど）を持つディメンションに配置されます。 このイベントはAnalysis Workspace レポートに含まれ、データフィードの配信には含まれません。
 
-![&#x200B; ワークスペースとデータフィードのデータの違い](assets/data-feed-data-differences.png)
+![ ワークスペースとデータフィードのデータの違い](assets/data-feed-data-differences.png)
 
 
 >[!ENDSHADEBOX]
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 * **データフィード**: イベントを受信したタイミングに基づいて、データを固定時間内に書き出します。
 
-  ウィンドウが閉じた後に到着したイベントは、書き出しに含まれない可能性があります。 これは、選択した[&#x200B; ルックバック日付範囲](#lookback-date-range-data-feeds-vs-reporting-date-range-analysis-workspace)の影響を受けます。
+  ウィンドウが閉じた後に到着したイベントは、書き出しに含まれない可能性があります。 これは、選択した[ ルックバック日付範囲](#lookback-date-range-data-feeds-vs-reporting-date-range-analysis-workspace)の影響を受けます。
 
 * **Analysis Workspace**: レポート時にデータを処理するので、イベントは、いつ受信したかに関係なくレポートに含まれます。
 
