@@ -4,9 +4,9 @@ keywords: クリックストリーム;データフィード;データフィー�
 title: Customer Journey AnalyticsとAdobe Analyticsのデータフィード機能の比較
 feature: Components
 hide: true
-source-git-commit: a72ed21bdea40e2441443d7218d9fd7c906adc3e
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ ht-degree: 0%
 
 ## ルックバック日付範囲（データフィード）とレポート日付範囲（Analysis Workspace）の比較
 
-データフィードのルックバック日付範囲は、Customer Journey Analyticsがデータフィード配信に適格なイベントを検索する際に表示されるルックバック日付範囲を決定します。 この意味で、ルックバック日付範囲はAnalysis Workspaceのレポート日付範囲と似ています。 しかし、両者には重要な違いがあります。
+データフィードのルックバック日付範囲は、Customer Journey Analyticsがデータフィード配信に適格なイベントを検索する際に表示されるルックバック日付範囲を決定します。 例を含むルックバック日付範囲について詳しくは、[&#x200B; ルックバック日付範囲について](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range)を参照してください。
+
+この意味で、ルックバック日付範囲はAnalysis Workspaceのレポート日付範囲と似ています。 しかし、両者には重要な違いがあります。
 
 | 主な違い | レポート日付範囲（Analysis Workspace） | ルックバック日付範囲（データフィード） |
 |---------|---------|----------|
