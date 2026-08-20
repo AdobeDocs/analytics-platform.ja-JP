@@ -5,26 +5,15 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
 source-wordcount: 2520
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -35,7 +24,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="更新頻度"
->abstract="オーディエンスのメンバーシップが再評価される頻度。<br/>1回のオーディエンスは1回のみ評価され、更新制限にカウントされません。"
+>abstract="オーディエンスのメンバーシップが再評価される頻度。<br/>1回限りのリクエストは1回のみ評価され、更新制限にカウントされません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +33,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
 >title="オーディエンス制限の更新"
->abstract="スケジュールされた頻度で自動的に更新するように設定されている環境内のオーディエンスの数。 制限は、Customer Journey Analyticsの使用権限によって異なりますが、75から150までです。 1回の更新はこの制限にカウントされません。"
+>abstract="スケジュールされた頻度で自動的に更新するように設定されている環境内のオーディエンスの数。 制限は、Customer Journey Analyticsの使用権限によって異なりますが、75から150までです。 1回限りのリクエストは、この制限にカウントされません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -117,7 +106,7 @@ Customer Journey Analytics オーディエンスの概念について詳しく�
 | **[!UICONTROL 名前]** | オーディエンスの名前。 例：`Really Interested in Potential Car Buyers` |
 | **[!UICONTROL タグ]** | 組織的な目的でオーディエンスに割り当てるタグ。 1 つ以上の既存のタグを選択するか、新しいタグを入力できます。 |
 | **[!UICONTROL 説明]** | 他のオーディエンスと区別するためのオーディエンスの説明。 例：`Build an audience of really interested potential car buyers` |
-| **[!UICONTROL 更新頻度]** | オーディエンスを更新する頻度。<p/><p>Customer Journey Analyticsの使用権限に応じて、限られた数（75～150人）のオーディエンスでスケジュールされた更新を設定できます。 </p><p>次のオプションから選択できます。</p><ul><li>**[!UICONTROL 1 回限り]**&#x200B;のオーディエンス：更新を必要としないオーディエンス（デフォルト）。 このオプションは、特定の 1 回限りのキャンペーンなどに役立ちます。<br/>**[!UICONTROL 1 回限りの日付範囲]**&#x200B;を指定する必要があります。 ![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付範囲を入力できます。</li><li>更新が必要なオーディエンス。 次のスケジュールされた更新オプションから選択できます。<ul><li>**[!UICONTROL 4 時間ごと]**：4 時間ごとに更新されるオーディエンス</li><li>**[!UICONTROL 毎日]**：毎日更新されるオーディエンス</li><li>**[!UICONTROL 毎週]**：毎週更新されるオーディエンス</li><li>**[!UICONTROL 毎月]**：毎月更新するオーディエンス</li></ul></li>オーディエンスを更新する場合は、次の項目を指定する必要があります。<ul><li>**[!UICONTROL ルックバックウィンドウの更新]**。 オーディエンスが評価される、ルックバック期間（今日を基点としてカウントした日数）を定義します。 オプションから選択するか、カスタム期間を定義できます。 最大期間は 90 日です。</li><li>**[!UICONTROL 有効期限]**：オーディエンスの更新を停止する日数を定義します。 ![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付を選択できます。 デフォルトは作成日の 1 年後です。 有効期限が切れるオーディエンスは、スケジュール済みレポートの有効期限が切れる場合と同様に扱われます。 管理者は、オーディエンスの有効期限が切れる 1 か月前にメールを受け取ります。</li></ul></ul> |
+| **[!UICONTROL 更新頻度]** | オーディエンスを更新する頻度。<p/><p>Customer Journey Analyticsの使用権限に応じて、限られた数（75～150人）のオーディエンスでスケジュールされた更新を設定できます。 </p><p>次のオプションから選択できます。</p><ul><li>**[!UICONTROL 1回限り]**：更新を必要としない1回限りのリクエスト。 このオプションは、特定の 1 回限りのキャンペーンなどに役立ちます。<br/>**[!UICONTROL 1 回限りの日付範囲]**&#x200B;を指定する必要があります。 ![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付範囲を入力できます。</li><li>更新が必要なオーディエンス。 次のスケジュールされた更新オプションから選択できます。<ul><li>**[!UICONTROL 4 時間ごと]**：4 時間ごとに更新されるオーディエンス</li><li>**[!UICONTROL 毎日]**：毎日更新されるオーディエンス</li><li>**[!UICONTROL 毎週]**：毎週更新されるオーディエンス</li><li>**[!UICONTROL 毎月]**：毎月更新するオーディエンス</li></ul></li>オーディエンスを更新する場合は、次の項目を指定する必要があります。<ul><li>**[!UICONTROL ルックバックウィンドウの更新]**。 オーディエンスが評価される、ルックバック期間（今日を基点としてカウントした日数）を定義します。 オプションから選択するか、カスタム期間を定義できます。 最大期間は 90 日です。</li><li>**[!UICONTROL 有効期限]**：オーディエンスの更新を停止する日数を定義します。 ![カレンダー](/help/assets/icons/Calendar.svg)を使用して日付を選択できます。 デフォルトは作成日の 1 年後です。 有効期限が切れるオーディエンスは、スケジュール済みレポートの有効期限が切れる場合と同様に扱われます。 管理者は、オーディエンスの有効期限が切れる 1 か月前にメールを受け取ります。</li></ul></ul> |
 | **[!UICONTROL フィルター]** | フィルターは、オーディエンスに対する主な入力です。 左側の ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]** パネルから 1 つ以上のセグメントをセグメント領域にドラッグ＆ドロップします。 ![検索](/help/assets/icons/Search.svg) [!UICONTROL *検索セグメント*] を使用して、セグメントを検索できます。 最大 20 のセグメントを追加できます。 セグメントは、**[!UICONTROL AND]** または **[!UICONTROL OR]** 演算子を使用して結合できます。<p>Analysis Workspace のビジュアライゼーション（フリーフォームテーブルやジャーニーキャンバスなど）からオーディエンスを作成する際に、パネルまたは列に適用されたセグメントはすべて保持されます。 自動的に適用されたセグメントは削除できます。</p> |
 | **[!UICONTROL データのプレビュー]** | 選択した日付範囲の[データのプレビュー](#data-preview)を表示または非表示にするには、![情報](/help/assets/icons/Info.svg) を選択します。 |
 
@@ -188,7 +177,7 @@ Customer Journey Analytics は、公開済みのオーディエンスからす�
 
    * 「![検索](/help/assets/icons/Search.svg)」フィールドを使用します。
 
-プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンスの節を参照してください。
+プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンス](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)の節を参照してください。
 
 ### オーディエンス数の不一致について
 
