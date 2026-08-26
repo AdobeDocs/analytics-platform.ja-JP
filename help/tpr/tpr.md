@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1388'
 ht-degree: 4%
 
 ---
 
 # 合計母集団レポート
 
-総母集団レポートでは、プロファイルおよびルックアップデータセットで定義されたエンティティと、イベントデータセットからの時間ベースの一連のイベントを分析およびレポートする機能が導入されています。 この能力により、ビジネスの顧客基盤のあらゆる範囲を反映する、新しいクラスのクエリ、指標、オーディエンス定義が可能になります。
+合計母集団レポートでは、Customer Journey Analytics接続に存在するプロファイルおよびルックアップデータセットで定義されたエンティティを分析およびレポートする機能が導入されています。 分析とレポートは、イベントデータセットの時間ベースの一連のイベントを超えています。 この機能により、ビジネスの顧客基盤のあらゆる範囲を反映する、新しいクラスのクエリ、指標、オーディエンス定義が可能になります。
 
 Customer Journey Analyticsは、イベントを中心に構築されています。 すべての指標、すべてのビジュアライゼーション、すべてのパネル、すべてのレポートは、日付時間範囲と、その日付時間範囲内に発生するイベントにアンカーされます。 ソリューションに関する次のような質問があります。
 
@@ -85,7 +85,7 @@ Workspaceでは、母集団指標の合計に明確なアイコン（TBD）が�
 プロファイルデータセットが接続に追加されると、Customer Journey Analyticsは、データセットタイプに基づくデフォルトの共有ルックアップ設定を入力します。
 
 * 人物プロファイルデータセットの場合：デフォルトは[!UICONTROL 人物]に設定されたコンテナごとの一致で、ID マップがキーフィールドとして設定されます。 このデフォルトを編集できます。 例えば、プライマリキーではなくID マップから特定の名前空間を選択します。 または、最初の名前空間が入力されていない場合（ステッチされたデータセットで一般的な場合）のセカンダリ名前空間を指定します。
-* アカウントプロファイルデータセット [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}の場合、デフォルトは[!UICONTROL Account] （グローバルアカウントが接続上で有効になっている場合は[!UICONTROL &#x200B; グローバルアカウント &#x200B;]）に設定されたコンテナごとに一致します。 アカウントフィールドには、単一のIDまたはID マップを指定できます。 アカウントフィールドがID マップの場合は、使用する名前空間を選択します。
+* アカウントプロファイルデータセット [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}の場合、デフォルトは[!UICONTROL Account] （グローバルアカウントが接続上で有効になっている場合は[!UICONTROL  グローバルアカウント ]）に設定されたコンテナごとに一致します。 アカウントフィールドには、単一のIDまたはID マップを指定できます。 アカウントフィールドがID マップの場合は、使用する名前空間を選択します。
 
 1つのプロファイルデータセットで複数の共有ルックアップを設定して、イベントへの複数の結合パスをサポートできます。 複数の共有ルックアップで同じID マップをキーフィールドとして使用する場合、名前空間の選択は一貫している必要があります。
 
@@ -94,12 +94,12 @@ Workspaceでは、母集団指標の合計に明確なアイコン（TBD）が�
 合計母集団レポート指標がデータビューで正しく機能するには：
 
 * 接続には、プロファイルデータセットを含める必要があります（[接続要件](#connection-requirements)を参照）。 接続から最後の残りのプロファイルデータセットを削除すると、そのデータセットから構築されたデータビューで合計母集団レポート指標を使用できません。
-* [&#x200B; データビューレベルのセグメント &#x200B;](/help/data-views/create-dataview.md#settings-segments)は、イベントを明示的にすることはできません。 データビューに直接適用されたセグメントが、イベント範囲の条件（例：`hit where page = X`）で完全に定義されている場合、そのデータビューで合計母集団レポートを作成することはできません。 総母集団レポート指標に依存する前に、任意のデータビューレベルのセグメントがプロファイルスコープのレポートと互換性があることを検証します。
+* [ データビューレベルのセグメント ](/help/data-views/create-dataview.md#settings-segments)は、イベントを明示的にすることはできません。 データビューに直接適用されたセグメントが、イベント範囲の条件（例：`hit where page = X`）で完全に定義されている場合、そのデータビューで合計母集団レポートを作成することはできません。 総母集団レポート指標に依存する前に、任意のデータビューレベルのセグメントがプロファイルスコープのレポートと互換性があることを検証します。
 * 指標の範囲を正しく設定する必要があります。 データビュービルダーでカスタム指標コンポーネントを作成する場合、フィールドのデータセットと指標の動作に基づいて、適切なスコープ（イベント、プロファイル、プロファイル + イベント）を選択します。 指標をオーディエンスまたは定期的なレポートで使用した後は、それらの依存関係を壊さずに範囲を変更することはできません。
 
 ### Workspaceとの互換性
 
-合計母集団レポート指標は、ほとんどのWorkspace コンテキストでイベントベースの指標と一緒に使用できます。例：[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)、[行](/help/analysis-workspace/visualizations/line.md)、[&#x200B; バー](/help/analysis-workspace/visualizations/bar.md)および[水平バー](/help/analysis-workspace/visualizations/horizontal-bar.md) ビジュアライゼーション、[&#x200B; コホートテーブル &#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)適切に設定された場合など。 一部のビジュアライゼーションタイプは、イベントシーケンスに本質的に依存するため、サポートされていません。
+合計母集団レポート指標は、ほとんどのWorkspace コンテキストでイベントベースの指標と一緒に使用できます。例：[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)、[行](/help/analysis-workspace/visualizations/line.md)、[ バー](/help/analysis-workspace/visualizations/bar.md)および[水平バー](/help/analysis-workspace/visualizations/horizontal-bar.md) ビジュアライゼーション、[ コホートテーブル ](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)適切に設定された場合など。 一部のビジュアライゼーションタイプは、イベントシーケンスに本質的に依存するため、サポートされていません。
 
 * [フォールアウト](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)
 * [フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)
