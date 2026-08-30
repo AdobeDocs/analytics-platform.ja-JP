@@ -7,26 +7,15 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
 TQID: https://experienceleague.adobe.com/9oEoM8cI6Bxl-PXmiT-OhskFK3XlaPVkQSFOi4Dyajg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 1309
-ht-degree: 40%
+source-wordcount: 1343
+ht-degree: 39%
 
 ---
 
@@ -34,7 +23,7 @@ ht-degree: 40%
 
 Report BuilderからCustomer Journey Analytics ワークブックを、Google、Azure、Amazonなどのクラウドプロバイダーに書き出すことができます。
 
-[&#x200B; レポートビルダーからクラウドにレポートを書き出す利点](#advantages-of-exporting-to-the-cloud)には、サードパーティツールでレポートを使用したり、外部データとレポートを組み合わせたりできる機能があります。
+[ レポートビルダーからクラウドにレポートを書き出す利点](#advantages-of-exporting-to-the-cloud)には、サードパーティツールでレポートを使用したり、外部データとレポートを組み合わせたりできる機能があります。
 
 Report Builderからクラウドの宛先にワークブックをエクスポートする前に、データブロック、環境、および権限が[書き出し要件](#export-requirements)を満たしていることを確認してください。
 
@@ -42,9 +31,9 @@ Report Builderからクラウドの宛先にワークブックをエクスポー
 
 Report Builderからクラウドにワークブックを書き出す場合は、次のプロセスを使用します。
 
-1. [クラウドアカウントを設定](/help/components/exports/cloud-export-accounts.md)
+1. [クラウドアカウントを設定する](/help/components/exports/cloud-export-accounts.md)
 
-1. [アカウントの場所を設定](/help/components/exports/cloud-export-locations.md)
+1. [アカウントのロケーションを設定する](/help/components/exports/cloud-export-locations.md)
 
 1. [Report Builderからのレポートのエクスポート](#export-a-report-from-report-builder)
 
@@ -53,10 +42,6 @@ Report Builderからクラウドにワークブックを書き出す場合は、
 ![手順1 ～ 4で説明した書き出しプロセス。](assets/report-builder-export-process.png)
 
 ## Report Builderからのレポートのエクスポート
-
->[!NOTE]
->
->この節で説明したようにデータを書き出す前に、上記の節の[書き出しプロセス &#x200B;](#understand-the-export-process)の詳細を確認してください。
 
 Report Builderからレポートを書き出すには：
 
@@ -74,7 +59,7 @@ Report Builderからレポートを書き出すには：
 
 1. [!UICONTROL **Adobe Report Builder**]&#x200B;の右側のパネルで、新しいスケジュールの作成を続行するには、次の情報を指定します。
 
-   ![&#x200B; レポートビルダースケジュール タブ &#x200B;](assets/report-builder-schedule-cloud.png)
+   ![ レポートビルダースケジュール タブ ](assets/report-builder-schedule-cloud.png)
 
    | フィールド名 | 関数 |
    |---------|----------|
@@ -86,7 +71,7 @@ Report Builderからレポートを書き出すには：
    | **[!UICONTROL ワークブックをパスワードで保護]** | 書き出したファイルを保護するパスワードを指定して、パスワードを持つユーザーのみがアクセスできるようにします。 <p>パスワードは8文字以上で、1つ以上の数字と1つの特殊文字（`!`、`@`、`#`、`$`など）を含んでいる必要があります。</p> |
    | **[!UICONTROL 電子メール]** | 特定の電子メールアドレスにファイルを送信するには、このオプションを選択します。 詳しくは、[電子メールを介した共有によるワークブックのスケジュール設定](/help/report-builder/schedule-reportbuilder.md)を参照してください。 |
    | **[!UICONTROL その他の配信]** | このオプションを選択してファイルをクラウドアカウントに送信し、次に説明する&#x200B;**[!UICONTROL アカウント]**&#x200B;および&#x200B;**[!UICONTROL 場所]** ドロップダウンメニューを使用してアカウントと場所を選択します。 |
-   | **[!UICONTROL アカウント]** | データの送信先となるクラウド書き出しアカウントを選択します。 <p>または、使用するクラウドアカウントをまだ設定していない場合は、新しいアカウントを設定できます。<ol><li>「[!UICONTROL **アカウントを追加**]」を選択し、次の情報を指定します。<ul><li>[!UICONTROL **場所アカウント名**]：場所アカウントの名前を指定します。 この名前は、場所を作成する際に表示されます。 </li><li>[!UICONTROL **場所アカウントの説明**]：同じアカウントタイプの他のアカウントと区別できるように、アカウントの簡単な説明を入力します。</li><li>**[!UICONTROL 組織内のすべてのユーザーがアカウントを利用できるようにします]**：このオプションを選択すると、組織内の他のユーザーがアカウントを使用できるようになります。 セグメントを共有する際は、次の点を考慮してください。<ul><li>共有したアカウントは、共有解除できません。</li><li>共有したアカウントは、アカウントの所有者のみが編集できます。</li><li>誰でも共有したアカウントの場所を作成できます。</li></ul></li><li>[!UICONTROL **アカウントの種類**]：書き出すクラウドアカウントの種類を選択します。 利用できるアカウントタイプは、Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBACです。</li></ul><li>アカウントの設定を完了するには、選択した&#x200B;[!UICONTROL **アカウントタイプ**]&#x200B;に対応する以下のリンクに進みます。<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
+   | **[!UICONTROL アカウント]** | データの送信先となるクラウド書き出しアカウントを選択します。 <p>または、使用するクラウドアカウントをまだ設定していない場合は、新しいアカウントを設定できます。<ol><li>「[!UICONTROL **アカウントを追加**]」を選択し、次の情報を指定します。<ul><li>[!UICONTROL **場所アカウント名**]：場所アカウントの名前を指定します。 この名前は、場所を作成する際に表示されます。 </li><li>[!UICONTROL **場所アカウントの説明**]：同じアカウントタイプの他のアカウントと区別できるように、アカウントの簡単な説明を入力します。</li><li>**[!UICONTROL 組織内のすべてのユーザーがアカウントを利用できるようにします]**：このオプションを選択すると、組織内の他のユーザーがアカウントを使用できるようになります。 アカウントを共有する際は、次の点を考慮してください。<ul><li>共有したアカウントは、共有解除できません。</li><li>共有したアカウントは、アカウントの所有者のみが編集できます。</li><li>誰でも共有されたアカウント用のロケーションを作成できます。</li></ul></li><li>[!UICONTROL **アカウントの種類**]：書き出すクラウドアカウントの種類を選択します。 利用できるアカウントタイプは、Amazon S3 Role ARN、Google Cloud Platform、Azure SAS、Azure RBACです。</li></ul><li>アカウントの設定を完了するには、選択した&#x200B;[!UICONTROL **アカウントタイプ**]&#x200B;に対応する以下のリンクに進みます。<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
    | **[!UICONTROL 場所]** | 書き出しデータを送信するアカウント上の場所を選択します。<p>または、選択したアカウントで使用する場所をまだ設定していない場合は、新しい場所を設定できます。<ol><li>「[!UICONTROL **場所を追加**]」を選択し、次の情報を指定します。 <ul><li>[!UICONTROL **名前**]：場所の名前。</li><li>[!UICONTROL **説明**]：アカウント上の他の場所と区別できるように、場所の簡単な説明を入力します。</li><li>**[!UICONTROL 組織内のすべてのユーザーが場所を利用できるようにします]**：組織内の他のユーザーが場所を使用できるようにするには、このオプションを選択します。 セグメントを共有する際は、次の点を考慮してください。<ul><li>共有している場所は共有を解除できません。</li><li>共有場所は、アカウントの所有者のみが編集できます。</li><li>場所を共有できるのは、場所が関連付けられているアカウントも共有されている場合のみです。</li></ul></li><li>[!UICONTROL **場所アカウント**]：場所を作成するアカウントを選択します。</li></ul><li>場所の設定を完了するには、「[!UICONTROL **場所アカウント**]」フィールドで選択したアカウントタイプに対応する以下のリンクに進みます。<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li></ul> |
    | **[!UICONTROL スケジュール設定オプションを表示]** | このオプションを選択すると、書き出しのスケジュール設定に関する追加オプションが表示されます。 書き出しを1回だけ送信する場合は、このオプションを選択しないでください。 このオプションを選択しない場合、書き出しは直ちに開始されます。 |
    | **[!UICONTROL 開始日：]** | 定期エクスポートを開始する日時。 <p>このオプションは、定期エクスポート頻度を選択する場合にのみ使用できます。</p> |
@@ -100,6 +85,10 @@ Report Builderからレポートを書き出すには：
    データは、指定した頻度で指定したクラウドアカウントに送信されます。
 
 1. （オプション）書き出しを作成したら、今すぐ送信するか、定義済みスケジュールで送信するかに関係なく、[書き出しページ](/help/components/exports/manage-exports.md)で表示および管理し、[書き出しログ](/help/components/exports/manage-export-logs.md)で表示できます。</p>
+
+>[!NOTE]
+>
+>スケジュールは、スケジュールの作成時に存在していたワークブックのバージョンを書き出します。 後でワークブックを変更して保存した場合、既存のスケジュールはその変更を取得せず、元のバージョンの書き出しを続行します。 更新されたワークブックを書き出すには、変更を保存した後に新しいスケジュールを作成します。
 
 ## 書き出しの管理
 
