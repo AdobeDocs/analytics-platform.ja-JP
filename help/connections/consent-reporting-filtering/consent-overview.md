@@ -5,30 +5,21 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hide: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1060
-ht-degree: 3%
+source-wordcount: 1311
+ht-degree: 1%
 
 ---
 
 # 同意レポートとフィルタリングの概要
 
-同意のレポートとフィルタリングは、Adobe Experience Platform プロファイルデータセットに保存されている同意ポリシーメンバーシップデータを使用して、訪問者の同意に関するレポートを作成し、同意しない訪問者をCustomer Journey Analyticsに取り込む前に除外することができます。
+同意のレポートとフィルタリングでは、Adobe Experience Platform プロファイルデータセットに保存されている同意ポリシーメンバーシップデータを使用して、訪問者の同意に関するレポートに役立てることができます。 さらに、同意しない訪問者を除外することも、Customer Journey Analyticsにデータを取り込む前に選択できます。
 
 ## 前提条件
 
@@ -55,7 +46,23 @@ ht-degree: 3%
 
 ## 同意に関するレポートとフィルタリング
 
-同意に関するレポートとフィルタリングは、それぞれ別の機能です。 同意レポートを単独で有効にすることも、レポートとフィルタリングの両方を同時に有効にすることもできます。
+同意に関するレポートとフィルタリングは、それぞれ別の機能です。 **同意レポート**&#x200B;を使用すると、Analysis Workspaceを使用して、Experience Platform プロファイルデータセットで設定されているさまざまな同意ポリシーに一致する訪問者をレポートできます。 **同意フィルタリング**&#x200B;は、取り込み時に同意しない訪問者を除外するようにCustomer Journey Analyticsに指示します。
+
+同意レポートまたはフィルタリングを個別に有効にすることも、両方を併用することもできます。 同意の報告のみを有効にすることは、多くのビジネスのユースケースで十分です。
+
+次の情報では、各設定を使用する理由について説明します。
+
+* **最も一般的：**
+
+  **レポートに同意データを使用する（フィルタリングなし）**：この設定は、Analysis Workspaceで同意ポリシーメンバーシップを分析する場合に便利で、取り込みから訪問者データを除外する必要がない場合に便利です。
+
+* **あまり一般的でない：**
+
+  **同意データをレポートに使用し、同意データをフィルタリングします**：この設定は、Analysis Workspaceで同意ポリシーメンバーシップデータを分析する場合や、取り込み時に同意しない訪問者データを除外する必要がある場合に便利です。
+
+* **共通：**
+
+  **同意データのフィルター（レポートなし）**：この設定は一般的ではありませんが、取り込み時に同意しない訪問者データを除外する必要がある組織で、フィルターされたデータに含まれていない他の同意の選択についてレポートを作成する必要がない場合に役立つ可能性があります。 たとえば、組織のコンプライアンス要件では、レポートで使用する同意ポリシー検索データセットを作成および維持することなく、同意にもとづいてデータをフィルタリングすることを義務付けている場合があります。
 
 ### 同意レポート
 
@@ -79,10 +86,12 @@ ht-degree: 3%
 
   マーケティングアクションは、データ使用のカテゴリです。 Customer Journey Analyticsは、各マーケティングアクションに適用される同意ポリシーを決定し、[設定の作成時に、各マーケティングアクションに対するフィルタリングを個別に有効にします](/help/connections/consent-reporting-filtering/consent-configure.md#create-a-configuration)。
 
+  マーケティングアクションは、Experience Platformで設定したデータ使用ラベルとポリシーに関連付けられます。 詳しくは、[ ラベル、ポリシー、およびマーケティングアクション ](/help/data-views/data-governance.md)を参照してください。
+
   | マーケティングアクション | 説明 |
-  |---------|----------|
-  | **[!UICONTROL Analytics データ]** | Analysis Workspace の標準的な Customer Journey Analytics レポート。 |
-  | **[!UICONTROL データサイエンスデータ]** | 高度な分析、機械学習、データサイエンスのユースケース。 |
+  | --------- | ---------- |
+  | **[!UICONTROL Analytics データ]** | Analysis Workspaceの標準Customer Journey Analytics レポートに使用されるフィルターデータ。 |
+  | **[!UICONTROL データサイエンスデータ]** | 高度な分析、マシンラーニング、データサイエンスのユースケースに使用されるデータをフィルタリングします。 |
 
 * 訪問者のデータは、訪問者が該当する同意ポリシー&#x200B;**all**&#x200B;に一致する場合にのみ取り込まれます。 訪問者に該当するポリシーがない場合、その訪問者のデータは除外されます。
 
@@ -111,12 +120,12 @@ Customer Journey Analyticsで利用可能な同意ポリシーデータを使用
 | 機能 | Customer Journey Analyticsの役割または権限の要件 | Experience Platformの権限の要件 |
 |---------|----------|----------|
 | [同意レポートとフィルター設定の作成](/help/connections/consent-reporting-filtering/consent-configure.md) | システム管理者 | <ul><li>データセット：読み取り、書き込み</li><li>スキーマ：読み取り、書き込み</li></ul> <p>同意ポリシーメンバーシップデータを含むプロファイルデータセットには、読み取りアクセスが必要です。 同意ポリシーのルックアップデータセットが作成され、同期されているため、書き込みアクセスが必要です。</p> |
-| データビューでの同意ポリシーコンポーネントの表示 | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
+| データビューでの同意ポリシーコンポーネントの表示 | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
 | Analysis Workspaceの同意ポリシーコンポーネントの使用 | 同意ポリシーコンポーネントが追加されたデータビューへのアクセス | 該当なし |
 
 ## 同意レポートとフィルタリングのユースケース
 
-同意レポートとフィルタリングが提供する値を強調表示するユースケースの例については、[同意レポートとフィルタリングのユースケース &#x200B;](/help/connections/consent-reporting-filtering/consent-use-cases.md)を参照してください。
+同意レポートとフィルタリングが提供する値を強調表示するユースケースの例については、[同意レポートとフィルタリングのユースケース ](/help/connections/consent-reporting-filtering/consent-use-cases.md)を参照してください。
 
 ## 同意に関するレポートとフィルタリングの制限
 
