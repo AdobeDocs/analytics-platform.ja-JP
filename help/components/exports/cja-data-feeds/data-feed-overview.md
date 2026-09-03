@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 230
-ht-degree: 20%
+source-wordcount: 252
+ht-degree: 18%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 20%
 {{release-limited-testing}}
 
 データフィードは、Customer Journey Analyticsから生データを取得する強力な方法です。 自社の裁量により、Adobe以外のプラットフォームでもこの生データを使用できます。 データは、各時間の終了時に時間単位のバッチで、または毎日の終わりに日単位のバッチで配信されます。
+
+テーブルの書き出しなど、他のCustomer Journey Analytics書き出し方式とのデータフィードの比較については、[Analytics製品の比較](/help/getting-started/analytics-product-comparison.md)を参照してください。
 
 ## 前提条件
 

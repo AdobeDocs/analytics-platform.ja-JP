@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 247c75f73f523ad60b2576c478cde930af87a97e
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 1607
+source-wordcount: 1629
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 0%
 Customer Journey AnalyticsとAdobe Analyticsの両方のデータフィードでは、生データをサードパーティのプラットフォームに書き出すことができます。
 
 以前にAdobe Analyticsでデータフィードを使用したことがある場合は、次の情報を使用して、使用可能な機能と概念の違いを把握します。
+
+テーブルの書き出しなど、他のCustomer Journey Analytics書き出し方式とのデータフィードの比較については、[Analytics製品の比較](/help/getting-started/analytics-product-comparison.md)を参照してください。
 
 ## Customer Journey Analytics データフィードでのみ使用できる機能
 

@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: fdd9b5738103166d7c64666f85d0c508c7176fd0
+source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4178
+source-wordcount: 4217
 ht-degree: 21%
 
 ---
@@ -77,6 +77,15 @@ ht-degree: 21%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="必要なディメンション"
+>abstract="すべてのデータフィードには、ディメンション名の横に&#x200B;**必須** ラベルで識別される特定のディメンションを含める必要があります。 これらのディメンションは、イベントレベルの分析に必要な最小限の構造を提供します。"
+
+<!-- markdownlint-enable MD034 -->
+
 1. Adobe ID の資格情報を使用して [experiencecloud.adobe.com](https://experiencecloud.adobe.com) にログインします。
 
 1. インターフェイスの右上にあるアプリ切り替えボタン![アプリ](/help/assets/icons/Apps.svg)から「[!UICONTROL **Customer Journey Analytics**]」を選択します。
@@ -114,13 +123,13 @@ ht-degree: 21%
 
    ここで適用するセグメントは、データビューですでに適用されている可能性のあるセグメントに加えたものです。
 
-1. （オプション）左側のパネルで、**検索** フィールドを使用して特定のコンポーネントを検索するか、**並べ替え** アイコン ![並べ替えコンポーネントアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)を選択して、次のいずれかの並べ替えオプションを適用します。
+1. （オプション）左側のパネルで、**検索** フィールドを使用して、特定のコンポーネントを検索します。 または、**並べ替え** アイコン ![&#x200B; コンポーネントの並べ替えアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)を選択して、次のいずれかの並べ替えオプションを適用します。
 
    | オプション | 関数 |
-   |---------|----------|
+   | --------- | ---------- |
    | [!UICONTROL **推奨**] | コンポーネントを並べ替え、推奨されるコンポーネントをリストの上部に表示します。 自分や組織内の他のユーザーが最も頻繁に使用し、最近使用したコンポーネントがリストの上位に表示されます。 |
    | [!UICONTROL **アルファベット順**] | コンポーネントをアルファベット順に並べ替えます。 |
-   | [!UICONTROL **分類**] | コンポーネントタイプ（ディメンション、指標、セグメント、日付範囲）に従ってコンポーネントを並べ替えます。 |
+   | [!UICONTROL **分類**] | 計算指標と標準指標が混在せずに個別にグループ化される点を除き、[!UICONTROL **おすすめ**]&#x200B;と同様のコンポーネントを並べ替えます。 |
 
 1. データフィード設定にコンポーネントを追加します。 左側のパネルには、データフィードに有効なコンポーネントのみが表示されます。
 
