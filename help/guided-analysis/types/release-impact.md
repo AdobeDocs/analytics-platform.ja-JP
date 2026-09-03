@@ -36,7 +36,7 @@ ht-degree: 100%
 
 ![リリース](/help/assets/icons/Release.svg) **[!UICONTROL リリースの影響]**&#x200B;分析では、特定の日付の前後の主要指標のパフォーマンスの比較が表示されます。 このレポートの横軸は時間間隔を、縦軸は目的の主要指標を示します。 グラフの中央にある縦棒は、前後を比較する日付を表します。 この日付は通常、製品の更新やキャンペーンのローンチなど、測定したい製品の重要な変更を表します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423451/?captions=jpn&quality=12&learn=on)
 
 ## ユースケース
 
