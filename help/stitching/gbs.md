@@ -35,7 +35,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->[ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home)は、追加のライセンスを必要としないコア Experience Platform サービスです。 詳しくは、[Experience Platform インフラストラクチャ内のID サービスの役割について](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)を参照してください。
+>[ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home)は、追加のライセンスを必要としないコア Experience Platform サービスです。 詳しくは、[Experience Platform インフラストラクチャ内のID サービスの役割について](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)を参照してください。
 >
 
 イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[&#x200B; データビュー](/help/data-views/data-views.md)で、人物ID データビューコンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
@@ -231,7 +231,7 @@ ht-degree: 64%
   - 関連IDを保持するすべてのデータセットは、ID グラフデータの取り込みに[有効にする必要があります](faq.md#enable-a-dataset-for-the-identity-service)。 この有効化により、受信IDがすべての必要なソースから時間の経過とともにグラフに追加されます。
   - 既にReal-Time Customer Data ProfileやAdobe Journey Optimizerを使用している場合は、グラフを既にある程度設定しておく必要があります。<br/> グラフベースのステッチで有効になっているデータセットに過去のステッチ バックフィルも必要な場合、グラフには目的のステッチ結果を取得するために、ピリオド全体の過去のIDが既に含まれている必要があります。
 - グラフベースのステッチを使用する場合、イベントデータセットがID グラフに貢献することを想定している場合は、[ID サービスのデータセットを有効にする](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)必要があります。
-- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)として定義する必要があります。
+- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity?lang=en)として定義する必要があります。
 
 >[!NOTE]
 >

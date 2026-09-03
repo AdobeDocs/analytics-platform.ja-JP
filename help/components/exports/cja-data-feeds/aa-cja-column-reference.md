@@ -45,7 +45,7 @@ Adobe AnalyticsとCustomer Journey Analytics データフィード列の間の�
 
 >[!NOTE]
 >
->この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
+>この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
 
 +++**`accept_language`**
 
@@ -166,7 +166,7 @@ User-Agent クライアントヒント JavaScript API を通じて収集され�
 
 Adobe Analyticsでは、クライアントヒントがこの列に連結された文字列として含まれていました。 `user_agent`列よりも現代的なアプローチと見なされます。
 
-Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) コンテキスト文字列を使用して、このデータを収集できます。 1つの長い連結された文字列の代わりに、複数のXDM フィールドが入力されます。
+Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/configure/context) コンテキスト文字列を使用して、このデータを収集できます。 1つの長い連結された文字列の代わりに、複数のXDM フィールドが入力されます。
 
 * **オペレーティングシステムのバージョン**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
 * **アーキテクチャ**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
@@ -176,7 +176,7 @@ Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.ado
 * **ブラウザー名**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **ブラウザーバージョン**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-詳しくは、[&#x200B; ユーザーエージェントクライアントヒント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
+詳しくは、[&#x200B; ユーザーエージェントクライアントヒント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
 
 {{cja-df-ua}}
 
@@ -322,7 +322,7 @@ Customer Journey Analyticsには、タイムスタンプと非タイムスタン
 
 `visitorID` を使用して設定されている場合のカスタム訪問者 ID。
 
-Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)を使用して任意の数のIDをサポートします。 組織でカスタム IDを使用している場合は、ID マップ内にある可能性があります。
+Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/profile/identitymap)を使用して任意の数のIDをサポートします。 組織でカスタム IDを使用している場合は、ID マップ内にある可能性があります。
 
 {{cja-df-post}}
 
@@ -388,7 +388,7 @@ Customer Journey AnalyticsにはVISTA ルールの概念がないため、この
 
 {{cja-df-na}}
 
-Customer Journey Analyticsには、すべての指標の重複排除フラグとして機能する単一のフィールドはありません。 代わりに、各指標には独自の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)が含まれます。 そのため、このAdobe Analytics データフィード列に対応するフィールドはCustomer Journey Analyticsにありません。
+Customer Journey Analyticsには、すべての指標の重複排除フラグとして機能する単一のフィールドはありません。 代わりに、各指標には独自の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)が含まれます。 そのため、このAdobe Analytics データフィード列に対応するフィールドはCustomer Journey Analyticsにありません。
 
 +++
 
@@ -396,7 +396,7 @@ Customer Journey Analyticsには、すべての指標の重複排除フラグと
 
 このヒットの購入イベントが重複しているので無視されるかどうかを判定するフラグ。
 
-このAnalytics データフィード列への直接翻訳はありませんが、購入の重複を排除する機能は引き続き存在します。 [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、**[!UICONTROL 重複排除ID]**&#x200B;が`xdm.commerce.purchases.id`の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)を設定できます。
+このAnalytics データフィード列への直接翻訳はありませんが、購入の重複を排除する機能は引き続き存在します。 [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、**[!UICONTROL 重複排除ID]**&#x200B;が`xdm.commerce.purchases.id`の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)を設定できます。
 
 重複する購入のフラグを設定する場合に直接翻訳が必要な場合は、ルールセットの&#x200B;**Deduplicate**&#x200B;関数を使用して[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を使用できます。
 
@@ -431,7 +431,7 @@ Adobe Advertising統合で使用されるEF ID。
 
 {{cja-df-post}}
 
-スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
+スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
 
 * **チェックアウト**: `xdm.commerce.checkouts.value`
 * **買い物かごに追加**: `xdm.commerce.productListAdds.value`
@@ -444,7 +444,7 @@ Adobe Advertising統合で使用されるEF ID。
 一部の指標では、Adobe Analyticsで重複排除を完全に制御できるイベントのシリアル化を使用する場合があります。 [指標の重複排除](/help/data-views/component-settings/metric-deduplication.md) コンポーネント設定を使用して、重複排除パリティを実現できます。
 
 * Adobe Analyticsで訪問別に指標の重複排除を行う場合は、その指標のコンポーネント設定で重複排除スコープをセッションに設定できます。
-* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
+* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
 
   * **チェックアウト**: `xdm.commerce.checkouts.id`
   * **買い物かごに追加**: `xdm.commerce.productListAdds.id`
@@ -463,7 +463,7 @@ Adobe Advertising統合で使用されるEF ID。
 
 Customer Journey Analyticsは、標準搭載の「除外されたヒット」を尊重しません。 ただし、特定のヒットを除外するようにフラグを付けるXDM フィールドがある場合は、この機能を再作成できます。
 
-1. 除外されたヒットをフラグするXDM フィールドが、コンポーネント（ディメンションまたは指標）として含まれていることを確認します（このフラグの設定方法に応じて）。 レポート [&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)で「非表示」コンポーネントを選択すると、このフィールドに有益である可能性が高いです。
+1. 除外されたヒットをフラグするXDM フィールドが、コンポーネント（ディメンションまたは指標）として含まれていることを確認します（このフラグの設定方法に応じて）。 レポート [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/overview)で「非表示」コンポーネントを選択すると、このフィールドに有益である可能性が高いです。
 1. [&#x200B; データビュー設定](/help/data-views/session-settings.md)で、**[!UICONTROL セグメントを追加]** ドロップダウンメニューを選択し、**[!UICONTROL セグメントを作成]**&#x200B;を選択します。
 1. 除外ヒットコンポーネントが存在するすべてのイベント、または除外する値を含むすべてのイベントを除外するセグメントを作成します。
 1. セグメントとデータビューの両方で&#x200B;**[!UICONTROL 保存]**&#x200B;を選択します。

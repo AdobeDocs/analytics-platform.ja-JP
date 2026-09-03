@@ -60,8 +60,8 @@ Content Analyticsはスタンドアロン製品としてライセンスされて
 | **接続** | [Connections](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/overview)は、取り込むExperience Platform データセットを定義します。 接続は、データセット（データがAEPに保存される場所）とCustomer Journey Analytics（分析される場所）の間のリンクを定義します。 接続により、収集したデータをレポートに利用できるようになります。 |
 | **データビュー** | [&#x200B; データビュー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views)は、接続からデータを解釈する方法を決定できるコンテナです。 データビューとは、レポートで利用できるすべてのディメンションと指標を指定します。 データビューは、分析で使用できる行と列を決定する設定のようなものです。 |
 | **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/home)は、Content Analytics レポートや分析の作成に使用するドラッグ&amp;ドロップ操作のブラウザーインターフェイスです。 |
-| **エクスペリエンス** | Content Analyticsでは、[&#x200B; エクスペリエンス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)とは、web ページ上のすべてのテキストコンテンツを指します。このコンテンツは、ページ URLに基づいてキャプチャおよび分析できます。 |
-| **アセット** | Content Analyticsでは、[&#x200B; アセット &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)は、画像のような個別でユニークなコンテンツです。 |
+| **エクスペリエンス** | Content Analyticsでは、[&#x200B; エクスペリエンス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics#terminology)とは、web ページ上のすべてのテキストコンテンツを指します。このコンテンツは、ページ URLに基づいてキャプチャおよび分析できます。 |
+| **アセット** | Content Analyticsでは、[&#x200B; アセット &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics#terminology)は、画像のような個別でユニークなコンテンツです。 |
 
 
 ## 設定の概要

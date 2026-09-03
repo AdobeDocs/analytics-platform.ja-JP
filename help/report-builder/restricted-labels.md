@@ -51,7 +51,7 @@ Customer Journey Analyticsでは、レポート、ダウンロード、共有に
 
 これらのポリシーの対象となるコンポーネントはグレー表示され、![InfoOutline](/help/assets/icons/InfoOutline.svg) アイコンがあります。 情報アイコンにカーソルを合わせると、次の情報を示すメモが表示されます。**[!UICONTROL このデータの使用を禁止するポリシーがこのフィールドに適用されました]**。
 
-詳しくは、[&#x200B; ラベルとポリシー](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance)を参照してください。
+詳しくは、[&#x200B; ラベルとポリシー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-governance)を参照してください。
 
 
 ![&#x200B; データの使用禁止を示すポリシーノート。](assets/restricted-label.png){zoomable="yes"}

@@ -57,7 +57,7 @@ Quantum Metricは、ページ読み込みの遅さ、ページ読み込みエラ
 
 ## ステップ 2：量子指標タグ拡張機能を使用してフリクションイベントをキャプチャする
 
-量子指標データを含めるようにタグを設定する方法については、Adobe Experience Platform Destinations ガイドの[量子指標の拡張機能](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)を参照してください。 この拡張機能を使用すると、既存のデータセットにさらに行が渡されます。
+量子指標データを含めるようにタグを設定する方法については、Adobe Experience Platform Destinations ガイドの[量子指標の拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/analytics/quantum-metric)を参照してください。 この拡張機能を使用すると、既存のデータセットにさらに行が渡されます。
 
 Adobe Experience Platform Data Collectionのタグを使用して、摩擦イベントの名前を手動で設定し、XDM オブジェクトに含めて分析できるようにします。 これを行う方法の1つは、ルールのカスタムコードにあります。
 

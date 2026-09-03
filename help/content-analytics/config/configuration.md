@@ -58,7 +58,7 @@ Content Analytics を設定する前に、次の前提条件が満たされて�
 ### Web
 
 * Content Analytics で使用するフィーチャライゼーションサービスのユーザーエージェントと IP アドレスを許可リストに登録しています。 設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>。
-* 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code> JavaScript ライブラリを使用していることを確認します。
+* 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code> JavaScript ライブラリを使用していることを確認します。
 * Customer Journey Analytics 製品管理者の役割を持ち、接続の管理とデータビューの管理を行う権限が付与されています。
 * Content Analytics エクスペリエンスを収集する場合は、web ページの変更に基づいてContent Analyticsのバージョン管理を設定および更新してください。
 * [データ収集には必要な権限](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions){target="_blank"}：

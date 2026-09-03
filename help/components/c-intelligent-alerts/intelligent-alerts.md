@@ -41,7 +41,7 @@ Customer Journey Analytics のアラートを使用すると、変更された�
   * 指標の変化を特定の割合で表示。
   * 特定の値の上、下、または等しい指標。 （Select、Prime、またはUltimate パッケージを含むAdobe Analyticsのお客様のみが利用できます）
 
-この[&#x200B; ビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts)では、アラートの基本的な概要を説明します。
+この[&#x200B; ビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/data-science/intelligent-alerts)では、アラートの基本的な概要を説明します。
 
 
 

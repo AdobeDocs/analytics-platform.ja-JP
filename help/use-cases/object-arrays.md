@@ -285,5 +285,5 @@ Customer Journey Analyticsでは、同じ名前の指標が異なるオブジェ
 
 ## 制限事項
 
-Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [&#x200B; リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[&#x200B; データモデルの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)」と「[&#x200B; データサイズの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
+Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [&#x200B; リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[&#x200B; データモデルの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-model-limits)」と「[&#x200B; データサイズの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
 

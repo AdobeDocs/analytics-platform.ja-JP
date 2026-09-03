@@ -77,7 +77,7 @@ ht-degree: 48%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -173,19 +173,19 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 
 | 名前 | 説明 |
 |------|-------------|
-| [&#x200B; コンテンツ ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | 再生されるコンテンツの一意のID。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ ID]** ラジオボタンを有効にします。 |
-| [&#x200B; コンテンツ滞在時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | 広告を除くコンテンツの閲覧にかかった時間。 [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ滞在時間]**&#x200B;詳細設定を有効にします。 |
-| [&#x200B; エピソード &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | シリーズ内のエピソード番号 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、エピソード別のフィルタリングを有効にします。 |
+| [&#x200B; コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content) | 再生されるコンテンツの一意のID。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ ID]** ラジオボタンを有効にします。 |
+| [&#x200B; コンテンツ滞在時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/content-time-spent) | 広告を除くコンテンツの閲覧にかかった時間。 [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ滞在時間]**&#x200B;詳細設定を有効にします。 |
+| [&#x200B; エピソード &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/episode) | シリーズ内のエピソード番号 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、エピソード別のフィルタリングを有効にします。 |
 | イベントタイプ | `media.play`や`media.ping`などのメディアイベントタイプ。 Customer Journey Analyticsで[&#x200B; メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)の派生指標を計算するために必要です。 |
-| [&#x200B; メディア滞在時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | コンテンツ、広告、バッファリング、一時停止などの合計時間。 [&#x200B; メディア平均分オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの[&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md) パネルと&#x200B;**[!UICONTROL メディア滞在時間]**&#x200B;詳細設定を有効にします。 |
-| [&#x200B; シーズン &#x200B;](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | シリーズ内の季節番号。 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、季節ごとのフィルタリングを有効にします。 |
+| [&#x200B; メディア滞在時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/media-time-spent) | コンテンツ、広告、バッファリング、一時停止などの合計時間。 [&#x200B; メディア平均分オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの[&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md) パネルと&#x200B;**[!UICONTROL メディア滞在時間]**&#x200B;詳細設定を有効にします。 |
+| [&#x200B; シーズン &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/season) | シリーズ内の季節番号。 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、季節ごとのフィルタリングを有効にします。 |
 | 前回の呼び出しからの経過時間（秒） | 前回のハートビート pingからの秒単位の時間。 Customer Journey Analyticsで[&#x200B; メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生指標を計算するために必要です。この指標は、セッションが引き続きアクティブな場合を識別します。 |
-| [表示](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | プログラムまたはシリーズ名。 [&#x200B; メディア分平均オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルでの表示別フィルタリングを有効にします。 |
-| [開始までの時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | コンテンツの選択から再生が開始されるまでの時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [合計バッファー期間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | セッション中にバッファリングに費やされた合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [合計一時停止の期間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | セッション中に一時停止された合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [&#x200B; ビデオの長さ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | コンテンツのデュレーション（秒単位）: [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL 特定コンテンツ]** モードに必要です。 |
-| [&#x200B; ビデオ名](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | コンテンツの表示名。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL ビデオ名]** ラジオボタンを有効にします。 |
+| [表示](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/show) | プログラムまたはシリーズ名。 [&#x200B; メディア分平均オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルでの表示別フィルタリングを有効にします。 |
+| [開始までの時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/time-to-start) | コンテンツの選択から再生が開始されるまでの時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [合計バッファー期間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | セッション中にバッファリングに費やされた合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [合計一時停止の期間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/total-pause-duration) | セッション中に一時停止された合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [&#x200B; ビデオの長さ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content-length) | コンテンツのデュレーション（秒単位）: [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL 特定コンテンツ]** モードに必要です。 |
+| [&#x200B; ビデオ名](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content-name) | コンテンツの表示名。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL ビデオ名]** ラジオボタンを有効にします。 |
 
 +++
 

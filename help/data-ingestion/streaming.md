@@ -256,7 +256,7 @@ HTTP API ソースコネクタを作成するには：
 
 ストリーミングエンドポイント URL をコピーし、それを使用して、Adobe Experience Platform ロイヤルティデータセットにデータをストリーミングするようロイヤルティアプリケーションを設定できます。
 
-より包括的なチュートリアルについては、[UIを使用したHTTP API ストリーミング接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html)を参照してください。
+より包括的なチュートリアルについては、[UIを使用したHTTP API ストリーミング接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=ja)を参照してください。
 
 - 認証の使用方法，
 - 受信データがXDM スキーマと互換性がない場合にデータをマッピングする方法

@@ -68,7 +68,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ### Last-auth attribution
 
-Last-authは、共有デバイスのすべての不明なアクティビティを、最後に認証されたユーザーに属性します。 Experience Platform Identity Serviceは、last-auth アトリビューションに基づいてグラフベースを構築するため、グラフベースの合成に使用されます。 詳細については、[ID グラフ リンク ルール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)を参照してください。
+Last-authは、共有デバイスのすべての不明なアクティビティを、最後に認証されたユーザーに属性します。 Experience Platform Identity Serviceは、last-auth アトリビューションに基づいてグラフベースを構築するため、グラフベースの合成に使用されます。 詳細については、[ID グラフ リンク ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details)を参照してください。
 
 ステッチでlast-auth アトリビューションを使用する場合、ステッチ IDは次の表のように解決されます。
 

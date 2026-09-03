@@ -159,7 +159,7 @@ Adobe Adobe Analyticsを導入する際は、次の点に重点を置いて徹�
 
   * [Customer Journey Analytics チュートリアル](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview)
 
-  * [Customer Journey Analytics とは](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+  * [Customer Journey Analytics とは](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
   * [Customer Journey Analytics の概要](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 

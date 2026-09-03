@@ -103,7 +103,7 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
    | フィールド | 説明 |
    |---------|----------|
    | **[!UICONTROL 結合ポリシー]** | オーディエンス分析に使用するプロファイルデータセットに対応する、結合ポリシーを選択します。 <p>結合ポリシーは、Adobe Experience Platformが複数のデータセットからのプロファイルデータを、オーディエンス作成に使用される統合顧客プロファイルにどのように組み合わせるかを決定します。 選択した結合ポリシーは、オーディエンスに含まれるプロファイルの属性に影響します。 毎日、このデータのスナップショットがExperience Platformで生成されます。 このスナップショットは、特定の時点のデータの静的ビューを提供します。イベントデータは含まれません。</p><p>複数の結合ポリシーが表示されていて、どの結合ポリシーを選択すべきかわからない場合は、**[!UICONTROL デフォルトのタイムベース]**&#x200B;結合ポリシーを選択します。 また、データチームに相談して、各結合ポリシーに関連付けられているオーディエンスをより詳細に把握することもできます。</p> |
-   | **[!UICONTROL プロファイルデータセット]** | 選択した結合ポリシーに関連付けられているプロファイルデータセット。 このプロファイルデータセットには、分析するExperience Platform オーディエンスデータが含まれています。 このプロファイルデータセットは、選択した接続に追加されます。<p>結合ポリシーを選択すると、プロファイル スナップショットの書き出しが表示されます。 例：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>詳しくは、Experience Platform ダッシュボードガイドの[&#x200B; プロファイル属性データセット &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets)を参照してください。</p> |
+   | **[!UICONTROL プロファイルデータセット]** | 選択した結合ポリシーに関連付けられているプロファイルデータセット。 このプロファイルデータセットには、分析するExperience Platform オーディエンスデータが含まれています。 このプロファイルデータセットは、選択した接続に追加されます。<p>結合ポリシーを選択すると、プロファイル スナップショットの書き出しが表示されます。 例：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>詳しくは、Experience Platform ダッシュボードガイドの[&#x200B; プロファイル属性データセット &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/dashboards/query#profile-attribute-datasets)を参照してください。</p> |
 
 1. **[!UICONTROL 接続]** セクションで、**[!UICONTROL 接続を選択]**&#x200B;をクリックします。
 
@@ -119,7 +119,7 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
    | **[!UICONTROL プライマリ ID名前空間を使用]** | このオプションは、人物IDに「**[!UICONTROL ID マップ]**」を選択した場合に表示されます。 <p>Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Adobe Experience Platform でのパーティション分割に使用されるプライマリキーです。 また、この ID は、Customer Journey Analytics のユーザー ID として使用する主な候補でもあります（Customer Journey Analytics 接続でのデータセットの設定方法に応じて異なります）。</p> |
    | **[!UICONTROL ID 名前空間]** | このオプションは、人物IDに「**[!UICONTROL ID マップ]**」を選択した場合に表示されます。 プライマリ ID名前空間を使用する場合、このオプションは無効になります。 <p>ID 名前空間は、[Experience Platform ID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)のコンポーネントです。 名前空間は、ID が関連付けられているコンテキストを示します。 名前空間を指定すると、Customer Journey Analyticsは、各行のID マップでこの名前空間キーを検索し、その名前空間のIDをその行の人物IDとして使用します。 Customer Journey Analyticsでは、すべての行に対して完全なデータセットスキャンを実行して、どの名前空間が存在するかを判断することはできないので、使用可能なすべての名前空間がドロップダウンメニューに表示されます。 データ内で指定されている名前空間を把握しておく必要があります。これらの名前空間は自動検出されません。</p> |
 
-   <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->
+   <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->
 
 1. **[!UICONTROL データビュー]** セクションで、**[!UICONTROL データビューを選択]**&#x200B;をクリックします。
 
