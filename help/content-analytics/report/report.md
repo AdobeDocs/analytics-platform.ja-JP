@@ -6,11 +6,22 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
 source-wordcount: 1365
@@ -25,11 +36,11 @@ ht-degree: 48%
 
 独自のContent Analytics レポートをゼロから作成するには、次の手順に従います。
 
-1. [新しいプロジェクト ](/help/analysis-workspace/build-workspace-project/create-projects.md)を作成するか、Workspaceで[既存のプロジェクト ](/help/analysis-workspace/build-workspace-project/open-projects.md)を開きます。
+1. [新しいプロジェクト &#x200B;](/help/analysis-workspace/build-workspace-project/create-projects.md)を作成するか、Workspaceで[既存のプロジェクト &#x200B;](/help/analysis-workspace/build-workspace-project/open-projects.md)を開きます。
 1. Content Analytics レポート用に[データビューを選択](/help/analysis-workspace/c-panels/panels.md#data-view)します。 Content Analytics レポートは、Content Analytics で[設定](/help/content-analytics/config/configuration.md)されたデータビューでのみ使用できます。
 1. ![表](/help/assets/icons/Table.svg) [自由形式の表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)のビジュアライゼーションをキャンバスにドラッグします。
 1. [特定のコンテンツ分析コンポーネント](components.md)およびその他の汎用[コンポーネント](/help/components/overview.md)（セグメント、日付範囲、注釈など）を使用して、コンテンツ分析インサイトを作成します。
-1. 他の[ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を使用して、プロジェクトを強化します。
+1. 他の[&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を使用して、プロジェクトを強化します。
 
 
 ## サムネイル
@@ -40,7 +51,7 @@ ht-degree: 48%
 
 ![Content Analytics サムネイル](../assets/aca-thumbnails.png)
 
-デフォルトでは、サムネールは[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)に表示されます。 Content Analytics ディメンションのサムネイルの表示を設定するには：
+デフォルトでは、サムネールは[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)に表示されます。 Content Analytics ディメンションのサムネイルの表示を設定するには：
 
 * Content Analytics ディメンションのヘッダー行にポインタを合わせます。 例えば、**[!UICONTROL アセット ID]** や **[!UICONTROL エクスペリエンス ID]** などです。
 * 「![設定](/help/assets/icons/Setting.svg)」を選択します。
@@ -49,21 +60,21 @@ ht-degree: 48%
 
 ### 棒グラフ（積み上げ）と横棒グラフ（積み上げ）
 
-![棒グラフのContent Analytics サムネール ](/help/content-analytics/assets/aca-bar-thumbnail.png)
+![棒グラフのContent Analytics サムネール &#x200B;](/help/content-analytics/assets/aca-bar-thumbnail.png)
 
-サムネールは、垂直軸または水平軸に凡例の一部として表示されます。 [横棒（積み重ね） ](/help/analysis-workspace/visualizations/bar.md)と[横棒（積み重ね） ](/help/analysis-workspace/visualizations/horizontal-bar.md)の棒にカーソルを合わせると、サムネールも表示されます。
+サムネールは、垂直軸または水平軸に凡例の一部として表示されます。 [横棒（積み重ね） &#x200B;](/help/analysis-workspace/visualizations/bar.md)と[横棒（積み重ね） &#x200B;](/help/analysis-workspace/visualizations/horizontal-bar.md)の棒にカーソルを合わせると、サムネールも表示されます。
 
 
 ### 散布図
 
-![散布用Content Analyticsのサムネール ](/help/content-analytics/assets/aca-scatter-thumbnail.png)
+![散布用Content Analyticsのサムネール &#x200B;](/help/content-analytics/assets/aca-scatter-thumbnail.png)
 
 [散布図](/help/analysis-workspace/visualizations/scatterplot.md)のデータポイントにカーソルを合わせると、サムネールが表示されます。
 
 
 ### 行
 
-行](/help/content-analytics/assets/aca-line-thumbnail.png)の![Content Analytics サムネール
+行![&#128279;](/help/content-analytics/assets/aca-line-thumbnail.png)のContent Analytics サムネール
 
 [行](/help/analysis-workspace/visualizations/line.md)のデータポイントにカーソルを合わせると、サムネールが表示されます。
 
@@ -71,7 +82,7 @@ ht-degree: 48%
 
 プレビューポップアップウィンドウを開くことができます。 それには、次の手順を実行します。
 
-* [自由形式テーブル ](#freeform-table)で![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。
+* [自由形式テーブル &#x200B;](#freeform-table)で![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。
 * [棒](#bar-and-horizontal-bar)または[横棒](#bar-and-horizontal-bar) ビジュアライゼーションの特定の棒グラフ、または[散布図](#scatter) ビジュアライゼーションのデータポイントを選択します。
 
 
@@ -90,7 +101,7 @@ ht-degree: 48%
 
 ## テンプレート
 
-Content Analytics [ テンプレート ](/help/analysis-workspace/templates/use-templates.md)を使用すると、どのコンテンツとコンテンツ属性が最も効果的かを確認できます。 テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。 個々のアセットや特定の属性のパフォーマンスを確認できます。
+Content Analytics [&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md)を使用すると、どのコンテンツとコンテンツ属性が最も効果的かを確認できます。 テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。 個々のアセットや特定の属性のパフォーマンスを確認できます。
 
 学習内容に基づいて、様々な操作を行うことができます。 ホームページで高パフォーマンスのアセットをプロモートしたり、特定のセグメント向けにコンテンツをパーソナライズして高パフォーマンスの属性を含めたり、古くなり始めたコンテンツを差し替えたりできます。
 
@@ -103,7 +114,7 @@ Content Analytics [ テンプレート ](/help/analysis-workspace/templates/use-
 1. **[!UICONTROL テンプレートを設定]**&#x200B;ダイアログで、**[!UICONTROL コンバージョン指標を選択]**&#x200B;ダイアログから指標を選択します。 例えば、**[!UICONTROL アセット CTR]** を選択します。
 1. 「**[!UICONTROL 続行]**」を選択します。
 
-**[!UICONTROL Content Analytics の概要]**&#x200B;プロジェクトが [Analysis Workspace](/help/analysis-workspace/home.md) で開きます。 プロジェクトは4つの[ パネル ](/help/analysis-workspace/c-panels/panels.md)で構成され、各パネルには[自由形式テーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)と[ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)が用意され、特定の質問に答えることができます。
+**[!UICONTROL Content Analytics の概要]**&#x200B;プロジェクトが [Analysis Workspace](/help/analysis-workspace/home.md) で開きます。 プロジェクトは4つの[&#x200B; パネル &#x200B;](/help/analysis-workspace/c-panels/panels.md)で構成され、各パネルには[自由形式テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)と[&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)が用意され、特定の質問に答えることができます。
 
 **[!UICONTROL コンテンツチャネル]**&#x200B;の分類を使用して、興味のあるコンテンツチャネルのパネルを[分類](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)することができます：**[!UICONTROL web]**&#x200B;または&#x200B;**[!UICONTROL モバイル]**。
 
@@ -118,12 +129,12 @@ Content Analytics [ テンプレート ](/help/analysis-workspace/templates/use-
 
     >[!NOTE]
     >
-    >これらのビジュアライゼーションは、Content Analyticsの設定に[ エクスペリエンスを含めるようにシステムを設定した場合にのみ、テンプレートに表示されます。](/help/content-analytics/config/guided.md#experience-capture-and-definition)
+    >これらのビジュアライゼーションは、Content Analyticsの設定に[&#x200B; エクスペリエンスを含めるようにシステムを設定した場合にのみ、テンプレートに表示されます。](/help/content-analytics/config/guided.md#experience-capture-and-definition)
     > 
 
     * **Experience CTR**: Experience CTRを示す[要約変更](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
     * **上位のコンバージョンエクスペリエンス**：選択したコンバージョン指標に基づいて、上位のコンバージョンエクスペリエンスを表示する[横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md)ビジュアライゼーション。
-    * **パフォーマンスが最も高いエクスペリエンス**：パフォーマンスが最も高いエクスペリエンスの[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[ サムネール ](#thumbnails)と[ プレビュー](#previews)を含む）。
+    * **パフォーマンスが最も高いエクスペリエンス**：パフォーマンスが最も高いエクスペリエンスの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[&#x200B; サムネール &#x200B;](#thumbnails)と[&#x200B; プレビュー](#previews)を含む）。
 
   * **Assets**
 
@@ -132,7 +143,7 @@ Content Analytics [ テンプレート ](/help/analysis-workspace/templates/use-
     * **最もコンバージョン率の高いアセット**
       選択したコンバージョン指標に基づいて、最もコンバージョン率の高いアセットを表示する[横長バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
     * パフォーマンスが最も高いアセット **件**
-      パフォーマンスが最も高いアセットの[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[ サムネール ](#thumbnails)と[ プレビュー](#previews)を含む）。
+      パフォーマンスが最も高いアセットの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[&#x200B; サムネール &#x200B;](#thumbnails)と[&#x200B; プレビュー](#previews)を含む）。
       Assets - コンバージョンと比較したビュー。
       アセットビューとアセット変換の散布図を表示する[散布図](/help/analysis-workspace/visualizations/scatterplot.md) ビジュアライゼーション。
 
@@ -144,11 +155,11 @@ Content Analyticsは、AIと生成AIを活用して、被写体、シーン、�
   * **過去30日間に最も多くコンバージョンしたアセット属性**
     選択したコンバージョン指標に基づいて、過去30日間と比較して、最もコンバージョン率の高いアセット属性を示す[横長バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
   * **アセット属性データの変換上位**
-    選択したコンバージョン指標に基づいて最もコンバージョン率の高い属性を表示する[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、属性トレンドビジュアライゼーションを更新します。
+    選択したコンバージョン指標に基づいて最もコンバージョン率の高い属性を表示する[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、属性トレンドビジュアライゼーションを更新します。
   * **属性トレンド**
     選択したコンバージョン上位アセット属性の属性傾向を示す[行](/help/analysis-workspace/visualizations/line.md)のビジュアライゼーション。
   * **アセットの描画色**
-    単一のアセット属性カテゴリの項目のパフォーマンスを比較する例[自由形式テーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)：描画色。 このアセット属性は、他のアセット属性カテゴリディメンションに置き換えることができます。
+    単一のアセット属性カテゴリの項目のパフォーマンスを比較する例[自由形式テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)：描画色。 このアセット属性は、他のアセット属性カテゴリディメンションに置き換えることができます。
 
 * **コンバージョンに貢献するエクスペリエンス属性はどれですか？**
 
@@ -166,11 +177,11 @@ Content Analyticsは、AIと生成AIを活用して、被写体、シーン、�
     過去30日間と比較した、コンバージョン率の高いエクスペリエンス属性
     選択したコンバージョン指標に基づいて、過去30日間と比較して、最もコンバージョン率の高いエクスペリエンス属性を示す[水平バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
   * **変換中のエクスペリエンス属性データ**
-    選択したコンバージョン指標に基づいて、最もコンバージョン率の高いエクスペリエンスを表示する[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、折れ線グラフのビジュアライゼーションを更新します。
+    選択したコンバージョン指標に基づいて、最もコンバージョン率の高いエクスペリエンスを表示する[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、折れ線グラフのビジュアライゼーションを更新します。
   * **行**
     選択したコンバージョン上位のエクスペリエンス属性の傾向を示す[行](/help/analysis-workspace/visualizations/line.md)のビジュアライゼーション。
   * **エクスペリエンスキーワード**
-    選択したコンバージョン指標に基づく上位エクスペリエンス キーワードを表示する[ フリーフォーム テーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
+    選択したコンバージョン指標に基づく上位エクスペリエンス キーワードを表示する[&#x200B; フリーフォーム テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
 
 * **アセットはサイトのどこに表示されますか？**
 このフリーフォームテーブルは、最も閲覧されたアセットが表示される場所を詳細に示します。 この分析を利用して、パフォーマンスの高いページを特定し、アセットの配置を最適化することができます。

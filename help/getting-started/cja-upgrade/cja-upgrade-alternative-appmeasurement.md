@@ -7,11 +7,23 @@ feature: Basics
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 autotag-review: '2026-05-19T08:09:06.554Z'
 TQID: 'https://experienceleague.adobe.com/cSQZN7LEW6pSXeW-V1HMJPkdyxrxSeUUM-DjqMax8Ho'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1384
@@ -47,7 +59,7 @@ AppMeasurementまたはAnalytics拡張機能のデータ収集ロジックをWeb
 
 ## メリットとデメリット
 
-このメソッドは、両方のメソッドが同じタスクを実行するため、[ データレイヤー全体をCustomer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)に送信する場合は相互に排他的です。 （この方法は、データレイヤー全体をAdobeに送信するのに適しています。 propとeVarはすべてdata.__ adobe.analytics._variable-name_）を経由するため、より洗練されています。
+このメソッドは、両方のメソッドが同じタスクを実行するため、[&#x200B; データレイヤー全体をCustomer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)に送信する場合は相互に排他的です。 （この方法は、データレイヤー全体をAdobeに送信するのに適しています。 propとeVarはすべてdata.__ adobe.analytics._variable-name_）を経由するため、より洗練されています。
 
 このアップグレードの代替手段を使用する場合は、次の利点と欠点を考慮してください。
 
@@ -77,7 +89,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。
+      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。
 
    1. スキーマの選択。
 
@@ -103,7 +115,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データストリームマッピングを使用すると、データオブジェクトのすべてのフィールドをXDM スキーマにマッピングできます。
 
-      詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)の[ マッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
+      詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
 
 {{upgrade-final-step}} を参照してください。
 

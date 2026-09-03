@@ -6,11 +6,25 @@ feature: Content Analytics
 role: Admin
 exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
 TQID: https://experienceleague.adobe.com/gWxcD93bl5qrSNaMf1CJF4yoIUrAg6qUF8b-4RXLquQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2: id: a67cb189-a535-41f6-afa2-448f39c4759f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: a67cb189-a535-41f6-afa2-448f39c4759f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 2631
@@ -38,16 +52,16 @@ Content Analyticsはスタンドアロン製品としてライセンスされて
 
 | 用語 | 説明 |
 |---|---|
-| **スキーマ** | [ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)は、データの構造と形式を表し、検証する一連のルールです。 スキーマでは、web サイト上で発生するイベント（クリックなど）など、実際のオブジェクトの抽象的な定義を提供します。 そのオブジェクトの各インスタンスに含めるデータを定義できます。 |
-| **データセット** | [ データセット ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)は、スキーマ（列）とフィールド（行）を含むデータのコレクション（通常はテーブル）のストレージおよび管理構造です。 データセットは、各行がweb サイトのイベントであるデータベーステーブルのようなものです。 |
+| **スキーマ** | [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)は、データの構造と形式を表し、検証する一連のルールです。 スキーマでは、web サイト上で発生するイベント（クリックなど）など、実際のオブジェクトの抽象的な定義を提供します。 そのオブジェクトの各インスタンスに含めるデータを定義できます。 |
+| **データセット** | [&#x200B; データセット &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)は、スキーマ（列）とフィールド（行）を含むデータのコレクション（通常はテーブル）のストレージおよび管理構造です。 データセットは、各行がweb サイトのイベントであるデータベーステーブルのようなものです。 |
 | **データストリーム** | [datastream](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview)は、web サイトからAdobe Experience Platformの正しいデータセットにデータをルーティングするサーバーサイド設定を表します。 データストリームは、サイトとストレージを接続するデータハイウェイとして機能します。 |
-| **タグ** | Experience Platformの[ タグ ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home)は、Adobeが提供する次世代のタグ管理機能です。 タグを使用すると、適切な顧客体験を実現するために必要な分析、マーケティング、広告タグを簡単にデプロイおよび管理できます。 Content Analyticsなら、Adobeのタグ管理システムにより、あらゆるページを同様に編集することなく、web サイトにトラッキングコードを導入できます。 タグ機能は、Google Tag Managerで把握している機能と似ています。 |
-| **サンドボックス** | Experience Platformでは、1つのExperience Platform インスタンスを個別の仮想環境に分割し、デジタルエクスペリエンスアプリケーションの開発と進化に役立つ[ サンドボックス ](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)を提供しています。 Content Analyticsでは通常、*実稼動* サンドボックスを使用します。 |
+| **タグ** | Experience Platformの[&#x200B; タグ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home)は、Adobeが提供する次世代のタグ管理機能です。 タグを使用すると、適切な顧客体験を実現するために必要な分析、マーケティング、広告タグを簡単にデプロイおよび管理できます。 Content Analyticsなら、Adobeのタグ管理システムにより、あらゆるページを同様に編集することなく、web サイトにトラッキングコードを導入できます。 タグ機能は、Google Tag Managerで把握している機能と似ています。 |
+| **サンドボックス** | Experience Platformでは、1つのExperience Platform インスタンスを個別の仮想環境に分割し、デジタルエクスペリエンスアプリケーションの開発と進化に役立つ[&#x200B; サンドボックス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)を提供しています。 Content Analyticsでは通常、*実稼動* サンドボックスを使用します。 |
 | **接続** | [Connections](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/overview)は、取り込むExperience Platform データセットを定義します。 接続は、データセット（データがAEPに保存される場所）とCustomer Journey Analytics（分析される場所）の間のリンクを定義します。 接続により、収集したデータをレポートに利用できるようになります。 |
-| **データビュー** | [ データビュー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views)は、接続からデータを解釈する方法を決定できるコンテナです。 データビューとは、レポートで利用できるすべてのディメンションと指標を指定します。 データビューは、分析で使用できる行と列を決定する設定のようなものです。 |
+| **データビュー** | [&#x200B; データビュー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views)は、接続からデータを解釈する方法を決定できるコンテナです。 データビューとは、レポートで利用できるすべてのディメンションと指標を指定します。 データビューは、分析で使用できる行と列を決定する設定のようなものです。 |
 | **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/home)は、Content Analytics レポートや分析の作成に使用するドラッグ&amp;ドロップ操作のブラウザーインターフェイスです。 |
-| **エクスペリエンス** | Content Analyticsでは、[ エクスペリエンス ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)とは、web ページ上のすべてのテキストコンテンツを指します。このコンテンツは、ページ URLに基づいてキャプチャおよび分析できます。 |
-| **アセット** | Content Analyticsでは、[ アセット ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)は、画像のような個別でユニークなコンテンツです。 |
+| **エクスペリエンス** | Content Analyticsでは、[&#x200B; エクスペリエンス &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)とは、web ページ上のすべてのテキストコンテンツを指します。このコンテンツは、ページ URLに基づいてキャプチャおよび分析できます。 |
+| **アセット** | Content Analyticsでは、[&#x200B; アセット &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology)は、画像のような個別でユニークなコンテンツです。 |
 
 
 ## 設定の概要
@@ -59,13 +73,13 @@ Content Analyticsはスタンドアロン製品としてライセンスされて
 1. **Content Analyticsの設定と実装をサポートするために、アクセス制御と権限**&#x200B;を設定します。
 1. **スキーマとデータセット**&#x200B;を設定して、コンテンツ分析のインサイトを収集するデータのモデル（スキーマ）とそのデータ（データセット）を収集する場所を定義します。
 
-**フェーズ 2** - [ データ収集の設定](#configure-data-collection)。 この段階では、web サイトからコンテンツデータを取り込むパイプラインを作成します。 つまり、Content Analyticsは訪問者がどのコンテンツに関心を持っているのかを把握しています。
+**フェーズ 2** - [&#x200B; データ収集の設定](#configure-data-collection)。 この段階では、web サイトからコンテンツデータを取り込むパイプラインを作成します。 つまり、Content Analyticsは訪問者がどのコンテンツに関心を持っているのかを把握しています。
 
 1. **収集したデータをデータセットにルーティングする方法を設定するデータストリーム**&#x200B;を設定します。
 1. **web サイト タグ**&#x200B;を使用して、web サイト上のデータ レイヤー内のデータに対するルールとデータ要素を設定し、設定されたデータストリームにデータが確実に送信されるようにします。
 1. 実稼動環境に公開する前に、**テスト環境**&#x200B;に&#x200B;**をデプロイし、データ収集を**&#x200B;検証します。
 
-**フェーズ 3** - [ レポートの設定](#set-up-reporting)。 この段階では、収集したデータをレポートで分析できるようにします。 つまり、Content Analyticsから取得したいコンテンツパフォーマンスに関するインサイトを実際に得ることができます。
+**フェーズ 3** - [&#x200B; レポートの設定](#set-up-reporting)。 この段階では、収集したデータをレポートで分析できるようにします。 つまり、Content Analyticsから取得したいコンテンツパフォーマンスに関するインサイトを実際に得ることができます。
 
 1. **データセットへの接続**&#x200B;を設定します。
 1. **指標とディメンションを定義するためのデータビュー**&#x200B;の設定。
@@ -176,7 +190,7 @@ Content Analyticsの場合、以下のリソースと関連する権限がこれ
 1. ようこそ画面の&#x200B;**[!UICONTROL クイックアクセス]**&#x200B;で、**[!UICONTROL すべて表示]**&#x200B;を選択します。
 1. **[!UICONTROL 権限]**&#x200B;のピン ![PinOn](/help/assets/icons/PinOn.svg)を有効にします。これにより、**[!UICONTROL 権限]**&#x200B;は&#x200B;**[!UICONTROL クイックアクセス]**&#x200B;内で利用できるようになります。
 1. **[!UICONTROL 権限]**&#x200B;を選択します。
-1. ![ ユーザー](/help/assets/icons/User.svg) **[!UICONTROL 役割]**&#x200B;を選択します。
+1. ![&#x200B; ユーザー](/help/assets/icons/User.svg) **[!UICONTROL 役割]**&#x200B;を選択します。
 1. 確認する特定の役割を選択します（例：**[!UICONTROL Default Production All Access]**）。 **[!UICONTROL すべてを表示]**&#x200B;を選択してすべての権限を表示します。
 1. **[!UICONTROL Details]**&#x200B;画面で、次の操作を行います。
    1. **[!UICONTROL 権限]**&#x200B;にリストされている&#x200B;**[!UICONTROL リソース]**&#x200B;を確認します。
@@ -186,7 +200,7 @@ Content Analyticsの場合、以下のリソースと関連する権限がこれ
    1. 不足しているリソースを追加するには、**[!UICONTROL リソース]** > **[!UICONTROL Adobe Experience Platform]**&#x200B;左レールから&#x200B;**[!UICONTROL リソース名]** ![追加](/help/assets/icons/Add.svg)を選択します。
    1. 見つからない権限を追加するには、メインパネルで権限が見つからないリソース内の![ChevronDown](/help/assets/icons/ChevronDown.svg)を選択し、見つからない権限を選択します。
 
-      ![権限インターフェイス ](/help/content-analytics/assets/aep-permissions-ui.png)
+      ![権限インターフェイス &#x200B;](/help/content-analytics/assets/aep-permissions-ui.png)
 
    **[!UICONTROL 保存]**&#x200B;を選択して、任意の更新を保存します。
 
@@ -227,7 +241,7 @@ Customer Journey Analyticsに対するこれらの権限を確認して更新す
 1. **[!UICONTROL 製品プロファイル]**&#x200B;を選択します。
 1. Customer Journey Analyticsで使用できるデフォルトのプロビジョニング済み製品プロファイルを選択します。 例：**[!UICONTROL Customer Journey Analytics]**。
 1. 製品プロファイル画面で、**[!UICONTROL 権限]**&#x200B;を選択します。
-1. ![編集](/help/assets/icons/Edit.svg) ボタンのいずれかを選択して、権限を編集します。 Customer Journey Analytics ]**の権限を編集ダイアログで、次の操作を行います。**[!UICONTROL 
+1. ![編集](/help/assets/icons/Edit.svg) ボタンのいずれかを選択して、権限を編集します。 Customer Journey Analytics **の権限を編集ダイアログで、次の操作を行います。**
 
    ![CJA権限UI](../assets/cja-permissions-ui.png)
 
@@ -240,7 +254,7 @@ Customer Journey Analyticsに対するこれらの権限を確認して更新す
 
 ### スキーマとデータセットの設定
 
-web サイトからデータを収集してContent Analyticsインサイトを入手するには、まず、収集するデータの種類を決定する必要があります。 また、データの保存方法を定義する必要があります。 両方の概念については、「[Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md)を介したデータの取り込み」および「[Adobe Experience Platform Mobile SDK](/help/data-ingestion/aepmobilesdk.md) クイックスタートガイド」の「[ スキーマとデータセットの設定](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset)」で説明しています。
+web サイトからデータを収集してContent Analyticsインサイトを入手するには、まず、収集するデータの種類を決定する必要があります。 また、データの保存方法を定義する必要があります。 両方の概念については、「[Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md)を介したデータの取り込み」および「[Adobe Experience Platform Mobile SDK](/help/data-ingestion/aepmobilesdk.md) クイックスタートガイド」の「[&#x200B; スキーマとデータセットの設定](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset)」で説明しています。
 
 
 ## データ収集の設定
@@ -249,12 +263,12 @@ web サイトからデータを収集してContent Analyticsインサイトを�
 
 ### データストリームの設定
 
-収集するデータとそのデータの保存方法を定義しました。 次のステップは、web サイトから収集したデータがデータセットにルーティングされるようにすることです。 データストリームを設定して設定する必要があります。詳しくは、[Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) クイックスタートガイドの「[ データストリームの設定](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream)」を参照してください。
+収集するデータとそのデータの保存方法を定義しました。 次のステップは、web サイトから収集したデータがデータセットにルーティングされるようにすることです。 データストリームを設定して設定する必要があります。詳しくは、[Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) クイックスタートガイドの「[&#x200B; データストリームの設定](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream)」を参照してください。
 
 
 ### タグの使用
 
-収集するデータ（スキーマ）、そのデータの保存方法（データセット）、web サイトから収集したデータをデータセット（データストリーム）にルーティングする方法を定義しました。 次のステップでは、web サイトにタグを付けて、web サイト上のデータレイヤーのデータに対してルールとデータ要素を設定する必要があります。 web サイトにタグ付けすると、設定されたデータストリームにデータが確実に送信されます。 タグを使用したweb サイトへのタグ付けについては、[Web SDK](/help/data-ingestion/aepwebsdk.md#use-tags)および[ モバイル SDK](/help/data-ingestion/aepmobilesdk.md#use-tags)のクイックスタートガイドの「タグを使用」で説明しています。
+収集するデータ（スキーマ）、そのデータの保存方法（データセット）、web サイトから収集したデータをデータセット（データストリーム）にルーティングする方法を定義しました。 次のステップでは、web サイトにタグを付けて、web サイト上のデータレイヤーのデータに対してルールとデータ要素を設定する必要があります。 web サイトにタグ付けすると、設定されたデータストリームにデータが確実に送信されます。 タグを使用したweb サイトへのタグ付けについては、[Web SDK](/help/data-ingestion/aepwebsdk.md#use-tags)および[&#x200B; モバイル SDK](/help/data-ingestion/aepmobilesdk.md#use-tags)のクイックスタートガイドの「タグを使用」で説明しています。
 
 
 ### デプロイと検証
@@ -270,12 +284,12 @@ web サイトからデータを収集してContent Analyticsインサイトを�
 
 ### データセットへの接続の設定
 
-収集したデータをレポートし、そのデータをContent Analytics用に設定するには、Customer Journey Analyticsで接続を設定する必要があります。 接続は、収集されたデータを含むデータセットに接続します。 [Web SDK](/help/data-ingestion/aepwebsdk.md)および[ モバイル SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-connection) クイックスタートガイドの[接続の設定](../../data-ingestion/aepwebsdk.md#set-up-a-connection)を参照してください。
+収集したデータをレポートし、そのデータをContent Analytics用に設定するには、Customer Journey Analyticsで接続を設定する必要があります。 接続は、収集されたデータを含むデータセットに接続します。 [Web SDK](/help/data-ingestion/aepwebsdk.md)および[&#x200B; モバイル SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-connection) クイックスタートガイドの[接続の設定](../../data-ingestion/aepwebsdk.md#set-up-a-connection)を参照してください。
 
 
 ### データ表示の設定
 
-Content Analyticsを設定する前の最後の手順は、データビューを定義することです。 データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 データビューを使用すると、Customer Journey Analyticsが接続されている1つ以上のデータセットのデータから、指標とディメンションを定義できます。 [Web SDK](/help/data-ingestion/aepwebsdk.md)および[ モバイル SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-data-view)のクイックスタートガイドの[ データビューの設定](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view)を参照してください。
+Content Analyticsを設定する前の最後の手順は、データビューを定義することです。 データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 データビューを使用すると、Customer Journey Analyticsが接続されている1つ以上のデータセットのデータから、指標とディメンションを定義できます。 [Web SDK](/help/data-ingestion/aepwebsdk.md)および[&#x200B; モバイル SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-data-view)のクイックスタートガイドの[&#x200B; データビューの設定](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view)を参照してください。
 
 
 ### Content Analytics の設定
@@ -284,7 +298,7 @@ Content Analyticsを設定する前の最後の手順は、データビューを
 
 #### ガイド付き設定
 
-[ ガイド付き設定ウィザード ](guided.md)を使用し、[ データビューの設定](#set-up-a-data-view)手順の一環として作成したデータビューを選択します。 これにより、web サイトやモバイルアプリケーションから収集したデータに基づいて、Content Analyticsを適切に設定および実装できます。
+[&#x200B; ガイド付き設定ウィザード &#x200B;](guided.md)を使用し、[&#x200B; データビューの設定](#set-up-a-data-view)手順の一環として作成したデータビューを選択します。 これにより、web サイトやモバイルアプリケーションから収集したデータに基づいて、Content Analyticsを適切に設定および実装できます。
 
 ガイド付き設定ウィザードでは、次の具体的なContent Analytics オブジェクトが設定されていることに注意してください。
 
@@ -294,7 +308,7 @@ Content Analyticsを設定する前の最後の手順は、データビューを
 
   >[!IMPORTANT]
   >
-  >ウィザードの[ データ収集](guided.md#new-configuration-1) ステップの一部として、新しいタグプロパティを作成するオプションを選択していることを確認してください。
+  >ウィザードの[&#x200B; データ収集](guided.md#new-configuration-1) ステップの一部として、新しいタグプロパティを作成するオプションを選択していることを確認してください。
   >
 
 #### 手動設定
@@ -304,4 +318,4 @@ Web サイトにContent Analyticsを実装するには、Content Analytics Tags 
 
 ### プロジェクトの設定
 
-Customer Journey Analyticsでプロジェクトを設定して、[Content Analytics レポートとビジュアライゼーション ](/help/content-analytics/report/report.md)を作成します。 または、[Content Analytics テンプレート ](/help/content-analytics/report/report.md#template)を使用して開始することもできます。
+Customer Journey Analyticsでプロジェクトを設定して、[Content Analytics レポートとビジュアライゼーション &#x200B;](/help/content-analytics/report/report.md)を作成します。 または、[Content Analytics テンプレート &#x200B;](/help/content-analytics/report/report.md#template)を使用して開始することもできます。

@@ -6,11 +6,27 @@ feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
 TQID: https://experienceleague.adobe.com/UXeVx5LF0ww0guz-62swqmGapSfjiTduYjojcZqqIYQ
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
 source-wordcount: 1476
@@ -27,7 +43,7 @@ Experience Platformで利用可能なMarketo Engageデータセットを活用�
 * Marketo Engageのレポート機能は、Marketoでのマーケティングプログラムの測定と最適化に最適で、迅速かつ処方しやすく、マーケターにも使いやすい機能です。
 * Customer Data Analyticsは、Marketo データを含むがこれに限定されない、複数のチャネル、製品、事業部門にまたがるカスタマージャーニー向けに、より広範でカスタマイズ可能なジャーニーソリューションを提供します。
 
-詳しくは、[ レポート比較](#reporting-comparison)を参照してください。
+詳しくは、[&#x200B; レポート比較](#reporting-comparison)を参照してください。
 
 >[!NOTE]
 >
@@ -43,7 +59,7 @@ Marketo アクティビティデータをCustomer Journey Analyticsに取り込�
 
 Marketo データにはECIDがネイティブに含まれていませんが、ECID フィールドは、`munchkin.js` ライブラリで収集されるカスタムフィールドとして追加できます。 この追加により、Marketoと既存のCustomer Data Analytics web ジャーニーとの間で共通のIDが作成されます。
 
-MarketoとCustomer Journey Analytics データをリンクするには、関連するデータセットに[ グラフベースのステッチング ](/help/stitching/gbs.md)を使用します。 実装に基づいて、使用可能なIDをいくつか使用できます。
+MarketoとCustomer Journey Analytics データをリンクするには、関連するデータセットに[&#x200B; グラフベースのステッチング &#x200B;](/help/stitching/gbs.md)を使用します。 実装に基づいて、使用可能なIDをいくつか使用できます。
 
 * Experience Platform ID サービスによって提供されるECID
 * 電子メール
@@ -83,7 +99,7 @@ MarketoとCustomer Journey Analytics データをリンクするには、関連�
 
 +++Adobe Experience PlatformへのMarketo データの取り込み
 
-[Marketo Engage コネクタ ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、MarketoからExperience Platformにデータを取り込み、Experience Platform アプリケーションを使用してこのデータを最新の状態に保ちます。
+[Marketo Engage コネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、MarketoからExperience Platformにデータを取り込み、Experience Platform アプリケーションを使用してこのデータを最新の状態に保ちます。
 
 +++
 
@@ -107,9 +123,9 @@ Experience Platform データセットについてレポートを作成するに
 1. [Analytics Workspace](/help/analysis-workspace/home.md) を開いて、新しいプロジェクトを作成します。
 B2B/B2P CDPを導入しているお客様は、Customer Journey AnalyticsでB2C スタイルの分析を実施できます。 B2B オブジェクトは、まだ使用できません。
 
-1. Web ページビューの[ セグメント ](/help/components/segments/seg-create.md)を次のように作成します – イベントタイプ = web.webpagedetails.pageViews :
+1. Web ページビューの[&#x200B; セグメント &#x200B;](/help/components/segments/seg-create.md)を次のように作成します – イベントタイプ = web.webpagedetails.pageViews :
 
-   イベントとイベントタイプを表示する![定義ウィンドウ ](../assets/marketo-filter.png)
+   イベントとイベントタイプを表示する![定義ウィンドウ &#x200B;](../assets/marketo-filter.png)
 
 1. フリーフォームテーブル - Web ページビューに作成したセグメントを取り込み、月日範囲を取り込みます。 このアクションを使用すると、毎月リード数でweb ページへのアクセス数を確認できます。
 
@@ -117,7 +133,7 @@ B2B/B2P CDPを導入しているお客様は、Customer Journey AnalyticsでB2C 
 
 1. または、Person Key またはワークメールアドレスのディメンションを取り込みます。 このアクションは、各リードが訪問したWeb ページを表示します。
 
-   イベントとworkEmail.AddressおよびWeb ページビューを示す![ フリーフォームテーブル。](../assets/marketo-freeform2.png)
+   イベントとworkEmail.AddressおよびWeb ページビューを示す![&#x200B; フリーフォームテーブル。](../assets/marketo-freeform2.png)
 
 Customer Journey AnalyticsのMarketo Engage データは、Marketo Engageのレポートに表示されるものとは異なる場合があります。
 

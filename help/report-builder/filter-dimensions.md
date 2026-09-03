@@ -7,9 +7,12 @@ type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/SAoyiEbKE1Niv3uwBMNB-M3F7WcdBQ-Guzs2mkRKHLE
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 993
@@ -37,15 +40,15 @@ ht-degree: 34%
 
 1. **[!UICONTROL タイプ]**&#x200B;として、**最も人気のある**&#x200B;または&#x200B;**特定**&#x200B;を選択します。
 
-   ![ フィルターディメンション ウィンドウで選択された特定のオプション。](./assets/image28.png){zoomable="yes"}
+   ![&#x200B; フィルターディメンション ウィンドウで選択された特定のオプション。](./assets/image28.png){zoomable="yes"}
 
-1. 選択した[ フィルタータイプ ](#filter-type)に基づいて、適切なオプションを選択します。
+1. 選択した[&#x200B; フィルタータイプ &#x200B;](#filter-type)に基づいて、適切なオプションを選択します。
 
 1. フィルターを追加するには、**[!UICONTROL 適用]**&#x200B;を選択します。
 
 1. Report Builder は、追加したフィルターを確認する通知を表示します。
 
-適用したフィルターを表示するには、ディメンションにポインタを合わせます。 フィルターが適用されたディメンションには、ディメンション名の横に![ フィルター](/help/assets/icons/Filter.svg) フィルターアイコンが表示されます。
+適用したフィルターを表示するには、ディメンションにポインタを合わせます。 フィルターが適用されたディメンションには、ディメンション名の横に![&#x200B; フィルター](/help/assets/icons/Filter.svg) フィルターアイコンが表示されます。
 
 ## フィルターと並べ替え順序の変更
 
@@ -61,7 +64,7 @@ ht-degree: 34%
 
 2. ![ArrowDown](/help/assets/icons/ArrowDown.svg)を選択して、好みの指標を指定します。
 
-   ![ テーブルビルダーと指標。](./assets/image30.png){zoomable="yes"}
+   ![&#x200B; テーブルビルダーと指標。](./assets/image30.png){zoomable="yes"}
 
 
 
@@ -136,7 +139,7 @@ Customer Journey Analyticsでは、一部のディメンションで&#x200B;*値
 
    「**リストから**」オプションを選択すると、**[!UICONTROL Dimension項目]** リストに、イベント数で順序付けされたディメンション項目が入力されます。
 
-   ![ リストから選択するオプションと使用可能な項目。](./assets/image33.png){zoomable="yes"}
+   ![&#x200B; リストから選択するオプションと使用可能な項目。](./assets/image33.png){zoomable="yes"}
 
 1. ![検索](/help/assets/icons/Search.svg) **[!UICONTROL _項目を追加_]**&#x200B;に検索語句を入力して、リストを検索します。
 
@@ -154,7 +157,7 @@ Report Builder はリストを更新し、適用したフィルターの内容�
 
 「**セルの範囲から**」オプションを選択して、一致するディメンション項目のリストを含むセルの範囲を選択します。
 
-![ セルの範囲から選択するオプションとフィールド。](./assets/image37.png){zoomable="yes"}
+![&#x200B; セルの範囲から選択するオプションとフィールド。](./assets/image37.png){zoomable="yes"}
 
 セルの範囲を選択する場合は、次の制限事項を考慮してください。
 
@@ -173,5 +176,5 @@ Report Builder はリストを更新し、適用したフィルターの内容�
 
 1. フィルターに追加するディメンション項目をダブルクリックします。 または、1つ以上のディメンション項目を選択し、選択範囲を![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** セクションにドラッグ&amp;ドロップします。
 
-   ![ ディメンション タブとディメンションのリスト。](./assets/quickly-filter.png){zoomable="yes"}
+   ![&#x200B; ディメンション タブとディメンションのリスト。](./assets/quickly-filter.png){zoomable="yes"}
 

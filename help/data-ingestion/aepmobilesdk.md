@@ -6,11 +6,26 @@ feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
 TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3536
@@ -91,9 +106,9 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   1. [!UICONTROL  フィールドグループを追加] ダイアログで、リストから&#x200B;**[!UICONTROL AEP Mobile SDK ExperienceEvent]** フィールドグループを選択します。
+   1. [!UICONTROL &#x200B; フィールドグループを追加] ダイアログで、リストから&#x200B;**[!UICONTROL AEP Mobile SDK ExperienceEvent]** フィールドグループを選択します。
 
-      ![AEP Mobile Lifecycle Details フィールドグループ ](./assets/select-aepmobilesdk-experienceevent.png)
+      ![AEP Mobile Lifecycle Details フィールドグループ &#x200B;](./assets/select-aepmobilesdk-experienceevent.png)
 
       「プレビュー」ボタンを選択すると、このフィールドグループに属するフィールド（`application > name` など）のプレビューを表示できます。
 
@@ -107,7 +122,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![スキーマ追加フィールドボタンの例](./assets/example-mobileschema-plus.png)
 
-1. [!UICONTROL  フィールドプロパティ ] パネルで、`identification`を[!UICONTROL  フィールド名]として、**[!UICONTROL 識別]**&#x200B;を[!UICONTROL 表示名]として入力し、**[!UICONTROL オブジェクト]**&#x200B;を[!UICONTROL  タイプ ]として選択し、**[!UICONTROL ExperienceEvent Core v2.1]**&#x200B;を[!UICONTROL  フィールドグループ ]として選択します。
+1. [!UICONTROL &#x200B; フィールドプロパティ &#x200B;] パネルで、`identification`を[!UICONTROL &#x200B; フィールド名]として、**[!UICONTROL 識別]**&#x200B;を[!UICONTROL 表示名]として入力し、**[!UICONTROL オブジェクト]**&#x200B;を[!UICONTROL &#x200B; タイプ &#x200B;]として選択し、**[!UICONTROL ExperienceEvent Core v2.1]**&#x200B;を[!UICONTROL &#x200B; フィールドグループ &#x200B;]として選択します。
 
    >[!NOTE]
    >
@@ -255,13 +270,13 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    タグに名前を付け、**[!UICONTROL モバイル]**&#x200B;を選択します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![ プロパティの作成](./assets/create-mobile-property.png)
+   ![&#x200B; プロパティの作成](./assets/create-mobile-property.png)
 
 ### タグの設定
 
 タグを作成したら、適切な拡張機能を使用してタグを設定し、サイトを追跡して Adobe Experience Platform にデータを送信する方法に応じて、データ要素とルールを設定する必要があります。
 
-設定するには、[!UICONTROL  タグプロパティ ]のリストから新しく作成したタグを選択します。
+設定するには、[!UICONTROL &#x200B; タグプロパティ &#x200B;]のリストから新しく作成したタグを選択します。
 
 
 #### **拡張機能**
@@ -292,7 +307,7 @@ Adobe Experience Platform Mobile SDK拡張機能を作成して設定するに�
 - AEP Assurance:
 - 同意：
 
-拡張機能とその設定について詳しくは、Experience Platform モバイルアプリチュートリアルの[ タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja)を参照してください。
+拡張機能とその設定について詳しくは、Experience Platform モバイルアプリチュートリアルの[&#x200B; タグプロパティの設定](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=ja)を参照してください。
 
 #### **データ要素**
 
@@ -312,7 +327,7 @@ Adobe Experience Platform Mobile SDK拡張機能を作成して設定するに�
 
    - [!UICONTROL 拡張機能] リストから&#x200B;**[!UICONTROL Mobile Core]**&#x200B;を選択します。
 
-   - 「[!UICONTROL  データ要素タイプ ]」リストから「**[!UICONTROL キャリア名]**」を選択します。
+   - 「[!UICONTROL &#x200B; データ要素タイプ &#x200B;]」リストから「**[!UICONTROL キャリア名]**」を選択します。
 
 
      ![ページ情報を使用した日付要素の作成](./assets/create-dataelement-mobile.png)
@@ -344,7 +359,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
      - [!UICONTROL 拡張機能] リストから&#x200B;**[!UICONTROL Mobile Core]**&#x200B;を選択します。
 
-     - [!UICONTROL  イベントタイプ ] リストから&#x200B;**[!UICONTROL 描画領域]**&#x200B;を選択します。
+     - [!UICONTROL &#x200B; イベントタイプ &#x200B;] リストから&#x200B;**[!UICONTROL 描画領域]**&#x200B;を選択します。
 
      - 「**[!UICONTROL 変更を保持]**」を選択します。
 
@@ -352,15 +367,15 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
      - [!UICONTROL 拡張機能] リストから&#x200B;**[!UICONTROL Mobile Core]**&#x200B;を選択します。
 
-     - 「[!UICONTROL  イベントタイプ ]」リストから「**[!UICONTROL 背景]**」を選択します。
+     - 「[!UICONTROL &#x200B; イベントタイプ &#x200B;]」リストから「**[!UICONTROL 背景]**」を選択します。
 
      - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - [!UICONTROL  アクション ]の下にある![ プラス ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)追加をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
+   - [!UICONTROL &#x200B; アクション &#x200B;]の下にある![&#x200B; プラス &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)追加をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
 
      - [!UICONTROL 拡張機能] リストから&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**&#x200B;を選択します。
 
-     - 「[!UICONTROL  アクションタイプ ]」リストから「**[!UICONTROL Edge Networkにイベントを転送」を選択します。]**
+     - 「[!UICONTROL &#x200B; アクションタイプ &#x200B;]」リストから「**[!UICONTROL Edge Networkにイベントを転送」を選択します。]**
 
      - 「**[!UICONTROL 変更を保持]**」を選択します。
 
@@ -417,7 +432,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkの�
 
 2. 環境のリストから、正しいインストール ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタンを選択します。
 
-   [!UICONTROL  モバイルインストール手順] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連するコードスニペットの横にある「![ コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
+   [!UICONTROL &#x200B; モバイルインストール手順] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連するコードスニペットの横にある「![&#x200B; コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
 
    ![環境](./assets/environment-mobile.png)
 
@@ -433,7 +448,7 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkの�
 
 実装を検証し、必要に応じて修正したら、タグの公開ワークフロー機能を使用して、ステージング環境と本番環境にデプロイします。
 
-詳しくは、[ モバイルアプリでのAdobe Experience Cloudの実装チュートリアル ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)を参照してください。
+詳しくは、[&#x200B; モバイルアプリでのAdobe Experience Cloudの実装チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)を参照してください。
 
 ## 接続の設定
 
@@ -517,7 +532,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -542,7 +557,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Events`を指標として、`Push Title`をディメンションとしてドラッグし、`Event Type`で分類して、モバイルアプリのプッシュ通知の概要とプッシュ通知に関する内容を確認します。
+5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Events`を指標として、`Push Title`をディメンションとしてドラッグし、`Event Type`で分類して、モバイルアプリのプッシュ通知の概要とプッシュ通知に関する内容を確認します。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5-mobile.png)
 

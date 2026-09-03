@@ -7,11 +7,21 @@ role: Admin
 exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
 autotag-review: '2026-05-19T10:44:07.732Z'
 TQID: 'https://experienceleague.adobe.com/pJMss6WVPH8LAAJXlmblmeMOHvOmk5dq0Zzy-Ab-Mt0'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2: id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1391
@@ -57,7 +67,7 @@ ht-degree: 34%
 
 <!-- markdownlint-enable MD034 -->
 
-Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspace で使用する新しいディメンションとして使用可能になります。 オーディエンス分析について詳しくは、[ オーディエンス分析の概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください。
+Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspace で使用する新しいディメンションとして使用可能になります。 オーディエンス分析について詳しくは、[&#x200B; オーディエンス分析の概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください。
 
 >[!IMPORTANT]
 >
@@ -75,11 +85,11 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**&#x200B;を選択します。
 
-   ![ オーディエンス分析のメイン ページ ](assets/audience-analysis-empty.png)
+   ![&#x200B; オーディエンス分析のメイン ページ &#x200B;](assets/audience-analysis-empty.png)
 
 1. 「**[!UICONTROL 設定を作成]**」を選択します。
 
-   ![ オーディエンス分析設定の作成](assets/audience-analysis-create.png)
+   ![&#x200B; オーディエンス分析設定の作成](assets/audience-analysis-create.png)
 
 1. 「**[!UICONTROL 詳細]**」セクションで、次の情報を指定します。
 
@@ -93,7 +103,7 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
    | フィールド | 説明 |
    |---------|----------|
    | **[!UICONTROL 結合ポリシー]** | オーディエンス分析に使用するプロファイルデータセットに対応する、結合ポリシーを選択します。 <p>結合ポリシーは、Adobe Experience Platformが複数のデータセットからのプロファイルデータを、オーディエンス作成に使用される統合顧客プロファイルにどのように組み合わせるかを決定します。 選択した結合ポリシーは、オーディエンスに含まれるプロファイルの属性に影響します。 毎日、このデータのスナップショットがExperience Platformで生成されます。 このスナップショットは、特定の時点のデータの静的ビューを提供します。イベントデータは含まれません。</p><p>複数の結合ポリシーが表示されていて、どの結合ポリシーを選択すべきかわからない場合は、**[!UICONTROL デフォルトのタイムベース]**&#x200B;結合ポリシーを選択します。 また、データチームに相談して、各結合ポリシーに関連付けられているオーディエンスをより詳細に把握することもできます。</p> |
-   | **[!UICONTROL プロファイルデータセット]** | 選択した結合ポリシーに関連付けられているプロファイルデータセット。 このプロファイルデータセットには、分析するExperience Platform オーディエンスデータが含まれています。 このプロファイルデータセットは、選択した接続に追加されます。<p>結合ポリシーを選択すると、プロファイル スナップショットの書き出しが表示されます。 例：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>詳しくは、Experience Platform ダッシュボードガイドの[ プロファイル属性データセット ](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets)を参照してください。</p> |
+   | **[!UICONTROL プロファイルデータセット]** | 選択した結合ポリシーに関連付けられているプロファイルデータセット。 このプロファイルデータセットには、分析するExperience Platform オーディエンスデータが含まれています。 このプロファイルデータセットは、選択した接続に追加されます。<p>結合ポリシーを選択すると、プロファイル スナップショットの書き出しが表示されます。 例：`Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`。</p><p>詳しくは、Experience Platform ダッシュボードガイドの[&#x200B; プロファイル属性データセット &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets)を参照してください。</p> |
 
 1. **[!UICONTROL 接続]** セクションで、**[!UICONTROL 接続を選択]**&#x200B;をクリックします。
 
@@ -124,13 +134,13 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
    >プロファイルデータセットは1日に1回更新されるので、オーディエンス分析コンフィギュレーションを作成した翌日に、Customer Journey Analytics データビューでオーディエンスを使用できます。
 
 
-1. 24時間後、[ オーディエンスディメンションをデータビューで表示](#view-audience-dimensions-in-the-data-view)し、選択したデータビューでオーディエンスディメンションが使用可能であることを確認します。
+1. 24時間後、[&#x200B; オーディエンスディメンションをデータビューで表示](#view-audience-dimensions-in-the-data-view)し、選択したデータビューでオーディエンスディメンションが使用可能であることを確認します。
 
 ## データビューでのオーディエンスディメンションの表示
 
-オーディエンス分析設定](#create-an-audience-analysis-configuration)を[作成した後、設定中に選択したデータビューにオーディエンスディメンションが追加されたことを確認できます。
+オーディエンス分析設定[&#128279;](#create-an-audience-analysis-configuration)を作成した後、設定中に選択したデータビューにオーディエンスディメンションが追加されたことを確認できます。
 
-データビューでオーディエンスディメンションを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。
+データビューでオーディエンスディメンションを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。
 
 データビューでオーディエンス分析ディメンションを表示するには：
 
@@ -148,7 +158,7 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
 
    これらのディメンションはそれぞれ、オーディエンス分析の設定中に選択した結合ポリシーに関連付けられたプロファイルデータセットに追加され、作成された新しいルックアップデータセットに追加されたことに注意してください。
 
-   データビューで利用可能な![ オーディエンスディメンション ](assets/audience-analysis-dataview-dataset.png)
+   データビューで利用可能な![&#x200B; オーディエンスディメンション &#x200B;](assets/audience-analysis-dataview-dataset.png)
 
 1. Analysis Workspaceのオーディエンス分析ディメンションを使用します。
 
