@@ -15,14 +15,14 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 187
+source-wordcount: 188
 ht-degree: 83%
 
 ---
 
 # 異常値検出の概要
 
-Analysis Workspace 内で、コンテキスト上のデータの異常値を表示および分析できます。
+Analysis Workspace 内で、コンテキストに応じてデータの異常値を表示および分析できます。
 
 [異常値検出のビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=ja) （4:53）
 
@@ -39,7 +39,7 @@ Analysis Workspace 内で、コンテキスト上のデータの異常値を表�
 * ビデオバッファーイベント数のスパイク
 * 低ビデオビットレートのスパイク
 
-Analysis Workspace の異常値検出アルゴリズムには、次の機能が含まれます
+Analysis Workspace の異常値検出アルゴリズムには次の機能が含まれます。
 
 * 既存の日単位の精度に加えて、時間単位、週単位、月単位の精度のサポート。
 * 季節性（「Black Friday」など）や休日の認識。

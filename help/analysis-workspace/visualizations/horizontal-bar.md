@@ -15,8 +15,8 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 227
-ht-degree: 64%
+source-wordcount: 236
+ht-degree: 65%
 
 ---
 
@@ -28,7 +28,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 >[!ENDSHADEBOX]
 
-横棒グラフビジュアライゼーションには、標準および積み重ねオプションがあります。
+横棒グラフビジュアライゼーションには、「標準」と「積み重ね」の 2 種類のオプションがあります。
 
 ## 横棒グラフ {#horizontal-bar}
 

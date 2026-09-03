@@ -40,6 +40,6 @@ ht-degree: 50%
 
 ## 詳細情報
 
-[!DNL Customer Journey Analytics BI extension] を使用すると、Customer Journey Analytics で定義した[データビュー](/help/data-views/data-views.md)への SQL アクセスが可能になります。 データエンジニアやアナリストは、Power BI、Tableau またはその他のビジネスインテリジェンスツールやビジュアライゼーションツール（以降、BI ツールと呼びます）に精通している可能性があります。 Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトを作成する際に使用しているものと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
+[!DNL Customer Journey Analytics BI extension] を使用すると、Customer Journey Analytics で定義した[データビュー](/help/data-views/data-views.md)への SQL アクセスが可能になります。 データエンジニアやアナリストは、Power BI、Tableau、またはその他のビジネスインテリジェンスツールやビジュアライゼーションツール（以降、BI ツールと呼びます）の方が使い慣れている場合があります。 Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトを作成する際に使用しているものと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
 
 詳しくは、[BI拡張機能](../../data-views/bi-extension.md)の詳細なドキュメントを参照してください。

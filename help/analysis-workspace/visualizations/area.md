@@ -18,8 +18,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 226
-ht-degree: 70%
+source-wordcount: 235
+ht-degree: 71%
 
 ---
 
@@ -32,7 +32,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 >[!ENDSHADEBOX]
 
 
-面グラフビジュアライゼーションには、標準および積み重ねオプションがあります。
+面グラフビジュアライゼーションには、標準表示と積み重ね表示のオプションがあります。
 
 ## 面グラフ {#area}
 
@@ -41,7 +41,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 >[!CONTEXTUALHELP]
 >id="workspace_area_button"
 >title="階層グラフ"
->abstract="複数の指標の積集合を表す、階層グラフのビジュアライゼーションを作成します。"
+>abstract="複数の指標の積集合を表す階層グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -60,7 +60,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 >[!CONTEXTUALHELP]
 >id="workspace_areastacked_button"
 >title="積み重ね面グラフ"
->abstract="複数の指標の積み重ねを表す、階層グラフのビジュアライゼーションを作成します。"
+>abstract="複数の指標の積み重ねを表す階層グラフのビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

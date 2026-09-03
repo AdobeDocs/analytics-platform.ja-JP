@@ -1,6 +1,6 @@
 ---
 title: Web SDK 拡張機能用のローダータグの実装
-description: Web SDK 拡張機能用のローダータグの実装方法について説明します
+description: Web SDK 拡張機能用のローダータグの実装方法を学ぶ
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="サイトにローダータグを実装"
->abstract="Web サイト開発チームと連携して、サイトのすべてのページにローダータグをインストールします。<br><br>このタスクの完了時間は、コードのデプロイと連携するエンジニアリングチームの応答時間に大きく依存します。 高度にアダプティブなエンジニアリングチームを持つ組織では、この手順を数日で完了できますが、タスクの膨大なバックログを持つエンジニアリングチームでは、1 か月以上かかる場合があります。"
+>title="サイトにローダータグを実装する"
+>abstract="Web サイト開発チームと連携して、サイトのすべてのページにローダータグをインストールします。<br><br>このタスクの完了時間は、コードのデプロイと連携するエンジニアリングチームの応答時間に大きく依存します。 高度にアダプティブなエンジニアリングチームを持つ組織では、この手順を数日で完了できますが、タスクのバックログが膨大なエンジニアリングチームでは、1 か月以上かかる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 タグを参照するコードを取得するには：
 
-1. Adobe ID 資格情報を使用して experiencecloud.adobe.com にログインします。
+1. Adobe ID 資格情報を使用して experience.adobe.com にログインします。
 
 1. Adobe Experience Platform で、**[!UICONTROL データ収集]**／**[!UICONTROL タグ]**&#x200B;に移動します。
 

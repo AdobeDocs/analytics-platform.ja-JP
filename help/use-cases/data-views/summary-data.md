@@ -23,8 +23,8 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 4858
-ht-degree: 16%
+source-wordcount: 5045
+ht-degree: 15%
 
 ---
 
@@ -485,7 +485,7 @@ Workspaceで正しいデータをレポートできるようにするには、�
          |---|---|---|---|
          | 広告グループ （ルックアップ） | 参照データデータセットの例 | 文字列 | *_tenant*.ad_group |
          | 広告グループ | 概要データデータセットの例 | 文字列 | *_tenant*.ad_group |
-         | キャンペーン Id | 概要データデータセットの例 | 文字列 | *_tenant*.campaign_id |
+         | キャンペーン ID | 概要データデータセットの例 | 文字列 | *_tenant*.campaign_id |
          | キャンペーン名（ルックアップ） | 参照データデータセットの例 | 文字列 | *_tenant*.campaign_name |
          | キャンペーン名 | 概要データデータセットの例 | 文字列 | *_tenant*.campaign_name |
          | ネットワーク | 概要データデータセットの例 | 文字列 | *_tenant*.network |

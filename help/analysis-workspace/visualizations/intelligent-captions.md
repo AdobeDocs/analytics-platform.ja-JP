@@ -33,7 +33,7 @@ ht-degree: 100%
 >abstract="このビジュアライゼーションのデータをより簡単に理解および解釈できるように、自然言語形式でインサイトを生成します。"
 
 
-インテリジェントキャプション機能は、高度な生成 AI を使用して、自然言語で最も頻繁に使用される Workspaceのビジュアライゼーションに関する重要なインサイトを提供します。
+インテリジェントキャプション機能は、高度な生成 AI を使用して、自然言語で最も頻繁に使用される Workspace のビジュアライゼーションに関する重要なインサイトを提供します。
 
 インテリジェントキャプションは、次のユーザーを対象としています。
 
@@ -102,7 +102,7 @@ Here is an example of what intelligent captions could look like:
 
 ### 表示の編集 {#edit}
 
-特定のカテゴリのインサイトの非表示や非表示解除など、キャプションの表示を編集できます。
+特定のカテゴリのインサイトを非表示または再表示するなど、キャプションの表示内容を編集できます。
 
 1. インテリジェントキャプションダイアログで ![インテリジェントキャプションの表示を編集](/help/assets/icons/EditInLight.svg) を選択します。
 
@@ -152,14 +152,14 @@ Here is an example of what intelligent captions could look like:
 * **契約上のアクセス**：インテリジェントキャプションを使用できない場合は、組織の管理者またはアドビアカウント担当者（管理者）にお問い合わせください。 組織でインテリジェントキャプションを使用する前に、生成 AI に関する特定の法的条件に同意する必要があります。
 
 * **権限**：[!UICONTROL Adobe Admin Console] では、[!UICONTROL レポートツール]の&#x200B;**[!UICONTROL インテリジェントキャプション]**&#x200B;権限によってアクセスが決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
-   1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
-   1. インテリジェントキャプションへのアクセスを提供する製品プロファイルのタイトルを選択します。
-   1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
-   1. ![編集](/help/assets/icons/Edit.svg) を選択して、**[!UICONTROL レポートツール]**&#x200B;を編集します。
-   1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して、**[!UICONTROL 含まれる権限項目]**&#x200B;に&#x200B;**インテリジェントキャプション**&#x200B;を追加します。
+  1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
+  1. インテリジェントキャプションへのアクセスを提供する製品プロファイルのタイトルを選択します。
+  1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
+  1. ![編集](/help/assets/icons/Edit.svg) を選択して、**[!UICONTROL レポートツール]**&#x200B;を編集します。
+  1. ![AddCircle](/help/assets/icons/AddCircle.svg) を選択して、**[!UICONTROL 含まれる権限項目]**&#x200B;に&#x200B;**インテリジェントキャプション**&#x200B;を追加します。
 
-      ![権限を追加](./assets/intelligent-captions-permissions.png)
+     ![権限を追加](./assets/intelligent-captions-permissions.png)
 
-   1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
+  1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
 
 詳しくは、[アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。

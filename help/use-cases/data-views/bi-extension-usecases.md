@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ---
 
-# BI 拡張機能のユースケース
+# BI 拡張のユースケース
 
 この記事では、Customer Journey Analytics BI拡張機能を使用して多数のユースケース（15）を達成する方法について説明します。 各ユースケースでは、Customer Journey Analyticsの機能について説明し、次にサポートされている各BI ツールの詳細について説明します。
 
@@ -39,26 +39,26 @@ ht-degree: 2%
 次のユースケースについて説明します。
 
 * **Connect**
-   * [データビューの接続とリスト](bi-extension/connect-and-validate.md)
+  * [データビューの接続とリスト](bi-extension/connect-and-validate.md)
 
 * **レポートと分析**
-   * [日々のトレンド](bi-extension/daily-trend.md)
-   * [時間別トレンド](bi-extension/hourly-trend.md)
-   * [月次トレンド](bi-extension/monthly-trend.md)
-   * [単一ディメンションのランク](bi-extension/single-dimension-ranked.md)
-   * [複数ディメンションのランキング](bi-extension/multiple-dimension-ranked.md)
-   * [個別のディメンション値をカウント](bi-extension/count-distinct-dimension-values.md)
-   * [フィルターに日付範囲名を使用する](bi-extension/use-date-range-names-to-filter.md)
-   * [セグメント名を使用してセグメント化する](bi-extension/use-segment-names-to-segment.md)
-   * [ディメンション値を使用したセグメント化](bi-extension/use-dimension-values-to-segment.md)
-   * [並べ替え](bi-extension/sort.md)
-   * [制限](bi-extension/limits.md)
+  * [日々のトレンド](bi-extension/daily-trend.md)
+  * [時間別トレンド](bi-extension/hourly-trend.md)
+  * [月次トレンド](bi-extension/monthly-trend.md)
+  * [単一ディメンションのランク](bi-extension/single-dimension-ranked.md)
+  * [複数ディメンションのランキング](bi-extension/multiple-dimension-ranked.md)
+  * [個別のディメンション値をカウント](bi-extension/count-distinct-dimension-values.md)
+  * [フィルターに日付範囲名を使用する](bi-extension/use-date-range-names-to-filter.md)
+  * [セグメント名を使用してセグメント化する](bi-extension/use-segment-names-to-segment.md)
+  * [ディメンション値を使用したセグメント化](bi-extension/use-dimension-values-to-segment.md)
+  * [並べ替え](bi-extension/sort.md)
+  * [制限](bi-extension/limits.md)
 
 * **理解**
 
-   * [変形](bi-extension/transformations.md)
-   * [ビジュアライゼーション](bi-extension/visualizations.md)
-   * [注意事項](bi-extension/caveats.md)
+  * [変形](bi-extension/transformations.md)
+  * [ビジュアライゼーション](bi-extension/visualizations.md)
+  * [注意事項](bi-extension/caveats.md)
 
 **connect**&#x200B;のユースケースでは、Customer Journey Analytics BI拡張機能を使用してBI ツールを接続する方法に焦点を当てています。
 

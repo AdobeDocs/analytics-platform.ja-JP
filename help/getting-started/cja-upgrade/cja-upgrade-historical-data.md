@@ -30,9 +30,9 @@ ht-degree: 97%
 
 +++このセクションを展開して、このページの情報が大規模なアップグレードプロセスに適合する場所を確認します。 これまでのアップグレード手順がすべて完了していることを確認してください。
 
-この節に進む前に、以前のアップグレードタスクがすべて完了していることを確認してください。
+このセクションに進む前に、以前のアップグレードタスクがすべて完了していることを確認してください。
 
-このページの情報では、次の表でハイライト表示されているアップグレードプロセスの手順 4 について説明します。
+このページの情報は、次のテーブルでハイライト表示されているアップグレードプロセスの手順 4 について説明します。
 
 | アップグレードタスク | 詳細 |
 |---------|----------|
@@ -40,7 +40,7 @@ ht-degree: 97%
 | **手順 2：[アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analytics へのアップグレードには様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
 | **手順 3：[データを Adobe Experience Platform に送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | Adobe Experience Platform にデータを送信するプロセスは、手順 2 で選択したアップグレードパスによって異なります。 |
 | <span class="preview">**手順 4：履歴データを保持**</span> | <span class="preview">ほとんどの組織では、Adobe Analytics の履歴データを一定期間保持する必要があります。 これを実現するために様々なオプションが利用できます。</span> |
-| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics 環境が使用可能になる前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analytics からのアップグレードと新しい Customer Journey Analytics の実装に適用されます。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
+| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics 環境が使用可能になる前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analytics からのアップグレードと新しい Customer Journey Analytics の実装に適用されます。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>プラットフォームデータセットと Customer Journey Analytics 間の接続の作成</li><li>データビューの作成</li><li>レポート API の使用状況の移行</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -48,7 +48,7 @@ ht-degree: 97%
 
 >[!AVAILABILITY]
 >
->このページの情報は、次のより包括的なアップグレード情報に置き換えられます。 <ul><li>**推奨されるアップグレード手順**<p>詳しくは、[Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド**<p>組織と一意の状況に合わせて調整されたアップグレード手順を動的に生成する新しいアップグレードガイドが使用できます。</p><p>Customer Journey Analytics からガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
+>このページの情報は、次のより包括的なアップグレード情報に置き換えられます。 <ul><li>**推奨されるアップグレード手順**<p>詳しくは、[Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド**<p>組織とその独自の状況に合わせて調整されたアップグレード手順を動的に生成する新しいアップグレードガイドを利用できます。</p><p>Customer Journey Analytics からガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
 
 Adobe Analytics から Customer Journey Analytics に移行する際に履歴データを保持するには、次のオプションのいずれかを選択します。
 
@@ -66,9 +66,9 @@ Analytics ソースコネクタは、履歴データにアクセスする必要�
 
 <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 
-## 既存の Adobe Analytics 実装の保持
+## 既存の Adobe Analytics 実装を維持
 
-新しい Customer Journey Analytics 実装と並行して、既存の Adobe Analytics 実装を特定の期間（例えば、1 年間）保持できます。 このオプションを選択する場合は、次の点を考慮します。
+新しい Customer Journey Analytics 実装と並行して、既存の Adobe Analytics 実装を特定の期間（例えば、1 年間）保持できます。 このオプションを選択する場合は、次の点を考慮してください。
 
 * データは Experience Platform では利用できません。
 
@@ -84,13 +84,13 @@ Analytics ソースコネクタは、履歴データにアクセスする必要�
 
 * 他のデータを Experience Platform に取り込む
 
-* 手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成
+* プラットフォームデータセットと Customer Journey Analytics 間の接続の作成
 
 * データビューの作成
 
-* レポート API の使用状況の移植
+* レポート API の使用状況の移行
 
-* データフィードとデータウェアハウスの考慮に関するユースケース
+* データフィードと Data Warehouse のユースケースへの対応
 
 * プロジェクトとコンポーネントの移行
 

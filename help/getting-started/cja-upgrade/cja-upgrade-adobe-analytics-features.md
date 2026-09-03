@@ -112,9 +112,9 @@ ht-degree: 100%
 
 {{upgrade-note}}
 
-次のリストは、Customer Journey Analytics へのアップグレードプロセス中に考慮する必要がある Adobe Analytics 機能のみを示しています。 Customer Journey Analytics で完全にサポートされている、部分的にサポートされている、またはサポートされていない Adobe Analytics 機能を示す包括的なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
+次のリストは、Customer Journey Analytics へのアップグレードプロセス中に検討する必要がある Adobe Analytics 機能のみを示しています。 Customer Journey Analytics で完全にサポートされている、部分的にサポートされている、またはサポートされていない Adobe Analytics 機能を示す包括的なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
 
-Customer Journey Analytics にアップグレードする際には、次のどの Adobe Analytics 機能を引き続き使用するかを考慮します。
+Customer Journey Analytics にアップグレードする際に、次のどの Adobe Analytics 機能を引き続き使用するかを検討してください。
 
 | Adobe Analytics 機能 | Customer Journey Analytics の対応する機能 |
 |---------|----------|
@@ -124,4 +124,4 @@ Customer Journey Analytics にアップグレードする際には、次のど�
 | [マーケティングチャネル](https://experienceleague.adobe.com/ja/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | 派生フィールドは、データビュー内で作成されます。 <p>[マーケティングチャネル派生フィールドを作成します。](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> |
 | [データフィード](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-overview) | Experience Platform と Customer Journey Analytics には、単独または組み合わせて様々な書き出し要件を解決できる多数の機能が用意されています。 これらの機能には、[Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=ja)、[Experience Platform の宛先](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=ja)、[Customer Journey Analytics の完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)、[BI ツールの統合](/help/data-views/bi-extension.md)が含まれます。<p>書き出しオプションについて詳しくは、[データ書き出しのユースケース](/help/use-cases/data-export/overview.md)を参照してください。</p> |
 | [Data Warehouse](https://experienceleague.adobe.com/ja/docs/analytics/export/data-warehouse/data-warehouse) | [Customer Journey Analytics の完全なテーブルの書き出し](/help/analysis-workspace/export/export-cloud.md)は、Adobe Analytics のデータウェアハウスレポートの進化版で、現在のデータウェアハウスでは利用できない、リクエストの多い新機能が多数追加されています。 |
-| [ストリーミングメディアデータ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview) | ストリーミングメディアデータは、Workspace のメディア同時視聴者数パネルおよびメディア再生滞在時間パネルの一部として、Analytics ソースコネクタに使用できます。 |
+| [ストリーミングメディアデータ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview) | ストリーミングメディアデータは、Analytics ソースコネクタを使用することで、Workspace のメディア同時閲覧者数パネルおよびメディア再生に費やした時間パネルの一部として利用できます。 |

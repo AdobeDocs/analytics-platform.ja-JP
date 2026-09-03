@@ -1,6 +1,6 @@
 ---
 title: AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
-description: Analytics ソースコネクタで Adobe Analytics ID フィールドを処理する方法を説明します。
+description: Analytics ソースコネクタが Adobe Analytics の ID フィールドをどのように処理するかについて説明します。
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
@@ -45,7 +45,7 @@ ECID がイベントに存在する場合、AAID は、Analytics [猶予期間](
 
 ## AACUSTOMID
 
-AACUSTOMID は、Analytics 実装の `s.VisitorID` 変数の使用に基づいて、Adobe Analytics で設定される個別の ID フィールドです。 AACUSTOMID は、Adobe Analytics データフィードの `cust_visid` 列で表されます。 AACUSTOMID が存在する場合、AAID は、AACUSTOMID に基づきます （AACUSTOMID は、前述の操作順序で定義されるように、他のすべての ID に優先されます）。
+AACUSTOMID は、Analytics 実装の `s.VisitorID` 変数の使用に基づいて、Adobe Analytics で設定される個別の ID フィールドです。 AACUSTOMID は、Adobe Analytics データフィードの `cust_visid` 列で表されます。 AACUSTOMID が存在する場合、AAID は AACUSTOMID に基づいて決定されます。 （AACUSTOMID は、前述の操作順序で定義されるように、他のすべての ID に優先されます）。
 
 ## Analytics ソースコネクタでこれらの ID を処理する方法
 
@@ -65,7 +65,8 @@ Analytics ソースコネクタは、次のように、これらの ID を XDM �
 
 identityMap 内：
 
-* ECID が存在する場合、イベントのプライマリ ID としてマークされます。 この場合、AAID は、前述のように ECID に基づいている可能性があることに注意してください。それ以外の場合、AAID は、イベントのプライマリ ID としてマークされます。
+* ECID が存在する場合、イベントのプライマリ ID としてマークされます。 この場合、AAID は、前述のように ECID に基づいている可能性があることに注意してください。
+それ以外の場合、AAID はイベントのプライマリ ID としてマークされます。
 * AACUSTOMID は、イベントのプライマリ ID としてマークされることはありません。 ただし、AACUSTOMID が存在する場合、AAID は、前述のように、AACUSTOMID に基づきます。
 
 ID が `identityMap` にコピーされると、`endUserIDs._experience.mcid.namespace.code` も同じイベントに設定されます。
@@ -76,4 +77,4 @@ ID が `identityMap` にコピーされると、`endUserIDs._experience.mcid.nam
 
 ## Customer Journey Analytics とプライマリ ID
 
-Customer Journey Analytics に関する限り、プライマリ ID の定義は、プライマリ ID をユーザー ID として使用することに決定している場合にのみ重要です。 ただし、これは必須ではありません。 一部の他の ID 列を人物 ID として選択することできます。
+Customer Journey Analytics に関する限り、プライマリ ID の定義は、プライマリ ID をユーザー ID として使用することに決定している場合にのみ重要です。 ただし、これは必須ではありません。 別の ID 列をユーザー ID として選択することもできます。

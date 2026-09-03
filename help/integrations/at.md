@@ -34,8 +34,8 @@ Target Classification ルックアップデータセット（Experience Platform
 ## プライマリの利点
 
 * マーケターは、Customer Journey Analytics の成功指標を Target アクティビティレポートにいつでも動的に適用できます。 アクティビティを実行する前にすべての項目を指定する必要がありません。
-* マーケターは、実験パネルなどの Customer Journey Analytics 機能を活用して、web サイトのパーソナライゼーションをさらに分析できます。
-* マーケターは、Adobe Journey Optimizer と Target に単一のレポートソースを使用できます。 どちらのパーソナライゼーション製品も Customer Journey Analytics に接続して、web パーソナライゼーションの全体像を把握できます。
+* マーケターは、実験パネルなどの Customer Journey Analytics 機能を活用して、web サイトのパーソナライズ機能をさらに分析できます。
+* マーケターは、Adobe Journey Optimizer と Target に単一のレポートソースを使用できます。 どちらのパーソナライズ機能製品も Customer Journey Analytics に接続して、web パーソナライゼーションの総合的なビューを把握できます。
 
 ## メモと考慮事項
 
@@ -51,4 +51,4 @@ Target アクティビティでは、[Customer Journey Analyticsをレポート�
 
 詳しくは、Target ドキュメントの [Adobe Customer Journey Analytics での Target レポート](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)を参照してください。
 
-アナリストが様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くの最適なのはどれかを判断する方法について詳しくは、[実験パネル](../analysis-workspace/c-panels/experimentation.md)を参照してください。 A/B 実験の上昇率と信頼性は、Target や Journey Optimizer などのアドビのソリューション、BYO（bring-your-own）データなど、オンラインまたはオフラインのあらゆる実験プラットフォームで評価できます。
+アナリストが様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くの最適なのはどれかを判断する方法について詳しくは、[実験パネル](../analysis-workspace/c-panels/experimentation.md)を参照してください。 Target や Journey Optimizer などのアドビのソリューション、BYO（bring-your-own）データなど、オンラインまたはオフラインのあらゆる実験プラットフォームから、A/B 実験の上昇率と信頼性を評価できます。

@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 2491
+source-wordcount: 2496
 ht-degree: 4%
 
 ---
@@ -47,8 +47,8 @@ ht-degree: 4%
 
 * セグメント定義の全体的なシーケンスの一部として[include](#include)に含めるデータ。 コンテナの一部として定義されたシーケンスの場合に使用します。 デフォルトでは、一致するすべてのデータが考慮されます。 そのデータは![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include Everyone]によって識別されます。
 
-   * ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;を選択して、シーケンスの前のデータのみを考慮します。
-   * ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**&#x200B;を選択して、シーケンスの後のデータのみを考慮します。
+  * ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**&#x200B;を選択して、シーケンスの前のデータのみを考慮します。
+  * ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**&#x200B;を選択して、シーケンスの後のデータのみを考慮します。
 
 * シーケンシャルセグメント定義の一部として[除外](#exclude)するデータ。
 
@@ -129,7 +129,7 @@ ht-degree: 4%
 
 ![&#x200B; シーケンス後](assets/sequence-after.png)
 
-ホームのページビューが2024年6月1日00:01に発生した場合、そのページビューが2024年6月15日00:01の後に発生する限り、「Women | Shoes」ページのページビューと一致します。
+ホームのページビューが2024年6月1日00:01に発生した場合、そのページビューが2024年6月15日00:01以降に発生する限り、「Women | Shoes」ページのページビューと一致します。
 
 ##### [!UICONTROL Within]演算子
 
@@ -137,7 +137,7 @@ ht-degree: 4%
 
 ![&#128279;](assets/sequence-within.png)内の シーケンス
 
-ホームのページビューが2024年6月1日（12:01）に発生した場合、そのページビューが2024年6月15日（12:16）より前に発生する限り、「Women | Shoes」ページのページビューと一致します。
+ホームのページビューが2024年6月1日12:01に発生した場合、そのページビューが2024年6月15日12:16より前に発生する限り、「Women | Shoes」ページのページビューが一致します。
 
 ##### [!UICONTROL After]だが[!UICONTROL Within]演算子
 
@@ -145,7 +145,7 @@ ht-degree: 4%
 
 ![&#x200B; シーケンス以降](assets/sequence-afterbutwithin.png)以内
 
-2024年6月1日にホームページにアクセスし、2019年6月15日以降:01にWomen | Shoes ページに戻りましたが、2019年7月1日以前にセグメントの対象となります。
+2024年6月1日にホームページにアクセスし、2019年6月15日以降にWomen | Shoes ページに戻る人は、00:01ですが、2019年7月1日以前にセグメントの対象となります。
 
 
 ### [!UICONTROL Event]、[!UICONTROL Session]および[!UICONTROL Dimension]の制約
@@ -270,7 +270,7 @@ Bで識別された基準を持つコンポーネントのシーケンスを指�
 >
 >[!UICONTROL &#x200B; ロジックグループ &#x200B;]は、シーケンシャルセグメントでのみ定義できます。つまり、[!UICONTROL Then]演算子がコンテナ内で使用されます。
 
-論理グループを使用すると、条件を単一の順次セグメントチェックポイントにグループ化できます。 シーケンスの一部として、ロジックグループとして識別されたコンテナで定義されたロジックは、以前のシーケンシャルチェックポイントの後に、以降のシーケンシャルチェックポイントの前に評価されます。
+Logic Group を使用すると、条件を単一のシーケンシャルセグメントのチェックポイントにグループ化できます。 シーケンスの一部として、ロジックグループとして識別されたコンテナで定義されたロジックは、以前のシーケンシャルチェックポイントの後に、以降のシーケンシャルチェックポイントの前に評価されます。
 
 ロジックグループ自体の条件は、任意の順序で満たすことができます。 対照的に、非シーケンシャルコンテナ（イベント、セッション、人物）は、全体的なシーケンス内でそれらの条件を満たす必要がなく、Then演算子で使用すると直感的でない可能性があります。
 

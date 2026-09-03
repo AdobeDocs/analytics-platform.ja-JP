@@ -22,7 +22,7 @@ topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
 workflow-type: tm+mt
-source-wordcount: 2373
+source-wordcount: 2383
 ht-degree: 71%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 71%
 
 状況によっては、1 人のユーザーを多数の永続 ID に関連付けることができます。 例えば、個人がブラウザーのCookieを頻繁に消去したり、ブラウザーのプライベートモードやシークレットモードを使用したりすることです。
 
-フィールドベースのステッチの場合、永続 ID の数は、ユーザー ID に優先されるので関係ありません。 1 人のユーザーが任意の数のデバイスに属する場合でも、デバイス間での Customer Journey Analytics のステッチ機能に影響を与えることはありません。
+フィールドベースのステッチの場合、永続 ID の数は関係なく、ユーザー ID が優先されます。 1 人のユーザーが任意の数のデバイスに属する場合でも、デバイス間での Customer Journey Analytics のステッチ機能に影響を与えることはありません。
 
 グラフベースの合成の場合、1人のユーザーがID グラフに多数の永続的IDを持つことができます。 グラフベースのステッチでは、指定した名前空間に基づいて永続 ID が使用されます。 同じ名前空間に対してより多くの永続的IDがある場合は、レキシグラフィックの最初の永続的IDが使用されます。
 
@@ -128,11 +128,11 @@ ht-degree: 71%
 
 +++回答
 
-アドビでは、現地の法律と国際法に従ってプライバシーリクエストを処理します。 アドビは、データアクセスリクエストとデータ削除リクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/home) を提供しています。 リクエストは、元のデータセットとキーが更新されたデータセットの両方に適用されます。
+アドビでは、現地の法律と国際法に従ってプライバシーリクエストを処理します。 アドビは、データアクセスリクエストとデータ削除リクエストを送信するための [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/home) を提供しています。 リクエストは、元のデータセットと再キー化されたデータセットの両方に適用されます。
 
 >[!IMPORTANT]
 >
->未ステッチプロセスは、プライバシーリクエストの一環として、2025年の初めに変更されます。 現在の未ステッチプロセスでは、既知の ID の最新バージョンを使用してイベントが再ステッチされます。 このイベントを別の ID に再割り当てすると、望ましくない法的結果が生じる可能性があります。 これらの懸念を解消するために、2025年以降、新しい未ステッチプロセスでは、プライバシーリクエストの対象となるイベントが永続 ID を使用して更新されます。
+>未ステッチプロセスは、プライバシーリクエストの一環として、2025年の初めに変更されます。 現在のアンステッチプロセスでは、既知の ID の最新バージョンを使用してイベントが再ステッチされます。 このイベントを別の ID に再割り当てすると、望ましくない法的結果が生じる可能性があります。 これらの懸念を解消するために、2025年以降、新しい未ステッチプロセスでは、プライバシーリクエストの対象となるイベントが永続 ID を使用して更新されます。
 > 
 
 ステッチ前とステッチ後の ID およびイベントについて詳しくは、次のデータを例として参照してください。
@@ -226,9 +226,9 @@ CustID Bob を持つ顧客に対するプライバシーリクエストを受信
 
 +++回答
 
-一時 ID のプレースホルダー値を使用するデータにステッチを適用する際に発生する「ユーザーの折りたたみ」に注意してください。 次の表の例では、CRM システムをソースとするデータセットから取得した未定義のユーザー ID に「Undefined」という値が設定されるので、ユーザーが誤って表示されています。
+一時 ID のプレースホルダー値を使用するデータにステッチを適用する際に発生する「ユーザーの折りたたみ」に注意してください。 次の表の例では、CRM システムをソースとするデータセットから取得した未定義のユーザー ID に「Undefined」という値が設定されるため、ユーザー数やユーザーの実態が正しく表現されません。
 
-| イベント | タイムスタンプ | 永続 ID（cookie ID） | 一時 ID | 結果のID （リプレイ後） |
+| イベント | タイムスタンプ | 永続 ID（Cookie ID） | 一時 ID | 結果のID （リプレイ後） |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
 | 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
@@ -256,7 +256,7 @@ Customer Journey Analytics の特定の指標は、従来の Analytics の指標
 | ----- | ----- | ----- | ----- |
 | **人物** =結果IDが人物IDとして選択されている個別の人物IDの数。 **人物**&#x200B;は、ステッチプロセスの結果に応じて、従来の **Adobe Analytics** のユニーク訪問者よりも多くなったり少なくなったりする場合があります。 | **人物** = ユーザー ID として選択された列に基づく個別のユーザー ID の数。 Analytics ソースコネクタデータセットの&#x200B;**人物**&#x200B;は、（Customer Journey Analytics で `endUserIDs._experience.aaid.id` をユーザー ID として使用した場合）従来の Adobe Analytics の&#x200B;**ユニーク訪問者**&#x200B;に似ています。 | **ユニーク訪問者** = 個別の訪問者 ID の数。 **ユニーク訪問者**&#x200B;は、個別の **ECID** の数と同じにならない場合があります。 | [人物](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/people)を参照してください。 |
 | **セッション数**：Customer Journey Analytics データビューのセッション設定に基づいて定義されます。 ステッチ処理では、複数のデバイスからの個々のセッションを 1 つのセッションにまとめることができます。 | **セッション数**：Customer Journey Analytics データビューで指定されたセッション設定に基づいて定義されます。 | **訪問数**：[訪問数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/visits)を参照してください。 | **訪問**：[CDA 仮想レポートスイート](https://experienceleague.adobe.com/ja/docs/analytics/components/cda/setup)で指定されたセッション設定に基づいて定義されます。 |
-| **イベント数** = Customer Journey Analytics でのステッチデータの行数。 この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。 ただし、空白の一時 ID がある行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。 この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。 ただし、Experience Platform データレイクの未ステッチデータに空白のユーザー ID が含まれているイベントがある場合、これらのイベントは Customer Journey Analytics に含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 |
+| **イベント数** = Customer Journey Analytics でのステッチデータの行数。 この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。 ただし、永続 ID が空白の行については、上記の FAQ に注意してください。 | **イベント数** = Customer Journey Analytics での未ステッチデータの行数。 この指標は、通常、従来の Adobe Analytics の&#x200B;**回数**&#x200B;に近い値になります。 ただし、Experience Platform データレイクの未ステッチデータに空白のユーザー ID が含まれているイベントがある場合、これらのイベントは Customer Journey Analytics に含まれません。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 | **発生回数**：[発生回数](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/occurrences)を参照してください。 |
 
 その他の指標は、Customer Journey Analytics と Adobe Analytics で似ている場合があります。 例えば、Adobe Analytics の[カスタムイベント](https://experienceleague.adobe.com/ja/docs/analytics/components/metrics/custom-events) 1～100 の合計数は、従来の Adobe Analytics と Customer Journey Analytics（ステッチか未ステッチかに関わらず）で非常に近い値になります。 Customer Journey Analytics と Adobe Analytics のイベントの重複排除などの[機能の違い](/help/getting-started/aa-vs-cja/cja-aa.md)により、2 つの製品間で不一致が生じることがあります。
 

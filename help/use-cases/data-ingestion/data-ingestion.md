@@ -44,7 +44,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 ### Adobe Experience Platform（以前の [!UICONTROL Launch]）のタグを使用する場合
 
 1. [データレイヤーの作成](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=ja)をまだ行っていない場合は、行います。 データレイヤーは、サイト上の JavaScript オブジェクトのフレームワークで、実装で使用されるすべての変数値が含まれます。 データレイヤーを使用すると、実装をより詳細に制御することができ、メンテナンスが容易になります。
-1. [Adobe Experience Platform タグ](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja)を使用して、データ収集用のコードをサイトに導入します（まだ導入していない場合）。 このタグ管理ソリューションを使用すると、他のタグ要件と共に Analytics コードを導入できます。 タグは、他のソリューションや製品との統合を提供し、カスタムコードの導入に対応します。 これらのタスクはすべて、組織の開発チームに依存せずに実行できるので、自らサイト上のコードを更新できます。
+1. [Adobe Experience Platform タグ](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja)を使用して、データ収集用のコードをサイトに導入します（まだ導入していない場合）。 このタグ管理ソリューションを使用すると、他のタグ要件と共に Analytics コードを導入できます。 タグは、他のソリューションや製品との統合を提供し、カスタムコードの導入に対応します。 これらのタスクはすべて、組織内の開発チームに依頼してサイト上のコードを更新してもらわなくても実行できます。
 1. Adobe Experience Platform で [Adobe Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を作成します。 このソースコネクタは、[エクスペリエンスデータモデル（XDM）システム](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)と呼ばれる、標準化されたフレームワーク内で Experience Platform に Analytics データを取り込みます。 詳しくは、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)を参照してください。
 1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の接続とデータ表示を作成します。
 
@@ -55,9 +55,9 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 1. [Adobe Experience Platform Web SDK拡張機能をタグ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja)で構成して、Adobe Experience Platform Edge Networkを介してweb プロパティからCX Enterpriseにデータを送信します。
 1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の[接続](/help/connections/create-connection.md)と[データ表示](/help/data-views/data-views.md)を作成します。
 
-## バッチ取り込みとストリーミング取得によるデータの取り込み
+## バッチ取り込みとストリーミング取り込みによるデータの取り込み
 
-Adobe Experience Platform では、複数のソースからのデータを統合し、マーケターが顧客の行動をより深く理解できるようにします。 Adobe Experience Platform のデータ取り込みは、Platform がこれらのソースからデータを取り込む複数の方法と、そのデータがデータレイク内でどのように保持されてダウンストリームの Platform サービスで使用されるかを表します。
+Adobe Experience Platform では、複数のソースからのデータを統合し、マーケターが顧客の行動をより深く理解できるようにします。 Adobe Experience Platform データインジェストサービスは、Platform がこれらのソースからデータを取り込む複数の方法と、そのデータがデータレイク内でどのように保持されて、ダウンストリームの Platform サービスで使用されるかを表します。
 
 ### バッチ取り込み
 

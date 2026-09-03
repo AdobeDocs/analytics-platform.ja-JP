@@ -24,13 +24,13 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1215
-ht-degree: 51%
+source-wordcount: 1365
+ht-degree: 48%
 
 ---
 
 
-# Content Analytics レポートの概要
+# Content Analytics レポート機能の概要
 
 [Analysis Workspace](/help/analysis-workspace/home.md)内の[!DNL Content Analytics]に関するレポート、分析を実行し、インサイトを得ることができます。 特定の Workspace [テンプレート](#template)を使用できるので、関連するコンテンツインサイトを含む事前入力された Workspace プロジェクトに直ちにアクセスできます。
 
@@ -103,9 +103,9 @@ ht-degree: 51%
 
 Content Analytics [&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md)を使用すると、どのコンテンツとコンテンツ属性が最も効果的かを確認できます。 テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。 個々のアセットや特定の属性のパフォーマンスを確認できます。
 
-学習内容に基づいて、様々な操作を行うことができます。 ホームページで高パフォーマンスのアセットを昇格させるのと同様に、特定のセグメント用にコンテンツをパーソナライズして高パフォーマンスの属性を含めたり、古くなり始めたコンテンツを交代させたりします。
+学習内容に基づいて、様々な操作を行うことができます。 ホームページで高パフォーマンスのアセットをプロモートしたり、特定のセグメント向けにコンテンツをパーソナライズして高パフォーマンスの属性を含めたり、古くなり始めたコンテンツを差し替えたりできます。
 
-テンプレートを使用するには：
+テンプレートを使用するには:
 
 1. メインメニューから「**[!UICONTROL Workspace]**」を選択します。
 1. Content Analytics 用に設定されているデータビューが選択されていることを確認します。
@@ -123,43 +123,43 @@ Content Analytics [&#x200B; テンプレート &#x200B;](/help/analysis-workspac
 4つのパネルは次のとおりです。
 
 * **最もパフォーマンスが高いコンテンツは何ですか？**
-エンゲージメントとコンバージョンを促進するエクスペリエンスとアセットを特定します。エクスペリエンスとは、特定の時間にキャプチャされたweb ページ全体、またはモバイルアプリ内で定義されたテキスト、アセット、CTAの組み合わせです。
+エンゲージメントとコンバージョンを促進するエクスペリエンスとアセットを特定します。 エクスペリエンスとは、特定の時間にキャプチャされたweb ページ全体、またはモバイルアプリ内で定義されたテキスト、アセット、CTAの組み合わせです。
 
-   * **エクスペリエンス**。
+  * **エクスペリエンス**。
 
-     >[!NOTE]
-     >
-     >これらのビジュアライゼーションは、Content Analyticsの設定に[&#x200B; エクスペリエンスを含めるようにシステムを設定した場合にのみ、テンプレートに表示されます。](/help/content-analytics/config/guided.md#experience-capture-and-definition)
-     > 
+    >[!NOTE]
+    >
+    >これらのビジュアライゼーションは、Content Analyticsの設定に[&#x200B; エクスペリエンスを含めるようにシステムを設定した場合にのみ、テンプレートに表示されます。](/help/content-analytics/config/guided.md#experience-capture-and-definition)
+    > 
 
-      * **Experience CTR**: Experience CTRを示す[要約変更](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
-      * **上位のコンバージョンエクスペリエンス**：選択したコンバージョン指標に基づいて、上位のコンバージョンエクスペリエンスを表示する[横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md)ビジュアライゼーション。
-      * **パフォーマンスが最も高いエクスペリエンス**：パフォーマンスが最も高いエクスペリエンスの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[&#x200B; サムネール &#x200B;](#thumbnails)と[&#x200B; プレビュー](#previews)を含む）。
+    * **Experience CTR**: Experience CTRを示す[要約変更](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
+    * **上位のコンバージョンエクスペリエンス**：選択したコンバージョン指標に基づいて、上位のコンバージョンエクスペリエンスを表示する[横棒グラフ](/help/analysis-workspace/visualizations/horizontal-bar.md)ビジュアライゼーション。
+    * **パフォーマンスが最も高いエクスペリエンス**：パフォーマンスが最も高いエクスペリエンスの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[&#x200B; サムネール &#x200B;](#thumbnails)と[&#x200B; プレビュー](#previews)を含む）。
 
-   * **Assets**
+  * **Assets**
 
-      * **アセット CTR**
-アセットのCTRを示す[要約変更](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
-      * **最もコンバージョン率の高いアセット**
-選択したコンバージョン指標に基づいて、最もコンバージョン率の高いアセットを表示する[横長バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
-      * **パフォーマンスが最も高いアセット**
-パフォーマンスが最も高いアセットの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[&#x200B; サムネール &#x200B;](#thumbnails)と[&#x200B; プレビュー](#previews)を含む）。
-Assets - コンバージョンと比較したビュー。
-アセットビューとアセット変換の散布図を示す[散布図](/help/analysis-workspace/visualizations/scatterplot.md) ビジュアライゼーション。
+    * **アセット CTR**
+      アセットのCTRを示す[要約変更](/help/analysis-workspace/visualizations/summary-number-change.md) ビジュアライゼーション。
+    * **最もコンバージョン率の高いアセット**
+      選択したコンバージョン指標に基づいて、最もコンバージョン率の高いアセットを表示する[横長バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
+    * パフォーマンスが最も高いアセット **件**
+      パフォーマンスが最も高いアセットの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) （[&#x200B; サムネール &#x200B;](#thumbnails)と[&#x200B; プレビュー](#previews)を含む）。
+      Assets - コンバージョンと比較したビュー。
+      アセットビューとアセット変換の散布図を表示する[散布図](/help/analysis-workspace/visualizations/scatterplot.md) ビジュアライゼーション。
 
 * **コンバージョンに貢献するアセット属性はどれですか？**
 Content Analyticsは、AIと生成AIを活用して、被写体、シーン、前景色などのメタデータや属性をあらゆるアセットに自動的に割り当てます。
 
-   * **アセット属性を変換中の上位**
-選択したコンバージョン指標に基づいて、最もコンバージョン率の高いアセット属性を表示する[横棒](/help/analysis-workspace/visualizations/horizontal-bar.md)。
-   * **過去30日間に最も多くコンバージョンしたアセット属性**
-選択したコンバージョン指標に基づいて、過去30日間と比較して、最もコンバージョン率の高いアセット属性を示す[横長バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
-   * **アセット属性データの変換上位**
-選択したコンバージョン指標に基づいて最もコンバージョン率の高い属性を表示する[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、属性トレンドビジュアライゼーションを更新します。
-   * **属性トレンド**
-選択したコンバージョン上位アセット属性の属性傾向を示す[行](/help/analysis-workspace/visualizations/line.md)のビジュアライゼーション。
-   * **アセットの描画色**
-単一のアセット属性カテゴリの項目のパフォーマンスを比較する例[自由形式テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)：描画色。 このアセット属性は、他のアセット属性カテゴリディメンションに置き換えることができます。
+  * **アセット属性を変換中の上位**
+    選択したコンバージョン指標に基づいて、最もコンバージョン率の高いアセット属性を表示する[横棒](/help/analysis-workspace/visualizations/horizontal-bar.md)。
+  * **過去30日間に最も多くコンバージョンしたアセット属性**
+    選択したコンバージョン指標に基づいて、過去30日間と比較して、最もコンバージョン率の高いアセット属性を示す[横長バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
+  * **アセット属性データの変換上位**
+    選択したコンバージョン指標に基づいて最もコンバージョン率の高い属性を表示する[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、属性トレンドビジュアライゼーションを更新します。
+  * **属性トレンド**
+    選択したコンバージョン上位アセット属性の属性傾向を示す[行](/help/analysis-workspace/visualizations/line.md)のビジュアライゼーション。
+  * **アセットの描画色**
+    単一のアセット属性カテゴリの項目のパフォーマンスを比較する例[自由形式テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)：描画色。 このアセット属性は、他のアセット属性カテゴリディメンションに置き換えることができます。
 
 * **コンバージョンに貢献するエクスペリエンス属性はどれですか？**
 
@@ -172,32 +172,32 @@ Content Analyticsは、AIと生成AIを活用して、被写体、シーン、�
 
   パネルは、次のビジュアライゼーションで構成されています。
 
-   * **エクスペリエンス属性の変換中**
-選択したコンバージョン指標に基づいて、最もコンバージョン率の高いエクスペリエンス属性を表示する[水平バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
-過去30日間と比較した、コンバージョン率の高いエクスペリエンス属性
-選択したコンバージョン指標に基づいて、過去30日間と比較して、最もコンバージョン率の高いエクスペリエンス属性を示す[水平バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
-   * **変換中のエクスペリエンス属性データ**
-選択したコンバージョン指標に基づいて、最もコンバージョン率の高いエクスペリエンスを表示する[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、折れ線グラフのビジュアライゼーションを更新します。
-   * **行**
-選択したコンバージョン上位のエクスペリエンス属性の傾向を示す[行](/help/analysis-workspace/visualizations/line.md)のビジュアライゼーション。
-   * **エクスペリエンスキーワード**
-選択したコンバージョン指標に基づく上位エクスペリエンス キーワードを表示する[&#x200B; フリーフォーム テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
+  * **変換中のエクスペリエンス属性の上位**
+    選択したコンバージョン指標に基づいて、最もコンバージョン率の高いエクスペリエンス属性を表示する[水平バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
+    過去30日間と比較した、コンバージョン率の高いエクスペリエンス属性
+    選択したコンバージョン指標に基づいて、過去30日間と比較して、最もコンバージョン率の高いエクスペリエンス属性を示す[水平バー](/help/analysis-workspace/visualizations/horizontal-bar.md)のビジュアライゼーション。
+  * **変換中のエクスペリエンス属性データ**
+    選択したコンバージョン指標に基づいて、最もコンバージョン率の高いエクスペリエンスを表示する[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。 テーブルの行を選択して、折れ線グラフのビジュアライゼーションを更新します。
+  * **行**
+    選択したコンバージョン上位のエクスペリエンス属性の傾向を示す[行](/help/analysis-workspace/visualizations/line.md)のビジュアライゼーション。
+  * **エクスペリエンスキーワード**
+    選択したコンバージョン指標に基づく上位エクスペリエンス キーワードを表示する[&#x200B; フリーフォーム テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)。
 
 * **アセットはサイトのどこに表示されますか？**
-このフリーフォームテーブルは、最も閲覧されたアセットが表示される場所を詳細に示します。この分析を利用して、パフォーマンスの高いページを特定し、アセットの配置を最適化することができます。
+このフリーフォームテーブルは、最も閲覧されたアセットが表示される場所を詳細に示します。 この分析を利用して、パフォーマンスの高いページを特定し、アセットの配置を最適化することができます。
 
-   * **最も閲覧されたアセットはどこに表示されますか？**
-任意のアセットをディメンションごとに分類することで、画像がどこで表示されるのかを的確に把握できます。
+  * **最も多く閲覧されたアセットはどこに表示されますか？**
+    任意のアセットをディメンションごとに分類することで、画像がどこで表示されるのかを的確に把握できます。
 
-     サンプルの[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（[サムネイル](#thumbnails)および[プレビュー](#previews)を含む）では、**[!UICONTROL アセット ID]** の代わりに[!UICONTROL アセット認識 ID] が使用されています。 時には、異なる画像 URL を持つまったく同じ画像が、サイトに複製されることがあります。 [!UICONTROL アセット認識 ID] 属性を使用すると、これらの重複を 1 つの ID にグループ化できます。
+    サンプルの[フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)（[サムネイル](#thumbnails)および[プレビュー](#previews)を含む）では、**[!UICONTROL アセット ID]** の代わりに[!UICONTROL アセット認識 ID] が使用されています。 時には、異なる画像 URL を持つまったく同じ画像が、サイトに複製されることがあります。 [!UICONTROL アセット認識 ID] 属性を使用すると、これらの重複を 1 つの ID にグループ化できます。
 
-     アセットはページ上で変更できるので、システムは各アセットを&#x200B;**[!UICONTROL Experience Id]**&#x200B;で分類して、アセットが表示されたページのバージョンを特定します。 [!UICONTROL エクスペリエンス ID] は、サイト上のアセットの場所を把握するのに役立つ他のディメンションに置き換えることができます。 例えば、[!UICONTROL ページ名]、[!UICONTROL ページ URL]、または[!UICONTROL サイトセクション]などに置き換えることができます。
+    アセットはページ上で変更できるので、システムは各アセットを&#x200B;**[!UICONTROL Experience Id]**&#x200B;で分類して、アセットが表示されたページのバージョンを特定します。 [!UICONTROL エクスペリエンス ID] は、サイト上のアセットの場所を把握するのに役立つ他のディメンションに置き換えることができます。 例えば、[!UICONTROL ページ名]、[!UICONTROL ページ URL]、または[!UICONTROL サイトセクション]などに置き換えることができます。
 
-     また、[!UICONTROL アセット認識 ID] を[!UICONTROL アセット ID] に置き換えて、特定の画像 URL が参照されている場所のレコードを取得することもできます。
+    また、[!UICONTROL アセット認識 ID] を[!UICONTROL アセット ID] に置き換えて、特定の画像 URL が参照されている場所のレコードを取得することもできます。
 
 
 >[!MORELIKETHIS]
 >
->[Content Analytics コンポーネント &#x200B;](components.md)
->[&#x200B; テンプレートを使用](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[Content Analytics コンポーネント](components.md)
+>[テンプレートを使用](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

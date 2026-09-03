@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: User
 source-git-commit: e90a8d978f8d910f426dcb0fbf28881724d0f5a7
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2545'
 ht-degree: 3%
 
 ---

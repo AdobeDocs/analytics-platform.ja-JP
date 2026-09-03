@@ -21,7 +21,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 535
+source-wordcount: 538
 ht-degree: 25%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 25%
 
 Report Builder ハブは、Excel リボン バーから![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]**&#x200B;を選択すると、Excel ブック内に表示される右側のペインです。
 
-Report Builder ハブを使用して、データブロックの作成、更新、管理を行います。
+Report Builder ハブを使用して、データブロックの作成、更新、削除および管理を行います。
 
 Report Builder ハブには、![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**、![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]**&#x200B;および![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL スケジュール]** ボタン、**[!UICONTROL コマンド]** パネル、および&#x200B;**[!UICONTROL クイック編集]** パネルが含まれています。
 
@@ -49,13 +49,13 @@ Report Builder ハブには、![AddCircle](/help/assets/icons/AddCircle.svg) **[
 
 | コマンド | 使用条件... | 目的 |
 |------|------------------|--------|
-| ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL データブロックを編集]** | 選択したセル範囲が、1 つのデータブロックのみの一部である。 | を使用してデータブロックを編集します。 |
-| ![更新](/help/assets/icons/Refresh.svg) **[!UICONTROL データブロックを更新]** | 選択範囲に少なくとも 1 つのデータブロックが含まれている。 このコマンドは、選択範囲のデータブロックのみを更新します。 | を使用して、1つ以上のデータブロックを更新します。 |
+| ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL データブロックを編集]** | 選択したセル範囲が、1 つのデータブロックのみの一部です。 | を使用してデータブロックを編集します。 |
+| ![更新](/help/assets/icons/Refresh.svg) **[!UICONTROL データブロックを更新]** | 選択範囲に少なくとも 1 つのデータブロックが含まれています。 このコマンドは、選択範囲のデータブロックのみを更新します。 | を使用して、1つ以上のデータブロックを更新します。 |
 | ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL すべてのデータブロックを更新]** | ワークブックには、1 つ以上のデータブロックが含まれています。 | を使用して、ブック内のすべてのデータブロックを更新します |
 | ![Send](/help/assets/icons/Send.svg) **[!UICONTROL ワークブックを送信]** | ワークブックには、1 つ以上のデータブロックが含まれています。 | を使用すると、ワークブックを電子メール [&#128279;](schedule-reportbuilder.md)でファイルとして送信できます。 |
 | ![&#x200B; コピー](/help/assets/icons/Copy.svg) **[!UICONTROL データブロックをコピー]** | 選択したセルまたはセル範囲は、1 つ以上のデータブロックの一部です。 | を使用して、データブロックをコピーします。 |
 | ![&#x200B; カット &#x200B;](/help/assets/icons/Cut.svg) **[!UICONTROL データブロックをカット]** | 選択したセルまたはセル範囲は、1 つ以上のデータブロックの一部です。 | データブロックをカットする場合に使用します。 |
-| ![削除](/help/assets/icons/Delete.svg) **[!UICONTROL データブロックを削除]** | 選択したセル範囲が、1 つのデータブロックのみの一部である。 | データブロックの削除に使用 |
+| ![削除](/help/assets/icons/Delete.svg) **[!UICONTROL データブロックを削除]** | 選択したセル範囲が、1 つのデータブロックのみの一部です。 | データブロックの削除に使用 |
 
 ## クイック編集パネル
 
@@ -83,6 +83,6 @@ Report Builder ハブには、![AddCircle](/help/assets/icons/AddCircle.svg) **[
 >[!MORELIKETHIS]
 >
 >[&#x200B; データビューの選択](select-data-view.md)
->[日付範囲の選択](select-date-range.md)
+>[日付範囲を選択](select-date-range.md)
 >[フィルターの操作](work-with-filters.md)
 >

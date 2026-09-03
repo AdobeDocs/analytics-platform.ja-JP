@@ -41,17 +41,17 @@ ht-degree: 6%
 
 * または：
 
-   1. **[!UICONTROL テーブル]** ペインの特定の指標に対して![MoreSmall](/help/assets/icons/MoreSmall.svg)を選択し、**[!UICONTROL フィルター指標]**&#x200B;を選択します。
+  1. **[!UICONTROL テーブル]** ペインの特定の指標に対して![MoreSmall](/help/assets/icons/MoreSmall.svg)を選択し、**[!UICONTROL フィルター指標]**&#x200B;を選択します。
 
-      指標を表示する「![&#x200B; セグメント」タブ。](./assets/filter-metric.png){zoomable="yes"}
+     指標を表示する「![&#x200B; セグメント」タブ。](./assets/filter-metric.png){zoomable="yes"}
 
-   1. 「**[!UICONTROL セグメント]**」ドロップダウンメニューから1つ以上のセグメントを選択します。 セグメントは、**[!UICONTROL 適用されたセグメント]** リストに追加されます。
+  1. 「**[!UICONTROL セグメント]**」ドロップダウンメニューから1つ以上のセグメントを選択します。 セグメントは、**[!UICONTROL 適用されたセグメント]** リストに追加されます。
 
-      ![個のセグメントが適用されました](assets/segments-applied.png)
-   1. 「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、**[!UICONTROL 適用されたセグメント]** リストからセグメントを削除します。 または、**[!UICONTROL すべてクリア]**&#x200B;を選択して、**[!UICONTROL 適用されたセグメント]** リストからすべてのセグメントを削除します。
-   1. 「**[!UICONTROL 適用]**」を選択します。
+     ![個のセグメントが適用されました](assets/segments-applied.png)
+  1. 「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、**[!UICONTROL 適用されたセグメント]** リストからセグメントを削除します。 または、**[!UICONTROL すべてクリア]**&#x200B;を選択して、**[!UICONTROL 適用されたセグメント]** リストからすべてのセグメントを削除します。
+  1. 「**[!UICONTROL 適用]**」を選択します。
 
-適用したフィルターを表示するには、テーブルウィンドウで指標の上にマウスポインターを置くか、指標を選択します。 セグメントが適用された指標には、セグメントアイコンが表示されます。
+適用済みのフィルターを表示するには、テーブルで指標にポインタを合わせるか、指標を選択します。 セグメントが適用された指標には、セグメントアイコンが表示されます。
 
 
 ## セグメントをクイック編集

@@ -105,7 +105,8 @@ ht-degree: 25%
 
 * [[!UICONTROL 日付範囲] リスト &#x200B;](#date-ranges-list)で、日付範囲のタイトルを選択します。
 
-[日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)を使用して、日付範囲を編集します。日付範囲マネージャー[を使用して、日付範囲を共有、名前変更、または削除します。](/help/components/date-ranges/manage.md)
+[日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder)を使用して、日付範囲を編集します。
+日付範囲マネージャー[を使用して、日付範囲を共有、名前変更、または削除します。](/help/components/date-ranges/manage.md)
 
 
 <!--

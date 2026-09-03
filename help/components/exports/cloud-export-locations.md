@@ -1,7 +1,7 @@
 ---
 description: Customer Journey Analytics データを送信できるクラウド書き出し場所の設定
 keywords: Analysis Workspace
-title: クラウドの書き出し場所の設定
+title: クラウド書き出しの場所を設定
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
@@ -18,12 +18,12 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 3307
+source-wordcount: 3313
 ht-degree: 25%
 
 ---
 
-# クラウドの書き出し場所の設定 {#configure-cloud-export-locations}
+# クラウド書き出しの場所を設定 {#configure-cloud-export-locations}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -141,7 +141,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
 
    | フィールド | 関数 |
    |---------|----------|
-   | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するAmazon S3 アカウント内のバケット。 <p>このバケットにファイルをアップロードするには、アドビが提供したユーザー ARN に `S3:PutObject` 権限があることを確認してください。 </p><p>バケット名は、特定の命名規則を満たす必要があります。 例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。 [命名規則の完全なリストについては、AWSのドキュメント &#x200B;](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)を参照してください。 </p> |
+   | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するAmazon S3 アカウント内のバケット。 <p>このバケットにファイルをアップロードするには、アドビが提供したユーザー ARN に `S3:PutObject` 権限があることを確認してください。 </p><p>バケット名は、特定の命名ルールを満たす必要があります。 例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。 [命名規則の完全なリストについては、AWSのドキュメント &#x200B;](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)を参照してください。 </p> |
    | [!UICONTROL **接頭辞**] | データを配置するバケット内のフォルダー。 静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
    | [!UICONTROL **ファイル名とパス**] | この場所に送信される自動書き出しに使用する動的なカスタムファイル名を指定します。 ファイル名の前に動的なカスタムファイルパスを付けることもできます。 <p>このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>ファイル名とパスで次のいずれかの変数を使用して、動的にします。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul></p><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`を指定した場合、2026年1月15日にこの宛先に自動的に送信される書き出しには、次のファイルパスと名前が含まれます。[prefix_folder_name]/2026/01/15/my-report-[UID]-1.csv</p> |
 

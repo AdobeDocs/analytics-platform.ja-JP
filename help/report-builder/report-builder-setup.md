@@ -43,9 +43,9 @@ Report Builder Customer Journey Analytics版は、次のオペレーティング
 
   すべての Windows デスクトップ Excel ユーザーは、アドインを使用するために Microsoft Edge Webview2 をインストールする必要があります。 インストールするには：
 
-   1. <https://developer.microsoft.com/en-us/microsoft-edge/webview2/> にアクセスします。
-   1. お使いのプラットフォームに適したバージョンの&#x200B;**[!UICONTROL Evergreen Standalone Installer]**&#x200B;を選択してダウンロードします。
-   1. インストーラーを実行し、インストールプロンプトに従います。
+  1. <https://developer.microsoft.com/en-us/microsoft-edge/webview2/> にアクセスします。
+  1. お使いのプラットフォームに適したバージョンの&#x200B;**[!UICONTROL Evergreen Standalone Installer]**&#x200B;を選択してダウンロードします。
+  1. インストーラーを実行し、インストールプロンプトに従います。
 
 ### Web Office
 

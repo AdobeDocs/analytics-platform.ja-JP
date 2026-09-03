@@ -21,7 +21,7 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 1693
+source-wordcount: 1699
 ht-degree: 93%
 
 ---
@@ -84,8 +84,8 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
    **[!UICONTROL 製品の互換性]**&#x200B;は、計算された指標を実験とテーブルの書き出しに使用できるかどうかを示します。 使用可能な値：
    * **[!UICONTROL Customer Journey Analytics のすべての場所]**：計算指標は、Adobe Customer Journey Analytics 全体で使用できます。
    * **[!UICONTROL 次の場所では互換性がありません：]**
-      * **[!UICONTROL 実験]**：計算された指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。
-      * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[&#x200B; サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
+     * **[!UICONTROL 実験]**：計算された指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。
+     * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[&#x200B; サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
 
 1. 次のいずれかを選択します。
    * 計算指標を保存する場合は、「**[!UICONTROL 保存]**」。
@@ -95,11 +95,11 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
 
 ## 定義ビルダー
 
-定義ビルダーを使用すると、ディメンション、指標、セグメントおよび関数をドラッグ＆ドロップして、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成できます。 この作成では、標準指標、アドビ定義の指標、計算指標、セグメント、ディメンションおよび関数を使用できます。 これらのコンポーネントはすべて、計算指標ビルダーのコンポーネントパネルから使用できます。 さらに、演算子やコンテナも定義で使用できます。
+定義ビルダーを使用すると、ディメンション、指標、セグメントおよび関数をドラッグ＆ドロップして、コンテナ階層ロジック、ルールおよび演算子に基づいてカスタム指標を作成できます。 この作成では、標準指標、アドビ定義の指標、計算指標、セグメント、ディメンションおよび関数を使用できます。 これらのコンポーネントはすべて、計算指標ビルダー のコンポーネントパネルから使用できます。 さらに、演算子やコンテナも定義で使用できます。
 
 ![計算指標を作成](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
-**[!UICONTROL 定義]**&#x200B;エリアでは、指標のみが単一のコンポーネントとして定義されます。 その他のコンポーネントはすべて、コンテナ、ラッピング指標またはその他のコンテナとして定義されます。 詳しくは、[コンテナ](#containers)を参照してください。
+**[!UICONTROL 定義]**&#x200B;エリアでは、指標のみが単一のコンポーネントとして定義されます。 その他のコンポーネントはすべて、指標やその他のコンテナを含むコンテナとして定義されます。 詳しくは、[コンテナ](#containers)を参照してください。
 
 ### 指標
 
@@ -155,22 +155,22 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
 
 * ディメンションからセグメントコンテナを追加するには：
 
-   1. コンポーネントパネルから ![ディメンション](/help/assets/icons/Dimensions.svg) **[!UICONTROL ディメンション]**&#x200B;コンポーネントを&#x200B;**[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
-   1. **[!UICONTROL ディメンションからセグメントを作成]**&#x200B;ポップアップで、セグメントの条件を定義します。 演算子のリストから選択し、値を選択するか入力します。 例えば、**[!UICONTROL 月]** **[!UICONTROL 次に等しい]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` などとなります。
-   1. 「**[!UICONTROL 完了]**」を選択します。 セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に追加されます。
+  1. コンポーネントパネルから ![ディメンション](/help/assets/icons/Dimensions.svg) **[!UICONTROL ディメンション]**&#x200B;コンポーネントを&#x200B;**[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のコンポーネントを検索できます。
+  1. **[!UICONTROL ディメンションからセグメントを作成]**&#x200B;ポップアップで、セグメントの条件を定義します。 演算子のリストから選択し、値を選択するか入力します。 例えば、**[!UICONTROL 月]** **[!UICONTROL 次に等しい]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)`Sep 2024` などとなります。
+  1. 「**[!UICONTROL 完了]**」を選択します。 セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に追加されます。
 
 
 * セグメントからセグメントコンテナを追加するには、以下を使用します。
 
-   * コンポーネントパネルから ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを&#x200B;**[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のセグメントを検索できます。
-セグメントの名前を使用すると、セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
+  * コンポーネントパネルから ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを&#x200B;**[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のセグメントを検索できます。
+    セグメントの名前を使用すると、セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
 
-   * コンポーネントパネルから![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを汎用コンテナにドラッグ＆ドロップします。 コンテナがセグメントコンテナに変更されます。
+  * コンポーネントパネルから![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを汎用コンテナにドラッグ＆ドロップします。 コンテナがセグメントコンテナに変更されます。
 
-   * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 追加]**&#x200B;を選択します。
+  * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 追加]**&#x200B;を選択します。
 
-      1. 「**[!UICONTROL セグメント]**」を選択します。 セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に追加されます。
-      1. 新しいセグメントコンテナで、[!UICONTROL *選択…*]&#x200B;ドロップダウンメニューからセグメントを選択します。
+    1. 「**[!UICONTROL セグメント]**」を選択します。 セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に追加されます。
+    1. 新しいセグメントコンテナで、[!UICONTROL *選択…*]&#x200B;ドロップダウンメニューからセグメントを選択します。
 
   >[!TIP]
   >
@@ -186,17 +186,17 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
 
 #### 関数コンテナ
 
-関数コンテナを追加するには、次の手順を使用します。
+関数コンテナを追加するには、次の方法を使用できます。
 
 * ドラッグ＆ドロップ：
 
-   1. コンポーネントパネルから ![関数](/help/assets/icons/Effect.svg) **[!UICONTROL 関数]**&#x200B;コンポーネントを「**[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ＆ドロップ]**」にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定の関数を検索できます。
-   1. 関数の名前を使用すると、関数コンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
+  1. コンポーネントパネルから ![関数](/help/assets/icons/Effect.svg) **[!UICONTROL 関数]**&#x200B;コンポーネントを「**[!UICONTROL ここに指標、ディメンション、ディメンション項目、セグメント、関数をドラッグ＆ドロップ]**」にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定の関数を検索できます。
+  1. 関数の名前を使用すると、関数コンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
 
 * コンテナ内から ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 追加]**&#x200B;を選択します。
 
-   1. 「**[!UICONTROL 関数]**」を選択します。
-   1. コンテナで、[!UICONTROL *選択…*]&#x200B;ドロップダウンメニューから関数を選択します。
+  1. 「**[!UICONTROL 関数]**」を選択します。
+  1. コンテナで、[!UICONTROL *選択…*]&#x200B;ドロップダウンメニューから関数を選択します。
 
 関数コンテナの名前は、関数コンポーネントの名前を取って付けられます。 例：![関数](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**。 ![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択すると、機能の詳細を含むポップアップが表示されます。 関数について詳しくは、「**[!UICONTROL 詳細情報]**」を選択してください。
 

@@ -27,14 +27,14 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 780
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
 
 # Content Analytics の設定
 
-この記事では、コンテンツ分析の設定方法の概要について説明します。
+この記事では、Content Analytics の設定方法の概要を示します。
 
 コンテンツ分析を設定する前に、[前提条件](#prerequisites)が満たされていること、必要な[アクセス制御](#access-control)があること、[制限事項](#limitations)を認識していることを確認する必要があります。
 
@@ -57,28 +57,28 @@ Content Analytics を設定する前に、次の前提条件が満たされて�
 
 ### Web
 
-* Content Analytics で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録しています。 設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>。
-* 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code> を使用していることを確認します。
+* Content Analytics で使用するフィーチャライゼーションサービスのユーザーエージェントと IP アドレスを許可リストに登録しています。 設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>。
+* 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code> JavaScript ライブラリを使用していることを確認します。
 * Customer Journey Analytics 製品管理者の役割を持ち、接続の管理とデータビューの管理を行う権限が付与されています。
 * Content Analytics エクスペリエンスを収集する場合は、web ページの変更に基づいてContent Analyticsのバージョン管理を設定および更新してください。
 * [データ収集には必要な権限](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
-   * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
+  * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
+  * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
 * 次の重要な設定オプションを慎重に検討しました。
 
-   * サイトはエクスペリエンスレポートに適しています。 適切なエクスペリエンスレポートは、次の条件を満たす場合にのみ可能です。
-      * ページ URL を使用して、サイト上のページを再現できる必要があります。
-      * 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再現でき、Cookie やその他のパーソナライゼーションメカニズムに依存しません。
-   * コンテンツエンゲージメントの分析とインサイトのために、キャプチャしたいページを明確に把握することができます。
-   * コンテンツエンゲージメントの分析とインサイトを取り込むアセット（タイプ）を明確に理解しています。
+  * サイトはエクスペリエンスレポートに適しています。 適切なエクスペリエンスレポートは、次の条件を満たす場合にのみ可能です。
+    * ページ URL を使用して、サイト上のページを再現できる必要があります。
+    * 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再現でき、Cookie やその他のパーソナライゼーションメカニズムに依存しません。
+  * コンテンツエンゲージメントの分析とインサイトのために、キャプチャしたいページを明確に把握することができます。
+  * コンテンツエンゲージメントの分析とインサイトを取得したいアセット（タイプ）がどれかを明確に理解しています。
 
 ### モバイル
 
 * モバイルアプリに対して、[Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/)および[Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)拡張機能が有効になっていることを確認します。
 * Customer Journey Analytics 製品管理者の役割を持ち、接続の管理とデータビューの管理を行う権限が付与されています。
 * [データ収集には必要な権限](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
-   * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
+  * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
+  * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
 
 
 
@@ -86,7 +86,7 @@ Content Analytics を設定する前に、次の前提条件が満たされて�
 
 >[!IMPORTANT]
 >
->個々のユーザーまたはユーザーグループに対して Content Analytics アクセスを有効または無効にするために設定できる Content Analytics 権限がありません。
+>個人ユーザーまたはユーザーグループに対して Content Analytics アクセスを有効または無効にするために設定できる Content Analytics 権限がありません。
 >
 
 ユーザーまたはユーザーグループに Content Analytics へのアクセス権を付与するには、[Content Analytics 用に設定されている 1 つ以上のデータビュー](guided.md#data-view)へのアクセス権をユーザーまたはユーザーグループに付与する必要があります。

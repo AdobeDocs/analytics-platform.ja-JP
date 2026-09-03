@@ -1,5 +1,5 @@
 ---
-title: 値を含む／除外コンポーネントの設定
+title: 「値を含める／除外」コンポーネントの設定
 description: ディメンション項目を、値に応じて条件付きで含めるか除外します。
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
@@ -25,14 +25,14 @@ ht-degree: 88%
 
 ---
 
-# 値を含む／除外コンポーネントの設定 {#include-exclude-values-component-settings}
+# 「値を含める／除外」コンポーネントの設定 {#include-exclude-values-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_includeexcludevalues"
 >title="値を含む／除外"
->abstract="特定の条件に合致する値のみをカウントするように指標をフィルタリングします。"
+>abstract="特定の条件に合致する値のみをカウントするように指標をフィルターします。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 88%
 
 <!-- markdownlint-enable MD034 -->
 
-「値を含む／除外」を使用すると、ディメンション項目の値に依存するルールを作成できます。 設定した条件を満たさない値は、基になるデータセットにまだデータが存在しているにもかかわらず、存在していないものとして Analysis Workspace で処理されます。
+「値を含める／除外」を使用すると、ディメンション項目の値に依存するルールを作成できます。 設定した条件を満たさない値は、基になるデータセットにまだデータが存在しているにもかかわらず、存在していないものとして Analysis Workspace で処理されます。
 
 ![値を含む／除外をハイライト表示するデータビューウィンドウ](../assets/include-exclude.png)
 

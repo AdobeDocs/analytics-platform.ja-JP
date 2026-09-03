@@ -45,7 +45,7 @@ Customer Journey Analytics アーキテクチャの概要を以下に示しま�
 * 接続で定義したデータセットから使用可能なフィールドに基づいて、[データビュー](/help/data-views/data-views.md)でディメンション ![ディメンション](/help/assets/icons/Dimensions.svg) と指標 ![イベント](/help/assets/icons/Event.svg) を定義および設定します。
 * データビューのディメンションと指標に基づいて、[プロジェクト](/help/analysis-workspace/home.md)でレポート ![ViewTable](/help/assets/icons/ViewTable.svg) やビジュアライゼーション（折れ線グラフ ![折れ線グラフ](/help/assets/icons/GraphTrend.svg) や面グラフ ![面グラフ](/help/assets/icons/GraphAreaStacked.svg) など）を作成します。
 
-アーキテクチャのデータセットのソースには、次のように様々なものがあります。
+アーキテクチャ内のデータセットは、次のように様々なソースから取り込まれます。
 
 * バッチデータ
 
@@ -86,13 +86,13 @@ Customer Journey Analytics アーキテクチャの概要を以下に示しま�
 
 ### Adobe Experience Platform Web SDK の使用
 
-アドビのテクノロジーを使用して web サイトを分析し、別のソリューションから移行するか、ユーザーの行動をトラッキングします。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
+アドビテクノロジーを使用して web サイトを分析し、別のソリューションから移行するか、ユーザーの行動のトラッキングを開始します。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
 詳しくは、[Adobe Experience Platform Web SDK を介したデータの取り込みと使用](./aepwebsdk.md)を参照してください。
 
 ### Adobe Experience Platform Mobile SDK の使用
 
-アドビのテクノロジーを使用してモバイルアプリを分析し、別のソリューションから移行するか、アプリの使用開始時からユーザーの行動をトラッキングします。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
+アドビテクノロジーを使用してモバイルアプリを分析し、別のソリューションから移行するか、アプリ内でユーザーの行動のトラッキングをゼロから開始します。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
 詳しくは、[Adobe Experience Platform Mobile SDK を介したデータの取り込みと使用](./aepmobilesdk.md)を参照してください。
 

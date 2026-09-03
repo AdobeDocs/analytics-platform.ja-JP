@@ -70,7 +70,7 @@ GA4のExploreとAnalysis Workspaceは、どちらもブランクキャンバス�
 | セグメントまたはフィルター | セグメント |
 | イベント数 | [!UICONTROL イベント] |
 | ユーザー | [!UICONTROL 人物] |
-| Sessions | [!UICONTROL セッション] |
+| セッション数 | [!UICONTROL セッション] |
 
 >[!TIP]
 >

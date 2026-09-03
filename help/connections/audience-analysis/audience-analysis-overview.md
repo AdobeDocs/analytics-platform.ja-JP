@@ -25,7 +25,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 752
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 >* **オーディエンス分析**: Experience Platform プロファイル データセットからCustomer Journey Analytics接続にオーディエンスメンバーシップ データを取り込むことができます。
 >* **オーディエンスの公開**:Customer Journey Analyticsで発見したオーディエンスを作成し、Adobe Experience Platformに公開して、顧客のターゲティングとパーソナライズを行うことができます。 オーディエンスの公開について詳しくは、[&#x200B; オーディエンスの公開の概要](/help/components/audiences/audiences-overview.md)を参照してください。
 
-Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspaceで使用する新しいディメンションとして利用できるようになります。
+Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspace で使用する新しいディメンションとして使用可能になります。
 
 次の図と関連する表は、Customer Journey Analyticsのaudience analysis設定によって、Experience PlatformのオーディエンスデータがAnalysis Workspaceでどのように利用できるようになるのかを示す概要を示しています。
 

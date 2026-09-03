@@ -26,7 +26,7 @@ ht-degree: 52%
 ---
 
 
-# Content Analytics データ収集
+# Content Analytics のデータ収集
 
 この記事では、Content Analytics でデータを収集する方法について詳しく説明します。
 
@@ -35,13 +35,13 @@ ht-degree: 52%
 この記事のコンテキストでは、次の定義を使用します。
 
 * **エクスペリエンス**:
-   * **web** チャネルの場合、エクスペリエンスはweb ページ全体のテキストコンテンツとして定義されます。 データ収集の場合、Content Analyticsはページ URLに基づくエクスペリエンス IDを記録します。 その後、ページ上のテキストが取得サービスを通じて取得されます。
-   * **mobile** チャネルでは、Adobe Experience Platform Mobile SDKのContent Analytics拡張機能を使用して、モバイルアプリでエクスペリエンスが定義および追跡されます。
+  * **web** チャネルの場合、エクスペリエンスはweb ページ全体のテキストコンテンツとして定義されます。 データ収集の場合、Content Analyticsはページ URLに基づくエクスペリエンス IDを記録します。 その後、ページ上のテキストが取得サービスを通じて取得されます。
+  * **mobile** チャネルでは、Adobe Experience Platform Mobile SDKのContent Analytics拡張機能を使用して、モバイルアプリでエクスペリエンスが定義および追跡されます。
 * **エクスペリエンス ID**:
-   * Web チャネルの場合、エクスペリエンス IDは、関連するURL （ベース URLとページ上のコンテンツを駆動するパラメーター）と[&#x200B; エクスペリエンス バージョン &#x200B;](manual.md#versioning)の一意の組み合わせです。
-      * [設定](configuration.md)の一部として、特定の完全な URL に関連するパラメーターを指定します。
-      * 使用する[バージョン識別子](manual.md#versioning)を定義して、エクスペリエンスに対する変更を適切に収集します。
-   * **mobile** チャネルの場合、エクスペリエンス IDは、`registerExperience` API呼び出しを使用したの戻り値です。
+  * Web チャネルの場合、エクスペリエンス IDは、関連するURL （ベース URLとページ上のコンテンツを駆動するパラメーター）と[&#x200B; エクスペリエンス バージョン &#x200B;](manual.md#versioning)の一意の組み合わせです。
+    * [設定](configuration.md)の一部として、特定の完全な URL に関連するパラメーターを指定します。
+    * 使用する[バージョン識別子](manual.md#versioning)を定義して、エクスペリエンスに対する変更を適切に収集します。
+  * **mobile** チャネルの場合、エクスペリエンス IDは、`registerExperience` API呼び出しを使用したの戻り値です。
 * **アセット**：画像。 Content Analytics では、アセット URL を記録します。
 * **アセット ID**：アセットの URL。
 * **関連 URL**：ベース URL と、ページ上のコンテンツを駆動するパラメーター。
@@ -64,32 +64,32 @@ Content Analytics ライブラリでは、次の場合にデータを収集し�
 Content Analytics イベントは、以下で構成されます。
 
 * 標準フィールド
-   * タイムスタンプ
-   * ID
-* エクスペリエンスビュー数（存在する場合と設定されている場合）
-* エクスペリエンスクリック数（存在する場合と設定されている場合）
-* アセットビュー数（存在する場合と設定されている場合）
-* アセットクリック数（存在する場合と設定されている場合）
+  * タイムスタンプ
+  * ID
+* エクスペリエンスビュー（存在し、設定されている場合）
+* エクスペリエンスクリック（存在し、設定されている場合）
+* アセットビュー（存在し、設定されている場合）
+* アセットクリック（存在し、設定されている場合）
 
 Content Analytics イベントは、次のシーケンスとして収集されます。
 
 1. [録画ビューまたはクリック &#x200B;](#recorded-view-or-click)。
 1. Content Analytics イベントを送信するための[トリガー](#trigger-to-send-a-content-analytics-event)。
 
-コンテンツ分析では、ビューまたはクリックを個別に収集し、そのビューまたはクリックの直後のイベントを収集する代わりに、シーケンスを反映するのにこの方法でデータを収集します。 また、コンテンツ分析データを収集するこの方法では、収集されるデータの量も削減されます。
+コンテンツ分析では、ビューまたはクリックを個別に収集し、そのビューまたはクリックの直後のイベントを収集する代わりに、シーケンスを反映するのにこの方法でデータを収集します。 また、Content Analytics データをこの方法により収集することで、収集されるデータの量も削減されます。
 
 ### 記録されたビューまたはクリック
 
 アセットビューは、次の場合に記録されます。
 
-* Content Analytics 拡張機能の設定ごとにアセットが除外されていない。
+* Content Analytics 拡張機能の設定に基づいて、そのアセットが除外されていない。
 * アセットの 75％が表示される。
 * そのアセットがこのページにまだ記録されていない。
 
 アセットクリックは、次の場合に記録されます。
 
 * アセットが表示される。
-* Content Analytics 拡張機能の設定ごとにアセットが除外されていない。
+* Content Analytics 拡張機能の設定に基づいて、そのアセットが除外されていない。
 * リンクであるアセットを直接クリックすると、別のページに移動します。
 
 エクスペリエンスビューは、次の場合に記録されます。
@@ -101,23 +101,23 @@ Content Analytics イベントは、次のシーケンスとして収集され�
 * 有効なリンクをクリックすると、エクスペリエンスがトリガーされます。
 
 
-### コンテンツ分析イベントを送信するトリガー
+### Content Analytics イベントを送信するトリガー
 
 ページから送信されるネットワークリクエストの数を減らすために、Content Analyticsは情報を収集しますが、その情報をすぐに送信しません。 コンテンツインタラクション情報が収集され、その情報を含むイベントは、次のいずれかのトリガーが発生した場合にのみ送信されます。
 
 * Web SDKまたはAdobe AppMeasurementがイベントを送信します。
-* 表示が非表示に変更される。例：
-   * ページのアンロード
-   * タブを切り替え
-   * ブラウザーを最小化
-   * ブラウザーを閉じる
-   * 画面をロック
-* URL が変更され、関連する URL が変更される。
+* 可視性が「非表示」に変更される場合。例：
+  * ページのアンロード
+  * タブを切り替え
+  * ブラウザーを最小化
+  * ブラウザーを閉じる
+  * 画面をロック
+* URL が変更され、その結果、関連 URL が変更されたものになります。
 * 記録され、送信可能なアセットビューは32を超えています。
 
 >[!NOTE]
 >
->追加のコンテンツ分析イベントは、セッションまたはページ内のイベント数に基づくバウンス率定義に影響を与える可能性が高くなります。
+>追加の Content Analytics イベントは、セッションまたはページ内のイベント数に基づくバウンス率の定義に影響を与える可能性が高くなります。
 >
 
 ## ID
@@ -164,7 +164,7 @@ Content Analytics ID データとWeb SDK データ ID データがフィール�
 
 ### モバイル
 
-モバイルアプリでIDを操作する方法について詳しくは、[Experience Cloud ID サービス拡張機能](https://developer.adobe.com/client-sdks/home/base/mobile-core/identity/)および[Edge Network モバイル拡張機能](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)のIDを参照してください。
+モバイルアプリでIDを操作する方法について詳しくは、[Identity for Experience Cloud ID Service拡張機能](https://developer.adobe.com/client-sdks/home/base/mobile-core/identity/)および[Identity for Edge Network モバイル拡張機能](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)を参照してください。
 
 モバイルアプリでIDが変更されるとすぐに、Content Analytics データの現在の[&#x200B; バッチ &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/#batching-settings)がリセットされ、新しいIDのContent Analytics データの新しいコレクションが開始されます。
 

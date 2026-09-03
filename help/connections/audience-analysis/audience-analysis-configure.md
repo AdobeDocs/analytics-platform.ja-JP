@@ -25,7 +25,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1391
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 33%
 >[!CONTEXTUALHELP]
 >id="cja-audience-analysis-sandbox"
 >title="サンドボックス"
->abstract="正しい Experience Platform プロファイルデータセットを含んだサンドボックスを選択します。 これらのデータセットには、Analysis Workspace でレポートするオーディエンスデータを含める必要があります。 "
+>abstract="正しい Adobe Experience Platform プロファイルデータセットを含むサンドボックスを選択します。 これらのデータセットには、Analysis Workspace でレポートするオーディエンスデータを含める必要があります。 "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,11 +63,11 @@ ht-degree: 33%
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="プライマリ ID 名前空間を使用"
->abstract="Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Experience Platform でパーティション分割に使用するプライマリキーです。 <br/>このオプションを無効のままにする場合は、下の ID 名前空間フィールドから名前空間を選択します。 Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。"
+>abstract="Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Adobe Experience Platform でのパーティション分割に使用されるプライマリキーです。 <br/>このオプションを無効のままにする場合は、下の ID 名前空間フィールドから名前空間を選択します。 Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。"
 
 <!-- markdownlint-enable MD034 -->
 
-Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspaceで使用する新しいディメンションとして利用できるようになります。 オーディエンス分析について詳しくは、[&#x200B; オーディエンス分析の概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください。
+Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspace で使用する新しいディメンションとして使用可能になります。 オーディエンス分析について詳しくは、[&#x200B; オーディエンス分析の概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください。
 
 >[!IMPORTANT]
 >
@@ -116,7 +116,7 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
    | フィールド | 説明 |
    |---------|----------|
    | **[!UICONTROL ユーザー ID]** | スキーマから、ユーザー ID を表すフィールドを選択します。<p>選択は、IDとしてマークされ、ID名前空間を持つスキーマ内のフィールドのリストに限定されます。 **[!UICONTROL IdentityMap]**&#x200B;はデフォルトで選択されており、ほとんどの設定に適しています。 </p><p>選択する人物IDがない場合は、スキーマで1つ以上の人物IDが定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。</p> |
-   | **[!UICONTROL プライマリ ID名前空間を使用]** | このオプションは、人物IDに「**[!UICONTROL ID マップ]**」を選択した場合に表示されます。 <p>Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Experience Platform でパーティション分割に使用するプライマリキーです。 また、この ID は、Customer Journey Analytics のユーザー ID として使用する主な候補でもあります（Customer Journey Analytics 接続でのデータセットの設定方法に応じて異なります）。</p> |
+   | **[!UICONTROL プライマリ ID名前空間を使用]** | このオプションは、人物IDに「**[!UICONTROL ID マップ]**」を選択した場合に表示されます。 <p>Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Adobe Experience Platform でのパーティション分割に使用されるプライマリキーです。 また、この ID は、Customer Journey Analytics のユーザー ID として使用する主な候補でもあります（Customer Journey Analytics 接続でのデータセットの設定方法に応じて異なります）。</p> |
    | **[!UICONTROL ID 名前空間]** | このオプションは、人物IDに「**[!UICONTROL ID マップ]**」を選択した場合に表示されます。 プライマリ ID名前空間を使用する場合、このオプションは無効になります。 <p>ID 名前空間は、[Experience Platform ID サービス](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)のコンポーネントです。 名前空間は、ID が関連付けられているコンテキストを示します。 名前空間を指定すると、Customer Journey Analyticsは、各行のID マップでこの名前空間キーを検索し、その名前空間のIDをその行の人物IDとして使用します。 Customer Journey Analyticsでは、すべての行に対して完全なデータセットスキャンを実行して、どの名前空間が存在するかを判断することはできないので、使用可能なすべての名前空間がドロップダウンメニューに表示されます。 データ内で指定されている名前空間を把握しておく必要があります。これらの名前空間は自動検出されません。</p> |
 
    <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->

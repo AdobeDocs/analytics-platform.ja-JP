@@ -29,8 +29,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1448
-ht-degree: 8%
+source-wordcount: 1476
+ht-degree: 9%
 
 ---
 
@@ -120,8 +120,8 @@ Experience Platform データセットについてレポートを作成するに
 
 調査したいユースケースのひとつは、「2020年4月から6月にかけて、リードがweb ページにアクセスした回数」です。
 
-1. [Analytics Workspace](/help/analysis-workspace/home.md)を開き、新しいプロジェクトを作成します。
-B2B/B2P CDPを導入しているお客様は、Customer Journey AnalyticsでB2C スタイルの分析を実施できます。B2B オブジェクトはまだ使用できません。
+1. [Analytics Workspace](/help/analysis-workspace/home.md) を開いて、新しいプロジェクトを作成します。
+B2B/B2P CDPを導入しているお客様は、Customer Journey AnalyticsでB2C スタイルの分析を実施できます。 B2B オブジェクトは、まだ使用できません。
 
 1. Web ページビューの[&#x200B; セグメント &#x200B;](/help/components/segments/seg-create.md)を次のように作成します – イベントタイプ = web.webpagedetails.pageViews :
 
@@ -131,7 +131,7 @@ B2B/B2P CDPを導入しているお客様は、Customer Journey AnalyticsでB2C 
 
    ![月ごとのイベントを表示するフリーフォームテーブル。](../assets/marketo-freeform.png)
 
-1. または、人物キーまたは仕事用メールアドレスのディメンションを取り込みます。 このアクションは、各リードが訪問したWeb ページを表示します。
+1. または、Person Key またはワークメールアドレスのディメンションを取り込みます。 このアクションは、各リードが訪問したWeb ページを表示します。
 
    イベントとworkEmail.AddressおよびWeb ページビューを示す![&#x200B; フリーフォームテーブル。](../assets/marketo-freeform2.png)
 

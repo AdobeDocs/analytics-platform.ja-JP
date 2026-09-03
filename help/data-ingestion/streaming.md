@@ -127,7 +127,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![メールを ID として指定](./assets/specify-email-loyalty-id.png)
 
-   メールアドレスを、Adobe Experience Platform Identity Service がプロファイルの動作を組み合わせる（ステッチする）ために使用する ID として指定します。
+   メールアドレスを、Adobe Experience Platform ID サービスがプロファイルの動作を組み合わせる（ステッチする）ために使用する ID として指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 メール属性にフィンガープリントアイコンが表示されます。
 
@@ -175,7 +175,7 @@ Adobe Experience Platform に取り込むロイヤルティデータをモデル
 
 7. 「**[!UICONTROL プロファイル]**」スイッチを選択します。
 
-   プロファイルのデータセットを有効にするよう求められます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
+   プロファイル用にデータセットを有効にするよう求めるプロンプトが表示されます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
 
    >[!IMPORTANT]
    >
@@ -297,11 +297,11 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - 各データセットに対して、次の手順を行います。
 
-      - Adobe Experience Platform のデータセットスキーマで定義されている使用可能な ID から[!UICONTROL ユーザー ID] を選択します。
+     - Adobe Experience Platform のデータセットスキーマで定義されている使用可能な ID から[!UICONTROL ユーザー ID] を選択します。
 
-      - [!UICONTROL データソースタイプ]リストから正しいデータソースを選択します。 「**[!UICONTROL その他]**」を指定している場合は、データソースの説明を追加します。
+     - [!UICONTROL データソースタイプ]リストから正しいデータソースを選択します。 「**[!UICONTROL その他]**」を指定している場合は、データソースの説明を追加します。
 
-      - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
+     - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
 
      ![データセットの設定](./assets/cja-connections-3.png)
 
@@ -313,9 +313,9 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 ## データ表示の設定
 
-データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データ表示は、Analysis Workspace でレポートの準備を行う際に定義します。
+データビューは、Customer Journey Analytics に特有のコンテナで、接続からのデータをどのように解釈するかを指定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データビューは、Analysis Workspace でレポートの準備を行う際に定義します。
 
-データ表示を作成するには：
+データビューを作成するには：
 
 1. Customer Journey Analytics UIの上部メニューで、**[!UICONTROL データビュー]** （オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から）を選択します。
 
@@ -366,7 +366,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペース - 空のプロジェクト](./assets/cja-projects-2.png)
 
-4. リストからデータ表示を選択します。
+4. リストからデータビューを選択します。
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 

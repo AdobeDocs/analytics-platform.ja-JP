@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspace の予測について説明します。
+description: Analysis Workspace の予測について学びます。
 title: 予測の概要
 feature: Visualizations
 role: User

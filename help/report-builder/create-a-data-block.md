@@ -22,7 +22,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 773
+source-wordcount: 774
 ht-degree: 25%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 25%
 
 1. 「**[!UICONTROL 日付範囲]**」を設定します。
 
-   **[!UICONTROL 日付範囲]** オプションを使用すると、日付範囲を選択できます。 日付範囲は、固定でも相対日付でも設定できます。
+   **[!UICONTROL 日付範囲]** オプションを使用すると、日付範囲を選択できます。 日付範囲は、固定またはローリングに設定できます。
 
    **[!UICONTROL カレンダー]**&#x200B;を選択して、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用してデータ範囲を選択するか、日付範囲を手動で入力します。 オプションで、**[!UICONTROL _プリセットの検索_]** ドロップダウンメニューからプリセットを選択できます。
 
@@ -128,7 +128,7 @@ ht-degree: 25%
 >[!MORELIKETHIS]
 >
 >[&#x200B; データビューを選択](select-data-view.md)
->[日付範囲の選択](select-date-range.md)
+>[日付範囲を選択](select-date-range.md)
 >[ディメンションのフィルタリング](filter-dimensions.md)
 >[セグメントの操作](work-with-filters.md)
 >

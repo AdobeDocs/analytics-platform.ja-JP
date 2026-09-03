@@ -42,7 +42,7 @@ ht-degree: 100%
 
 {{upgrade-note-step}}
 
-接続がアクティブで、Customer Journey Analytics でデータビューへのデータのフローを検証できます。
+接続がアクティブであり、Customer Journey Analytics のデータビューにデータが流れていることを検証できます。
 
 1. Customer Journey Analytics で、「接続」タブを選択します。
 

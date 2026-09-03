@@ -34,9 +34,9 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 この変換は、次のクラスに基づくB2B ルックアップスキーマのデータを含むデータセットでのみ使用できます。
 
-* [XDM Business Account Person Relation](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM ビジネスアカウントユーザーの関係](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
 * [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM Business Marketing List Members](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM ビジネスマーケティングリストメンバー](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
 * [XDM Business Campaign Members](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
@@ -49,9 +49,9 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 >
 >| スキーマに準拠するデータを含むデータセット | データが入力されたフィールド |
 >|---|---|
->| XDM Business Account Person Relation | `accountPersonID` |
+>| XDM ビジネスアカウントユーザーの関係 | `accountPersonID` |
 >| XDM ビジネスオポチュニティ人物 | `opportunityPersonID` |
->| XDM Business Marketing List | `marketingListMemberID` |
+>| XDM ビジネスマーケティングリスト | `marketingListMemberID` |
 >| XDM Business Campaign Members | `campaign.sourceKey` |
 >
 
@@ -61,14 +61,14 @@ B2B ルックアップデータセットの変換を有効にするには：
 
 * 各データセットについて、**[!UICONTROL キー]**&#x200B;と&#x200B;**[!UICONTROL 一致するキー]**&#x200B;の推奨値を確認します。 推奨値から値を変更すると、続行を求める警告が表示されます。 次のことを確認する必要があります。
 
-   * **Key**&#x200B;に選択する値は、Person ID データタイプに基づいています。
-   * **一致するキー**&#x200B;に対して選択した値は、イベントデータセットのプライマリ ID フィールドとして定義されます。
+  * **Key**&#x200B;に選択する値は、Person ID データタイプに基づいています。
+  * **一致するキー**&#x200B;に対して選択した値は、イベントデータセットのプライマリ ID フィールドとして定義されます。
 
 * 新しいデータとデータセットのバックフィルを読み込むオプションを選択します。
 
 * 「**[!UICONTROL B2B参照のデータセットを変換]**」を選択します。
 
-  このオプションは、B2B シナリオでのユーザーベースの検索に使用できるようにデータセットを変換します。
+  このオプションは、B2B シナリオでのユーザーベースのルックアップに使用できるようにデータセットを変換します。
 
 
   >[!IMPORTANT]

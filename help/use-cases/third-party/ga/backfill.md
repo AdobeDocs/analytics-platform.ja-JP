@@ -30,14 +30,14 @@ ht-degree: 83%
 
 # Google Analytics 履歴データの取り込み
 
-このページでは、Google Analytics の履歴データをデータセットとして Adobe Experience Platform に取り込み、Customer Journey Analytics 内のデータビューでそのデータセットを参照できるようにする方法について重点的に説明します。 このページの手順を、繰り返しデータセットの生成について説明した[ライブ Google Analytics の実装の設定](streaming.md)のページと組み合わせることができます。 この履歴データセットを現在の実装環境のデータセットと組み合わせることで、Customer Journey Analytics に現在のデータとバックフィルされたデータの両方をシームレスに表示して確認できます。
+このページでは、Google Analytics の履歴データをデータセットとして Adobe Experience Platform に取り込み、Customer Journey Analytics 内のデータビューでそのデータセットを参照できるようにする方法について重点的に説明します。 このページの手順を、繰り返しデータセットの生成について説明した[ライブ Google Analytics の実装の設定](streaming.md)のページと組み合わせることができます。 この履歴データセットを現在の実装のデータセットと組み合わせることで、Customer Journey Analytics で現在のデータとバックフィルされたデータの両方を含むシームレスなデータビューを得ることができます。
 
 ## 前提条件
 
 これらのタスクを遂行するには、次のアクセスと権限が必要です。
 
 * Adobe Experience Platform へのアクセス
-* Google Analytics（GA スタンダード版または GA 360）へのアクセス権限
+* Google Analytics（GA スタンダード版または GA 360）へのアクセス
 * Customer Journey Analytics への[管理者アクセス権限](/help/technotes/access-control.md)
 
 ## BigQuery エクスポートの設定
@@ -88,7 +88,7 @@ FROM
 
 ## Google Cloud Platform へのデータのエクスポート {#export-gcp}
 
-Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#x200B;に移動します。 データが Google Cloud Storage に取り込まれたら、Adobe Experience Platform に取り込む準備が整いました。
+Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#x200B;に移動します。 データが Google Cloud Storage に保存されたら、Adobe Experience Platform に取り込む準備が整います。
 
 ## Google Cloud Storage から Experience Platform へのデータのインポート
 
@@ -98,7 +98,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Google Analytics データをAdobe Experience Platform](https://video.tv.adobe.com/v/3437167?captions=jpn&quality=12&learn=on){target="_blank"}に読み込むを参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Google Analytics データをAdobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"}に読み込むを参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -111,7 +111,7 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 GA データフィールドとTarget スキーママッピングを強調表示する![&#x200B; スキーママップ &#x200B;](../../assets/schema-map.png)
 
-フィールドから XDM スキーマへのマッピングが完了したら、このインポートを繰り返しスケジュールしたり、取り込みプロセス中にエラー検証を適用したりできます。 この検証により、インポートしたデータに関する問題が生じなくなります。
+フィールドから XDM スキーマへのマッピングが完了したら、このインポートを繰り返しスケジュールしたり、取り込みプロセス中にエラー検証を適用したりできます。 この検証により、読み込んだデータに問題がないことを確認できます。
 
 ## 必須の XDM フィールド
 

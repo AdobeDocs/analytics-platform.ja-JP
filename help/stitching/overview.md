@@ -19,7 +19,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1022
+source-wordcount: 1024
 ht-degree: 58%
 
 ---
@@ -52,8 +52,8 @@ Customer Journey Analyticsでは 2 種類のステッチ（[フィールドベ�
 
 - 目的のデータを Adobe Experience Platform に読み込みます。
 
-   - Adobe Analytics のデータについては、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)を参照してください。
-   - 他のタイプのデータについては、Adobe Experience Platform ドキュメントの[スキーマの作成](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/create-schema-ui)と[データの取り込み](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home)を参照してください。
+  - Adobe Analytics のデータについては、[Customer Journey Analytics での Adobe Analytics レポートスイートデータの利用](/help/getting-started/aa-vs-cja/aa-data-in-cja.md)を参照してください。
+  - 他のタイプのデータについては、Adobe Experience Platform ドキュメントの[スキーマの作成](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/create-schema-ui)と[データの取り込み](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home)を参照してください。
 
 Customer Journey Analytics 接続の定義の一環として、1 つ以上のステッチされたデータセットを、コールセンターデータなどの他のデータセットと組み合わせると、クロスチャネル分析のメリットが得られます。 この接続設定では、これらの他のデータセットに、同じ名前空間の人物IDが可能な限り多くの行に既に含まれていることを前提としています。
 
@@ -71,7 +71,7 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 
 - 2 つ以上のデータセットの結合。 ステッチは、1 つのデータセットにのみ適用されます。 データセットの結合は、Customer Journey Analytics 接続を設定し、接続内の選択した複数のデータセットで同じユーザー ID を選択した場合に、結果として起こります。
 
-- 2 つのデータセットの結合。 Customer Journey Analytics では、結合は、Analysis Workspace での検索や分類によく使用されます。 ステッチには結合機能が使用されますが、プロセス自体には複数の結合が含まれます。
+- 2 つのデータセットの結合。 Customer Journey Analytics では、結合は、Analysis Workspace での検索や分類によく使用されます。 ステッチでは結合機能が使用されますが、プロセス自体は単なる結合以上の処理を伴います。
 
 
 ## オプション
@@ -98,7 +98,7 @@ Customer Journey Analytics 接続の定義の一環として、1 つ以上のス
 ステッチでは、次の自動生成された Journey Optimizer データセットをサポートしています。
 
 - AJO ジャーニーステップイベント
-- AJO 受信アクティビティイベントデータセット
+- AJO インバウンドアクティビティイベントデータセット
 - AJO サーフェスデータセット
 - AJO メッセージフィードバックイベントデータセット* AJO プッシュトラッキングエクスペリエンスイベントデータセット
 - AJO メールトラッキングエクスペリエンスイベントデータセット

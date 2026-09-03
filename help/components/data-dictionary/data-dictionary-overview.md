@@ -1,5 +1,5 @@
 ---
-description: Analysis Workspace のデータ辞書を使用すると、Analysis Workspace の様々なコンポーネント（使用目的、承認済み、重複など）をカタログ化して追跡できます。
+description: Analysis Workspace のデータ辞書を使用すると、Analysis Workspace 内の様々なコンポーネントについて、使用目的、承認状況、重複しているかどうかなどをカタログ化して追跡できます。
 title: データ辞書の概要
 feature: Components
 role: User, Admin
@@ -29,7 +29,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="データディクショナリ"
->abstract="データ辞書は、ユーザーと管理者が、Customer Journey Analytics 環境でコンポーネントを追跡したり、理解を深めたりするのに役立ちます。 <br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報をキュレートする責任があります。"
+>abstract="データ辞書は、ユーザーと管理者が Customer Journey Analytics 環境のコンポーネントを追跡し、理解を深めるのに役立ちます。 <br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報をキュレートする責任があります。"
 
 <!-- markdownlint-enable MD034 -->
 

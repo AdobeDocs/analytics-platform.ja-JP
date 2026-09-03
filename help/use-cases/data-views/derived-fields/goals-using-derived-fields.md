@@ -1,5 +1,5 @@
 ---
-title: 派生フィールドを使用した目標に関するレポート
+title: 派生フィールドを使用して目標をレポートする
 description: 派生フィールドを使用して、Workspace プロジェクトの目標（ターゲット）をレポートする方法について説明します。
 solution: Customer Journey Analytics
 feature: Use Cases

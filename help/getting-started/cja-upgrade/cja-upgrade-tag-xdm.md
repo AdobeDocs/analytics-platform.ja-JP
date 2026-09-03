@@ -33,7 +33,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="タグへの XDM データ収集ロジックを追加"
->abstract="サイトにローダータグがインストールされている状態で、ルールとデータ要素を追加し、XDM オブジェクトにデータを入力してアドビに送信できます。 アドビでは、タグがどのように設定されているかを追跡するために、ソリューションデザインドキュメントを保守することをお勧めします。<br><br>この手順には、プロパティの Analytics ロジックをすべて設定する必要があるので、手間がかかります。 正しいタグルールを確立し、テストしてサイトにデプロイするために、1 か月以上を費やしたいと考えています。"
+>abstract="サイトにローダータグがインストールされている状態で、ルールとデータ要素を追加し、XDM オブジェクトにデータを入力してアドビに送信できます。 アドビでは、タグがどのように設定されているかを追跡するために、ソリューションデザインドキュメントを保守することをお勧めします。<br><br>この手順には、プロパティの Analytics ロジックをすべて設定する必要があるので、手間がかかります。 正しいタグルールを確立し、テストしてサイトにデプロイするには、1 か月以上かかると見込んでください。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -131,7 +131,7 @@ ht-degree: 95%
 
 ### XDM オブジェクトデータ要素
 
-最後に、作成したデータ要素を、前に[作成したスキーマ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)にマッピングします。 これを行うには、XDM スキーマを表す XDM オブジェクトデータ要素を定義します。
+最後に、作成したデータ要素を、前に[作成したスキーマ](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)にマッピングします。 これを行うには、XDM スキーマを表す XDM オブジェクト データ要素を定義します。
 
 XDM オブジェクトデータ要素を定義するには：
 
@@ -167,7 +167,7 @@ XDM オブジェクトデータ要素を定義するには：
 
 ## **ルールの設定**
 
-Adobe Experience Platform のタグは、ルールベースのシステムに従います。 ユーザーの操作と関する各種データを参照します。 ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。 ルールを使用し、Adobe Experience Platform Web SDK 拡張機能を使用して、XDM オブジェクトなどのデータを Adobe Experience Platform に送信できます。
+Adobe Experience Platform のタグは、ルールベースのシステムに従います。 ユーザーの操作とそれに関連する各種データを検出します。 ルールで設定された条件が満たされると、ルールは、特定した拡張機能、スクリプトまたはクライアント側コードをトリガーします。 ルールを使用し、Adobe Experience Platform Web SDK 拡張機能を使用して、XDM オブジェクトなどのデータを Adobe Experience Platform に送信できます。
 
 ルールを定義するには：
 
@@ -195,27 +195,27 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
    * **[!UICONTROL イベント]**：「**[!UICONTROL +追加]**」を選択します。 次に、**[!UICONTROL イベント設定]**&#x200B;ダイアログで、次の情報を指定します。 完了したら、「**[!UICONTROL 変更を保持]**」を選択します。
 
-      * **[!UICONTROL 拡張機能]**：リストから「**[!UICONTROL コア]**」を選択します。
+     * **[!UICONTROL 拡張機能]**：リストから「**[!UICONTROL コア]**」を選択します。
 
-      * **[!UICONTROL イベントタイプ]**：リストから「**[!UICONTROL 読み込まれたウィンドウ]**」を選択します。
+     * **[!UICONTROL イベントタイプ]**：リストから「**[!UICONTROL 読み込まれたウィンドウ]**」を選択します。
 
-        ![ルール - イベント設定](assets/event-windowloaded-pageview.png)
+       ![ルール - イベント設定](assets/event-windowloaded-pageview.png)
 
    * **[!UICONTROL アクション]**：「**[!UICONTROL +追加]**」を選択します。 次に、[!UICONTROL アクション設定]ダイアログで、次の情報を指定します。 完了したら、「**[!UICONTROL 変更を保持]**」を選択します。
 
-      * **[!UICONTROL 拡張機能]**：リストから「**[!UICONTROL Adobe Experience Platform Web SDK]**」を選択します。
+     * **[!UICONTROL 拡張機能]**：リストから「**[!UICONTROL Adobe Experience Platform Web SDK]**」を選択します。
 
-      * **[!UICONTROL アクションタイプ]**：リストから「**[!UICONTROL イベントを送信]**」を選択します。
+     * **[!UICONTROL アクションタイプ]**：リストから「**[!UICONTROL イベントを送信]**」を選択します。
 
-      * **[!UICONTROL タイプ]**：リストから「**[!UICONTROL Web Webpagedetails ページビュー]**」を選択します。
+     * **[!UICONTROL タイプ]**：リストから「**[!UICONTROL Web Webpagedetails ページビュー]**」を選択します。
 
-      * **[!UICONTROL XDM データ]**：円柱アイコンを選択し、データ要素のリストから「**[!UICONTROL XDM - ページビュー]**」を選択します。
+     * **[!UICONTROL XDM データ]**：円柱アイコンを選択し、データ要素のリストから「**[!UICONTROL XDM - ページビュー]**」を選択します。
 
-        ![ルール - アクションの設定](assets/action-pageview-xdm.png)
+       ![ルール - アクションの設定](assets/action-pageview-xdm.png)
 
-        ルールは次のようになります。
+       ルールは次のようになります。
 
-        ![ルールを作成](assets/rule-pageview.png)
+       ![ルールを作成](assets/rule-pageview.png)
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -225,7 +225,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
 1. [タグの作成と公開](#build-and-publish-your-tag)に進みます。
 
-## タグの作成と公開
+## タグを作成して公開する
 
 データ要素とルールを定義したら、タグを作成して公開する必要があります。 ライブラリビルドを作成する場合は、そのビルドを環境に割り当てる必要があります。 ビルドの拡張機能、ルール、およびデータ要素がコンパイルされ、割り当てられた環境に配置されます。 各環境は、割り当てられたビルドをサイトに統合できる、一意の埋め込みコードを提供します。
 

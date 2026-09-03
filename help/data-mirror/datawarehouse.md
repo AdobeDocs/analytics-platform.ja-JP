@@ -74,7 +74,7 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 [!DNL Google BigQuery] ソース接続で変更データキャプチャを使用するには、[!DNL Google Cloud] コンソールの[!DNL Google BigQuery] ページに移動し、`enable_change_history`を`TRUE`に設定します。 このプロパティは、データテーブルの変更履歴を有効にします。
 
-詳しくは、 [!DNL GoogleSQL][&#128279;](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)の データ定義言語ステートメントに関するガイドを参照してください。
+詳しくは、 [!DNL GoogleSQL]&#x200B;[&#128279;](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)の データ定義言語ステートメントに関するガイドを参照してください。
 
 [!DNL Google BigQuery] ソース接続の変更データキャプチャを有効にする手順については、次のドキュメントを参照してください。
 

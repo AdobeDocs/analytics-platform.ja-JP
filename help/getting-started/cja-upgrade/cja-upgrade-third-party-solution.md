@@ -1,6 +1,6 @@
 ---
 title: サードパーティの分析ソリューションから Customer Journey Analytics へのアップグレード
-description: サードパーティの分析ソリューションから Customer Journey Analytics へのアップグレード方法を説明します
+description: サードパーティの分析ソリューションから Customer Journey Analytics にアップグレードする方法を学ぶことができます
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -43,7 +43,7 @@ Adobe Analytics 以外の分析ソリューションから Customer Journey Anal
 
 <!-- After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. -->
 
-Google Analytics などのサードパーティ分析ソリューションから Customer Journey Analytics に移行する場合は、次の手順に従いします。
+Google Analytics などのサードパーティ分析ソリューションから Customer Journey Analytics に移行する場合は、次の手順に従います。
 
 1. [推奨されるアップグレード手順の詳細](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps)に従います。
 
@@ -51,9 +51,9 @@ Google Analytics などのサードパーティ分析ソリューションから
 
    * データストリームを作成する必要があります。
 
-   * Adobe Analytics 以外のソリューションからプロジェクトやコンポーネントは移行できません。
+   * Adobe Analytics 以外の分析ソリューションからプロジェクトやコンポーネントは移行できません。
 
-   * 分析ソリューションによっては、履歴データを取り込むのにソースコネクタを使用できる可能性があります。 詳しくは、Experience Platform ドキュメントの[ソースコネクタの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)の[分析](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home#analytics)を参照してください。
+   * 使用している分析ソリューションによっては、履歴データを取り込むためのソースコネクタを利用できる場合があります。 詳しくは、Experience Platform ドキュメントの[ソースコネクタの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)の[分析](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home#analytics)を参照してください。
 
 
 具体的なアドバイス、ガイダンス、サポートが必要な場合は、アドビ担当者にお問い合わせください。

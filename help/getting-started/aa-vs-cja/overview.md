@@ -49,7 +49,7 @@ Adobe Analytics のレポートスイートデータを Customer Journey Analyti
 
 データに関するレポートを作成する前に、多くの場合、そのデータを処理して、レポートでデータを適切に使用できることを確認する必要があります。 データ処理は、収集時とレポート時に発生する可能性があります。
 
-一般に、Customer Journey Analytics は、レポート時に Experience Platform データセットに収集および保存されたデータを操作するように設計されています。 Customer Journey Analytics は、データをレポートや分析に使用できるようにする、強力なレポート時間処理機能を備えています。 Experience Platform に取り込む前にデータのマッピング、変換、検証を行う必要がある場合は、Experience Platform の[データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用できます。
+一般に、Customer Journey Analytics は、レポート時に Experience Platform のデータセットに収集・保存されたデータを扱うように設計されています。 Customer Journey Analytics には、データをレポートや分析に利用できる状態にするための、強力なレポート時の処理機能が用意されています。 Experience Platform に取り込む前にデータのマッピング、変換、検証を行う必要がある場合は、Experience Platform の[データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用できます。
 
 Adobe Analytics では、データの処理のほとんどは、データの収集直後に行われます。
 
@@ -58,7 +58,7 @@ Adobe Analytics では、データの処理のほとんどは、データの収�
 
 ## 用語
 
-Customer Journey Analytics は、基になるエクスペリエンスデータモデル（XDM）ベースのスキーマが提供する柔軟性によって、ディメンションと指標の定義方法に柔軟性をもたらします。 例えば、Adobe Analytics では訪問者、訪問数、ヒット数を使用しますが、Customer Journey Analytics ではユーザー、セッション、イベントを同等の概念として使用します（必要に応じて名前を変更できます）。
+Customer Journey Analytics は、基になるエクスペリエンスデータモデル（XDM）ベースのスキーマが提供する柔軟性によって、ディメンションと指標の定義方法に柔軟性をもたらします。 例えば、Adobe Analytics では「訪問者」「訪問数」「ヒット数」を使用しますが、Customer Journey Analytics では「人物」「セッション」「イベント」を同等の概念として使用します（必要に応じて名称を変更できます）。
 
 用語の違いについて詳しくは、[Analytics ソースコネクタを介して渡された Analytics データの用語の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=ja)を参照してください。
 
@@ -69,7 +69,7 @@ Adobe Analytics には仮想レポートスイートの概念があり、収集�
 
 Customer Journey Analytics には、「データビュー」という似た概念があります。 データビューは、接続からのデータを解釈する方法を決定できるコンテナです。 これにより、レポートや分析に備えて、ディメンションと指標を指定および設定する上で究極の柔軟性が提供されます。
 
-Experience Platform は、特定の環境のデータやアプリケーションを保持するコンテナと考えることができる、サンドボックスを提供します。 サンドボックスの機能は、Adobe Analytics 仮想レポートスイートまたは Customer Journey Analytics データビューとは無関係です。 Adobe Analytics 自体には、Experience Platform サンドボックスとの依存関係や関係はまったくありません。 Customer Journey Analytics は Experience Platform サンドボックスをサポートしていますが、いくつかの重要な考慮事項があります。
+Experience Platform は、特定の環境のデータやアプリケーションを保持するコンテナと考えることができる、サンドボックスを提供します。 サンドボックスの機能は、Adobe Analytics 仮想レポートスイートまたは Customer Journey Analytics データビューとは無関係です。 Adobe Analytics 自体には、Experience Platform サンドボックスとの依存関係や関係はまったくありません。 Customer Journey Analytics は Experience Platform サンドボックスをサポートしていますが、いくつか重要な考慮すべき点があります。
 
 詳しくは、[仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=ja)を参照してください。
 

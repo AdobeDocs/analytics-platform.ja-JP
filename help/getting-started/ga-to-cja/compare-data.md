@@ -58,7 +58,7 @@ Customer Journey Analyticsには&#x200B;**[!UICONTROL バウンス率]**&#x200B;
 >
 >Customer Journey Analyticsのセッション定義は、データビューごとに設定可能です。 バウンスとエンゲージメントの定義は、組織のレポート要件である場合、GA4の基準（10秒間、2つ以上のページビュー、または主要なイベント）に合わせて調整できます。
 
-## Sessions
+## セッション数
 
 GA4とCustomer Journey Analyticsのデフォルトでは、非アクティビティタイムアウトは30分ですが、どちらも午前0時とミッドセッションのキャンペーン変更の間のセッションを維持します。 （Universal Analyticsは、これらの両方の場合にセッションをリセットするので、混同の一般的な原因ですが、GA4とCustomer Journey Analyticsの違いではありません）。 異なるルールは次のとおりです。
 

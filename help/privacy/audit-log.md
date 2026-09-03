@@ -48,7 +48,7 @@ ht-degree: 98%
 <!-- markdownlint-enable MD034 -->
 
 
-Adobe Customer Journey Analytics では、システムで実行されるアクティビティの透明性と可視性を高めるために、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。 これらのログは、問題のトラブルシューティングに役立つ監査記録を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータ管理ポリシーや規制要件への準拠を効果的に行うのに役立ちます。
+Adobe Customer Journey Analytics では、システムで実行されるアクティビティの透明性と可視性を高めるために、様々なサービスや機能に関するユーザーアクティビティを「監査ログ」の形式で監査できます。 これらのログは、問題のトラブルシューティングに役立つ監査記録を形成し、HIPAA（Health Insurance Portability and Accountability Act）などの企業のデータスチュワードシップポリシーや規制要件へのビジネスとしての効果的な準拠に役立ちます。
 
 基本的に、監査ログでは、**誰が** **どの**&#x200B;アクションを、**いつ**&#x200B;実行したかがわかります。 ログに記録される各アクションには、アクションのタイプ、日時、アクションを実行したユーザーの電子メール ID、アクションのタイプに関連する追加の属性を示すメタデータが含まれます。
 
@@ -81,49 +81,49 @@ Customer Journey Analytics で、**[!UICONTROL ツール]**／**[!UICONTROL 監�
 次の項目が表示されます。
 
 * **[!UICONTROL アクション名]**：実行されたアクション。 指定できる値には以下のものがあります。
-   * API_REQUEST：任意のアクションにより、バックエンド API リクエストがトリガーされます。 API リクエストの内容に関する詳細が表示されます。
-   * APPROVE：「承認」アクションが実行されました。
-   * CREATE： 「作成」アクションが実行されました。
-   * DELETE： 「削除」アクションが実行されました。
-   * EDIT： 「編集」アクションが実行されました。
-   * EMBARGO：[レポートアクティビティマネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests)でリクエストを制限すると、そのアクションは EMBARGO の監査ログに記録されます。
-   * EXPORT：「書き出し」アクションが実行されました。
-   * ORG_CHANGE：組織変更アクションが実行されました。
-   * REFRESH：「更新」アクションが実行されました。
-   * SHARE：「共有」アクションが実行されました。
-   * TRANSFER：転送アクションが実行されました。
-   * UNAPPROVE：「未承認」アクションが実行されました。
-   * UNSHARE：「共有解除」アクションが実行されました。
+  * API_REQUEST：任意のアクションにより、バックエンド API リクエストがトリガーされます。 API リクエストの内容に関する詳細が表示されます。
+  * APPROVE：「承認」アクションが実行されました。
+  * CREATE：「作成」アクションが実行されました。
+  * DELETE：「削除」アクションが実行されました。
+  * EDIT：「編集」アクションが実行されました。
+  * EMBARGO：[レポートアクティビティマネージャー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests)でリクエストを制限すると、そのアクションは EMBARGO の監査ログに記録されます。
+  * EXPORT：「書き出し」アクションが実行されました。
+  * ORG_CHANGE：組織変更アクションが実行されました。
+  * REFRESH：「更新」アクションが実行されました。
+  * SHARE：「共有」アクションが実行されました。
+  * TRANSFER：転送アクションが実行されました。
+  * UNAPPROVE：「未承認」アクションが実行されました。
+  * UNSHARE：「共有解除」アクションが実行されました。
 * **[!UICONTROL 作成日]**：アクションが実行された日時。
 * **[!UICONTROL 説明]**：アクションの概要。
 * **[!UICONTROL ユーザー名]**：アクションを実行したユーザー。 場合によっては、ユーザー名が欠落している可能性があります。 [製品の使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/tools/product-usage/usage-overview)機能には常にログインユーザー名が含まれるので、この機能の使用を考慮します。
 * **[!UICONTROL メール]**：アクションを実行したユーザーのメールアドレス。
 * **[!UICONTROL コンポーネント名]**：ユーザーがアクションを実行したコンポーネント。
 * **[!UICONTROL コンポーネントタイプ]**：コンポーネントのタイプ。 指定できる値には以下のものがあります。
-   * ANNOTATION
-   * AUDIENCE
-   * CALCULATED_METRIC
-   * CONNECTION
-   * DATA_GROUP
-   * DATA_VIEW
-   * DATASET_STITCHING
-   * DATE_RANGE
-   * FEATURE_ACCESS
-   * FILTER
-   * IMS_ORG
-   * MOBILE
-   * PROJECT（Workspace）
-   * REPORT
-   * SCHEDULED_PROJECT
-   * USER
-   * USER_GROUP
+  * ANNOTATION
+  * AUDIENCE
+  * CALCULATED_METRIC
+  * CONNECTION
+  * DATA_GROUP
+  * DATA_VIEW
+  * DATASET_STITCHING
+  * DATE_RANGE
+  * FEATURE_ACCESS
+  * FILTER
+  * IMS_ORG
+  * MOBILE
+  * PROJECT（Workspace）
+  * REPORT
+  * SCHEDULED_PROJECT
+  * USER
+  * USER_GROUP
 * **[!UICONTROL コンポーネント ID]**：ユーザーがアクションを実行したコンポーネントの ID。
 * **[!UICONTROL IMS 組織 ID]**：組織の IMS ID（`ABC123@AdobeOrg` の形式）。
 * **[!UICONTROL ログ ID]**：このログエントリを識別する一意の ID。
 * **[!UICONTROL ユーザー ID]**：アクションを実行したユーザーを識別する一意の ID。
 * **[!UICONTROL ユーザータイプ]**：使用される認証タイプ。 有効な設定値は以下のとおりです。
-   * IMS
-   * OKTA
+  * IMS
+  * OKTA
 
 ### 監査ログのフィルタリング
 
@@ -135,34 +135,34 @@ UI の監査イベントには、次のフィルターを使用できます。
 
 | フィルター | 説明 |
 | --- | --- |
-| [!UICONTROL 日付範囲] | 別の日付を選択するか、複数の日付のカーソルをドラッグして日付範囲を選択して、異なる日付範囲をフィルターします。 デフォルトでは、今日と昨日の日付が選択されています。 |
-| [!UICONTROL アクション] | 上記のアクション名でフィルタリングします。 |
-| [!UICONTROL ユーザー ID] | 特定のユーザーをユーザー ID でフィルタリングします。 ユーザー ID は、ユーザー名の横にある情報（i）ボタンを選択すると見つかります。 |
-| [!UICONTROL 電子メール] | 特定のユーザーのメールアドレスに基づいてフィルタリングします。 電子メールは、ユーザー名の横にある情報（i）ボタンを選択すると見つかります。 |
-| [!UICONTROL コンポーネント ID] | 特定のコンポーネント ID に対してフィルタリングします。 コンポーネント ID は、目的のコンポーネントの横にある情報（i）ボタンを選択すると見つかります。 |
-| [!UICONTROL コンポーネントの種類] | 上記の任意のコンポーネントタイプでフィルタリングします。 |
+| [!UICONTROL 日付範囲] | 別の日付を選択するか、複数の日付にカーソルをドラッグして日付範囲を選択して、異なる日付範囲をフィルターします。 デフォルトでは、今日と昨日の日付が選択されています。 |
+| [!UICONTROL アクション] | 上記のいずれかのアクション名でフィルターできます。 |
+| [!UICONTROL ユーザー ID] | 特定のユーザーをユーザー ID でフィルターできます。 ユーザー ID は、ユーザー名の横にある情報（i）ボタンを選択すると見つかります。 |
+| [!UICONTROL 電子メール] | 特定のユーザーのメールアドレスでフィルターできます。 メールは、ユーザー名の横にある情報（i）ボタンを選択すると見つかります。 |
+| [!UICONTROL コンポーネント ID] | 特定のコンポーネント ID でフィルターできます。 ユーザー ID は、目的のコンポーネントの情報（i）ボタンを選択すると見つかります。 |
+| [!UICONTROL コンポーネントの種類] | 上記のいずれかのコンポーネントタイプでフィルターします。 |
 
 {style="table-layout:auto"}
 
-## 監査ログで記録されるイベントタイプ
+## 監査ログで記録されるイベントの種類
 
-次の表に、監査ログでコンポーネントの種類が記録されるアクションの概要を示します。
+次の表は、どのコンポーネントタイプに対するどのアクションが監査ログに記録されるかを示します。
 
 | コンポーネントの種類 | アクション |
 | --- | --- |
-| [!UICONTROL 注釈] | <ul><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL オーディエンス] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li><li>書き出し</li><li>更新</li></ul> |
-| [!UICONTROL 計算指標] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL 接続] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL データビュー] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL 日付範囲] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL フィルター] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL IMS 組織] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL プロジェクト] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
+| [!UICONTROL 注釈] | <ul><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL オーディエンス] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li><li>書き出し</li><li>更新</li></ul> |
+| [!UICONTROL 計算指標] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL 接続] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL データビュー] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL 日付範囲] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL フィルター] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL IMS 組織] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL プロジェクト] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
 | [!UICONTROL レポート] | <ul><li>API_Request</li></ul> |
-| [!UICONTROL スケジュール済みプロジェクト] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL ユーザー] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
-| [!UICONTROL ユーザーグループ] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>編集</li></ul> |
+| [!UICONTROL スケジュール済みプロジェクト] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL ユーザー] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
+| [!UICONTROL ユーザーグループ] | <ul><li>API_Request</li><li>作成</li><li>削除</li><li>テンプレートを</li></ul> |
 
 {style="table-layout:auto"}
 

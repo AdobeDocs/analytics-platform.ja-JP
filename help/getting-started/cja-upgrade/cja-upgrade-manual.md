@@ -1,6 +1,6 @@
 ---
-title: alloy.js を使用した Platform Web SDK のインストール
-description: alloy.js を使用して Platform Web SDK をインストールする方法を学ぶ
+title: alloy.js を使用した Adobe Experience Platform Web SDK のインストール
+description: alloy.js を使用して Adobe Experience Platform Web SDK をインストールする方法を学ぶ
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ---
 
-# alloy.js を使用した Platform Web SDK のインストール {#upgrade-manual}
+# alloy.js を使用した Adobe Experience Platform Web SDK のインストール {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-populate-xdm"
->title="XDM オブジェクトを入力し、データストリームに送信します"
+>title="XDM オブジェクトを設定し、データストリームに送信します。"
 >abstract="この手順には、データストリームにデータを送信するための JavaScript ロジック全体が含まれます。 アドビでは、入力した XDM オブジェクトを追跡するためにソリューションデザインドキュメントを保守することをお勧めします。 正しい JSON ペイロード値を確立し、テストして、サイトにデプロイするには、1 か月以上かかることを想定してください。 この手順を完了するには、エンジニアリングチームとの継続的な連絡が必要になるので、チームの応答性によっては時間がかかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->

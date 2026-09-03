@@ -1,5 +1,5 @@
 ---
-title: Adobe Customer Journey Analytics で作成したオーディエンスの管理方法について説明します
+title: Customer Journey Analytics で作成したオーディエンスの管理方法について説明します
 description: Customer Journey Analytics でのオーディエンスの管理方法を学ぶ
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
@@ -25,15 +25,15 @@ ht-degree: 97%
 
 Adobe Customer Journey Analytics でオーディエンスを管理するには、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を使用します。
 
-## Audience management タスクについて
+## オーディエンス管理タスクについて理解する
 
 以前に作成したオーディエンスを管理すると、次のことを行えます。
 
 * オーディエンスの自動更新／アップデートを&#x200B;**スケジュール設定またはスケジュール解除**&#x200B;できます。 スケジュールの最大有効期限は 1 年です。
-* 有効期限が近づいたら&#x200B;**オーディエンスの更新スケジュールを更新**&#x200B;します。 有効期限が近づいたオーディエンスは、予定レポートの有効期限が近づいた場合と同様に扱われます。管理者は、スケジュールの期限が切れる 1 か月前にメールを受け取ります。
+* 有効期限が近づいたら&#x200B;**オーディエンスの更新スケジュールを更新**&#x200B;します。 有効期限が近づいたオーディエンスは、スケジュール済みレポートの有効期限が近づいた場合と同様に扱われます。管理者は、スケジュールの有効期限が切れる 1 か月前にメールを受け取ります。
 * **更新間隔**&#x200B;と&#x200B;**オーディエンスが最後に更新された時間**&#x200B;を表示します。
 * **オーディエンスの作成に要した時間**&#x200B;に関するインサイトを Adobe Customer Journey Analytics から取得します。 さらに、オーディエンスがアクティベーション目的で Real-time Customer Platform に表示されるまでに要した時間。
-* Adobe Customer Journey Analytics のオーディエンスが **Real-time Customer Platform でアクティブに使用されている**&#x200B;かどうかを確認します。 または（理想的には）Adobe Customer Journey Analytics で作成されたオーディエンスを使用する任意の Experience Platform アプリケーション。
+* Adobe Customer Journey Analytics のオーディエンスが **Real-time Customer Platform でアクティブに使用されている**&#x200B;かどうかを確認します。 または（理想的には）Customer Journey Analytics で作成されたオーディエンスを使用する任意の Experience Platform アプリケーション。
 
 [オーディエンス表示](/help/technotes/access-control.md#user-level-access)のアクセス権がある場合は、オーディエンスを表示できます。 [オーディエンス作成](/help/technotes/access-control.md#user-level-access)のアクセス権がある場合は、オーディエンスを編集および削除できます。
 
@@ -51,14 +51,14 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 1. （オプション）![検索](/help/assets/icons/Search.svg) を使用して、オーディエンスを検索します。
 
-   各オーディエンスに関する情報では、次の列を使用できます。
+   次の列には、各オーディエンスに関する情報が表示されます。
 
    | 列 | 説明 |
    | --- | --- |
    | ![SelectBox](/help/assets/icons/SelectBox.svg) | 1 つ以上のオーディエンスを選択すると、オーディエンスインターフェイスの下部に青いアクションバーが表示されます。 詳しくは、[アクション](#actions)を参照してください。 |
    | **[!UICONTROL タイトルと説明]** | オーディエンスの作成時に入力したタイトルと説明。 |
    | **[!UICONTROL データビュー]** | このオーディエンスが作成されたデータビュー。 |
-   | **[!UICONTROL オーディエンスサイズ]** | このオーディエンスのユーザーの合計数。 |
+   | **[!UICONTROL オーディエンスサイズ]** | このオーディエンスの合計人数。 |
    | **[!UICONTROL 所有者]** | オーディエンスの所有者 - オーディエンスを作成した人。 |
    | **[!UICONTROL 更新頻度]** | オーディエンスの作成時に設定された更新間隔。 |
    | **[!UICONTROL タグ]** | このオーディエンスに適用されるタグ。 |
@@ -80,7 +80,7 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
    **[!UICONTROL オーディエンスを編集]**&#x200B;ダイアログが表示されます。
 
-1. オーディエンスの使用可能なフィールドを更新できます。 更新できるフィールドについて詳しくは、[オーディエンスの作成と公開](/help/components/audiences/publish.md)の記事の[オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を参照してください。
+1. オーディエンスの利用可能なフィールドを更新できます。 更新できるフィールドについて詳しくは、[オーディエンスの作成と公開](/help/components/audiences/publish.md)の記事の[オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を参照してください。
 
 1. 「**[!UICONTROL 再公開]**」を選択します。
 

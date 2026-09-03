@@ -36,7 +36,7 @@ ht-degree: 14%
 * Experience Platform [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home)および[&#x200B; データセット &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)を作成および管理するためのアクセス権。
 * [Experience Platform Query Service](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)へのアクセス （およびSQLの書き込み機能）。
 * データの変換を実行できるツールへのアクセス。
-* Customer Journey Analytics にアクセスします。 Customer Journey Analytics接続とデータビューを作成および変更するには、[Customer Journey Analytics製品管理者](/help/technotes/access-control.md)である必要があります。
+* Customer Journey Analytics へのアクセス。 Customer Journey Analytics接続とデータビューを作成および変更するには、[Customer Journey Analytics製品管理者](/help/technotes/access-control.md)である必要があります。
 * [Experience Platform API （Catalog Service APIおよびSegmentation Service API）の認証とアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication)。 組織とサンドボックスの開発者コンソールでプロジェクトを作成し、API呼び出しを正常に送信するために必要な情報を持っていることを確認する必要があります。
 
 ## 手順
@@ -59,7 +59,7 @@ ht-degree: 14%
 
 +++ オーディエンスの特定
 
-Experience Platform UI の場合：
+Experience Platform UI で：
 
 1. **[!UICONTROL Customer]** > ![SegmentAudience](/help/assets/icons2/SegmentAudience.svg) **[!UICONTROL Audiences]**&#x200B;を選択します。
 1. **[!UICONTROL 参照]**&#x200B;を選択し、Customer Journey Analyticsで取り込んで使用するオーディエンスを検索します。 後で使用するために、各オーディエンスの&#x200B;**[!UICONTROL オーディエンス ID]**&#x200B;を書き留めます。
@@ -216,7 +216,7 @@ curl -X GET https://platform.adobe.io/data/core/ups/export/jobs/{EXPORT_JOB_ID} 
 
 +++ 取り込みステータスの確認
 
-Experience Platform UI の場合：
+Experience Platform UI で：
 
 1. **[!UICONTROL データ管理]** > ![&#x200B; データ &#x200B;](/help/assets/icons2/Data.svg) **[!UICONTROL データセット]**&#x200B;を選択します。
 1. 作成したデータセットを選択します。例：**[!UICONTROL CJA用のセグメント書き出しジョブデータセット]**
@@ -496,8 +496,8 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 ## 追加情報
 
 * Customer Journey Analytics内でオーディエンスデータが常に更新されるように、このプロセスを定期的に実行する必要があります。
-* 1つのCustomer Journey Analyticsコネクション内に複数のオーディエンスをインポートできます。 これは、プロセスがさらに複雑になりますが、可能です。 これを機能させるには、前述のプロセスに少し修正を加える必要があります。
-   1. RTCP 内のオーディエンスコレクションの目的の各オーディエンスに対して、このプロセスを実行します。
-   1. Customer Journey Analyticsでは、プロファイルデータセットの配列/オブジェクト配列をサポートしています。 `audienceMembershipId`または`audienceMembershipIdName`に[&#x200B; オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=ja)を使用することが最適です。
-   1. データビューで、`audienceMembershipId` フィールドの部分文字列変換を使用して、新しいディメンションを作成し、コンマ区切り値の文字列を配列に変換します。 メモ：現在、配列の値は 10 個までという制限があります。
-   1. Customer Journey Analytics Workspace内のこの新しいディメンション `audienceMembershipIds`についてレポートできるようになりました。
+* 1つのCustomer Journey Analyticsコネクション内に複数のオーディエンスをインポートできます。 これによりプロセスはさらに複雑になりますが、実現は可能です。 これを機能させるには、前述のプロセスに少し修正を加える必要があります。
+  1. RTCP 内のオーディエンスコレクションの目的の各オーディエンスに対して、このプロセスを実行します。
+  1. Customer Journey Analyticsでは、プロファイルデータセットの配列/オブジェクト配列をサポートしています。 `audienceMembershipId`または`audienceMembershipIdName`に[&#x200B; オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=ja)を使用することが最適です。
+  1. データビューで、`audienceMembershipId` フィールドの部分文字列変換を使用して、新しいディメンションを作成し、コンマ区切り値の文字列を配列に変換します。 メモ：現在、配列の値は 10 個までという制限があります。
+  1. Customer Journey Analytics Workspace内のこの新しいディメンション `audienceMembershipIds`についてレポートできるようになりました。

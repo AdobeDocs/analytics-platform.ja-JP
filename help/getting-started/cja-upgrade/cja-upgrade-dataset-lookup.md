@@ -44,13 +44,13 @@ ht-degree: 98%
 
 Adobe Analytics のデータの分類と同様に、ルックアップデータセットは、Customer Journey Analytics のデータを分類するための手段です。
 
-Analytics ソースコネクタを使用する場合、一部の標準検索データセットは、レポート時に自動的に適用されます。 詳しくは、[データセットへの標準検索の追加](/help/connections/standard-lookups.md)を参照してください。
+Analytics ソースコネクタを使用する場合、一部の標準ルックアップデータセットは、レポート時に自動的に適用されます。 詳しくは、[データセットへの標準検索の追加](/help/connections/standard-lookups.md)を参照してください。
 
-Experience Platform Web SDK を使用する場合、Customer Journey Analytics でデータを分類するには、分類するデータを含む各ディメンションのカスタムスキーマとルックアップデータセットを作成する必要があります。
+Experience Platform Web SDK を使用して Customer Journey Analytics でデータを分類するには、分類するデータを含む各ディメンションごとに、カスタムスキーマとルックアップデータセットを作成する必要があります。
 
 ## ルックアップデータセットで使用するカスタムスキーマの作成
 
-Customer Journey Analytics で分類するデータを含むカスタムスキーマをディメンションごとに新規作成します。 後の手順でルックアップデータセットを作成する際に、このスキーマが参照されます。
+Customer Journey Analytics で分類するデータを含む各ディメンションごとに、新しいカスタムスキーマを作成します。 後の手順でルックアップデータセットを作成する際に、このスキーマが参照されます。
 
 分類するデータを含む各ディメンションに対して、このプロセスを繰り返します。
 
@@ -86,7 +86,7 @@ Customer Journey Analytics でスキーマと併用するルックアップデ�
 
 >[!NOTE]
 >
->次のプロセスでは、CSV ファイルを使用してデータセットを作成します。 また、データストリームの設定など、Experience Platform へのデータの読み込みに使用できるその他の方法も使用できます。
+>次のプロセスでは、CSV ファイルを使用してデータセットを作成します。 また、データストリームの設定など、Adobe Experience Platform にデータを取り込むために使用できるその他の方法を利用することもできます。
 
 1. Adobe Experience Platform で、左側のパネルの「**[!UICONTROL ワークフロー]**」を選択します。
 
@@ -110,7 +110,7 @@ Customer Journey Analytics でスキーマと併用するルックアップデ�
 
 1. ファイルをアップロードした後、マッピングが正確であることを確認します。 CSV ファイルの列は「**[!UICONTROL ソースフィールド]**」の下にリストされ、対応する XDM スキーマフィールドが「**[!UICONTROL ターゲットフィールド]**」の下にリストされます。
 
-   Platform は、選択したターゲットスキーマまたはデータセットに基づいて、自動マッピングされたフィールドに対してインテリジェントなレコメンデーションを自動的に提供します。 マッピングルールは、ユースケースに合わせて手動で調整できます。
+   Adobe Experience Platform は、選択したターゲットスキーマまたはデータセットに基づいて、自動マッピングされたフィールドに対するインテリジェントなレコメンデーションを提供します。 マッピングルールは、ユースケースに合わせて手動で調整できます。
 
    マッピングプロセスについて詳しくは、Experience Platform ドキュメントの[既存の XDM スキーマへの CSV ファイルのマッピング](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema)を参照してください。
 

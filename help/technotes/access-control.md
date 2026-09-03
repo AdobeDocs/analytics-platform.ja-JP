@@ -43,7 +43,7 @@ topic_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1661
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -75,7 +75,7 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
 製品管理者には、次のタスクを実行するために必要な権限がデフォルトで付与されます。
 
-* 他のユーザーが作成したプロジェクト、セグメント、計算指標、オーディエンス、注釈、セグメントの更新と削除を行う
+* 他のユーザーが作成したプロジェクト、セグメント、計算指標、オーディエンス、注釈の更新と削除を行う
 * Workspace プロジェクトをすべてのユーザーと共有する
 * [レポートアクティビティマネージャー](/help/reporting-activity-manager/reporting-activity-overview.md)でレポートアクティビティを管理する
 * Analysis Workspace から[完全なテーブルを書き出す](/help/analysis-workspace/export/export-cloud.md)
@@ -100,13 +100,13 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
   Experience Platform の権限について詳しくは、[製品プロファイルの権限の管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/permissions)を参照してください。
 
 
-* Journey OptimizerがJourney Optimizer Connections が存在するCustomer Journey Analyticsと統合されている場合は、接続にアクセスするためのジャーニー権限も追加する必要があります。
+* Journey Optimizer Connections が存在する Customer Journey Analytics と Journey Optimizer が統合されている場合は、接続にアクセスするためのジャーニー権限も追加する必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
   | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーイベント、データソース、アクションの表示] | ジャーニーイベント、ジャーニーカスタムアクション、ジャーニーデータソースへの読み取り専用アクセス。 |
   | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーイベント、データソース、アクションの管理] | イベント、ソース、アクションの読み取り、作成、編集、削除。 |
-  | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーの表示] | ジャーニーへの読み取り専用アクセス。 |
+  | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーの表示] | ジャーニーへの読み取り専用アクセス権。 |
   | [!UICONTROL ジャーニー] | [!UICONTROL ジャーニーの管理] | ジャーニーの読み取り、作成、編集、削除。 |
 
 * [宛先](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets)へのデータセットの書き出し
@@ -116,7 +116,7 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
   | [!UICONTROL 宛先] | [!UICONTROL 宛先の管理] | 宛先接続と宛先アカウントの読み取り、作成および削除へのアクセス。 |
-  | [!UICONTROL 宛先] | [!UICONTROL 宛先のアクティブ化] | ユーザーが既存の宛先に対してセグメントをアクティブ化できるようにします。 アクティブ化ワークフローのマッピングステップを有効にします。 また、この権限の場合は、データを宛先に対してアクティブ化するユーザーに宛先の表示権限も付与する必要があります。 |
+  | [!UICONTROL 宛先] | [!UICONTROL 宛先のアクティブ化] | ユーザーが既存の宛先に対してセグメントをアクティブ化できるようにします。 アクティベーションワークフローのマッピングステップを有効にします。 また、この権限の場合は、データを宛先に対してアクティブ化するユーザーに宛先の表示権限も付与する必要があります。 |
 
   Experience Platform の権限について詳しくは、[製品プロファイルの権限の管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/permissions)を参照してください。
 
@@ -124,28 +124,28 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
   ユーザーが BI 拡張機能を使用する場合、製品管理者は以下を行う必要があります。
 
-   * ユーザーの Experience Platform 権限に、「クエリを管理」オプションと「クエリサービス統合を管理」オプションを含むクエリサービスリソースを持つ役割が含まれていることを確認する必要があります。 Experience Platform の権限について詳しくは、[製品プロファイルの権限の管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/permissions)を参照してください。
+  * ユーザーの Experience Platform 権限に、「クエリを管理」オプションと「クエリサービス統合を管理」オプションを含むクエリサービスリソースを持つ役割が含まれていることを確認する必要があります。 Experience Platform の権限について詳しくは、[製品プロファイルの権限の管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/permissions)を参照してください。
 
-     | カテゴリ | 権限 | 説明 |
-     |---|---|---|
-     | [!UICONTROL クエリサービス] | [!UICONTROL クエリの管理] | Platform データの構造化 SQL クエリの読み取り、作成、編集、および削除へのアクセス。 |
-     | [!UICONTROL クエリサービス] | [!UICONTROL クエリサービス統合の管理] | クエリサービスアクセスの有効期限が切れていない資格情報を作成、更新、削除するためのアクセス。 |
+    | カテゴリ | 権限 | 説明 |
+    |---|---|---|
+    | [!UICONTROL クエリサービス] | [!UICONTROL クエリの管理] | Platform データの構造化 SQL クエリの読み取り、作成、編集、および削除へのアクセス。 |
+    | [!UICONTROL クエリサービス] | [!UICONTROL クエリサービス統合の管理] | クエリサービスアクセスの有効期限が切れていない資格情報を作成、更新、削除するためのアクセス。 |
 
-   * ユーザーに次の適切な Customer Journey Analytics 権限を付与する必要があります。
-      * 関連するデータビューにアクセスする権限。 [!UICONTROL ユーザーレベルアクセス]の[データビュー](#user-level-access)を参照してください。
-      * Customer Journey Analytics BI 拡張機能にアクセスする権限。 [ユーザーレベルアクセス](#user-level-access)の[!UICONTROL データビューツール]を参照してください。
+  * ユーザーに次の適切な Customer Journey Analytics 権限を付与する必要があります。
+    * 関連するデータビューにアクセスする権限。 [!UICONTROL ユーザーレベルアクセス]の[データビュー](#user-level-access)を参照してください。
+    * Customer Journey Analytics BI 拡張機能にアクセスする権限。 [ユーザーレベルアクセス](#user-level-access)の[!UICONTROL データビューツール]を参照してください。
 
 ### 製品プロファイル管理者の役割
 
 製品プロファイルは、一連の権限です。 製品管理者は、製品プロファイルを作成し、1 つ以上の製品プロファイルを管理する製品プロファイル管理者を割り当てることができます。 製品プロファイル管理者は、次の操作を実行できます。
 
-* 割り当てられた製品プロファイルを管理する。 ユーザーまたはユーザーグループの追加や削除、製品プロファイルの権限の変更など。
+* 割り当てられた製品プロファイルを管理する。 ユーザーまたはユーザーグループの追加や削除、製品プロファイルの権限の変更などを行う。
 
 * Customer Journey Analytics で、割り当てられた製品プロファイルの一部であるデータビューを編集する。 製品プロファイル管理者は、新しいデータビューを作成できません。
 
 ### ユーザーレベルのアクセス
 
-次の表に、関連するユーザーに対して設定できる様々な Customer Journey Analytics 機能の主なアクセス権限の概要を示します。 製品プロファイルを通じて、様々なレベルのユーザーアクセスを管理できます。 製品プロファイルは、多数の権限を組み合わせ、個々のユーザーやユーザーグループに割り当てることができます。
+次の表に、関連するユーザーに対して設定できる様々な Customer Journey Analytics 機能の主なアクセス権限の概要を示します。 製品プロファイルを通じて、様々なレベルのユーザーアクセスを管理できます。 製品プロファイルは、多数の権限を組み合わせ、個人ユーザーやユーザーグループに割り当てることができます。
 
 「**[!UICONTROL 権限]**」タブは、[Admin Console](https://adminconsole.adobe.com/enterprise/) の各製品プロファイルの一部です。
 

@@ -33,7 +33,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="ジャーニーキャンバス"
->abstract="人物が一連のタッチポイントを通過またはフォールアウトする仕組みを示します。 複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するのに使用します。"
+>abstract="ユーザーが一連のタッチポイントをどのように通過するか、またはフォールアウトするかを示します。 複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するのに使用します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="ジャーニーキャンバス"
->abstract="人物が一連のタッチポイントを通過またはフォールアウトする仕組みを示します。 複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するのに使用します。"
+>abstract="ユーザーが一連のタッチポイントをどのように通過するか、またはフォールアウトするかを示します。 複数のエントリポイントとパスがあるジャーニーに使用するか、Journey Optimizer で作成されたジャーニーを分析するのに使用します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -70,7 +70,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 >[!ENDSHADEBOX]
 
-ジャーニーキャンバスビジュアライゼーションを使用すると、ユーザーやお客様に提供するジャーニーを分析し、深いインサイトを得ることができます。 これにより、ゼロからジャーニーを定義したり、Journey Optimizer からジャーニーを表示したりして、人物がジャーニーを離脱した（フォールアウト）か、次に進んだ（フォールスルー）かを確認できます。
+ジャーニーキャンバスビジュアライゼーションを使用すると、ユーザーやお客様に提供するジャーニーを分析し、深いインサイトを得ることができます。 これにより、ゼロからジャーニーを定義したり、Journey Optimizer からジャーニーを表示したりして、人物がジャーニーを離脱した（フォールアウト）か、ジャーニーを継続して進んだ（フォールスルー）かを確認できます。
 
 イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせてジャーニーノードを作成して、[ユーザージャーニーの分析を作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。 変更を行うと、データがリアルタイムで更新されます。
 
@@ -88,7 +88,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 * キャンバスにコンポーネントを追加したり、既存のノードを再配置したりするためのドラッグ＆ドロップ操作。
 
-* ジャーニーキャンバス内でユーザージャーニーの分析を作成するか、Journey Optimizer ジャーニーに基づいて自動的に作成するオプション。
+* ジャーニーキャンバス内でユーザージャーニーの分析を作成するか、Journey Optimizer ジャーニーに基づいて自動的に作成することができます。
 
 ## 潜在的なインサイト
 
@@ -129,7 +129,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 #### フォールスルー
 
-* ジャーニを完了した（終了ノードに到着した）人物の数と割合
+* ジャーニーを完了した（終了ノードに到着した）人物の数と割合
 
 * ジャーニーの特定のノードに到達した人物の数と割合
 
@@ -143,7 +143,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 * ジャーニーの任意のノードに分類ディメンションを追加して、その特定のノードの追加データを表示します
 
-## ジャーニーキャンバス、フォールアウト、フローのいずれかのビジュアライゼーションの選択
+## ジャーニーキャンバス、フォールアウト、フローのいずれかのビジュアライゼーションを選択します
 
 ジャーニーキャンバスビジュアライゼーションは、[フォールアウトビジュアライゼーション](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)や[フロービジュアライゼーション](/help/analysis-workspace/visualizations/c-flow/flow.md)と似ていますが、重要な違いがあります。
 
@@ -161,7 +161,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 * 事前定義済みのページのシーケンスを使用した、複数のエントリポイントとパスを持つ非線形ジャーニー。
 
-* 事前定義済みのジャーニーに基づく探索的、Ad Hoc Analysis。
+* 事前定義済みのジャーニーに基づく探索的なアドホック分析。
 
 * セッション、ユーザー、発生件数以外のプライマリ指標を必要とする分析。
 
@@ -179,7 +179,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 ジャーニーキャンバスで Journey Optimizer ジャーニーを分析すると、Journey Optimizer と同じ順序、シーケンス、構造でジャーニーが表示されます。 ジャーニーキャンバス内でジャーニーに大幅な変更を行うと、[その変更は Journey Optimizer から同期されなくなります](#synchronization-between-journey-optimizer-and-journey-canvas)。
 
-### ジャーニーキャンバスを使用してJourney Optimizer ジャーニーを分析するメリット
+### ジャーニーキャンバスを使用して Journey Optimizer ジャーニーを分析するメリット
 
 ジャーニー キャンバスは、Journey Optimizer では不可能な、詳細で徹底的な分析を提供します。
 
@@ -195,13 +195,13 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 * フォールスルーとフォールアウトを分析
 
-* 任意のディメンションを持つイベントを分類
+* 任意のディメンションでイベントを分類
 
 * イベントを組み合わせ
 
 * イベントを接続
 
-* コンテナを名前変更および削除
+* イベントの名前変更および削除
 
 * その他
 
@@ -211,7 +211,7 @@ Journey Optimizer とジャーニーキャンバス間の同期を理解する�
 
 * **データ同期は 1 方向のみである**
 
-  ジャーニーキャンバスで Journey Optimizer ジャーニーの分析を作成すると、データは Journey Optimizer から Journey キャンバスへの 1 方向にのみ同期されます。 つまり、ジャーニーキャンバスでジャーニーに行った変更は、Journey Optimizer に反映されません。
+  ジャーニーキャンバスで Journey Optimizer ジャーニーの分析を作成すると、データは Journey Optimizer からジャーニーキャンバスへの一方向にのみ同期されます。 つまり、ジャーニーキャンバスでジャーニーに行った変更は、Journey Optimizer に反映されません。
 
 * **ジャーニーキャンバスでジャーニーを変更すると、同期が停止する**
 
@@ -235,11 +235,11 @@ Journey Optimizer とジャーニーキャンバス間の同期を理解する�
 
 * ノード上のコンポーネントの変更
 
-ノードをドラッグしたり、分類を追加したりするなど、ジャーニーキャンバスで Journey Optimizer ジャーニーに他の変更を行った場合、次の節で説明する違いは適用されません。
+ジャーニーキャンバスで Journey Optimizer ジャーニーに他の変更を行った場合（例えばノードをドラッグしたり、分類を追加したりした場合）、次の節で説明する違いは適用されません。
 
 >[!NOTE]
 >
->ジャーニーを元の状態に戻すには、ジャーニー キャンバスで最初の変更を行った後に Ctrl + Z キーを押します。 または、[ジャーニーキャンバスでジャーニーを削除して再作成することもできます](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+>ジャーニーを元の状態に戻すには、ジャーニーキャンバスで最初の変更を行った後に Ctrl+Z キーを押します。 または、[ジャーニーキャンバスでジャーニーを削除して再作成することもできます](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 #### データ処理の違い
 
@@ -267,11 +267,11 @@ Journey Optimizer で 1 つの意味を持つ特定の用語は、Customer Journ
 |---------|----------|---------|
 | **イベント** | Customer Journey Analytics で使用できる標準指標の 1 つです。 この指標では、売上高、サブスクリプション、生成されたリードなどがカウントされます。 | オンライン購入など、パーソナライズされたジャーニーをトリガーするアクティビティのカテゴリ。 |
 
-### ジャーニーキャンバスでの Journey Optimizer ジャーニーの分析
+### ジャーニーキャンバスで Journey Optimizer のジャーニーを分析する
 
 ジャーニーキャンバスでの Journey Optimizer ジャーニーの分析について詳しくは、[ジャーニーキャンバスビジュアライゼーションの設定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)を参照してください。
 
-## ジャーニーキャンバスでの分析の作成
+## ジャーニーキャンバスで分析を作成する
 
 Analysis Workspace で使用可能な任意のディメンションまたは指標に基づく分析を、ジャーニーキャンバスで作成できます。 または、Journey Optimizer で作成されたジャーニーを分析できます。 詳しくは、[ジャーニーキャンバスビジュアライゼーションの設定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)を参照してください。
 

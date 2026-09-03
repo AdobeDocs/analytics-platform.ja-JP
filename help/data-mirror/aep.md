@@ -22,8 +22,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 571
-ht-degree: 6%
+source-wordcount: 605
+ht-degree: 5%
 
 ---
 
@@ -47,9 +47,9 @@ Experience Platform Data Mirror Customer Journey Analytics版では、複数のE
 * スキーマのフィールドとその属性を定義します
 * リレーショナルスキーマのフィールドに必要な属性を設定します。
 
-   * **プライマリキー**。
-   * **バージョン記述子**&#x200B;です。これは、連続番号（整数フィールドタイプ）またはDateTime フィールドタイプとして設定する必要があります。 DateTime フィールドタイプを使用する場合、バージョン記述子は、データの変更のタイムスタンプを定義します。例えば、最後に変更されたタイムスタンプを含むようにします。
-   * **タイムスタンプ記述子** （時系列データ用）。イベントがキャプチャされた時点での不変タイムスタンプを定義します。 レコードベースのリレーショナルスキーマにタイムスタンプ記述子は必要ありません。
+  * **プライマリキー**。
+  * **バージョン記述子**&#x200B;です。これは、連続番号（整数フィールドタイプ）またはDateTime フィールドタイプとして設定する必要があります。 DateTime フィールドタイプを使用する場合、バージョン記述子は、データの変更のタイムスタンプを定義します。例えば、最後に変更されたタイムスタンプを含むようにします。
+  * **タイムスタンプ記述子** （時系列データ用）。イベントがキャプチャされた時点での不変タイムスタンプを定義します。 レコードベースのリレーショナルスキーマにタイムスタンプ記述子は必要ありません。
 
 
 
@@ -105,5 +105,5 @@ Experience Platform Data Mirror Customer Journey Analytics版では、複数のE
 >[!MORELIKETHIS]
 >
 >[Data Mirror クイックスタートガイド：リレーショナルデータのミラーと使用](relational.md)
->[Data Mirror（Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
->[&#x200B; リレーショナルスキーマ （Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
+>[Data Mirror （Experience Platform ドキュメント）](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/data-mirror/overview)
+>[リレーショナルスキーマ （Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)

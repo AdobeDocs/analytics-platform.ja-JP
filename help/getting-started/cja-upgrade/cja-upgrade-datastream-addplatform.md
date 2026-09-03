@@ -68,7 +68,7 @@ ht-degree: 100%
 
    1. その他の設定はそのままにし、「**[!UICONTROL 保存]**」を選択してデータストリームを保存します。
 
-   これで、web サイトから収集したデータを Adobe Experience Platform でデータセットに転送するように、データストリームが設定されました。
+   これで、web サイトから収集したデータを Adobe Experience Platform のデータセットに転送するように、データストリームが設定されました。
 
    データストリームの設定方法と機密データの処理方法について詳しくは、[データストリームの概要](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を参照してください。
 

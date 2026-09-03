@@ -18,8 +18,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 195
-ht-degree: 71%
+source-wordcount: 204
+ht-degree: 72%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 71%
 >[!CONTEXTUALHELP]
 >id="workspace_treemap_button"
 >title="ツリーマップ"
->abstract="ツリーマップビジュアライゼーションを作成して、ネストされた長方形で階層（ツリー構造）データを表示します。"
+>abstract="ツリーマップビジュアライゼーションを作成して、ネストされた長方形で階層（ツリー構造）のデータを表示します。"
 
 <!-- markdownlint-enable MD034 -->
 

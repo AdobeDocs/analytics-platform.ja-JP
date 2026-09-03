@@ -17,8 +17,8 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 55%
+source-wordcount: 238
+ht-degree: 57%
 
 ---
 
@@ -51,7 +51,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 ![3 つのセグメントを含むベン図ビジュアライゼーション。](assets/venn.png)
 
-次に、セグメントにポインタを合わせると、パーセンテージなどについて、より多くのインサイトが得られます。
+セグメントにポインタを合わせると、パーセンテージなどについて、より多くのインサイトが得られます。
 
 [!UICONTROL ベン図]ビジュアライゼーションから[!UICONTROL フリーフォームテーブル]を生成するには、**[!UICONTROL ベン図]**&#x200B;のヘッダーの横にあるカラー付きの ![StatusOrange](/help/assets/icons/StatusOrange.svg) を選択し、「**[!UICONTROL データソースを表示]**」を選択します。 [!UICONTROL ベン図]ビジュアライゼーションを作成するために使用されたデータを含む&#x200B;**[!UICONTROL ベン図データ]**&#x200B;フリーフォームテーブルが表示されます。
 

@@ -36,7 +36,7 @@ Customer Journey Analytics を初めて使用する場合、組織が Google Ana
 
 ワークフローは、履歴データと現在のデータ収集の両方に対して提供されます。 組織のデータニーズに応じて、これらのワークフローのいずれかまたは両方に従うことができます。
 
-## Google Analytics から Adobe Experience Platform に履歴データを取り込む
+## Google Analytics から Adobe Experience Platform への履歴データの取り込み
 
 履歴（バックフィル）データの取り込みには、Google からのデータのエクスポートと、そのデータの Adobe Experience Platform へのインポートが含まれます。 [Adobe Experience Platform での Google Analytics データの取り込み](backfill.md)を参照してください。
 

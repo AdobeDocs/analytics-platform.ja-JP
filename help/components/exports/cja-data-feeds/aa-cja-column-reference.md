@@ -30,7 +30,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
-source-wordcount: 3920
+source-wordcount: 3921
 ht-degree: 48%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 48%
 
 {{release-limited-testing}}
 
-Adobe AnalyticsとCustomer Journey Analytics データフィード列の真の1:1 マッピングは不可能です。 2つの製品は根本的に異なり、各組織の実装は大きく異なる可能性があります。
+Adobe AnalyticsとCustomer Journey Analytics データフィード列の間の真の1:1 マッピングは不可能です。 2つの製品は根本的に異なり、各組織の実装は大きく異なる可能性があります。
 
 このリファレンスは、データエンジニアがAdobe Analytics データフィード列を評価し、ワークフローに最も近いCustomer Journey Analyticsの同等を特定するのに役立ちます。
 
@@ -270,7 +270,7 @@ Cookie サポートディメンション。<br>Y：有効<br>N：無効<br>U：�
 
 +++**`currency`**
 
-取引で使用された通貨のコード。 `currencyCode` を使用して設定します。
+トランザクションで使用された通貨コード。 `currencyCode` を使用して設定します。
 
 `xdm.commerce.order.currencyCode`
 
@@ -280,7 +280,7 @@ Cookie サポートディメンション。<br>Y：有効<br>N：無効<br>U：�
 
 +++**`ct_connect_type`**
 
-`connection_type` 列と関連しています。 よく使用される値は LAN/Wi-Fi、Mobile Carrier、Modem です。
+`connection_type` 列と関連しています。 よく使用される値は LAN/Wi-Fi、携帯電話会社、モデムです。
 
 +++
 
@@ -292,7 +292,7 @@ Cookie サポートディメンション。<br>Y：有効<br>N：無効<br>U：�
 
 +++**`curr_rate`**
 
-取引が発生した際の為替レート。 アドビは、XE と提携して、当日の為替レートを判定します。
+トランザクションが発生した際の為替レート。 アドビは XE と提携して、その日の為替レートを取得します。
 
 +++
 
@@ -446,12 +446,12 @@ Adobe Advertising統合で使用されるEF ID。
 * Adobe Analyticsで訪問別に指標の重複排除を行う場合は、その指標のコンポーネント設定で重複排除スコープをセッションに設定できます。
 * 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
 
-   * **チェックアウト**: `xdm.commerce.checkouts.id`
-   * **買い物かごに追加**: `xdm.commerce.productListAdds.id`
-   * **買い物かごが開きます**: `xdm.commerce.productListOpens.id`
-   * **買い物かごからの削除**: `xdm.commerce.productListRemovals.id`
-   * **カートビュー**: `xdm.commerce.productListViews.id`
-   * **製品ビュー**: `xdm.commerce.productViews.id`
+  * **チェックアウト**: `xdm.commerce.checkouts.id`
+  * **買い物かごに追加**: `xdm.commerce.productListAdds.id`
+  * **買い物かごが開きます**: `xdm.commerce.productListOpens.id`
+  * **買い物かごからの削除**: `xdm.commerce.productListRemovals.id`
+  * **カートビュー**: `xdm.commerce.productListViews.id`
+  * **製品ビュー**: `xdm.commerce.productViews.id`
 
 受注指標の重複を除外する場合は、`duplicate_purchase`を参照してください。
 
@@ -480,25 +480,25 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`first_hit_page_url`**
 
-訪問者の本当に最初の URL。
+訪問者の最初の URL。
 
 +++
 
 +++**`first_hit_referrer`**
 
-訪問者の本当に最初の参照 URL。
+訪問者の最初の参照 URL。
 
 +++
 
 +++**`first_hit_ref_domain`**
 
-元の参照ドメインディメンション。 `first_hit_referrer` に基づきます。 訪問者の本当に最初の参照ドメイン。
+元の参照ドメインディメンション。 `first_hit_referrer` に基づきます。 訪問者の最初の参照ドメイン。
 
 +++
 
 +++**`first_hit_ref_type`**
 
-訪問者の本当に最初のリファラーのリファラータイプを表す数値 ID。
+訪問者の最初のリファラーのリファラータイプを表す数値 ID。
 
 {{cja-df-lookup}}
 
@@ -506,7 +506,7 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`first_hit_time_gmt`**
 
-訪問者の最初のヒットのタイムスタンプ（UNIX® 時間）。
+訪問者の最初のヒットのタイムスタンプ（UNIX® タイム）。
 
 +++
 
@@ -536,7 +536,7 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`geo_zip`**
 
-ヒットが発生した場所の郵便番号（IP アドレスに基づく）。 Zip コードディメンションを入力するのに役立ちます。 関連トピック 「`zip`」を参照してください。
+ヒットが発生した郵便番号（IP アドレスに基づく）。 Zip コードディメンションを入力するのに役立ちます。 関連トピック 「`zip`」を参照してください。
 
 +++
 
@@ -554,13 +554,13 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`hit_source`**
 
-ヒットソース。 ヒットソース 1と2は請求されます。 <br>1: タイムスタンプのない標準的な画像リクエスト <br>2: タイムスタンプ付きの標準的な画像リクエスト <br>3: タイムスタンプ付きのライブデータソースアップロード <br>4：未使用<br>5：汎用データソースアップロード <br>6：未使用、処理中データソースアップロード <br>7: TransactionID データソースのアップロード <br>8：未使用、以前のバージョンのAdobe Advertising データソース <br>9：未使用、Adobe Social サマリーメトリクス <br>10: Audience Manager サーバーサイド転送が使用
+ヒットがどこから来たかを示すソース。 ヒットソース 1と2は請求されます。 <br>1: タイムスタンプのない標準的な画像リクエスト <br>2: タイムスタンプ付きの標準的な画像リクエスト <br>3: タイムスタンプ付きのライブデータソースアップロード <br>4：未使用<br>5：汎用データソースアップロード <br>6：未使用、処理中データソースアップロード <br>7: TransactionID データソースのアップロード <br>8：未使用、以前のバージョンのAdobe Advertising データソース <br>9：未使用、Adobe Social サマリーメトリクス <br>10: Audience Manager サーバーサイド転送が使用
 
 +++
 
 +++**`hit_time_gmt`**
 
-ヒットを受信したアドビデータ収集サーバーのタイムスタンプ（UNIX® 時間に基づく）。
+アドビのデータ収集サーバーがヒットを受信した時刻のタイムスタンプ（UNIX® 時間に基づく）。
 
 +++
 
@@ -632,25 +632,25 @@ Java対応ディメンション。 <br>Y：有効<br>N：無効<br>U：不明
 
 +++**`latlon1`**
 
-ロケーション（半径 10 km 以内）
+ロケーション（10 km 単位まで特定可能）
 
 +++
 
 +++**`latlon23`**
 
-ロケーション（半径 100 m 以内）
+ロケーション（100 m 単位まで特定可能）
 
 +++
 
 +++**`latlon45`**
 
-ロケーション（半径 1 m 以内）
+ロケーション（1 m 単位まで特定可能）
 
 +++
 
 +++**`mcvisid`**
 
-Experience Cloud 訪問者 ID。 2 つの連結された 64 ビットの数値から構成され、19 桁にパディングされた 128 ビットの数値。
+Experience Cloud の訪問者 ID。 2 つの連結された 64 ビットの数値から構成され、19 桁にパディングされた 128 ビットの数値。
 
 +++
 
@@ -664,7 +664,7 @@ Experience Cloud 訪問者 ID。 2 つの連結された 64 ビットの数値�
 
 +++**`mobileaction`**
 
-モバイルアクション。 モバイル実装で `trackAction` が呼び出されると、自動的に収集されます。 アプリケーション内で自動的にアクションを渡すことができるようにします。
+モバイルアクション。 モバイル実装で `trackAction` が呼び出されると、自動的に収集されます。 アプリケーション内で自動的にアクションのパスをたどれるようにします。
 
 {{cja-df-post}}
 
@@ -724,7 +724,7 @@ Mobile Services ビーコンの UUID
 
 +++**`mobilecampaigncontent`**
 
-リンクを表示したコンテンツの名前または ID。 モバイルアプリケーションの獲得によって設定されます。
+リンクを表示したコンテンツの名前または ID。 モバイルアプリの獲得によって入力されます。
 
 {{cja-df-post}}
 
@@ -732,7 +732,7 @@ Mobile Services ビーコンの UUID
 
 +++**`mobilecampaignmedium`**
 
-マーケティングメディア（バナー、電子メールなど）。 モバイルアプリケーションの獲得によって設定されます。
+バナーやメールなどのマーケティング媒体を指します。 モバイルアプリケーションの獲得によって設定されます。
 
 {{cja-df-post}}
 
@@ -890,7 +890,7 @@ Mobile Services のオペレーティングシステムのバージョン。
 
 +++**`mobileplaceid`**
 
-コンテキストデータ変数 `a.loc.id` から収集します。 特定の対象地点の識別子。
+コンテキストデータ変数 `a.loc.id` から収集します。 特定の興味地点の識別子。
 
 +++
 
@@ -918,25 +918,25 @@ Mobile Services の起動コンテンツ
 
 +++**`mobilerelaunchcampaignmedium`**
 
-Mobile Services の起動メディア
+Mobile Services のローンチメディア
 
 +++
 
 +++**`mobilerelaunchcampaignsource`**
 
-Mobile Services の起動ソース
+Mobile Services のローンチソース
 
 +++
 
 +++**`mobilerelaunchcampaignterm`**
 
-Mobile Services の起動条件
+Mobile Services のローンチ用語
 
 +++
 
 +++**`mobilerelaunchcampaigntrackingcode`**
 
-コンテキストデータ変数 `a.launch.campaign.trackingcode` から収集します。 キャンペーン立ち上げのトラッキングコードとして、獲得で使用します。
+コンテキストデータ変数 `a.launch.campaign.trackingcode` から収集します。 獲得で、ローンチキャンペーン用のトラッキングコードとして使用されます。
 
 +++
 
@@ -979,7 +979,7 @@ Mobile Services の起動条件
 
 +++**`new_visit`**
 
-現在のヒットが新しい訪問であるかどうかを判定するフラグ。 訪問後 30 分間非アクティブであった場合にアドビによって設定されます。
+現在のヒットが新しい訪問かどうかを判定するフラグです。 訪問中に 30 分間アクティビティがない場合に、アドビによって設定されます。
 
 +++
 
@@ -1073,7 +1073,7 @@ Mobile Services の起動条件
 
 +++**`pointofinterest`**
 
-Mobile Services 目標地点の名前
+Mobile Services の関心ポイント名
 
 {{cja-df-post}}
 
@@ -1081,7 +1081,7 @@ Mobile Services 目標地点の名前
 
 +++**`pointofinterestdistance`**
 
-目標地点中心までの Mobile Services の距離
+Mobile Services の関心ポイントの中心までの距離
 
 {{cja-df-post}}
 
@@ -1160,13 +1160,13 @@ Mobile Services 目標地点の名前
 
 +++**`search_page_num`**
 
-「すべての検索ページのランク」ディメンションで使用されます。 ユーザーがクリックスルーしてサイトに到達する前にサイトが表示された検索結果ページを示します。
+「すべての検索ページのランキング」ディメンションで使用されます。 ユーザーがクリックスルーしてサイトに到達する前にサイトが表示された検索結果ページを示します。
 
 +++
 
 +++**`secondary_hit`**
 
-ヒットがセカンダリヒットかどうかを判定するフラグ。 このフラグは通常、ヒットをコピーするマルチスイートタグ付けおよび VISTA ルールで発生します。
+ヒットがセカンダリヒットかどうかを判定するフラグ。 このフラグは通常、ヒットをコピーするマルチスイートタグ付けおよび VISTA ルールに由来します。
 
 +++
 
@@ -1198,7 +1198,7 @@ Adobe Advertising 統合で使用されるキーワード ID。
 
 +++**`tnt`**
 
-Adobe Target 統合で使用されます。 現在認定されているすべてのテストを表します。 形式は次のとおりです。`TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`
+Adobe Target 統合で使用されます。 現在、適格となっているすべてのテストを表します。 形式は次のとおりです。`TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`
 
 {{cja-df-post}}
 
@@ -1206,7 +1206,7 @@ Adobe Target 統合で使用されます。 現在認定されているすべて
 
 +++**`tnt_action`**
 
-Adobe Target 統合で使用されます。 ヒットが認定されるすべてのテストを表します。
+Adobe Target 統合で使用されます。 ヒットが対象となったすべてのテストを表します。
 
 {{cja-df-post}}
 
@@ -1472,7 +1472,7 @@ Day パートのストリーミングメディアサービスディメンショ�
 
 +++**`videogenre`**
 
-ジャンル別ストリーミングメディアサービスディメンション。 このディメンションでは、コンマで区切られた複数の値が同じヒットに許可されます。
+ジャンル別ストリーミングメディアサービスディメンション。 このディメンションでは、コンマで区切られた複数の値を同じヒットに含めることができます。
 
 {{cja-df-post}}
 
@@ -1576,13 +1576,13 @@ Errors streaming media services ディメンション。
 
 +++**`videoqoeextneralerrors`**
 
-ストリーミングメディアサービスディメンションの外部エラーID。 このディメンションでは、複数の値が同じヒットに許可されます。
+ストリーミングメディアサービスディメンションの外部エラーID。 このディメンションでは、複数の値を同じヒットに含めることができます。
 
 +++
 
 +++**`videoqoeplayersdkerrors`**
 
-Player SDK エラーID ストリーミングメディアサービスディメンション。 このディメンションでは、複数の値が同じヒットに許可されます。
+Player SDK エラーID ストリーミングメディアサービスディメンション。 このディメンションでは、複数の値を同じヒットに含めることができます。
 
 {{cja-df-post}}
 
@@ -1666,7 +1666,7 @@ Player SDK エラーID ストリーミングメディアサービスディメン
 
 +++**`visid_timestamp`**
 
-訪問者 ID が新しく生成された場合は、訪問者 ID が生成された時刻の UNIX® 時間でのタイムスタンプを示します。
+訪問者 ID が新しく生成された場合は、訪問者 ID が生成された時刻の UNIX® 時刻のタイムスタンプを示します。
 
 +++
 

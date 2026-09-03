@@ -65,5 +65,5 @@ ht-degree: 4%
 ## 参照
 
 1. Taylor、Sean J.、Benjamin Letham: *大規模な予測* アメリカ統計局72.1 （2018）:37-45
-1. Triebe, Oskar, et al.: *Neuralprophet：大規模な説明可能な予測* arXiv プレプリント arXiv:2111.15397 （2021）。
+1. Triebe, Oskar, et al.: *Neuralprophet：大規模な説明可能な予測* arXiv preprint arXiv:2111.15397 （2021）。
 1. Zhang and Arbor: *時系列異常値検出。* 米国特許出願#18/057883。

@@ -82,20 +82,20 @@ ht-degree: 59%
 データビューを作成する場合、（スキーマに基づいて）次のディメンションと指標を使用できます。
 
 * **ディメンション：**
-   * ID
-   * product : SKU
-   * product : name
-   * product : order_id
-   * product : warranty : coverage
-   * prodcut : warranty : length
-   * product : warranty : name
-   * product : warranty : type
+  * ID
+  * product : SKU
+  * product : name
+  * product : order_id
+  * product : warranty : coverage
+  * prodcut : warranty : length
+  * product : warranty : name
+  * product : warranty : type
 * **指標：**
-   * product : orders
-   * product : units
-   * product : revenue
-   * product : warranty
-   * product : warranty : revenue
+  * product : orders
+  * product : units
+  * product : revenue
+  * product : warranty
+  * product : warranty : revenue
 
 ### 同じイベントの例（レポート動作）
 
@@ -151,7 +151,7 @@ Customer Journey Analyticsは、テーブルに基づいて、オブジェクト
 +}
 ```
 
-保証売上高のみを報告したい場合、プロジェクトは次のようになります。
+保証の売上高のみに関するレポートが必要な場合、プロジェクトは次のようになります。
 
 | `product : warranty : coverage` | `product : warranty : revenue` |
 | --- | --- |
@@ -205,7 +205,7 @@ Customer Journey Analyticsは、イベントのこれらの部分に注目して
 
 乾燥機には保証が付いていないので、テーブルには含まれていません。
 
-任意のディメンションを任意の指標と組み合わせることができるので、次の表では、ディメンション項目が指定されていないデータの処理方法を示します。
+任意のディメンションと任意の指標を組み合わせることができるので、次のテーブルでは、ディメンション項目が未指定の場合にデータがどのように表示されるかを示します。
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -213,7 +213,7 @@ Customer Journey Analyticsは、イベントのこれらの部分に注目して
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-製品注文には保証名が関連付けられていないのでディメンション項目は「未指定」に属しています。 同じ状況が、製品の保証注文にも当てはまります。
+製品の注文に保証名が関連付けられていないので、ディメンション項目は「未指定」に割り当てられます。 同じ状況が、製品の保証注文にも当てはまります。
 
 ```diff
 {
@@ -257,7 +257,7 @@ Customer Journey Analyticsは、イベントのこれらの部分に注目して
 +}
 ```
 
-名前が関連付けされていない注文をメモしておきます。 これらは、「未指定」ディメンション項目に属する注文です。
+名前が関連付けされていない注文をメモしておきます。 これらは、「未指定」ディメンション項目に起因する注文です。
 
 ### 指標の組み合わせ
 
