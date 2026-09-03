@@ -7,25 +7,15 @@ role: Admin
 exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
 autotag-review: '2026-05-19T10:43:44.564Z'
 TQID: 'https://experienceleague.adobe.com/Glq5cGUw910uanF1Blgj5E-Fzo1Ycn26VzZvNRwxpLE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 752
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -36,13 +26,13 @@ ht-degree: 3%
 >オーディエンス分析とオーディエンス公開の違いを理解する：
 >
 >* **オーディエンス分析**: Experience Platform プロファイル データセットからCustomer Journey Analytics接続にオーディエンスメンバーシップ データを取り込むことができます。
->* **オーディエンスの公開**:Customer Journey Analyticsで発見したオーディエンスを作成し、Adobe Experience Platformに公開して、顧客のターゲティングとパーソナライズを行うことができます。 オーディエンスの公開について詳しくは、[&#x200B; オーディエンスの公開の概要](/help/components/audiences/audiences-overview.md)を参照してください。
+>* **オーディエンスの公開**:Customer Journey Analyticsで発見したオーディエンスを作成し、Adobe Experience Platformに公開して、顧客のターゲティングとパーソナライズを行うことができます。 オーディエンスの公開について詳しくは、[ オーディエンスの公開の概要](/help/components/audiences/audiences-overview.md)を参照してください。
 
-Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspaceで使用する新しいディメンションとして利用できるようになります。
+Audience Analysisを使用すると、Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込むことができます。 オーディエンスは、Analysis Workspace で使用する新しいディメンションとして使用可能になります。
 
 次の図と関連する表は、Customer Journey Analyticsのaudience analysis設定によって、Experience PlatformのオーディエンスデータがAnalysis Workspaceでどのように利用できるようになるのかを示す概要を示しています。
 
-![&#x200B; オーディエンス分析の概要](assets/audience-analysis-overview.png)
+![ オーディエンス分析の概要](assets/audience-analysis-overview.png)
 
 | 数値 | 機能 | 関数 |
 |---------|----------|---------|
@@ -66,13 +56,13 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
 >
 >オーディエンスは、audience analysis設定を作成した翌日にCustomer Journey Analytics データビューで使用できます。
 
-詳しくは、[&#x200B; オーディエンス分析の設定](/help/connections/audience-analysis/audience-analysis-configure.md)を参照してください。
+詳しくは、[ オーディエンス分析の設定](/help/connections/audience-analysis/audience-analysis-configure.md)を参照してください。
 
 ## オーディエンス分析の設定の管理
 
 オーディエンス分析設定は、作成後に管理できます。 設定を表示、編集、削除できます。
 
-既存のオーディエンス分析設定の管理について詳しくは、[&#x200B; オーディエンス分析設定の管理](/help/connections/audience-analysis/audience-analysis-manage.md)を参照してください。
+既存のオーディエンス分析設定の管理について詳しくは、[ オーディエンス分析設定の管理](/help/connections/audience-analysis/audience-analysis-manage.md)を参照してください。
 
 ## Adobe Customer Journey Analyticsでのオーディエンスデータの分析
 
@@ -92,17 +82,17 @@ Adobe Customer Journey Analyticsで利用可能なオーディエンスデータ
 
 | 機能 | Customer Journey Analyticsの役割または権限の要件 | Experience Platformの権限の要件 |
 |---------|----------|----------|
-| [&#x200B; オーディエンス分析設定の作成](/help/connections/audience-analysis/audience-analysis-configure.md) | システム管理者 | <ul><li>データセット：読み取り権限</li><li>スキーマ：読み取り、書き込み</li><li>ID名前空間：読み取り</li></ul> |
-| [&#x200B; データビューでオーディエンス分析ディメンションを表示](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
+| [ オーディエンス分析設定の作成](/help/connections/audience-analysis/audience-analysis-configure.md) | システム管理者 | <ul><li>データセット：読み取り権限</li><li>スキーマ：読み取り、書き込み</li><li>ID名前空間：読み取り</li></ul> |
+| [ データビューでオーディエンス分析ディメンションを表示](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
 | Analysis Workspaceでのオーディエンス分析ディメンションの使用 | オーディエンス分析ディメンションが追加されたデータビューへのアクセス | 該当なし |
 
 ## オーディエンス分析のユースケース
 
-Audience Analysisが提供する値を強調表示するユースケースの例については、[Audience Analysis ユースケース &#x200B;](/help/connections/audience-analysis/audience-analysis-use-cases.md)を参照してください。
+Audience Analysisが提供する値を強調表示するユースケースの例については、[Audience Analysis ユースケース ](/help/connections/audience-analysis/audience-analysis-use-cases.md)を参照してください。
 
 ## オーディエンス分析の限界
 
-オーディエンス分析[&#128279;](/help/connections/audience-analysis/audience-analysis-configure.md)を設定する場合は、次の制限を考慮してください。
+オーディエンス分析](/help/connections/audience-analysis/audience-analysis-configure.md)を[設定する場合は、次の制限を考慮してください。
 
 * 1つのサンドボックスで最大100個のオーディエンス分析設定をサポートできます。
 

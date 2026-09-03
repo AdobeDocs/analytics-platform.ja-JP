@@ -6,23 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: bd19250e-91c0-49f6-b6dc-3abd641344aa
 TQID: https://experienceleague.adobe.com/DtETa7Qh3l2X9YSjkX56zX8CmDTWVpGvvyrd9HFayt4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1186
@@ -30,9 +18,9 @@ ht-degree: 15%
 
 ---
 
-# Customer Journey Analytics にアップグレードする組織の準備
+# 組織が Customer Journey Analytics にアップグレードするための準備
 
-アップグレードを成功させる一環として、（[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)で説明しているように）特定の運用上の考慮事項に焦点を当てて組織を準備します。 組織を準備するには、次のことをお勧めします。
+アップグレードを成功させる一環として、（[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)で説明しているように）特定の運用上の考慮事項に焦点を当てて組織を準備します。 組織を準備するには、次のことをお勧めします。
 
 * 主要な関係者からの同意と調整の獲得
 
@@ -59,7 +47,7 @@ Customer Journey Analyticsが自社にもたらす価値と、ビジネス目標
 | **[あらゆる種類のデータの宿泊施設](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home)** | Customer Journey Analytics は、あらゆる種類のデータスキーマとタイプを保持する Experience Platform の機能と組み合わされています。 | 小売企業は、次のようなデータを単一の顧客像に統合することで、カスタマージャーニー全体を可視化することができます。 <ul><li>Web クリックストリームトランザクション</li><li>モバイルアプリトランザクション</li><li>実店舗での取引</li><li>CRM データとロイヤルティデータ</li></ul> |
 | **[クロスチャネル分析](/help/use-cases/cross-channel/cross-channel.md)** | さまざまなweb、モバイル、オフラインのプロパティからのデータを統合することで、さまざまなチャネルをまたいで顧客行動を一元的に把握できます。 | 複数のチャネルからデータを収集する小売企業では、次のような分析を実行できます。<p>有料検索広告をクリックした買い物客は、オンラインでジーンズを閲覧し、プッシュ通知を受け取った後、2日後に店舗で購入しました。 この統合された視点により、正確なクロスチャネルアトリビューションが可能になり、デジタル接点が実店舗での販売にどのように貢献しているかを把握できます。 また、「オンラインで閲覧し、店舗で購入した」顧客に合わせたオファーを提供するなど、より正確なセグメンテーションにも対応しています。 さらに、あらゆるチャネルをまたいで単一のダッシュボードで明確な売上レポートを提供し、断片化され、分散しているインサイトを、顧客行動の全体像を把握するのに置き換えます。 |
 | **[レポート時処理](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | データの収集方法を変更することなく、遡及的な設定を適用し、変数の永続性の複数のバージョンを作成できます。 | Customer Journey Analyticsでは、データを再取得または再処理することなく、指標、ディメンション、アトリビューションモデルを即座に作成および調整できるため、小売企業は、エンジニアリングにデータセットを再構築するように依頼することなく、最近のソーシャルキャンペーンがオンラインと実店舗の販売の両方にどのような影響を与えたのかを確認できます。 ファーストタッチからファーストタッチへ、またはルールベースのカスタムアトリビューションに至るまで、アトリビューションモデルを瞬時に変更できます。 |
-| **[Content Analytics](/help/content-analytics/content-analytics.md)** | ビジネスが定義した主要業績評価指標（KPI）に対するコンテンツの影響をマーケターが理解するのに役立ちます。 Content Analytics では、行動データに加えて、消費されるコンテンツと、影響を与えるコンテンツに関するデータを収集します。 | web、アプリ、電子メール、店舗データなどを統合することで、制作するデジタルコンテンツの各要素が、カスタマージャーニーやコンバージョンにどのように貢献しているのかを正確に把握することができました。 <p>小売企業は、人気のあるソーシャルメディアプラットフォームに掲載された「夏のデニムスタイルガイド」が、ロイヤルティメンバーのエンゲージメントを高め、1週間以内に実店舗でデニムを購入する可能性が40%高いことがわかりました。</p> |
+| **[Content Analytics](/help/content-analytics/content-analytics.md)** | ビジネスが定義した主要業績評価指標（KPI）に対するコンテンツの影響をマーケターが理解するのに役立ちます。 Content Analytics では、行動データに加えて、コンテンツがどのように消費されるか、またコンテンツがどのような影響を与えるかに関するデータを収集します。 | web、アプリ、電子メール、店舗データなどを統合することで、制作するデジタルコンテンツの各要素が、カスタマージャーニーやコンバージョンにどのように貢献しているのかを正確に把握することができました。 <p>小売企業は、人気のあるソーシャルメディアプラットフォームに掲載された「夏のデニムスタイルガイド」が、ロイヤルティメンバーのエンゲージメントを高め、1週間以内に実店舗でデニムを購入する可能性が40%高いことがわかりました。</p> |
 
 ### エグゼクティブスポンサーを任命する
 
@@ -157,13 +145,13 @@ Adobe Adobe Analyticsを導入する際は、次の点に重点を置いて徹�
 
   次のリソースは、在庫管理に役立ちます。
 
-   * [Customer Journey Analytics チュートリアル](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview)
+  * [Customer Journey Analytics チュートリアル](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview)
 
-   * [Customer Journey Analytics とは](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+  * [Customer Journey Analytics とは](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
-   * [Customer Journey Analytics の概要](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
+  * [Customer Journey Analytics の概要](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
-   * [Customer Journey Analytics の機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)
+  * [Customer Journey Analytics の機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)
 
 ## 推奨されるアップグレード手順に従います
 

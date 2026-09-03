@@ -5,15 +5,10 @@ feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
 TQID: https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: d13dba12-733d-4914-8d92-d643658bbe5d
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d13dba12-733d-4914-8d92-d643658bbe5d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 552
@@ -65,5 +60,5 @@ ht-degree: 4%
 ## 参照
 
 1. Taylor、Sean J.、Benjamin Letham: *大規模な予測* アメリカ統計局72.1 （2018）:37-45
-1. Triebe, Oskar, et al.: *Neuralprophet：大規模な説明可能な予測* arXiv プレプリント arXiv:2111.15397 （2021）。
+1. Triebe, Oskar, et al.: *Neuralprophet：大規模な説明可能な予測* arXiv preprint arXiv:2111.15397 （2021）。
 1. Zhang and Arbor: *時系列異常値検出。* 米国特許出願#18/057883。

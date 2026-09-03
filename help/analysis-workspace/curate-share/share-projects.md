@@ -6,26 +6,11 @@ feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
 TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a3b826fd-7a63-4a83-8736-83eee6668f44id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: c38ed341-fab2-46df-9d72-88d8166edebbid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: f21d8c43-b886-433b-93ea-5982cbfc16b7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
 source-wordcount: 2183
@@ -61,18 +46,18 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace でのプロジェクト共有](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 
 ## 組織内のユーザーおよびグループとの共有 {#Add}
 
-組織内の既存の Adobe Workspace ユーザーまたはグループと、プロジェクトを共有できます。 この節で説明するようにプロジェクトを共有する場合、共有相手となるユーザーは、既に Adobe Customer Journey Analytics アカウントを持っている必要があります。
+組織内の既存の Analysis Workspace ユーザーまたはグループとプロジェクトを共有できます。 この節で説明するようにプロジェクトを共有する場合、共有相手となるユーザーは、既に Adobe Customer Journey Analytics アカウントを持っている必要があります。
 
 特定の役割をユーザーやグループと共有したり、リンクを共有したりできます。
 
-* [特定のプロジェクトの役割の共有](#share-a-specific-project-role)
+* [特定のプロジェクトロールを共有](#share-a-specific-project-role)
 
 * [プロジェクトへのリンクの共有](#share-a-link-to-a-project)
 
@@ -88,13 +73,13 @@ ht-degree: 90%
 
 * **[!UICONTROL コピーを編集]**&#x200B;または&#x200B;**[!UICONTROL 読み取り専用]**&#x200B;の役割を付与された管理者は、プロジェクトを開いたときに、それらの限定的なエクスペリエンスを受け取ります。 管理者は、プロジェクトを自分自身と共有し「編集」の役割を付与することで、自分の役割を&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;に変更できます（以下の手順を参照）。
 
-* 複数のプロジェクトを共有するように選択した場合、受信者は各プロジェクトの既存の受信者リストに追加されます。
+* 複数のプロジェクトを共有対象として選択した場合、共有先は各プロジェクトの既存の共有先リストに追加されます。
 
   例えば、プロジェクト A が既に受信者 1、2、3 と共有されていて、プロジェクト B が既に受信者 4、5、6 と共有されているとします。
 
   次に、プロジェクト A と B が受信者 4 および 7 と共有されます。 新しい共有リストはプロジェクト A では 1、2、3、4、7 になり、プロジェクト B では 4、5、6、7 になりました。
 
-特定のプロジェクトの役割を組織内のユーザーまたはグループと共有するには、次の手順に従います。
+特定のプロジェクトロールを組織内のユーザーまたはグループと共有するには、次の手順に従います。
 
 1. Adobe Customer Journey Analytics で、「[!UICONTROL **Workspace**]」タブを選択し、左側のパネルで「[!UICONTROL **プロジェクト**]」を選択します。
 
@@ -102,17 +87,18 @@ ht-degree: 90%
 
    または
 
-   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;を選択します。保存されていない変更がある場合は、まずプロジェクトを保存するように求められます。
+   個々のプロジェクトのみを共有するには、共有するプロジェクトを開き、**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**を選択します。
+   保存されていない変更がある場合は、まずプロジェクトを保存するように求められます。
 
-   共有プロジェクトダイアログボックスが表示されます。 ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
+   「プロジェクトを共有」ダイアログボックスが表示されます。 ダイアログボックスの「[!UICONTROL **リンクで共有**]」と「[!UICONTROL **設定**]」セクションは、単一のプロジェクトを共有する場合にのみ表示されます。
 
-   ![プロジェクトを共有ウィンドウ &#x200B;](assets/share-proj-modal.png)
+   ![プロジェクトを共有ウィンドウ ](assets/share-proj-modal.png)
 
-1. 提供された役割フィールドの 1 つに、受信者または受信者のグループを追加します。
+1. 用意されているいずれかのロールフィールドに、受信者または受信者グループを追加します。
 
-   **オリジナルを編集：**&#x200B;受信者は、変更内容をプロジェクトに&#x200B;**[!UICONTROL 保存]**&#x200B;し、共同所有者になることができます。 この役割は、プロジェクトを他の同僚と共同管理する場合に役立ちます。 この役割には、共有プロジェクトの受信者リストの編集、削除、変更が含まれます。 <br>注：Analysis Workspace は現在、ライブコラボレーションをサポートしていないので、一度に 1 人のユーザーだけがプロジェクトを編集することをお勧めします。 プロジェクトを同時に保存すると、最後のバージョンが保持されます。
+   **オリジナルを編集：**&#x200B;受信者は、変更内容をプロジェクトに&#x200B;**[!UICONTROL 保存]**&#x200B;し、共同所有者になることができます。 このロールは、プロジェクトを他の同僚と共同管理する場合に役立ちます。 このロールには、共有されたプロジェクトの受信者リストの編集、削除、変更が含まれます。 <br>注：Analysis Workspace は現在、ライブコラボレーションをサポートしていないので、一度に 1 人のユーザーだけがプロジェクトを編集することをお勧めします。 プロジェクトを同時に保存した場合は、最後に保存されたバージョンが保持されます。
 
-   **コピーを編集：**&#x200B;受信者は、**[!UICONTROL 別名で保存]**&#x200B;し、左側のパネルにアクセスできます。 この役割には、プロジェクトの操作は制限されません。 この役割は、組織のデータと Analysis Workspace の使用方法を理解しているユーザーとプロジェクトを共有する場合に役立ちます。 ただし、これらのユーザーにプロジェクトを変更させたくはありません。
+   **コピーを編集：**&#x200B;受信者は、**[!UICONTROL 別名で保存]**&#x200B;し、左側のパネルにアクセスできます。 プロジェクトの操作は、このロールに限定されません。 この役割は、組織のデータと Analysis Workspace の使用方法を理解しているユーザーとプロジェクトを共有する場合に役立ちます。 ただし、これらのユーザーにプロジェクトを変更させたくはありません。
 
    **読み取り専用：**&#x200B;受信者は、**[!UICONTROL 保存]**&#x200B;または&#x200B;**[!UICONTROL 別名で保存]**&#x200B;することができず、左側のパネルにもアクセスできません。 プロジェクトの操作も制限されます。 この役割は、組織のデータ構造、Analysis Workspace または Customer Journey Analytics の一般的な知識の低いユーザーにプロジェクトを共有する場合に役立ちます。 ただし、これらのユーザーに引き続き、安全な環境でデータやインサイトを利用してもらいたい場合です。 読み取り専用プロジェクトエクスペリエンスについて詳しくは、[こちら](/help/analysis-workspace/curate-share/view-only-projects.md)を参照してください。
 
@@ -126,7 +112,7 @@ ht-degree: 90%
 
    または
 
-   「**[!UICONTROL キュレーションと共有]**」を選択して、プロジェクトのキュレーションを自動的に適用します。 （プロジェクトが既に共有されている場合は、**[!UICONTROL キュレートと更新]**&#x200B;を選択します）。 [&#x200B; プロジェクトのキュレーション &#x200B;](curate.md)の詳細をご覧ください。
+   「**[!UICONTROL キュレーションと共有]**」を選択して、プロジェクトのキュレーションを自動的に適用します。 （プロジェクトが既に共有されている場合は、**[!UICONTROL キュレートと更新]**&#x200B;を選択します）。 [ プロジェクトのキュレーション ](curate.md)の詳細をご覧ください。
 
 
 ## プロジェクトへのリンクの共有
@@ -152,10 +138,10 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
 >title="CX Enterprise 認証が必要"
->abstract="ユーザーがこのリンクを使用するには、組織から CX Enterprise にログインするよう求められます。"
+>abstract="このリンクを使用するには、組織のポリシーにより、ユーザーは CX Enterprise にログインする必要があります。"
 
 
-Customer Journey Analytics にアクセスできないユーザーに Analysis Workspace プロジェクトへの[読み取り専用アクセス権](/help/analysis-workspace/curate-share/view-only-projects.md)を付与できます。 この付与するアクセス権は、次のユーザーを含めることができます。
+Customer Journey Analytics にアクセスできないユーザーに Analysis Workspace プロジェクトへの[読み取り専用アクセス権](/help/analysis-workspace/curate-share/view-only-projects.md)を付与できます。 付与されるアクセス権には、次の内容が含まれます。
 
 * 組織外のユーザー
 
@@ -163,7 +149,7 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 
 >[!NOTE]
 >
->Adobe Analytics にアクセスできないユーザーと Customer Journey Analytics プロジェクトを共有する場合は、次の点を考慮してください。
+>Customer Journey Analytics にアクセスできないユーザーと Analysis Workspace プロジェクトを共有する場合は、次の点を考慮してください。
 >
 >* この方法でプロジェクトを共有する機能は、Customer Journey Analytics 管理者が無効にすることができます（[環境設定](/help/analysis-workspace/user-preferences.md)を参照）。 この節での説明どおりにプロジェクトを共有できない場合は、Customer Journey Analytics 管理者の設定によって、この機能が無効になっています。
 >
@@ -173,13 +159,13 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 > 
 >* 共有相手となるユーザーは、プロジェクトの日付範囲を変更できます。 プロジェクトに設定した日付範囲がデフォルトで表示されます。
 >
->* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。 デフォルトでは、5 分ごとに 190 人を超えるユーザーが  1 つのリンクにアクセスできます。 組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
+>* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。 デフォルトでは、5 分ごとに 190 人を超えるユーザーが 1 つのリンクにアクセスできます。 組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 >
 >* [!DNL Healthcare Shield]と[!DNL Privacy & Security Shield]の両方のライセンスで、[!UICONTROL 誰とでも共有]機能を使用するには、CX エンタープライズ認証が必要です。 [!DNL Healthcare Shield]のお客様の場合、「HIPAA準拠」警告が表示されますが、CX Enterpriseに認証した後でもこの機能を使用できます。
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [任意のユーザーと共有](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -208,13 +194,13 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
      Customer Journey Analytics 管理者は、[環境設定](/help/analysis-workspace/user-preferences.md)で説明されているように、会社用にこの環境設定を設定できます。 管理者がどのようにこのオプションを設定したかによっては、次のシナリオが発生する可能性があります。
 
-      * このオプションが表示されない場合、Customer Journey Analytics 管理者はこの機能を有効にしていません。
+     * このオプションが表示されない場合、Customer Journey Analytics 管理者はこの機能を有効にしていません。
 
-      * このオプションが有効になっていて、無効にできない場合、ロックされたオプションは、Customer Journey Analytics管理者がAnalysis Workspace プロジェクトにアクセスするユーザーに対してCX Enterprise認証を必要とすることを意味します。 これは、Healthcare Shield のライセンスを取得した組織には常に当てはまります。
+     * このオプションが有効になっていて、無効にできない場合、ロックされたオプションは、Customer Journey Analytics管理者がAnalysis Workspace プロジェクトにアクセスするユーザーに対してCX Enterprise認証を必要とすることを意味します。 これは、Healthcare Shield のライセンスを取得した組織には常に当てはまります。
 
 1. 「**[!UICONTROL 任意のユーザーと共有（ログイン不要）]**」フィールドの横にある リンク を選択して、![リンク](/help/assets/icons/Link.svg) をシステムクリップボードにコピーします。
 
-1. プロジェクトへのアクセス権を付与するユーザーとリンクを共有します。 例えば、リンクをメールにペーストできます。
+1. プロジェクトへのアクセス権を付与したい相手にリンクを共有します。 例えば、リンクをメールにペーストできます。
 
    リンクの共有相手であるユーザーであれば誰でも、Analysis Workspace プロジェクトを表示できます。
 
@@ -234,7 +220,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace での埋め込みコンポーネントの共有](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -246,4 +232,4 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 | 2 人の編集者が同時にプロジェクトを保存するとどうなりますか？ | 変更は結合されず、最後に保存したプロジェクトのバージョンが保持されます。 Analysis Workspace は現在、ライブコラボレーションをサポートしていません。 |
 | 管理者として、どのプロジェクトエクスペリエンスが表示されますか？ | **[!UICONTROL コピーを編集]**&#x200B;または&#x200B;**[!UICONTROL 読み取り専用]**&#x200B;の役割を付与された管理者は、プロジェクトを開いたときに、それらの限定的なエクスペリエンスを受け取ります。 管理者は、必要に応じて、**[!UICONTROL コンポーネント]／[!UICONTROL プロジェクト]**&#x200B;を使用して、いつでも自分の役割を&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;に増やすことができます 。 |
 | 受信者が 1 つの役割に個人として配置され、別の役割にグループのメンバとして配置された場合はどうなりますか？ | 受信者が複数の役割に配置されている場合、常により高いエクスペリエンスを受け取ります。 例えば、受信者に個人として&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;の役割、グループのメンバーとして&#x200B;**[!UICONTROL 表示可能]**&#x200B;の役割が付与されている場合、ユーザーは&#x200B;**[!UICONTROL オリジナルを編集]**&#x200B;プロジェクトエクスペリエンスを受信します。 |
-| プロジェクトのリンクを開いた場合、ユーザーはどのようなエクスペリエンスを得られますか。 | 受信者は、共有モーダルに配置した役割を受け取ります。 受信者に役割が割り当てられておらず、プロジェクトへのリンクを受信した場合（**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;で、「**[!UICONTROL リンクごとに共有]**」フィールドの横にある「**[!UICONTROL コピー]**」を選択）、受信者はデフォルトの役割に配置されます。 管理者は「**[!UICONTROL オリジナルを編集]**」の役割を受信し、管理者以外は「**[!UICONTROL コピーを編集]**」の役割を受信します。 |
+| 受信者がプロジェクトのリンクを開いた場合、どのようなエクスペリエンスを得られますか。 | 受信者は、共有ダイアログで割り当てられたロールを受け取ります。 受信者に役割が割り当てられておらず、プロジェクトへのリンクを受信した場合（**[!UICONTROL 共有]**／**[!UICONTROL Workspace ユーザーと共有]**&#x200B;で、「**[!UICONTROL リンクごとに共有]**」フィールドの横にある「**[!UICONTROL コピー]**」を選択）、受信者はデフォルトの役割に配置されます。 管理者は「**[!UICONTROL オリジナルを編集]**」の役割を受信し、管理者以外は「**[!UICONTROL コピーを編集]**」の役割を受信します。 |

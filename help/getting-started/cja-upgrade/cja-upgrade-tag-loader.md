@@ -1,24 +1,17 @@
 ---
 title: Web SDK 拡張機能用のローダータグの実装
-description: Web SDK 拡張機能用のローダータグの実装方法について説明します
+description: Web SDK 拡張機能用のローダータグの実装方法を学ぶ
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 autotag-review: '2026-05-19T08:19:22.813Z'
 TQID: 'https://experienceleague.adobe.com/OYEIDQvTVX2GFMKWvCGuKqoyZcvWbcsnGSQwM-tsYl0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 301
@@ -32,8 +25,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="サイトにローダータグを実装"
->abstract="Web サイト開発チームと連携して、サイトのすべてのページにローダータグをインストールします。<br><br>このタスクの完了時間は、コードのデプロイと連携するエンジニアリングチームの応答時間に大きく依存します。 高度にアダプティブなエンジニアリングチームを持つ組織では、この手順を数日で完了できますが、タスクの膨大なバックログを持つエンジニアリングチームでは、1 か月以上かかる場合があります。"
+>title="サイトにローダータグを実装する"
+>abstract="Web サイト開発チームと連携して、サイトのすべてのページにローダータグをインストールします。<br><br>このタスクの完了時間は、コードのデプロイと連携するエンジニアリングチームの応答時間に大きく依存します。 高度にアダプティブなエンジニアリングチームを持つ組織では、この手順を数日で完了できますが、タスクのバックログが膨大なエンジニアリングチームでは、1 か月以上かかる場合があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +38,7 @@ ht-degree: 100%
 
 タグを参照するコードを取得するには：
 
-1. Adobe ID 資格情報を使用して experiencecloud.adobe.com にログインします。
+1. Adobe ID 資格情報を使用して experience.adobe.com にログインします。
 
 1. Adobe Experience Platform で、**[!UICONTROL データ収集]**／**[!UICONTROL タグ]**&#x200B;に移動します。
 

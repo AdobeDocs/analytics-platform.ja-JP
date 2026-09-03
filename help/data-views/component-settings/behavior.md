@@ -6,16 +6,11 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/ra-O8TGxS6ByFEClZR7FtOnJ70YwclBiVMh9vubmGxk
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 341
@@ -30,7 +25,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="動作"
->abstract="ディメンションおよび指標コンポーネントに適用できます。 この指標の行項目がどのように集計されるかを決定します。 このディメンションの文字列値が小文字である必要があるかどうかを指定します。"
+>abstract="ディメンションおよび指標コンポーネントに適用できます。 この指標の行項目がどのように集計されるかを決定します。 このディメンションの文字列値を小文字にするかどうかを指定します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -58,7 +53,7 @@ ht-degree: 100%
 | 設定 | 説明／使用例 |
 | --- | --- |
 | [!UICONTROL 値をカウント] | 整数および倍精度スキーマのデータタイプに表示されます。 指定した量だけ指標を増やします。 例えば、列の値が `50` の場合は、指標の値を 50 増やします。 |
-| [!UICONTROL インスタンスをカウント] | 整数および倍精度スキーマのデータタイプに表示されます。 値に関係なく、指標を 1 増やします。 任意の値が存在すると、指標が増加します。 例えば、列の値が `50` の場合は、指標の値を 1 増やします。 |
+| [!UICONTROL インスタンスをカウント] | 整数および倍精度のスキーマデータタイプで表示されます。 値に関係なく、指標を 1 増やします。 任意の値が存在すると、指標が増加します。 例えば、列の値が `50` の場合は、指標の値を 1 増やします。 |
 | [!UICONTROL カウントする値] | ブールスキーマデータタイプに表示されます。 `true`、`false`またはその両方をカウントすることで、指標の増加を判断できます。 |
 
 {style="table-layout:auto"}

@@ -6,23 +6,11 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
 source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
 workflow-type: tm+mt
 source-wordcount: 4127
@@ -57,15 +45,15 @@ ht-degree: 48%
 
 | 設定 | 説明／使用例 |
 | --- | --- |
-| [!UICONTROL コンポーネントの種類] | 必須。 コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントがそれぞれに含まれているコンポーネント領域で変更します。 |
-| [!UICONTROL &#x200B; コンポーネント名] | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
+| [!UICONTROL コンポーネントの種類] | 必須。 コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントは対応する「含まれているコンポーネント」領域に移動します。 |
+| [!UICONTROL  コンポーネント名] | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （任意）。 Analysis Workspace UIでの検索やフィルタリングを容易にするために、カスタムタグまたは標準のタグを使用してコンポーネントにタグを付けることができます。 |
-| [!UICONTROL コンテキストラベル] | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[&#x200B; コンテキストラベル &#x200B;](#context-labels)のドロップダウンメニュー。 |
+| [!UICONTROL コンテキストラベル] | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[ コンテキストラベル ](#context-labels)のドロップダウンメニュー。 |
 | [!UICONTROL スキーマフィールド名] | スキーマフィールドの名前。 |
 | [!UICONTROL データセットタイプ] | 必須。 コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
 | [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
-| [!UICONTROL スキーマタイプ] | コンポーネントのデータタイプを示す編集不可のフィールド。 Platform では、サポートされているスキーマフィールドタイプを使用できますが、Customer Journey Analytics でサポートされていないフィールドタイプもあります。 次のデータタイプがサポートされています。`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` および `Boolean` です。 現在、ルックアップデータセットでは `String` スキーマデータタイプのみを使用できます。 |
+| [!UICONTROL スキーマタイプ] | コンポーネントのデータタイプを示す編集不可のフィールド。 Platform では、サポートされている任意のスキーマフィールドタイプを使用できますが、Customer Journey Analytics ではすべてのフィールドタイプがサポートされているわけではありません。 次のデータタイプがサポートされています。`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` および `Boolean` です。 現在、ルックアップデータセットでは `String` スキーマデータタイプのみを使用できます。 |
 | [!UICONTROL コンポーネント ID] | 必須。 [Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) は、このフィールドを使用してコンポーネントを参照します。 データビューの各コンポーネントは、一意である必要があります。 アドビは、各コンポーネントの ID を自動的に生成します。ただし、編集アイコンをクリックして、コンポーネント ID を変更することはできます。 コンポーネント ID を変更すると、このコンポーネントを含む既存の Workspace プロジェクトがすべて機能しなくなります。 単一のデータビュー内では各コンポーネントに一意の ID が必要ですが、他のデータビュー内では同じコンポーネント ID を使用できます。 他のデータビューで同じコンポーネント ID を使用すると、データビューをまたいで Workspace プロジェクトに互換性を持たせることができます。 <br/>プロファイルとルックアップベースのコンポーネントの場合、コンポーネント ID には、データセット ID に基づく ID 接頭辞が付きます（例：`642b28fcc1f0ee1c074265a0.person.name.firstName`）。 Workspace プロジェクトでプロファイルやルックアップベースのコンポーネント（`person.name.firstName` など）を再利用し、このコンポーネントを様々なデータビューで設定する場合は、データビュー全体で確実にコンポーネント ID を一意の名前に変更します（`myUniqueID.person.name.firstName` など）。 |
 | [!UICONTROL パス] | 必須。 コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
 | [!UICONTROL データ使用状況ラベル] | Adobe Experience Platformでこのコンポーネントに割り当てられているデータ使用ラベル。 [詳細情報](/help/data-views/data-governance.md)。 |
@@ -77,7 +65,7 @@ ht-degree: 48%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -104,26 +92,26 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 コンテキストラベルの利点は次のとおりです。
 
 * **利便性**：すべてのパネルまたはビジュアライゼーションで同じコンポーネントを再選択する必要はありません。
-* **機能のロックを解除**：一部のビジュアライゼーション（[&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md)など）では、どのコンポーネントが緯度と経度であるかに関する知識が必要です。 コンテキストラベルを割り当てると、その情報がビジュアライゼーションに公開されます。
+* **機能のロックを解除**：一部のビジュアライゼーション（[ マップ ](/help/analysis-workspace/visualizations/map.md)など）では、どのコンポーネントが緯度と経度であるかに関する知識が必要です。 コンテキストラベルを割り当てると、その情報がビジュアライゼーションに公開されます。
 * **一貫性**：組織内で、コンテキストラベルを使用するデータビューに基づく1つ以上のプロジェクトで作業する全員が、同じ動作を得ます。
 * **機能とテンプレートの表示**：特定のビジュアライゼーションと機能は、適切なコンテキストラベルが割り当てられている場合にのみ表示されます。 次に例を示します。
 
-   * Customer Journey Analyticsが緯度と経度を表すコンポーネントを認識している場合にのみ、[&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md)のビジュアライゼーションが適切に表示されます。
-   * 特定の[&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md)は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
+  * Customer Journey Analyticsが緯度と経度を表すコンポーネントを認識している場合にのみ、[ マップ ](/help/analysis-workspace/visualizations/map.md)のビジュアライゼーションが適切に表示されます。
+  * 特定の[ テンプレート ](/help/analysis-workspace/templates/use-templates.md)は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
 
 コンテキストラベルは、次の状況で必要になる場合があります。
 
-* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用して実験レポートで使用できます。
+* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[実験パネル ](/help/analysis-workspace/c-panels/experimentation.md)を使用して実験レポートで使用できます。
 
   詳しくは、[Journey Optimizer との統合](/help/integrations/ajo.md#data-view)および[ターゲットレポート](/help/integrations/at.md)を参照してください。
 
 * コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[Map](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用できます。
 
-  詳しくは、[Map](/help/analysis-workspace/visualizations/map.md)の「[&#x200B; データビューにコンテキストラベルを追加](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)」を参照してください。
+  詳しくは、[Map](/help/analysis-workspace/visualizations/map.md)の「[ データビューにコンテキストラベルを追加](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)」を参照してください。
 
   **注意**: マップ ビジュアライゼーションはリリースの限定テスト フェーズにあり、お使いの環境ではまだ利用できない可能性があります。
 
-* Adobe[&#128279;](/help/analysis-workspace/templates/use-templates.md)が提供する テンプレートを表示します。 Adobeが提供する一部のテンプレートは、特定のコンポーネントがデータビューに表示されないため、機能しない場合があります。
+* Adobe](/help/analysis-workspace/templates/use-templates.md)が提供する[ テンプレートを表示します。 Adobeが提供する一部のテンプレートは、特定のコンポーネントがデータビューに表示されないため、機能しない場合があります。
 
   欠落している各コンポーネントに対して、一致するコンテキストラベルがデータビューで使用できます。 一致するコンテキストラベルを、既にデータビューにあるコンポーネントに追加する必要があります。 または、新しいコンポーネントをデータビューに追加し、コンテキストラベルをコンポーネントに追加する必要があります（まだ自動的に指定されていない場合）。
 
@@ -173,19 +161,19 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 
 | 名前 | 説明 |
 |------|-------------|
-| [&#x200B; コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content) | 再生されるコンテンツの一意のID。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ ID]** ラジオボタンを有効にします。 |
-| [&#x200B; コンテンツ滞在時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/content-time-spent) | 広告を除くコンテンツの閲覧にかかった時間。 [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ滞在時間]**&#x200B;詳細設定を有効にします。 |
-| [&#x200B; エピソード &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/episode) | シリーズ内のエピソード番号 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、エピソード別のフィルタリングを有効にします。 |
-| イベントタイプ | `media.play`や`media.ping`などのメディアイベントタイプ。 Customer Journey Analyticsで[&#x200B; メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)の派生指標を計算するために必要です。 |
-| [&#x200B; メディア滞在時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/media-time-spent) | コンテンツ、広告、バッファリング、一時停止などの合計時間。 [&#x200B; メディア平均分オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの[&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md) パネルと&#x200B;**[!UICONTROL メディア滞在時間]**&#x200B;詳細設定を有効にします。 |
-| [&#x200B; シーズン &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/season) | シリーズ内の季節番号。 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、季節ごとのフィルタリングを有効にします。 |
-| 前回の呼び出しからの経過時間（秒） | 前回のハートビート pingからの秒単位の時間。 Customer Journey Analyticsで[&#x200B; メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生指標を計算するために必要です。この指標は、セッションが引き続きアクティブな場合を識別します。 |
-| [表示](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/show) | プログラムまたはシリーズ名。 [&#x200B; メディア分平均オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルでの表示別フィルタリングを有効にします。 |
-| [開始までの時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/time-to-start) | コンテンツの選択から再生が開始されるまでの時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [合計バッファー期間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | セッション中にバッファリングに費やされた合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [合計一時停止の期間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/total-pause-duration) | セッション中に一時停止された合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [&#x200B; ビデオの長さ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content-length) | コンテンツのデュレーション（秒単位）: [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL 特定コンテンツ]** モードに必要です。 |
-| [&#x200B; ビデオ名](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content-name) | コンテンツの表示名。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL ビデオ名]** ラジオボタンを有効にします。 |
+| [ コンテンツ ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | 再生されるコンテンツの一意のID。 [ メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ ID]** ラジオボタンを有効にします。 |
+| [ コンテンツ滞在時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | 広告を除くコンテンツの閲覧にかかった時間。 [ メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ滞在時間]**&#x200B;詳細設定を有効にします。 |
+| [ エピソード ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | シリーズ内のエピソード番号 [ メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、エピソード別のフィルタリングを有効にします。 |
+| イベントタイプ | `media.play`や`media.ping`などのメディアイベントタイプ。 Customer Journey Analyticsで[ メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)の派生指標を計算するために必要です。 |
+| [ メディア滞在時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | コンテンツ、広告、バッファリング、一時停止などの合計時間。 [ メディア平均分オーディエンス ](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの[ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md) パネルと&#x200B;**[!UICONTROL メディア滞在時間]**&#x200B;詳細設定を有効にします。 |
+| [ シーズン ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | シリーズ内の季節番号。 [ メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、季節ごとのフィルタリングを有効にします。 |
+| 前回の呼び出しからの経過時間（秒） | 前回のハートビート pingからの秒単位の時間。 Customer Journey Analyticsで[ メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生指標を計算するために必要です。この指標は、セッションが引き続きアクティブな場合を識別します。 |
+| [表示](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | プログラムまたはシリーズ名。 [ メディア分平均オーディエンス ](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルでの表示別フィルタリングを有効にします。 |
+| [開始までの時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | コンテンツの選択から再生が開始されるまでの時間。 [ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [合計バッファー期間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | セッション中にバッファリングに費やされた合計時間。 [ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [合計一時停止の期間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | セッション中に一時停止された合計時間。 [ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [ ビデオの長さ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | コンテンツのデュレーション（秒単位）: [ メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL 特定コンテンツ]** モードに必要です。 |
+| [ ビデオ名](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | コンテンツの表示名。 [ メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL ビデオ名]** ラジオボタンを有効にします。 |
 
 +++
 
@@ -270,7 +258,7 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | モバイルクラッシュ回数 | モバイルクラッシュ。 |
 | モバイルデバイス名 | モバイルデバイス名。 |
 | モバイルデバイスタイプ | モバイルデバイスタイプ： |
-| モバイルアプリ内メッセージ名 | アプリ内モバイルメッセージ名。 |
+| Mobile アプリ内メッセージ名 | アプリ内モバイルメッセージ名。 |
 | モバイルインストール数 | モバイルインストール： |
 | モバイルの起動回数 | モバイルの立ち上げ： |
 | モバイルの製造元 | モバイルメーカー： |
@@ -280,7 +268,7 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | モバイルメッセージプッシュオプトイン | モバイルメッセージのプッシュオプトイン： |
 | モバイルプッシュメッセージ名 | モバイルプッシュメッセージ名。 |
 | モバイルアップグレード回数 | モバイルのアップグレード： |
-| 計測されたアクションごとの所要時間 | 時間付きアクションあたりの滞在時間。 |
+| 時間計測されたアクションごとの所要時間 | 時間付きアクションあたりの滞在時間。 |
 
 +++
 
@@ -291,9 +279,9 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | 検索エンジン | 検索エンジン： |
 | 検索エンジンキーワード | 検索エンジンのキーワード： |
 | 検索エンジン自然 | 検索エンジン。 |
-| 検索エンジン自然キーワード | 検索エンジンの自然なキーワード。 |
+| 検索エンジンの自然検索キーワード | 検索エンジンの自然なキーワード。 |
 | 検索エンジン有料 | 検索エンジンは有料。 |
-| 検索エンジン有料キーワード | 検索エンジンの有料キーワード： |
+| 検索エンジンの有料検索キーワード | 検索エンジンの有料キーワード： |
 
 +++
 
@@ -359,12 +347,12 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | アセット ID | アセット Id。 |
 | アセット画像タイプ | アセット画像のタイプ： |
 | アセット最終更新者 | アセットが最終更新されました。 |
-| アセット最終更新日 | アセットの最終更新日。 |
+| アセット最終更新日付 | アセットの最終更新日。 |
 | アセット照明条件 | アセットの照明条件。 |
 | アセットリンク URL | アセットリンクのUrl: |
 | アセット名 | アセット名。 |
 | アセット人物カテゴリ | アセットの人物カテゴリ。 |
-| アセット認識 ID | 認識的に同じアセットの一意の ID。 |
+| アセット認識 ID | 知覚的に同じアセットの一意の ID。 |
 | アセットフォトスタイル | アセット写真のスタイル： |
 | アセットシーン | アセットのシーン： |
 | アセットソース | Asset Source: |
@@ -372,7 +360,7 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | アセットタイプ | アセットタイプ： |
 | アセットビュー数 | アセットビュー： |
 | アセット視覚的注意の拡散 | アセットの視覚的な拡散： |
-| アセットビジュアルコンテンツ密度 | アセットのビジュアルコンテンツ密度： |
+| アセットのビジュアルコンテンツ密度 | アセットのビジュアルコンテンツ密度： |
 | エクスペリエンス属性 | エクスペリエンス属性： |
 | エクスペリエンスチャネル | エクスペリエンスチャネル： |
 | エクスペリエンスのクリック数 | エクスペリエンスのクリック数： |
@@ -407,8 +395,8 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | アプリのインストール数（AJO） | アプリのインストール数。 |
 | アプリの起動回数 (AJO) | モバイルアプリの起動回数。 |
 | バッチ ID（AJO） | スケジュールされたジャーニーまたはキャンペーンアクションの新しい各バッチインスタンスの呼び出し時に作成される GUID。 例えば、スケジュールされたジャーニーまたはCampaign Actionが午前8.00時と午前10.00時に実行される場合、2つの異なるbatchInstanceIDがあります。 |
-| バッチインスタンスのタイムスタンプ（AJO) | バッチインスタンスのタイムスタンプ |
-| アウトバウンドチャネルのバウンス (非推奨) | アウトバウンドチャネルでバウンスされたメッセージの合計数。 |
+| バッチインスタンスのタイムスタンプ（AJO） | バッチインスタンスのタイムスタンプ |
+| アウトバウンドチャネルのバウンス数（非推奨） | アウトバウンドチャネルでバウンスされたメッセージの合計数。 |
 | キャンペーンアクション名 (AJO) | キャンペーンアクション名。 |
 | キャンペーン ID（AJO） | キャンペーンの ID。 |
 | キャンペーン名（AJO） | キャンペーンの名前。 |
@@ -435,8 +423,8 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | メール受信者ドメイン（AJO） | メールアドレスのドメイン。 |
 | メールの件名 | パーソナライズされていないメール件名。 |
 | イベント ID | 時系列イベントの一意の ID。 |
-| 終了条件 ID（AJO） | ジャーニーを終了するかどうかを決定する際に使用される終了条件の ID。 |
-| 終了条件名（AJO） | 終了条件の名前。 |
+| 離脱条件 ID (AJO) | ジャーニーから離脱するかどうかを判定する際に使用される離脱条件の ID。 |
+| 離脱条件名 (AJO) | 離脱条件の名前。 |
 | 実験 ID（AJO） | 実験の ID。 |
 | 実験名（AJO） | 実験の名前。 |
 | フォールバックオファー数 (AJO) | フォールバックオファーの数。 |
@@ -446,13 +434,13 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | インバウントインプレッション数（AJO） | インバウンドチャネルをまたいだインプレッションの合計数。 |
 | インバウンド送信数 (AJO) | インバウンドチャネルをまたいだ合計送信数。 |
 | トリガーされたインバウンド (AJO) | 提案書はAdobe・SDKによって展示されることに決まった。 その他の要因により、実際に表示されない場合があります。 |
-| 最適化された送信時間です (AJO) | メッセージ実行はSendTimeOptimizedですか？ |
+| 最適化された送信時間です（AJO） | メッセージ実行はSendTimeOptimizedですか？ |
 | テストジャーニーです | イベントはテストジャーニー実行の一部ですか？ |
 | テストメッセージです (AJO) | メッセージはテスト実行として送信されますか？ |
-| 項目 ID (永続) (AJO) | 永続性バインディングが有効になっている項目の ID。 |
+| 項目 ID（永続化）（AJO） | 永続性バインディングが有効になっている項目の ID。 |
 | 項目 ID (AJO) | 項目の ID。 |
 | 項目名 (AJO) | 項目の名前。 |
-| 項目名 (永続) (AJO) | 永続性バインディングが有効になっている項目の名前。 |
+| 項目名（永続化）（AJO） | 永続性バインディングが有効になっている項目の名前。 |
 | ジャーニーアクションのエラー (AJO) | ジャーニーアクションによって生成されたエラーメッセージ |
 | ジャーニーアクションノード名 | ジャーニーアクションのノード名。 |
 | ジャーニーエントリ | ステップイベントがプロファイルのジャーニーエントリイベントであった場合は True。 |
@@ -469,7 +457,7 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | ジャーニーバージョン ID | ジャーニーのバージョン ID。 |
 | JourneyExits | 現在のステップにより、ジャーニーのインスタンスが終了した場合は True。 つまり、特定のプロファイルのジャーニーの最後のステップが正常に実行されたことになります。 |
 | ランディングページコンバージョン数 (AJO) | ランディングページのコンバージョンの合計数。 |
-| ランディングページ ID (AJO) | ランディングページの一意の ID |
+| ランディングページ ID (AJO) | ランディングページの一意の ID。 |
 | ランディングページソース (AJO) | ランディングページのソース。 |
 | ランディングページビュー数 (AJO) | ランディングページのビューの合計数。 |
 | ランディングページクリック数 (AJO) | ランディングページのクリックの合計数 |
@@ -491,12 +479,12 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | ノード ID | ジャーニーノードのノード ID。 |
 | ノード名 | ジャーニーノードのノード名。 |
 | ノードタイプ | ジャーニーノードのノードタイプ。 |
-| 調整されたキャンペーンアクション ID 名前空間 (AJO) | オーケストレーションされたキャンペーンアクションのID名前空間。 |
-| 調整されたキャンペーンアクション名 (AJO) | オーケストレーションされたキャンペーンのアクション名。 |
-| 調整されたキャンペーンアクションノード ID (AJO) | オーケストレーションされたキャンペーンのアクション ID。 |
-| 調整されたキャンペーン ID (AJO) | オーケストレーションされたキャンペーンのID。 |
-| 調整されたキャンペーン名 (AJO) | オーケストレーションされたキャンペーンの名前。 |
-| 調整されたキャンペーンバージョン ID (AJO) | オーケストレーションされたキャンペーンのバージョン ID。 |
+| オーケストレーションキャンペーンアクション ID 名前空間 (AJO) | オーケストレーションされたキャンペーンアクションのID名前空間。 |
+| オーケストレーションキャンペーンアクション名 (AJO) | オーケストレーションされたキャンペーンのアクション名。 |
+| オーケストレーションキャンペーンアクションノード ID (AJO) | オーケストレーションされたキャンペーンのアクション ID。 |
+| オーケストレーションキャンペーン ID (AJO) | オーケストレーションされたキャンペーンのID。 |
+| オーケストレーションキャンペーン名 (AJO) | オーケストレーションされたキャンペーンの名前。 |
+| オーケストレーションキャンペーンバージョン ID (AJO) | オーケストレーションされたキャンペーンのバージョン ID。 |
 | アウトバウンドクリック数（AJO） | アウトバウンドチャネルにおけるクリック数の合計。 |
 | アウトバウンドエラー数 (非推奨) | アウトバウンドチャネル間でエラーが発生したメッセージの合計数。 |
 | アウトバウンド除外数 (非推奨) | アウトバウンドチャネルをまたいだ除外イベントの合計数。 |
@@ -519,7 +507,7 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 | SMS プロバイダー（AJO） | SinchやTwilioなどのSMS プロバイダー。 |
 | スパム報告件数（AJO） | スパムの苦情の合計数。 |
 | 戦略名 (AJO) | 戦略名。 アイテムの派生元の戦略名。 |
-| 戦略名 (永続) (AJO) | 永続性バインディングが有効になっている戦略名。 |
+| 戦略名（永続化）（AJO） | 永続性バインディングが有効になっている戦略名。 |
 | 製品リスト追加数（AJO） | 購読リストへの追加数の合計。 |
 | サブスクリプションリスト ID（AJO） | サブスクリプションリストの一意の ID。 |
 | サブスクリプションリストの削除数（AJO） | 購読リストからの削除数の合計数。 |

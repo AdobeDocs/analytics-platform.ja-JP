@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: User
 source-git-commit: e90a8d978f8d910f426dcb0fbf28881724d0f5a7
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2545'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ Customer Journey Analyticsとブランドの可視性の連携には、次のふ
 
 LLMのトラフィックは、ふたつの方法でサイトに到達します。 Customer Journey Analyticsは、それぞれの方法で異なるデータソースから測定します。
 
-まず、AIによる回答を読み、クリックしてサイトにアクセスする人が最初に考えられます。 その訪問では、web データの残りの部分を収集するのと同じJavaScriptが実行されます。 したがって、既存のCustomer Journey Analytics web データには、ユーザーを送信した訪問と参照ドメイン（例：chatgpt.com）が含まれます。 Customer Journey Analyticsは、これらの訪問を単独ではAI トラフィックとしてラベル付けしません。 それらを識別してグループ化するには、AI参照ドメインに一致する接続に派生フィールドを作成し、そのフィールドにセグメントとレポートを作成します。 [派生フィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}を参照してください。 ブランドの可視性データセットは必要ありません。
+まず、AIによる回答を読み、クリックしてサイトにアクセスする人が最初に考えられます。 その訪問では、web データの残りの部分を収集するのと同じJavaScriptが実行されます。 したがって、既存のCustomer Journey Analytics web データには、ユーザーを送信した訪問と参照ドメイン（例：chatgpt.com）が含まれます。 Customer Journey Analyticsは、これらの訪問を単独ではAI トラフィックとしてラベル付けしません。 それらを識別してグループ化するには、AI参照ドメインに一致する接続に派生フィールドを作成し、そのフィールドにセグメントとレポートを作成します。 [派生フィールド ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}を参照してください。 ブランドの可視性データセットは必要ありません。
 
 ふたつ目の方法は、ページを直接リクエストするボットやエージェントです。 これには、AI インデックスを構築するweb クローラーや、利用者がAI アシスタントにプロンプトを送信したときに発生するライブフェッチが含まれます。 これらのリクエストはJavaScriptを実行しないため、既存のweb データには記録されません。 ブランドの可視性データセットは、CDN レイヤーからこのトラフィックをキャプチャします。 この節の残りの部分では、そのデータセットについて説明します。
 
@@ -60,11 +60,11 @@ LLMのトラフィックは、ふたつの方法でサイトに到達します�
 ブランドの可視性管理コネクタは、サマリーデータセットとしてデータをExperience Platformに配信します。 Customer Journey Analyticsで測定するには、次の2つの設定手順を実行します。
 
 1. ブランドの可視性データセットを含む接続を作成します。 [接続の作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}を参照してください。
-2. その接続にデータビューを作成します。 データビューでは、以下のディメンションと指標をAnalysis Workspaceで使用できます。 [&#x200B; データビューの作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}を参照してください。
+2. その接続にデータビューを作成します。 データビューでは、以下のディメンションと指標をAnalysis Workspaceで使用できます。 [ データビューの作成または編集](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}を参照してください。
 
 データセット：
 
-* XDM要約指標クラスに基づく[概要データセット &#x200B;](/help/data-views/summary-data.md)を使用します。
+* XDM要約指標クラスに基づく[概要データセット ](/help/data-views/summary-data.md)を使用します。
 * URLとホスト、時間、ボットの種類、CDN プロバイダー、ステータスなどのリクエスト特性ごとにデータをバケット化します。
 
 >[!NOTE]
@@ -93,9 +93,9 @@ LLMのトラフィックは、ふたつの方法でサイトに到達します�
 | CDN URL | `cdn.url` | 結合キーとして意図された、リクエストの正規化された完全URL。 ブランドの可視性は、ホストとリクエストされたパスを1つのURLに結合し、Customer Journey Analyticsがweb データ用に保存する完全なURL フォームに一致するように正規化します。 このディメンションを使用して、ブランドの可視性ルックアップデータセットを、同等のフル URL フィールドを持つイベントデータセットに結合します。 ホストとパスは含まれますが、スキームは含まれません。 |
 | CDN URL パス | `cdn.path` | CDNが配信した、エージェントが要求した生のURL パスとクエリ文字列。 スキームまたはホストが含まれていません。 正規化された結合キーではなく、要求されたパスを正確に取得する必要がある場合に使用します。 |
 | CDN ホスト | `cdn.host` | リクエストを受け取ったホスト名（例：www.example.com）。 このホストは、CDN URL結合キーの一部でもあります。 1つのデータセットに、組織が同じCDN アカウントに複数のサブドメインを持つ場合、複数のホストを含めることができます。 |
-| CDN ボットタイプ | `cdn.botType` | リクエスト側エージェントのブランドの可視性の分類。 値には、従来の検索web クローラー、AI インデックスweb クローラー、AI ライブフェッチ エージェントが含まれます。 完全な分類については、以下の[&#x200B; ボットエージェントカテゴリ &#x200B;](#bot-agent-categories)を参照してください。 |
+| CDN ボットタイプ | `cdn.botType` | リクエスト側エージェントのブランドの可視性の分類。 値には、従来の検索web クローラー、AI インデックスweb クローラー、AI ライブフェッチ エージェントが含まれます。 完全な分類については、以下の[ ボットエージェントカテゴリ ](#bot-agent-categories)を参照してください。 |
 | CDN ユーザーエージェント | `cdn.userAgent` | CDN ログの生のユーザーエージェント文字列。 ボット分類内のサブタイプを区別したり、ブランドの可視性によって割り当てられた分類を検証したりするのに便利です。 |
-| CDN HTTP ステータス | `cdn.status` | HTTP応答ステータスコード。 ボットが要求したコンテンツを受信したかどうかを示します。 AI トラフィックに固有の解釈ガイダンスについては、以下の[&#x200B; ステータスコード &#x200B;](#status-codes)を参照してください。 |
+| CDN HTTP ステータス | `cdn.status` | HTTP応答ステータスコード。 ボットが要求したコンテンツを受信したかどうかを示します。 AI トラフィックに固有の解釈ガイダンスについては、以下の[ ステータスコード ](#status-codes)を参照してください。 |
 | CDN プロバイダー | `cdn.cdnProvider` | CDNがリクエストを処理します。 値は`akamai`、`byocdn-akamai`、`byocdn-fastly`、`byocdn-cloudfront`です。 `byocdn-`接頭辞は、別のCDN ベンダーではなく、ログ収集パスを示します。 組織が異なるCDN設定の背後にホストを持つ場合、データセットに複数の値を含めることができます。 |
 | CDN リファラー | `cdn.referer` | CDN ログのHTTP Referer ヘッダー値。 多くの場合、ボットトラフィックには空です。 存在する場合は、どのAI製品またはドメインがフェッチをトリガーしたかを示すことができます。 例：chat.openai.com |
 | CDN転送ホスト | `cdn.xForwardedHost` | X-Forwarded-Host ヘッダー値（存在する場合）。 リクエストがオリジンに到達する前にリバースプロキシまたはCDN シールドレイヤーを通過した場合に関連します。 |

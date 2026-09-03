@@ -7,20 +7,11 @@ exl-id: bde36283-86af-4b1a-9cbe-e251676b2951
 role: User
 autotag-review: '2026-05-19T09:13:47.721Z'
 TQID: 'https://experienceleague.adobe.com/MU9ywSyInHtsdzqvxO3yxTSY5bcDvdhnTUkhAgDHmZ4'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 895
@@ -49,7 +40,7 @@ Adobe Analytics のレポートスイートデータを Customer Journey Analyti
 
 データに関するレポートを作成する前に、多くの場合、そのデータを処理して、レポートでデータを適切に使用できることを確認する必要があります。 データ処理は、収集時とレポート時に発生する可能性があります。
 
-一般に、Customer Journey Analytics は、レポート時に Experience Platform データセットに収集および保存されたデータを操作するように設計されています。 Customer Journey Analytics は、データをレポートや分析に使用できるようにする、強力なレポート時間処理機能を備えています。 Experience Platform に取り込む前にデータのマッピング、変換、検証を行う必要がある場合は、Experience Platform の[データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用できます。
+一般に、Customer Journey Analytics は、レポート時に Experience Platform のデータセットに収集・保存されたデータを扱うように設計されています。 Customer Journey Analytics には、データをレポートや分析に利用できる状態にするための、強力なレポート時の処理機能が用意されています。 Experience Platform に取り込む前にデータのマッピング、変換、検証を行う必要がある場合は、Experience Platform の[データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用できます。
 
 Adobe Analytics では、データの処理のほとんどは、データの収集直後に行われます。
 
@@ -58,7 +49,7 @@ Adobe Analytics では、データの処理のほとんどは、データの収�
 
 ## 用語
 
-Customer Journey Analytics は、基になるエクスペリエンスデータモデル（XDM）ベースのスキーマが提供する柔軟性によって、ディメンションと指標の定義方法に柔軟性をもたらします。 例えば、Adobe Analytics では訪問者、訪問数、ヒット数を使用しますが、Customer Journey Analytics ではユーザー、セッション、イベントを同等の概念として使用します（必要に応じて名前を変更できます）。
+Customer Journey Analytics は、基になるエクスペリエンスデータモデル（XDM）ベースのスキーマが提供する柔軟性によって、ディメンションと指標の定義方法に柔軟性をもたらします。 例えば、Adobe Analytics では「訪問者」「訪問数」「ヒット数」を使用しますが、Customer Journey Analytics では「人物」「セッション」「イベント」を同等の概念として使用します（必要に応じて名称を変更できます）。
 
 用語の違いについて詳しくは、[Analytics ソースコネクタを介して渡された Analytics データの用語の比較](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=ja)を参照してください。
 
@@ -69,7 +60,7 @@ Adobe Analytics には仮想レポートスイートの概念があり、収集�
 
 Customer Journey Analytics には、「データビュー」という似た概念があります。 データビューは、接続からのデータを解釈する方法を決定できるコンテナです。 これにより、レポートや分析に備えて、ディメンションと指標を指定および設定する上で究極の柔軟性が提供されます。
 
-Experience Platform は、特定の環境のデータやアプリケーションを保持するコンテナと考えることができる、サンドボックスを提供します。 サンドボックスの機能は、Adobe Analytics 仮想レポートスイートまたは Customer Journey Analytics データビューとは無関係です。 Adobe Analytics 自体には、Experience Platform サンドボックスとの依存関係や関係はまったくありません。 Customer Journey Analytics は Experience Platform サンドボックスをサポートしていますが、いくつかの重要な考慮事項があります。
+Experience Platform は、特定の環境のデータやアプリケーションを保持するコンテナと考えることができる、サンドボックスを提供します。 サンドボックスの機能は、Adobe Analytics 仮想レポートスイートまたは Customer Journey Analytics データビューとは無関係です。 Adobe Analytics 自体には、Experience Platform サンドボックスとの依存関係や関係はまったくありません。 Customer Journey Analytics は Experience Platform サンドボックスをサポートしていますが、いくつか重要な考慮すべき点があります。
 
 詳しくは、[仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=ja)を参照してください。
 

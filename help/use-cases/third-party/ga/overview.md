@@ -5,18 +5,11 @@ exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
 TQID: https://experienceleague.adobe.com/C9rt1pyuM6ykLUlXCHc0ITwGeGcuLw6qisXnJxwX4uU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
 source-wordcount: 342
@@ -28,7 +21,7 @@ ht-degree: 70%
 
 >[!BEGINSHADEBOX]
 
-このガイドでは、管理者向けのデータ移行について説明します。 Customer Journey AnalyticsでGA4 レポートを見つけたいアナリストの場合は、[Google Analytics 4からCustomer Journey Analytics](/help/getting-started/ga-to-cja/home.md)への移行および[Customer Journey AnalyticsでのGA4 レポート &#x200B;](/help/getting-started/ga-to-cja/reports.md)を参照してください。
+このガイドでは、管理者向けのデータ移行について説明します。 Customer Journey AnalyticsでGA4 レポートを見つけたいアナリストの場合は、[Google Analytics 4からCustomer Journey Analytics](/help/getting-started/ga-to-cja/home.md)への移行および[Customer Journey AnalyticsでのGA4 レポート ](/help/getting-started/ga-to-cja/reports.md)を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -36,7 +29,7 @@ Customer Journey Analytics を初めて使用する場合、組織が Google Ana
 
 ワークフローは、履歴データと現在のデータ収集の両方に対して提供されます。 組織のデータニーズに応じて、これらのワークフローのいずれかまたは両方に従うことができます。
 
-## Google Analytics から Adobe Experience Platform に履歴データを取り込む
+## Google Analytics から Adobe Experience Platform への履歴データの取り込み
 
 履歴（バックフィル）データの取り込みには、Google からのデータのエクスポートと、そのデータの Adobe Experience Platform へのインポートが含まれます。 [Adobe Experience Platform での Google Analytics データの取り込み](backfill.md)を参照してください。
 

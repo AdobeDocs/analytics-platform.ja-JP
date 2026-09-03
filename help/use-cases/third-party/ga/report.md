@@ -1,26 +1,17 @@
 ---
 title: Google Analytics データに関するレポート
-description: Customer Journey Analytics での Google Analytics データに関する有用なレポートを示します
+description: Customer Journey Analytics での Google Analytics データに関する有用なレポートを表示します
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 autotag-review: '2026-05-19T09:49:08.813Z'
 TQID: 'https://experienceleague.adobe.com/dRY1wvTEzrhnNsqE-fJq9DyzOAEKTygzSkVb8r6huoM'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e9001ce2-5245-4a8e-8601-dd958009072f
 source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
 source-wordcount: 704
@@ -30,9 +21,9 @@ ht-degree: 83%
 
 # Google Analytics データに関するレポート
 
-Customer Journey Analytics でデータを取得したら、そのデータをレポートする際に役立つシナリオを次の例で示します。 Customer Journey AnalyticsのGA4 レポートに相当する項目の包括的なルックアップについては、「[Customer Journey AnalyticsのGA4 レポート &#x200B;](/help/getting-started/ga-to-cja/reports.md)」を参照してください。
+Customer Journey Analytics でデータを取得したら、そのデータをレポートする際に役立つシナリオを次の例で示します。 Customer Journey AnalyticsのGA4 レポートに相当する項目の包括的なルックアップについては、「[Customer Journey AnalyticsのGA4 レポート ](/help/getting-started/ga-to-cja/reports.md)」を参照してください。
 
-## web データとアプリデータをデータセットとして組み合わせた視覚化
+## Web データとアプリデータを結合したデータセットとして視覚化する
 
 次のベン図は、Web サイトのユーザー数（Google Analytics データから）、モバイルアプリのユーザー数（Firebase データから）およびコールセンターからのユーザー数の重複を示しています。 また、web だけでなくモバイルアプリでも売れ筋商品を確認することができます。 計算指標を使用して、両方の売上高の合計を取得することもできます。 総売上高を見ると、トップ商品が物語るストーリーがいかに異なるかがわかります。 統合データセットがなければ、「ツイルキャップ」がこれほど強力なパフォーマンスを発揮したことは知らなかったはずです。
 
@@ -44,7 +35,7 @@ Customer Journey Analytics でデータを取得したら、そのデータを�
 
 ![通話量](../../assets/call-volume.png)
 
-「通話理由」というディメンションを使用すると、Web エクスペリエンスを向上させる方法を示すことができ、ユーザーが最初に電話するのを防ぎます。 上記の例では、「製品を損傷」の平均通話時間は 1 回の通話あたり約 3 分であることを示しています。これにより、カスタマーエクスペリエンスを改善し、コールセンターのコストを削減するための正確な方法が組織に提供されます。
+「通話理由」というディメンションを使用すると、Web エクスペリエンスを向上させる方法を示すことができ、ユーザーが最初に電話するのを防ぎます。 上記の例では、「損傷した製品」の平均通話時間が 1 回あたり約 3 分であることがわかります。これにより、組織はカスタマーエクスペリエンスを改善し、コールセンターのコストを削減するための具体的な手がかりを得ることができます。
 
 コールセンターへの通話の大部分を引き起こす製品と、その通話を行った顧客の数を表示できます。 バブルチャートでは、2 万人が電話をかけ、4 時間 30 分以上を費やし、33 枚の「メンズ半袖 T シャツ」が返品されたことを示しています。
 
@@ -62,9 +53,9 @@ Customer Journey Analytics でデータを取得したら、そのデータを�
 
 ![コホート](../../assets/cohort.png)
 
-## 高度なマーケティングアトリビューションの使用
+## 高度なマーケティングアトリビューションを使用する
 
-Customer Journey Analyticsでは、クロスチャネルデータに対して高度なアトリビューションモデルを使用できます。 次の例では、売上高のラストタッチ、ファーストタッチ、U 字型、アルゴリズムアトリビューションを Google Analytics のチャネルグループディメンションに適用した結果の比較を確認できます。
+Customer Journey Analyticsでは、クロスチャネルデータに対して高度なアトリビューションモデルを使用できます。 次の例では、売上高に対してラストタッチ、ファーストタッチ、U 字型、アルゴリズムによるアトリビューションを適用し、その結果を Google Analytics Channel Grouping ディメンションで比較した様子を確認できます。
 
 ![マーケティングアトリビューション](../../assets/mktg-attribution.png)
 
@@ -76,7 +67,7 @@ Customer Journey Analyticsでは、クロスチャネルデータに対して高
 
 ![セグメント](../../assets/filter.png)
 
-Web やアプリの売上高に対する Google 広告コンテンツの効果を分析することもできます。 このデータセットの例では、web よりもオンラインの Google 広告によってモバイルアプリから多くの売上高を得ています。 広告を web やアプリの売上高で並べ替えると、パフォーマンスが最も高い Google 広告の様相が異なることがわかります。
+Web やアプリの売上高を Google 広告コンテンツに帰属させることもできます。 このデータセットの例では、web よりもオンラインの Google 広告によってモバイルアプリから多くの売上高を得ています。 広告を web やアプリの売上高で並べ替えると、パフォーマンスが最も高い Google 広告の様相が異なることがわかります。
 
 ![Google 広告](../../assets/google-ad.png)
 

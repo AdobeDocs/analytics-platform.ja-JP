@@ -6,22 +6,11 @@ role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/VZRakAqCMywVAtKs60w-WQqHJhfKdMj2z3uSSrPyztc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b21c7889-c659-4a99-a779-de1bae57e47e
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b21c7889-c659-4a99-a779-de1bae57e47eid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1335
@@ -36,11 +25,11 @@ ht-degree: 72%
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; モバイルスコアカード &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}へのアクセスを経営陣に支援するを参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ モバイルスコアカード ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}へのアクセスを経営陣に支援するを参照してください。
 
 >[!ENDSHADEBOX]
 
-このガイドは、エグゼクティブユーザーが Analytics ダッシュボードでスコアカードを読み、解釈するのに役立つように作成されています。 エグゼクティブユーザーは、自分のモバイルデバイスで、重要な概要データの幅広いレンダリングをすばやく簡単に表示できます。
+このガイドは、エグゼクティブユーザーが Analytics ダッシュボードでスコアカードを読み、解釈するのに役立つように作成されています。 このアプリを使用すると、エグゼクティブユーザーは、自分のモバイルデバイス上で重要な概要データを幅広く、すばやく簡単に表示できます。
 
 ## デバイスでのダッシュボードの設定
 
@@ -55,7 +44,7 @@ ht-degree: 72%
 
 ### ダッシュボードのダウンロードとインストール
 
-アプリケーションをダウンロードしてインストールするには、デバイス上のオペレーティングシステムに従って手順に従います。
+アプリをダウンロードしてインストールするには、使用しているデバイスのオペレーティングシステムに応じて、手順に従ってください。
 
 >[!NOTE]
 >
@@ -112,13 +101,13 @@ ht-degree: 72%
 
    * スパークラインの精度は、日付範囲の長さに依存します。
 
-      * 1 日 - 時間ごとの傾向を表示
-      * 2 日以上 1 年未満 - 毎日の傾向を表示。
-      * 1 年以上 - 毎週の傾向を表示。
+     * 1 日 - 時間ごとの傾向を表示
+     * 2 日以上 1 年未満 - 毎日の傾向を表示。
+     * 1 年以上 - 毎週の傾向を表示。
 
    * 値の変化パーセントの式は、（指標合計（現在の日付範囲） - 指標合計（比較日付範囲））÷指標合計（比較日付範囲）です。
 
-   * 画面をプルダウンして、スコアカードを更新できます。
+   * 画面を下にスワイプして、スコアカードを更新できます。
 
    次の例では、スコアカードが通常モードで表示されます。
 
@@ -137,15 +126,15 @@ ht-degree: 72%
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。 次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。 「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。 画面右上の「**[!UICONTROL 完了]**」をタップします。 「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-1. スコアカードにセグメントを適用するには、セグメント ドロップダウンメニューをタップし、キュレーターが設定したセグメントを選択します。 アプリの[&#x200B; セグメント &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Workspaceと同じように機能します。
+1. スコアカードにセグメントを適用するには、セグメント ドロップダウンメニューをタップし、キュレーターが設定したセグメントを選択します。 アプリの[ セグメント ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Workspaceと同じように機能します。
 
    ![セグメント](assets/segment_filter.png)
 
-1. [!UICONTROL &#x200B; スコアカード &#x200B;]の更新プログラムを取得します。 [!UICONTROL &#x200B; スコアカード &#x200B;]に、興味を持つ可能性のある指標または分類がすべて含まれていない場合は、Customer Journey Analytics チームに連絡して、スコアカードを更新してください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
+1. [!UICONTROL  スコアカード ]の更新プログラムを取得します。 [!UICONTROL  スコアカード ]に、興味を持つ可能性のある指標または分類がすべて含まれていない場合は、Customer Journey Analytics チームに連絡して、スコアカードを更新してください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
 
-1. アプリケーションでフィードバックを残す手順は、次のとおりです。
+1. このアプリでフィードバックを残す手順は、次のとおりです。
 
-   1. アプリケーション画面の右上にある設定アイコンをタップします。
+   1. アプリ画面の右上にある設定アイコンをタップします。
    2. **[!UICONTROL 設定]**&#x200B;画面で、「**[!UICONTROL フィードバック]**」オプションをタップします。
    3. タップして、フィードバックを残すためのオプションを表示します。
 
@@ -176,9 +165,9 @@ ht-degree: 72%
 |--- |--- |
 | 消費者 | Customer Journey Analyticsの主要な指標とインサイトをモバイルデバイスで表示する経営陣のペルソナ |
 | キュレーター | Customer Journey Analyticsからインサイトを見つけ出して配信し、スコアカードを消費者が表示できるように設定する、データリテラシーペルソナ |
-| キュレーション | 消費者に関連する指標、ディメンション、その他のコンポーネントを含むモバイルスコアカードを作成または編集する行為 |
+| キュレーション | 消費者に関連する指標、ディメンション、その他のコンポーネントを含むモバイルスコアカードを作成または編集する行為。 |
 | スコアカード | 1 つ以上のタイルを含むダッシュボードビュー |
 | タイル | スコアカードビュー内の指標のレンダリング |
-| 分類 | スコアカードでタイルをタップしてアクセスできるセカンダリビュー。 このビューは、タイルに表示されている指標に対して展開され、オプションで追加の分類ディメンションに関するレポートを表示します |
+| 分類 | スコアカードでタイルをタップしてアクセスできるセカンダリビュー。 このビューでは、タイルに表示されている指標を詳しく表示し、必要に応じて追加の分類ディメンションに関するレポートも表示します。 |
 | 日付範囲 | ダッシュボードレポートの主な日付範囲 |
 | 比較日付範囲 | プライマリ日付範囲と比較される日付範囲 |

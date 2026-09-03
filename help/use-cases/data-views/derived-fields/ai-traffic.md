@@ -7,26 +7,11 @@ role: User
 exl-id: 29857457-3fbb-441c-8761-91712b9df20f
 autotag-review: '2026-05-19T11:02:18.748Z'
 TQID: 'https://experienceleague.adobe.com/uwZ-wOZblEpNl5gGw673Lo11Sqqwfz5u0bxd0d2hOLE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ae3aff40-b2f6-4df1-8c01-0b0720d1510fid: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1469
@@ -34,13 +19,13 @@ ht-degree: 3%
 
 ---
 
-# LLM および AI 生成トラフィックのレポート
+# LLM および AI が生成したトラフィックのレポート
 
 このユースケースでは、Customer Journey Analyticsの派生フィールド機能を基盤として使用して、LLM （大規模言語モデル）とAI生成トラフィックについてレポートする方法を解説します。
 
 >[!NOTE]
 >
->[検出方法](#detection-methods)、[検出シグネチャ &#x200B;](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
+>[検出方法](#detection-methods)、[検出シグネチャ ](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
 >
 
 ## 検出方法
@@ -274,12 +259,12 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 ## 実装
 
-[派生フィールド &#x200B;](#derived-fields)、[&#x200B; セグメント &#x200B;](#segments)、[&#x200B; ワークスペースプロジェクト &#x200B;](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[&#x200B; データビュー](/help/data-views/data-views.md)、および[&#x200B; ワークスペースプロジェクト &#x200B;](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
+[派生フィールド ](#derived-fields)、[ セグメント ](#segments)、[ ワークスペースプロジェクト ](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[ データビュー](/help/data-views/data-views.md)、および[ ワークスペースプロジェクト ](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
 
 
 ### 派生フィールド
 
-検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[&#x200B; ユーザーエージェント ID](#user-agent-identification)、[&#x200B; クエリパラメーター検出](#query-parameter-detection)、[&#x200B; リファラー分類](#referrer-classification)の派生フィールドを定義します。
+検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[ ユーザーエージェント ID](#user-agent-identification)、[ クエリパラメーター検出](#query-parameter-detection)、[ リファラー分類](#referrer-classification)の派生フィールドを定義します。
 
 #### LLM/AI ユーザーエージェントの識別
 
@@ -306,19 +291,19 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 専用セグメントを設定して、LLMとAIが生成したトラフィックに関連するイベント、セッション、人物を特定するのに役立ちます。 例えば、先ほど作成した派生フィールドを使用して、LLMとAIが生成したトラフィックを識別するセグメントを定義します。
 
-![LLMとAI生成トラフィックセグメント &#x200B;](assets/aitraffic-segment.png){zoomable="yes"}
+![LLMとAI生成トラフィックセグメント ](assets/aitraffic-segment.png){zoomable="yes"}
 
 
 ### ワークスペースプロジェクト
 
 派生フィールドとセグメントを使用して、LLMとAIが生成したトラフィックをレポートし、分析します。 例えば、以下の注釈付きプロジェクトを参照してください。
 
-![LLMとAI生成トラフィックのWorkspace プロジェクト &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![LLMとAI生成トラフィックのWorkspace プロジェクト ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->このユースケース記事は、ブログ記事[Adobe Customer Journey AnalyticsでのLLMおよびAI生成トラフィックのトラッキングと分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=ja)に基づいています。
+>このユースケース記事は、ブログ記事[Adobe Customer Journey AnalyticsでのLLMおよびAI生成トラフィックのトラッキングと分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)に基づいています。
 >
 >

@@ -5,15 +5,10 @@ feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
 TQID: https://experienceleague.adobe.com/LnQBV8OMK6D1tg1JgnBKARqYvKgAGqDME3vGpsmgJ0E
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 433
@@ -25,9 +20,9 @@ ht-degree: 46%
 
 Analysis Workspaceの異常値は、表または折れ線グラフで表示できます。
 
-## テーブルの異常値の表示 {#section_869A87B92B574A38B017A980ED8A29C5}
+## テーブルで異常値を表示する {#section_869A87B92B574A38B017A980ED8A29C5}
 
-時系列フリーフォームテーブルの異常値を表示できます。
+時系列のフリーフォームテーブルで異常値を表示できます。
 
 1. 列ヘッダーの「![設定](/help/assets/icons/Setting.svg)」を選択し、オプションのリストで「**[!UICONTROL 異常値を表示]**」オプションが選択されていることを確認します。 詳しくは、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
 
@@ -41,7 +36,7 @@ Analysis Workspaceの異常値は、表または折れ線グラフで表示で�
 
 1. 行の右上隅にある◥を選択して、異常値の詳細を表示します。 これは、実際の値が期待値の上下にどの程度乖離しているかを（パーセントで）示します。
 
-## 折れ線グラフの異常値の表示
+## 折れ線グラフで異常値を表示する
 
 折れ線グラフは、異常値を表示できる唯一のビジュアライゼーションです。
 
@@ -61,7 +56,7 @@ Analysis Workspaceの異常値は、表または折れ線グラフで表示で�
 
    **薄く影になっている部分**&#x200B;は、値が発生するはずの信頼帯または期待範囲です。 この期待範囲外の値は、異常値です。
 
-   折れ線グラフに複数の指標がある場合、異常値のみが表示され、その指標の信頼帯を表示するには、各異常値の上にマウスポインターを置く必要があります。
+   折れ線グラフに複数の指標がある場合、異常値のみが表示され、その指標の信頼帯を表示するには、各異常値にポインタを合わせる必要があります。
 
    **点線**&#x200B;は、正確な期待値です。
 

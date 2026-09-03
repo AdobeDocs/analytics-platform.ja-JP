@@ -5,19 +5,11 @@ feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
 TQID: https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 410
@@ -34,8 +26,8 @@ Target Classification ルックアップデータセット（Experience Platform
 ## プライマリの利点
 
 * マーケターは、Customer Journey Analytics の成功指標を Target アクティビティレポートにいつでも動的に適用できます。 アクティビティを実行する前にすべての項目を指定する必要がありません。
-* マーケターは、実験パネルなどの Customer Journey Analytics 機能を活用して、web サイトのパーソナライゼーションをさらに分析できます。
-* マーケターは、Adobe Journey Optimizer と Target に単一のレポートソースを使用できます。 どちらのパーソナライゼーション製品も Customer Journey Analytics に接続して、web パーソナライゼーションの全体像を把握できます。
+* マーケターは、実験パネルなどの Customer Journey Analytics 機能を活用して、web サイトのパーソナライズ機能をさらに分析できます。
+* マーケターは、Adobe Journey Optimizer と Target に単一のレポートソースを使用できます。 どちらのパーソナライズ機能製品も Customer Journey Analytics に接続して、web パーソナライゼーションの総合的なビューを把握できます。
 
 ## メモと考慮事項
 
@@ -51,4 +43,4 @@ Target アクティビティでは、[Customer Journey Analyticsをレポート�
 
 詳しくは、Target ドキュメントの [Adobe Customer Journey Analytics での Target レポート](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)を参照してください。
 
-アナリストが様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くの最適なのはどれかを判断する方法について詳しくは、[実験パネル](../analysis-workspace/c-panels/experimentation.md)を参照してください。 A/B 実験の上昇率と信頼性は、Target や Journey Optimizer などのアドビのソリューション、BYO（bring-your-own）データなど、オンラインまたはオフラインのあらゆる実験プラットフォームで評価できます。
+アナリストが様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くの最適なのはどれかを判断する方法について詳しくは、[実験パネル](../analysis-workspace/c-panels/experimentation.md)を参照してください。 Target や Journey Optimizer などのアドビのソリューション、BYO（bring-your-own）データなど、オンラインまたはオフラインのあらゆる実験プラットフォームから、A/B 実験の上昇率と信頼性を評価できます。

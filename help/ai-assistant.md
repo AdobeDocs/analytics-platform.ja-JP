@@ -7,22 +7,11 @@ feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 autotag-review: '2026-05-19T07:16:56.858Z'
 TQID: 'https://experienceleague.adobe.com/v5QCNZReBnq8uFMSUSJz1VBbzm2J8ztbr8mciozSY0E'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b4489fa2-c6d6-4934-a3a0-e7b4e196f986
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ae3aff40-b2f6-4df1-8c01-0b0720d1510fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b4489fa2-c6d6-4934-a3a0-e7b4e196f986
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 660
@@ -32,11 +21,11 @@ ht-degree: 100%
 
 # Adobe Customer Journey Analytics 向けの AI アシスタント
 
-AI アシスタントは、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 タスクが概念の理解、問題のトラブルシューティング、情報の検索のいずれを目的としているかは関係ありません。 また、AI アシスタントを使用すると、専門家でないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
+AI アシスタントは、実務担当者が迅速にタスクを実行できる対話型エクスペリエンスです。 タスクが概念の理解、問題のトラブルシューティング、情報の検索のいずれであっても同様です。 また、AI アシスタントを使用すると、専門家でないユーザーでも専門的なタスクを実行できるため、全体的な作業の質が向上します。
 
 Customer Journey Analytics の AI アシスタントは、Adobe Experience League のドキュメントで学習しています。 質問すると、AI アシスタントは迅速な学習を可能にする有益な回答で応答します。
 
-初心者のユーザーは、AI アシスタントを使用して Customer Journey Analytics の概念を学習し、馴染みのない製品や機能に慣れることができます。 経験豊富なユーザーは、AI アシスタントを使用して、より高度なユースケースやヒントやテクニックを提示できます。
+初心者のユーザーは、AI アシスタントを使用して Customer Journey Analytics の概念を学習し、馴染みのない製品や機能に慣れることができます。 経験豊富なユーザーは、AI アシスタントを使用して、より高度なユースケースやヒントやコツを提示できます。
 
 概念的な質問の例を次に示します。
 
@@ -44,7 +33,7 @@ Customer Journey Analytics の AI アシスタントは、Adobe Experience Leagu
 * Customer Journey Analytics は何に最も適していますか？
 * データビューを設定するにはどうすれば良いですか？
 
-Customer Journey Analytics の範囲外の質問（Adobe Target や Adobe Creative Cloud スイートといった、他の Adobe 製品）に関する質問には回答できません。
+Customer Journey Analytics の範囲外の質問（Adobe Target や Adobe Creative Cloud スイートなど、他の Adobe 製品に関する質問）には回答できません。
 
 Customer Journey Analytics 向けの AI アシスタントは、すべての製品層で使用できます。
 
@@ -71,15 +60,15 @@ AI アシスタント内での Data Insights Agent の使用について詳し�
 * **契約上のアクセス**：AI アシスタントを使用できない場合は、組織の管理者またはアドビアカウント担当者にお問い合わせください。 組織が AI アシスタントを使用する前に、生成 AI 関連の特定の法的条項に同意する必要があります。
 
 * **権限**：[!UICONTROL Adobe Admin Console] では、[!UICONTROL レポートツール]の **[!UICONTROL AI アシスタント：製品知識]**&#x200B;権限によって、このツールへのアクセスが決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、[!UICONTROL Admin Console] で次の手順に従う必要があります。
-   1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
-   1. [!UICONTROL AI アシスタント：製品知識]へのアクセスを提供する製品プロファイルのタイトルを選択します。
-   1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
-   1. ![編集](/help/assets/icons/Edit.svg) を選択して、**[!UICONTROL レポートツール]**&#x200B;を編集します。
-   1. 「![AddCircle](/help/assets/icons/AddCircle.svg)」を選択して、「**[!UICONTROL 含まれる権限項目]**」に「**AI アシスタント：製品知識**」を追加します。
+  1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
+  1. [!UICONTROL AI アシスタント：製品知識]へのアクセスを提供する製品プロファイルのタイトルを選択します。
+  1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
+  1. ![編集](/help/assets/icons/Edit.svg) を選択して、**[!UICONTROL レポートツール]**&#x200B;を編集します。
+  1. 「![AddCircle](/help/assets/icons/AddCircle.svg)」を選択して、「**[!UICONTROL 含まれる権限項目]**」に「**AI アシスタント：製品知識**」を追加します。
 
-      ![権限を追加](assets/ai-assistant-permissions.png)。
+     ![権限を追加](assets/ai-assistant-permissions.png)。
 
-   1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
+  1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
 
 詳しくは、[アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。
 
@@ -91,12 +80,12 @@ AI アシスタント内での Data Insights Agent の使用について詳し�
 
    AI アシスタントを初めて使用する際には、AI アシスタントの使用条件に関する免責事項が表示されます。
 
-1. 表示されたボックスで、AI アシスタントの特定の自然言語の質問をします。
+1. 表示されたボックスに、AI アシスタントに対する具体的な自然言語の質問を入力します。
 
    ![質問ボックス](assets/ai-asst2.png)
 
 1. （オプション）ソースを表示するには、「**[!UICONTROL ソースを表示]**」をクリックします。回答に情報を提供したドキュメントソース（1 つまたは複数）が表示されます。
 
-1. （オプション）回答の有用性について、サムズアップまたはサムズダウンの投票をすることもできます。
+1. （オプション）任意の回答の有用性について、賛成または反対のアイコンで投票することもできます。
 
-1. （オプション）不適切なコンテンツや有害なコンテンツに対して回答にフラグを付けることができます。
+1. （オプション）不適切または有害なコンテンツを含む回答にフラグを付けることができます。

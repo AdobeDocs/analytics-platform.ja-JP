@@ -1,5 +1,5 @@
 ---
-title: 値を含む／除外コンポーネントの設定
+title: 「値を含める／除外」コンポーネントの設定
 description: ディメンション項目を、値に応じて条件付きで含めるか除外します。
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
@@ -7,17 +7,11 @@ feature: Data Views
 role: Admin
 autotag-review: '2026-05-19T09:12:42.139Z'
 TQID: 'https://experienceleague.adobe.com/0va5zHIULYiYki8qoMMDIvBj-waTB8jAu6--uqfGJ8Y'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 357
@@ -25,14 +19,14 @@ ht-degree: 88%
 
 ---
 
-# 値を含む／除外コンポーネントの設定 {#include-exclude-values-component-settings}
+# 「値を含める／除外」コンポーネントの設定 {#include-exclude-values-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_includeexcludevalues"
 >title="値を含む／除外"
->abstract="特定の条件に合致する値のみをカウントするように指標をフィルタリングします。"
+>abstract="特定の条件に合致する値のみをカウントするように指標をフィルターします。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +39,7 @@ ht-degree: 88%
 
 <!-- markdownlint-enable MD034 -->
 
-「値を含む／除外」を使用すると、ディメンション項目の値に依存するルールを作成できます。 設定した条件を満たさない値は、基になるデータセットにまだデータが存在しているにもかかわらず、存在していないものとして Analysis Workspace で処理されます。
+「値を含める／除外」を使用すると、ディメンション項目の値に依存するルールを作成できます。 設定した条件を満たさない値は、基になるデータセットにまだデータが存在しているにもかかわらず、存在していないものとして Analysis Workspace で処理されます。
 
 ![値を含む／除外をハイライト表示するデータビューウィンドウ](../assets/include-exclude.png)
 

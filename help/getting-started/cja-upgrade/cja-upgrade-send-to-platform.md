@@ -6,20 +6,11 @@ feature: Basics
 hide: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
 TQID: https://experienceleague.adobe.com/OQzCu-gf3Br-rXU0AnWCVzMTxdEq28M7aEAKmZN6b7c
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 1018
@@ -41,7 +32,7 @@ ht-degree: 98%
 | **手順 2：[アップグレードパスの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Customer Journey Analytics へのアップグレードには様々な方法があります。 組織の現在の Adobe Analytics 環境と長期的な目標に応じて、組織に最適な方法を選択してください。 |
 | <span class="preview">**手順 3：データを Adobe Experience Platform に送信**</span> | <span class="preview">Adobe Experience Platform にデータを送信するプロセスは、手順 2 で選択したアップグレードパスによって異なります。</span> |
 | **手順 4：[履歴データの保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | ほとんどの組織では、Adobe Analytics の履歴データを一定期間保持する必要があります。 これを実現するために様々なオプションが利用できます。 |
-| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics 環境が使用可能になる前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analytics からのアップグレードと新しい Customer Journey Analytics の実装に適用されます。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>手順 3：プラットフォームデータセットと Customer Journey Analytics 間の接続を作成</li><li>データビューの作成</li><li>レポート API の使用状況の移植</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
+| **手順 5：[追加の実装タスクを実行](/help/getting-started/cja-getting-started.md)** | アップグレードプロセスのこの時点では、Customer Journey Analytics 環境が使用可能になる前に、様々なタスクを実行する必要があります。<p>これらの追加タスクは、Adobe Analytics からのアップグレードと新しい Customer Journey Analytics の実装に適用されます。</p><p>これらのタスクには次のものが含まれます。</p><ul><li>他のデータを Experience Platform に取り込む</li><li>プラットフォームデータセットと Customer Journey Analytics 間の接続の作成</li><li>データビューの作成</li><li>レポート API の使用状況の移行</li><li>データフィードとデータウェアハウスの考慮</li><li>プロジェクトとコンポーネントの移行</li><li>ユーザーオンボーディングの計画</li></ul> <p>詳しくは、[Customer Journey Analytics の概要](/help/getting-started/cja-getting-started.md)を参照してください。 |
 
 {style="table-layout:auto"}
 
@@ -49,7 +40,7 @@ ht-degree: 98%
 
 >[!AVAILABILITY]
 >
->このページの情報は、次のより包括的なアップグレード情報に置き換えられます。 <ul><li>**推奨されるアップグレード手順**<p>詳しくは、[Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド**<p>組織と一意の状況に合わせて調整されたアップグレード手順を動的に生成する新しいアップグレードガイドが使用できます。</p><p>Customer Journey Analytics からガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。 画面の指示に従います。</p></li></ul>
+>このページの情報は、次のより包括的なアップグレード情報に置き換えられます。 <ul><li>**推奨されるアップグレード手順**<p>詳しくは、[Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)を参照してください。</p></li><li>**Customer Journey Analytics アップグレードガイド**<p>組織とその独自の状況に合わせて調整されたアップグレード手順を動的に生成する新しいアップグレードガイドを利用できます。</p><p>Customer Journey Analytics からガイドにアクセスするには、「**[!UICONTROL Workspace]**」タブを選択し、左側のパネルで「**[!UICONTROL Customer Journey Analytics にアップグレード]**」を選択します。 画面の指示に従ってください。</p></li></ul>
 
 組織に最適な[アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)したら、Adobe Experience Platform へのデータの送信を開始して、Customer Journey Analytics でデータを利用できるようにします。
 
@@ -59,9 +50,9 @@ ht-degree: 98%
 |---------|----------|----------|
 | Experience Platform Web SDK の新しい実装 | <ol><li>組織の XDM スキーマを作成します。<p>データチームと連携して、Customer Journey Analytics に対する組織の理想的なスキーマ設計を特定します。</p></li><li>Experience Platform Web SDK を実装します。</li><li>Platform にデータを送信します。</li></ol><p>これらの各手順について詳しくは、[Adobe Experience Platform Web SDK を使用したデータの取り込み](/help/data-ingestion/aepwebsdk.md)を参照してください。 | これは Experience Platform Web SDK の新しい実装であることにより、実装時の最初の手順の 1 つとしてスキーマを作成する必要があるので、スキーママッピングは必要ありません。 |
 | Web SDK を使用するための Adobe Analytics の実装の移行 | <ol><li>既存の Adobe Analytics の実装を Experience Platform Web SDK に移行し、Adobe Analytics ですべてが機能していることを検証します。<p>これを行う方法については、現在の実装が Analytics タグ拡張機能であるか AppMeasurement であるかに応じて、次のリソースを使用してください。</p><ul><li>Analytics タグ拡張機能を使用している場合は、[Adobe Analytics タグ拡張機能から Web SDK タグ拡張機能への移行](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)を参照してください</li><li>AppMeasurement を使用している場合は、[AppMeasurement から Web SDK への移行](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)を参照してください</li></ul><li>[組織の XDM スキーマを作成します](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset)。<p>データチームと連携して、Customer Journey Analytics に対する組織の理想的なスキーマ設計を特定します。</p></li><li>[データ準備を使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)。</li><li>[データストリームを設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream)して、Platform へのデータの送信を開始します。</li></ol> |  |
-| プラットフォームにデータを送信するように既存の Adobe Analytics Web SDK の実装を設定します | <ol><li>[データストリームを設定](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream)して、Platform へのデータの送信を開始します。<p>Adobe Analytics の実装では既に Experience Platform Web SDK が使用されているので、[Adobe Experience Platform Web SDK を使用したデータの取り込み](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk)の他の節は無視してかまいません。</p><p>Adobe Analytics の実装で既にプラットフォームにデータを送信している場合、この手順は必要ありません。 このプロセスで後ほど説明するように、プラットフォームデータセットと Customer Journey Analytics の間で接続を作成するだけで済みます。</p></li><li>（オプション）[組織の XDM スキーマを作成します](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset)。<p>データチームと連携して、Customer Journey Analytics に対する組織の理想的なスキーマ設計を特定します。</p><p>メモ：XDM スキーマを作成するメリットについては、[スキーマの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md#choose-your-schema)を参照してください。</li><li>（条件付き）XDM スキーマを作成した場合、[データ準備を使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)。</li></ol> |  |
-| Analytics ソースコネクタの使用 | [従来の Adobe Analytics からのデータの取り込みと使用](/help/data-ingestion/analytics.md) | Analytics ソースコネクタを使用すると、Adobe Analytics データが XDM スキーマに自動的にマッピングされます。 追加のマッピングは必要ありません。 |
+| Platform にデータを送信するように既存の Adobe Analytics Web SDK の実装を設定する | <ol><li>[データストリームを設定](/help/data-ingestion/aepwebsdk.md#set-up-a-datastream)して、Platform へのデータの送信を開始します。<p>Adobe Analytics の実装では既に Experience Platform Web SDK が使用されているので、[Adobe Experience Platform Web SDK を使用したデータの取り込み](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk)の他の節は無視してかまいません。</p><p>Adobe Analytics の実装で既にプラットフォームにデータを送信している場合、この手順は必要ありません。 このプロセスで後ほど説明するように、プラットフォームデータセットと Customer Journey Analytics の間で接続を作成するだけで済みます。</p></li><li>（オプション）[組織の XDM スキーマを作成します](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema-and-dataset)。<p>データチームと連携して、Customer Journey Analytics に対する組織の理想的なスキーマ設計を特定します。</p><p>メモ：XDM スキーマを作成するメリットについては、[スキーマの選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md#choose-your-schema)を参照してください。</li><li>（条件付き）XDM スキーマを作成した場合、[データ準備を使用して、データオブジェクト内のすべてのフィールドを XDM スキーマにマッピングします](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)。</li></ol> |  |
+| Analytics ソースコネクタを使用する | [従来の Adobe Analytics からのデータの取り込みと使用](/help/data-ingestion/analytics.md) | Analytics ソースコネクタを使用すると、Adobe Analytics データが XDM スキーマに自動的にマッピングされます。 追加のマッピングは必要ありません。 |
 
-## 次に、履歴データを保持します
+## 次に、履歴データを保持する
 
 次に、[Adobe Analytics の履歴データを保持する方法](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)を決定します。

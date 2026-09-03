@@ -1,30 +1,19 @@
 ---
 title: Customer Journey Analytics BI拡張機能
-description: Power BI または Tableau Desktop を使用して、Customer Journey Analytics BI 拡張機能を使用してデータビューにアクセスする方法について説明します。
+description: Power BI または Tableau Desktop を使用し、Customer Journey Analytics BI 拡張機能経由でデータビューにアクセスする方法について説明します。
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 3756
+source-wordcount: 3763
 ht-degree: 82%
 
 ---
@@ -39,7 +28,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 主なメリットは次のとおりです。
 
-* BI ツール自体内で Customer Journey Analytics データビューの同等の表示域を再作成する必要はありません。 <br/>再作成する必要がある項目を理解するためのデータビューの機能について詳しくは、[データビュー](data-views.md)を参照してください。
+* BI ツール自体で Customer Journey Analytics のデータビューと同等の表現を再作成する必要はありません。 <br/>再作成する必要がある項目を理解するためのデータビューの機能について詳しくは、[データビュー](data-views.md)を参照してください。
 * BI ツールと Customer Journey Analytics 間のレポートと分析の一貫性が向上します。
 * Customer Journey Analytics データを、BI ツールで既に使用可能な他のデータソースと組み合わせます。
 
@@ -65,7 +54,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 無期限の資格情報を使用するには：
 
-1. Experience Platform[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials#non-expiring-credentials)で有効期限のない資格情報を作成します。 既存の有効期限のない資格情報を使用する場合は、これらの資格情報が[OAuth](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials#migrate-credentials)に移行されていることを確認してください。
+1. Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)で[有効期限のない資格情報を作成します。 既存の有効期限のない資格情報を使用する場合は、これらの資格情報が[OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)に移行されていることを確認してください。
 
 1. 期限切れでない資格情報がCustomer Journey Analyticsの製品および製品プロファイルで使用できることを確認します。 組織で次の手順を実行するには、システム管理者である必要があります。
    1. ![App](/help/assets/icons/Apps.svg)から&#x200B;**[!UICONTROL Admin Console]**&#x200B;を選択します。
@@ -104,7 +93,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 +++ クエリ編集者
 
-Adobe Experience Platform の場合：
+Adobe Experience Platform で：
 
 1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
 
@@ -127,7 +116,7 @@ Adobe Experience Platform の場合：
 
    1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの`cja` データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -160,9 +149,9 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -201,7 +190,7 @@ Adobe Experience Platform の場合：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 
@@ -223,9 +212,9 @@ Adobe Experience Platform の場合：
 
    1. Customer Journey Analytics データビューは、**[!UICONTROL **&#x200B;テーブル&#x200B;**]**&#x200B;リストにテーブルとして表示されます。
 
-   1. 使用するテーブルをキャンバス上でドラッグします。
+   1. 使用するテーブルをキャンバスにドラッグします。
 
-   これで、データビューテーブルのデータを操作して、レポートとビジュアライゼーションを作成できます。
+   これで、データビューテーブルのデータを使用して、レポートやビジュアライゼーションを作成できます。
 
    詳しくは、[クエリサービスへの Tableau の接続](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/tableau)を参照してください。 例について詳しくは、[BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)も参照してください。
 
@@ -252,7 +241,7 @@ Adobe Experience Platform の場合：
    1. 「**[!UICONTROL テスト]**」を選択して、接続をテストします。
    1. 成功したら、「**[!UICONTROL 更新]**」を選択して、接続を保存します。
 
-   これで、データビューテーブルのデータを操作して、レポートとビジュアライゼーションを作成できます。
+   これで、データビューテーブルのデータを使用して、レポートやビジュアライゼーションを作成できます。
 
    詳しくは、[クエリサービスへの Looker の接続](https://experienceleague.adobe.com/ja/docs/experience-platform/query/clients/looker)を参照してください。 例について詳しくは、[BI 拡張機能のユースケース](/help/use-cases/data-views/bi-extension-usecases.md)も参照してください。
 
@@ -312,7 +301,7 @@ Customer Journey Analytics BI 拡張機能を使用して様々なユースケ�
 
 ## 機能
 
-デフォルトでは、データビューには、わかりやすい名前から生成されたテーブルセーフ名が付けられます。 例えば、[!UICONTROL マイ web データビュー]という名前のデータビューのビュー名は `my_web_data_view` です。 データビューの BI ツールで使用する優先名を定義できます。 詳しくは、[データビュー設定](create-dataview.md#settings)を参照してください。
+デフォルトでは、データビューには、わかりやすい名前から生成されたテーブルセーフ名が付けられます。 例えば、[!UICONTROL マイ web データビュー]という名前のデータビューのビュー名は `my_web_data_view` です。 BI ツールで使用するデータビューの優先名を定義できます。 詳しくは、[データビュー設定](create-dataview.md#settings)を参照してください。
 
 データビュー ID をテーブル名として使用する場合は、接続時にデータベース名にオプションの `CJA_USE_IDS` 設定を追加できます。 例えば、`prod:cja?CJA_USE_IDS` は、`dv_ABC123` のような名前でデータビューを表示します。
 
@@ -320,7 +309,7 @@ Customer Journey Analytics BI 拡張機能を使用して様々なユースケ�
 
 Customer Journey Analytics のデータガバナンス関連の設定は、Adobe Experience Platform から継承されます。 Customer Journey Analytics と Adobe Experience Platform のデータガバナンスの統合により、機密性の高い Customer Journey Analytics データのラベル付けとプライバシーポリシーの実施が可能になります。
 
-Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルおよびポリシーは、Adobe Customer Journey Analytics データビューワークフローで表示できます。 したがって、[!DNL Customer Journey Analytics BI extension] を使用してクエリされたデータは、定義されたプライバシーラベルとポリシーに準拠していない場合、適切な警告またはエラーを表示します。
+Experience Platform で使用されるデータセットに関して作成されたプライバシーラベルおよびポリシーは、Customer Journey Analytics データビューワークフローで表示できます。 したがって、[!DNL Customer Journey Analytics BI extension] を使用してクエリされたデータは、定義されたプライバシーラベルとポリシーに準拠していない場合、適切な警告またはエラーを表示します。
 
 ### データビューのリスト
 
@@ -342,16 +331,16 @@ prod:all=> \dv
 
 ### デフォルトと制限
 
-BI 拡張機能を使用する場合、次の追加のデフォルトと制限が適用されます。
+BI 拡張機能を使用する場合、次の追加のデフォルト設定と制限が適用されます。
 
 * BI 拡張機能には、クエリ結果の行制限が必要です。 デフォルトは 50 ですが、SQL で `LIMIT n` を使用して上書きできます。`n` は 1～50000 です。
 * BI 拡張機能には、計算に使用する行を制限するために日付範囲が必要です。 デフォルトは過去 30 日間ですが、特別な [`timestamp`](#timestamp) 列または [`daterange`](#date-range) 列を使用して、SQL `WHERE` 句で上書きできます。
-* BI 拡張機能には、集約クエリが必要です。 `SELECT * FROM ...` のような SQL を使用して、生の基になる行を取得できません。 大まかに言うと、集計クエリでは以下を使用する必要があります。
-   * `SUM`または`COUNT`を使用して合計を選択します。<br/> 例：`SELECT SUM(metric1), COUNT(*) FROM ...`
-   * ディメンション別に分類された指標を選択します。 <br/>例：`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * 個別の指標値を選択します。<br/>例：`SELECT DISTINCT dimension1 FROM ...`
+* BI 拡張機能には、集計クエリが必要です。 `SELECT * FROM ...` のような SQL を使用して、生の基になる行を取得できません。 大まかに言うと、集計クエリでは以下を使用する必要があります。
+  * `SUM`または`COUNT`を使用して合計を選択します。<br/> 例：`SELECT SUM(metric1), COUNT(*) FROM ...`
+  * ディメンション別に分類された指標を選択します。 <br/>例：`SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+  * 個別の指標値を選択します。<br/>例：`SELECT DISTINCT dimension1 FROM ...`
 
-     詳しくは、[サポートされる SQL](#supported-sql) を参照してください。
+    詳しくは、[サポートされる SQL](#supported-sql) を参照してください。
 
 
 ### サポートされる SQL
@@ -377,7 +366,7 @@ BI 拡張機能を使用する場合、次の追加のデフォルトと制限�
             </td>
         </tr>
         <tr>
-            <td>ランク付けまたは分類 </td>
+            <td>ランキングまたは分類 </td>
             <td>
                 <pre><code>SELECT dim1, SUM(metric1) AS m1
 FROM dv1
@@ -542,7 +531,7 @@ GROUP BY 2</code></pre>
 選択できる指標は次のとおりです。
 
 * デフォルトで使用可能な指標。
-* データビューで定義する指標。
+* データビューで定義されている指標。
 * ユーザーにアクセス権があるデータビューと互換性のある計算指標。
 
 他の SQL ソースの場合と同様に、`SUM(metric)` 式に含まれる ID で指標を選択します。
@@ -555,7 +544,7 @@ GROUP BY 2</code></pre>
 
 #### 個別値のカウント
 
-Customer Journey Analytics の仕組みの基本的な性質により、正確な個別のカウントを取得できる唯一のディメンションは、`adobe_personid` ディメンションです。 次の SQL 文である `SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` は、個別の人物の数であるデフォルトのユーザー指標の値を返します。 その他のディメンションの場合は、おおよその個別のカウントが返されます。
+Customer Journey Analytics の仕組みの基本的な性質により、正確な個別のカウントを取得できる唯一のディメンションは、`adobe_personid` ディメンションです。 次の SQL 文である `SELECT COUNT(DISTINCT adobe_personid)` または `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` は、個別の人物の数であるデフォルトのユーザー指標の値を返します。 その他のディメンションの場合は、概算のユニーク件数が返されます。
 
 #### 条件付き指標
 
@@ -577,7 +566,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 | 演算子または関数 | 詳細 |
 |---|---|
-| `+`、`-`、`*`、`/` および `%` | 加算、減算、乗算、除算、剰余演算 |
+| `+`、`-`、`*`、`/` および `%` | 加算、減算、乗算、除算、モジュロ／剰余演算 |
 | `-X` または`+X` | 符号または指標の変更（X は指標式） |
 | `PI()` | π 定数 |
 | `POSITIVE`、`NEGATIVE`、`ABS`、`FLOOR`、`CEIL`、`CEILING`、`EXP`、`LN`、`LOG10`、`LOG1P`、`SQRT`、`CBRT`、`DEGREES`、`RADIANS`、`SIN`、`COS`、`TAN`、`ACOS`、`ASIN`、`ATAN`、 `COSH`、`SINH` および `TANH` | 単項数学関数 |
@@ -594,7 +583,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 * 最小値のみを指定している場合（`timestamp > X` または ` timestamp >= X`）、範囲は X から現在までです。
 * 最大値のみを指定している場合（`timestamp < X` または `timestamp <= X`）、範囲は X-30 日から X です。
-* 何も指定しない場合、範囲は現在-30 日から現在までです。
+* 何も指定しない場合、範囲は現在からさかのぼって 30 日前から現在までになります。
 
 タイムスタンプ範囲は、RankedRequestの日付範囲のグローバルセグメントに変換されます。
 また、タイムスタンプフィールドを日時関数で使用して、イベントのタイムスタンプを解析したり切り捨てたりすることもできます。

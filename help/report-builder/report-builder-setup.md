@@ -7,15 +7,10 @@ type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/JAuvA8NU9j1Jx4bSw-JTHYF0c6mW249C6MWvzti-kB0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 539
@@ -43,9 +38,9 @@ Report Builder Customer Journey Analytics版は、次のオペレーティング
 
   すべての Windows デスクトップ Excel ユーザーは、アドインを使用するために Microsoft Edge Webview2 をインストールする必要があります。 インストールするには：
 
-   1. <https://developer.microsoft.com/en-us/microsoft-edge/webview2/> にアクセスします。
-   1. お使いのプラットフォームに適したバージョンの&#x200B;**[!UICONTROL Evergreen Standalone Installer]**&#x200B;を選択してダウンロードします。
-   1. インストーラーを実行し、インストールプロンプトに従います。
+  1. <https://developer.microsoft.com/en-us/microsoft-edge/webview2/> にアクセスします。
+  1. お使いのプラットフォームに適したバージョンの&#x200B;**[!UICONTROL Evergreen Standalone Installer]**&#x200B;を選択してダウンロードします。
+  1. インストーラーを実行し、インストールプロンプトに従います。
 
 ### Web Office
 
@@ -86,7 +81,7 @@ Report Builder アドインをダウンロードしてインストールする�
 
 Report Builder アドインをインストールすると、**[!UICONTROL ホーム]** タブの下のExcel リボンに![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** アイコンが表示されます。
 
-![ExcelのReport Builder アイコン &#x200B;](./assets/rb_app_icon.png){zoomable="yes"}
+![ExcelのReport Builder アイコン ](./assets/rb_app_icon.png){zoomable="yes"}
 
 
 ## Report Builder へのログイン
@@ -103,7 +98,7 @@ Report Builder アドインをインストールすると、**[!UICONTROL ホー
 
 1. Adobeのアカウント情報を入力します。 アカウント情報は、Customer Journey Analytics の資格情報と一致する必要があります。
 
-   ![&#x200B; ログインアイコンと組織。](./assets/image4.png){zoomable="yes"}
+   ![ ログインアイコンと組織。](./assets/image4.png){zoomable="yes"}
 
 ログインすると、パネルの上部にログインアイコンと組織が表示されます
 
@@ -116,7 +111,7 @@ Report Builder アドインをインストールすると、**[!UICONTROL ホー
 
 1. 使用可能な組織のリストから組織を選択します。 自身がアクセス権を持っている組織のみが表示されます。
 
-   ![&#x200B; アクセスできる組織のリスト。](./assets/image5.png){zoomable="yes"}
+   ![ アクセスできる組織のリスト。](./assets/image5.png){zoomable="yes"}
 
 ## ログアウト
 
@@ -126,6 +121,6 @@ Report Builderからログアウトするには：
 
 1. アバターアイコンを選択して、ユーザープロファイルを表示します。
 
-   ![&#x200B; ユーザープロファイルのアバターとログアウトボタン。](./assets/image6.png){zoomable="yes"}
+   ![ ユーザープロファイルのアバターとログアウトボタン。](./assets/image6.png){zoomable="yes"}
 
 1. **[!UICONTROL ログアウト]**&#x200B;を選択します。

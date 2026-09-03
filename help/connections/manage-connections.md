@@ -8,25 +8,14 @@ feature: Connections
 role: Admin
 autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 7300
+source-wordcount: 7319
 ht-degree: 87%
 
 ---
@@ -62,9 +51,9 @@ ht-degree: 87%
 
 **[!UICONTROL リスト]**&#x200B;インターフェイスは、接続のデフォルトのインターフェイスです。 選択されていない場合は、「**[!UICONTROL リスト]**」タブを選択してインターフェイスにアクセスします。
 
-**[!UICONTROL List]** インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
+**[!UICONTROL リスト]**インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
 △
-![&#x200B; リストビュー](assets/list-view.png)
+![ リストビュー](assets/list-view.png)
 
 テーブルでは、次の列またはアイコンを使用できます。
 
@@ -93,7 +82,7 @@ ht-degree: 87%
 
 ### 接続を絞り込む
 
-接続のリストにフィルターを適用するには、![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
+接続のリストにフィルターを適用するには、![ フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
 
 | フィルターオプション | 説明 |
 |---------|----------|
@@ -104,7 +93,7 @@ ht-degree: 87%
 | **[!UICONTROL CJA で使用]** | 「**[!UICONTROL オン]**」を選択すると、Customer Journey Analytics での使用が有効になっている接続のみが表示されます。 「**[!UICONTROL オフ]**」を選択すると、Customer Journey Analytics での使用がまだ有効になっていない接続のみが表示されます。 |
 | **[!UICONTROL 統合]** | 選択した統合を持つ接続のみが表示されます。 |
 
-「![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
+「![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
 
 ### 接続の編集
 
@@ -115,7 +104,7 @@ ht-degree: 87%
 
 または、次の操作を実行できます。
 
-1. 接続行を選択します。
+1. 接続のテーブル行を選択します。
 
 1. 青色のアクションバーから ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
 
@@ -148,7 +137,7 @@ ht-degree: 87%
 接続の削除について詳しくは、[削除の影響](/help/technotes/deletion.md)を参照してください。
 
 
-### 接続のデータビューの作成
+### 接続用のデータビューを作成する
 
 接続のデータビューを作成するには：
 
@@ -182,7 +171,7 @@ Customer Journey AnalyticsでJourney Optimizer接続を使用して、接続に�
 >
 >**2024年10月から 2025年10月の間に Customer Journey Analytics と Journey Optimizer の両方のの使用権限があった場合は、[AJO が有効な接続](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**&#x200B;に関する次のドキュメントを参照してください。
 
-この機能を有効にするには、組織に Customer Journey Analytics へのアクセス権が必要です。 アクセス権がない場合は、アドビ担当営業または販売店にお問い合わせください。
+この機能を有効にするには、組織に Customer Journey Analytics へのアクセス権が必要です。 アクセスできない場合は、アドビセールス担当者にお問い合わせください。
 
 #### Journey Optimizer 接続の使用 {#use-connection-in-cja}
 
@@ -224,7 +213,7 @@ Journey Optimizer 接続は、いつでも Customer Journey Analytics から削�
 
 >[!IMPORTANT]
 >
->Customer Journey Analytics での接続の課金には、接続が削除された 1 か月分の料金が含まれます。
+>Customer Journey Analytics での接続の課金には、接続が削除された月全体の料金が含まれます。
 
 
 Customer Journey Analytics から接続を削除するには：
@@ -283,12 +272,12 @@ Customer Journey Analytics から接続を削除するには：
 | ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | データセット検索フィールド。 データセット名またはデータセット ID でデータセットテーブルを検索できます。 |
 | [!UICONTROL データセットテーブル] | 接続に含まれるデータセットです。 詳しくは、以下の表を参照してください。 単一のデータセットを選択 ![SelectBox](/help/assets/icons/SelectBox.svg) すると、選択したデータセットの接続の詳細のみが表示されます。 これは、**[!UICONTROL _データセットセレクター_]**&#x200B;からデータセットを選択することに相当します。 |
 
-データセット テーブルには、データセットごとに次の列が表示されます。
+データセットテーブルには、データセットごとに次の列が表示されます。
 
 | 列 | 説明 |
 | --- | --- |
-| **[!UICONTROL データセット]** | データセットの名前。 ハイパーリンクを選択すると、Experience Platform UI の新しいタブでデータセットを開くことができます。 行を選択するか、チェックボックスをオンにすると、選択したデータセットの詳細のみを表示できます。 |
-| **[!UICONTROL データセット ID]** | Experience Platform で生成されたデータセット ID。 |
+| **[!UICONTROL データセット]** | データセットの名前。 ハイパーリンクを選択すると、新しいタブで Adobe Experience Platform の UI 上でデータセットを開くことができます。 行を選択するか、チェックボックスをオンにすると、選択したデータセットの詳細のみを表示できます。 |
+| **[!UICONTROL データセット ID]** | Adobe Experience Platform で生成されたデータセット ID。 |
 | **[!UICONTROL 追加されたレコード]** | 選択した日付範囲で接続に追加されたデータセットのレコード（行）の数。 |
 | **[!UICONTROL スキップされたレコード]** | 選択した日付範囲で接続のデータ転送中にスキップされたデータセットのレコード（行）の数。 |
 | **[!UICONTROL 削除されたレコード]** | 選択した日付範囲で接続から削除されたデータセットのレコード（行）の数。 |
@@ -296,7 +285,7 @@ Customer Journey Analytics から接続を削除するには：
 | **[!UICONTROL 前回追加した日時]** | 接続に追加された最新のバッチのタイムスタンプ。 |
 | **[!UICONTROL データソースタイプ]** | ソースタイプ。 データセットを接続に追加する際に、ソースタイプを定義します。 |
 | **[!UICONTROL データセットタイプ]** | [データセットタイプ](create-connection.md#dataset-types)。 タイプには、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;を指定できます。 アドホックデータセットまたはリレーショナルデータセットは、**[!UICONTROL （アドホック）]**&#x200B;または&#x200B;**[!UICONTROL （リレーショナル）]**&#x200B;で識別されます。 例えば、**[!UICONTROL イベント （アドホック）]**&#x200B;や&#x200B;**[!UICONTROL ルックアップ（リレーショナル）]**&#x200B;などです。 |
-| **[!UICONTROL ステッチ]** | 接続UI[&#128279;](/help/stitching/use-stitching-ui.md)でデータセットのステッチが[有効になっている場合、値は&#x200B;**[!UICONTROL true]**&#x200B;です。 それ以外の場合、値は&#x200B;**[!UICONTROL false]**&#x200B;です。 ステッチ プロシージャ &#x200B;](/help/stitching//use-stitching.md)に対する リクエストの結果であるステッチされたデータセットは、このテーブルでステッチされたものとして識別されず、デフォルトでは&#x200B;**[!UICONTROL false]**&#x200B;の値を持ちます。 |
+| **[!UICONTROL ステッチ]** | 接続UI](/help/stitching/use-stitching-ui.md)でデータセットのステッチが[有効になっている場合、値は&#x200B;**[!UICONTROL true]**&#x200B;です。 それ以外の場合、値は&#x200B;**[!UICONTROL false]**&#x200B;です。 ステッチ プロシージャ ](/help/stitching//use-stitching.md)に対する[ リクエストの結果であるステッチされたデータセットは、このテーブルでステッチされたものとして識別されず、デフォルトでは&#x200B;**[!UICONTROL false]**&#x200B;の値を持ちます。 |
 | **[!UICONTROL スキーマ]** | データセットのベースとなる Experience Platform スキーマ。 |
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットが新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：データセットが新しいデータを読み込むように設定されていない場合。 |
 | **[!UICONTROL データセットを変換]** | 適用可能な B2B ルックアップデータセットの変換ステータス。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：変換に対して有効である適用可能なデータセットの場合。 <p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：変換に対して有効でない適用可能なデータセットの場合。<p>**[!UICONTROL 該当なし]**：変換に対して適用可能でない他のすべてのデータセットの場合。 |
@@ -327,7 +316,7 @@ Customer Journey Analytics から接続を削除するには：
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットの数が新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：新しいデータ読み込みがオフになっているデータセットの数の場合。 |
 | **[!UICONTROL データをバックフィル]** | データセットのバックフィルデータのステータス。<p>![ステータス（赤色）](assets/status-red.svg) **[!UICONTROL _x _バックフィル失敗]**：データセットをまたいで失敗したバックフィルの数の場合。<p>![ステータス（赤色）](assets/status-orange.svg) **[!UICONTROL _x _バックフィル処理中]**：データセットをまたいで処理中のバックフィルの数の場合。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _バックフィル完了]**：データセットをまたいで完了したバックフィルの数の場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _オフ_]**：接続内のデータセットに対してバックフィルが定義されていない場合。 |
 | **[!UICONTROL データセットを変換]** | 適用可能な B2B ルックアップデータセットの変換ステータス。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：変換に対して有効であるデータセットの数の場合。 |
-| **[!UICONTROL 作成者]** | クエリを作成したユーザーの名前。 |
+| **[!UICONTROL 作成者]** | 接続を作成したユーザーの名前。 |
 | **[!UICONTROL 最終変更日]** | 接続に対する最後の変更のタイムスタンプ。 |
 | **[!UICONTROL 最終変更者]** | 接続を最後に変更したユーザーの名前。 |
 
@@ -337,17 +326,17 @@ Customer Journey Analytics から接続を削除するには：
 
 | 詳細 | 説明 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID &#x200B;]** | 接接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID &#x200B;]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID ]** | 接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID ]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
 | **[!UICONTROL ユーザー ID]** | 接続のユーザー ID として指定した ID。 |
 | **[!UICONTROL キー]** | ルックアップデータセットに指定したキー。 |
 | **[!UICONTROL 一致するキー]** | ルックアップデータセットに指定した一致するキー。 |
 | **[!UICONTROL タイムスタンプ]** | イベントデータセットに定義されたタイムスタンプ。 |
-| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。 データが追加されると、レポートに表示されるデータの取得に遅延は発生しません。 ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
+| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。 データが追加されると、レポートにデータが表示されるまでの待ち時間は発生しません。 ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
 | **[!UICONTROL 追加されたレコード]** | 選択した日付範囲で接続に追加されたデータセットのレコード（行）の数。 |
 | **[!UICONTROL スキップされたレコード]** | 選択した日付範囲で接続のデータ転送中にスキップされたデータセットのレコード（行）の数。 |
-| **[!UICONTROL 追加されたバッチ]** | 接続に追加されたバッチの数。 |
-| **[!UICONTROL 削除されたレコード]** | 選択した日付範囲で接続から削除されたデータセットのレコード（行）の数。 |
+| **[!UICONTROL 追加されたバッチ]** | 接続に追加されたバッチ数。 |
+| **[!UICONTROL 削除されたレコード]** | 選択した日付範囲で、接続から削除されたデータセットのレコード（行）の数。 |
 | **[!UICONTROL 前回追加した日時]** | 接続に追加された最新のバッチのタイムスタンプ。 |
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットが新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：データセットが新しいデータを読み込むように設定されていない場合。 |
 | **[!UICONTROL データをバックフィル]** | データセットのバックフィルデータのステータス。<p>![ステータス（赤色）](assets/status-red.svg) **[!UICONTROL _x _バックフィル失敗]**：失敗したバックフィルの数の場合。<p>![ステータス（赤色）](assets/status-orange.svg) **[!UICONTROL _x _バックフィル処理中]**：処理中のバックフィルの数の場合。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _バックフィル完了]**：完了したバックフィルの数の場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _オフ_]**：バックフィルが定義されていない場合。<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、 <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]** を選択します。 |
@@ -362,12 +351,12 @@ Customer Journey Analytics から接続を削除するには：
 >[!CONTEXTUALHELP]
 >id="connections_usage_keyusagemetrics"
 >title="主要な使用状況指標"
->abstract="コアおよび履歴のレポート可能行数の月別および合計データを指定します。"
+>abstract="コアおよび履歴のレポート可能行数について、月別および合計のデータを提供します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyingestedrows"
 >title="月別の取り込み行数"
->abstract="月別にシステムに追加されるレコードの合計数を測定し、データの増加と取り込み率に関するインサイトを指定します。"
+>abstract="月別にシステムに追加されるレコードの合計数を測定し、データの増加と取り込み率に関するインサイトを提供します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyreportablerows"
@@ -397,7 +386,7 @@ Customer Journey Analytics から接続を削除するには：
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="コアのレポート可能な行数"
->abstract="先月と比較した変化率を含む、今月の過去 13 か月にわたって使用可能な行の合計数。  例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。"
+>abstract="現在の月について、過去 13 か月間にわたって使用可能な行の合計数と、先月と比較した変化率を示します。  例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。"
 
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
@@ -499,7 +488,7 @@ Customer Journey Analytics から接続を削除するには：
 
 [!UICONTROL 使用状況]インターフェイスには、すべての接続で取り込まれた行とレポート可能な行の使用状況が表示されます。 選択されていない場合は、「**[!UICONTROL 使用状況]**」タブを選択してインターフェイスにアクセスします。
 
-このインターフェイスは、Customer Journey Analyticsの使用が契約上の合意に準拠しているかどうかを判断するのに役立ちます。 監視目的に加えて、使用状況インターフェイスを使用して、Customer Journey Analytics ライセンスの更新を計画することもできます。
+このインターフェイスは、Customer Journey Analyticsの使用が契約上の合意に準拠しているかどうかを判断するのに役立ちます。 モニタリング目的に加えて、使用状況インターフェイスを使用して、Customer Journey Analytics ライセンスの更新を計画することもできます。
 
 権限を持つモジュールごとに、使用の詳細を含む折りたたみ可能なセクションを使用できます。
 
@@ -509,7 +498,7 @@ Customer Journey Analytics から接続を削除するには：
 
 | Metric name | 説明 |
 |---|---|
-| **履歴のレポート可能な行数** | 13 か月を超える期間の行数。 |
+| **履歴のレポート可能な行数** | 13 か月より前の期間における行数。 |
 | **コアのレポート可能な行数** | 過去 13 か月間の行数。 |
 | **コアデータ量** | ディスクに保存されているデータの合計量。 |
 | **平均行サイズ** | 取り込まれて保存されたデータの行ごとに消費されるストレージの平均量。 |
@@ -519,7 +508,7 @@ Customer Journey Analytics から接続を削除するには：
 
 >[!NOTE]
 >
->データは、2024年7月からコア、履歴、合計レコードについて収集されます。 以前の履歴データについては、アドビ担当営業または販売店にお問い合わせください。
+>データは、2024年7月からコア、履歴、合計レコードについて収集されます。 より前の履歴データについては、アドビセールス担当者または販売店にお問い合わせください。
 >
 
 **[!UICONTROL CJAの使用状況]** インターフェイスは、次の2つのパネルで構成されています。
@@ -528,7 +517,7 @@ Customer Journey Analytics から接続を削除するには：
 
   * 次の項目について、前月との合計およびパーセンテージの変化を表示する 4 つの概要ビジュアライゼーション：
 
-    * **[!UICONTROL コアデータのレポート可能な行数]**。 先月と比較した変化率を含む、今月の過去 13 か月にわたって使用可能な行の合計数。 例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。
+    * **[!UICONTROL コアデータのレポート可能な行数]**。 先月と比較した変化率を含む、今月の過去 13 か月にわたって使用可能な行の合計数。 例えば、2024年2月1日の数値は、2023年1月から2024年1月までのイベントタイムスタンプを持つ、使用可能な行の合計数を示します。
     * **[!UICONTROL 拡張データ容量行]**。 今月の 13 か月を超える期間で使用可能な行の合計数と、先月と比較した変化率。 例えば、2024年2月1日（PT）の数値は、2023年1月より古いイベントタイムスタンプで使用できる行の合計数を示します。
     * **[!UICONTROL 月間取り込まれた行]**。 請求月に取り込まれた行（前月と比較した割合の変化）
     * **[!UICONTROL コアデータ量]**。 前月と比較した変化率を含む、今月のタイムスタンプが付けられたディスクに保存されたデータの合計量（TB 単位）。
@@ -538,7 +527,7 @@ Customer Journey Analytics から接続を削除するには：
 
     ビジュアライゼーション内の積み重ね棒グラフにポインタを合わせると、ポップアップに棒グラフの特定の部分の行数が表示されます。
 
-* 次の 3 つのサブパネルを表示する組み合わせパネル：
+* 次の 3 つのサブパネルを表示する結合パネル：
 
   +++ 取り込まれた行数
 
@@ -563,7 +552,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 詳細分類]**&#x200B;テーブルを使用すると、、接続別、データセット別別、サンドボックス別、タグ別に詳細な指標を表示できます。 データセット名はレポート期間中に変更される場合があるので、データセットは名前ではなく ID を使用してレポートされます。 不明なデータセットまたは接続は、ID を使用してレポートされます。
 
-  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット &#x200B;]は表示されなくなります。
+  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット ]は表示されなくなります。
 
   * 分類を変更するには、「**[!UICONTROL 表示別]**」と「**[!UICONTROL 分類別]**」の組み合わせを選択します。
 
@@ -590,7 +579,7 @@ Customer Journey Analytics から接続を削除するには：
 
 >[!NOTE]
 >
->データは、2024年7月からコア、履歴、合計レコードについて収集されます。 以前の履歴データについては、アドビ担当営業または販売店にお問い合わせください。
+>データは、2024年7月からコア、履歴、合計レコードについて収集されます。 より前の履歴データについては、アドビセールス担当者または販売店にお問い合わせください。
 >
 
 **[!UICONTROL Content Analyticsの使用状況]** インターフェイスは、次の2つのパネルで構成されています。
@@ -612,7 +601,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 月間Content Analytics行]** サブパネルは、毎月システムに追加される月間Content Analytics レコードの合計数を測定し、insightにデータの増加と取り込み率を提供します。 サブパネルには、今月取り込まれた行数の合計数と前月からの変化の概要が表示されます。
 
-  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![ カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
 
   +++
 
@@ -620,7 +609,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 詳細分類]**&#x200B;テーブルを使用すると、、接続別、データセット別別、サンドボックス別、タグ別に詳細な指標を表示できます。 データセット名はレポート期間中に変更される場合があるので、データセットは名前ではなく ID を使用してレポートされます。 不明なデータセットまたは接続は、ID を使用してレポートされます。
 
-  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット &#x200B;]は表示されなくなります。
+  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット ]は表示されなくなります。
 
   * 分類を変更するには、「**[!UICONTROL 表示別]**」と「**[!UICONTROL 分類別]**」の組み合わせを選択します。
 
@@ -642,12 +631,12 @@ Customer Journey Analytics から接続を削除するには：
 
 | Metric name | 説明 |
 |---|---|
-| **Core Reportable BPP** | 当月の過去13か月間に利用可能なビジネスパーソン プロファイルのレポート可能な行の合計数。前月と比べてパーセンテージが変化しています。  例えば、2024年2月1日（PT）の数は、2023年1月から 2024年1月までのイベントタイムスタンプで使用できる行の合計数を示します。 |
+| **Core Reportable BPP** | 当月の過去13か月間に利用可能なビジネスパーソン プロファイルのレポート可能な行の合計数。前月と比べてパーセンテージが変化しています。  例えば、2024年2月1日の数値は、2023年1月から2024年1月までのイベントタイムスタンプを持つ、使用可能な行の合計数を示します。 |
 | **履歴レポート可能なBPP** | 当月の13か月を超える期間に利用可能なビジネスパーソン プロファイルのレポート可能な行の合計数で、前月と比較してパーセンテージが変化します。 例えば、2024年2月1日（PT）の数値は、2023年1月より古いイベントタイムスタンプで使用できる行の合計数を示します。 |
 
 >[!NOTE]
 >
->データは、2024年7月からコア、履歴、合計レコードについて収集されます。 以前の履歴データについては、アドビ担当営業または販売店にお問い合わせください。
+>データは、2024年7月からコア、履歴、合計レコードについて収集されます。 より前の履歴データについては、アドビセールス担当者または販売店にお問い合わせください。
 >
 
 **[!UICONTROL CJA B2B editionの使用状況]** インターフェイスは、次のサブパネルを表示する1つのパネルで構成されています。
@@ -698,7 +687,7 @@ Customer Journey Analytics から接続を削除するには：
 
 >[!NOTE]
 >
->データは、2024年7月からコア、履歴、合計レコードについて収集されます。 以前の履歴データについては、アドビ担当営業または販売店にお問い合わせください。
+>データは、2024年7月からコア、履歴、合計レコードについて収集されます。 より前の履歴データについては、アドビセールス担当者または販売店にお問い合わせください。
 >
 
 
@@ -720,7 +709,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 月次メディア開始]** サブパネルは、毎月システムに追加される月次メディア開始レコードの合計数を測定し、insightにデータの増加と取り込み率を提供します。 サブパネルには、今月取り込まれた行数の合計数と前月からの変化の概要が表示されます。
 
-  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![ カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
 
   +++
 
@@ -746,6 +735,6 @@ Customer Journey Analytics から接続を削除するには：
 
 >[!MORELIKETHIS]
 >
->[接続設定の表示、トラブルシューティング、変更](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) チュートリアル。
->[Customer Journey Analyticsの使用状況を管理](/help/technotes/estimate-usage.md)
+>[接続設定の表示、トラブルシューティング、変更](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja)チュートリアル。
+>[Customer Journey Analytics の使用状況の管理](/help/technotes/estimate-usage.md)
 >

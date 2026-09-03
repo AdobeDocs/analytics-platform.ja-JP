@@ -6,31 +6,14 @@ hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
 autotag-review: '2026-05-19T09:53:49.596Z'
 TQID: 'https://experienceleague.adobe.com/Yt2CmGRpO6s8natf9s-KLsMBKHc-qdSQHvi3UyPyLgg'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ae3aff40-b2f6-4df1-8c01-0b0720d1510fid: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
-source-wordcount: 3920
+source-wordcount: 3921
 ht-degree: 48%
 
 ---
@@ -39,13 +22,13 @@ ht-degree: 48%
 
 {{release-limited-testing}}
 
-Adobe AnalyticsとCustomer Journey Analytics データフィード列の真の1:1 マッピングは不可能です。 2つの製品は根本的に異なり、各組織の実装は大きく異なる可能性があります。
+Adobe AnalyticsとCustomer Journey Analytics データフィード列の間の真の1:1 マッピングは不可能です。 2つの製品は根本的に異なり、各組織の実装は大きく異なる可能性があります。
 
 このリファレンスは、データエンジニアがAdobe Analytics データフィード列を評価し、ワークフローに最も近いCustomer Journey Analyticsの同等を特定するのに役立ちます。
 
 >[!NOTE]
 >
->この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
+>この参照には、[Analytics データフィード列リファレンス ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
 
 +++**`accept_language`**
 
@@ -166,7 +149,7 @@ User-Agent クライアントヒント JavaScript API を通じて収集され�
 
 Adobe Analyticsでは、クライアントヒントがこの列に連結された文字列として含まれていました。 `user_agent`列よりも現代的なアプローチと見なされます。
 
-Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/configure/context) コンテキスト文字列を使用して、このデータを収集できます。 1つの長い連結された文字列の代わりに、複数のXDM フィールドが入力されます。
+Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) コンテキスト文字列を使用して、このデータを収集できます。 1つの長い連結された文字列の代わりに、複数のXDM フィールドが入力されます。
 
 * **オペレーティングシステムのバージョン**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
 * **アーキテクチャ**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
@@ -176,7 +159,7 @@ Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.ado
 * **ブラウザー名**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **ブラウザーバージョン**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-詳しくは、[&#x200B; ユーザーエージェントクライアントヒント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
+詳しくは、[ ユーザーエージェントクライアントヒント ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
 
 {{cja-df-ua}}
 
@@ -270,7 +253,7 @@ Cookie サポートディメンション。<br>Y：有効<br>N：無効<br>U：�
 
 +++**`currency`**
 
-取引で使用された通貨のコード。 `currencyCode` を使用して設定します。
+トランザクションで使用された通貨コード。 `currencyCode` を使用して設定します。
 
 `xdm.commerce.order.currencyCode`
 
@@ -280,7 +263,7 @@ Cookie サポートディメンション。<br>Y：有効<br>N：無効<br>U：�
 
 +++**`ct_connect_type`**
 
-`connection_type` 列と関連しています。 よく使用される値は LAN/Wi-Fi、Mobile Carrier、Modem です。
+`connection_type` 列と関連しています。 よく使用される値は LAN/Wi-Fi、携帯電話会社、モデムです。
 
 +++
 
@@ -292,7 +275,7 @@ Cookie サポートディメンション。<br>Y：有効<br>N：無効<br>U：�
 
 +++**`curr_rate`**
 
-取引が発生した際の為替レート。 アドビは、XE と提携して、当日の為替レートを判定します。
+トランザクションが発生した際の為替レート。 アドビは XE と提携して、その日の為替レートを取得します。
 
 +++
 
@@ -322,7 +305,7 @@ Customer Journey Analyticsには、タイムスタンプと非タイムスタン
 
 `visitorID` を使用して設定されている場合のカスタム訪問者 ID。
 
-Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/profile/identitymap)を使用して任意の数のIDをサポートします。 組織でカスタム IDを使用している場合は、ID マップ内にある可能性があります。
+Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)を使用して任意の数のIDをサポートします。 組織でカスタム IDを使用している場合は、ID マップ内にある可能性があります。
 
 {{cja-df-post}}
 
@@ -368,7 +351,7 @@ Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.c
 
 ドメイン ディメンション。 訪問者のインターネットアクセスポイントに基づいています。
 
-[&#x200B; データストリームの設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)時に&#x200B;**[!UICONTROL ネットワークルックアップ]**&#x200B;を有効にします。 スキーマに含まれている場合、XDM フィールドは`xdm.environment.domain`です。
+[ データストリームの設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)時に&#x200B;**[!UICONTROL ネットワークルックアップ]**&#x200B;を有効にします。 スキーマに含まれている場合、XDM フィールドは`xdm.environment.domain`です。
 
 +++
 
@@ -388,7 +371,7 @@ Customer Journey AnalyticsにはVISTA ルールの概念がないため、この
 
 {{cja-df-na}}
 
-Customer Journey Analyticsには、すべての指標の重複排除フラグとして機能する単一のフィールドはありません。 代わりに、各指標には独自の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)が含まれます。 そのため、このAdobe Analytics データフィード列に対応するフィールドはCustomer Journey Analyticsにありません。
+Customer Journey Analyticsには、すべての指標の重複排除フラグとして機能する単一のフィールドはありません。 代わりに、各指標には独自の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)が含まれます。 そのため、このAdobe Analytics データフィード列に対応するフィールドはCustomer Journey Analyticsにありません。
 
 +++
 
@@ -396,9 +379,9 @@ Customer Journey Analyticsには、すべての指標の重複排除フラグと
 
 このヒットの購入イベントが重複しているので無視されるかどうかを判定するフラグ。
 
-このAnalytics データフィード列への直接翻訳はありませんが、購入の重複を排除する機能は引き続き存在します。 [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、**[!UICONTROL 重複排除ID]**&#x200B;が`xdm.commerce.purchases.id`の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)を設定できます。
+このAnalytics データフィード列への直接翻訳はありませんが、購入の重複を排除する機能は引き続き存在します。 [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、**[!UICONTROL 重複排除ID]**&#x200B;が`xdm.commerce.purchases.id`の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)を設定できます。
 
-重複する購入のフラグを設定する場合に直接翻訳が必要な場合は、ルールセットの&#x200B;**Deduplicate**&#x200B;関数を使用して[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を使用できます。
+重複する購入のフラグを設定する場合に直接翻訳が必要な場合は、ルールセットの&#x200B;**Deduplicate**&#x200B;関数を使用して[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を使用できます。
 
 +++
 
@@ -431,7 +414,7 @@ Adobe Advertising統合で使用されるEF ID。
 
 {{cja-df-post}}
 
-スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
+スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
 
 * **チェックアウト**: `xdm.commerce.checkouts.value`
 * **買い物かごに追加**: `xdm.commerce.productListAdds.value`
@@ -444,14 +427,14 @@ Adobe Advertising統合で使用されるEF ID。
 一部の指標では、Adobe Analyticsで重複排除を完全に制御できるイベントのシリアル化を使用する場合があります。 [指標の重複排除](/help/data-views/component-settings/metric-deduplication.md) コンポーネント設定を使用して、重複排除パリティを実現できます。
 
 * Adobe Analyticsで訪問別に指標の重複排除を行う場合は、その指標のコンポーネント設定で重複排除スコープをセッションに設定できます。
-* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
+* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
 
-   * **チェックアウト**: `xdm.commerce.checkouts.id`
-   * **買い物かごに追加**: `xdm.commerce.productListAdds.id`
-   * **買い物かごが開きます**: `xdm.commerce.productListOpens.id`
-   * **買い物かごからの削除**: `xdm.commerce.productListRemovals.id`
-   * **カートビュー**: `xdm.commerce.productListViews.id`
-   * **製品ビュー**: `xdm.commerce.productViews.id`
+  * **チェックアウト**: `xdm.commerce.checkouts.id`
+  * **買い物かごに追加**: `xdm.commerce.productListAdds.id`
+  * **買い物かごが開きます**: `xdm.commerce.productListOpens.id`
+  * **買い物かごからの削除**: `xdm.commerce.productListRemovals.id`
+  * **カートビュー**: `xdm.commerce.productListViews.id`
+  * **製品ビュー**: `xdm.commerce.productViews.id`
 
 受注指標の重複を除外する場合は、`duplicate_purchase`を参照してください。
 
@@ -463,8 +446,8 @@ Adobe Advertising統合で使用されるEF ID。
 
 Customer Journey Analyticsは、標準搭載の「除外されたヒット」を尊重しません。 ただし、特定のヒットを除外するようにフラグを付けるXDM フィールドがある場合は、この機能を再作成できます。
 
-1. 除外されたヒットをフラグするXDM フィールドが、コンポーネント（ディメンションまたは指標）として含まれていることを確認します（このフラグの設定方法に応じて）。 レポート [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/overview)で「非表示」コンポーネントを選択すると、このフィールドに有益である可能性が高いです。
-1. [&#x200B; データビュー設定](/help/data-views/session-settings.md)で、**[!UICONTROL セグメントを追加]** ドロップダウンメニューを選択し、**[!UICONTROL セグメントを作成]**&#x200B;を選択します。
+1. 除外されたヒットをフラグするXDM フィールドが、コンポーネント（ディメンションまたは指標）として含まれていることを確認します（このフラグの設定方法に応じて）。 レポート ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)で「[非表示」コンポーネントを選択すると、このフィールドに有益である可能性が高いです。
+1. [ データビュー設定](/help/data-views/session-settings.md)で、**[!UICONTROL セグメントを追加]** ドロップダウンメニューを選択し、**[!UICONTROL セグメントを作成]**&#x200B;を選択します。
 1. 除外ヒットコンポーネントが存在するすべてのイベント、または除外する値を含むすべてのイベントを除外するセグメントを作成します。
 1. セグメントとデータビューの両方で&#x200B;**[!UICONTROL 保存]**&#x200B;を選択します。
 
@@ -480,25 +463,25 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`first_hit_page_url`**
 
-訪問者の本当に最初の URL。
+訪問者の最初の URL。
 
 +++
 
 +++**`first_hit_referrer`**
 
-訪問者の本当に最初の参照 URL。
+訪問者の最初の参照 URL。
 
 +++
 
 +++**`first_hit_ref_domain`**
 
-元の参照ドメインディメンション。 `first_hit_referrer` に基づきます。 訪問者の本当に最初の参照ドメイン。
+元の参照ドメインディメンション。 `first_hit_referrer` に基づきます。 訪問者の最初の参照ドメイン。
 
 +++
 
 +++**`first_hit_ref_type`**
 
-訪問者の本当に最初のリファラーのリファラータイプを表す数値 ID。
+訪問者の最初のリファラーのリファラータイプを表す数値 ID。
 
 {{cja-df-lookup}}
 
@@ -506,7 +489,7 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`first_hit_time_gmt`**
 
-訪問者の最初のヒットのタイムスタンプ（UNIX® 時間）。
+訪問者の最初のヒットのタイムスタンプ（UNIX® タイム）。
 
 +++
 
@@ -536,7 +519,7 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`geo_zip`**
 
-ヒットが発生した場所の郵便番号（IP アドレスに基づく）。 Zip コードディメンションを入力するのに役立ちます。 関連トピック 「`zip`」を参照してください。
+ヒットが発生した郵便番号（IP アドレスに基づく）。 Zip コードディメンションを入力するのに役立ちます。 関連トピック 「`zip`」を参照してください。
 
 +++
 
@@ -554,13 +537,13 @@ Customer Journey Analyticsは、標準搭載の「除外されたヒット」を
 
 +++**`hit_source`**
 
-ヒットソース。 ヒットソース 1と2は請求されます。 <br>1: タイムスタンプのない標準的な画像リクエスト <br>2: タイムスタンプ付きの標準的な画像リクエスト <br>3: タイムスタンプ付きのライブデータソースアップロード <br>4：未使用<br>5：汎用データソースアップロード <br>6：未使用、処理中データソースアップロード <br>7: TransactionID データソースのアップロード <br>8：未使用、以前のバージョンのAdobe Advertising データソース <br>9：未使用、Adobe Social サマリーメトリクス <br>10: Audience Manager サーバーサイド転送が使用
+ヒットがどこから来たかを示すソース。 ヒットソース 1と2は請求されます。 <br>1: タイムスタンプのない標準的な画像リクエスト <br>2: タイムスタンプ付きの標準的な画像リクエスト <br>3: タイムスタンプ付きのライブデータソースアップロード <br>4：未使用<br>5：汎用データソースアップロード <br>6：未使用、処理中データソースアップロード <br>7: TransactionID データソースのアップロード <br>8：未使用、以前のバージョンのAdobe Advertising データソース <br>9：未使用、Adobe Social サマリーメトリクス <br>10: Audience Manager サーバーサイド転送が使用
 
 +++
 
 +++**`hit_time_gmt`**
 
-ヒットを受信したアドビデータ収集サーバーのタイムスタンプ（UNIX® 時間に基づく）。
+アドビのデータ収集サーバーがヒットを受信した時刻のタイムスタンプ（UNIX® 時間に基づく）。
 
 +++
 
@@ -632,25 +615,25 @@ Java対応ディメンション。 <br>Y：有効<br>N：無効<br>U：不明
 
 +++**`latlon1`**
 
-ロケーション（半径 10 km 以内）
+ロケーション（10 km 単位まで特定可能）
 
 +++
 
 +++**`latlon23`**
 
-ロケーション（半径 100 m 以内）
+ロケーション（100 m 単位まで特定可能）
 
 +++
 
 +++**`latlon45`**
 
-ロケーション（半径 1 m 以内）
+ロケーション（1 m 単位まで特定可能）
 
 +++
 
 +++**`mcvisid`**
 
-Experience Cloud 訪問者 ID。 2 つの連結された 64 ビットの数値から構成され、19 桁にパディングされた 128 ビットの数値。
+Experience Cloud の訪問者 ID。 2 つの連結された 64 ビットの数値から構成され、19 桁にパディングされた 128 ビットの数値。
 
 +++
 
@@ -664,7 +647,7 @@ Experience Cloud 訪問者 ID。 2 つの連結された 64 ビットの数値�
 
 +++**`mobileaction`**
 
-モバイルアクション。 モバイル実装で `trackAction` が呼び出されると、自動的に収集されます。 アプリケーション内で自動的にアクションを渡すことができるようにします。
+モバイルアクション。 モバイル実装で `trackAction` が呼び出されると、自動的に収集されます。 アプリケーション内で自動的にアクションのパスをたどれるようにします。
 
 {{cja-df-post}}
 
@@ -724,7 +707,7 @@ Mobile Services ビーコンの UUID
 
 +++**`mobilecampaigncontent`**
 
-リンクを表示したコンテンツの名前または ID。 モバイルアプリケーションの獲得によって設定されます。
+リンクを表示したコンテンツの名前または ID。 モバイルアプリの獲得によって入力されます。
 
 {{cja-df-post}}
 
@@ -732,7 +715,7 @@ Mobile Services ビーコンの UUID
 
 +++**`mobilecampaignmedium`**
 
-マーケティングメディア（バナー、電子メールなど）。 モバイルアプリケーションの獲得によって設定されます。
+バナーやメールなどのマーケティング媒体を指します。 モバイルアプリケーションの獲得によって設定されます。
 
 {{cja-df-post}}
 
@@ -890,7 +873,7 @@ Mobile Services のオペレーティングシステムのバージョン。
 
 +++**`mobileplaceid`**
 
-コンテキストデータ変数 `a.loc.id` から収集します。 特定の対象地点の識別子。
+コンテキストデータ変数 `a.loc.id` から収集します。 特定の興味地点の識別子。
 
 +++
 
@@ -918,25 +901,25 @@ Mobile Services の起動コンテンツ
 
 +++**`mobilerelaunchcampaignmedium`**
 
-Mobile Services の起動メディア
+Mobile Services のローンチメディア
 
 +++
 
 +++**`mobilerelaunchcampaignsource`**
 
-Mobile Services の起動ソース
+Mobile Services のローンチソース
 
 +++
 
 +++**`mobilerelaunchcampaignterm`**
 
-Mobile Services の起動条件
+Mobile Services のローンチ用語
 
 +++
 
 +++**`mobilerelaunchcampaigntrackingcode`**
 
-コンテキストデータ変数 `a.launch.campaign.trackingcode` から収集します。 キャンペーン立ち上げのトラッキングコードとして、獲得で使用します。
+コンテキストデータ変数 `a.launch.campaign.trackingcode` から収集します。 獲得で、ローンチキャンペーン用のトラッキングコードとして使用されます。
 
 +++
 
@@ -979,7 +962,7 @@ Mobile Services の起動条件
 
 +++**`new_visit`**
 
-現在のヒットが新しい訪問であるかどうかを判定するフラグ。 訪問後 30 分間非アクティブであった場合にアドビによって設定されます。
+現在のヒットが新しい訪問かどうかを判定するフラグです。 訪問中に 30 分間アクティビティがない場合に、アドビによって設定されます。
 
 +++
 
@@ -989,7 +972,7 @@ Mobile Services の起動条件
 
 {{cja-df-lookup}}
 
-[&#x200B; データストリームを設定する場合](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)、**[!UICONTROL デバイス検索]**&#x200B;を有効にできます。 有効な場合は、**[!UICONTROL オペレーティングシステム]**&#x200B;のチェックボックスをオンにします。 これにより、スキーマにこれらのフィールドが含まれている場合、次のXDM フィールドが自動的に入力されます。
+[ データストリームを設定する場合](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)、**[!UICONTROL デバイス検索]**&#x200B;を有効にできます。 有効な場合は、**[!UICONTROL オペレーティングシステム]**&#x200B;のチェックボックスをオンにします。 これにより、スキーマにこれらのフィールドが含まれている場合、次のXDM フィールドが自動的に入力されます。
 
 * **OS ベンダー**: `xdm.environment.operatingSystemVendor`
 * **OS名**: `xdm.environment.operatingSystem`
@@ -1073,7 +1056,7 @@ Mobile Services の起動条件
 
 +++**`pointofinterest`**
 
-Mobile Services 目標地点の名前
+Mobile Services の関心ポイント名
 
 {{cja-df-post}}
 
@@ -1081,7 +1064,7 @@ Mobile Services 目標地点の名前
 
 +++**`pointofinterestdistance`**
 
-目標地点中心までの Mobile Services の距離
+Mobile Services の関心ポイントの中心までの距離
 
 {{cja-df-post}}
 
@@ -1160,13 +1143,13 @@ Mobile Services 目標地点の名前
 
 +++**`search_page_num`**
 
-「すべての検索ページのランク」ディメンションで使用されます。 ユーザーがクリックスルーしてサイトに到達する前にサイトが表示された検索結果ページを示します。
+「すべての検索ページのランキング」ディメンションで使用されます。 ユーザーがクリックスルーしてサイトに到達する前にサイトが表示された検索結果ページを示します。
 
 +++
 
 +++**`secondary_hit`**
 
-ヒットがセカンダリヒットかどうかを判定するフラグ。 このフラグは通常、ヒットをコピーするマルチスイートタグ付けおよび VISTA ルールで発生します。
+ヒットがセカンダリヒットかどうかを判定するフラグ。 このフラグは通常、ヒットをコピーするマルチスイートタグ付けおよび VISTA ルールに由来します。
 
 +++
 
@@ -1198,7 +1181,7 @@ Adobe Advertising 統合で使用されるキーワード ID。
 
 +++**`tnt`**
 
-Adobe Target 統合で使用されます。 現在認定されているすべてのテストを表します。 形式は次のとおりです。`TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`
+Adobe Target 統合で使用されます。 現在、適格となっているすべてのテストを表します。 形式は次のとおりです。`TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`
 
 {{cja-df-post}}
 
@@ -1206,7 +1189,7 @@ Adobe Target 統合で使用されます。 現在認定されているすべて
 
 +++**`tnt_action`**
 
-Adobe Target 統合で使用されます。 ヒットが認定されるすべてのテストを表します。
+Adobe Target 統合で使用されます。 ヒットが対象となったすべてのテストを表します。
 
 {{cja-df-post}}
 
@@ -1472,7 +1455,7 @@ Day パートのストリーミングメディアサービスディメンショ�
 
 +++**`videogenre`**
 
-ジャンル別ストリーミングメディアサービスディメンション。 このディメンションでは、コンマで区切られた複数の値が同じヒットに許可されます。
+ジャンル別ストリーミングメディアサービスディメンション。 このディメンションでは、コンマで区切られた複数の値を同じヒットに含めることができます。
 
 {{cja-df-post}}
 
@@ -1576,13 +1559,13 @@ Errors streaming media services ディメンション。
 
 +++**`videoqoeextneralerrors`**
 
-ストリーミングメディアサービスディメンションの外部エラーID。 このディメンションでは、複数の値が同じヒットに許可されます。
+ストリーミングメディアサービスディメンションの外部エラーID。 このディメンションでは、複数の値を同じヒットに含めることができます。
 
 +++
 
 +++**`videoqoeplayersdkerrors`**
 
-Player SDK エラーID ストリーミングメディアサービスディメンション。 このディメンションでは、複数の値が同じヒットに許可されます。
+Player SDK エラーID ストリーミングメディアサービスディメンション。 このディメンションでは、複数の値を同じヒットに含めることができます。
 
 {{cja-df-post}}
 
@@ -1666,7 +1649,7 @@ Player SDK エラーID ストリーミングメディアサービスディメン
 
 +++**`visid_timestamp`**
 
-訪問者 ID が新しく生成された場合は、訪問者 ID が生成された時刻の UNIX® 時間でのタイムスタンプを示します。
+訪問者 ID が新しく生成された場合は、訪問者 ID が生成された時刻の UNIX® 時刻のタイムスタンプを示します。
 
 +++
 

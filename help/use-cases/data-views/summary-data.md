@@ -6,25 +6,15 @@ feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 TQID: https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 4858
-ht-degree: 16%
+source-wordcount: 5045
+ht-degree: 15%
 
 ---
 
@@ -34,7 +24,7 @@ ht-degree: 16%
 
 - [Experience Platformに概要データやその他のデータソースを](#ingest)取り込みます。
 - 概要データおよびその他のデータソース用に[接続](#connection)を設定します。
-- データソースを結合するように[&#x200B; データビュー](#data-view)を設定します。
+- データソースを結合するように[ データビュー](#data-view)を設定します。
 - 組み合わせたデータを[Workspace](#workspace)でレポートし、分析します。
 
 ユースケースは、サマリーデータ、イベントデータ、ルックアップデータのサンプルデータを提供します。 すべてのデータにはランダムな値が含まれています。
@@ -309,7 +299,7 @@ Customer Journey Analyticsで概要データを使用するには、レポート
 
 Experience Platformでサマリースキーマを作成するには：
 
-1. ![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Experience Platform]**&#x200B;を選択します。
+1. ![ アプリ ](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Experience Platform]**&#x200B;を選択します。
 1. 左側のパネルから「**[!UICONTROL スキーマ]**」を選択します。
 1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL スキーマの作成]**&#x200B;を選択します。
 1. 「**[!UICONTROL スキーマを作成]**」ダイアログで「**[!UICONTROL 手動]**」を選択します。 次に、**[!UICONTROL Select]**&#x200B;を使用して続行します。
@@ -358,7 +348,7 @@ Experience Platformに概要データを保存するには、まずデータセ�
 
 データセットを作成するには：
 
-1. ![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Experience Platform]**&#x200B;を選択します。
+1. ![ アプリ ](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Experience Platform]**&#x200B;を選択します。
 1. 左側のパネルから「**[!UICONTROL データセット]**」を選択します。
 1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL データセットを作成]**&#x200B;を選択します。
 1. **[!UICONTROL データセット]**/**[!UICONTROL データセットを作成]**&#x200B;画面で、**[!UICONTROL スキーマからデータセットを作成]**&#x200B;を選択します。
@@ -372,7 +362,7 @@ Experience Platformに概要データを保存するには、まずデータセ�
 
 このデータセットにサンプルデータをアップロードするには：
 
-1. ![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Experience Platform]**&#x200B;を選択します。
+1. ![ アプリ ](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Experience Platform]**&#x200B;を選択します。
 1. 左側のパネルから「**[!UICONTROL ワークフロー]**」を選択します。
    1. **[!UICONTROL ワークフロー]**&#x200B;画面の&#x200B;**[!UICONTROL データ取り込み]** オプションから&#x200B;**[!UICONTROL CSVをXDM スキーマ]**&#x200B;にマッピングを選択します。
    1. 「**[!UICONTROL CSVをXDM スキーマにマッピング]**」パネルから「**[!UICONTROL Launch]**」を選択します。
@@ -385,11 +375,11 @@ Experience Platformに概要データを保存するには、まずデータセ�
    1. **[!UICONTROL データ形式]**&#x200B;と&#x200B;**[!UICONTROL 区切り]**&#x200B;がサンプルデータに正しい値を持っていることを確認します。 例えば、**[!UICONTROL 区切り]**&#x200B;を&#x200B;**[!UICONTROL データ形式]**&#x200B;として、**[!UICONTROL ,]**&#x200B;を&#x200B;**[!UICONTROL 区切り]**&#x200B;として指定します。
    1. 概要データのサンプル （10 レコード）が&#x200B;**[!UICONTROL サンプルデータ]**&#x200B;に表示されます。
    1. 「**[!UICONTROL 次へ]**」を選択します。
-1. **[!UICONTROL ワークフロー]**/**[!UICONTROL CSVをXDM スキーマにマッピング]** ウィザードの&#x200B;**[!UICONTROL マッピング]**&#x200B;手順で次の操作を行います。
-   ![&#x200B; データセットマッピングの例](../assets/example-dataset-mapping.png)
+1. **[!UICONTROL ワークフロー]**/**[!UICONTROL CSVをXDM スキーマにマッピング]** ウィザードの&#x200B;**[!UICONTROL マッピング]**手順で次の操作を行います。
+   ![ データセットマッピングの例](../assets/example-dataset-mapping.png)
    1. **[!UICONTROL Source Data]**&#x200B;のすべてのデータフィールドが、スキーマ内の対応する&#x200B;**[!UICONTROL ターゲットフィールド]**&#x200B;に正しくマッピングされているかどうかを確認します。 サンプルデータの場合、スキーマのフィールドにサンプルデータのフィールド名と同様の名前を付けたため、エラーはレポートされません。 それ以外の場合は、この画面を使用してマッピングを修正できます。
-   1. オプションで、![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg) **[!UICONTROL 検証]**&#x200B;を選択して、データを（もう1回検証）できます。
-   1. 必要に応じて、![&#x200B; プレビュー](/help/assets/icons/Preview.svg) **[!UICONTROL データのプレビュー]**&#x200B;を選択して、データセットに読み込まれたデータのプレビューを含むダイアログを開くことができます。
+   1. オプションで、![ ギア ](/help/assets/icons/Gear.svg) **[!UICONTROL 検証]**&#x200B;を選択して、データを（もう1回検証）できます。
+   1. 必要に応じて、![ プレビュー](/help/assets/icons/Preview.svg) **[!UICONTROL データのプレビュー]**&#x200B;を選択して、データセットに読み込まれたデータのプレビューを含むダイアログを開くことができます。
    1. 「**[!UICONTROL 完了]**」を選択します。
 
 **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]**&#x200B;では、アップロードのステータスが表示されます。 更新して、アップロードの更新を確認します。 成功すると、サンプルデータがExperience Platformに読み込まれます。
@@ -402,7 +392,7 @@ Experience Platformに概要データを保存するには、まずデータセ�
 Customer Journey Analyticsでサンプルデータを使用するには、Experience Platformのサンプルサマリーデータデータセットを含むコネクションを作成します。
 
 
-1. ![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
+1. ![ アプリ ](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
 1. 上部メニューの&#x200B;**[!UICONTROL 接続]**&#x200B;を選択し、オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から選択します。
 1. 「**[!UICONTROL 新しい接続を作成]**」を選択します。
 1. **[!UICONTROL 接続]** > **[!UICONTROL 名称未設定の接続]**&#x200B;で：
@@ -443,11 +433,11 @@ Customer Journey Analyticsでサンプルデータを使用するには、Experi
 
 しばらくしたら、データセットのデータがCustomer Journey Analyticsに正しく読み込まれていることを確認します。
 
-1. ![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
+1. ![ アプリ ](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
 1. 上部メニューの&#x200B;**[!UICONTROL 接続]**&#x200B;を選択し、オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から選択します。
 1. 接続を選択します。例：**[!UICONTROL 概要データを使用した接続例]**。
 1. **[!UICONTROL 接続]** > **[!UICONTROL 概要データを使用した接続の例]**&#x200B;の詳細で、適切な日付範囲を選択します。
-   1. ![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を選択し、**[!UICONTROL 過去7日間]**&#x200B;を選択します。
+   1. ![ カレンダー](/help/assets/icons/Calendar.svg)を選択し、**[!UICONTROL 過去7日間]**&#x200B;を選択します。
    1. 「**[!UICONTROL 適用]**」を選択します。
 
 **[!UICONTROL データセット]**&#x200B;のリストで、**[!UICONTROL 追加されたレコード]**&#x200B;列の値は、データセットのデータがCustomer Journey Analyticsの一部であることを確認する必要があります。
@@ -458,7 +448,7 @@ Customer Journey Analyticsでサンプルデータを使用するには、Experi
 
 Workspaceで正しいデータをレポートできるようにするには、関連する指標とディメンションを含むデータビューを作成します。
 
-1. ![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
+1. ![ アプリ ](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
 1. 上部メニューで「**[!UICONTROL データビュー]**」を選択し、オプションで「**[!UICONTROL データ管理]**」から選択します。
 1. 「**[!UICONTROL 新しいデータ表示を作成]**」を選択します。
 1. **[!UICONTROL データビュー]**&#x200B;で、ウィザード画面を開いてデータビューを設定します。
@@ -485,7 +475,7 @@ Workspaceで正しいデータをレポートできるようにするには、�
          |---|---|---|---|
          | 広告グループ （ルックアップ） | 参照データデータセットの例 | 文字列 | *_tenant*.ad_group |
          | 広告グループ | 概要データデータセットの例 | 文字列 | *_tenant*.ad_group |
-         | キャンペーン Id | 概要データデータセットの例 | 文字列 | *_tenant*.campaign_id |
+         | キャンペーン ID | 概要データデータセットの例 | 文字列 | *_tenant*.campaign_id |
          | キャンペーン名（ルックアップ） | 参照データデータセットの例 | 文字列 | *_tenant*.campaign_name |
          | キャンペーン名 | 概要データデータセットの例 | 文字列 | *_tenant*.campaign_name |
          | ネットワーク | 概要データデータセットの例 | 文字列 | *_tenant*.network |
@@ -496,17 +486,17 @@ Workspaceで正しいデータをレポートできるようにするには、�
 
       1. 「**[!UICONTROL ディメンション]**」リストで「**[!UICONTROL トラッキングコード（イベント）]**」ディメンションを選択します。 コンポーネントパネルで、次の操作を行います。
 
-         ![&#x200B; トラッキングコードの概要データ &#x200B;](../assets/tracking-code-summary-data.png)
+         ![ トラッキングコードの概要データ ](../assets/tracking-code-summary-data.png)
          1. 展開![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 概要データグループ]**。
          1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
          1. 「**[!UICONTROL Dimension]**」ドロップダウンメニューから「**[!UICONTROL Campaign Id]**」を選択します。 このステップにより、イベントデータと概要データがレポート用に適切に組み合わされます。
-         1. 必要に応じて、レポート **で**&#x200B;非表示を有効にできます。 [!UICONTROL &#x200B; レポートで非表示]すると、選択したディメンション （[!UICONTROL &#x200B; キャンペーン Id]）がAnalysis Workspaceやその他のCustomer Journey Analytics レポートツールで非表示になります。 このオプションを有効にしている場合は、次のオプションを確認できます。
+         1. 必要に応じて、レポート ]**で**[!UICONTROL &#x200B;非表示を有効にできます。 [!UICONTROL  レポートで非表示]すると、選択したディメンション （[!UICONTROL  キャンペーン Id]）がAnalysis Workspaceやその他のCustomer Journey Analytics レポートツールで非表示になります。 このオプションを有効にしている場合は、次のオプションを確認できます。
             1. **[!UICONTROL ディメンション]** リストで&#x200B;**[!UICONTROL キャンペーン ID]** ディメンションを選択します。
-            1. **[!UICONTROL コンポーネント設定]**&#x200B;のレポート **の**&#x200B;非表示コンポーネントが自動的に有効になりました。
+            1. **[!UICONTROL コンポーネント設定]**&#x200B;のレポート ]**の**[!UICONTROL &#x200B;非表示コンポーネントが自動的に有効になりました。
 
       1. 新しい派生フィールド（例：`Campaign Name (Lookup Derived Field)`）を作成して、サンプル検索データデータセットのCampaign Name （Lookup） ディメンションを使用してWorkspaceでレポートできることを確認します。
 
-         ![&#x200B; キャンペーン名](../aa-data/../assets/summary-derived-field.png)の派生フィールド
+         ![ キャンペーン名](../aa-data/../assets/summary-derived-field.png)の派生フィールド
 
          1. **[!UICONTROL 値]**&#x200B;の&#x200B;**[!UICONTROL campaign_id]**&#x200B;を選択します。
          1. 「**[!UICONTROL ルックアップデータセット]**」ドロップダウンメニューから「**[!UICONTROL ルックアップデータデータセットの例]**」を選択します。
@@ -518,7 +508,7 @@ Workspaceで正しいデータをレポートできるようにするには、�
 
       1. **[!UICONTROL ディメンション]** リストで&#x200B;**[!UICONTROL キャンペーン名（ルックアップ）]** ディメンションを選択します。 コンポーネントパネルで、次の操作を行います。
 
-         ![派生フィールドの概要データ グループ &#x200B;](../assets/derived-field-summary-data-group.png)
+         ![派生フィールドの概要データ グループ ](../assets/derived-field-summary-data-group.png)
 
          1. 展開![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 概要データグループ]**。
          1. **[!UICONTROL グループ化を作成]**&#x200B;を有効にします。
@@ -526,7 +516,7 @@ Workspaceで正しいデータをレポートできるようにするには、�
 
       1. **[!UICONTROL 指標]** リストから&#x200B;**[!UICONTROL 収益]**&#x200B;指標を選択します。 コンポーネントパネルで、次の操作を行います。
 
-         ![収益の概要データ &#x200B;](../assets/revenue-summary-data.png)
+         ![収益の概要データ ](../assets/revenue-summary-data.png)
          1. 展開![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 属性]**。
             1. **[!UICONTROL 属性モデル]** ドロップダウンメニューから![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**&#x200B;を選択します。
             1. 「**[!UICONTROL ルックバックウィンドウ]**」ドロップダウンメニューから「**[!UICONTROL 30日]**」を選択します。
@@ -536,7 +526,7 @@ Workspaceで正しいデータをレポートできるようにするには、�
 
       1. **[!UICONTROL 指標]** リストから&#x200B;**[!UICONTROL 注文数]**&#x200B;指標を選択します。 コンポーネントパネルで、次の操作を行います。
 
-         ![注文概要データ &#x200B;](../assets/orders-summary-data.png)
+         ![注文概要データ ](../assets/orders-summary-data.png)
          1. 展開![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 属性]**。
             1. **[!UICONTROL 属性モデル]** ドロップダウンメニューから![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]**&#x200B;を選択します。
             1. 「**[!UICONTROL ルックバックウィンドウ]**」ドロップダウンメニューから「**[!UICONTROL 30日]**」を選択します。
@@ -557,13 +547,13 @@ Workspaceで正しいデータをレポートできるようにするには、�
 
 概要データをレポートするには、Analysis Workspaceで新しいプロジェクトを作成します。
 
-1. ![&#x200B; アプリ &#x200B;](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
+1. ![ アプリ ](/help/assets/icons/Apps.svg)のアプリスイッチャーから&#x200B;**[!UICONTROL Customer Journey Analytics]**&#x200B;を選択します。
 1. 上部メニューから「**[!UICONTROL Workspace]**」を選択します。
 1. 「**[!UICONTROL プロジェクトを作成]**」を選択します。
 1. ダイアログから「**[!UICONTROL 空白のWorkspace プロジェクト]**」を選択して、空白のWorkspace プロジェクトを作成します。
 1. 「**[!UICONTROL 作成]**」を選択します。
 
-空のカンバスが表示され、[!UICONTROL &#x200B; フリーフォーム &#x200B;] パネルが表示されます。空の[!UICONTROL &#x200B; フリーフォームテーブル &#x200B;]で構成されています。
+空のカンバスが表示され、[!UICONTROL  フリーフォーム ] パネルが表示されます。空の[!UICONTROL  フリーフォームテーブル ]で構成されています。
 
 1. パネルで選択したデータビューが、サマリーデータの設定を含むデータビューを参照していることを確認します。 例：**[!UICONTROL 概要データを使用したデータビューの例。]**
 1. 日付範囲が、レポート対象のデータに対して有効であることを確認します。 例：**[!UICONTROL 過去2か月]**。
@@ -581,13 +571,13 @@ Workspaceで正しいデータをレポートできるようにするには、�
    1. **[!UICONTROL Name]**&#x200B;に`Cost per Impression`を指定します。
    1. **[!UICONTROL 形式]**&#x200B;の&#x200B;**[!UICONTROL 通貨]**&#x200B;を選択します。
    1. **[!UICONTROL 小数点以下桁]**&#x200B;の`4`を指定してください。
-   1. ![&#x200B; イベント &#x200B;](/help/assets/icons/Event.svg) **[!UICONTROL コスト]** **[!UICONTROL ÷]** **[!UICONTROL インプレッション]**&#x200B;を&#x200B;**[!UICONTROL 定義]**&#x200B;として使用します。
+   1. ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL コスト]** **[!UICONTROL ÷]** **[!UICONTROL インプレッション]**&#x200B;を&#x200B;**[!UICONTROL 定義]**&#x200B;として使用します。
    1. 「**[!UICONTROL 保存]**」を選択します。
 1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]**&#x200B;を選択して、別の新しい計算指標を追加します。
    1. **[!UICONTROL Name]**&#x200B;に`Return on Ad Spend`を指定します。
    1. **[!UICONTROL 形式]**&#x200B;の&#x200B;**[!UICONTROL 通貨]**&#x200B;を選択します。
    1. **[!UICONTROL 小数点以下桁]**&#x200B;の`2`を選択します。
-   1. ![&#x200B; イベント &#x200B;](/help/assets/icons/Event.svg) **[!UICONTROL 収益（ラストタッチ | 30日間）]** **[!UICONTROL −]** ![&#x200B; イベント &#x200B;](/help/assets/icons/Event.svg) **[!UICONTROL コスト]**&#x200B;を&#x200B;**[!UICONTROL 定義]**&#x200B;として使用します。
+   1. ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL 収益（ラストタッチ | 30日間）]** **[!UICONTROL −]** ![ イベント ](/help/assets/icons/Event.svg) **[!UICONTROL コスト]**&#x200B;を&#x200B;**[!UICONTROL 定義]**&#x200B;として使用します。
    1. 「**[!UICONTROL 保存]**」を選択します。
 
 計算指標をレポートに追加します。
@@ -609,7 +599,7 @@ Workspaceで正しいデータをレポートできるようにするには、�
 1. 複製されたビジュアライゼーションの名前を`Summary Data Report (using Campaign Name)`に変更します。
 1. ![切り替え](/help/assets/icons/Switch.svg)、**[!UICONTROL トラッキングコード （イベント）]** ディメンションを&#x200B;**[!UICONTROL キャンペーン名（ルックアップ）]** ディメンションに置き換えます。
 
-作成した派生フィールドと、キャンペーン名（ルックアップ）の概要データグループコンポーネント設定により、キャンペーン名（ルックアップ）で正しくレポートできます。 [&#x200B; データビュー](#data-view)を参照してください。
+作成した派生フィールドと、キャンペーン名（ルックアップ）の概要データグループコンポーネント設定により、キャンペーン名（ルックアップ）で正しくレポートできます。 [ データビュー](#data-view)を参照してください。
 
 最終的なプロジェクトは、次のようになります。
 

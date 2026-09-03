@@ -5,15 +5,10 @@ role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
 TQID: https://experienceleague.adobe.com/9BgN7yumKsO-0--9-VFhpg7rPKJfNWtW7dXHWANFmtM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 214
@@ -25,7 +20,7 @@ ht-degree: 85%
 
 注釈の表示場所と、1日または日付範囲のどちらに表示されるかによって、注釈の表示が少し異なります。
 
-## 折れ線グラフまたは表で注釈を表示
+## 折れ線グラフまたはテーブルで注釈を表示
 
 | ビジュアライゼーションの<br/>タイプ | 説明 |
 | --- | --- |
@@ -37,6 +32,6 @@ ht-degree: 85%
 
 ## PDF での注釈の表示
 
-プロジェクトを PDF としてダウンロードするか、プロジェクトを PDF として送信すると、注釈は「注釈の概要」セクションに PDF で要約されます。
+プロジェクトを PDF としてダウンロードするか、PDF として送信すると、注釈は PDF の「注釈の概要」セクションにまとめて表示されます。
 
 ![注釈の説明を示す PDF ファイルのハイライト表示。](assets/annotations-pdf.png)

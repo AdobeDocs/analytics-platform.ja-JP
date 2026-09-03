@@ -7,18 +7,11 @@ exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 autotag-review: '2026-05-19T08:54:05.098Z'
 TQID: 'https://experienceleague.adobe.com/xyba0dyfrOJY3nkB8-MpG9s6Q1yuqC8BrkHgSJCMXrg'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1129
@@ -45,7 +38,7 @@ Customer Journey Analytics アーキテクチャの概要を以下に示しま�
 * 接続で定義したデータセットから使用可能なフィールドに基づいて、[データビュー](/help/data-views/data-views.md)でディメンション ![ディメンション](/help/assets/icons/Dimensions.svg) と指標 ![イベント](/help/assets/icons/Event.svg) を定義および設定します。
 * データビューのディメンションと指標に基づいて、[プロジェクト](/help/analysis-workspace/home.md)でレポート ![ViewTable](/help/assets/icons/ViewTable.svg) やビジュアライゼーション（折れ線グラフ ![折れ線グラフ](/help/assets/icons/GraphTrend.svg) や面グラフ ![面グラフ](/help/assets/icons/GraphAreaStacked.svg) など）を作成します。
 
-アーキテクチャのデータセットのソースには、次のように様々なものがあります。
+アーキテクチャ内のデータセットは、次のように様々なソースから取り込まれます。
 
 * バッチデータ
 
@@ -86,13 +79,13 @@ Customer Journey Analytics アーキテクチャの概要を以下に示しま�
 
 ### Adobe Experience Platform Web SDK の使用
 
-アドビのテクノロジーを使用して web サイトを分析し、別のソリューションから移行するか、ユーザーの行動をトラッキングします。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
+アドビテクノロジーを使用して web サイトを分析し、別のソリューションから移行するか、ユーザーの行動のトラッキングを開始します。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
 詳しくは、[Adobe Experience Platform Web SDK を介したデータの取り込みと使用](./aepwebsdk.md)を参照してください。
 
 ### Adobe Experience Platform Mobile SDK の使用
 
-アドビのテクノロジーを使用してモバイルアプリを分析し、別のソリューションから移行するか、アプリの使用開始時からユーザーの行動をトラッキングします。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
+アドビテクノロジーを使用してモバイルアプリを分析し、別のソリューションから移行するか、アプリ内でユーザーの行動のトラッキングをゼロから開始します。 実装に関するアドビのベストプラクティス（Adobe Experience Platform SDK と Edge ネットワークを使用）に従い、データを取り込みます。 次に、取り込んだデータを、Customer Journey Analytics 内の他のチャネルやデータソースからのデータと使用し、組み合わせて、分析できます。
 
 詳しくは、[Adobe Experience Platform Mobile SDK を介したデータの取り込みと使用](./aepmobilesdk.md)を参照してください。
 
@@ -128,5 +121,5 @@ Experience Platform で単一のデータセットのみを必要とし、エク
 
 >[!MORELIKETHIS]
 >
->ブログ：[Adobe Customer Journey Analytics でのデータ処理と取り込みについて](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=ja)
+>ブログ：[Adobe Customer Journey Analytics でのデータ処理と取り込みについて](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

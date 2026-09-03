@@ -7,27 +7,11 @@ exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 autotag-review: '2026-05-19T11:02:42.011Z'
 TQID: 'https://experienceleague.adobe.com/k0nhhAy1CuLa7bEhu1XGqjsQdn9nEAnGb1LbMMeiCLM'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: f3ca85c1-72de-4df2-97ed-05753cd77c47id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 2842
@@ -38,7 +22,7 @@ ht-degree: 1%
 
 # 派生フィールドガイドライン
 
-Customer Journey Analytics [派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を使用すると、ソースデータセットを変更することなく、クエリ時にデータを変換、分類、エンリッチできます。 そうした柔軟性を確保できなければ、複雑さ、パフォーマンスの問題、保守のオーバーヘッドを招く可能性があります。
+Customer Journey Analytics [派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を使用すると、ソースデータセットを変更することなく、クエリ時にデータを変換、分類、エンリッチできます。 そうした柔軟性を確保できなければ、複雑さ、パフォーマンスの問題、保守のオーバーヘッドを招く可能性があります。
 
 この記事では、派生フィールドを操作するためのガイドライン（ベストプラクティス、ガードレール、一般的な落とし穴）について説明します。 対象となるオーディエンスは、データアーキテクト、製品管理者、アナリストで、次のことをおこなう必要があります。
 
@@ -92,7 +76,7 @@ Customer Journey Analytics [派生フィールド &#x200B;](/help/data-views/der
 
 **レコメンデーション**
 
-* ページ全体のURLや、同様にカーディナリティの高いコンポーネントを、データビューのデフォルトセグメントで直接参照することを避ける。 重いURL ロジック（複雑な[&#x200B; ケース When](/help/data-views/derived-fields/derived-fields.md#case-when)、[正規表現Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace)、複数の文字列関数）を[&#x200B; データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)または[&#x200B; ルックアップデータセット &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)にプッシュすると、結果として得られる分類は、よりシンプルで基数の低い次元に到達します。
+* ページ全体のURLや、同様にカーディナリティの高いコンポーネントを、データビューのデフォルトセグメントで直接参照することを避ける。 重いURL ロジック（複雑な[ ケース When](/help/data-views/derived-fields/derived-fields.md#case-when)、[正規表現Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace)、複数の文字列関数）を[ データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)または[ ルックアップデータセット ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)にプッシュすると、結果として得られる分類は、よりシンプルで基数の低い次元に到達します。
 * 正規化されたページ名、サイトセクション、事前分類されたURL グループなど、基数の低いキーを優先する。
 * 既存のデータビューのデフォルトセグメントと派生フィールドを定期的に監査して、基数の高いディメンション（ページ URL、キャンペーン ID、生のクエリ文字列）への参照を確認し、正規化またはグループ化されたキーにリファクタリングします。
 
@@ -105,13 +89,13 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
 **パターン**
 
 * 非常に大きな[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)は、複雑な&#x200B;**[!UICONTROL If]**&#x200B;および&#x200B;**[!UICONTROL Else If]** チェーンで機能します。
-  * 多くの条件（例：20を超える演算子）またはディープネスティング（ネストされた[&#x200B; ケースの3または4 レベルを超える ケース When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;および&#x200B;**[!UICONTROL その他If]** ロジック）。
+  * 多くの条件（例：20を超える演算子）またはディープネスティング（ネストされた[ ケースの3または4 レベルを超える ケース When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]**&#x200B;および&#x200B;**[!UICONTROL その他If]** ロジック）。
   * 同じフィールドで異なる値を持つ条件を繰り返しました。
 * 定数文字列のマッチングを繰り返しました。
 
   +++ 例
 
-  ![&#x200B; ベストプラクティス – 一致する繰り返し定数文字列の例](assets/best-practices-over-complex-case-when.png)
+  ![ ベストプラクティス – 一致する繰り返し定数文字列の例](assets/best-practices-over-complex-case-when.png)
 
   +++
 
@@ -124,7 +108,7 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
 **レコメンデーション**
 
 * 複数の派生フィールドに分割する： 例えば、すべてを1つの巨大なルールにまとめるのではなく、*キャンペーン正規化* （一貫性のないキャンペーン識別子を規範的な値にマッピング）をチャネルグループ化から分離します。
-* ルックアップデータセットの使用： 多くの&#x200B;**[!UICONTROL If Value _value_条件&#x200B;_criterion_次に、_value_をvalue]**&#x200B;に設定します。この条件は、長い[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) チェーンを使用する代わりに、[Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)関数と組み合わせた[&#x200B; ルックアップデータセット &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)としてより適切に実装されます。
+* ルックアップデータセットの使用： 多くの&#x200B;**[!UICONTROL If Value _value_条件&#x200B;_criterion_次に、_value_をvalue]**&#x200B;に設定します。この条件は、長い[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) チェーンを使用する代わりに、[Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)関数と組み合わせた[ ルックアップデータセット ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)としてより適切に実装されます。
 * データビューコンポーネントフィルターを使用します。 ロジックの一部が単純に不正な値を除外する場合は、そのロジックを派生フィールドに埋め込む代わりに、データビューコンポーネントレベルで[include exclude](/help/data-views/component-settings/include-exclude-values.md)を使用します。
 
 ## 誤った使用
@@ -148,7 +132,7 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
     +++
 
     代わりに、データビューのディメンションで[値のグループ化](/help/data-views/component-settings/value-bucketing.md)を使用してください。
-  * [次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)でコーディングされた永続性またはアトリビューションロジック、またはデータビュー[&#x200B; アトリビューション &#x200B;](/help/data-views/component-settings/attribution.md)と[有効期限](/help/data-views/component-settings/persistence.md)の設定で十分な手動シーケンスロジック。
+  * [次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)でコーディングされた永続性またはアトリビューションロジック、またはデータビュー[ アトリビューション ](/help/data-views/component-settings/attribution.md)と[有効期限](/help/data-views/component-settings/persistence.md)の設定で十分な手動シーケンスロジック。
   * 条件の下にある既存の指標を単純にカウントする派生指標。
 
     +++ 例
@@ -167,7 +151,7 @@ Customer Journey Analyticsでは、派生フィールドごとに明示的な[�
 
 **レコメンデーション**
 
-* トリミング/小文字：マルチステップの変換を組み合わせる必要がない限り、[部分文字列](/help/data-views/component-settings/substring.md)および[&#x200B; ビヘイビアー](/help/data-views/component-settings/behavior.md) コンポーネントの設定を使用します。
+* トリミング/小文字：マルチステップの変換を組み合わせる必要がない限り、[部分文字列](/help/data-views/component-settings/substring.md)および[ ビヘイビアー](/help/data-views/component-settings/behavior.md) コンポーネントの設定を使用します。
 * 値の除外：派生フィールドではなく、データビューコンポーネントレベルの指標またはディメンション値に[除外値を含める](/help/data-views/component-settings/include-exclude-values.md)を使用します。
 * 属性と永続性：[次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)またはその他のシーケンシャルロジックを使用して派生フィールドでディメンションをシミュレートする代わりに、データビュー[永続性](/help/data-views/component-settings/persistence.md)設定（**[!UICONTROL 配分モデル]**&#x200B;および&#x200B;**[!UICONTROL 有効期限]**）を使用します。
 * 数値のグループ化：派生フィールドを数値のままにし、データビューで、[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) チェーンのハードコーディング範囲ラベルではなく、上部にグループ化されたディメンションを作成できるようにします。
@@ -206,7 +190,7 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 >[!NOTE]
 >
->上流の簡素化を検討する：[&#x200B; データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)、[&#x200B; ルックアップデータセット &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)、または[分類](/help/data-views/derived-fields/derived-fields.md#classify)などの派生フィールド関数を使用して、類似のマーケティングチャネルルールを統合し、[&#x200B; ケース When](/help/data-views/derived-fields/derived-fields.md#case-when) ロジックの演算子の数を減らします。 また、チャネル分類ロジックで参照される基数の高いフィールドの数を制限します（例：多くの異なるクエリパラメーターキー）。これらのフィールドでは、基数とクエリコストの両方が増加します。
+>上流の簡素化を検討する：[ データ準備](https://experienceleague.adobe.com/ja/docs/experience-platform/data-prep/home)、[ ルックアップデータセット ](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)、または[分類](/help/data-views/derived-fields/derived-fields.md#classify)などの派生フィールド関数を使用して、類似のマーケティングチャネルルールを統合し、[ ケース When](/help/data-views/derived-fields/derived-fields.md#case-when) ロジックの演算子の数を減らします。 また、チャネル分類ロジックで参照される基数の高いフィールドの数を制限します（例：多くの異なるクエリパラメーターキー）。これらのフィールドでは、基数とクエリコストの両方が増加します。
 
 **パターン**
 
@@ -233,8 +217,8 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 **パターン**
 
-* ルックアップデータセットをフィードするイベントまたはプロファイルフィールドに対する[&#x200B; ルックアップ &#x200B;](/help/data-views/derived-fields/derived-fields.md#lookup)関数。
-* 前の[小文字](/help/data-views/derived-fields/derived-fields.md#lowercase)、[&#x200B; トリム &#x200B;](/help/data-views/derived-fields/derived-fields.md#trim)、または[正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace)は、キーを標準化しません。
+* ルックアップデータセットをフィードするイベントまたはプロファイルフィールドに対する[ ルックアップ ](/help/data-views/derived-fields/derived-fields.md#lookup)関数。
+* 前の[小文字](/help/data-views/derived-fields/derived-fields.md#lowercase)、[ トリム ](/help/data-views/derived-fields/derived-fields.md#trim)、または[正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace)は、キーを標準化しません。
 * 共通の候補：URL、キャンペーン ID、メール、アカウント ID。
 
 **リスク診断：データ品質、高いメンテナンス**
@@ -243,7 +227,7 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 **レコメンデーション**
 
-* 大文字または小文字を保持する文書化された理由がない限り、[&#x200B; ルックアップ &#x200B;](/help/data-views/derived-fields/derived-fields.md#lookup)関数の前に[小文字](/help/data-views/derived-fields/derived-fields.md#lowercase)関数と[&#x200B; トリム &#x200B;](/help/data-views/derived-fields/derived-fields.md#trim)関数を追加します。
+* 大文字または小文字を保持する文書化された理由がない限り、[ ルックアップ ](/help/data-views/derived-fields/derived-fields.md#lookup)関数の前に[小文字](/help/data-views/derived-fields/derived-fields.md#lowercase)関数と[ トリム ](/help/data-views/derived-fields/derived-fields.md#trim)関数を追加します。
 * 複数の変換が既に連結されている場合は、その順序を確認します。まず正規化してから検索します。
 
 ## Regexの誤用またはオーバーリーチ
@@ -252,13 +236,13 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 **パターン**
 
-* [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace)または正規表現ベースの条件では、幅広いパターンが使用されます。単純な[&#x200B; ケース &#x200B;](/help/data-views/derived-fields/derived-fields.md#case-when)関数の&#x200B;**[!UICONTROL 次が]**&#x200B;または&#x200B;**[!UICONTROL 次で始まる]**&#x200B;の方が良い代替案です。
+* [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace)または正規表現ベースの条件では、幅広いパターンが使用されます。単純な[ ケース ](/help/data-views/derived-fields/derived-fields.md#case-when)関数の&#x200B;**[!UICONTROL 次が]**&#x200B;または&#x200B;**[!UICONTROL 次で始まる]**&#x200B;の方が良い代替案です。
 
   +++ 例
 
-  ![&#x200B; ベストプラクティス - Regex Replace 1](assets/best-practices-regex-replace-1.png)
+  ![ ベストプラクティス - Regex Replace 1](assets/best-practices-regex-replace-1.png)
 
-  ![&#x200B; ベストプラクティス - Regex Replace 1](assets/best-practices-regex-replace-2.png)
+  ![ ベストプラクティス - Regex Replace 1](assets/best-practices-regex-replace-2.png)
 
   +++
 
@@ -273,7 +257,7 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 **レコメンデーション**
 
 * [正規表現](/help/data-views/derived-fields/derived-fields.md#regex-replace)ではなく、標準URL要素（ドメイン、パス、クエリパラメーター）に[URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse)を使用します。
-* 単純なパターンチェックの場合は、[正規表現](/help/data-views/derived-fields/derived-fields.md#regex-replace)の代わりに、**[!UICONTROL Contains]**&#x200B;の[&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)、**[!UICONTROL Starts with]**&#x200B;または&#x200B;**[!UICONTROL Ends with]** logicを使用してCase Whenを使用します。
+* 単純なパターンチェックの場合は、[正規表現](/help/data-views/derived-fields/derived-fields.md#regex-replace)の代わりに、**[!UICONTROL Contains]**&#x200B;の](/help/data-views/derived-fields/derived-fields.md#case-when)、**[!UICONTROL Starts with]**&#x200B;または&#x200B;**[!UICONTROL Ends with]** logicを使用して[Case Whenを使用します。
 * 単純なパターンに対して、複数のネストされたグループまたは代替を使用する正規表現にフラグを付けます。 派生フィールド文字列関数を使用して置き換えることができる正規表現などがあります。
 
 ## 派生フィールドの計算指標スタイルロジック
@@ -290,9 +274,9 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
   +++ 例
 
-  ![&#x200B; ベストプラクティス – 利益計算](assets/best-practices-profit.png)
+  ![ ベストプラクティス – 利益計算](assets/best-practices-profit.png)
 
-  ![&#x200B; ベストプラクティス – インプレッションごとの注文](assets/best-practices-orders-impressions.png)。
+  ![ ベストプラクティス – インプレッションごとの注文](assets/best-practices-orders-impressions.png)。
 
   +++
 
@@ -338,7 +322,7 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 **パターン**
 
-* 派生フィールドは、特定の[&#x200B; コンテナレベル &#x200B;](/help/getting-started/cja-b2b-concepts-features.md#containers) （イベント、セッション、またはユーザー）を暗黙的に想定していますが、
+* 派生フィールドは、特定の[ コンテナレベル ](/help/getting-started/cja-b2b-concepts-features.md#containers) （イベント、セッション、またはユーザー）を暗黙的に想定していますが、
 
   * 派生フィールドは、セッションまたは個人レベルの属性を参照しません。
   * データ ビューのセッション設定が、意図したロジックと競合しています。
@@ -349,7 +333,7 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 
 **レコメンデーション**
 
-* ロジックがセッションレベルを意図している場合：[session settings](/help/data-views/session-settings.md)が適切に設定されていることを確認し、Analysis Workspaceまたは[統合BI ツール &#x200B;](/help/data-views/bi-extension.md)でセッションスコープのコンポーネントまたはサマリーを使用することを検討します。
+* ロジックがセッションレベルを意図している場合：[session settings](/help/data-views/session-settings.md)が適切に設定されていることを確認し、Analysis Workspaceまたは[統合BI ツール ](/help/data-views/bi-extension.md)でセッションスコープのコンポーネントまたはサマリーを使用することを検討します。
 * ロジックが個人レベルを対象としている場合：プロファイルデータセットまたはルックアップデータセットを使用し、派生フィールド内でこれらのデータセットを参照します。
 * Analysis Workspaceのセッションスコープのセグメントと個人スコープのセグメントのどちらが、派生フィールドよりも単純に同じ結果を得られるかを評価します。
 
@@ -361,7 +345,7 @@ Customer Journey Analyticsでは、データビューレベルで数値フィー
 >
 >可能であれば、複雑な派生フィールド内の基数の高いフィールドへの依存を減らします（例：正規化されたキーまたはグループ化された分類を使用）。クエリのコストと[演算子または関数の制限](/help/data-views/derived-fields/derived-fields.md#limitations)に達する可能性を制限します。
 
-カスタム顧客ジャーニー分析[&#x200B; ドキュメント &#x200B;](/help/data-views/derived-fields/derived-fields.md#limitations)派生フィールドごとの最大関数と演算子（関数タイプごとの制限を含む）**
+カスタム顧客ジャーニー分析[ ドキュメント ](/help/data-views/derived-fields/derived-fields.md#limitations)派生フィールドごとの最大関数と演算子（関数タイプごとの制限を含む）**
 
 * 派生フィールドは、多くの[Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)、[Math](/help/data-views/derived-fields/derived-fields.md#math)操作、[Split](/help/data-views/derived-fields/derived-fields.md#split)またはその他の関数を使用します。
 * 演算子の数は[文書化された制限](/help/data-views/derived-fields/derived-fields.md#limitations)に近いです（例：許可されたカウントの70% ～ 80%以上）。

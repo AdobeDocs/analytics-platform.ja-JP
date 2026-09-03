@@ -5,17 +5,10 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
 source-wordcount: 1650
@@ -31,13 +24,13 @@ ht-degree: 53%
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL 位置で分類]** | デフォルトでは、この設定は無効で、分類は静的な行項目に固定されます。 例えば、上位 3 つのページディメンション項目（ホームページ、検索結果、チェックアウト）をマーケティングチャネル別に分類するとします。 その後、プロジェクトを終了し、2 週間後に戻ります。 プロジェクトを再度開くと、トップ 3 ページが変更され、ホームページ、検索結果、チェックアウトがトップ 4 ～ 6 ページになりました。 デフォルトでは、マーケティングチャネルの内訳は、4～6行目にあるにもかかわらず、「ホームページ」、「検索結果」、「チェックアウト」の下に表示されます。<br> 対照的に、**職位による分類**&#x200B;は常に上位3つの項目を、それらが何であるかに関係なく分類します。 例に戻って参照すると、プロジェクトを再度開く際、マーケティングチャネルの分類はテーブルの上位 3 ページに関連付けられます。 また、現在、4～6 行になっているホームページ、検索結果、チェックアウトには関連付けられません。 |
+| **[!UICONTROL 位置で分類]** | デフォルトでは、この設定は無効で、分類は静的な行項目に固定されます。 例えば、上位 3 つのページディメンション項目（ホームページ、検索結果、チェックアウト）をマーケティングチャネル別に分類するとします。 その後、プロジェクトを終了し、2 週間後に戻ります。 プロジェクトを再度開くと、上位 3 ページが変更され、ホームページ、検索結果、チェックアウトは上位 4～6 ページになっています。 デフォルトでは、マーケティングチャネルの内訳は、4～6行目にあるにもかかわらず、「ホームページ」、「検索結果」、「チェックアウト」の下に表示されます。<br> 対照的に、**職位による分類**&#x200B;は常に上位3つの項目を、それらが何であるかに関係なく分類します。 例に戻って参照すると、プロジェクトを再度開く際、マーケティングチャネルの分類はテーブルの上位 3 ページに関連付けられます。 また、現在、4～6 行になっているホームページ、検索結果、チェックアウトには関連付けられません。 |
 | **[!UICONTROL 割合 (%)]** | **割合を列ごとに計算**（デフォルト）：セルに表示される割合は、列の合計に基づいて計算されます。 <br>**割合を行ごとに計算**：セル内の割合は、総計を分母として、列方向ではなく行方向に計算されます。 この計算は、割合のトレンド分析に役立ちます。 |
 | **[!UICONTROL 列の合計]** | これらの設定は、[静的な行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)に対してのみ使用できます。<br> 「**現在の行の合計として表示**」では、テーブル内の行のクライアントサイドの合計が表示されます。これは、合計で訪問回数やユーザー数などの指標の重複が排除&#x200B;*されない*&#x200B;ことを意味します。<br> 「**総計を表示**」では、サーバーサイドの合計が表示されます。これは、合計で指標の重複が排除されることを意味します。 |
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -49,7 +42,7 @@ ht-degree: 53%
 
 1. テーブルの最初の列の上部にある&#x200B;**[!UICONTROL 行]**&#x200B;の横の数字をクリックします。
 
-   表示される行数のドロップダウンメニューを表示する![&#x200B; フリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
+   表示される行数のドロップダウンメニューを表示する![ フリーフォームテーブル。 400 行が選択されています。](assets/change-row-count.gif)
 
 1. ドロップダウンメニューから、表示するテーブルの行数を選択します。
 
@@ -61,11 +54,11 @@ ht-degree: 53%
 | オプション | 説明 |
 | --- | --- |
 | **[!UICONTROL クリップボードに選択範囲をコピー]** | ビジュアライゼーションからクリップボードに選択範囲をコピーします。 |
-| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | ビジュアライゼーションのディメンション項目（最大 50,000 個）をローカルデバイスにすぐにダウンロードします。 選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
+| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | ビジュアライゼーションのディメンション項目（最大 50,000 個）をローカルデバイスにすぐにダウンロードします。 選択したディメンション項目の最大数は 50,000 個です。 |
 | **[!UICONTROL 選択内容を CSV としてダウンロード]** | ビジュアライゼーションのディメンション項目をローカルデバイスにすぐにダウンロードします。 |
-| **[!UICONTROL すべてのディメンション項目のハイパーリンクを作成]** | すべてのディメンション項目のハイパーリンクを作成します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
-| **[!UICONTROL すべてのディメンション項目のハイパーリンクを編集]** | すべてのディメンション項目のハイパーリンクを編集します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
-| **[!UICONTROL すべてのディメンション項目のハイパーリンクを削除]** | すべてのディメンション項目のハイパーリンクを削除します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
+| **[!UICONTROL すべてのディメンション項目のハイパーリンクを作成]** | すべてのディメンション項目に対してハイパーリンクを作成します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
+| **[!UICONTROL すべてのディメンション項目のハイパーリンクを編集]** | すべてのディメンション項目に対してハイパーリンクを編集します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
+| **[!UICONTROL すべてのディメンション項目のハイパーリンクを削除]** | すべてのディメンション項目に対してハイパーリンクを削除します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
 | **[!UICONTROL 削除]** | テーブルからディメンションを削除します。 |
 | **[!UICONTROL 視覚化]** | 使用可能な任意のビジュアライゼーションを使用してディメンションを視覚化します。 |
 | **[!UICONTROL 選択した行のみを表示]** | ビジュアライゼーションで選択した項目のみを表示します。 |
@@ -77,43 +70,43 @@ ht-degree: 53%
 | オプション | 説明 |
 | --- | --- |
 | **[!UICONTROL クリップボードに選択範囲をコピー]** | フリーフォームテーブルの選択したセル内の情報をコピーします。 |
-| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | ビジュアライゼーションのディメンション項目（最大 50,000 個）をローカルデバイスにすぐにダウンロードします。 選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
+| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | ビジュアライゼーションのディメンション項目（最大 50,000 個）をローカルデバイスにすぐにダウンロードします。 選択したディメンション項目の最大数は 50,000 個です。 |
 | **[!UICONTROL ハイパーリンクを作成]** | 項目のハイパーリンクを作成します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
 | **[!UICONTROL ハイパーリンクを編集]** | 項目のハイパーリンクを編集します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
 | **[!UICONTROL ハイパーリンクを削除]** | 項目のハイパーリンクを削除します。 [フリーフォームテーブルでのディメンションのハイパーリンク](../freeform-table-hyperlinks.md)を参照してください |
 | **[!UICONTROL 選択内容を CSV としてダウンロード]** | ビジュアライゼーションのディメンション項目をローカルデバイスにすぐにダウンロードします。 |
 | **[!UICONTROL 選択した項目を削除]** | 選択した行を削除します。 |
-| **[!UICONTROL 選択範囲からアラートを作成]** | [&#x200B; アラートビルダー](/help/components/c-intelligent-alerts/alert-builder.md)を開いて、選択範囲からアラートを作成します。 |
+| **[!UICONTROL 選択範囲からアラートを作成]** | [ アラートビルダー](/help/components/c-intelligent-alerts/alert-builder.md)を開いて、選択範囲からアラートを作成します。 |
 | **[!UICONTROL 分類]** | ディメンション項目を分類します。 **[!UICONTROL ディメンション]**、**[!UICONTROL 指標]**、**[!UICONTROL セグメント]**&#x200B;または&#x200B;**[!UICONTROL 日付範囲]**&#x200B;のリストから選択します。 *検索*&#x200B;を使用してコンポーネントを代替的に検索します。 |
 | **[!UICONTROL 視覚化]** | 使用可能な任意のビジュアライゼーションを使用して、選択範囲を視覚化します。 |
-| **[!UICONTROL トレンド選択]** | 選択内容のトレンド折れ線グラフビジュアライゼーションを作成します。 |
+| **[!UICONTROL トレンド選択]** | 選択内容のトレンド折れ線グラフのビジュアライゼーションを作成します。 |
 | **[!UICONTROL 選択した行のみを表示]** | ビジュアライゼーションで選択した行のみを表示します。 |
 | **[!UICONTROL すべての行を表示]** | ビジュアライゼーションのすべての行を表示します。 |
-| **[!UICONTROL 選択した行の名前を変更]** | 選択した行の名前を変更します。 選択した行&#x200B;**の名前を変更ダイアログに**&#x200B;[!UICONTROL &#x200B;名前&#x200B;]&#x200B;**を入力します。**&#x200B;確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行の名前を変更すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications-example)を参照してください。 |
-| **[!UICONTROL 選択した行を結合]** | 選択した行を結合します。 **[!UICONTROL 選択した行を結合]** ダイアログに&#x200B;**[!UICONTROL 名前]**&#x200B;を入力します。 確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行を結合すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![歯車](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [&#x200B; インライン分類](#inline-classifications-example)を参照してください。 |
-| **[!UICONTROL 変更された行を派生フィールドとして作成]** | *このコンテキスト メニューオプションを表示するには、Customer Journey Analytics製品の管理者である必要があります。*<br/>&#x200B;行の名前の変更または結合の結果として変更された、フリーフォームテーブルの選択した行で使用できます。 選択すると、[派生フィールドインターフェイス &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)が開き、フリーフォームテーブルに対して行った変更が既に事前入力されています。 [&#x200B; インライン分類](#inline-classifications-example)を参照してください。 |
+| **[!UICONTROL 選択した行の名前を変更]** | 選択した行の名前を変更します。 選択した行&#x200B;]**の名前を変更ダイアログに**[!UICONTROL &#x200B;名前&#x200B;]**を入力します。**[!UICONTROL &#x200B;確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行の名前を変更すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![ ギア ](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [ インライン分類](#inline-classifications-example)を参照してください。 |
+| **[!UICONTROL 選択した行を結合]** | 選択した行を結合します。 **[!UICONTROL 選択した行を結合]** ダイアログに&#x200B;**[!UICONTROL 名前]**&#x200B;を入力します。 確認するには&#x200B;**[!UICONTROL OK]**&#x200B;を選択し、キャンセルするには&#x200B;**[!UICONTROL キャンセル]**&#x200B;を選択します。 フリーフォームテーブルの行を結合すると、ヘッダー列のディメンション名に&#x200B;**[!UICONTROL （変更）]**&#x200B;が追加され、ディメンション ヘッダー列の変更された行をリセットするために![歯車](/help/assets/icons/Gear.svg) アイコンを使用できるようになります。 [ インライン分類](#inline-classifications-example)を参照してください。 |
+| **[!UICONTROL 変更された行を派生フィールドとして作成]** | *このコンテキスト メニューオプションを表示するには、Customer Journey Analytics製品の管理者である必要があります。*<br/>&#x200B;行の名前の変更または結合の結果として変更された、フリーフォームテーブルの選択した行で使用できます。 選択すると、[派生フィールドインターフェイス ](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field)が開き、フリーフォームテーブルに対して行った変更が既に事前入力されています。 [ インライン分類](#inline-classifications-example)を参照してください。 |
 | **[!UICONTROL 選択内容から注釈を作成]** | [注釈ビルダー](/help/components/annotations/create-annotations.md#annotation-builder)を開いて、選択範囲の注釈を作成します。 |
-| **[!UICONTROL 選択範囲からセグメントを作成]** | [&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を開いて、選択範囲からセグメントを作成します。 |
-| **[!UICONTROL 選択内容からオーディエンスを作成]** | [&#x200B; オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を開いて、選択範囲からオーディエンスを構築します。 |
+| **[!UICONTROL 選択範囲からセグメントを作成]** | [ セグメントビルダー](/help/components/segments/seg-builder.md)を開いて、選択範囲からセグメントを作成します。 |
+| **[!UICONTROL 選択内容からオーディエンスを作成]** | [ オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を開いて、選択範囲からオーディエンスを構築します。 |
 
 指標列ヘッダーを選択する際に、次の追加のコンテキストメニューオプションを使用できます。
 
 | オプション | 説明 |
 |---|---|
-| **[!UICONTROL 選択内容から指標を作成]** | 選択した指標から新しい指標を作成します。 指標には、平均値、中央値、列の最大値、列の最小値、列の合計値を使用できます。 また、計算指標ビルダーで「開く」を選択して、計算指標を作成することもできます。 |
+| **[!UICONTROL 選択内容から指標を作成]** | 選択した指標から新しい指標を作成します。 指標として、平均値、中央値、列の最大値、列の最小値、列の合計値を使用できます。 また、計算指標ビルダーで「開く」を選択して、計算指標を作成することもできます。 |
 | **[!UICONTROL 期間列を追加]** | 期間列を追加します。 パネルのカレンダー範囲によって次の&#x200B;*日付範囲*&#x200B;が決まる、複数のオプションが用意されています。 <ul><li>**[!UICONTROL この日付範囲より前の&#x200B;*日付範囲*]**</li><li>**[!UICONTROL この日付範囲のこれらの&#x200B;*日付範囲*]**。</li><li>**[!UICONTROL この日付範囲のカスタム日付範囲]**。 「**[!UICONTROL 日付範囲ビルダー]**」を開いて、日付範囲を指定します。</li></ul>詳しくは、[日付の比較](/help/components/date-ranges/time-comparison.md)を参照してください。 |
 | **[!UICONTROL 期間を比較]** | 比較期間列を追加します。 ディメンションが時間に基づいていない場合にのみ使用できます。 次の&#x200B;*日付範囲*&#x200B;が決まる、複数のオプションが用意されています。 <ul><li>**[!UICONTROL この日付範囲より前の&#x200B;*日付範囲*]**</li><li>**[!UICONTROL この日付範囲のカスタム日付範囲]**。 「**[!UICONTROL 日付範囲ビルダー]**」を開いて、日付範囲を指定します。</li></ul>詳しくは、[日付の比較](/help/components/date-ranges/time-comparison.md)を参照してください。 |
 | **[!UICONTROL アトリビューションモデルを変更]** | 列のアトリビューションモデルを変更します。 |
-| **[!UICONTROL アトリビューションモデルを比較]** | 新しいアトリビューションモデルを指定し、選択した列のアトリビューションモデルと比較します。 新しいアトリビューションモデル指標を含む新しい列が追加されます。 また、比較用に変化率の列が追加されます。 |
+| **[!UICONTROL アトリビューションモデルを比較]** | 新しいアトリビューションモデルを指定し、選択した列のアトリビューションモデルと比較します。 新しいアトリビューションモデル指標を含む列が追加されます。 また、比較用に変化率の列が追加されます。 |
 | **[!UICONTROL 列の幅をリセット]** | 列の幅をデフォルトの幅にリセットします。 |
 | **[!UICONTROL 選択内容から注釈を作成]** | [注釈ビルダー](/help/components/annotations/create-annotations.md#annotation-builder)を開いて、選択範囲の注釈を作成します。 |
-| **[!UICONTROL 選択範囲からセグメントを作成]** | [&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を開いて、選択範囲からセグメントを作成します。 |
-| **[!UICONTROL 選択内容からオーディエンスを作成]** | [&#x200B; オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を開いて、選択範囲からオーディエンスを構築します。 |
+| **[!UICONTROL 選択範囲からセグメントを作成]** | [ セグメントビルダー](/help/components/segments/seg-builder.md)を開いて、選択範囲からセグメントを作成します。 |
+| **[!UICONTROL 選択内容からオーディエンスを作成]** | [ オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を開いて、選択範囲からオーディエンスを構築します。 |
 
 
 ## 行の高さの変更
 
-プロジェクトの[表示密度](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)を&#x200B;**[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]**&#x200B;に設定できます。
+プロジェクトの[表示密度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density)を&#x200B;**[!UICONTROL コンパクト]**、**[!UICONTROL 快適]**、**[!UICONTROL 拡張]**&#x200B;に設定できます。
 
 
 ## インライン分類 {#inline-classifications-example}
@@ -130,7 +123,7 @@ ht-degree: 53%
 
   1. **[!UICONTROL 選択行の名前を変更]** ダイアログで、次の操作を行います。
 
-     ![選択した行の名前を変更ダイアログ &#x200B;](assets/dialog-rename.png)
+     ![選択した行の名前を変更ダイアログ ](assets/dialog-rename.png)
 
      1. <code>その他を入力</code> **[!UICONTROL Name]**&#x200B;の。
      1. **[!UICONTROL OK]**&#x200B;を選択します。
@@ -144,7 +137,7 @@ ht-degree: 53%
 
   1. **[!UICONTROL 選択した行を結合]** ダイアログで、次の操作を行います。
 
-     ![選択した行を結合ダイアログ &#x200B;](assets/dialog-combine.png)
+     ![選択した行を結合ダイアログ ](assets/dialog-combine.png)
 
      1. <code>Adultsを入力</code> **[!UICONTROL Name]**&#x200B;の。
      1. **[!UICONTROL OK]**&#x200B;を選択します。
@@ -158,15 +151,15 @@ ht-degree: 53%
 
   1. 変更されたテーブル内の選択した行のコンテキストメニューから「**[!UICONTROL 変更された行を派生フィールドとして作成]**」を選択します。
 
-     ![変更された行を派生フィールドとして作成メニューオプション &#x200B;](assets/context-derived.png)を選択
+     ![変更された行を派生フィールドとして作成メニューオプション ](assets/context-derived.png)を選択
 
   1. テーブルで行われたすべての変更に基づいて、派生フィールドの定義を検査、オプションで変更、保存します。
 
-     ![派生フィールドの作成ダイアログ &#x200B;](assets/dialog-derived.png)
+     ![派生フィールドの作成ダイアログ ](assets/dialog-derived.png)
 
 * 変更する前に、フリーフォームテーブルを状態にリセットします。
 
-  1. **[!UICONTROL _ディメンション名&#x200B;_（変更）]**&#x200B;の横にある![&#x200B; ギア &#x200B;](/help/assets/icons/Gear.svg)を選択します。
+  1. **[!UICONTROL _ディメンション名&#x200B;_（変更）]**の横にある![ ギア ](/help/assets/icons/Gear.svg)を選択します。
   1. **[!UICONTROL 行が変更された]** ポップアップから&#x200B;**[!UICONTROL 変更された行をリセット]**&#x200B;を選択します。
 
-     ![&#x200B; フリーフォームテーブルのリセット &#x200B;](assets/popup-reset.png)
+     ![ フリーフォームテーブルのリセット ](assets/popup-reset.png)

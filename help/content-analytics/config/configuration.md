@@ -7,34 +7,22 @@ role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 autotag-review: '2026-05-19T08:53:41.814Z'
 TQID: 'https://experienceleague.adobe.com/v34BzDIuWE-GJEsepuTDMSDbNZT9wFP-WjeKZljmC1Y'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 780
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
 
 # Content Analytics の設定
 
-この記事では、コンテンツ分析の設定方法の概要について説明します。
+この記事では、Content Analytics の設定方法の概要を示します。
 
 コンテンツ分析を設定する前に、[前提条件](#prerequisites)が満たされていること、必要な[アクセス制御](#access-control)があること、[制限事項](#limitations)を認識していることを確認する必要があります。
 
@@ -42,7 +30,7 @@ Content Analyticsを設定する手順は次のとおりです。
 
 ![Content Analytics の設定](../assets/aca-configuration.png){zoomable="yes"}
 
-1. Content Analytics[&#x200B; ガイド付き設定](guided.md)ウィザードを使用すると、Content Analytics の設定の前提条件を設定するために必要なすべての手順を説明します。 いつでも設定を保存し、後で戻ることができます。
+1. Content Analytics[ ガイド付き設定](guided.md)ウィザードを使用すると、Content Analytics の設定の前提条件を設定するために必要なすべての手順を説明します。 いつでも設定を保存し、後で戻ることができます。
 1. 設定値に慣れたら、設定を実装できます。 この実装では、ウィザードで設定した内容に基づいて、必要なすべてのアーティファクトが作成されます。
 1. [手動で公開](manual.md)した場合にのみ、「Tags」プロパティがContent Analytics設定に効果的にデプロイされ、データ収集が開始されます。
 
@@ -57,28 +45,28 @@ Content Analytics を設定する前に、次の前提条件が満たされて�
 
 ### Web
 
-* Content Analytics で使用する機能サービスのユーザーエージェントと IP アドレスを許可リストに登録しています。 設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>。
-* 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code> を使用していることを確認します。
+* Content Analytics で使用するフィーチャライゼーションサービスのユーザーエージェントと IP アドレスを許可リストに登録しています。 設定するユーザーエージェント文字列は次のとおりです。<code>AdobeFeaturization/1.0</code>。
+* 定期的な行動データ収集のために [JavaScript を使用して Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} を実装している場合は、JavaScript ライブラリのデフォルト名 <code>alloy</code> JavaScript ライブラリを使用していることを確認します。
 * Customer Journey Analytics 製品管理者の役割を持ち、接続の管理とデータビューの管理を行う権限が付与されています。
 * Content Analytics エクスペリエンスを収集する場合は、web ページの変更に基づいてContent Analyticsのバージョン管理を設定および更新してください。
 * [データ収集には必要な権限](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
-   * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
+  * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
+  * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
 * 次の重要な設定オプションを慎重に検討しました。
 
-   * サイトはエクスペリエンスレポートに適しています。 適切なエクスペリエンスレポートは、次の条件を満たす場合にのみ可能です。
-      * ページ URL を使用して、サイト上のページを再現できる必要があります。
-      * 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再現でき、Cookie やその他のパーソナライゼーションメカニズムに依存しません。
-   * コンテンツエンゲージメントの分析とインサイトのために、キャプチャしたいページを明確に把握することができます。
-   * コンテンツエンゲージメントの分析とインサイトを取り込むアセット（タイプ）を明確に理解しています。
+  * サイトはエクスペリエンスレポートに適しています。 適切なエクスペリエンスレポートは、次の条件を満たす場合にのみ可能です。
+    * ページ URL を使用して、サイト上のページを再現できる必要があります。
+    * 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再現でき、Cookie やその他のパーソナライゼーションメカニズムに依存しません。
+  * コンテンツエンゲージメントの分析とインサイトのために、キャプチャしたいページを明確に把握することができます。
+  * コンテンツエンゲージメントの分析とインサイトを取得したいアセット（タイプ）がどれかを明確に理解しています。
 
 ### モバイル
 
 * モバイルアプリに対して、[Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/)および[Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)拡張機能が有効になっていることを確認します。
 * Customer Journey Analytics 製品管理者の役割を持ち、接続の管理とデータビューの管理を行う権限が付与されています。
 * [データ収集には必要な権限](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions){target="_blank"}：
-   * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
-   * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
+  * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}権限。
+  * [Experience Platform データ収集](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}権限。
 
 
 
@@ -86,7 +74,7 @@ Content Analytics を設定する前に、次の前提条件が満たされて�
 
 >[!IMPORTANT]
 >
->個々のユーザーまたはユーザーグループに対して Content Analytics アクセスを有効または無効にするために設定できる Content Analytics 権限がありません。
+>個人ユーザーまたはユーザーグループに対して Content Analytics アクセスを有効または無効にするために設定できる Content Analytics 権限がありません。
 >
 
 ユーザーまたはユーザーグループに Content Analytics へのアクセス権を付与するには、[Content Analytics 用に設定されている 1 つ以上のデータビュー](guided.md#data-view)へのアクセス権をユーザーまたはユーザーグループに付与する必要があります。

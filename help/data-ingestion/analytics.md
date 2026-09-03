@@ -6,23 +6,11 @@ feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
 TQID: https://experienceleague.adobe.com/XK781eI953KTIHbIX8M9l09QnOcILsNas1-DNmi57Gc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
 source-wordcount: 1223
@@ -38,7 +26,7 @@ ht-degree: 76%
 >
 >Adobe Analyticsのライセンスを取得し、文書化された実装方法のいずれかを使用して、1つ以上のweb サイトにデプロイします。
 >
->- [Analytics Edge を使用した Experience Platform の実装](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=ja)
+>- [Analytics Edge を使用した Experience Platform の実装](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >- [Adobe Analytics 拡張機能を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja)
 >- [JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)
 
@@ -80,7 +68,7 @@ Adobe Analytics ソースコネクタを作成するには：
 
 5. 「**[!UICONTROL デフォルトのスキーマ]**」を[!UICONTROL ターゲットスキーマ]として選択します。 Adobe Experience Platform は、選択した Adobe Analytics レポートスイートのすべての標準フィールドをマッピングするために、スキーマと対応するデータセットを自動的に作成します。
 
-   デフォルトスキーマが選択された![Adobe Experience Platform ウィンドウ &#x200B;](./assets/default-schema.png)
+   デフォルトスキーマが選択された![Adobe Experience Platform ウィンドウ ](./assets/default-schema.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
@@ -95,7 +83,7 @@ Adobe Analytics ソースコネクタを作成するには：
    ![確認のために 「接続」および「データタイプ」セクションをハイライト表示する Adobe Experience Platform ウィンドウ](./assets/review.png)
 
 
-接続が作成されると、データフローが自動的に作成され、レポートスイートのデータセットにAdobe Analytics データが入力されます。 データフローでは、実稼動用サンドボックスの最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。
+接続が作成されると、データフローが自動的に作成され、レポートスイートのデータセットにAdobe Analytics データが入力されます。 データフローでは、本番サンドボックスの最大 13 か月分の履歴データを取り込みます。 非実稼動用サンドボックスのバックフィルは、3 か月に制限されています。
 
 初回の取り込みが完了すると、Adobe Analytics レポートスイートのデータが Customer Journey Analytics で使用できる状態になります。
 
@@ -127,7 +115,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - Adobe Analytics ソースコネクタによって自動的に作成されたデータセットと、接続に含める他のデータセットを選択します。
 
-     ![&#x200B; データセット ウィンドウを追加](./assets/cja-connections-2a.png)
+     ![ データセット ウィンドウを追加](./assets/cja-connections-2a.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
 
@@ -135,11 +123,11 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - 各データセットに対して、次の手順を行います。
 
-      - Adobe Experience Platform のデータセットスキーマで定義されている使用可能な ID から[!UICONTROL ユーザー ID] を選択します。
+     - Adobe Experience Platform のデータセットスキーマで定義されている使用可能な ID から[!UICONTROL ユーザー ID] を選択します。
 
-      - [!UICONTROL データソースタイプ]リストから正しいデータソースを選択します。 「**[!UICONTROL その他]**」を指定している場合は、データソースの説明を追加します。
+     - [!UICONTROL データソースタイプ]リストから正しいデータソースを選択します。 「**[!UICONTROL その他]**」を指定している場合は、データソースの説明を追加します。
 
-      - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
+     - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
 
      ![データセットの設定](./assets/cja-connections-3a.png)
 
@@ -151,9 +139,9 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 ## データ表示の設定
 
-データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データ表示は、Analysis Workspace でレポートの準備を行う際に定義します。
+データビューは、Customer Journey Analytics に特有のコンテナで、接続からのデータをどのように解釈するかを指定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データビューは、Analysis Workspace でレポートの準備を行う際に定義します。
 
-データ表示を作成するには：
+データビューを作成するには：
 
 1. Customer Journey Analytics UIの上部メニューで、**[!UICONTROL データビュー]** （オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から）を選択します。
 
@@ -183,7 +171,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -204,11 +192,11 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペース - 空のプロジェクト](./assets/cja-projects-2.png)
 
-4. リストからデータ表示を選択します。
+4. リストからデータビューを選択します。
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
@@ -217,5 +205,5 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。 まず、Adobe Analytics データソースコネクタを設定し、レポートスイート用にそのコネクタを設定すると、Adobe Analytics データが Adobe Experience Platform に自動的にアップロードされます。 取り込んだAdobe Analytics データやその他のデータを使用するように、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。 まず、Adobe Analytics データソースコネクタを設定し、レポートスイート用にそのコネクタを設定すると、Adobe Analytics データが Adobe Experience Platform に自動的にアップロードされます。 取り込んだAdobe Analytics データやその他のデータを使用するように、Customer Journey Analyticsで接続を定義しました。 データビューの定義では、使用するディメンションと指標を指定でき、最後にそのデータを視覚化および分析する最初のプロジェクトを作成しました。
 

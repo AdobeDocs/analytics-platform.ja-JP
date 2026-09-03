@@ -7,17 +7,11 @@ feature: Data Views
 role: Admin
 autotag-review: '2026-05-19T09:11:25.584Z'
 TQID: 'https://experienceleague.adobe.com/n0OW9ezQRIXl-e4qneDwlqUR7d2d-osnG31QYhsBBOI'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1117
@@ -58,7 +52,7 @@ ht-degree: 75%
 | --- | --- |
 | [!UICONTROL 永続化を設定] | ディメンションの永続性を有効にします。 永続性が有効になっていない場合、ディメンションは同じイベント内に存在する指標にのみ関連付けられます。 この設定は、デフォルトで無効になっています。 |
 | [!UICONTROL 配分] | 永続性のためにディメンションで使用される配分モデルを指定します。 オプションは次のとおりです。<ul><li>**[!UICONTROL 直近]**：ディメンションの値は、後続の値で上書きされるまで保持されます</li><li> **[!UICONTROL 元の]**：このディメンションの最初の値は保持され、後続の値によって上書きされません</li><li>**[!UICONTROL すべて]**：このディメンションのすべての値が同時に保持されます</li><li>**[!UICONTROL 最初の事例]**：このディメンションの最初の値が使用され、前後のすべてのイベントに適用されます。</li><li>**[!UICONTROL 最後の事例]**：このディメンションの最後の値が使用され、前後のすべてのイベントに適用されます。</li></ul> |
-| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定します。 オプションは次のとおりです。 <ul><li>**[!UICONTROL セッション]**（デフォルト）</li><li>**[!UICONTROL ユーザー]**</li><li>**[!UICONTROL カスタム時間]**</li><li>**[!UICONTROL 指標]**</li></ul>. 場合によっては、購入時にディメンションの有効期限が切れるように設定できる必要があります（内部検索語や他のマーチャンダイジングの使用例など）。 設定できる最大有効期限は90日です。 配分で「[!UICONTROL すべて]」を選択した場合は、「[!UICONTROL セッション]」または「[!UICONTROL 個人]」の有効期限のみ使用できます。 |
+| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定します。 オプションは次のとおりです。 <ul><li>**[!UICONTROL セッション]**（デフォルト）</li><li>**[!UICONTROL ユーザー]**</li><li>**[!UICONTROL カスタム時間]**</li><li>**[!UICONTROL 指標]**</li></ul>. 場合によっては、購入時にディメンションが期限切れになるように設定する必要があります（内部検索キーワードやその他のマーチャンダイジングのユースケースなど）。 設定できる最大有効期限は90日です。 配分で「[!UICONTROL すべて]」を選択した場合は、「[!UICONTROL セッション]」または「[!UICONTROL 個人]」の有効期限のみ使用できます。 |
 
 {style="table-layout:auto"}
 
@@ -120,7 +114,7 @@ ht-degree: 75%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

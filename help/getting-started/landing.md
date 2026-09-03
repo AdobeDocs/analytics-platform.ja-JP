@@ -5,16 +5,10 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 TQID: https://experienceleague.adobe.com/yj0864tQCuKNQocyhuqyi-N647uoy2IeqhT9RHmrRK0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
 source-wordcount: 680
@@ -32,12 +26,12 @@ Customer Journey Analytics ランディングページには、次のサブタ�
 
 **[!UICONTROL 学習]**：実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。 Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する情報と、組織に固有のアップグレードステップを動的に生成するツールも含まれています。
 
-![CJA ランディングページ左パネル &#x200B;](assets/cja-landing-page-left-rail.png)
+![CJA ランディングページ左パネル ](assets/cja-landing-page-left-rail.png)
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -114,7 +108,7 @@ The available columns are:
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
-| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=ja) for you to design and build. |
+| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
 | [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest CX Enterprise release notes. |
 | Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
@@ -150,8 +144,8 @@ Customer Journey Analyticsの学習パスに関する情報にアクセスする
 * **コンテンツをフィルタリング：**![フィルター](/help/assets/icons/Filter.svg)を使用して、**[!UICONTROL タイプ]**（**[!UICONTROL ドキュメント]**、**[!UICONTROL ビデオ]**、**[!UICONTROL ツアーとチュートリアル]**）および&#x200B;**[!UICONTROL エクスペリエンスレベル]**（**[!UICONTROL 初級]**、**[!UICONTROL 中級]**、または&#x200B;**[!UICONTROL 上級]**）で学習コンテンツをフィルタリングします。
 * **進行状況を追跡：**&#x200B;コンテンツを選択すると、「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグが表示されます。 このタグは、学習コンテンツの進捗状況を追跡するのに役立ちます。 「![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL 表示済み]**」タグを選択して、コンテンツの一部から削除できます。
 * **追加コンテンツを表示：**&#x200B;ビデオの表示中に「**[!UICONTROL 詳細情報]**」を選択すると、Experience League の関連ドキュメントコンテンツが表示されます。 または、学習ページから次のオプションのいずれかを選択して追加コンテンツを表示します。
-   * **[!UICONTROL YouTube を訪問]：** Analysis Workspace の完全な YouTube プレイリストを表示します。
-   * [!UICONTROL **Experience League を訪問**]：Experience League で Customer Journey Analytics ドキュメントの完全なスイートを表示します。
+  * **[!UICONTROL YouTube を訪問]：** Analysis Workspace の完全な YouTube プレイリストを表示します。
+  * [!UICONTROL **Experience League を訪問**]：Experience League で Customer Journey Analytics ドキュメントの完全なスイートを表示します。
 * **新規ユーザー向けの基礎：**&#x200B;新規ユーザーには、[!UICONTROL Workspace の基礎を学ぶ]ツアーをお勧めします。 このツアーでは、Workspace に直接移動し、最も一般的なアクションを順を追って説明します。 このツアーは、[フリーフォームパネル](/help/analysis-workspace/c-panels/freeform-panel.md)または[空白のパネル](/help/analysis-workspace/c-panels/blank-panel.md)ヘッダーのツールチップを使用して、Workspace でいつでも再度開始することもできます。
 
 ### Customer Journey Analytics にアップグレード
@@ -164,7 +158,7 @@ Customer Journey Analyticsへのアップグレードに関する情報にアク
 
 このページは、Adobe AnalyticsからCustomer Journey Analyticsへの完全なアップグレードがまだ完了していないお客様向けです。 組織固有の状況に応じて動的に生成されるアップグレードステップの結果を示すアンケートを提供します。
 
-詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の「組織のアップグレード手順を動的に生成する[&#128279;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization)」を参照してください。
+詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の「組織のアップグレード手順を動的に生成する](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization)」を参照してください。[
 
 ## 好みのランディングページ
 

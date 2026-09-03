@@ -6,17 +6,11 @@ title: ホットキー
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 TQID: https://experienceleague.adobe.com/YWKW578JfolnUul64XLty6ehTVlsdsdTRAgHQG3wzbY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 418
@@ -30,11 +24,11 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 
 キーボードでは、次のシンボルが使用される場合があります。
 
-- **[!UICONTROL **&#x200B; Shift キー&#x200B;**]&#x200B;**&#x200B;の代わりに &#x200B;**⇧**。
-- **[!UICONTROL **&#x200B; cmd &#x200B;**]&#x200B;**（コマンド）の代わりに &#x200B;**⌘**。
-- **[!UICONTROL **&#x200B; ctrl &#x200B;**]&#x200B;**（Control）の代わりに &#x200B;**⌃**。
-- **[!UICONTROL **&#x200B; opt &#x200B;**]&#x200B;**（Option）の代わりに &#x200B;**⌥**。
-- **[!UICONTROL **&#x200B; alt &#x200B;**]&#x200B;**（Alternate）の代わりに &#x200B;**⎇**。
+- **[!UICONTROL ** Shift キー&#x200B;**]**&#x200B;の代わりに **⇧**。
+- **[!UICONTROL ** cmd **]**（コマンド）の代わりに **⌘**。
+- **[!UICONTROL ** ctrl **]**（Control）の代わりに **⌃**。
+- **[!UICONTROL ** opt **]**（Option）の代わりに **⌥**。
+- **[!UICONTROL ** alt **]**（Alternate）の代わりに **⎇**。
 
 ## ナビゲーション操作
 
@@ -65,7 +59,7 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 | 元に戻す | **[!UICONTROL *Cmd + Z キー&#x200B;*]** | **[!UICONTROL *Ctrl + Z キー&#x200B;*]** |
 | コンポーネントを更新 | **[!UICONTROL *Opt + Shift + R キー&#x200B;*]** | **[!UICONTROL *Alt + Shift + R キー&#x200B;*]** |
 | プロジェクトを更新 | **[!UICONTROL *Opt + R キー&#x200B;*]** | **[!UICONTROL *Alt + R キー&#x200B;*]** |
-| ランディングページとして設定 | **[!UICONTROL *Cmd + Shift + L キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + L キー&#x200B;*]** |
+| ランディングページに設定 | **[!UICONTROL *Cmd + Shift + L キー&#x200B;*]** | **[!UICONTROL *Ctrl + Shift + L キー&#x200B;*]** |
 
 ## 追加パネルとビジュアライゼーションのアクション
 

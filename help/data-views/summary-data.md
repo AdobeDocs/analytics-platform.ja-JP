@@ -7,30 +7,23 @@ role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 autotag-review: '2026-05-19T08:58:30.172Z'
 TQID: 'https://experienceleague.adobe.com/bG1thChKFsIHc1--pfT2rXHBgcay21qgpSa-ifilfF8'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-  - id: e6d52a4d-79b6-4c52-8c8b-df194d83a207
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6id: e6d52a4d-79b6-4c52-8c8b-df194d83a207
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1166
-ht-degree: 96%
+source-wordcount: 1168
+ht-degree: 95%
 
 ---
 
 # 概要データ
 
-概要データとは、個々のユーザー ID に関連付けられていない時系列データのことです。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。 例えば、日付と 1 つの指標値を含むデータや、複数のディメンションと指標を含むデータなどです。
+概要データとは、個人の人物 ID に関連付けられていない時系列データのことです。 概要データは、キャンペーンなど、様々な集計レベルでの集計データを表します。 このデータを Customer Journey Analytics で使用して、様々なユースケースをサポートできます。 例えば、日付と 1 つの指標値を含むデータや、複数のディメンションと指標を含むデータなどです。
 
-この概要データを使用して、大まかな業績評価指標を提示したり、分析を実行したりできます。 概要データの例としては、広告インプレッション数、メール開封数、広告費、売上原価、S&amp;P インデックスなどがあります。 概要データを使用して、時間ごとまたは日ごとにターゲットや目標をアップロードすることもできます。
+この概要データを使用して、高度なパフォーマンス指標を提示したり、分析を行ったりできます。 概要データの例としては、広告インプレッション数、メール開封数、広告費、売上原価、S&amp;P 指数などがあります。 概要データを使用して、時間ごとまたは日ごとにターゲットや目標をアップロードすることもできます。
 
 >[!NOTE]
 >
@@ -44,7 +37,7 @@ ht-degree: 96%
 
 ## 例
 
-概要データの使用例には、要約された広告キャンペーンデータとオンサイトクリックストリームデータを組み合わせて、レポートを作成することが挙げられます。
+サマリーデータの使用例としては、集計済みの広告キャンペーンデータとオンサイトのクリックストリームデータを組み合わせてレポートすることが挙げられます。
 
 ### 概要データ
 
@@ -96,7 +89,7 @@ ht-degree: 96%
 
 1. [ルックアップ](/help/data-views/derived-fields/derived-fields.md#lookup)関数を使用してルックアップデータセットからキャンペーン名を参照する新しい派生フィールドを作成します。 [ルックアップ](/help/data-views/derived-fields/derived-fields.md#lookup)関数の定義では、キャンペーンコードとトラッキングコードの一致を使用してキャンペーン名を参照します。
 1. 新しく作成した派生フィールドをディメンションコンポーネントとしてデータビューに追加します。
-1. キャンペーン名ディメンションコンポーネントを（ルックアップデータセットから）設定し、新しく作成した派生フィールドを使用して、概要データをグループ化します。
+1. キャンペーン名のディメンションコンポーネント（ルックアップデータセット内）を設定し、新しく作成した派生フィールドを使用して、サマリーデータのグループ化を行うように構成します。
 
 Customer Journey Analytics での概要データの使用、レポート、分析方法について詳しくは、[概要データの取り込みとレポート](/help/use-cases/data-views/summary-data.md)のユースケースを参照してください。
 
@@ -115,7 +108,7 @@ Customer Journey Analytics で概要データを含むデータセットを設�
 
 #### タイムゾーン
 
-概要データのタイムゾーンは、Experience Platform の概要スキーマレベルで定義されます。 タイムゾーンは、時間単位の精度データにのみ適用されます。
+概要データのタイムゾーンは、Experience Platform の概要スキーマレベルで定義されます。 タイムゾーンは、時間単位の粒度を持つデータにのみ適用されます。
 
 - 日単位の精度の場合、タイムスタンプにタイムゾーンオフセットが含まれていない限り、Experience Platform は UTC を想定します。 日単位の概要データを含む概要データセットを追加すると、Customer Journey Analytics はスキーマに設定されたタイムゾーン定義を無視し、データセット内のデータのタイムスタンプに関連付けられた日を考慮します。
 - 時間単位の精度の場合、Customer Journey Analytics は、タイムスタンプを解釈する際に、Experience Platform の概要データスキーマで設定されたタイムゾーンを考慮します。 次の表に、この解釈の例をいくつか示します。
@@ -133,9 +126,9 @@ Customer Journey Analytics で概要データを含むデータセットを設�
   30 分オフセットのタイムゾーン（例：IST、インド標準時）の場合、概要データのレポート時に 30 分オフセットは削除されます。 例：12:30は12:00と報告されます。
 
 
-日単位の精度概要データに適切なタイムゾーンを使用するには、概要データに使用するスキーマに適切なタイムゾーンが設定されていることを確認する必要があります。
+時間単位の精度の概要データで適切なタイムゾーンが使用されるようにするには、概要データに使用するスキーマに適切なタイムゾーンが設定されていることを確認する必要があります。
 
-概要データスキーマの精度とタイムゾーンを設定するには、同等のユーザーインターフェイスがないので、次の API 呼び出しを使用する必要があります。
+概要データ用スキーマの精度とタイムゾーンを設定するには、同等のユーザーインターフェイスがないので、次の API 呼び出しを使用する必要があります。
 
 ```shell
 curl -X POST \
@@ -157,7 +150,7 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 | 変数 | 値 |
 |---|---|
 | `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | これらの変数の値を指定する方法について詳しくは、[Experience Platform API の認証とアクセス](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication)を参照してください。 |
-| `$SCHEMA_ID` | スキーマの ID は、Experience Platform UI で確認できます。 スキーマのリストから概要スキーマを選択し、右側のパネルで **[!UICONTROL API の使用状況]**／**[!UICONTROL スキーマ ID]** を見つけます。 その ID を値として使用します。 |
+| `$SCHEMA_ID` | スキーマの ID は、Adobe Experience Platform の UI で確認できます。 スキーマのリストから概要スキーマを選択し、右側のパネルで **[!UICONTROL API の使用状況]**／**[!UICONTROL スキーマ ID]** を見つけます。 その ID を値として使用します。 |
 | `$GRANULARITY` | 値として `hour` または `day` を指定します。 |
 | `$TIMEZONE` | [tz データベースタイムゾーンのリスト](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)の TZ 識別子列から適切なタイムゾーン識別子の値を指定します。 例：`America/Los_Angeles`。 |
 
@@ -168,5 +161,5 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 >[!MORELIKETHIS]
 >
 >- 概要データの使用方法とレポート方法に関するユースケースの例について詳しくは、[概要データの使用](/help/use-cases/data-views/summary-data.md)の記事を参照してください。
->- ブログ：[概要データで Adobe Customer Journey Analytics データセットを強化する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=ja)
+>- ブログ：[概要データで Adobe Customer Journey Analytics データセットを強化する方法](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

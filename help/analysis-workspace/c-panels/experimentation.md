@@ -1,23 +1,15 @@
 ---
-description: Customer Journey Analytics 実験パネルで A/B テストの結果を分析する方法を説明します。
+description: Customer Journey Analytics の「実験」パネルで A/B テストの結果を分析する方法を学びます。
 title: 実験パネル
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
 TQID: https://experienceleague.adobe.com/oXojotjMV8EEF3S31JyO4eFIn62iYH0zPHGO6ylhFR0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2318
@@ -35,17 +27,17 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="実験"
->abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導く上で最適な判断を下せます。 実験、比較対象のコントロールバリアント、成功指標および標準化指標を指定します。 オプションで、信頼性の上限と下限を設定します。"
+>abstract="様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果の達成に最も効果的なものを特定します。 実験、比較対象のコントロールバリアント、成功指標および標準化指標を指定します。 オプションで、信頼性の上限と下限を設定します。"
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_&#x200B;の実験パネルについて説明します![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**Customer Journey Analytics**。_<br/>_Adobe Targetのアクティビティとエクスペリエンスを分析する方法について詳しくは、[Analytics for Target パネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)を参照してください。_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_&#x200B;**Adobe Analytics**。_
+_この記事では、_&#x200B;の実験パネルについて説明します![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**。_<br/>_Adobe Targetのアクティビティとエクスペリエンスを分析する方法について詳しくは、[Analytics for Target パネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/a4t-panel)を参照してください。_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics**。_
 
 >[!ENDSHADEBOX]
 
 
-**[!UICONTROL 実験]**&#x200B;パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、Target や Journey Optimizer などのアドビのソリューション、BYO（bring-your-own）データなど、オンラインまたはオフラインのあらゆる実験プラットフォームで評価できます。
+**[!UICONTROL 実験]**&#x200B;パネルを使用すると、アナリストは様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断できます。 A/B 実験の上昇率と信頼性は、オンラインまたはオフラインのあらゆる実験プラットフォームで評価できます。Target や Journey Optimizer などのアドビのソリューションや、BYO（bring-your-own）データも対象になります。
 
 詳しくは、[Adobe Customer Journey Analytics と Adobe Target の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)を参照してください。
 
@@ -55,11 +47,11 @@ _この記事では、_&#x200B;の実験パネルについて説明します![Cu
 
 ## 計算指標の関数
 
-上昇率および信頼性の 2 つの高度な関数が利用できます。 詳しくは、[リファレンス - 高度な関数](/help/components/calc-metrics/cm-adv-functions.md)を参照してください。
+高度な関数として、「上昇率」と「信頼性レベル」の 2 つが利用できます。 詳しくは、[リファレンス - 高度な関数](/help/components/calc-metrics/cm-adv-functions.md)を参照してください。
 
 ## 前提条件
 
-実験パネルを使用するには、次の前提条件に従う必要があります。
+Experimentation パネルを使用するには、次の前提条件を満たしていることを確認します。
 
 ### 実験データセットへの接続の作成
 
@@ -70,7 +62,7 @@ _この記事では、_&#x200B;の実験パネルについて説明します![Cu
 
 ### データビューでのコンテキストラベルの追加
 
-Customer Journey Analytics データビューの設定では、管理者はディメンションや指標に[コンテキストラベル](/help/data-views/component-settings/overview.md)をディメンションや指標に追加し、目的に合わせて[!UICONTROL 実験]パネルなどの Customer Journey Analytics サービスでこれらのラベルを使用できます。 実験パネルには、次の 2 つの事前定義済みのラベルが使用されます。
+Customer Journey Analytics データビューの設定では、管理者はディメンションや指標に[コンテキストラベル](/help/data-views/component-settings/overview.md)をディメンションや指標に追加し、目的に合わせて[!UICONTROL 実験]パネルなどの Customer Journey Analytics サービスでこれらのラベルを使用できます。 Experimentation パネルには、次の 2 つの事前定義済みのラベルが使用されます。
 
 * [!UICONTROL 実験的な実験]
 * [!UICONTROL 実験バリアント]
@@ -99,7 +91,7 @@ Customer Journey Analytics データビューの設定では、管理者はデ�
 
 ### パネル入力
 
-実験パネルを使用するには：
+Experimentation パネルを使用するには、次の手順を実行します。
 
 1. パネル入力設定を行います。
 
@@ -110,7 +102,7 @@ Customer Journey Analytics データビューの設定では、管理者はデ�
    | **[!UICONTROL 日付範囲]** | 選択した実験に対して Customer Journey Analytics で受信した最初のイベントに基づいて、実験パネルの日付範囲が自動設定されます。 必要に応じて、日付範囲をより具体的な期間に制限または拡張できます。 |
    | **[!UICONTROL 実験]** | どのエクスペリエンスを永続的に保持することが最適かを判断するために、エンドユーザーに公開されたエクスペリエンスに対する一連のバリエーションです。 実験は、2 つ以上のバリアントで構成され、そのうちの 1 つがコントロールバリアントと見なされます。 この設定には、データビューで&#x200B;**[!UICONTROL 実験]**&#x200B;ラベルが付けられたディメンションと、過去 6 か月分の実験データが事前に入力されています。 |
    | **[!UICONTROL コントロールバリアント]** | エンドユーザーのエクスペリエンスにおいて、より優れた代替策を特定するために比較する、複数の選択肢の 1 つです。 1 つのバリアントをコントロールとして選択する必要があり、1 つのバリアントのみがコントロールバリアントと見なされます。 この設定には、データビューで&#x200B;**[!UICONTROL バリアント]**&#x200B;ラベルが付けられたディメンションが事前に入力されています。 この設定により、この実験に関連付けられているバリアントデータを取得します。 |
-   | **[!UICONTROL 成功指標]** ➊ | ユーザーがバリアントと比較する指標。 コンバージョン指標に対して最も望ましい結果を持つバリアント（最高または最低）が、実験の&#x200B;*最もパフォーマンスの高いバリアント*&#x200B;として宣言されます。 最大 5 つの指標を追加できます。 |
+   | **[!UICONTROL 成功指標]** ➊ | ユーザーがバリアントを比較する際に使用する指標。 コンバージョン指標に対して最も望ましい結果を持つバリアント（最高または最低）が、実験の&#x200B;*最もパフォーマンスの高いバリアント*&#x200B;として宣言されます。 最大 5 つの指標を追加できます。 |
    | **[!UICONTROL 指標を正規化しています]** ➋ | テストが実行される基準（**[!UICONTROL グローバルアカウント]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購買グループ]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 人物]**、**[!UICONTROL セッション]**&#x200B;または&#x200B;**[!UICONTROL イベント]**）。 例えば、テストでは、いくつかのバリエーションのコンバージョン率を比較できます。**[!UICONTROL コンバージョン率]**&#x200B;は、ページビューとして計算されます。 |
    | **[!UICONTROL 信頼性の上限／下限を含める]** | 信頼性レベルの上限と下限を表示するには、このオプションを有効にします。 |
 
@@ -121,7 +113,7 @@ Customer Journey Analytics データビューの設定では、管理者はデ�
 
 実験パネルは、豊富なデータとビジュアライゼーションのセットを返し、実験のパフォーマンスをより深く理解するのに役立ちます。 パネルの上部には、選択したパネル設定を示す[変更の概要](../visualizations/summary-number-change.md)ビジュアライゼーションが表示されます。 右上の編集鉛筆を選択すると、いつでもパネルを編集できます。
 
-また、実験が決定的かどうかを示すテキストの概要を取得し、結果の概要を示します。 決定性は統計的有意性に基づきます（[統計的手法](#adobes-statistical-methodology)を参照）。 上昇率と信頼性が最も高く、パフォーマンスが最も高いバリエーションの概要数値を表示できます。
+また、実験が決定的かどうかを示し、結果を要約したテキストが表示されます。 決定性は統計的有意性に基づきます（[統計的手法](#adobes-statistical-methodology)を参照）。 上昇率と信頼性が最も高く、パフォーマンスが最も高いバリエーションの概要数値を表示できます。
 
 選択した各成功指標に対して、[フリーフォームテーブル](../visualizations/freeform-table/freeform-table.md)ビジュアライゼーションとコンバージョン率の[折れ線グラフ](../visualizations/line.md)ビジュアライゼーションが表示されます。
 
@@ -134,7 +126,7 @@ Customer Journey Analytics データビューの設定では、管理者はデ�
 
 #### 結果の解釈
 
-1. **実験は決定的です**：実験レポートを表示するたびに、この時点までの実験で累積したデータが分析されます。 分析では、*少なくとも 1 つ*&#x200B;のバリアントで、*常に*&#x200B;有効な信頼度が 95％のしきい値を超えると、実験を決定的と宣言します。 2 アーム以上の場合は、複数の仮説テストを補正するためにボンフェロンニ補正を適用します。
+1. **実験は決定的です**：実験レポートを表示するたびに、この時点までの実験で累積したデータが分析されます。 分析では、*少なくとも 1 つ*&#x200B;のバリアントで、*常に*&#x200B;有効な信頼度が 95％のしきい値を超えると、実験を決定的と宣言します。 アームが 2 つを超える場合は、複数の仮説検定を補正するためにベンジャミニ・ホッホベルク補正を適用します。
 
 2. **最も効果の高いバリアント**：実験が決定的であると宣言された場合、コンバージョン率の最も高いバリアントには、「最もパフォーマンスの高いバリアント」というラベルが付けられます。 このバリアントは、コントロールバリアントかベースラインバリアントであり、または&#x200B;*常に*&#x200B;有効な信頼性が 95％の（ボンフェロンニ補正が適用された）しきい値を超えるバリアントの 1 つである必要があります。
 
@@ -154,7 +146,7 @@ Customer Journey Analytics データビューの設定では、管理者はデ�
 
 信頼性シーケンスは、信頼区間の&#x200B;*連続的な*&#x200B;アナログです。 信頼性シーケンスとは何かを理解するには、実験を 100 回繰り返すと仮定します。 そして、実験に加わる&#x200B;*新規ユーザーごとに*、平均ビジネス指標（メール開封率など）とそれに関連する 95％信頼性シーケンスの推定値を計算します。
 
-95％の信頼性シーケンスは、実行した 100 件の実験のうち 95 件のビジネス指標の「true」値を含んでいます （95％の信頼区間は、同じ 95％の範囲を保証するために、新規ユーザーごとの計算ではなく、実験ごとに 1 回のみの計算となります）。 したがって、信頼性シーケンスを使用すると、結果を「覗き見」て確認することができるので、偽陽性のエラー率を増やすことなく、実験を継続的に監視できます。
+95％の信頼シーケンスには、実行した 100 件の実験のうち 95 件で、ビジネス指標の「真」の値が含まれます。 （95％の信頼区間は、同じ 95％の範囲を保証するために、新規ユーザーごとの計算ではなく、実験ごとに 1 回のみの計算となります）。 したがって、信頼シーケンスを使用すると、偽陽性のエラー率を増やすことなく実験を継続的に監視でき、結果を「覗き見」することができます。
 
 ## 非ランダム化ディメンションの解釈 {#non-randomized}
 
@@ -162,9 +154,9 @@ Adobe Customer Journey Analytics を使用すると、アナリストは任意�
 
 例えば、ユーザーに表示される広告について考えてみます。 *ad A*&#x200B;の代わりに&#x200B;*ad B*&#x200B;人を表示することを決定した場合、一部の指標（平均売上など）の変化を測定することに関心がある可能性があります。「広告A」ではなく「広告B」を表示することの因果関係は、マーケティング上の意思決定において最も重要です。 広告 A を表示するという現状を、広告 B を表示するという別の戦略に置き換えた場合、この因果的効果は、母集団全体の平均売上高として測定できます。
 
-A/B テストは、このような介入の効果を客観的に測定するための、業界内の絶対的標準です。 A/B テストが因果的な推定を導き出す決定的な理由は、考えられるバリアントの 1 つを受け取る顧客のランダム化にあります。
+A/B テストは、このような介入の効果を客観的に測定するための、業界におけるゴールドスタンダードです。 A/B テストが因果的な推定を導き出す重要な理由は、考えられるバリアントの 1 つを受け取る人物がランダムに割り当てられることにあります。
 
-では、ランダム化によって達成されないディメンションについて考えてみましょう。例えば、顧客の米国州などです。 顧客は主にニューヨークとカリフォルニアの 2 つの州の出身だとします。 冬物衣料品ブランドの平均売上高は、地域の天候の違いにより、2 つの州で異なる可能性があります。 このような状況では、冬物衣料品の売上の真の因果的要因は天候であり、顧客の地理的な州が異なるという事実ではない可能性があります。
+では、ランダム化によって達成されないディメンションについて考えてみましょう。例えば、顧客の米国州などです。 人々は主にニューヨーク州とカリフォルニア州の 2 つの州から来ています。 冬物衣料品ブランドの平均売上高は、地域の天候の違いにより、2 つの州で異なる可能性があります。 このような状況では、冬物衣料品の売上の真の因果的要因は天候であり、顧客の地理的な州が異なるという事実ではない可能性があります。
 
 Adobe Customer Journey Analytics の実験パネルを使用すると、データを顧客の州による平均売上高の違いとして分析できます。 このような状況では、出力には因果的な解釈が含まれません。 しかし、そのような分析でも興味を引く可能性があります。 これは、顧客の州による平均売上高の違いの推定値（と不確実さの尺度）を提供します。  この値は、*統計的仮説テスト*&#x200B;とも呼ばれます。 この分析の結果は興味深いものになるかもしれませんが、必ずしも実用的ではありません。 単に、ディメンションの取り得る値の 1 つに顧客をランダム化しておらず、またランダム化できないことがあるからです。
 
@@ -188,14 +180,14 @@ Adobe Customer Journey Analytics の実験パネルを使用すると、デー�
 * 相互に除算または乗算されるベース指標（例：`Revenue`/`Orders` など）
 * ベース指標に追加またはベース指標から減算される定数（例：`Revenue+50` など）
 * 次のいずれかの基本指標。
-   * People
+  * People
 
 実験パネルと互換性のない計算指標では、計算指標を作成する際に、「[!UICONTROL **製品の互換性**]」フィールドに [!UICONTROL **Customer Journey Analytics のすべての場所（実験を除く）**]&#x200B;という値が使用されます。 計算指標の作成について詳しくは、[指標の作成](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)を参照してください。
 
 ## 実験パネルでの計算指標の使用
 
-[実験パネルでの計算指標の使用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=ja)について詳しくは、このブログ投稿を参照してください。
+[実験パネルでの計算指標の使用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119)について詳しくは、このブログ投稿を参照してください。
 
 >[!MORELIKETHIS]
->[Adobe Customer Journey Analytics 実験を習得する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=ja)
+>[Adobe Customer Journey Analytics 実験を習得する](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >

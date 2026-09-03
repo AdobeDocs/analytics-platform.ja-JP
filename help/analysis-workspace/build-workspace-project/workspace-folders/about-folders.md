@@ -1,23 +1,16 @@
 ---
-description: Analysis Workspace でプロジェクトをフォルダーに整理する方法について説明します。
+description: Analysis Workspace で、プロジェクトをフォルダーに整理する方法について説明します。
 keywords: Analysis Workspace
 title: フォルダーの概要
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 TQID: https://experienceleague.adobe.com/g8h5ym4QWd-8r8Sm7Ow6LFwtKCGf-V2wmyLUoYVwUPY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a67cb189-a535-41f6-afa2-448f39c4759f
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a67cb189-a535-41f6-afa2-448f39c4759fid: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 422
@@ -31,7 +24,7 @@ Workspace のフォルダーを使用すると、プロジェクトの整理お�
 
 Customer Journey Analytics のフォルダーは、「[フォルダーとプロジェクトを表示](../freeform-overview.md#show-selector)」を選択すると、Workspace ランディングページで使用できます。
 
-Workspace には、会社フォルダーと個人用フォルダーの 2 種類のフォルダーがあります。 共有された会社フォルダーを使用すると、管理者は、コンテンツを作成してすべての Workspace ユーザーと共有できます。
+Workspace には、会社フォルダーと個人用フォルダーの 2 種類のフォルダーがあります。 共有された会社フォルダーを使用すると、管理者はコンテンツを作成してすべての Workspace ユーザーと共有できます。
 
 「[フォルダーとプロジェクトを表示](../freeform-overview.md#show-selector)」を選択すると、プロジェクトホームページに、会社フォルダーおよび作成した個人用フォルダーと共に、プロジェクトの一覧が表示されます。 それ以外の場合は、プロジェクトの一覧のみが表示されます。
 
@@ -46,7 +39,7 @@ Workspace にログインすると、会社フォルダーがプロジェクト�
 
 ### 管理者オプション
 
-管理者には、会社フォルダーに対する特別な権限が割り当てられています。 例えば、管理者のみ、会社フォルダー内のフォルダーやプロジェクトを追加または削除できます。 管理者アクセス制御を持たないユーザーは、会社フォルダーの内容を表示できます。
+管理者には、会社フォルダーに対する特別な権限が割り当てられています。 例えば、会社フォルダー内のフォルダーやプロジェクトを追加または削除できるのは管理者のみです。 管理者アクセス制御を持たないユーザーは、会社フォルダーの内容を表示できます。
 
 <!--
 ![The Projects page showing the admin options.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)

@@ -6,19 +6,11 @@ keywords: Product Analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
 TQID: https://experienceleague.adobe.com/2E5Q2eE6dhvViTJ64eQ41I4S9ZsQO-WohKBY07CGJpg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 730
@@ -55,14 +47,14 @@ ht-degree: 94%
 >
 >再来訪ユーザーは、ユーザーの増加や減少を表すものではないので、この計算には考慮されません。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423463/?captions=jpn&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 ## ユースケース
 
 この分析のユースケースには、次のようなものがあります。
 
 * **パフォーマンス評価**：新規ユーザーの獲得という観点から、製品の全体的なパフォーマンスを評価できます。 増加率のトレンドを追跡することで、製品が望ましいペースでユーザーを引き付け、保持しているかどうかをより深く理解できます。
-* **ユーザー獲得分析**：ユーザー獲得戦略の有効性を評価できます。 検索エンジン、キャンペーン、その他のマーケティングチャネルなど、ユーザー増加のソースを分析することで、最も重要な増加のソースを特定し、それに応じてリソースを割り当てることができます。
+* **ユーザー獲得分析**：ユーザー獲得戦略の有効性を評価できます。 検索エンジン、キャンペーン、その他のマーケティングチャネルなど、ユーザー増加のソースを分析することで、最も重要な増加要因を特定し、それに応じてリソースを割り当てることができます。
 * **チャーン分析**：純増加率には、数式（休眠状態のユーザー）に損耗が含まれます。 時間の経過と共にユーザーベースの全体的な健全性を評価できます。 純増加率が一貫して `1` を下回る場合、損耗が高いことを示し、保持戦略の実施が促される可能性があります。
 
 ## インターフェイス
@@ -75,7 +67,7 @@ ht-degree: 94%
 
 * **[!UICONTROL 表示]**：この分析と[アクティブな増加率](active-growth.md)を切り替えます。
 * **[!UICONTROL イベント]**：測定するイベント。 この分析はユーザーベースなので、期間内にイベントを 1 回操作したユーザーはアクティブユーザーとしてカウントされます。 クエリには 1 つのイベントを含めることができます。
-* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]**&#x200B;には、[!UICONTROL &#x200B; ユーザー数]と[!UICONTROL &#x200B; ユーザーの割合]が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}追加の&#x200B;**[!UICONTROL B2B オプション]**&#x200B;がCustomer Journey Analytics B2B editionで利用できます：[!UICONTROL &#x200B; グローバルアカウント &#x200B;]、[!UICONTROL &#x200B; アカウント &#x200B;]、[!UICONTROL 購買グループ &#x200B;]、[!UICONTROL 商談]、[!UICONTROL &#x200B; グローバルアカウントの割合]、[!UICONTROL &#x200B; アカウントの割合]、[!UICONTROL 購買グループの割合]、および[!UICONTROL 商談の割合]。</li></ul>
+* **[!UICONTROL 次としてカウント]**：選択したイベントに適用するカウント方法。 <ul><li>**[!UICONTROL オプション]**&#x200B;には、[!UICONTROL  ユーザー数]と[!UICONTROL  ユーザーの割合]が含まれます。</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}追加の&#x200B;**[!UICONTROL B2B オプション]**&#x200B;がCustomer Journey Analytics B2B editionで利用できます：[!UICONTROL  グローバルアカウント ]、[!UICONTROL  アカウント ]、[!UICONTROL 購買グループ ]、[!UICONTROL 商談]、[!UICONTROL  グローバルアカウントの割合]、[!UICONTROL  アカウントの割合]、[!UICONTROL 購買グループの割合]、および[!UICONTROL 商談の割合]。</li></ul>
 * **[!UICONTROL セグメント]**：測定するセグメント。 クエリには 1 つのセグメントを含めることができます。
 
 ### 時間比較
@@ -84,10 +76,10 @@ ht-degree: 94%
 
 ### 日付範囲
 
-分析に対する目的の日付範囲。 この設定には、次の 2 つのコンポーネントがあります。
+分析に使用する希望の日付範囲。 この設定には、次の 2 つのコンポーネントがあります。
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 有効なオプションには、毎時、毎日、毎週、毎月、四半期ごとが含まれます。 同じ日付範囲に異なる間隔を設定すると、グラフのデータポイント数とテーブルの列数に影響を与える場合があります。 例えば、毎日の精度で 3 日間にわたる分析を表示すると、3 つのデータポイントのみが表示されますが、毎時の精度で 3 日間にわたる分析を表示すると、72 のデータポイントが表示されます。
-* **[!UICONTROL 日付]**：開始日と終了日。 便宜上、周期的な日付範囲のプリセットと以前に保存したカスタム範囲を使用できます。または、カレンダーセレクターを使用して固定日付範囲を選択することもできます。
+* **[!UICONTROL 日付]**：開始日と終了日。 日付範囲のプリセット（ローリング）や、以前に保存したカスタム範囲を使用することもできます。また、カレンダーセレクターを使用して固定の日付範囲を選択することもできます。
 
 <!-- 
 ## Example

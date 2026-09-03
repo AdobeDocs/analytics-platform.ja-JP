@@ -7,29 +7,14 @@ feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 autotag-review: '2026-05-19T06:31:08.010Z'
 TQID: 'https://experienceleague.adobe.com/q1l52F-xc4rXHXJB-2aMYUVd1ySLzyWbZhVAja92ojQ'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1183
+source-wordcount: 1179
 ht-degree: 100%
 
 ---
@@ -48,7 +33,7 @@ ID の例としては、顧客 ID、アカウント ID、メール ID などが�
 * ID は Customer Journey Analytics に取り込むすべてのデータソースに存在する、または追加できます。
 * ID はデータの各行に設定されます。
 * ID に PII は含まれていません。 機密性が高い可能性のあるすべての要素にはハッシュを適用します。
-* ID は、すべてのソース（同じ長さ、同じハッシュメソッドなど）で同じ形式を使用します。
+* ID は、すべてのソースで同じ形式（同じ長さ、同じハッシュメソッドなど）が使用されるようにします。
 
 Adobe Analytics などのデータセットでは、データの必ずしもすべての行に ID が存在するわけではなく、セカンダリ ID が存在する場合があります。 このような場合は、顧客が ECID でのみ識別される場合の行と ID が収集される場合（例えば、顧客の認証時）の行とのギャップを埋めるのに、[クロスチャネル分析（「スティッチング」とも呼ばれます）](/help/stitching/overview.md)を使用できます。
 
@@ -68,19 +53,19 @@ Adobe Analytics のデータを Customer Journey Analytics のデータに変換
 
 ### マーケティングチャネルの（再）設定
 
-従来の Adobe Analytics マーケティングチャネル設定は、Customer Journey Analytics では同じようには行われません。 次の 2 つの理由により違いがあります。
+従来の Adobe Analytics のマーケティングチャネル設定は、Customer Journey Analytics では同じようには機能しません。 次の 2 つの理由により違いがあります。
 
 * Adobe Experience Platform に取り込まれる Adobe Analytics データの処理レベル。
 
-* Customer Journey Analytics のレポート時間の特性
+* Customer Journey Analytics のレポート時の特性
 
-アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/ja/docs/analytics/components/marketing-channels/mchannel-best-practices)を公開しています。 これらの最新の推奨事項は、既に Adobe Analytics にある機能を高度なアトリビューション機能で最大限に活用するのに役立ちます。 また、この推奨事項は、Customer Journey Analytics への移行を成功させる設定にも役立ちます。
+アドビでは、[マーケティングチャネルの実装に関する最新のベストプラクティス](https://experienceleague.adobe.com/ja/docs/analytics/components/marketing-channels/mchannel-best-practices)を公開しています。 これらの最新のレコメンデーションは、高度なアトリビューション機能を含め、Adobe Analytics に既に備わっている機能を最大限に活用するのに役立ちます。 また、これらの推奨事項は、Customer Journey Analytics への移行を成功させるための土台作りにも役立ちます。
 
 また、Customer Journey Analytics データビューの一部として[派生フィールド](../data-views/derived-fields/derived-fields.md)を導入したことにより、[マーケティングチャネル関数テンプレート](../data-views/derived-fields/derived-fields.md#function-templates)を使用した非破壊的かつ遡及的な方法でマーケティングチャネルもサポートされます。
 
 ## Customer Journey Analytics への移行時の重大な違いの準備
 
-Customer Journey Analytics への移行に際しては、データ準備の手順を確認し、2 つのテクノロジー間の重要な違いを認識しておく必要があります。 この記事は管理者オーディエンスを対象としています。
+Customer Journey Analytics への移行に際しては、データ準備の手順を確認し、2 つのテクノロジー間の重要な違いを認識しておく必要があります。 この記事は管理者を対象としています。
 
 ### レポート時の処理を使いこなす {#report-time}
 
@@ -116,7 +101,7 @@ Adobe Analytics セグメントおよび計算指標は、Customer Journey Analy
 
 * Customer Journey Analytics では、カスタムセッションタイムアウトを定義でき、新しいセッションを開始する指標も定義できます。 様々なセッション定義でデータビューを作成して、Adobe Analytics で可能な範囲を超えるインサイトを得ることができます。 この機能は、モバイルデータセットで特に役に立つ可能性があります。
 
-* ユーザーに対してデータ辞書を提供することを考慮します。 または、SDR を拡張して、スキーマ要素の Experience Platform フィールド名を含めます。
+* ユーザーに対してデータ辞書の提供を検討してください。 または、SDR を拡張して、スキーマ要素の Experience Platform フィールド名を含めます。
 
 ### 次の手順
 

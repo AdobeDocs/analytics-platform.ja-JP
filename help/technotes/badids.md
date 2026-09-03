@@ -7,18 +7,11 @@ role: Admin
 exl-id: 4f71fbf2-290b-4076-b2ad-b086c2b854d9
 autotag-review: '2026-05-19T06:53:00.572Z'
 TQID: 'https://experienceleague.adobe.com/6vut30l-BSIxhTK96Tt3BG01q-rjHagcmer0WZ2GL-c'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 632
@@ -41,8 +34,8 @@ ht-degree: 2%
 Customer Journey Analyticsでは、コネクションで定義されるすべてのデータの一部として、不正なIDは識別子です。
 
 * 電子メールの送信元となる特定のID値を
-   * ユーザーID フィールド （ステッチされていないデータセット）、**または**&#x200B;から
-   * 永続的IDまたは個人ID フィールド（ステッチ可能なデータセット）から，
+  * ユーザーID フィールド （ステッチされていないデータセット）、**または**&#x200B;から
+  * 永続的IDまたは個人ID フィールド（ステッチ可能なデータセット）から，
 
   **および**
 * 1か月以内に、接続データ内の100万以上（1,000,000）のイベント（接続内のすべてのデータセットに対してカウント）に対して発生します。
@@ -58,8 +51,8 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
 
 Customer Journey Analytics Connection インターフェイスでは、インターフェイス内の複数の場所で&#x200B;**[!UICONTROL 不正なID]**&#x200B;の指標に関する情報が提供されます。
 
-* **[!UICONTROL 無効なID]** （または&#x200B;**[!UICONTROL BAVIDs]**）は、**[!UICONTROL スキップされた詳細を確認]** ダイアログでレコードをスキップする理由として表示されます。 **[[!UICONTROL 以下の**&#x200B;[!UICONTROL &#x200B;詳細を確認&#x200B;]&#x200B;**（使用可能な場合）を使用すると、接続]](/help/connections/create-connection.md)の[詳細画面で]**&#x200B;をスキップしたレコードが表示されます。
-* ステッチが有効なデータセットの場合、[**[!UICONTROL &#x200B; データセットのプレビュー]**](/help/stitching/use-stitching-ui.md#bad-ids)には、**[!UICONTROL ステッチ指標]**&#x200B;の一部として&#x200B;**[!UICONTROL 不正なID]**&#x200B;が表示されます。 この指標は、不正なID ケースが発生する可能性を特定するのに役立ちます。 ただし、この指標は、限られたデータセットにもとづいて計算されます。
+* **[!UICONTROL 無効なID]** （または&#x200B;**[!UICONTROL BAVIDs]**）は、**[!UICONTROL スキップされた詳細を確認]** ダイアログでレコードをスキップする理由として表示されます。 **[!UICONTROL 以下の**[!UICONTROL &#x200B;詳細を確認&#x200B;]**（使用可能な場合）を使用すると、接続](/help/connections/create-connection.md)の[詳細画面で]**&#x200B;をスキップしたレコードが表示されます。
+* ステッチが有効なデータセットの場合、[**[!UICONTROL  データセットのプレビュー]**](/help/stitching/use-stitching-ui.md#bad-ids)には、**[!UICONTROL ステッチ指標]**&#x200B;の一部として&#x200B;**[!UICONTROL 不正なID]**&#x200B;が表示されます。 この指標は、不正なID ケースが発生する可能性を特定するのに役立ちます。 ただし、この指標は、限られたデータセットにもとづいて計算されます。
 
 接続内で使用するデータセットに対する不正なIDの存在を特定する方法については、[不正なIDの露出](#bad-ids-exposure)を参照してください（ステッチが有効かどうかに関係なく）。
 

@@ -7,19 +7,11 @@ feature: Use Cases
 role: Admin
 autotag-review: '2026-05-19T09:33:58.249Z'
 TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: cf731116-8803-4027-85aa-9c0a126e8321
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e8abc408-b05c-427f-9e37-f8b033a6b3c3id: bfef374d-acfd-4c57-bf74-a2b36053c545id: cf731116-8803-4027-85aa-9c0a126e8321
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 518
@@ -82,20 +74,20 @@ ht-degree: 59%
 データビューを作成する場合、（スキーマに基づいて）次のディメンションと指標を使用できます。
 
 * **ディメンション：**
-   * ID
-   * product : SKU
-   * product : name
-   * product : order_id
-   * product : warranty : coverage
-   * prodcut : warranty : length
-   * product : warranty : name
-   * product : warranty : type
+  * ID
+  * product : SKU
+  * product : name
+  * product : order_id
+  * product : warranty : coverage
+  * prodcut : warranty : length
+  * product : warranty : name
+  * product : warranty : type
 * **指標：**
-   * product : orders
-   * product : units
-   * product : revenue
-   * product : warranty
-   * product : warranty : revenue
+  * product : orders
+  * product : units
+  * product : revenue
+  * product : warranty
+  * product : warranty : revenue
 
 ### 同じイベントの例（レポート動作）
 
@@ -151,7 +143,7 @@ Customer Journey Analyticsは、テーブルに基づいて、オブジェクト
 +}
 ```
 
-保証売上高のみを報告したい場合、プロジェクトは次のようになります。
+保証の売上高のみに関するレポートが必要な場合、プロジェクトは次のようになります。
 
 | `product : warranty : coverage` | `product : warranty : revenue` |
 | --- | --- |
@@ -205,7 +197,7 @@ Customer Journey Analyticsは、イベントのこれらの部分に注目して
 
 乾燥機には保証が付いていないので、テーブルには含まれていません。
 
-任意のディメンションを任意の指標と組み合わせることができるので、次の表では、ディメンション項目が指定されていないデータの処理方法を示します。
+任意のディメンションと任意の指標を組み合わせることができるので、次のテーブルでは、ディメンション項目が未指定の場合にデータがどのように表示されるかを示します。
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -213,7 +205,7 @@ Customer Journey Analyticsは、イベントのこれらの部分に注目して
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-製品注文には保証名が関連付けられていないのでディメンション項目は「未指定」に属しています。 同じ状況が、製品の保証注文にも当てはまります。
+製品の注文に保証名が関連付けられていないので、ディメンション項目は「未指定」に割り当てられます。 同じ状況が、製品の保証注文にも当てはまります。
 
 ```diff
 {
@@ -257,7 +249,7 @@ Customer Journey Analyticsは、イベントのこれらの部分に注目して
 +}
 ```
 
-名前が関連付けされていない注文をメモしておきます。 これらは、「未指定」ディメンション項目に属する注文です。
+名前が関連付けされていない注文をメモしておきます。 これらは、「未指定」ディメンション項目に起因する注文です。
 
 ### 指標の組み合わせ
 
@@ -285,5 +277,5 @@ Customer Journey Analyticsでは、同じ名前の指標が異なるオブジェ
 
 ## 制限事項
 
-Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [&#x200B; リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[&#x200B; データモデルの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-model-limits)」と「[&#x200B; データサイズの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
+Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [ リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[ データモデルの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)」と「[ データサイズの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
 

@@ -7,17 +7,11 @@ role: User
 badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
 TQID: https://experienceleague.adobe.com/c6Is38i4E54V-ittqMjTdqngZegP7kHf9HUv0KvmTpE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 281
@@ -35,20 +29,20 @@ B2B企業にとって、主要アカウントの成長と維持は最重要課�
 
 アドホックなリードコンバージョンレポートを作成して配信し、アカウントがsales funnelをどのように通過するのかを把握します。
 
-[&#x200B; フォールアウト &#x200B;](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) ビジュアライゼーションを使用すると、順次ジャーニーの事前定義されたステップ間のコンバージョン率と脱落を視覚化できます。
+[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) ビジュアライゼーションを使用すると、順次ジャーニーの事前定義されたステップ間のコンバージョン率と脱落を視覚化できます。
 
 ### 例
 
 アカウントのセールスfunnel（リードから商談まで）の上部のフォールアウトを確認します。
 
-1. [&#x200B; フォールアウト &#x200B;](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) ビジュアライゼーションを作成して設定します。
+1. [ フォールアウト ](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) ビジュアライゼーションを作成して設定します。
 1. ![設定](/help/assets/icons/Setting.svg)を選択して、**[!UICONTROL フォールアウトコンテナ]**&#x200B;として&#x200B;**[!UICONTROL アカウント]**&#x200B;を選択します。
 1. 最初のタッチポイントは、**[!UICONTROL すべてのアカウント]**&#x200B;を読み取る必要があります。
 1. 新しいタッチポイントを追加：**[!UICONTROL リードフォーム：完了が存在します]**。
 1. 新しいタッチポイントを追加：**[!UICONTROL 生成されたリードが存在します]**。
 1. 新しいタッチポイントを追加します：**[!UICONTROL MQLが有効です]**。
 
-   ![B2B – 主要アカウントの成長 – 販売段階の進行 – フォールアウト &#x200B;](assets/b2b-uc-grow-key-accounts-fallout.png)
+   ![B2B – 主要アカウントの成長 – 販売段階の進行 – フォールアウト ](assets/b2b-uc-grow-key-accounts-fallout.png)
 
 
 ## コラボレーション

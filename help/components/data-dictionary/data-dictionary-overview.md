@@ -1,20 +1,14 @@
 ---
-description: Analysis Workspace のデータ辞書を使用すると、Analysis Workspace の様々なコンポーネント（使用目的、承認済み、重複など）をカタログ化して追跡できます。
+description: Analysis Workspace のデータ辞書を使用すると、Analysis Workspace 内の様々なコンポーネントについて、使用目的、承認状況、重複しているかどうかなどをカタログ化して追跡できます。
 title: データ辞書の概要
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 TQID: https://experienceleague.adobe.com/Sq7br6h7MAjFPqEify4j6hjPu9Bp-dh7Ec7tqBXvYmk
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df28738e-9c71-4aa8-929e-edde22340cc6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 586
@@ -29,7 +23,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="データディクショナリ"
->abstract="データ辞書は、ユーザーと管理者が、Customer Journey Analytics 環境でコンポーネントを追跡したり、理解を深めたりするのに役立ちます。 <br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報をキュレートする責任があります。"
+>abstract="データ辞書は、ユーザーと管理者が Customer Journey Analytics 環境のコンポーネントを追跡し、理解を深めるのに役立ちます。 <br/>Customer Journey Analytics 管理者は、データ辞書の各コンポーネントに関する情報をキュレートする責任があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,7 +35,7 @@ Analytics 管理者は、データ辞書の各コンポーネントに関する�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のデータ辞書](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"}を参照してください。
+デモビデオについて詳しくは、 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のデータ辞書](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"}を参照してください。
 
 {{videoaa}}
 

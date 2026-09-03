@@ -5,16 +5,10 @@ feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
 TQID: https://experienceleague.adobe.com/LhPSvchJbDMPV-HmGSA2JaBZxoPQ7UyEKd7GMS-33UU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
 workflow-type: tm+mt
 source-wordcount: 798
@@ -51,7 +45,7 @@ Analysis Workspaceの日付比較では、日付範囲を含む任意の列を�
    |---|---|
    | **[!UICONTROL この日付範囲の前の *x* 週／月／四半期／年]** | この日付範囲の直前の選択した日付範囲と比較します。 |
    | **[!UICONTROL この日付範囲の前年のこれらの x 週／月／四半期／年]** | 1 年前の同じ日付範囲と比較します。 |
-   | **[!UICONTROL この日付範囲のカスタム日付範囲]** | カスタム日付範囲を定義できます。 |
+   | **[!UICONTROL この日付範囲のカスタム日付範囲]** | カスタム日付範囲を定義します。 |
 
    >[!NOTE]
    >
@@ -91,9 +85,9 @@ Analysis Workspaceの日付比較では、日付範囲を含む任意の列を�
 
 1. また、各列で並べ替えて、並べ替えに使用した列に基づいて日付の順序を変更することもできます。
 
-## 列の日付が同じ行で始まるように整列
+## 列の日付が同じ行で開始するように整列
 
-各列の日付をすべて同じ行から始まるように整列できます。
+各列の日付をすべて同じ行から開始するように整列できます。
 
 例えば、先週（2024年10月5日終了）とその前の週の日別比較を行います。 デフォルトでは、左側の列は9月22日から始まり、右側の列は9月29日から始まります。
 

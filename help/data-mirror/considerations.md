@@ -6,19 +6,11 @@ feature: Basics
 role: Admin
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
 source-wordcount: 888
@@ -46,16 +38,16 @@ CDC対応データミラーデータセットのソーステーブルに新し�
 
 * 遡及的なバックフィル：
 
-   * 現在のデータセットを削除します。
-   * 更新された列でコネクタを再設定します。
+  * 現在のデータセットを削除します。
+  * 更新された列でコネクタを再設定します。
 
   これにより、データがより効率的かつタイムリーにバックフィルされます。
 
 * 遡及的なバックフィルなし：
 
-   * ソーステーブルに列を追加します。
-   * ターゲットデータセットスキーマに列を追加します。
-   * ソーステーブルからターゲットデータセットへの新しいフィールド（列）を含めるようにマッピングを更新します。
+  * ソーステーブルに列を追加します。
+  * ターゲットデータセットスキーマに列を追加します。
+  * ソーステーブルからターゲットデータセットへの新しいフィールド（列）を含めるようにマッピングを更新します。
 
 この戦略：
 
@@ -88,7 +80,7 @@ CDC対応データミラーデータセットのソーステーブルに新し�
 
 ## ガバナンスの違い
 
-XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[&#x200B; フィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[&#x200B; フィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
+XDM [ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[ フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[ フィールド ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
 
 リレーショナルスキーマでは、列名は独立しています。 テーブル `customers`の`email`という名前の列は、テーブル `prospects`の`email`という名前の列とは独立しており、異なります。 この動作は、ラベル（DULE使用ラベルやポリシーなど）をミラーデータセットのフィールドに個別に適用する必要があることを意味します。 上記の例に基づいて、`customers` データセットの`email` フィールドと`prospects` データセットの`email` フィールドの両方にラベルを適用する必要があります。
 
@@ -109,9 +101,9 @@ XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/
 
 システムキーとフィールドには、次の考慮事項が適用されます。
 
-* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[&#x200B; フィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
-* [&#x200B; マッピングフェーズ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
+* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[ フィールドマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
+* [ マッピングフェーズ ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
 
 ## ミラーデータのバッチサイズ
 
-接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[&#x200B; バッチ取り込みのガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。
+接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[ バッチ取り込みのガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。

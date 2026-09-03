@@ -5,17 +5,11 @@ feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
 TQID: https://experienceleague.adobe.com/555a8gxm8jBGyatt1Vp6e40Wj2gqgRl95oFiHC4NMhQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 547
@@ -32,14 +26,14 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 * スクリーンリーダーのサポート
 * グラフィックの代替テキスト
 * キーボードショートカット
-* ディスプレイカラーの高コントラストへの変更
+* ディスプレイカラーの高コントラストへの変更、
 * その他の機能
 
 [!UICONTROL Analysis Workspace] には、次のような、使いやすいツールが用意されています。
 
 ## キーボードナビゲーション
 
-[!UICONTROL Analysis Workspace] でのナビゲーションは、上から下、左から右です。 次のナビゲーション要素はアクセシビリティを向上します。
+[!UICONTROL Analysis Workspace] でのナビゲーションは、上から下、左から右です。 次のナビゲーション要素はアクセシビリティを向上させます。
 
 * **[!UICONTROL タブ]**&#x200B;キーを押すと、Workspace 内の大きなセクション間を移動するランドマークショートカットが有効になります。 左パネルでは、**[!UICONTROL タブ]**&#x200B;を使用して、ドラッグ可能なオプション間を移動することもできます。
 * **[!UICONTROL タブ]**&#x200B;キーで要素がハイライト表示されたら、◀ と ▶ で個々の要素間を移動します。
@@ -55,11 +49,11 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 1. **[!UICONTROL Enter]** キーを押してメニューを開くか、メニュー項目を選択します。
 1. メニューを閉じるには **[!UICONTROL Esc]** キーを使用します。
 
-### ドラッグ&amp;ドロップ操作のキーボードナビゲーション
+### ドラッグ＆ドロップ操作のキーボードナビゲーション
 
 [!UICONTROL Analysis Workspace] は、ドラッグ＆ドロップによるユーザーインターフェイスです。 ただし、ユーザーは、代わりにキーボードを使用してコンポーネントを追加できます。
 
-1. タブを押して左パネルのコンポーネントに移動します。
+1. Tab キーを押して左パネル内のコンポーネントに移動します。
 1. **[!UICONTROL Enter]** キーを押して選択します。
 1. 矢印キーを使用して、コンポーネントをドロップする領域に移動します。
 1. **[!UICONTROL Enter]** キーを押して、コンポーネントを配置します。
@@ -80,7 +74,7 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 
 ## 必須の検証
 
-コンポーネント、ビジュアライゼーションまたはパネルを作成する場合、保存時に必須フィールドが検証されます。 必須フィールドが検証に合格しない場合は、赤色の枠線にエラーアイコンが表示されます。 記述された説明には、修正が必要な事項について説明されています。
+コンポーネント、ビジュアライゼーションまたはパネルを作成する場合、保存時に必須フィールドが検証されます。 必須フィールドが検証に合格しない場合は、赤色の枠線にエラーアイコンが表示されます。 修正が必要な内容については、説明文で案内されます。
 
 ![セグメントビルダーとエラー検証インジケーター。](assets/error-validation.png)
 

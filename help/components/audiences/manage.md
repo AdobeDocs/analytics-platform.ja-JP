@@ -1,19 +1,14 @@
 ---
-title: Adobe Customer Journey Analytics で作成したオーディエンスの管理方法について説明します
+title: Customer Journey Analytics で作成したオーディエンスの管理方法について説明します
 description: Customer Journey Analytics でのオーディエンスの管理方法を学ぶ
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 TQID: https://experienceleague.adobe.com/SVEj1knpMzmtkIlwAYSb6o0PYBR9wf7JbrLMcMM2V8g
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 774
@@ -25,15 +20,15 @@ ht-degree: 97%
 
 Adobe Customer Journey Analytics でオーディエンスを管理するには、**[!UICONTROL コンポーネント]**／**[!UICONTROL オーディエンス]**&#x200B;を使用します。
 
-## Audience management タスクについて
+## オーディエンス管理タスクについて理解する
 
 以前に作成したオーディエンスを管理すると、次のことを行えます。
 
 * オーディエンスの自動更新／アップデートを&#x200B;**スケジュール設定またはスケジュール解除**&#x200B;できます。 スケジュールの最大有効期限は 1 年です。
-* 有効期限が近づいたら&#x200B;**オーディエンスの更新スケジュールを更新**&#x200B;します。 有効期限が近づいたオーディエンスは、予定レポートの有効期限が近づいた場合と同様に扱われます。管理者は、スケジュールの期限が切れる 1 か月前にメールを受け取ります。
+* 有効期限が近づいたら&#x200B;**オーディエンスの更新スケジュールを更新**&#x200B;します。 有効期限が近づいたオーディエンスは、スケジュール済みレポートの有効期限が近づいた場合と同様に扱われます。管理者は、スケジュールの有効期限が切れる 1 か月前にメールを受け取ります。
 * **更新間隔**&#x200B;と&#x200B;**オーディエンスが最後に更新された時間**&#x200B;を表示します。
 * **オーディエンスの作成に要した時間**&#x200B;に関するインサイトを Adobe Customer Journey Analytics から取得します。 さらに、オーディエンスがアクティベーション目的で Real-time Customer Platform に表示されるまでに要した時間。
-* Adobe Customer Journey Analytics のオーディエンスが **Real-time Customer Platform でアクティブに使用されている**&#x200B;かどうかを確認します。 または（理想的には）Adobe Customer Journey Analytics で作成されたオーディエンスを使用する任意の Experience Platform アプリケーション。
+* Adobe Customer Journey Analytics のオーディエンスが **Real-time Customer Platform でアクティブに使用されている**&#x200B;かどうかを確認します。 または（理想的には）Customer Journey Analytics で作成されたオーディエンスを使用する任意の Experience Platform アプリケーション。
 
 [オーディエンス表示](/help/technotes/access-control.md#user-level-access)のアクセス権がある場合は、オーディエンスを表示できます。 [オーディエンス作成](/help/technotes/access-control.md#user-level-access)のアクセス権がある場合は、オーディエンスを編集および削除できます。
 
@@ -51,14 +46,14 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 1. （オプション）![検索](/help/assets/icons/Search.svg) を使用して、オーディエンスを検索します。
 
-   各オーディエンスに関する情報では、次の列を使用できます。
+   次の列には、各オーディエンスに関する情報が表示されます。
 
    | 列 | 説明 |
    | --- | --- |
    | ![SelectBox](/help/assets/icons/SelectBox.svg) | 1 つ以上のオーディエンスを選択すると、オーディエンスインターフェイスの下部に青いアクションバーが表示されます。 詳しくは、[アクション](#actions)を参照してください。 |
    | **[!UICONTROL タイトルと説明]** | オーディエンスの作成時に入力したタイトルと説明。 |
    | **[!UICONTROL データビュー]** | このオーディエンスが作成されたデータビュー。 |
-   | **[!UICONTROL オーディエンスサイズ]** | このオーディエンスのユーザーの合計数。 |
+   | **[!UICONTROL オーディエンスサイズ]** | このオーディエンスの合計人数。 |
    | **[!UICONTROL 所有者]** | オーディエンスの所有者 - オーディエンスを作成した人。 |
    | **[!UICONTROL 更新頻度]** | オーディエンスの作成時に設定された更新間隔。 |
    | **[!UICONTROL タグ]** | このオーディエンスに適用されるタグ。 |
@@ -80,7 +75,7 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
    **[!UICONTROL オーディエンスを編集]**&#x200B;ダイアログが表示されます。
 
-1. オーディエンスの使用可能なフィールドを更新できます。 更新できるフィールドについて詳しくは、[オーディエンスの作成と公開](/help/components/audiences/publish.md)の記事の[オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を参照してください。
+1. オーディエンスの利用可能なフィールドを更新できます。 更新できるフィールドについて詳しくは、[オーディエンスの作成と公開](/help/components/audiences/publish.md)の記事の[オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を参照してください。
 
 1. 「**[!UICONTROL 再公開]**」を選択します。
 
@@ -90,9 +85,9 @@ Adobe Customer Journey Analytics でオーディエンスを管理するには�
 
 | アイコン | アクション | 説明 |
 |:---:|---|---|
-| ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したオーディエンスにタグを付けます。 **[!UICONTROL タグを更新：*オーディエンス名&#x200B;*]**&#x200B;ダイアログで、ドロップダウンメニューからタグを選択するか、1 つ以上の新しいタグを入力します。 「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
+| ![ラベル](/help/assets/icons/Labels.svg) | **[!UICONTROL タグ]** | 選択したオーディエンスにタグを付けます。 **[!UICONTROL タグを更新：*オーディエンス名&#x200B;*]**ダイアログで、ドロップダウンメニューからタグを選択するか、1 つ以上の新しいタグを入力します。 「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
 | ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択したオーディエンスを削除します。 |
-| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択したオーディエンスの名前を変更します。 **[!UICONTROL 名前を変更：*オーディエンス名&#x200B;*]**&#x200B;ダイアログを使用してオーディエンスの名前を変更して、「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
+| ![編集](/help/assets/icons/Edit.svg) | **[!UICONTROL 名前変更]** | 選択したオーディエンスの名前を変更します。 **[!UICONTROL 名前を変更：*オーディエンス名&#x200B;*]**ダイアログを使用してオーディエンスの名前を変更して、「**[!UICONTROL 保存&#x200B;]**」を選択して保存します。 |
 
 スケジュールされたプロジェクトを 1 つ以上選択すると、青色のアクションバーから次のアクションを実行できます。
 

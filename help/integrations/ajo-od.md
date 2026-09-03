@@ -1,25 +1,16 @@
 ---
-title: Adobe Journey Optimizer 意思決定管理の統合
+title: Adobe Journey Optimizer 意思決定管理を統合する
 description: Adobe Journey Optimizer 意思決定管理で生成されたデータを取り込み、Customer Journey Analytics 内で Analysis Workspace を使用して分析します。
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
 autotag-review: '2026-05-19T07:19:20.352Z'
 TQID: 'https://experienceleague.adobe.com/n3xsScsv43IG-tOQhgNjeqB2UmWzbIVw7sv5CcpZPd0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: df066828-d385-4da6-af58-80137fb27d7b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: df066828-d385-4da6-af58-80137fb27d7b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 753
@@ -49,10 +40,10 @@ Adobe Experience Platform は、中央のデータソースとして機能し、
 | データセット | データセットタイプ | 接続設定 | 説明 |
 | --- | --- | --- | --- |
 | ODE DecisonEvents - _サンドボックス_&#x200B;決定 | イベント | ユーザー ID：`IdentityMap` | 意思決定管理の決定イベント用に自動生成されたデータが含まれます。 _サンドボックス_&#x200B;は、特定のサンドボックス名を指します。 |
-| Adobe Journey Optimizer メッセージフィードバックイベントのデータセット | イベント | ユーザー ID：`IdentityMap` | メッセージ配信イベントが含まれます。 |
-| Adobe Journey Optimizer メールトラッキングエクスペリエンスイベントのデータセット | イベント | ユーザー ID：`IdentityMap` | メールトラッキングイベントが含まれます。 |
-| Adobe Journey Optimizer プッシュトラッキングエクスペリエンスイベントのデータセット | イベント | ユーザー ID：`IdentityMap` | プッシュトラッキングイベントが含まれます。 |
-| Adobe Journey Optimizer エンティティのデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての Adobe Journey Optimizer イベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれています。 |
+| Adobe Journey Optimizer メッセージフィードバックイベントデータセット | イベント | ユーザー ID：`IdentityMap` | メッセージ配信イベントが含まれます。 |
+| Adobe Journey Optimizer メールトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | メールトラッキングイベントが含まれます。 |
+| Adobe Journey Optimizer プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | プッシュトラッキングイベントが含まれています。 |
+| Adobe Journey Optimizer エンティティデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての Adobe Journey Optimizer イベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれています。 |
 
 {style="table-layout:auto"}
 
@@ -86,10 +77,10 @@ Adobe Experience Platform は、中央のデータソースとして機能し、
 
 | 指標 | 説明 | スキーマ要素 | コンポーネント設定 |
 | --- | --- | --- | --- |
-| イベントタイプ（名前を変更して特定のイベントを参照する、`message.feedback` の場合 `Feedback` など）[1] | 特定のタイプのイベントの量 | `eventType` | コンポーネントタイプ：指標<br/>**[!UICONTROL 「値を含める／除外」を設定&#x200B;]**：オン<br/>**[!UICONTROL 一致]**：[!UICONTROL すべての条件を満たす場合]<br/>**[!UICONTROL 条件&#x200B;]**：**[!UICONTROL &#x200B;等しい&#x200B;]**`message.feedback` |
-| 決定オプションスコア | 単一スコープのコンテキストにおける決定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | コンポーネントタイプ：指標 |
-| フォールバック決定オプションのスコア | 単一スコープのコンテキストにおけるフォールバック決定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | コンポーネントタイプ：指標 |
-| オファーの却下 | 他の直接のインタラクションなしで却下または拒否されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | コンポーネントタイプ：指標 |
+| イベントタイプ（名前を変更して特定のイベントを参照する、`message.feedback` の場合 `Feedback` など）[1] | 特定のタイプのイベントの数 | `eventType` | コンポーネントタイプ：指標<br/>**[!UICONTROL 「値を含める／除外」を設定&#x200B;]**：オン<br/>**[!UICONTROL 一致]**：[!UICONTROL すべての条件を満たす場合]<br/>**[!UICONTROL 条件&#x200B;]**：**[!UICONTROL &#x200B;等しい&#x200B;]**`message.feedback` |
+| 決定オプションスコア | 単一の範囲のコンテキストにおける決定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | コンポーネントタイプ：指標 |
+| フォールバック決定オプションのスコア | 単一の範囲におけるフォールバック決定オプションの計算値。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | コンポーネントタイプ：指標 |
+| オファーの却下 | 他の直接的なインタラクションなしで却下または破棄されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | コンポーネントタイプ：指標 |
 | オファーの表示 | プロファイルに表示されるオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.display` | コンポーネントタイプ：指標 |
 | オファーの操作 | プロファイルがやり取りしたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | コンポーネントタイプ：指標 |
 | オファーの送信 | プロファイルに送信されたオファーの数。 | `_experience.decisioning.`<br/>`propositionEventType.send` | コンポーネントタイプ：指標 |

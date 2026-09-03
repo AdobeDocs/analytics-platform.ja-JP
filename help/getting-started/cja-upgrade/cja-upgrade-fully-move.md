@@ -1,5 +1,5 @@
 ---
-title: Adobe Customer Journey Analytics へのアップグレード後、Adobe Analytics が必要な期間の評価
+title: Adobe Customer Journey Analytics へのアップグレード後に Adobe Analytics がどのくらいの期間必要かを評価する
 description: Adobe Customer Journey Analytics へのアップグレード後、Adobe Analytics が必要な期間を評価する方法について説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -7,20 +7,11 @@ feature: Basics
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 autotag-review: '2026-05-19T08:15:04.463Z'
 TQID: 'https://experienceleague.adobe.com/2YMUT3yAbDFzzTOZ-NJlJyMmD8GPO-Kc-Lor6GlLA54'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1081
@@ -43,7 +34,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-keep-aa"
->title="両方の分析製品の保持"
+>title="両方の Analytics 製品を保持する"
 >abstract="（非推奨）このオプションを選択する場合、アドビとの契約には Adobe Analytics と Adobe Customer Journey Analytics の両方が含まれるので、時がたつにつれて組織にとってよりコストが高くなる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
@@ -52,7 +43,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-source-connector"
->title="Web SDK からのデータのみを使用する Analytics ソースコネクタを無効にする"
+>title="Web SDK からのデータのみを使用するために、Analytics ソースコネクタを無効にする"
 >abstract="Analytics ソースコネクタは、並べてデータを比較したり、履歴データを提供したり、Customer Journey Analytics では完全には使用できない一部の機能にアクセスしたりするのに使用されます。 これらの目的で Adobe Analytics が不要になった場合は、Analytics ソースコネクタを無効にすることができます。"
 
 <!-- markdownlint-enable MD034 -->
@@ -69,7 +60,7 @@ ht-degree: 100%
 
 | アップグレード中およびアップグレード後の Adobe Analytics の使用 | 説明 |
 |---------|----------|
-| データの並列比較の実行 | アドビでは、新しい Adobe Customer Journey Analytics 環境が稼動してデータを収集するようになった後も、一定期間 Adobe Analytics 環境の稼動を維持することをお勧めします。 これは、Adobe Customer Journey Analytics データを Adobe Analytics データと並べて比較するのに最適な方法です。<p>Adobe Customer Journey Analytics 環境のデータに慣れるまでは、Adobe Analytics を無効にしないでください。</p><p>**メモ：**&#x200B;アドビでは、履歴データ用の Analytics ソースコネクタと組み合わせて、Adobe Customer Journey Analytics 環境用に Web SDK の新しい実装を使用することをお勧めします。 [詳細情報](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
+| データを並べて比較する | アドビでは、新しい Adobe Customer Journey Analytics 環境が稼動してデータを収集するようになった後も、一定期間 Adobe Analytics 環境の稼動を維持することをお勧めします。 これは、Adobe Customer Journey Analytics データを Adobe Analytics データと並べて比較するのに最適な方法です。<p>Adobe Customer Journey Analytics 環境のデータに慣れるまでは、Adobe Analytics を無効にしないでください。</p><p>**メモ：**&#x200B;アドビでは、履歴データ用の Analytics ソースコネクタと組み合わせて、Adobe Customer Journey Analytics 環境用に Web SDK の新しい実装を使用することをお勧めします。 [詳細情報](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
 | Adobe Analytics の履歴データの保持 | アドビでは、新しい Adobe Customer Journey Analytics 環境が稼動してデータを収集するようになった後も、一定期間 Adobe Analytics 環境を Analytics ソースコネクタと共に保持することをお勧めします。 これは、Adobe Analytics の履歴データを Adobe Customer Journey Analytics に取り込む最適な方法です。<p>新しい Web SDK 実装を使用して Customer Journey Analytics で十分な履歴データを収集したら、Analytics ソースコネクタを完全に削除できます。 これを行うのは、Adobe Customer Journey Analytics Web SDK の新しい実装で収集した履歴データのみに頼ることができる場合です。</p><p>**メモ：**&#x200B;アドビでは、履歴データ用の Analytics ソースコネクタと組み合わせて、Adobe Customer Journey Analytics 環境用に Web SDK の新しい実装を使用することをお勧めします。 [詳細情報](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
 | データフィードまたはその他の Adobe Analytics 機能の使用 | Adobe Customer Journey Analytics では、一部の機能はまだ完全には利用できません。 これらの機能を利用する必要がある場合は、これらの機能が利用可能になるまで、Adobe Analytics を Adobe Customer Journey Analytics と組み合わせて使用することが必要になる可能性があります。 <p>Customer Journey Analytics で完全に使用できない機能には、データフィードと貢献度分析が含まれます。 まだ使用できない機能の完全なリストについては、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。</p> |
 
@@ -79,8 +70,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement-third-pary"
->title="サードパーティの Tag Management システムを無効にする"
->abstract="Web SDK のデータがすべて機能するので、サードパーティの Tag Management システムから AppMeasurement ライブラリを削除します。<br><br>この手順を実行するのにかかる推定時間は、Tag Management 製品から AppMeasurement を無効にする容易さと、組織がタグコードのデプロイと管理に採用しているリリースサイクルによって異なります。"
+>title="サードパーティのタグ管理システムを無効にする"
+>abstract="Web SDK のデータが完全に機能するようになったら、タグ管理者と連携して、サードパーティのタグ管理システムから AppMeasurement ライブラリを削除します。<br><br>この手順を実行するのにかかる推定時間は、Tag Management 製品から AppMeasurement を無効にする容易さと、組織がタグコードのデプロイと管理に採用しているリリースサイクルによって異なります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -108,7 +99,7 @@ ht-degree: 100%
 
 1. Adobe Analytics を使用したデータの収集を停止します。
 
-   Adobe Analytics データと Customer Journey Analytics データの並列比較が完了したら、Adobe Analytics 実装を使用したデータの収集を停止できます。 Analytics ソースコネクタを通じた Customer Journey Analytics への新しい Adobe Analytics データのフローは行われなくなります。
+   Adobe Analytics データと Customer Journey Analytics データの並列比較の結果に十分に満足できたら、Adobe Analytics 実装を使用したデータの収集を停止できます。 新しい Adobe Analytics データは、Analytics ソースコネクタを通じて Customer Journey Analytics にフローしなくなります。
 
    ただし、この時点より前に Adobe Analytics 環境から収集したデータは、Analytics ソースコネクタを通じて Customer Journey Analytics の履歴データとして引き続き利用できます。
 
@@ -134,13 +125,13 @@ ht-degree: 100%
 
    +++ サードパーティ
 
-   タグ管理者と協力して、サードパーティの Tag Management システムから AppMeasurement ライブラリを削除します。
+   タグ管理者と協力して、サードパーティのタグ管理システムから AppMeasurement ライブラリを削除します。
 
    +++
 
 1. Adobe Analytics をサービスとしてデータストリームから削除します。
 
-   Web SDK のデータがすべて機能するので、Platform 管理者と協力して、Adobe Analytics をサービスとしてデータストリームから削除します。
+   Web SDK のデータが完全に機能している場合は、プラットフォーム管理者と協力して、Adobe Analytics をサービスとしてデータストリームから削除します。
 
    Adobe Analytics をサービスとして削除する前に、Analytics ユーザーが Adobe Analytics ではなく Customer Journey Analytics を使用していることを確認します。
 

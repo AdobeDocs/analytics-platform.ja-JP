@@ -1,5 +1,5 @@
 ---
-title: Analytics ソースコネクタデータと Adobe Analytics の比較
+title: Analytics Source Connector データと Adobe Analytics の比較
 description: Adobe Analytics と Customer Journey Analytics で同様のレポートを表示する際のデータの違いについて理解します。
 role: Developer, Admin
 solution: Customer Journey Analytics
@@ -7,20 +7,11 @@ exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス;クエリサービス;SQL 構文
 TQID: https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 770
@@ -28,7 +19,7 @@ ht-degree: 100%
 
 ---
 
-# Analytics ソースコネクタデータと Adobe Analytics の比較
+# Analytics Source Connector データと Adobe Analytics の比較
 
 組織で Customer Journey Analytics を導入すると、Adobe Analytics と Customer Journey Analytics のデータにいくつか違いが出る可能性があります。 これらの違いは正常であり、いくつかの理由で発生する可能性があります。 Customer Journey Analytics は、Adobe Analytics のデータに関する制限の一部を改善できるように設計されています。 この柔軟性により、Customer Journey Analytics でのデータの解釈方法にいくつか違いが生じる可能性があります。 この記事では、Customer Journey Analytics と Adobe Analytics でのデータの処理方法に関する潜在的な違いを理解します。
 
@@ -76,6 +67,6 @@ ht-degree: 100%
    * `hit_source` は、`0`、`3`、`5`、`7`、`8`、`9`、または、`10`（データソースおよびその他のヒットしないデータ）です
    * `page_event` は `53` か `63`（ストリーミングメディアのキープアライブヒット）です
 
-   上記の条件のいずれかに一致する行は、Analytics ソースコネクタの取り込みワークフローから除外されるので、データフィード行をカウントする際にも除外する必要があります。
+   上記の条件のいずれかに一致する行は、Analytics Source Connector の取り込みワークフローから除外されるので、データフィード行をカウントする際にも除外する必要があります。
 
 1. クエリサービスの合計レコード数は、同期間のデータフィードの行数と一致する必要があります。
