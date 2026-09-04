@@ -19,7 +19,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1ef12bfccbecc74a0b437c9c582fe0f6c1c1e9e5
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 2116
 ht-degree: 15%
@@ -91,7 +91,7 @@ B2Bの個人とアカウントの結合をサポートするには、個人と�
 
 グラフベースの合成は、エクスペリエンスイベントデータセットの人物IDを昇格するためにも使用されます。 例えば、**emily@adobe.com**&#x200B;の更新された値を参照してください。
 
-グラフベースの合成は、エクスペリエンスイベントデータセットの人物IDを昇格するためにも使用されます。 例えば、[&#x200B; データセット &#x200B;](#enable-b2b-stitching-on-event-datasets)でステッチを有効にする際に、永続的なユーザーID （ECID）フィールドを永続的なユーザーIDとして使用するように設定します。 ECID値として`5678`、Email値として`emily@adobe.com`に基づいて、`emily@adobe.com`は関連イベントで昇格した人物IDとして設定されます。
+グラフベースの合成は、エクスペリエンスイベントデータセットの人物IDを昇格するためにも使用されます。 例えば、[&#x200B; データセット &#x200B;](#enable-b2b-person-to-account-stitching-on-event-datasets)でステッチを有効にする際に、永続的なユーザーID （ECID）フィールドを永続的なユーザーIDとして使用するように設定します。 ECID値として`5678`、Email値として`emily@adobe.com`に基づいて、`emily@adobe.com`は関連イベントで昇格した人物IDとして設定されます。
 
 | タイムスタンプ | 永続的 ID | 元のアカウント ID | 元のユーザーID | 昇格されたユーザーID |
 |--|--|---|---|---|

@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 1365
-ht-degree: 48%
+source-wordcount: 1643
+ht-degree: 41%
 
 ---
 
@@ -100,6 +100,10 @@ ht-degree: 48%
 
 
 ## テンプレート
+
+Content Analyticsには、プロジェクトを素早く作成するための2つのプロジェクトテンプレートがWorkspaceに用意されています。
+
+### Content Analytics テンプレート
 
 Content Analytics [&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md)を使用すると、どのコンテンツとコンテンツ属性が最も効果的かを確認できます。 テンプレートは [web チャネルとエンゲージメントのユースケース](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、コンテンツのパフォーマンスをきめ細かく示します。 個々のアセットや特定の属性のパフォーマンスを確認できます。
 
@@ -195,6 +199,21 @@ Content Analyticsは、AIと生成AIを活用して、被写体、シーン、�
 
     また、[!UICONTROL アセット認識 ID] を[!UICONTROL アセット ID] に置き換えて、特定の画像 URL が参照されている場所のレコードを取得することもできます。
 
+
+### Content Analyticsのペイドメディア用テンプレート
+
+有料メディア Content Analytics [&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md)を使用すると、どの有料メディアコンテンツとコンテンツ属性が最も効果的かを確認できます。 このテンプレートは、[Web チャネルとエンゲージメントのユースケース &#x200B;](/help/analysis-workspace/templates/use-templates.md#web-engagement)の一部であり、有料メディアコンテンツのパフォーマンスを詳細に把握するのに役立ちます。 ネットワーク、アカウント、キャンペーン、エクスペリエンス、アセットをまたいで、有料メディアのリーチ、エンゲージメント、支出、効率性を確認できます。 このパネルの指標とディメンションは、意図的に有料メディアアセットのサマリー粒子に留まります。 このテンプレートのパネルの概要データセットをイベントデータと組み合わせないでください。
+
+学習した内容にもとづいて、有料メディアチャネルの費用を見直す、パフォーマンスの低いキャンペーンにより多くの費用を費やす、パフォーマンスの高いアセットを使用するキャンペーンにより多くの費用を費やすなど、さまざまな施策を実施できます。
+
+テンプレートを使用するには:
+
+1. メインメニューから「**[!UICONTROL Workspace]**」を選択します。
+1. Content Analytics 用に設定されているデータビューが選択されていることを確認します。
+1. [!UICONTROL &#x200B; ユースケース &#x200B;]の&#x200B;**[!UICONTROL Channel]**&#x200B;および&#x200B;**[!UICONTROL Engagement]**&#x200B;のセグメント（**[!UICONTROL Web]**）を検索するか、**&#x200B;**&#x200B;[!UICONTROL Paid media Content Analytics] **&#x200B; テンプレートを選択**&#x200B;ます。
+1. 「**[!UICONTROL テンプレートを使用]**」を選択します。
+
+**[!UICONTROL Content Analytics – 有料メディアの概要データ]** プロジェクトが[Analysis Workspace](/help/analysis-workspace/home.md)に開きます。 プロジェクトは、**[!UICONTROL 有料メディアパフォーマンス]** [&#x200B; パネル &#x200B;](/help/analysis-workspace/c-panels/panels.md)で構成され、[自由形式のテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)と[&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)があります。 パネルを使用して、ネットワーク、アカウント、キャンペーン、エクスペリエンス、アセットをまたいで、有料メディアのリーチ、エンゲージメント、支出、効率性を確認します。 パネル内の指標とディメンションは、意図的に有料メディアアセットのサマリーグレイン内に残ります。サマリーデータセットとイベントデータを組み合わせません。
 
 >[!MORELIKETHIS]
 >

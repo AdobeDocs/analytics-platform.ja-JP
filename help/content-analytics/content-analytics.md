@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 906
-ht-degree: 55%
+source-wordcount: 1019
+ht-degree: 43%
 
 ---
 
@@ -48,7 +48,7 @@ Content Analytics は、次のように段階的に価値を提供します。
 
 1. コンテンツ&#x200B;**使用状況**：Content Analytics を使用すると、インプレッションを受信しているアセットと、インプレッションを受信しているアセットの場所に関するインサイトを得ることができます。 こうしたインサイトは、webやモバイルのプロパティでアセットが過小使用されているか、過剰に使用されているかを確認するのに役立ちます。
 1. コンテンツ&#x200B;**エンゲージメント**：Content Analytics では、特定の属性を持つアセットの平均クリックスルー率などのエンゲージメントインサイトを提供できます。 これらのインサイトは、特定のタイプのエクスペリエンスが引き続き効果的かどうかを判断するのに役立ちます。
-1. コンテンツジャーニー：さらに、Adobe Experience Platformに保管されているあらゆるデータと組み合わせることで、エンゲージメントだけでなく、特定のコンテンツがコンバージョンにつながるかどうかなど、コンテンツジャーニーに関するさらなるインサイトを獲得できます。 たとえば、特定のコンテンツがエンゲージメントだけでなくコンバージョンにつながるかどうかを確認します。 次に、その知識があれば、コンテンツのタイプに関する ROI を判断できます。
+1. コンテンツ **ジャーニー**：さらに、Experience Platformで利用可能なすべてのデータと組み合わせることで、エンゲージメントに加えて、特定のコンテンツがコンバージョンにつながるかどうかなど、コンテンツジャーニーに関する追加のインサイトを得ることができます。 たとえば、特定のコンテンツがエンゲージメントだけでなくコンバージョンにつながるかどうかを確認します。 次に、その知識があれば、コンテンツのタイプに関する ROI を判断できます。
 1. コンテンツ&#x200B;**パーソナライゼーション**：最終的に、Content Analytics により、インサイトに基づいて行動し、これらのインサイトを使用してコンテンツに費やす費用を決定できます。 例えば、特定のタイプのコンテンツを特定のオーディエンスに送信する必要があるでしょうか？ 高度なパーソナライゼーションの機会を提供してくれるコンテンツは何ですか？
 
 ## 用語
@@ -63,13 +63,21 @@ Content Analytics では、次の主要な用語を使用します。
 
 ## 仕組み
 
-Content Analyticsは、Experience Platform イベントデータセットのwebおよびモバイル画像ビューデータを使用して、[&#x200B; コンテンツイベントデータを収集](config/datacollection.md)します。 これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、モバイルSDK、サーバーAPI）を使用してデータを収集する必要があります。 行動データは、Web SDK、モバイルSDK、Analytics Sourceコネクタを使用して収集できます。
+Content Analyticsでは、Experience Platform イベントデータセットからwebおよびモバイルの画像ビューデータと有料メディアデータを使用して、[&#x200B; コンテンツイベントデータを収集](config/datacollection.md)します。 これらのコンテンツエクスペリエンスイベントでは、Experience Platform Edge Network（Web SDK、モバイルSDK、サーバーAPI）またはExperience Platform ソースコネクタを通じてデータを収集する必要があります。
 
-![Content Analytics - 仕組み](assets/aca-overview-new.gif)
+* 行動データは、Web SDK、モバイルSDK、Analytics Sourceコネクタを使用して収集できます。
+* 有料メディアの場合、エクスペリエンスデータは、利用可能な有料メディアソースコネクタを通じてExperience Platformで収集された有料メディアイベントデータソースから再構築されます。
 
-1. Content Analytics[&#128279;](config/configuration.md)用に設定された サイトまたはアプリにユーザーがアクセスすると、Experience Platform Webまたはモバイル SDKは、インプレッションとコンテンツとのインタラクションを記録します。
-1. IDおよび特徴化サービスは、これらのやり取りを処理します。 このプロセスは、インタラクションを定義する、設定済み URL の公開バージョンを再訪問する取得サービスで構成されます。 取得したすべての URL について、ID サービスはエクスペリエンスとアセットを一意に識別します。 また、特徴量化サービスは、AI/マシンラーニングサービスを適用して、エクスペリエンスとアセットのメタデータと属性を発見します。
-1. これらのサービスの結果（[コンポーネント、属性、ID](/help/content-analytics/report/components.md)）は、Experience Platform 内の関連する特定のコンテンツ分析データセットを更新するのに使用されます。
+![Content Analytics - 仕組み](assets/aca-overview-new-paid-media.gif)
+
+
+1. Content Analytics[&#128279;](config/configuration.md)用に設定された サイトまたはアプリにユーザーがアクセスすると、Experience Platform Webまたはモバイル SDKは、コンテンツに対するインプレッションとインタラクションを記録します。
+有料メディアデータは、ソースコネクタ（GoogleやMetaなど）から毎日データセットに収集されます。 Content Analyticsは、新しいアセットやエクスペリエンスに対して[設定された有料メディアデータセット &#x200B;](config/configuration.md)を監視し、広告データセットのメタデータを使用してエクスペリエンスHTMLを構成します。 HTMLの体験は、有料メディア体験としてアセットの詳細と組み合わされています。
+
+1. IDおよび特徴量化サービスは、これらのインタラクション（webおよびモバイル）およびエクスペリエンス（有料メディア）を処理します。 このプロセスは、インタラクションを定義する設定されたURLの公開向けバージョンと、エクスペリエンスを定義するHTMLを再訪問する取得サービスで構成されます。 取得したすべてのURLとHTMLについて、ID サービスはエクスペリエンスとアセットを一意に識別します。 また、特徴量化サービスは、AI/マシンラーニングサービスを適用して、エクスペリエンスとアセットのメタデータと属性を発見します。
+
+1. IDおよび特徴量化サービス（[&#x200B; コンポーネント、属性、およびID](/help/content-analytics/report/components.md)）の結果は、Experience Platformで関連する特定のContent Analytics データセットを更新するために使用されます。
+
 1. Customer Journey Analyticsの設定（[Connection](/help/connections/overview.md)、[Data view](/help/data-views/data-views.md)、[Workspace](/help/analysis-workspace/home.md)）では、Content Analytics データを行動データやその他のルックアップデータと組み合わせて使用できます。 この設定は、コンテンツに関する独自のマクロレベルのインサイトの基盤となります。 <br/>Content Analytics テンプレート [を使用して、Content Analytics レポートと分析をすばやく開始できます](/help/content-analytics/report/report.md#template)。
 
 

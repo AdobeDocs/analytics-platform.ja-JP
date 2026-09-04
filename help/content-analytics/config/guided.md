@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 4186
-ht-degree: 64%
+source-wordcount: 4806
+ht-degree: 54%
 
 ---
 
@@ -77,7 +77,7 @@ Content Analytics **[!UICONTROL 設定]**&#x200B;画面から、新しい設定�
 
 ## ガイド付き設定ウィザード
 
-ガイド付き設定ウィザードは、4つのセクション（[Details](#details)、[Connection](#connection)、[Data view](#data-view)、および[Channels](#channels)）で構成され、それぞれContent Analyticsを適切に設定および設定するために必要な詳細を求められます。 セクション内の一部の設定は、前のセクションの設定値に依存する場合があるので、次のセクションに進む前に各セクションを完了してください。
+ガイド付き設定ウィザードには、[詳細](#details)、[接続](#connection)、[&#x200B; データビュー](#data-view)、および[&#x200B; チャネル &#x200B;](#channels)の4つのセクションが含まれています。 各セクションでは、Content Analyticsの設定に必要な詳細を確認するプロンプトが表示されます。 一部の設定は以前のセクションの設定値に依存するため、次のセクションに移動する前に各セクションを完了してください。
 
 ### 詳細 {#onboarding-details}
 
@@ -89,7 +89,7 @@ Content Analytics **[!UICONTROL 設定]**&#x200B;画面から、新しい設定�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="詳細"
->abstract="このガイドでは、Content Analytics を設定するために必要な要件を設定します。 この設定の名前を指定し、分析するコンテンツ分析データを含むサンドボックスを選択してください。"
+>abstract="このガイドでは、Content Analyticsを設定するための要件を設定します。 この設定の名前を指定し、分析するコンテンツ分析データを含むサンドボックスを選択します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -99,7 +99,7 @@ Content Analytics **[!UICONTROL 設定]**&#x200B;画面から、新しい設定�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="接続"
->abstract="コンテンツ分析データを結合する Customer Journey Analytics の既存の接続を選択します。"
+>abstract="Customer Journey Analyticsから既存の接続を選択して、Content Analytics データを結合します。"
 
 各設定には、一意の名前が必要です。 例えば、`Example Content Analytics configuration` のように設定します。 設定を保存または実装するには、名前が必須です。
 
@@ -140,7 +140,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="データビュー"
->abstract="Content Analytics データを結合するために、Customer Journey Analytics の既存のデータビューを選択します。"
+>abstract="Customer Journey Analyticsから既存のデータビューを選択して、Content Analytics データを結合します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -238,14 +238,16 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 
 ### チャネル
 
-「**[!UICONTROL チャネル]**」セクションで、Content Analyticsに対して有効にするチャネルを選択します。 **[!UICONTROL モバイル]**&#x200B;と&#x200B;**[!UICONTROL Web]**&#x200B;の間を選択できます。
+「**[!UICONTROL チャネル]**」セクションで、Content Analyticsに対して有効にするチャネルを選択します。 **[!UICONTROL Mobile]**、**[!UICONTROL Web]**、**[!UICONTROL 有料メディア]**&#x200B;のいずれかを選択できます。
 
 * まだ設定していないチャネルを選択するには、**[!UICONTROL 有効]**&#x200B;を選択します。
 * 既に設定されているものの、設定を変更するチャネルを選択するには、**[!UICONTROL 設定を編集]**&#x200B;を選択します。
 
-その後、チャンネルをより詳細に設定できます。 この設定は、[mobile](#mobile)または[web](#web) チャネルの設定を有効にするか、または編集するかによって異なります。
+その後、チャンネルをより詳細に設定できます。 この設定は、[mobile](#mobile)、[web](#web)、[&#x200B; ペイドメディア &#x200B;](#paid-media) チャネルの設定を有効にするか、または編集するかによって異なります。
 
-#### モバイル {#mobile}
+#### モバイル
+
++++ 詳細
 
 <!-- For updated ACA -->
 
@@ -281,7 +283,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 
 モバイルチャネルの場合、[&#x200B; エクスペリエンスキャプチャと定義](#experience-capture-and-definition)、[&#x200B; データ収集](#data-collection)、[&#x200B; ヘッダーの上書き](#header-overrides)を設定できます。
 
-##### エクスペリエンスのキャプチャと定義 {#mobile-experience-capture-and-definition}
+### エクスペリエンスのキャプチャと定義 {#mobile-experience-capture-and-definition}
 
 このセクションでは、Content Analyticsで収集したモバイルデータにエクスペリエンスを含めるように選択できます。  モバイルチャネルのエクスペリエンスは、Adobe Experience Platform SDK Content Analytics版を使用してエクスペリエンスとして登録したものです。
 
@@ -289,7 +291,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 
 モバイルアプリを実装してエクスペリエンスを登録し、エクスペリエンスビューとエクスペリエンスクリックを追跡する場合にのみ、エクスペリエンスを含めることを検討してください。
 
-##### データ収集 {#mobile-data-collection}
+### データ収集 {#mobile-data-collection}
 
 Data Collection Settingsを使用すると、Content Analyticsで収集するデータ（エクスペリエンスの場所、アセットの場所、アセットのURL）を定義できます。 データ収集の一環として、個人を特定できる情報を収集しないようにします。
 
@@ -322,7 +324,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
   **を除外する** アセット URLの&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*(logo\.jpg)).*$`:Content Analyticsからロゴ JPEG画像を参照するすべてのアセット URLを除外する
 
 
-##### ヘッダーの上書き {#mobile-header-overrides}
+### ヘッダーの上書き {#mobile-header-overrides}
 
 <!-- needs modification for mobile channel -->
 
@@ -334,12 +336,15 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 1. **[!UICONTROL ヘッダー名]**&#x200B;を入力します。 例：`x-asset-service`。
 1. **[!UICONTROL ヘッダー値]**&#x200B;を入力します。 指定した内容は秘密鍵であり、ユーザーインターフェイスには表示されません（入力時に![表示](/help/assets/icons/Visibility.svg)値を明示的に開示することを選択しない限り）。
 
-##### 保存 {#mobile-save}
+### 保存 {#mobile-save}
 
 モバイルチャネルを設定したら、**[!UICONTROL 保存]**&#x200B;を選択して設定を保存します。 設定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
 
++++
 
 #### Web {#web}
+
++++ 詳細
 
 Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと定義](#experience-capture-and-definition-1)、[&#x200B; データ収集](#data-collection-1)、[&#x200B; ヘッダーの上書き](#header-overrides-1)を設定できます。
 
@@ -444,7 +449,7 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >abstract="コンテンツ分析のデータを収集する際に、**含める**&#x200B;または&#x200B;**除外する**&#x200B;アセットを指定します。 個人を特定できるアセットを除外していることを確認します。"
 
 
-##### エクスペリエンスのキャプチャと定義 {#web-experience-capture-and-definition}
+### エクスペリエンスのキャプチャと定義 {#web-experience-capture-and-definition}
 
 このセクションでは、Content Analyticsで収集したweb データにエクスペリエンスを含めるように選択できます。  エクスペリエンスは、最初のユーザー訪問のURLを使用して再現可能なweb ページ上のすべてのテキストで構成されます。
 
@@ -459,9 +464,7 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >
 >[Content Analytics のバージョン管理](manual.md#versioning)を実装して、Content Analytics の対象となるエクスペリエンス（ページ）に行った変更を収集します。
 
-
-
-###### 新しい設定 {#new-experiences-configuration}
+#### 新しい設定 {#new-experiences-configuration}
 
 新しい設定や実装されていない設定にエクスペリエンスを含めるには：
 
@@ -475,13 +478,13 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 
 1. 「**[!UICONTROL 正規表現を追加]**」を選択して、ドメイン正規表現とクエリパラメーターの組み合わせを追加します。
 1. ページのコンテンツに影響を与える&#x200B;**[!UICONTROL ドメインの正規表現]**&#x200B;と&#x200B;**[!UICONTROL クエリパラメーター]**&#x200B;の組み合わせを定義することで、web サイトでのコンテンツのレンダリング方法を指定します。
-   1. **[!UICONTROL ドメイン正規表現]**（例：`/^(?!.*\b(store|help|admin)\b)/`）を入力します。 `/` を使用して、正規表現をエスケープする必要があります。 ドメイン正規表現は、これらのパラメーターが適用される URL を示します。 例えば、複数のサイトがあり、サイトごとに異なるパラメーターによってコンテンツが駆動される場合があります。 クエリパラメーターがすべてのページに適用される場合、`.*` を使用してすべてのページを示すことができます。
+   1. **[!UICONTROL ドメイン正規表現]**（例：`/^(?!.*\b(store|help|admin)\b)/`）を入力します。 `/` を使用して、正規表現をエスケープする必要があります。 ドメイン正規表現は、これらのパラメーターが適用される URL を示します。 たとえば、複数のサイトがあり、各サイトのコンテンツを異なるパラメーターが駆動します。 クエリパラメーターがすべてのページに適用される場合、`.*` を使用してすべてのページを示すことができます。
    1. **[!UICONTROL クエリパラメーター]**&#x200B;のコンマ区切りリスト（例：`outdoors, patio, kitchen`）を指定します。
 1. ドメイン正規表現とクエリパラメーターの組み合わせを削除する場合は、「**[!UICONTROL 削除]**」を選択します。
 1. 正規表現とクエリパラメーターの別の組み合わせを追加する場合は、「**[!UICONTROL 正規表現を追加]**」を選択します。
 
 
-###### 実装された設定 {#implemented-experiences-configuration}
+#### 実装された設定 {#implemented-experiences-configuration}
 
 実装された設定に対して、既存のエクスペリエンスを編集するか新しいエクスペリエンスを含めるには：
 
@@ -494,7 +497,7 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 
 * ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**&#x200B;を選択して、Content Analyticsでのエクスペリエンスのデータ収集の設定をさらに編集します。 現在の設定に関連付けられたタグプロパティの [Adobe Content Analytics 拡張機能](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting)にリダイレクトされます。
 
-##### データ収集 {#web-data-collection}
+### データ収集 {#web-data-collection}
 
 Data Collection Settingsを使用すると、Content Analyticsで収集するデータ（ページ、アセット）を定義できます。 個人を特定できる情報をデータ収集の一環として収集しないでください。
 
@@ -514,7 +517,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
     1. 「**[!UICONTROL タグ名]**」を指定します（例：`ACA Test for Documentation`）。
     1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
 
-    [Content Analytics Javascript ライブラリ &#x200B;](/help/content-analytics/config/tags-agnostic.md)を使用して、web チャネルに対してTagsに依存しない実装を作成する場合は、新しいTags プロパティを使用します。 Tags プロパティが作成されますが、非依存の実装ではプロパティを使用しません。 ただし、ガイド付き設定ウィザードを少なくとも1回実行する必要があります。
+    [Content Analytics JavaScript ライブラリ &#x200B;](/help/content-analytics/config/tags-agnostic.md)を使用して、web チャネルに対してタグに依存しない実装を作成する場合は、新しいTags プロパティを使用します。 Tags プロパティが作成されますが、非依存の実装ではプロパティを使用しません。 ただし、ガイド付き設定ウィザードを少なくとも1回実行する必要があります。
 
 * Content Analytics 用のデータを収集する際に、どのページを含めるか除外するかを指定します。 個人を特定できるページを除外していることを確認します。
 
@@ -525,7 +528,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
   **[!UICONTROL アセットに含める/除外]**&#x200B;する&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*(logo\.jpg)).*$`コンテンツ分析からすべてのロゴ JPEG 画像を除外する。
 
 
-##### ヘッダーの上書き {#web-header-overrides}
+### ヘッダーの上書き {#web-header-overrides}
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
@@ -548,22 +551,162 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 1. **[!UICONTROL ヘッダー値]**&#x200B;を入力します。 指定した内容は秘密鍵であり、ユーザーインターフェイスには表示されません（入力時に![表示](/help/assets/icons/Visibility.svg)値を明示的に開示することを選択しない限り）。
 
 
+
+
+### 保存 {#web-save}
+
+Web チャネルの詳細を指定したら、**[!UICONTROL 保存]**&#x200B;を選択して設定を保存します。 設定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
+
++++
+
+#### 有料メディア {#paid-media}
+
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="ソースコネクタなし"
 >abstract="有料メディアには、広告パブリッシャー向けの Experience Platform ソースコネクタが必要です。 このサンドボックスでは、Google 広告または Meta 広告のコネクタは使用できません。 **[!UICONTROL Experience Platform]**／**[!UICONTROL ソース]**&#x200B;インターフェイスでこれらのコネクタを 1 つ以上設定し、この手順に戻ってコンテンツ分析の有料メディアの設定を続行します。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/ads" text="Google 広告ソース"
 
-##### 保存 {#web-save}
++++ 詳細
 
-Web チャネルの詳細を指定したら、**[!UICONTROL 保存]**&#x200B;を選択して設定を保存します。 設定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
+>[!NOTE]
+>
+>有料メディアチャネルは、AWS上のCustomer Journey AnalyticsおよびExperience Platformのデプロイメントでは使用できません。
 
+
+有料メディアチャネルの場合、設定されたサンドボックスに接続されているすべてのサポート対象[ad platforms](#paidmedia-adplatforms)がContent Analyticsに自動的に含まれます。
+
+### 広告プラットフォーム {#paidmedia-adplatforms}
+
+ペイドメディアでは、Experience Platform ソースコネクタを広告パブリッシャーに設定する必要があります。
+
+**[!UICONTROL サポートされているソースコネクタが見つからない]**&#x200B;と表示される場合は、設定したサンドボックスで使用可能な広告プラットフォームのソースコネクタを設定していません。
+
+![&#x200B; ソースコネクタが設定されていません](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
+
+広告プラットフォームのソースコネクタを設定するには、**[!UICONTROL AEP ソースに移動]**&#x200B;を選択します。 Experience Platformの&#x200B;**[!UICONTROL Sources]** インターフェイスにリダイレクトされます。
+
+Google AdsとMeta Ads ソースコネクタの設定方法の例については、以下を参照してください。
+
+>[!BEGINTABS]
+
+>[!TAB Google 広告]
+
+1. Experience Platform > **[!UICONTROL ソース]**&#x200B;で、**[!UICONTROL Google Ads]** カードの&#x200B;**[!UICONTROL 設定]**&#x200B;を選択して、セットアップウィザードを開始します。
+
+   >[!WARNING]
+   >
+   >**Google Ads （ベータ版）** カードで&#x200B;**[!UICONTROL Setup]**&#x200B;を使用しないでください。
+
+
+1. ウィザードの➊ **[!UICONTROL 認証]** ステップで、**[!UICONTROL 新しいアカウント]**&#x200B;を選択し、**[!UICONTROL アカウント名]**&#x200B;を入力します。
+
+   ![Google Ads ソースコネクタ認証手順1](../assets/paid-media-google-authentication-1.png)
+
+1. **[!UICONTROL Googleでログイン]** ダイアログで、Google Ads Manager アカウントとGoogle Ads アカウントを保持するアカウントを選択します。
+
+   ![Google Ads ソースコネクタ認証手順2](../assets/paid-media-google-authentication-2.png)
+
+1. パスキーまたはその他の認証メカニズムを使用して、資格情報を確認します。
+
+   ![Google Ads ソースコネクタ認証手順3](../assets/paid-media-google-authentication-3.png)
+
+1. ダイアログ **[!UICONTROL Adobe Experience PlatformがGoogle アカウント]**&#x200B;へのアクセスを求めている場合は、**[!UICONTROL 続行]**&#x200B;を選択します。
+
+   ![Google Ads ソースコネクタ認証手順4](../assets/paid-media-google-authentication-4.png)
+
+1. 認証が成功すると、ウィザードの➊ **[!UICONTROL 認証]** ステップに![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]**&#x200B;が表示されます。
+
+   ![Google Ads ソースコネクタ認証手順5](../assets/paid-media-google-authentication-5.png)
+
+   「**[!UICONTROL 次へ]**」を選択します。
+
+1. ウィザードの➋ **[!UICONTROL データフローの詳細]** ステップで、**[!UICONTROL データフロー]**&#x200B;の名前を入力します。 また、アラートを購読するオプションを確認することもできます。
+
+   ![Google Ads ソースコネクタデータフローの詳細](../assets/paid-media-google-dataflow-1.png)
+
+   「**[!UICONTROL 次へ]**」を選択します。
+
+1. ウィザードの➌ **[!UICONTROL レビュー]** ステップで、ソースコネクタの詳細を確認します。
+
+   ![Google Ads ソースコネクタのレビュー](../assets/paid-media-google-review-1.png)
+
+   「**[!UICONTROL 完了]**」を選択します。
+
+1. 正常に設定されたGoogle ソースコネクタの詳細が表示されます。
+
+   ![Google Ads ソースコネクタの最終版](../assets/paid-media-google-final.png)
+
+
+>[!TAB Meta Ads]
+
+1. Experience Platform > **[!UICONTROL ソース]**&#x200B;で、**[!UICONTROL Meta Ads]** カードの&#x200B;**[!UICONTROL 設定]**&#x200B;を選択して、セットアップウィザードを開始します。
+
+1. ウィザードの➊ **[!UICONTROL 認証]** ステップで、**[!UICONTROL 新しいアカウント]**&#x200B;を選択し、**[!UICONTROL アカウント名]**&#x200B;を入力します。
+
+   ![Meta Ads ソースコネクタ認証手順1](../assets/paid-media-meta-authentication-1.png)
+
+1. Ads Managerを設定したFacebook アカウントにログインします。 既にログインしている場合は、ログインしているユーザーとしてダイアログが表示されます。
+
+   ![Meta Ads ソースコネクタ認証手順2](../assets/paid-media-meta-authentication-2.png)
+
+1. 認証が成功すると、ウィザードの➊ **[!UICONTROL 認証]** ステップに![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]**&#x200B;が表示されます。
+
+   ![Meta Ads ソースコネクタ認証手順3](../assets/paid-media-meta-authentication-3.png)
+
+   「**[!UICONTROL 次へ]**」を選択します。
+
+1. ウィザードの➋ **[!UICONTROL アカウントの選択]**&#x200B;手順で、設定するアカウントを選択します。
+
+   ![Meta Ads ソースコネクタでアカウントを選択](paid-media-meta-select-account.png)
+
+   「**[!UICONTROL 次へ]**」を選択します。
+
+1. ウィザードの➌ **[!UICONTROL データフローの詳細]** ステップで、**[!UICONTROL データフロー]**&#x200B;の名前を入力します。 また、アラートを購読するオプションを確認することもできます。
+
+   ![Meta Ads ソースコネクタデータフロー](../assets/paid-media-meta-dataflow-1.png)
+
+   「**[!UICONTROL 次へ]**」を選択します。
+
+1. ウィザードの➍ **[!UICONTROL レビュー]** ステップで、ソースコネクタの詳細を確認します。
+
+   ![Meta Ads ソースコネクタのレビュー](../assets/paid-media-meta-review-1.png)
+
+1. 正常に設定されたGoogle ソースコネクタの詳細が表示されます。
+
+   ![Meta Ads ソースコネクタの最終版](../assets/paid-media-meta-final.png)
+
+>[!ENDTABS]
+
+有料メディアチャネルでサポートされているソースコネクタについて詳しくは、[Source コネクタの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)を参照してください。
+
+Experience Platformでソースコネクタを設定したら、「![更新](/help/assets/icons/Refresh.svg) **[!UICONTROL 更新]**」を選択して、ソースコネクタのリストを更新します。
+
+使用可能な広告プラットフォームのリストと、これらのプラットフォームのうち![StatusGreen](/help/assets/icons/StatusGreen.svg) **Connected**&#x200B;と![StatusGray](/help/assets/icons/StatusGray.svg) **設定なし**&#x200B;が表示されます。
+
+![Google コネクタが設定されました](/help/content-analytics/assets/aca-paid-media-google-source-connectors.png)
+
+
+### データの動作 {#paidmedia-databehavior}
+
+**[!UICONTROL Save]**&#x200B;を選択すると、Content Analyticsは自動的に次の操作を行います。
+
+* Customer Journey Analytics接続を更新して、このサンドボックスに接続されているすべてのソースコネクタからの有料メディアデータセットを含めます。
+* 選択したすべてのデータビューで有料メディアのディメンションと指標を有効にします。
+* Workspace レポートで有料メディアチャネルをフィルタリング可能なディメンションとして表示します。
+
+### 保存 {#paidmedia-save}
+
+**[!UICONTROL 保存]**&#x200B;を選択して、**[!UICONTROL 有料メディア]**&#x200B;設定を保存します。
+
+
++++
 
 ### 概要 {#summary}
 
 必要な詳細をすべて入力すると、作成または変更されたアーティファクトの詳細が概要に表示されます。
 
-* 新しい設定を実装すると、**[!UICONTROL Content Analytics 用の&#x200B;_設定名_を実装する準備がほとんど整いました]**&#x200B;という概要が表示されます。
+* 新しいコンフィギュレーションを実装する際に、**[!UICONTROL Content Analytics]**&#x200B;のコンフィギュレーション名&#x200B;_を実装する準備ができました。_
 
 * 既に実装されている設定の場合は、**[!UICONTROL Content Analytics 用の&#x200B;_設定名_を実装しました]**&#x200B;という概要が表示されます。
 
@@ -579,7 +722,7 @@ Web チャネルの詳細を指定したら、**[!UICONTROL 保存]**&#x200B;を
 設定を作成または編集する際には、次のオプションがあります。
 
 * **[!UICONTROL 破棄]**：設定の一環として行ったすべての変更は破棄されます。
-* **[!UICONTROL 後のために保存]**：設定に行った変更が保存されます。 後のステージで設定を再度参照して、さらに変更を行ったり、設定を実装したりすることができます。 設定を保存するには、[!UICONTROL 名前]の値のみが必要です。
+* **[!UICONTROL 後のために保存]**：設定に行った変更が保存されます。 さらに変更を加えたり、設定を実装したりするには、後の段階で再検討してください。 設定を保存するには、[!UICONTROL 名前]の値のみが必要です。
 * **[!UICONTROL 実装]**：設定に行った設定または変更が保存および実装されます。 ![必須](/help/assets/icons/Required.svg)としてマークされたすべてのフィールドには、適切な値が必要です。 実装は次で構成されます。
 
   * **[!UICONTROL Customer Journey Analytics]** 設定：

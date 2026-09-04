@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 99135905f825cbef805c1664f6fb554497df3c3d
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 986
+source-wordcount: 991
 ht-degree: 27%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 27%
 | -----------|-----------|-----------|
 | **ジャーニーキャンバスの機能強化**<br>&#x200B;次のジャーニーキャンバスの機能強化を利用できるようになりました。<ul><li>ジャーニーと過去の期間の比較。 現在のジャーニーを、4週間前、2四半期前、1年前、またはカスタム日付範囲と比較します。</li><li>選択したノードの場合、ジャーニーの任意のポイントで、選択したノードの後に来る最上位のディメンション項目を表示します。 選択したノードが分析の重要なイベントであり、その後のユーザーの行動を確認する場合に使用します。<p>以前は、選択したノードの前または後に表示できるのは、上位の即時ノードのみでした。 </p></li><li>ノード間の矢印の形状とスタイルを変更します。 ノード間で矢印をドラッグして矢印の形状（曲率）を変更し、矢印を右クリックして、スタイルをソリッド、破線、点線、点線、アニメーションのいずれかに変更します。</li></ul><p></p>詳しくは、[ジャーニーキャンバスビジュアライゼーションの設定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)を参照してください。 |  | 2026年8月18日（PT） |
 | **追加のデータ使用ラベルのサポート**<br> Customer Journey Analyticsでは、データセット内のエレメントに対する次の追加のデータ使用ラベルがサポートされるようになりました。<ul><li>C2 - サードパーティデータの書き出しを制限（現在利用可能）</li><li>C3 – 直接識別可能なデータの組み合わせを制限（現在利用可能）</li><li>C9 - データサイエンスの制限（8月または9月にリリース予定）</li></ul><p>詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。</p> | | 2026年8月または9月 |
-| **Content Analytics：有料メディアデータ** <br/>有料メディアは、Content Analyticsの3番目のチャネルとして利用できるようになりました。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年8月31日（PT） |
+| **Content Analytics：有料メディアデータ** <br/>有料メディアは、Content Analyticsの3番目のチャネルとして利用できるようになりました。 [概要](/help/content-analytics/content-analytics.md)、[&#x200B; チャネル設定](/help/content-analytics/config/guided.md#channels)、[&#x200B; コンポーネント &#x200B;](/help/content-analytics/report/components.md)、[&#x200B; レポート &#x200B;](/help/content-analytics/report/report.md)の更新を参照してください。 | | 2026年9月4日（PT） |
 | **B2B：個人とアカウントの結合**<br> B2B アカウントの結合により、イベントデータセットがアカウント情報で強化され、Customer Journey Analyticsのカスタマージャーニー全体にわたって包括的な分析が可能になります。 <p>Customer Journey Analytics B2B editionで取り込む際に必要となるアカウント IDがイベントに欠けている場合、アカウントの結合は、ユーザーが提供した個人とアカウントのマッピングデータセットを使用して、その情報を自動的に導き出し、追加します。</p><p>詳しくは、[B2Bのユーザーとアカウントのステッチ &#x200B;](/help/stitching/b2b/b2b-person-to-account-stitching.md)を参照してください。</p> | | 2026年8月31日（PT） |
 | **CJA レポート APIの最初の呼び出しガイド**<br> Adobe Customer Journey Analytics APIの最初の呼び出しガイドでは、基本的なレポートリクエストを設定するための手順と例を提供します。 | | 2026年8月10日（PT） |
 | **CJA レポート APIの日付傾向ガイド**<br> Adobe Customer Journey Analytics APIの日付傾向ガイドでは、基本的なレポートリクエストを設定するための手順と例を提供します。 | | 2026年8月17日（PT） |

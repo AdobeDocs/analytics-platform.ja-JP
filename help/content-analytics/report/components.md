@@ -20,7 +20,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 1869
 ht-degree: 56%
@@ -38,8 +38,8 @@ Content Analytics では、Customer Journey Analytics で既に使用可能な�
 * [アセットメタデータ](#asset-metadata)
 * [アセット属性](#asset-attributes)
 * [アセットイベント](#asset-events)
-* [有料メディア](#paid-media)
 * [計算指標](#calculated-metrics)
+* [有料メディア](#paid-media)
 
 以下の表では、![AI 生成](/help/assets/icons/AI.svg)は、AI/ML で生成された属性／値のペアを示しています。
 
@@ -158,11 +158,23 @@ Content Analytics では、Customer Journey Analytics で既に使用可能な�
 {style="table-layout:fixed"}
 -->
 
+
+## 計算指標
+
+| タイトル | 説明 | タイプ |
+|---|---|---|
+| アセットのクリックスルー率 | アセットクリック数／アセットビュー数 | 計算指標 |
+| クリック率 | エクスペリエンスクリック数／エクスペリエンスビュー数 | 計算指標 |
+
+{style="table-layout:fixed"}
+
+
+
 ## 有料メディア
 
 これらのコンポーネントは、[Meta AdsまたはGoogle Adsなど、**有料メディア** チャネルがAdobe Experience Platform有料メディアソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)を通じて有効になっている場合に、データビューに追加されます。 webやモバイルコンテンツとともに、有料メディアエンティティ、クリエイティブ、支出に関するレポートを作成できます。
 
-上記のAI生成の&#x200B;**アセット属性**&#x200B;および&#x200B;**エクスペリエンス属性**&#x200B;も、有料メディアクリエイターが利用できます。同様の機能は、Web、モバイル、有料メディアのチャネルでも利用できます。
+上記のAI生成の[&#x200B; アセット属性](#asset-attributes)および[&#x200B; エクスペリエンス属性](#experience-attributes)も、有料メディアクリエイターが利用できます。 同様の特徴化は、web、モバイル、有料メディアのチャネルでも実行されます。
 
 ### 有料メディアのディメンション
 
@@ -266,14 +278,3 @@ Content Analytics では、Customer Journey Analytics で既に使用可能な�
 | 平均注文額 | 注文総額を購入額で割った数値。 | 計算指標 |
 
 {style="table-layout:fixed"}
-
-
-## 計算指標
-
-| タイトル | 説明 | タイプ |
-|---|---|---|
-| アセットのクリックスルー率 | アセットクリック数／アセットビュー数 | 計算指標 |
-| クリック率 | エクスペリエンスクリック数／エクスペリエンスビュー数 | 計算指標 |
-
-{style="table-layout:fixed"}
-
