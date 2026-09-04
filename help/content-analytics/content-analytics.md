@@ -103,6 +103,6 @@ Content Analyticsでは、Experience Platform イベントデータセットか�
 >
 >[Content Analytics レポート](report/report.md)
 >[Content Analytics の設定](config/configuration.md)
->[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
+>[Customer Journey Analytics でのバウンス数とバウンス率の計算](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=ja)
 >
 
