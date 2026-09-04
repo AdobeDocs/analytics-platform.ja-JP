@@ -6,20 +6,12 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1ef12bfccbecc74a0b437c9c582fe0f6c1c1e9e5
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 2116
 ht-degree: 15%
@@ -28,7 +20,7 @@ ht-degree: 15%
 
 # B2B担当者とアカウントの連携
 
-B2Bの個人と企業の結合により、イベントデータセットをアカウント IDで強化し、Customer Journey Analyticsのカスタマージャーニー全体を通じて包括的に分析できます。 Customer Journey Analytics B2B editionが取り込みに必要とするアカウント IDがイベントに含まれていない場合、個人とアカウントの結合は、ユーザーが指定した[個人とアカウントのマッピングデータセット &#x200B;](#prerequisites)を使用して自動的に導き出され、その情報が追加されます。
+B2Bの個人と企業の結合により、イベントデータセットをアカウント IDで強化し、Customer Journey Analyticsのカスタマージャーニー全体を通じて包括的に分析できます。 Customer Journey Analytics B2B editionが取り込みに必要とするアカウント IDがイベントに含まれていない場合、個人とアカウントの結合は、ユーザーが指定した[個人とアカウントのマッピングデータセット ](#prerequisites)を使用して自動的に導き出され、その情報が追加されます。
 
 個人からアカウントへのステッチが行われない場合、アカウント IDを含まないイベントは取り込み中にドロップされます。 個人からアカウントへのステッチでは、各イベントで個人に関連付けられたアカウントを検索し、イベントが取り込まれる際と過去にさかのぼってアカウント IDを追加することで、この制限を解決します。
 
@@ -38,8 +30,8 @@ B2Bの個人と企業の結合により、イベントデータセットをア�
 
 個人からアカウントへのステッチングでは、データセットに対して次の操作を実行します。
 
-* **人物IDを昇格**: [B2C ステッチ アプローチ &#x200B;](/help/stitching/overview.md)と同様に、永続的な人物IDを保持するフィールドを設定します。 ID グラフを使用して、各イベントの永続的なユーザーIDを、設定されたユーザーID名前空間からユーザーIDに昇格します。
-* **欠落しているアカウント IDを追加**: イベントの人物ID情報を取得した後、[人物とアカウントのマッピング &#x200B;](#prerequisites)を使用して、アカウント ID情報を取得して追加します。 イベント自体で使用可能なすべてのアカウント IDは、フォールバックメソッドとして使用されます。
+* **人物IDを昇格**: [B2C ステッチ アプローチ ](/help/stitching/overview.md)と同様に、永続的な人物IDを保持するフィールドを設定します。 ID グラフを使用して、各イベントの永続的なユーザーIDを、設定されたユーザーID名前空間からユーザーIDに昇格します。
+* **欠落しているアカウント IDを追加**: イベントの人物ID情報を取得した後、[人物とアカウントのマッピング ](#prerequisites)を使用して、アカウント ID情報を取得して追加します。 イベント自体で使用可能なすべてのアカウント IDは、フォールバックメソッドとして使用されます。
 
 ## B2B バイヤーとアカウントの連携方法
 
@@ -91,7 +83,7 @@ B2Bの個人とアカウントの結合をサポートするには、個人と�
 
 グラフベースの合成は、エクスペリエンスイベントデータセットの人物IDを昇格するためにも使用されます。 例えば、**emily@adobe.com**&#x200B;の更新された値を参照してください。
 
-グラフベースの合成は、エクスペリエンスイベントデータセットの人物IDを昇格するためにも使用されます。 例えば、[&#x200B; データセット &#x200B;](#enable-b2b-stitching-on-event-datasets)でステッチを有効にする際に、永続的なユーザーID （ECID）フィールドを永続的なユーザーIDとして使用するように設定します。 ECID値として`5678`、Email値として`emily@adobe.com`に基づいて、`emily@adobe.com`は関連イベントで昇格した人物IDとして設定されます。
+グラフベースの合成は、エクスペリエンスイベントデータセットの人物IDを昇格するためにも使用されます。 例えば、[ データセット ](#enable-b2b-person-to-account-stitching-on-event-datasets)でステッチを有効にする際に、永続的なユーザーID （ECID）フィールドを永続的なユーザーIDとして使用するように設定します。 ECID値として`5678`、Email値として`emily@adobe.com`に基づいて、`emily@adobe.com`は関連イベントで昇格した人物IDとして設定されます。
 
 | タイムスタンプ | 永続的 ID | 元のアカウント ID | 元のユーザーID | 昇格されたユーザーID |
 |--|--|---|---|---|
@@ -230,21 +222,21 @@ B2B ユーザーによるアカウント結合を有効にする前に、Adobe E
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="ユーザーとアカウントのステッチを有効にする"
 >abstract="有効にすると、このデータセットは B2B ユーザーとアカウントのステッチを使用します。 **[!UICONTROL 永続的な人物ID]**&#x200B;値は、設定された&#x200B;**[!UICONTROL 人物ID名前空間]**&#x200B;から値に昇格され、個人とアカウントのデータセットに基づいてアカウント IDを検索するために使用されます。<br/>無効にした場合、このデータセットではB2B ユーザーからアカウントへのステッチは使用されないので、代わりに必須の&#x200B;**[!UICONTROL アカウント ID]**&#x200B;を選択する必要があります。"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="アカウントのステッチ設定にB2B人物を設定する"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="アカウントのステッチ設定にB2B人物を設定する"
 
 接続レベルでB2B ステッチを設定した後、B2Bの人物がステッチを行うイベントデータセットごとに個別にステッチを考慮できるようにする必要があります。
 
-1. 接続設定で、**[!UICONTROL データセットを追加]**&#x200B;を選択するか、既存のイベントデータセットの設定を開きます。<br/>詳細については、[&#x200B; データセットの追加](/help/connections/create-connection.md#add-datasets)または[&#x200B; データセットの編集](/help/connections/create-connection.md#edit-a-dataset)を参照してください。
+1. 接続設定で、**[!UICONTROL データセットを追加]**&#x200B;を選択するか、既存のイベントデータセットの設定を開きます。<br/>詳細については、[ データセットの追加](/help/connections/create-connection.md#add-datasets)または[ データセットの編集](/help/connections/create-connection.md#edit-a-dataset)を参照してください。
 
 1. B2B ユーザーをアカウント ステッチに設定する特定のイベント データセットの場合は、**[!UICONTROL ユーザーをアカウント ステッチに有効にする]**&#x200B;をオンに切り替えます。
 
 >[!BEGINTABS]
 
->[!TAB Tab]
+>[!TAB ]
 
 **[!UICONTROL 人物のアカウント合成を有効にする]**&#x200B;が&#x200B;**on**&#x200B;の場合、データセットのアカウント合成にB2B人物を設定しました。
 
-* 人物IDの設定が必要です。 その人物IDは、[人物とアカウントのデータセット &#x200B;](#prerequisites)に基づいてアカウント IDを検索するために使用されます。
+* 人物IDの設定が必要です。 その人物IDは、[人物とアカウントのデータセット ](#prerequisites)に基づいてアカウント IDを検索するために使用されます。
 * アカウント IDの設定はオプションです。
 
 ![B2Bのユーザーが](../assets/b2b-event-dataset-stitching-on.png)のイベントデータセットを結合してアカウントを作成
@@ -267,11 +259,11 @@ B2B ユーザーをアカウント ステッチ設定に設定し、データセ
 
 >[!IMPORTANT]
 >
->接続が保存されると、B2Bの個人とアカウントのステッチ設定は不変になります。 保存後に設定を表示するには、**B2B ステッチ設定を開く**&#x200B;を選択します。 すべてのフィールドは読み取り専用の状態で表示されます。 さらに、[個人とアカウントのマッピング &#x200B;](#prerequisites)に使用されるデータセットがExperience Platformで削除された場合、ステッチ設定は削除され、接続は無効な状態になり、ユーザーインターフェイスに警告メッセージが表示されます。
+>接続が保存されると、B2Bの個人とアカウントのステッチ設定は不変になります。 保存後に設定を表示するには、**B2B ステッチ設定を開く**&#x200B;を選択します。 すべてのフィールドは読み取り専用の状態で表示されます。 さらに、[個人とアカウントのマッピング ](#prerequisites)に使用されるデータセットがExperience Platformで削除された場合、ステッチ設定は削除され、接続は無効な状態になり、ユーザーインターフェイスに警告メッセージが表示されます。
 
 ## データ更新スケジュール
 
-アカウントの結合は、毎日[個の個人とアカウントのデータセット &#x200B;](#prerequisites)からID マップを取得し、この情報を使用して、次のスケジュールで短期と長期の両方の結合が可能なデータセットを更新します。
+アカウントの結合は、毎日[個の個人とアカウントのデータセット ](#prerequisites)からID マップを取得し、この情報を使用して、次のスケジュールで短期と長期の両方の結合が可能なデータセットを更新します。
 
 | 再生 | 頻度 | データウィンドウ |
 |---|---|---|
@@ -286,7 +278,7 @@ B2B ユーザーをアカウント ステッチ設定に設定し、データセ
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; ステッチの概要](../overview.md)
+>* [ ステッチの概要](../overview.md)
 >* [B2Bへの接続を設定](/help/connections/create-connection.md)
->* [&#x200B; ステッチに関するよくある質問](../faq.md)
+>* [ ステッチに関するよくある質問](../faq.md)
 
