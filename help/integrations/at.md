@@ -18,18 +18,18 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 34593a4407e6334e9abab6034accd84fc5a70d33
 workflow-type: tm+mt
-source-wordcount: 410
-ht-degree: 44%
+source-wordcount: 452
+ht-degree: 40%
 
 ---
 
 # ターゲットレポート
 
-Customer Journey AnalyticsのTarget Reportingを使用すると、Adobe Target アクティビティをCustomer Journey Analyticsで直接測定およびレポートできます。 この機能は、Analytics for Target （A4T）を介してAdobe Analytics（AA）で実行されるものと同等ですが、Adobe Experience Platform（AEP）との接続性があります。
+Customer Journey AnalyticsのTarget Reportingを使用すると、Adobe Target アクティビティをCustomer Journey Analyticsで直接測定およびレポートできます。 この機能は、Analytics for Target （A4T）を介してAdobe Analytics（AA）で実行されるものと同等ですが、Adobe Experience Platform（AEP）との接続性があります。 Customer Journey Analyticsをレポートソースとして使用するTarget アクティビティを作成すると、対応するサンドボックスにAdobe Target Classification Eventsという名前のルックアップデータセットが作成されます。 このルックアップデータセットは、Target アクティビティ IDをユーザーフレンドリーな属性（アクティビティ名やエクスペリエンス名など）で分類することで、レポートを強化します。
 
-Target Classification ルックアップデータセット（Experience Platformでデフォルトで使用可能）をCustomer Journey Analytics Connectionに追加することで、ユーザーはTarget レポートツール、Target注文アトリビューションなどの機能を適切に利用できるようになりました。 Customer Journey Analytics データビュー内で行われたマイナーな準備と調整により、Target データをCJAに直接送信したいユーザーは、これらのアクティビティをすぐに利用できます。
+このルックアップデータセットをCustomer Journey Analytics Connectionに追加することで、Target レポートツール、Target注文アトリビューションなどの機能を適切に利用できるようになりました。 Customer Journey Analytics データビュー内で行われたマイナーな準備と調整により、Target データをCustomer Journey Analyticsに直接送信したいユーザーは、これらのアクティビティをすぐに利用できます。
 
 ## プライマリの利点
 
@@ -41,7 +41,7 @@ Target Classification ルックアップデータセット（Experience Platform
 
 Target アクティビティでは、[Customer Journey Analyticsをレポートソースとして使用する必要があります](https://experienceleague.adobe.com/ja/docs/target/using/integrate/cja/target-reporting-in-cja)。
 
-ターゲット分類イベントデータセットが接続に追加されると、これらのコンポーネントがディメンションとして追加されると、データビュー内で次のような調整が行われます。
+Adobe Target Classification Events ルックアップデータセットをコネクションに追加した後、これらのコンポーネントをディメンションとして追加した後に、データビュー内で行う調整には、次のようなものがあります。
 
 * 永続性をTargetでのトラッキング方法と類似するように設定します（適切な設定を確認するには、Target コンサルタントまたはお客様に確認してください）。
 
