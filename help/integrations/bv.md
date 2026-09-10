@@ -3,9 +3,9 @@ title: ブランドの可視性の統合
 description: Customer Journey Analyticsとブランドの可視性の統合
 feature: Experience Platform Integration
 role: User
-source-git-commit: e90a8d978f8d910f426dcb0fbf28881724d0f5a7
+source-git-commit: ab73c95a3ff0d57a4868d74266084a79c4c3721d
 workflow-type: tm+mt
-source-wordcount: '2545'
+source-wordcount: '2572'
 ht-degree: 3%
 
 ---
@@ -178,4 +178,4 @@ LLMのトラフィックは、ふたつの方法でサイトに到達します�
 
 ## アウトバウンド統合
 
-決定されます。
+アウトバウンド統合について詳しくは、Adobe Brand Visisbility ドキュメントの[Customer Journey Analytics Integration](https://experienceleague.adobe.com/ja/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}を参照してください。
