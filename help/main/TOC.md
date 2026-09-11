@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 6b14b7df4c897c42c963fb93c48e7331b0264589
+source-git-commit: 2983f972813a84a141109c5d14c81394802f226c
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1490'
 ht-degree: 90%
 
 ---
@@ -433,6 +433,7 @@ ht-degree: 90%
       + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[&#x200B; データフィードのセグメント化](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc}[&#x200B; データフィードで派生フィールドを使用](/help/components/exports/cja-data-feeds/df-derived-fields.md)
   + データ辞書 {#data-dictionary}
     + [概要](../components/data-dictionary/data-dictionary-overview.md)
     + [データ辞書でのコンポーネント情報の表示](../components/data-dictionary/view-data-dictionary.md)
