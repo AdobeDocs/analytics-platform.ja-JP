@@ -27,7 +27,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8fb541eac63595c7d02561a1ca1768ab373c1ea4
+source-git-commit: f3aad257d518373812176cb123d799b83cf45520
 workflow-type: tm+mt
 source-wordcount: 1261
 ht-degree: 20%
@@ -44,7 +44,7 @@ ht-degree: 20%
 
 | 機能と説明 | [ロールアウト開始](releases.md) | [一般公開](releases.md) |
 | -----------|-----------|-----------|
-| **Customer Journey Analytics MCP サーバープラグイン**<br/> ChatGPTとClaude用の新しいCustomer Journey Analytics MCP サーバープラグインを使用すると、データにすばやくアクセスできます。 <p>詳しくは、[ChatGPT プラグインガイド &#x200B;](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt)および[Claude コネクタガイド &#x200B;](https://developer.adobe.com/analytics-mcp/docs/guides/claude)を参照してください。</p> | 2026年9月1日（PT） | 2026年9月1日（PT） |
+| **Customer Journey Analytics MCP サーバープラグイン**<br/> ChatGPTとClaude用の新しいCustomer Journey Analytics MCP サーバープラグインを使用すると、データにすばやくアクセスできます。 <p>詳細については、[ChatGPTへの接続](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt)および[&#x200B; クロードへの接続](https://developer.adobe.com/analytics-mcp/docs/guides/claude)を参照してください。</p> | 2026年9月1日（PT） | 2026年9月1日（PT） |
 | **追加のデータ使用ラベルのサポート**<br> Customer Journey Analyticsでは、データセット内のエレメントに対する次の追加のデータ使用ラベルがサポートされるようになりました。<ul><li>C2 - サードパーティデータの書き出しを制限（現在利用可能）</li><li>C3 – 直接識別可能なデータの組み合わせを制限（現在利用可能）</li><li>C9 - データサイエンスの制限（8月または9月にリリース予定）</li></ul><p>詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。</p> | | 2026年9月3日（PT） |
 | **同意ポリシーのフィルタリングとレポート**<br> Adobe Experience Platformの同意ポリシーに一致する訪問者をレポートできるようになりました。 （同意ポリシーのディメンションと指標は、接続のデータビューに追加されます）。<p>さらに、同意しない訪問者をデータがCustomer Journey Analyticsに取り込まれる前に除外することもできます。</p><p>（ドキュメントのリンクは以下を参照。）<!--For more information, see Consent reporting and filtering overview.--></p> | | 2026年9月 |
 | **レポートの日付範囲にセグメントを制限**<br/> Workspace レポートのデータは、セグメントに日付範囲コンポーネントが含まれている場合、レポートの日付範囲を超えて拡張できます。<p>セグメントに含まれる日付コンポーネントに関係なく、レポート日付範囲に結果を制限できる新しいオプションが利用可能になりました。</p><p>このオプションは、最上位コンテナが人物であるセグメントを作成または変更する場合に使用できます。</p><p>詳しくは、[&#x200B; セグメントの構築](/help/components/segments/seg-builder.md#components)を参照してください。</p> | 2026年8月26日（PT） | 2026年9月9日（PT） |
@@ -53,7 +53,7 @@ ht-degree: 20%
 | **時間単位のアラート**<br/> アラートの時間粒度を時間単位に設定できるようになりました。<p>時間単位のアラートは、1時間以内に到着するデータを対象としています。 データの待ち時間が1時間を超える場合、長い粒度を使用すると、アラートで完全なデータが評価されます。 データの到達時間がわからない場合は、データエンジニアに確認してください。</p>p> （後に続くドキュメントリンク）</p> | | 2026年9月 |
 | **アラート配信は、設定された遅延に厳密に従います**<br/> データが完了したか、指定されたイベント範囲で受信されたかどうかに関係なく、設定した遅延ウィンドウの最後にアラートが配信されるようになりました。 遅延ウィンドウの後に到着したデータは、アラートに含まれません。<p>以前は、アラートには、設定された遅延ウィンドウの後にアラートが配信されたとしても、遅延データの到着を待つバックグラウンド処理チェックが含まれていました。</p>p> （後に続くドキュメントリンク）</p> | | 2026年9月 |
 | **Adobe Brand Visibilityとの統合**<br/> Adobe Adobe Brand Visibilityを組織のCustomer Journey Analyticsデータと連携させて、AIを活用した発見が、web サイトの実際のエンゲージメントとビジネスの成果にどのように結びつくのかを測定できます。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年9月 |
-| **CX Enterprise Coworkerの追加スキル**<br> Coworkerには、次のような新しいスキルが追加されます。<ul><li><strong>実装ガイド </strong>：短期間のディスカバリーコミュニケーションを、CSV、Jira、Workfront、Markdownにすぐに使用できる書き出しを使用して、パーソナライズされた依存関係に対応した実装計画に変換します。</li><li><strong> インテリジェント実装チェックリスト </strong>：検出に関する会話を、Coworker プロジェクトの管理された追跡可能な実装プロジェクトに変換します。割り当て、監視、検証できる手順の順序付きチェックリストです。</li><li><strong> データ検証</strong>: Coworkerで直接データフィールドとデータセットを確認し、信頼できる正確なデータ（Adobe Agent Orchestrator v1からアップグレード）から作業していることを確認します。</li><li><strong> ストリーミングメディアの検証</strong>:Coworkerでストリーミングメディアデータを検証して、それが正確でレポート用に準備されていることを確認します。</li></ul><p>（ドキュメントのリンクを参照）。</p> | | 2026年9月30日（PT） |
+| **CX Enterprise Coworkerのアップグレードと実装スキル**<br>&#x200B;新しいスキルが同僚に導入されます。 これらのスキルは、Customer Journey Analyticsのよりスムーズで簡単なアップグレードと実装を促進するのに役立ちます。<ul><li>**実装ガイドのスキル**: アップグレードまたは実装の手順と推奨事項のカスタマイズされたリストを生成します。 アップグレードと実装のガイダンスは、事前に定義されたプレイブックを使用して、共同作業者プロジェクトに変換できます。</li><li>**インテリジェントなアップグレードと実装のチェックリストのスキル**:Coworker プロジェクトを使用して、カスタマイズされたアップグレードまたは実装チェックリストに対する実装の進捗状況を管理および追跡し、プロジェクトの状態を維持し、チーム間でコラボレーションし、タスクを割り当て、必要に応じて承認ゲートを導入します。</li><li>**データ検証スキル**：実装が正しく設定され、ベストプラクティスに沿っていることを確認します。</li></ul><p>（ドキュメントのリンクを参照）。</p> | | 2026年9月30日（PT） |
 
 ### Customer Journey Analytics の修正点
 

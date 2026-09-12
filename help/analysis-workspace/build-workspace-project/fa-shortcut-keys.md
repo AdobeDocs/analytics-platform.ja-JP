@@ -17,10 +17,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
 workflow-type: tm+mt
-source-wordcount: 418
-ht-degree: 89%
+source-wordcount: 488
+ht-degree: 78%
 
 ---
 
@@ -86,6 +86,17 @@ Analysis Workspace では、シームレスなナビゲーション、分析、�
 | --- | --- | --- |
 | パネルを上に移動 | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + ctrl + up *]** |
 | パネルを下に移動 | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + ctrl + down *]** |
+
+## パネルまたはビジュアライゼーションアクションのサイズ変更
+
+| アクション | ショートカット Mac | ショートカット Windows |
+| --- | --- | --- |
+| サイズを大きく変更 | **[!UICONTROL *cmd + opt + shift +右&#x200B;*]** | **[!UICONTROL *ctrl + alt + shift + right *]** |
+| サイズを小さく変更 | **[!UICONTROL *cmd + opt + shift +左&#x200B;*]** | **[!UICONTROL *ctrl + alt + shift +左&#x200B;*]** |
+| サイズ変更（高さ） | **[!UICONTROL *cmd + opt + shift + down *]** | **[!UICONTROL *ctrl + alt + shift + down *]** |
+| サイズ変更を短くする | **[!UICONTROL *cmd + opt + shift + up *]** | **[!UICONTROL *ctrl + alt + shift + up *]** |
+
+幅は1つのグリッド列のステップでサイズ変更し、高さは1つのグリッドセル（約25 ピクセル）のステップでサイズ変更します。
 
 ## 民主化行動
 
