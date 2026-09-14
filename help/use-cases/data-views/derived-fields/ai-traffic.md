@@ -53,7 +53,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[検出方法](#detection-methods)、[検出シグネチャ ](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
+>[検出方法](#detection-methods)、[検出シグネチャ &#x200B;](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
 >
 
 ## 検出方法
@@ -285,12 +285,12 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 ## 実装
 
-[派生フィールド ](#derived-fields)、[ セグメント ](#segments)、[ ワークスペースプロジェクト ](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[ データビュー](/help/data-views/data-views.md)、および[ ワークスペースプロジェクト ](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
+[派生フィールド &#x200B;](#derived-fields)、[&#x200B; セグメント &#x200B;](#segments)、[&#x200B; ワークスペースプロジェクト &#x200B;](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[&#x200B; データビュー](/help/data-views/data-views.md)、および[&#x200B; ワークスペースプロジェクト &#x200B;](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
 
 
 ### 派生フィールド
 
-検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[ ユーザーエージェント ID](#user-agent-identification)、[ クエリパラメーター検出](#query-parameter-detection)、[ リファラー分類](#referrer-classification)の派生フィールドを定義します。
+検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[&#x200B; ユーザーエージェント ID](#user-agent-identification)、[&#x200B; クエリパラメーター検出](#query-parameter-detection)、[&#x200B; リファラー分類](#referrer-classification)の派生フィールドを定義します。
 
 #### LLM/AI ユーザーエージェントの識別
 
@@ -317,14 +317,14 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 専用セグメントを設定して、LLMとAIが生成したトラフィックに関連するイベント、セッション、人物を特定するのに役立ちます。 例えば、先ほど作成した派生フィールドを使用して、LLMとAIが生成したトラフィックを識別するセグメントを定義します。
 
-![LLMとAI生成トラフィックセグメント ](assets/aitraffic-segment.png){zoomable="yes"}
+![LLMとAI生成トラフィックセグメント &#x200B;](assets/aitraffic-segment.png){zoomable="yes"}
 
 
 ### ワークスペースプロジェクト
 
 派生フィールドとセグメントを使用して、LLMとAIが生成したトラフィックをレポートし、分析します。 例えば、以下の注釈付きプロジェクトを参照してください。
 
-![LLMとAI生成トラフィックのWorkspace プロジェクト ](assets/aitraffic-workspace.png){zoomable="yes"}
+![LLMとAI生成トラフィックのWorkspace プロジェクト &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
