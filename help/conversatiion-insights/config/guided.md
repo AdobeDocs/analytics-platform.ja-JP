@@ -38,6 +38,6 @@ ht-degree: 81%
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="データビュー
+>title="データビュー"
 >abstract="会話インサイト分析に使用する接続に関連付けられているデータビューを選択します。 会話インサイトの指標とディメンションは、選択したデータビューに追加されます。"
 
