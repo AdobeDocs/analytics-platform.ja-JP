@@ -1,35 +1,34 @@
 ---
-title: 会話インサイト設定の設定
+title: 会話インサイト設定の作成または編集
 description: 会話インサイト設定の設定方法について説明します。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '638'
 ht-degree: 8%
 ---
-# 会話インサイト設定の設定
+# 設定の作成または編集
 
 
 会話インサイトを利用すれば、大規模な言語モデル（LLM）または人間による会話を大規模に分析し、カスタマージャーニー全体を通じて会話のコンテキストを提供できます。 会話インサイトを通じて、実際のユーザーの成果に対する代表者の影響を把握することができます。
 
-
-## 設定の作成または編集
+会話インサイト設定インターフェイスを使用すると、設定と関連するアーティファクト（接続、データビューなど）をすばやく作成または編集できます。
 
 会話インサイト設定を作成または編集する際に、プロンプト、応答、フィードバックデータを含むサンドボックスとイベントデータセットを指定します。 また、これらのデータセットを追加するCustomer Journey Analytics接続も選択します。 会話インサイトの指標とディメンションを追加するデータビュー。
 
 会話インサイト設定を作成または編集できるのはシステム管理者のみです。
 
-[会話インサイト設定インターフェイス &#x200B;](./conversation-insights-manage.md)から設定を作成または編集します。
+[会話インサイト設定インターフェイス ](./conversation-insights-manage.md)から設定を作成または編集します。
 
-### 欠落しているブレンド済みデータセットを復元
+## 欠落しているブレンド済みデータセットを復元
 
 設定を編集し、その設定のために生成されたブレンドデータセットが存在しなくなった場合は、**[!UICONTROL 復元]**&#x200B;を選択して、ブレンドデータセットを再生成します。
 
 
-### 設定の手順
+## 設定の手順
 
 各設定について：
 
@@ -44,7 +43,7 @@ ht-degree: 8%
 
 1. 「**[!UICONTROL データセット]**」セクションで、次の情報を指定します。
 
-   ![会話インサイトデータセット &#x200B;](assets/conversation-insights-configuration-datasets.png)
+   ![会話インサイトデータセット ](assets/conversation-insights-configuration-datasets.png)
 
    | フィールド | 説明 |
    |---------|----------|

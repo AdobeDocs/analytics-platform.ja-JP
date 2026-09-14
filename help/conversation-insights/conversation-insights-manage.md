@@ -5,12 +5,12 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '366'
 ht-degree: 6%
 ---
-# 会話インサイト設定の管理
+# 設定の管理
 
 [会話インサイト設定](/help/conversation-insights/conversation-insights-configure.md)を作成した後、これらの設定を表示、編集、または削除できます。
 
@@ -44,7 +44,7 @@ ht-degree: 6%
 
    テーブルに表示する列を設定するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg)を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
 
-1. （オプション）設定のリストをフィルタリングするには、![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、![ フィルター](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 

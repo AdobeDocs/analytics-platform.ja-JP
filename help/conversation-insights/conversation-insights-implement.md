@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 7%
@@ -18,8 +18,9 @@ ht-degree: 7%
 
 >[!PREREQUISITES]
 >
->データを収集するには、Experience Platform環境（組織とサンドボックス）が使用可能である必要があります。
->Adobeの組織は、実験的なエージェントと会話のフィールドグループに対して有効にする必要があります。
+>* データを収集するには、Experience Platform環境（組織とサンドボックス）が使用可能である必要があります。
+>* Adobeの組織は、実験的なエージェントと会話のフィールドグループに対して有効にする必要があります。
+>
 
 ## スキーマとデータセット
 
@@ -304,6 +305,10 @@ ht-degree: 7%
 | `metadata[]` | オプションのプロデューサー定義キー/値メタデータ。 |
 
 
+信号抽出サービスは、信号データセットの`signals` オブジェクトにデータを入力します。
+
+以前の`signals[].attributes.{subjects,intents,tones,sentiment}` コンテナは非推奨です。
+
 #### 会話
 
 会話オブジェクトの詳細については、以下を参照してください。
@@ -356,9 +361,6 @@ ht-degree: 7%
 +++
 
 
-信号抽出サービスは、信号データセットの`signals` オブジェクトにデータを入力します。
-
-以前の`signals[].attributes.{subjects,intents,tones,sentiment}` コンテナは非推奨です。
 
 
 ### 追加のフィールドグループ
