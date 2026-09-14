@@ -7,27 +7,36 @@ role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
-source-wordcount: 2520
-ht-degree: 93%
-
+source-wordcount: '2520'
+ht-degree: 96%
 ---
-
 # オーディエンスの作成と公開 {#create-and-publish-audiences}
 
 <!-- markdownlint-disable MD034 -->
@@ -35,7 +44,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="更新頻度"
->abstract="オーディエンスのメンバーシップが再評価される頻度。<br/>1回限りのリクエストは1回のみ評価され、更新制限にカウントされません。"
+>abstract="オーディエンスのメンバーシップが再評価される頻度。<br/>1 回限りのリクエストは 1 回のみ評価され、更新制限にカウントされません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +53,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
 >title="オーディエンス制限の更新"
->abstract="スケジュールされた頻度で自動的に更新するように設定されている環境内のオーディエンスの数。 制限は、Customer Journey Analyticsの使用権限によって異なりますが、75から150までです。 1回限りのリクエストは、この制限にカウントされません。"
+>abstract="スケジュールされた頻度で自動的に更新するように設定されている環境内のオーディエンスの数。 制限は、Customer Journey Analytics の使用権限によって異なりますが、75 から 150 までです。 1 回限りのリクエストは、この制限にカウントされません。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -188,7 +197,7 @@ Customer Journey Analytics は、公開済みのオーディエンスからす�
 
    * 「![検索](/help/assets/icons/Search.svg)」フィールドを使用します。
 
-プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンスの節を参照してください。
+プラットフォームでのオーディエンスの使用について詳しくは、Experience Platform ドキュメントの[セグメントビルダー UI ガイド[の](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)オーディエンス](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)の節を参照してください。
 
 ### オーディエンス数の不一致について
 

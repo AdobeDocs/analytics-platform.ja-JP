@@ -8,17 +8,15 @@ hide: true
 source-git-commit: 9df4c8cff6c0c044902453e5fb8380fbb5c5ac2d
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 4%
-
+ht-degree: 18%
 ---
 
-
-# スコープコンポーネント設定 {#scope-component-settings}
+# 範囲コンポーネント設定 {#scope-component-settings}
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_scope"
 >title="範囲"
->abstract="レポートでコンポーネントを使用する場合のスコープを決定します。 イベントベース、プロファイルベース、合計ベースのいずれかを選択できます。"
+>abstract="レポートで使用される際のコンポーネントの範囲を決定します。 イベントベース、プロファイルベース、合計ベースのいずれかを選択できます。"
 
 指標コンポーネントの範囲によって、レポートでのコンポーネントの使用方法が決まります。
 

@@ -7,32 +7,38 @@ role: Admin
 hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1326
-ht-degree: 11%
-
+source-wordcount: '1326'
+ht-degree: 28%
 ---
-
-# 同意に関するレポートとフィルタリングの設定 {#configure-consent-reporting}
+# 同意レポートとフィルタリングを設定 {#configure-consent-reporting}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="結合ポリシー"
->abstract="結合ポリシーは、複数のデータセットのプロファイルデータを、オーディエンスの作成に使用する統合顧客プロファイルに組み合わせます。 レポートする同意ポリシーメンバーシップデータ（`consentPoliciesIDMap` フィールド）を含むプロファイルデータセットに対応する結合ポリシーを選択します。 または、データチームに問い合わせて、各結合ポリシーに関連付けられているオーディエンスを確認します。"
+>abstract="結合ポリシーは、複数のデータセットのプロファイルデータを、オーディエンスの作成に使用する統合顧客プロファイルに組み合わせます。 レポートする同意ポリシーメンバーシップデータ（`consentPoliciesIDMap` フィールド）を含むプロファイルデータセットに対応する、結合ポリシーを選択します。 または、データチームに問い合わせて、各結合ポリシーに関連付けられているオーディエンスを確認します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,7 +47,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-sandbox"
 >title="サンドボックス"
->abstract="正しい Adobe Experience Platform プロファイルデータセットを含むサンドボックスを選択します。 これらのデータセットには、Analysis Workspaceでレポートする同意データが含まれている必要があります。"
+>abstract="正しい Adobe Experience Platform プロファイルデータセットを含むサンドボックスを選択します。 これらのデータセットには、Analysis Workspace でレポートする同意データを含める必要があります。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +56,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-person-id"
 >title="ユーザー ID"
->abstract="人物IDを表すモデルベースのスキーマからフィールドを選択します。 選択は、「ID」としてマークされ、ID名前空間を持つスキーマ内のフィールドのリストに制限されます。"
+>abstract="モデルベースのスキーマから、ユーザー ID を表すフィールドを選択します。 選択は、スキーマ内の、「ID」としてマークされ、ID 名前空間を持つフィールドのリストに制限されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +65,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-identity-namespace"
 >title="プライマリ ID 名前空間を使用"
->abstract="primary=true属性でマークされたID マップ内のIDをCustomer Journey Analyticsで検索し、そのIDをその行の人物IDとして使用する場合は、このオプションを有効にします。 この ID は、Adobe Experience Platform でのパーティション分割に使用されるプライマリキーです。 <br/>このオプションを無効のままにする場合は、下の ID 名前空間フィールドから名前空間を選択します。 Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。"
+>abstract="Customer Journey Analytics で、primary=true 属性でマークされた ID マップ内の ID を検索し、その行のユーザー ID として使用する場合は、このオプションを有効にします。 この ID は、Adobe Experience Platform でのパーティション分割に使用されるプライマリキーです。 <br/>このオプションを無効のままにする場合は、下の ID 名前空間フィールドから名前空間を選択します。 Customer Journey Analytics は各行の ID マップでこの名前空間キーを検索し、その名前空間の ID をその行のユーザー ID として使用します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,7 +74,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-reporting"
 >title="レポートを有効にする"
->abstract="Analysis Workspaceを使用して、接続で使用可能な同意データをレポートするには、このオプションを有効にします。 同意ポリシーのディメンションと指標は、選択したデータビューに追加されます。"
+>abstract="Analysis Workspace を使用して、接続で使用可能な同意データをレポートするには、このオプションを有効にします。 同意ポリシーのディメンションと指標は、選択したデータビューに追加されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +83,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-filtering"
 >title="フィルタリングを有効にする"
->abstract="同意しない訪問者データをCustomer Journey Analyticsに取り込むのを除外するには、このオプションを有効にします。 有効にすると、訪問者のデータは、訪問者が以下で有効なすべての同意ポリシーに一致する場合にのみ取り込まれます。 <br>このオプションは、取り込み時に同意しない訪問者データを除外する要件を持つ組織を対象としています。"
+>abstract="同意していない訪問者のデータが Customer Journey Analytics に取り込まれないように除外するには、このオプションを有効にします。 有効にすると、訪問者のデータは、訪問者が以下で有効なすべての同意ポリシーに一致する場合にのみ取り込まれます。 <br>このオプションは、取り込み時に同意していない訪問者データを除外する要件を持つ組織を対象としています。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -97,7 +103,7 @@ ht-degree: 11%
 
 1. 「**[!UICONTROL 設定を作成]**」を選択します。
 
-   ![同意設定ページ &#x200B;](assets/consent-configure.png)
+   ![同意設定ページ ](assets/consent-configure.png)
 
 1. 「**[!UICONTROL 詳細]**」セクションで、次の情報を指定します。
 
@@ -112,11 +118,11 @@ ht-degree: 11%
 
    同意レポートとフィルタリングは接続レベルで適用されます。 設定された接続のすべてのデータビューは、同じ動作を継承します。
 
-1. **[!UICONTROL 人物ID]** フィールドで、人物IDを表すモデルベースのスキーマからフィールドを選択します。 選択は、「ID」としてマークされ、ID名前空間を持つスキーマ内のフィールドのリストに制限されます。
+1. **[!UICONTROL 人物ID]** フィールドで、人物IDを表すモデルベースのスキーマからフィールドを選択します。 選択は、スキーマ内の、「ID」としてマークされ、ID 名前空間を持つフィールドのリストに制限されます。
 
 1. 同意データのレポートを有効にするかどうかを選択します。
 
-   レポートを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
+   レポートを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
 
    レポートを有効にして設定するには：
 
@@ -132,7 +138,7 @@ ht-degree: 11%
 
    フィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者が有効なすべての同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。
 
-   フィルタリングを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
+   フィルタリングを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
 
    フィルタリングを有効にして設定するには：
 
@@ -142,9 +148,9 @@ ht-degree: 11%
 
       >[!NOTE]
       >
-      >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
+      >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
 
-      マーケティングアクションは、Experience Platformで設定したデータ使用ラベルとポリシーに関連付けられます。 詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。
+      マーケティングアクションは、Experience Platformで設定したデータ使用ラベルとポリシーに関連付けられます。 詳しくは、[ ラベル、ポリシー、およびマーケティングアクション ](/help/data-views/data-governance.md)を参照してください。
 
       | マーケティングアクション | 説明 |
       | --------- | ---------- |
@@ -165,7 +171,7 @@ ht-degree: 11%
 
 [設定を作成した後](#create-a-configuration)、設定された接続の下のデータビューに同意ポリシーコンポーネントが追加されたことを確認できます。
 
-データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。
+データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。
 
 データビューで同意ポリシーコンポーネントを表示するには：
 

@@ -8,10 +8,8 @@ hide: true
 source-git-commit: 30194647c56e7eaa8441b915d16f53ba3ff1bd40
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 9%
-
+ht-degree: 81%
 ---
-
 
 # 会話インサイトのガイド付き設定
 
@@ -34,12 +32,12 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_connection"
 >title="接続"
->abstract="会話データが追加される場所へのCustomer Journey Analyticsの接続を選択します。"
+>abstract="会話データが追加される場所に対する Customer Journey Analytics の接続を選択します。"
 
 ## データビュー
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="データビュー"
+>title="データビュー
 >abstract="会話インサイト分析に使用する接続に関連付けられているデータビューを選択します。 会話インサイトの指標とディメンションは、選択したデータビューに追加されます。"
 
