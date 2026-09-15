@@ -7,21 +7,25 @@ role: User
 TQID: https://experienceleague.adobe.com/Oyt-8i7vBYjTxBk4mX3dN3GeohZvzH0dh10kBS6UBx4
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 source-git-commit: 09d8d3fd3cbc6e4ddfc30aca96b041a7c51002d0
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 37%
-
+source-wordcount: '930'
+ht-degree: 39%
 ---
-
 # フォールアウトビジュアライゼーションの設定 {#configure-fallout-visualization}
 
 
@@ -77,7 +81,7 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"
 >title="フォールアウトコンテナ"
->abstract="パスを分析するコンテナを選択します。 この選択は、エンゲージメントを理解し、選択したコンテナに分析を制限するのに役立ちます。"
+>abstract="パスを分析するコンテナを選択します。 この選択により、エンゲージメントを理解し、選択したコンテナに対する分析を制約できます。"
 
 ビジュアライゼーションの一部として、特定の設定を使用できます。
 

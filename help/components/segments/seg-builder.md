@@ -7,23 +7,29 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 TQID: https://experienceleague.adobe.com/MFqcgWkCqZbtbI58nF8boBZU3YzfcuAAsJxXbjBcT5E
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 source-git-commit: e65b2ec10593c19ab056ecf72716a9267cfc0528
 workflow-type: tm+mt
-source-wordcount: 1932
-ht-degree: 71%
-
+source-wordcount: '1932'
+ht-degree: 73%
 ---
-
 # セグメントの作成 {#build-segments}
 
 >[!CONTEXTUALHELP]
@@ -34,7 +40,7 @@ ht-degree: 71%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="データのプレビュー"
->abstract="セグメントデータとデータビューデータを比較します。 プレビューの割合は、**過去90日間**&#x200B;のデータビューの合計数を反映しています。<br><br/> プレビューの読み込みに失敗した場合、接続がバックフィルされます。"
+>abstract="セグメントデータとデータビューデータを比較します。 プレビューの割合は、**過去 90 日間**&#x200B;のデータビューの合計数を反映します。<br><br/>プレビューの読み込みに失敗した場合、接続がバックフィルされます。"
 
 **[!UICONTROL セグメントビルダー]**&#x200B;ダイアログは、新しいセグメントの作成または既存のセグメントの編集に使用します。 ダイアログのタイトルは、[[!UICONTROL セグメント]マネージャー](/help/components/segments/seg-manage.md)から作成または管理するセグメントの場合、**[!UICONTROL 新しいセグメント]**&#x200B;または&#x200B;**[!UICONTROL セグメントを編集]**&#x200B;になります。
 

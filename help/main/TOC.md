@@ -2,13 +2,11 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 2983f972813a84a141109c5d14c81394802f226c
+source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1493'
 ht-degree: 90%
-
 ---
-
 # Adobe Customer Journey Analytics ガイド {#using}
 
 + [Adobe Customer Journey Analytics ガイド](../getting-started/cja-landing.md)
@@ -342,8 +340,12 @@ ht-degree: 90%
   + [FAQ](../guided-analysis/faq.md)
 
 + 会話のインサイト {#conversation-insights}
-  + {hide-from-toc}[概要](/help/conversatiion-insights/conversation-insights.md)
-  + {hide-from-toc}[設定](/help/conversatiion-insights/config/guided.md)
+  + {hide-from-toc}[概要](/help/conversation-insights/conversation-insights-overview.md)
+  + {hide-from-toc}[設定](/help/conversation-insights/conversation-insights-configure.md)
+  + {hide-from-toc}[管理](/help/conversation-insights/conversation-insights-manage.md)
+  + {hide-from-toc}[実装](/help/conversation-insights/conversation-insights-implement.md)
+  + {hide-from-toc}[分析](/help/conversation-insights/conversation-insights-analyze.md)
+
 
 + コンポーネント {#cja-components}
   + [概要](../components/overview.md)

@@ -8,32 +8,46 @@ autotag-review: '2026-05-19T09:53:18.849Z'
 TQID: 'https://experienceleague.adobe.com/wZ8vtE4BFc1ahBKdblSEAXBofZBPObbSJi4bA9MtxPY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates, Templates (CJA)
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+    internal-label: Mobile experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bac086b2636f835a5dc494b9cd05eb7b560f0bed
 workflow-type: tm+mt
-source-wordcount: 21458
+source-wordcount: '21458'
 ht-degree: 97%
-
 ---
-
 # テンプレートの使用
 
 Analysis Workspace のテンプレート（または会社テンプレート）を使用すると、最も一般的なレポートシナリオに対する簡易的なインサイトを得ることができます。 テンプレートを使用して回答できる質問の例を以下に示します。
@@ -637,8 +651,8 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 >[!CONTEXTUALHELP]
 >id="template--consentpolicyoverview"
->title="Adobe Experience Platformからの同意ポリシーメンバーシップデータに基づいて訪問者を表示します。"
->abstract="**これは、訪問者の同意ポリシーメンバーシップに関するレポートの開始点として**&#x200B;を支援します。 同意レポート用にデータビューが設定されている場合、Customer Journey Analyticsでは、Analysis Workspaceで同意ポリシー分析テンプレートが自動的に使用できるようになります。 <br/>**学習した内容に基づいて、**&#x200B;様は、同意しない訪問者を分析レポートから除外するなど、様々な操作を行うことができます。"
+>title="Adobe Experience Platform からの同意ポリシーメンバーシップデータに基づいて訪問者を表示します。"
+>abstract="**これは**、訪問者の同意ポリシーメンバーシップに関するレポートの開始点として役立ちます。 同意レポート用にデータビューが設定されている場合、Customer Journey Analytics では、Analysis Workspace で同意ポリシー分析テンプレートを自動的に使用できます。 <br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、同意していない訪問者を分析レポートから除外できます。"
 
 >[!CONTEXTUALHELP]
 >id="template--countrygeoreport"
@@ -690,7 +704,7 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 &#x200B;| テンプレート名 | このテンプレートを使用する理由 <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **同意ポリシーの概要**] | Adobe Experience Platformからの同意ポリシーメンバーシップデータに基づいて訪問者を表示します。<p>**これは、訪問者の同意ポリシーメンバーシップに関するレポートの開始点として**&#x200B;を支援します。 同意レポート用にデータビューが設定されている場合、Customer Journey Analyticsでは、Analysis Workspaceで同意ポリシー分析テンプレートが自動的に使用できるようになります。 <br/>**学習した内容に基づいて、**&#x200B;様は、同意しない訪問者を分析レポートから除外するなど、様々な操作を行うことができます。</p> |
+| [!UICONTROL **同意ポリシーの概要**] | Adobe Experience Platform からの同意ポリシーメンバーシップデータに基づいて訪問者を表示します。<p>**これは**、訪問者の同意ポリシーメンバーシップに関するレポートの開始点として役立ちます。 同意レポート用にデータビューが設定されている場合、Customer Journey Analytics では、Analysis Workspace で同意ポリシー分析テンプレートを自動的に使用できます。 <br/>**学習内容に基づいて**、様々な操作を行うことができます。例えば、同意していない訪問者を分析レポートから除外できます。</p> |
 | **[!UICONTROL オーディエンスの概要]** | サイトを訪問しているユーザーの中で、どのオーディエンスが含まれているかを表示します。<p>**これにより、**&#x200B;オーディエンスに関する一般的な情報、オーディエンスの発生元（RTCDP、Customer Journey Analytics など）、オーディエンスの重複などを把握できます。</p><p>**得られた結果に基づいて、**&#x200B;様々な取り組みを行うことができます。例えば、データを使用してこれらの特定のオーディエンスのマーケティング活動に焦点を当てることや、複数のオーディエンスにまたがる顧客向けにカスタマイズされたエクスペリエンスを作成できます。</p><p>このテンプレートでは、「オーディエンス名」、「オーディエンスの生成元」、「終了オーディエンス名」および「終了オーディエンスの生成元」ディメンションを使用します。</p><p>詳しくは、[Customer Journey AnalyticsでのExperience Platform オーディエンスの分析](/help/connections/audience-analysis/analyze-audiences.md)を参照してください。</p> |
 | [!UICONTROL **初回訪問者とリピート訪問者**] | 初回訪問者とリピート訪問者の比較を表示します。 <p>**これにより**、顧客の忠誠度の維持におけるサイトの有効性や、新規顧客の獲得率をより深く理解できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、初回訪問者に今後の購入に対するインセンティブを提供して再訪問を促すことができます。</p><!-- This template uses the --> |
 | **ユーザー ID** | 様々なチャネルをまたいだ個人ユーザーの行動を表示します。<p>**これにより**、複数のタッチポイントをまたいだ顧客体験とインタラクション全体をより深く理解できます。</p><p>**学習内容に基づいて**、様々な操作を行うことができます。例えば、ユーザーの環境設定をより適切にターゲットとするマーケティング活動をパーソナライズできます。</p><!-- This template uses the --> |

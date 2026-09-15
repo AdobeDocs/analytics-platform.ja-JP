@@ -9,22 +9,26 @@ autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
+    internal-label: Customer journeys
+source-git-commit: 555aef15933d87e5bbb3e3ec8b15d99a96ac25fe
 workflow-type: tm+mt
-source-wordcount: 1629
+source-wordcount: '1699'
 ht-degree: 0%
-
 ---
-
 # Customer Journey AnalyticsとAdobe Analyticsのデータフィードの比較
 
 {{release-limited-testing}}
@@ -40,6 +44,8 @@ Customer Journey AnalyticsとAdobe Analyticsの両方のデータフィードで
 次の機能はCustomer Journey Analytics データフィードで使用できますが、Adobe Analytics データフィードでは使用できません。
 
 * **派生フィールド**: データフィードスキーマに含めることができる、ルールベースの変換から構築されたカスタムコンポーネント。<!-- add benefit -->
+
+* **コンポーネント設定**：永続性、指標の重複排除、値のグループ化などのデータビューコンポーネント設定は、SQLを必要とせずに、データフィード出力でコンポーネントの値を直接変換できます。
 
 * **ステッチ**: デバイス間のイベントを1人のユーザーにリンクするクロスデバイス ID解決。
 
@@ -80,6 +86,7 @@ Customer Journey AnalyticsとAdobe Analyticsの両方のデータフィードで
 | **スキーマ**<br/> データフィードスキーマは、データフィードに含めることができる列を決定します。 | データフィードスキーマは、データビュー設定に基づいています。  データフィードスキーマに含めることができるコンポーネントは、データビュー設定で使用できるコンポーネントのサブセットです。 | 約1,100以上の変数があらかじめ定義された静的リスト。 多くの列は&#x200B;**前処理と後処理のペア**&#x200B;として書き出されます（例えば、`eVar1` / `post_eVar1`）。これは、列数の多くを占めています。 |
 | **データフィードビルダー**<br/> データフィードに含める列を設定するために使用するインターフェイス。 | Analysis Workspace エクスペリエンスに一致する、データビューで使用可能な同じ名前付きディメンションと指標を持つコンポーネントパネルを使用します。 | 約1,100列の事前定義済みセットから選択された生の変数名（`eVar1`、`prop5`など）のフラットリストを使用します。 コンポーネントには、変数識別子を超える名前や説明はありません。 |
 | **派生フィールド**<br/> レポート時に適用されたルールベースの変換を使用して定義されたカスタムコンポーネント。 | サポートされています。 派生フィールドコンポーネントは、標準のディメンションと指標とともに、データフィードスキーマに含めることができます。 | サポートされていません。 |
+| **コンポーネント設定**<br/> レポート時にコンポーネントの値を変換する、永続性、指標の重複排除、値のグループ化などのデータビューコンポーネント設定。 | ほとんどの設定でサポートされています。 これらの設定は、Analysis Workspaceと同じようにデータフィード出力に適用されます。 | サポートされていません。 |
 | **コンポーネントの更新**<br/> コンポーネント設定の変更が、過去および将来のデータフィード出力に反映されるかどうか。 | データビュー内のコンポーネントの変更（ディメンションの名前の変更や削除など）は、将来のデータフィードに反映され、バックフィルにも反映されます。 | レポートスイートのコンポーネントの変更は、今後収集されるデータにのみ適用されます。 |
 | **Lookups**<br/> Customer Journey Analyticsのルックアップデータセットは、Adobe Analyticsの分類に相当します。 | すべてのルックアップは、データに直接埋め込まれます。 | Adobe Analytics データフィードには、分類は含まれません。 |
 | **セッション定義**<br/>&#x200B;訪問またはセッション境界の定義方法。これは、イベントのグループ化と帰属方法に影響します。 | データビューで定義されます。 | コレクション時に定義されます。 |

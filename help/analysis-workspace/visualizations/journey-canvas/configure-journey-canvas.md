@@ -7,28 +7,38 @@ exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection, Anomaly detection (CJA)
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 source-git-commit: 397c62d5090deede87a7ce31129b6afe6c9351ee
 workflow-type: tm+mt
-source-wordcount: 7316
-ht-degree: 79%
-
+source-wordcount: '7316'
+ht-degree: 83%
 ---
-
 # ジャーニーキャンバスビジュアライゼーションの設定
 
 ジャーニーキャンバスビジュアライゼーションを使用すると、ユーザーやお客様に提供するジャーニーを分析し、深いインサイトを得ることができます。
@@ -101,8 +111,8 @@ ht-degree: 79%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_arrow_settings"
->title="矢印設定"
->abstract="カンバス上のラベルの表示/非表示を選択します。 ラベルは、ジャーニーキャンバス内で作成されたカスタム名です。"
+>title="矢印の設定"
+>abstract="キャンバス上のラベルの表示または非表示を選択します。 ラベルは、ジャーニーキャンバス内で作成されたカスタム名です。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -110,8 +120,8 @@ ht-degree: 79%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_arrow_settings_ajo"
->title="矢印設定"
->abstract="カンバス上のラベルと値を表示または非表示にするかどうかを選択します。 ラベルは、ジャーニーキャンバス内で作成されたカスタム名にすることも、Journey Optimizerで作成されたラベルまたは条件にすることもできます。 値は、ジャーニー上の1つのノードから次のノードに移動した人物またはセッションを示す数値とパーセンテージです。 "
+>title="矢印の設定"
+>abstract="キャンバス上のラベルと値の表示または非表示を選択します。 ラベルは、ジャーニーキャンバス内で作成されたカスタム名にするか、Journey Optimizer で作成されたラベルまたは条件にすることができます。 値は、数値とパーセンテージで、ジャーニーのあるノードから次のノードに移動した人物またはセッションを示します。 "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -119,8 +129,8 @@ ht-degree: 79%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_show_fallout"
->title="フォールアウトを表示"
->abstract="フォールアウトデータは、ジャーニーの各ノードで、ジャーニーの次のノードに到達しなかった人またはセッションの割合と数を示します。 サイト上で他のアクションを実行しても、ジャーニーの次のノードで定義された基準を満たさなかった可能性があります。<br/> フォールアウトデータには、選択した主要な指標に関係なく、人物またはセッションが表示され、ジャーニーキャンバスコンテナ設定に基づいています。"
+>title="フォールアウトの表示"
+>abstract="フォールアウトデータには、ジャーニーの各ノードでジャーニーの次のノードに到達しなかった人物またはセッションのパーセンテージと数が表示されます。 サイト上で他のアクションを実行した可能性がありますが、ジャーニーの次のノードで定義された条件を満たしていませんでした。<br/>フォールアウトデータには、（選択した主要指標に関係なく）人物またはセッションが表示され、ジャーニーキャンバスコンテナ設定に基づいています。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -128,7 +138,7 @@ ht-degree: 79%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare"
->title="比較"
+>title="次との比較"
 >abstract="現在のジャーニーデータと過去の期間の比較に使用される日付範囲。 比較日付範囲を選択すると、ジャーニー内の各ノードには、プライマリ指標に基づいて、現在の日付範囲と選択した比較日付範囲の変化率が表示されます。 "
 
 <!-- markdownlint-enable MD034 -->
