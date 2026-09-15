@@ -4,27 +4,33 @@ description: Analysis Workspaceで同意ポリシーのディメンション、�
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin, User
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+    internal-label: Governance
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 388
-ht-degree: 2%
-
+source-wordcount: '388'
+ht-degree: 7%
 ---
-
 # 同意ポリシーデータの分析
+
+{{release-limited-testing}}
 
 Experience Platform プロファイルデータセットからCustomer Journey Analytics接続に同意ポリシーデータを取り込むことができます。
 
@@ -52,7 +58,7 @@ Experience Platform プロファイルデータセットからCustomer Journey A
 
 ### 派生フィールド
 
-派生フィールドは、同意ポリシーIDを抽出するために`consentPoliciesIDMap` フィールドを参照します。 この派生フィールドを、追加の同意ベースのディメンションのベースとして使用できます。 派生フィールドについて詳しくは、[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を参照してください。
+派生フィールドは、同意ポリシーIDを抽出するために`consentPoliciesIDMap` フィールドを参照します。 この派生フィールドを、追加の同意ベースのディメンションのベースとして使用できます。 派生フィールドについて詳しくは、[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を参照してください。
 
 ## Analysis Workspaceの同意ポリシーコンポーネントの使用
 
@@ -68,6 +74,6 @@ Experience Platform プロファイルデータセットからCustomer Journey A
 
 ## 同意ポリシー分析テンプレートの使用
 
-同意レポート用にデータビューが設定されている場合、Customer Journey Analyticsでは、Analysis Workspaceで同意ポリシー分析テンプレートが自動的に使用できるようになります。 このテンプレートは、訪問者の同意ポリシーメンバーシップに関するレポートの出発点を提供します。
+同意レポート用にデータビューが設定されている場合、Customer Journey Analytics では、Analysis Workspace で同意ポリシー分析テンプレートを自動的に使用できます。 このテンプレートは、訪問者の同意ポリシーメンバーシップに関するレポートの出発点を提供します。
 
-テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートへのアクセスと実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)を参照してください。
+テンプレートへのアクセス方法について詳しくは、[ テンプレートへのアクセスと実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)を参照してください。

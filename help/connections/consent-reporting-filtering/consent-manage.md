@@ -4,26 +4,31 @@ description: Customer Journey Analyticsで同意レポートとフィルター�
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 452
+source-wordcount: '449'
 ht-degree: 5%
-
 ---
-
 # 同意レポートとフィルタリング設定の管理
+
+{{release-limited-testing}}
 
 同意レポートとフィルター設定を[作成した後](/help/connections/consent-reporting-filtering/consent-configure.md)、表示、編集、または削除できます。
 
@@ -35,7 +40,7 @@ ht-degree: 5%
 
 既存の設定を表示するには：
 
-1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意レポートとフィルタリング]**&#x200B;を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意報告とフィルタリング]**&#x200B;を選択します。
 
    各設定について、次の情報の列を使用できます。
 
@@ -53,9 +58,9 @@ ht-degree: 5%
 
    * **[!UICONTROL ステータス]**：設定のステータス。
 
-   列アイコン ![列アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
+   列アイコン ![列アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
 
-1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![&#x200B; フィルターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![ フィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 
@@ -73,7 +78,7 @@ ht-degree: 5%
 
 既存の設定を編集するには：
 
-1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意レポートとフィルタリング]**&#x200B;を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意報告とフィルタリング]**&#x200B;を選択します。
 
 1. 編集する設定の名前を選択します。
 
@@ -87,7 +92,7 @@ ht-degree: 5%
 
 既存の設定を削除するには：
 
-1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意レポートとフィルタリング]**&#x200B;を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意報告とフィルタリング]**&#x200B;を選択します。
 
 1. 削除する設定の横にあるチェックボックスを選択し、**[!UICONTROL 削除]**&#x200B;を選択します。
 

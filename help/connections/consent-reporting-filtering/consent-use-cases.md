@@ -4,27 +4,33 @@ description: Customer Journey Analyticsで取り込まれた時点で、訪問�
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 590
+source-wordcount: '590'
 ht-degree: 0%
-
 ---
-
 # 同意レポートとフィルタリングのユースケース
+
+{{release-limited-testing}}
 
 同意のレポートとフィルタリングは、訪問者の同意ポリシーのメンバーシップに関するレポートを作成し、同意のない訪問者がデータをCustomer Journey Analyticsに入力する前に、必要に応じて除外するのに役立ちます。 概要情報については、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)を参照してください。
 
