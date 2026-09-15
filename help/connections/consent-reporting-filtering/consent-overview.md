@@ -103,7 +103,7 @@ ht-degree: 2%
 
   マーケティングアクションは、データ使用のカテゴリです。 Customer Journey Analyticsは、各マーケティングアクションに適用される同意ポリシーを決定し、[設定の作成時に、各マーケティングアクションに対するフィルタリングを個別に有効にします](/help/connections/consent-reporting-filtering/consent-configure.md#create-a-configuration)。
 
-  マーケティングアクションは、Experience Platformで設定したデータ使用ラベルとポリシーに関連付けられます。 詳しくは、[ ラベル、ポリシー、およびマーケティングアクション ](/help/data-views/data-governance.md)を参照してください。
+  マーケティングアクションは、Experience Platformで設定したデータ使用ラベルとポリシーに関連付けられます。 詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。
 
   | マーケティングアクション | 説明 |
   | --------- | ---------- |
@@ -137,12 +137,12 @@ Customer Journey Analyticsで利用可能な同意ポリシーデータを使用
 | 機能 | Customer Journey Analyticsの役割または権限の要件 | Experience Platformの権限の要件 |
 |---------|----------|----------|
 | [同意レポートとフィルター設定の作成](/help/connections/consent-reporting-filtering/consent-configure.md) | システム管理者 | <ul><li>データセット：読み取り、書き込み</li><li>スキーマ：読み取り、書き込み</li></ul> <p>同意ポリシーメンバーシップデータを含むプロファイルデータセットには、読み取りアクセスが必要です。 同意ポリシーのルックアップデータセットが作成され、同期されているため、書き込みアクセスが必要です。</p> |
-| データビューでの同意ポリシーコンポーネントの表示 | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
+| データビューでの同意ポリシーコンポーネントの表示 | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
 | [Analysis Workspaceで同意ポリシーコンポーネントを使用](/help/connections/consent-reporting-filtering/consent-analyze.md#use-consent-policy-components-in-analysis-workspace) | 同意ポリシーコンポーネントが追加されたデータビューへのアクセス | 該当なし |
 
 ## 同意レポートとフィルタリングのユースケース
 
-同意レポートとフィルタリングが提供する値を強調表示するユースケースの例については、[同意レポートとフィルタリングのユースケース ](/help/connections/consent-reporting-filtering/consent-use-cases.md)を参照してください。
+同意レポートとフィルタリングが提供する値を強調表示するユースケースの例については、[同意レポートとフィルタリングのユースケース &#x200B;](/help/connections/consent-reporting-filtering/consent-use-cases.md)を参照してください。
 
 ## 同意に関するレポートとフィルタリングの制限
 
