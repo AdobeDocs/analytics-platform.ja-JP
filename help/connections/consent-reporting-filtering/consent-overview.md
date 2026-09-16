@@ -4,29 +4,37 @@ description: Customer Journey Analyticsで取り込み時に、訪問者の同�
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 1311
-ht-degree: 1%
-
+source-wordcount: '1311'
+ht-degree: 2%
 ---
-
 # 同意レポートとフィルタリングの概要
+
+{{release-limited-testing}}
 
 同意のレポートとフィルタリングでは、Adobe Experience Platform プロファイルデータセットに保存されている同意ポリシーメンバーシップデータを使用して、訪問者の同意に関するレポートに役立てることができます。 さらに、同意しない訪問者を除外することも、Customer Journey Analyticsにデータを取り込む前に選択できます。
 
@@ -104,7 +112,7 @@ ht-degree: 1%
 
 * 訪問者のデータは、訪問者が該当する同意ポリシー&#x200B;**all**&#x200B;に一致する場合にのみ取り込まれます。 訪問者に該当するポリシーがない場合、その訪問者のデータは除外されます。
 
-## 同意に関するレポートとフィルタリングの設定
+## 同意レポートとフィルタリングを設定
 
 同意レポートとフィルタリングを設定する場合、同意ポリシーメンバーシップデータを含むサンドボックスとプロファイルデータセットを選択し、設定する接続または接続を選択し、各マーケティングアクションのデータをフィルタリングするかどうかを選択します。 次に、Customer Journey Analyticsは同意ポリシー検索データセットと同意ポリシーコンポーネントを自動的に作成します。
 
@@ -130,7 +138,7 @@ Customer Journey Analyticsで利用可能な同意ポリシーデータを使用
 |---------|----------|----------|
 | [同意レポートとフィルター設定の作成](/help/connections/consent-reporting-filtering/consent-configure.md) | システム管理者 | <ul><li>データセット：読み取り、書き込み</li><li>スキーマ：読み取り、書き込み</li></ul> <p>同意ポリシーメンバーシップデータを含むプロファイルデータセットには、読み取りアクセスが必要です。 同意ポリシーのルックアップデータセットが作成され、同期されているため、書き込みアクセスが必要です。</p> |
 | データビューでの同意ポリシーコンポーネントの表示 | データビューが割り当てられている製品プロファイルの製品プロファイル管理者 <p>詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。</p> | 該当なし |
-| Analysis Workspaceの同意ポリシーコンポーネントの使用 | 同意ポリシーコンポーネントが追加されたデータビューへのアクセス | 該当なし |
+| [Analysis Workspaceで同意ポリシーコンポーネントを使用](/help/connections/consent-reporting-filtering/consent-analyze.md#use-consent-policy-components-in-analysis-workspace) | 同意ポリシーコンポーネントが追加されたデータビューへのアクセス | 該当なし |
 
 ## 同意レポートとフィルタリングのユースケース
 

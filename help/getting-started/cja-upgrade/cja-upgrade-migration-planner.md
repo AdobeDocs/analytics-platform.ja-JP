@@ -5,13 +5,11 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-source-git-commit: db34e721f156b3eb0aab20b2dca57e194c83d6fb
+source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2338'
 ht-degree: 5%
-
 ---
-
 # タグからXDMへの移行 {#upgrade-migration-planner}
 
 {{upgrade-note-step}}
@@ -88,7 +86,8 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 1. 移行プランナーの「[!UICONTROL **移行**]」タブで、「[!UICONTROL **新規**]」を選択します。
 
-   ![新しい移行ダイアログ。移行タイプを選択し、移行名を入力します。](assets/migration-planner-new-migration.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
+
 
 1. 次の情報を指定します。
 
@@ -135,13 +134,13 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
    移行の概要ページには、完了する3つのステージと、移行とそのアーティファクトの概要が表示されます。
 
-   ![監査、マッピング、実装のステージカードを含む移行概要ページ。](assets/migration-planner-overview.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
 
 1. [!UICONTROL **監査**] ステージを完了します。
 
    1. 監査カード（[!UICONTROL **タグ拡張機能audit**]&#x200B;または&#x200B;[!UICONTROL **JavaScript audit**] （移行タイプに応じて）で、[!UICONTROL **監査を開始**]&#x200B;を選択して、移行に含まれるルールとデータ要素を確認します。
 
-      ![&#x200B; ルールとデータ要素を選択し、結果を解決する監査ページ。](assets/migration-planner-audit.png)
+      <!-- Confirm the exact image: ![The audit page, where you select rules and data elements and resolve any findings.](assets/migration-planner-audit.png) -->
 
    1. [!UICONTROL **ルール**]&#x200B;および&#x200B;[!UICONTROL **データ要素**] タブで、移行に含める項目を選択します。
 

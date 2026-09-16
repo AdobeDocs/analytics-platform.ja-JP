@@ -4,7 +4,6 @@ description: Customer Journey Analyticsで接続の同意レポートとオプ�
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -26,9 +25,9 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1325'
 ht-degree: 28%
 ---
 # 同意レポートとフィルタリングを設定 {#configure-consent-reporting}
@@ -87,6 +86,8 @@ ht-degree: 28%
 
 <!-- markdownlint-enable MD034 -->
 
+{{release-limited-testing}}
+
 システム管理者は、1つ以上の接続に対して、同意レポートおよびオプションで同意フィルタリングを有効にできます。 概要情報については、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)を参照してください。
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ ht-degree: 28%
 
 同意レポートとフィルタリング設定を作成するには：
 
-1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意レポートとフィルタリング]**&#x200B;を選択します。
+1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL 同意報告とフィルタリング]**&#x200B;を選択します。
 
 1. 「**[!UICONTROL 設定を作成]**」を選択します。
 
