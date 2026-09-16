@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -34,12 +34,12 @@ ht-degree: 1%
 
 ## 概念
 
-会話インサイトの上位レベルでは、[会話](#conversation)は相関する[&#x200B; ターン &#x200B;](#turn)のシーケンスです。 各ターンは、[&#x200B; プロンプト &#x200B;](#prompt)、[応答](#response)、[&#x200B; フィードバック &#x200B;](#feedback)の各イベントを個別に配信できます。 [信号](#signal)は、会話から派生した構造化された観測値です。一方、ブレンドされたデータセットは、ソースイベントと信号をレポート用にまとめます。
+会話インサイトの上位レベルでは、[会話](#conversation)は相関する[ ターン ](#turn)のシーケンスです。 各ターンは、[ プロンプト ](#prompt)、[応答](#response)、[ フィードバック ](#feedback)の各イベントを個別に配信できます。 [信号](#signal)は、会話から派生した構造化された観測値です。一方、ブレンドされたデータセットは、ソースイベントと信号をレポート用にまとめます。
 
 会話インサイトは、エージェントのインタラクションを次のふたつのレベルで分析します。
 
 * [会話](#conversation) レベル：複数のターンを含む、ユーザーとエージェント間の完全なインタラクション。
-* [&#x200B; ターン &#x200B;](#turn) レベル：ユーザープロンプトとエージェント応答で構成される、その会話内の1つのインタラクションサイクル。
+* [ ターン ](#turn) レベル：ユーザープロンプトとエージェント応答で構成される、その会話内の1つのインタラクションサイクル。
 
 エージェントのアプリケーションまたはサービスは、会話関連のエクスペリエンスイベントをExperience Platformに送信します。 プロンプト、レスポンス、フィードバックのイベントデータを個別に取得。 プラットフォームサービスは、これらのイベントを関連付けてターンレベルのレコードにブレンドし、オプションで抽出したシグナルでデータを補完し、結果のデータをCustomer Journey Analyticsレポートで利用できるようにします。
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 * 会話全体でセンチメントはどのように変化しましたか？
 * 最終的にコンバージョンにつながった会話はどれか？
 
-実装の詳細については、[会話インサイトの実装](./conversation-insights-implementation.md) ドキュメントの[会話](./conversation-insights-implementation.md#conversation) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./conversation-insights-implement.md) ドキュメントの[会話](./conversation-insights-implement.md#conversation) オブジェクトを参照してください。
 
 ### ターン
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 ターンは、レポート用の主要な分析オブジェクトです。 会話ブレンダーサービスは、利用可能なプロンプト、応答、フィードバック、信号情報をターンレベルのレコードに統合します。
 
-実装の詳細については、[会話インサイトの実装](./conversation-insights-implementation.md) ドキュメントの[turn](./conversation-insights-implementation.md#turn) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./conversation-insights-implement.md) ドキュメントの[turn](./conversation-insights-implement.md#turn) オブジェクトを参照してください。
 
 ### プロンプト
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 * ユーザーのセンチメント
 * サポートされているその他のシグナル
 
-実装の詳細については、[会話インサイトの実装](./conversation-insights-implementation.md) ドキュメントの[&#x200B; プロンプト &#x200B;](./conversation-insights-implementation.md#prompt) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./conversation-insights-implement.md) ドキュメントの[ プロンプト ](./conversation-insights-implement.md#prompt) オブジェクトを参照してください。
 
 ### 応答
 
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 この区別は、分析でメインの回答をサポートリンク、引用、広告、その他の応答コンポーネントから分離する必要があるため便利です。
 
-実装の詳細については、[会話インサイトの実装](./conversation-insights-implementation.md) ドキュメントの[response](./conversation-insights-implementation.md#response) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./conversation-insights-implement.md) ドキュメントの[response](./conversation-insights-implement.md#response) オブジェクトを参照してください。
 
 ### フィードバック
 
@@ -119,13 +119,13 @@ ht-degree: 1%
 
 フィードバックは、必ずしも、プロンプトや回答と同時に利用できるわけではありません。 回答を評価した後で、エージェントのアプリケーションまたはサービスから後でフィードバックを送信できます。
 
-実装の詳細については、[会話インサイトの実装](./conversation-insights-implementation.md) ドキュメントの[&#x200B; フィードバック &#x200B;](./conversation-insights-implementation.md#feedback) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./conversation-insights-implement.md) ドキュメントの[ フィードバック ](./conversation-insights-implement.md#feedback) オブジェクトを参照してください。
 
 ### シグナル
 
 シグナルとは、会話コンテンツに関する体系化された分析観察のことです。 信号抽出サービスは、信号を抽出する。
 
-実装の詳細については、[会話インサイトの実装](./conversation-insights-implementation.md) ドキュメントの[signal](./conversation-insights-implementation.md#signal) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./conversation-insights-implement.md) ドキュメントの[signal](./conversation-insights-implement.md#signal) オブジェクトを参照してください。
 
 
 ### エージェント
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 エージェントエクスペリエンスアプリケーションで、処理中に呼び出される機能を表すスキルの呼び出しがサポートされている場合は、エージェント情報フィールドグループの一部としてこれらのスキル呼び出しを追加できます。
 
-実装の詳細については、[会話インサイトの実装](./conversation-insights-implementation.md) ドキュメントの[&#x200B; エージェント情報](./conversation-insights-implementation.md#agentic-information-field-group) フィールドグループを参照してください。
+実装の詳細については、[会話インサイトの実装](./conversation-insights-implement.md) ドキュメントの[ エージェント情報](./conversation-insights-implement.md#agentic-information-field-group) フィールドグループを参照してください。
 
 ## 仕組み
 
@@ -148,11 +148,11 @@ ht-degree: 1%
 
 データ収集、信号抽出、会話ブレンドの全体的なプロセスを以下に示します。
 
-![会話インサイトの仕組みイラスト &#x200B;](assets/conversation-insights.png){zoomable="yes"}
+![会話インサイトの仕組みイラスト ](assets/conversation-insights.png){zoomable="yes"}
 
 | | 説明 |
 |---|---|
-| 1 | エージェント アプリケーションまたはサービスをインストルメントして、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバック ![Feedback](/help/assets/icons2/Feedback.svg) データセットを含むイベントを作成します。<br/> エージェントアプリケーションまたはサービスのインストルメント方法について詳しくは、[実装ドキュメント &#x200B;](./conversation-insights-implementation.md)を参照してください。 |
+| 1 | エージェント アプリケーションまたはサービスをインストルメントして、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバック ![Feedback](/help/assets/icons2/Feedback.svg) データセットを含むイベントを作成します。<br/> エージェントアプリケーションまたはサービスのインストルメント方法について詳しくは、[実装ドキュメント ](./conversation-insights-implement.md)を参照してください。 |
 | 2 | 信号抽出サービスは、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバックデータセット ![Feedback](/help/assets/icons2/Feedback.svg)から信号を信号イベント ![OnAir](/help/assets/icons/OnAir.svg)として抽出し、これらの信号イベントを新しいデータセットに格納します。<br>この手順は、[会話インサイト設定](./conversation-insights-configure.md)の定義の一部として実装されます。 |
 | 3 | 会話ブレンダーサービスは、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバック ![Feedback](/help/assets/icons2/Feedback.svg)、およびシグナル ![OnAir](/help/assets/icons/OnAir.svg) イベントデータセットからイベントをブレンドし、ブレンドされた![Merge](/help/assets/icons/Merge.svg) イベントを新しいデータセットに出力します。<br>この手順は、[会話インサイト設定](./conversation-insights-configure.md)の定義の一部として実装されます。 |
 | 4 | ブレンドされた![結合](/help/assets/icons/Merge.svg) データセットは接続の一部となり、ブレンドされたデータセットに使用されるスキーマで定義されたコンポーネントはデータビューの一部になります。<br>この手順は、[会話インサイト設定](./conversation-insights-configure.md)の定義の一部として実装されます。 |

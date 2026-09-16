@@ -5,13 +5,11 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-source-git-commit: db34e721f156b3eb0aab20b2dca57e194c83d6fb
+source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2338'
 ht-degree: 5%
-
 ---
-
 # タグからXDMへの移行 {#upgrade-migration-planner}
 
 {{upgrade-note-step}}
@@ -68,7 +66,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 移行を作成する前に、次の項目を確認してください。
 
-* サポートされているAdobe Analyticsの実装（タグのAnalytics拡張機能）。 [&#x200B; サポートされているAdobe Analyticsの実装](#supported-adobe-analytics-implementations)を参照してください。
+* サポートされているAdobe Analyticsの実装（タグのAnalytics拡張機能）。 [ サポートされているAdobe Analyticsの実装](#supported-adobe-analytics-implementations)を参照してください。
 
 * 移行するAdobe Tags プロパティに、ログインしているExperience Cloud組織内でアクセスします。
 
@@ -80,7 +78,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 ## Analytics実装のWeb SDKへの移行
 
-移行は、[!UICONTROL **監査**]、[!UICONTROL **マッピング**]、[!UICONTROL **実装**]&#x200B;の3つのステージを進みます。 次の手順を使用して移行を作成し、[移行の検証とデプロイ &#x200B;](#validate-and-deploy-a-migration)を続行して各段階を完了します。
+移行は、[!UICONTROL **監査**]、[!UICONTROL **マッピング**]、[!UICONTROL **実装**]&#x200B;の3つのステージを進みます。 次の手順を使用して移行を作成し、[移行の検証とデプロイ ](#validate-and-deploy-a-migration)を続行して各段階を完了します。
 
 1. Customer Journey Analyticsで、[!UICONTROL **Migration Planner**]&#x200B;を開きます。
 
@@ -88,7 +86,8 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 1. 移行プランナーの「[!UICONTROL **移行**]」タブで、「[!UICONTROL **新規**]」を選択します。
 
-   ![新しい移行ダイアログ。移行タイプを選択し、移行名を入力します。](assets/migration-planner-new-migration.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
+
 
 1. 次の情報を指定します。
 
@@ -96,7 +95,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
    | --------- | ---------- |
    | [!UICONTROL **名前**] | この移行の名前を指定します。 |
    | [!UICONTROL **説明**] | この移行のオプションの説明を指定します。 |
-   | [!UICONTROL **タグのプロパティ**] | 移行するAdobe Tags プロパティを選択します。 詳しくは、Experience Platform ドキュメントの[&#x200B; プロパティ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/admin/companies-and-properties){target="_blank"}を参照してください。 |
+   | [!UICONTROL **タグのプロパティ**] | 移行するAdobe Tags プロパティを選択します。 詳しくは、Experience Platform ドキュメントの[ プロパティ ](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/admin/companies-and-properties){target="_blank"}を参照してください。 |
    | [!UICONTROL **タグライブラリ**] | 移行の基となるタグライブラリスナップショットを選択します。 スナップショットによって、使用するタグライブラリのバージョンが決まります。 詳しくは、Experience Platform ドキュメントの[公開の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview){target="_blank"}を参照してください。 |
 
 1. 「[!UICONTROL **移行名**]」フィールドで、この移行の名前を指定し、「[!UICONTROL **次**]」を選択します。
@@ -123,7 +122,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 1. 「[!UICONTROL **移行を作成**]」を選択します。
 
-1. 次の節「[移行の検証とデプロイ &#x200B;](#validate-and-deploy-a-migration)」に進みます。
+1. 次の節「[移行の検証とデプロイ ](#validate-and-deploy-a-migration)」に進みます。
 
 ## 移行の検証とデプロイ
 
@@ -135,17 +134,17 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
    移行の概要ページには、完了する3つのステージと、移行とそのアーティファクトの概要が表示されます。
 
-   ![監査、マッピング、実装のステージカードを含む移行概要ページ。](assets/migration-planner-overview.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
 
 1. [!UICONTROL **監査**] ステージを完了します。
 
    1. 監査カード（[!UICONTROL **タグ拡張機能audit**]&#x200B;または&#x200B;[!UICONTROL **JavaScript audit**] （移行タイプに応じて）で、[!UICONTROL **監査を開始**]&#x200B;を選択して、移行に含まれるルールとデータ要素を確認します。
 
-      ![&#x200B; ルールとデータ要素を選択し、結果を解決する監査ページ。](assets/migration-planner-audit.png)
+      <!-- Confirm the exact image: ![The audit page, where you select rules and data elements and resolve any findings.](assets/migration-planner-audit.png) -->
 
    1. [!UICONTROL **ルール**]&#x200B;および&#x200B;[!UICONTROL **データ要素**] タブで、移行に含める項目を選択します。
 
-      ライブラリ **の**&#x200B;とマークされたルールが公開されます。 [!UICONTROL **プロパティのみ**]&#x200B;とマークされたルールは、プロパティ内に存在しますが、選択したライブラリの一部ではありません。
+      ライブラリ **]の[!UICONTROL **&#x200B;とマークされたルールが公開されます。 [!UICONTROL **プロパティのみ**]&#x200B;とマークされたルールは、プロパティ内に存在しますが、選択したライブラリの一部ではありません。
 
    1. 選択したルールに関する調査結果を確認します。 各検索について、[!UICONTROL **Review**]&#x200B;を選択して解決するか、[!UICONTROL **Ignore**]&#x200B;を選択して未解決のままにします。
 
@@ -161,13 +160,13 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
    1. Analytics変数に基づいて新しいスキーマを作成するか、既存のExperience Platform スキーマに対してマッピングするかを選択し、プロンプトに従ってレポートスイートを選択し、フィールドをマッピングし、スキーマをレビューします。
 
-      詳細な手順については、[Analytics変数をXDM フィールドにマッピング &#x200B;](#map-analytics-variables-to-xdm-fields)を参照してください。 移行で一連のマッピングを再利用するには、[&#x200B; マッピングセットの作成と管理](#create-and-manage-mapping-sets)を参照してください。
+      詳細な手順については、[Analytics変数をXDM フィールドにマッピング ](#map-analytics-variables-to-xdm-fields)を参照してください。 移行で一連のマッピングを再利用するには、[ マッピングセットの作成と管理](#create-and-manage-mapping-sets)を参照してください。
 
 1. [!UICONTROL **実装**] ステージを完了します。
 
    1. [!UICONTROL **Web SDK実装を生成**] カードで、監査およびマッピング結果を使用してWeb SDK実装パッケージを生成し、サイトにデプロイします。
 
-      詳細な手順については、[Web SDK実装の生成とデプロイ &#x200B;](#generate-and-deploy-the-web-sdk-implementation)を参照してください。
+      詳細な手順については、[Web SDK実装の生成とデプロイ ](#generate-and-deploy-the-web-sdk-implementation)を参照してください。
 
 
 ## 監査結果の確認と解決
@@ -204,7 +203,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 <!-- The XDM mapping editor was not captured in the walkthrough. Confirm the exact steps, controls, and options on each step (Schema choice, Report suite, Experience Platform schema, Manual mapping, Review schema). -->
 
-移行で一連のマッピングを再利用するには、[&#x200B; マッピングセットの作成と管理](#create-and-manage-mapping-sets)を参照してください。
+移行で一連のマッピングを再利用するには、[ マッピングセットの作成と管理](#create-and-manage-mapping-sets)を参照してください。
 
 ## 移行出力の比較
 
@@ -253,7 +252,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 マッピングセットは、Analytics変数をXDM スキーマフィールドにマッピングする方法を決定します。
 
-移行プロセス [&#128279;](#migrate-an-analytics-implementation-to-the-web-sdk)中に、新しいマッピングセット を作成できます。 または、将来の移行または他の移行タスクで使用するスタンドアロンのマッピングセットを作成することもできます。
+移行プロセス ](#migrate-an-analytics-implementation-to-the-web-sdk)中に、新しいマッピングセット [を作成できます。 または、将来の移行または他の移行タスクで使用するスタンドアロンのマッピングセットを作成することもできます。
 
 ### スタンドアロンのマッピングセットの作成 {#xdm-mapping}
 
@@ -326,11 +325,11 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 各マッピングセットにはステータスとバージョンがあります。 「[!UICONTROL **マッピングセット**]」タブでは、マッピングセットは次のように表示されます。
 
-* [!UICONTROL **ドラフト**]&#x200B;: マッピングセットはまだ編集中です。
+* [!UICONTROL **ドラフト**]: マッピングセットはまだ編集中です。
 
-* [!UICONTROL **公開済み**]&#x200B;: マッピングセットが完成しました。
+* [!UICONTROL **公開済み**]: マッピングセットが完成しました。
 
-* [!UICONTROL **移行**]&#x200B;: マッピングセットは1つ以上の移行にバインドされています。
+* [!UICONTROL **移行**]: マッピングセットは1つ以上の移行にバインドされています。
 
 <!-- Confirm how to publish a mapping set, how versions are created (v1, v2, v3), and what "bindings" represent. -->
 
@@ -358,7 +357,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
   * [!UICONTROL **進行中**]：少なくとも1つのステージが完了しています。
 
-  * [!UICONTROL **完了**]&#x200B;:3つのステージがすべて完了しました。
+  * [!UICONTROL **完了**]:3つのステージがすべて完了しました。
 
 移行を続行するには、移行の横にある&#x200B;[!UICONTROL **開く**]&#x200B;を選択します。
 
