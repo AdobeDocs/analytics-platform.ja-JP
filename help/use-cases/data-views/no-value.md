@@ -202,4 +202,4 @@ Customer Journey Analyticsでは、見つからない配列や空の配列に対
 
 >[!MORELIKETHIS]
 >
->[Adobe Customer Journey Analyticsで&#x200B;**[!UICONTROL 値なし]**&#x200B;を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769)
+>[Adobe Customer Journey Analyticsで&#x200B;**[!UICONTROL 値なし]**&#x200B;を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=ja)
