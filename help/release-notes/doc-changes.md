@@ -70,15 +70,15 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年9月** | |
-| 統合されたブログ投稿 | 以下のブログ記事を掲載しました。<ul><li>[Adobe CJAで「値なし」を処理するための完全なプレイブック ](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769#M598)</li><li>[Adobe Experience PlatformとCustomer Journey Analytics Data Egressの使用例の詳細](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725)</li></ul>[ データの書き出し](/help/use-cases/data-export/overview.md)のユースケースと、新しい[値なし](/help/use-cases/data-views/no-value.md)のユースケースの記事で。 |
+| 統合されたブログ投稿 | 以下のブログ記事を掲載しました。<ul><li>[Adobe CJAで「値なし」を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769#M598)</li><li>[Adobe Experience PlatformとCustomer Journey Analytics Data Egressの使用例の詳細](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725)</li></ul>[&#x200B; データの書き出し](/help/use-cases/data-export/overview.md)のユースケースと、新しい[値なし](/help/use-cases/data-views/no-value.md)のユースケースの記事で。 |
 | 新しいサイズ変更ショートカットアクション | Analysis Workspaceの新しいキーボードショートカットを使用すると、パネルまたはビジュアライゼーションのサイズを[変更できます](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization)幅、幅、高さ、短くできます。 |
 | **2026年8月** | |
-| オーディエンスの更新に関する情報を明確化 | [ オーディエンスを公開](/help/components/audiences/publish.md#audience-builder)すると、更新するようにスケジュールできるオーディエンスの数は、Customer Journey Analyticsの使用権限によって異なり、75 ～ 150であることが明確になりました。 |
+| オーディエンスの更新に関する情報を明確化 | [&#x200B; オーディエンスを公開](/help/components/audiences/publish.md#audience-builder)すると、更新するようにスケジュールできるオーディエンスの数は、Customer Journey Analyticsの使用権限によって異なり、75 ～ 150であることが明確になりました。 |
 | **2026年7月** | |
 | ブランドの可視性インバウンド統合 | [ブランドの可視性インバウンド統合](/help/integrations/bv.md#inbound-integration)のドキュメント。 |
-| 使用状況インターフェイス | Connectionsの[使用インターフェイス ](/help/connections/manage-connections.md#usage) ドキュメントを更新しました。 |
-| サブイベント分析 | [ サブイベント分析](/help/components/segments/sub-event.md)および[ カスタムコンテナ ](/help/data-views/create-dataview.md#custom-containers)のドキュメント。 |
-| インライン分類 | [ インライン分類](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)のドキュメント。 |
+| 使用状況インターフェイス | Connectionsの[使用インターフェイス &#x200B;](/help/connections/manage-connections.md#usage) ドキュメントを更新しました。 |
+| サブイベント分析 | [&#x200B; サブイベント分析](/help/components/segments/sub-event.md)および[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#custom-containers)のドキュメント。 |
+| インライン分類 | [&#x200B; インライン分類](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)のドキュメント。 |
 | **2026年6月** | |
 | 新しいGA4 ガイド | [Google Analytics 4からCustomer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home)への移行を追加しました。 |
 | **2026年5月** | |
@@ -385,7 +385,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 2021年10月 | Customer Journey Analytics の [Report Builder](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-reportbuilder/rb-overview) のドキュメント。 |
 | 2021年10月 | Customer Journey Analytics [監査ログ](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API ドキュメント |
 | 2021年10月 | ドキュメント化した [Analytics ダッシュボードのビジュアライゼーション](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=ja#apply-visualizations) |
-| 2021年10月 | [!UICONTROL 接続][データ保持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)のためのローリングウィンドウ（相対期間）のドキュメント。 |
+| 2021年10月 | [!UICONTROL 接続]&#x200B;[データ保持](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=ja#set-rolling-window-for-connection-data-retention)のためのローリングウィンドウ（相対期間）のドキュメント。 |
 | **2021年9月** | |
 | 2021年9月 | [指標の重複排除](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=ja)ドキュメント |
 | 2021年9月 | [レポートでの夏時間のサポート](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=ja#calendar) |

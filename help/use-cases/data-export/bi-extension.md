@@ -33,7 +33,7 @@ ht-degree: 25%
 ---
 # BI 拡張機能
 
-この記事では、[!DNL Customer Journey Analytics BI extension]を使用して次の[ データ書き出しの使用例](overview.md)を実装する方法について説明します。
+この記事では、[!DNL Customer Journey Analytics BI extension]を使用して次の[&#x200B; データ書き出しの使用例](overview.md)を実装する方法について説明します。
 
 * データレイク、Data Warehouse、BI ツール
 
@@ -47,6 +47,6 @@ ht-degree: 25%
 
 [!DNL Customer Journey Analytics BI extension] を使用すると、Customer Journey Analytics で定義した[データビュー](/help/data-views/data-views.md)への SQL アクセスが可能になります。 データエンジニアやアナリストは、Power BIやTableauなどのBI ツール（BI ツールとも呼ばれます）に精通しています。 Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトを作成する際に使用しているものと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
 
-BI拡張機能は、生のイベントレベルの行ではなく、集計データを返します。 デフォルトでは、各クエリは30日間の日付範囲に対して50行を返しますが、行制限を最大50,000行に、日付範囲を独自のカスタム範囲に上書きできます。 詳しくは、[ デフォルトと制限事項](../../data-views/bi-extension.md#defaults-and-limitations)を参照してください。
+BI拡張機能は、生のイベントレベルの行ではなく、集計データを返します。 デフォルトでは、各クエリは30日間の日付範囲に対して50行を返しますが、行制限を最大50,000行に、日付範囲を独自のカスタム範囲に上書きできます。 詳しくは、[&#x200B; デフォルトと制限事項](../../data-views/bi-extension.md#defaults-and-limitations)を参照してください。
 
 詳しくは、[BI拡張機能](../../data-views/bi-extension.md)の詳細なドキュメントを参照してください。

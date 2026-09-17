@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Workspace書き出し
 
-この記事では、Analysis Workspaceの書き出しオプションを使用して、次の[ データ書き出しの使用例](overview.md)を実装する方法について説明します。
+この記事では、Analysis Workspaceの書き出しオプションを使用して、次の[&#x200B; データ書き出しの使用例](overview.md)を実装する方法について説明します。
 
 - アドホックレポートと定期的レポート
 
@@ -22,7 +22,7 @@ Analysis Workspaceから直接データをエクスポートすることで、�
 
 ## 詳細情報
 
-Analysis Workspaceからワークステーションに、プロジェクトまたはプロジェクトの一部をPDF、CSV、またはJSON ファイルとしてダウンロードできます。 ダウンロードはアドホックのみで、50,000行に制限されています。 詳しくは、[ ワークステーションへのダウンロード ](/help/analysis-workspace/export/download-send.md)を参照してください。
+Analysis Workspaceからワークステーションに、プロジェクトまたはプロジェクトの一部をPDF、CSV、またはJSON ファイルとしてダウンロードできます。 ダウンロードはアドホックのみで、50,000行に制限されています。 詳しくは、[&#x200B; ワークステーションへのダウンロード &#x200B;](/help/analysis-workspace/export/download-send.md)を参照してください。
 
 プロジェクトは、組織内の他のユーザーに電子メールで送信することもできます。アドホックまたはスケジュールで送信することもできます。 電子メールで送信されるレポートは400行に制限されています。 詳しくは、[他のユーザーに送信](/help/analysis-workspace/export/t-schedule-report.md)を参照してください。
 

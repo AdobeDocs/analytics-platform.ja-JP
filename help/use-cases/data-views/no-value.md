@@ -42,7 +42,7 @@ Dimensionの商品は、次の3つのカテゴリーのいずれかに分類さ�
 
 このような場合、以下に示すように、未識別の状態から識別された状態への移行中に、ユーザーが認証ジャーニーのどの段階にいるのかを&#x200B;**[!UICONTROL 値なし]**&#x200B;で示します。
 
-![ ユーザー認証ジャーニーで、ユーザーがサイトを訪問し、ユーザー情報のない事前ログイン状態を入力した後、ユーザー情報を入力するログインイベント ](assets/no-value-login-flow.svg)
+![&#x200B; ユーザー認証ジャーニーで、ユーザーがサイトを訪問し、ユーザー情報のない事前ログイン状態を入力した後、ユーザー情報を入力するログインイベント &#x200B;](assets/no-value-login-flow.svg)
 
 
 ## 値に注意が必要ない場合
@@ -151,7 +151,7 @@ Dimensionの商品は、次の3つのカテゴリーのいずれかに分類さ�
 
 ### 数値ディメンションの値サポートがありません
 
-数値ディメンションの場合は、いくつかの設定オプションを使用できます。 データビューのディメンション設定では、**[!UICONTROL 値を除くすべての**[!UICONTROL &#x200B;値なし&#x200B;]**オプションを設定できます。「値なし」を値]**&#x200B;として扱います。 また、フリーフォームテーブル検索フィルター内のチェックボックスの選択により、数値ディメンションの&#x200B;**[!UICONTROL 値を含めずに]**&#x200B;を管理することもできます。 セグメントを作成する際は、**[!UICONTROL exists]**&#x200B;または&#x200B;**[!UICONTROL not exist]**&#x200B;演算子を使用して、数値ディメンションを使用できます。
+数値ディメンションの場合は、いくつかの設定オプションを使用できます。 データビューのディメンション設定では、**[!UICONTROL 値を除くすべての**&#x200B;[!UICONTROL &#x200B;値なし&#x200B;]&#x200B;**オプションを設定できます。「値なし」を値]**&#x200B;として扱います。 また、フリーフォームテーブル検索フィルター内のチェックボックスの選択により、数値ディメンションの&#x200B;**[!UICONTROL 値を含めずに]**&#x200B;を管理することもできます。 セグメントを作成する際は、**[!UICONTROL exists]**&#x200B;または&#x200B;**[!UICONTROL not exist]**&#x200B;演算子を使用して、数値ディメンションを使用できます。
 
 ### 値およびアイテムレベルのディメンションがありません
 
@@ -202,4 +202,4 @@ Customer Journey Analyticsでは、見つからない配列や空の配列に対
 
 >[!MORELIKETHIS]
 >
->[Adobe Customer Journey Analyticsで&#x200B;**[!UICONTROL 値なし]**&#x200B;を処理するための完全なプレイブック ](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769)
+>[Adobe Customer Journey Analyticsで&#x200B;**[!UICONTROL 値なし]**&#x200B;を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769)

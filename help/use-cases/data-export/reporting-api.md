@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # レポート API
 
-この記事では、[!DNL Customer Journey Analytics Reporting API]を使用して次の[ データ書き出しの使用例](overview.md)を実装する方法について説明します。
+この記事では、[!DNL Customer Journey Analytics Reporting API]を使用して次の[&#x200B; データ書き出しの使用例](overview.md)を実装する方法について説明します。
 
 - カスタムアプリケーション統合
 
@@ -22,6 +22,6 @@ ht-degree: 5%
 
 ## 詳細情報
 
-[!DNL Reporting API]は、[!DNL Adobe Analytics] [!DNL Reporting API]と同じリクエストおよび応答の形式を使用していますが、異なるエンドポイントを使用しています。 [!DNL Adobe Analytics]からレポート統合を移行する場合は、[ クイックスタートガイド ](/help/getting-started/cja-getting-started.md)の移行ワークフローを参照して詳細を確認してください。
+[!DNL Reporting API]は、[!DNL Adobe Analytics] [!DNL Reporting API]と同じリクエストおよび応答の形式を使用していますが、異なるエンドポイントを使用しています。 [!DNL Adobe Analytics]からレポート統合を移行する場合は、[&#x200B; クイックスタートガイド &#x200B;](/help/getting-started/cja-getting-started.md)の移行ワークフローを参照して詳細を確認してください。
 
-認証、使用可能なエンドポイント、および現在のリクエスト制限については、[Customer Journey Analytics API ドキュメント ](https://developer.adobe.com/cja-apis/docs/)を参照してください。
+認証、使用可能なエンドポイント、および現在のリクエスト制限については、[Customer Journey Analytics API ドキュメント &#x200B;](https://developer.adobe.com/cja-apis/docs/)を参照してください。
