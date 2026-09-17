@@ -54,7 +54,7 @@ ht-degree: 56%
 
 >[!NOTE]
 >
->設定ウィザードでは、複数のデータビューとチャネルがサポートされており、単一のデータビューとweb チャネルのみをサポートしていた以前のバージョンとは異なります。 [ データビュー](#data-views) セクションで1つ以上のデータビューを選択する前に、サンドボックスと接続を選択する必要があります。 **[!UICONTROL Experience capture]**、**[!UICONTROL データ収集]**、**[!UICONTROL ヘッダーの上書き]**&#x200B;の設定はチャネルに依存しており、[ チャネル ](#channels) セクションで設定する各チャネルの一部です。
+>設定ウィザードでは、複数のデータビューとチャネルがサポートされており、単一のデータビューとweb チャネルのみをサポートしていた以前のバージョンとは異なります。 [&#x200B; データビュー](#data-views) セクションで1つ以上のデータビューを選択する前に、サンドボックスと接続を選択する必要があります。 **[!UICONTROL Experience capture]**、**[!UICONTROL データ収集]**、**[!UICONTROL ヘッダーの上書き]**&#x200B;の設定はチャネルに依存しており、[&#x200B; チャネル &#x200B;](#channels) セクションで設定する各チャネルの一部です。
 
 Content Analytics 設定にアクセスするには
 
@@ -88,7 +88,7 @@ Content Analytics **[!UICONTROL 設定]**&#x200B;画面から、新しい設定�
 
 ## ガイド付き設定ウィザード
 
-ガイド付き設定ウィザードには、[詳細](#details)、[接続](#connection)、[ データビュー](#data-view)、および[ チャネル ](#channels)の4つのセクションが含まれています。 各セクションでは、Content Analyticsの設定に必要な詳細を確認するプロンプトが表示されます。 一部の設定は以前のセクションの設定値に依存するため、次のセクションに移動する前に各セクションを完了してください。
+ガイド付き設定ウィザードには、[詳細](#details)、[接続](#connection)、[&#x200B; データビュー](#data-view)、および[&#x200B; チャネル &#x200B;](#channels)の4つのセクションが含まれています。 各セクションでは、Content Analyticsの設定に必要な詳細を確認するプロンプトが表示されます。 一部の設定は以前のセクションの設定値に依存するため、次のセクションに移動する前に各セクションを完了してください。
 
 ### 詳細 {#onboarding-details}
 
@@ -130,7 +130,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 
 設定の接続を選択していない場合：
 
-1. ![ データ ](/help/assets/icons/Data.svg) **[!UICONTROL 接続を選択]**&#x200B;して、サンドボックスで使用可能なすべての接続を一覧表示する&#x200B;**[!UICONTROL 接続を選択]** ダイアログを開きます。
+1. ![&#x200B; データ &#x200B;](/help/assets/icons/Data.svg) **[!UICONTROL 接続を選択]**&#x200B;して、サンドボックスで使用可能なすべての接続を一覧表示する&#x200B;**[!UICONTROL 接続を選択]** ダイアログを開きます。
 1. **[!UICONTROL 接続を選択]** ダイアログで、使用する接続を![SelectBox](/help/assets/icons/SelectBox.svg)選択します。 1つの接続のみを選択できます。
 1. 「**[!UICONTROL 接続を使用]**」を選択します。
 
@@ -225,7 +225,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >abstract="設定用に 1 つ以上のチャネルを有効にして設定します。 設定の一部であるすべてのデータビューでは、有効なチャネルが継承されます。"
 
 
-設定には、1つ以上の[ データビュー](/help/data-views/data-views.md)を選択する必要があります。
+設定には、1つ以上の[&#x200B; データビュー](/help/data-views/data-views.md)を選択する必要があります。
 
 設定にデータビューを選択していない場合：
 
@@ -254,7 +254,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 * まだ設定していないチャネルを選択するには、**[!UICONTROL 有効]**&#x200B;を選択します。
 * 既に設定されているものの、設定を変更するチャネルを選択するには、**[!UICONTROL 設定を編集]**&#x200B;を選択します。
 
-その後、チャンネルをより詳細に設定できます。 この設定は、[mobile](#mobile)、[web](#web)、[ ペイドメディア ](#paid-media) チャネルの設定を有効にするか、または編集するかによって異なります。
+その後、チャンネルをより詳細に設定できます。 この設定は、[mobile](#mobile)、[web](#web)、[&#x200B; ペイドメディア &#x200B;](#paid-media) チャネルの設定を有効にするか、または編集するかによって異なります。
 
 #### モバイル
 
@@ -292,7 +292,7 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 >title="モバイルアセットの URL のデータ収集"
 >abstract="コンテンツ分析のデータを収集する際に、**除外する** URL の場所を指定します。 個人を特定できるアセットの URL を除外していることを確認します。"
 
-モバイルチャネルの場合、[ エクスペリエンスキャプチャと定義](#experience-capture-and-definition)、[ データ収集](#data-collection)、[ ヘッダーの上書き](#header-overrides)を設定できます。
+モバイルチャネルの場合、[&#x200B; エクスペリエンスキャプチャと定義](#experience-capture-and-definition)、[&#x200B; データ収集](#data-collection)、[&#x200B; ヘッダーの上書き](#header-overrides)を設定できます。
 
 ### エクスペリエンスのキャプチャと定義 {#mobile-experience-capture-and-definition}
 
@@ -324,7 +324,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 * Content Analyticsのデータを収集する際に除外するエクスペリエンスの場所を指定します。 個人を特定できるエクスペリエンスの場所を除外していることを確認します。
 
-  ]**を除外する**[!UICONTROL  エクスペリエンスの場所に&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*documentation).*`：すべてのドキュメント エクスペリエンスの場所をContent Analyticsから除外します。
+  **を除外する** エクスペリエンスの場所に&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*documentation).*`：すべてのドキュメント エクスペリエンスの場所をContent Analyticsから除外します。
 
 * Content Analyticsのデータを収集する際に除外するアセットの場所を指定します。 個人を特定できるアセットの場所を除外していることを確認します。
 
@@ -332,7 +332,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 * Content Analyticsのデータを収集する際に除外するアセット URLを指定します。 個人を特定できるアセットの URL を除外していることを確認します。
 
-  ]**を除外する**[!UICONTROL  アセット URLの&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*(logo\.jpg)).*$`:Content Analyticsからロゴ JPEG画像を参照するすべてのアセット URLを除外する
+  **を除外する** アセット URLの&#x200B;**[!UICONTROL 正規表現の文字列]**&#x200B;を指定します。 <br/>例：`^(?!.*(logo\.jpg)).*$`:Content Analyticsからロゴ JPEG画像を参照するすべてのアセット URLを除外する
 
 
 ### ヘッダーの上書き {#mobile-header-overrides}
@@ -341,7 +341,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 オプションとして、**[!UICONTROL ヘッダーの上書き]** セクションで、ヘッダー名とシークレットヘッダーの値を指定できます。  このヘッダーが設定を上書きすると、Content Analyticsがカスタム HTTP ヘッダーを送信して、ボット検出やトラフィックゲートテクノロジをバイパスしてモバイルアプリアセットを取得できるようになります。
 
-![ ヘッダーがセクション ](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
+![&#x200B; ヘッダーがセクション &#x200B;](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
 
 1. **[!UICONTROL ヘッダーオーバーライドの設定]**&#x200B;を有効にします。
 1. **[!UICONTROL ヘッダー名]**&#x200B;を入力します。 例：`x-asset-service`。
@@ -357,7 +357,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 +++ 詳細
 
-Web チャネルの場合、[ エクスペリエンスキャプチャと定義](#experience-capture-and-definition-1)、[ データ収集](#data-collection-1)、[ ヘッダーの上書き](#header-overrides-1)を設定できます。
+Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと定義](#experience-capture-and-definition-1)、[&#x200B; データ収集](#data-collection-1)、[&#x200B; ヘッダーの上書き](#header-overrides-1)を設定できます。
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
@@ -528,11 +528,11 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
     1. 「**[!UICONTROL タグ名]**」を指定します（例：`ACA Test for Documentation`）。
     1. 「**[!UICONTROL ドメイン]**」を指定します（例：`example.com`）。
 
-    [Content Analytics JavaScript ライブラリ ](/help/content-analytics/config/tags-agnostic.md)を使用して、web チャネルに対してタグに依存しない実装を作成する場合は、新しいTags プロパティを使用します。 Tags プロパティが作成されますが、非依存の実装ではプロパティを使用しません。 ただし、ガイド付き設定ウィザードを少なくとも1回実行する必要があります。
+    [Content Analytics JavaScript ライブラリ &#x200B;](/help/content-analytics/config/tags-agnostic.md)を使用して、web チャネルに対してタグに依存しない実装を作成する場合は、新しいTags プロパティを使用します。 Tags プロパティが作成されますが、非依存の実装ではプロパティを使用しません。 ただし、ガイド付き設定ウィザードを少なくとも1回実行する必要があります。
 
 * Content Analytics 用のデータを収集する際に、どのページを含めるか除外するかを指定します。 個人を特定できるページを除外していることを確認します。
 
-  **[!UICONTROL ページに対して**[!UICONTROL &#x200B;正規表現の文字列&#x200B;]**を指定して、含める/除外します]**。 <br/>例：Content Analytics からすべてのドキュメントページを除外する `^(?!.*documentation).*`。
+  **[!UICONTROL ページに対して**&#x200B;[!UICONTROL &#x200B;正規表現の文字列&#x200B;]&#x200B;**を指定して、含める/除外します]**。 <br/>例：Content Analytics からすべてのドキュメントページを除外する `^(?!.*documentation).*`。
 
 * Content Analytics 用のデータを収集する際に、どのアセットを含めるか除外するかを指定します。 個人を特定できるアセットを除外していることを確認します。
 
@@ -555,7 +555,7 @@ Data Collection Settingsを使用すると、Content Analyticsで収集するデ
 
 オプションとして、**[!UICONTROL ヘッダーの上書き]** セクションで、ヘッダー名とシークレットヘッダーの値を指定できます。  このヘッダーの上書き設定により、Content Analyticsがカスタム HTTP ヘッダーを送信して、実装したボット検出やトラフィックゲーティングテクノロジーをバイパスできるようになります。
 
-![ ヘッダーがセクション ](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
+![&#x200B; ヘッダーがセクション &#x200B;](/help/content-analytics/assets/aca-configuration-header-overrides.png)を上書きします
 
 1. **[!UICONTROL ヘッダーオーバーライドの設定]**&#x200B;を有効にします。
 1. **[!UICONTROL ヘッダー名]**&#x200B;を入力します。 例：`x-asset-service`。
@@ -593,7 +593,7 @@ Web チャネルの詳細を指定したら、**[!UICONTROL 保存]**&#x200B;を
 
 **[!UICONTROL サポートされているソースコネクタが見つからない]**&#x200B;と表示される場合は、設定したサンドボックスで使用可能な広告プラットフォームのソースコネクタを設定していません。
 
-![ ソースコネクタが設定されていません](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
+![&#x200B; ソースコネクタが設定されていません](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
 
 広告プラットフォームのソースコネクタを設定するには、**[!UICONTROL AEP ソースに移動]**&#x200B;を選択します。 Experience Platformの&#x200B;**[!UICONTROL Sources]** インターフェイスにリダイレクトされます。
 
