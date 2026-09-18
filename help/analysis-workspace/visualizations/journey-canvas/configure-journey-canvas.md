@@ -102,7 +102,7 @@ ht-degree: 83%
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="パーセンテージ値"
+>title="割合値（%）"
 >abstract="各ノードに表示されるパーセンテージは、設定したプライマリ指標とセカンダリ指標に基づいています。 パーセンテージを、開始ノード、前のノードまたはレポートスイート内のすべてのデータに関連付けるかを選択できます。"
 
 <!-- markdownlint-enable MD034 -->

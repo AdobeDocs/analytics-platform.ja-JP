@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
 source-wordcount: '4217'
-ht-degree: 30%
+ht-degree: 31%
 ---
 # データフィードの作成
 
@@ -87,8 +87,8 @@ ht-degree: 30%
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_required_dimensions"
->title="必要なディメンション"
->abstract="すべてのデータフィードには、ディメンション名の横に&#x200B;**必須** ラベルで識別される特定のディメンションを含める必要があります。 これらのディメンションは、イベントレベルの分析に必要な最小限の構造を提供します。"
+>title="必須ディメンション"
+>abstract="すべてのデータフィードには、ディメンション名の横に&#x200B;**必須**&#x200B;ラベルで識別される特定のディメンションを含める必要があります。 これらのディメンションは、イベントレベルの分析に必要な最小限の構造を提供します。"
 
 <!-- markdownlint-enable MD034 -->
 

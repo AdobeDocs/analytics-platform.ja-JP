@@ -8,23 +8,28 @@ role: User
 TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 7a7ad0d310603850395e35edce7fa66c8c2ff329
 workflow-type: tm+mt
-source-wordcount: 1462
-ht-degree: 26%
-
+source-wordcount: '1487'
+ht-degree: 25%
 ---
-
 # データビューのユースケース
 
 これらのユースケースは、Customer Journey Analyticsのデータビューの柔軟性とパワーを示しています。
@@ -41,11 +46,15 @@ ht-degree: 26%
 
 Customer Journey Analytics BI拡張機能を使用して多くのユースケースを実現する方法については、[BI拡張機能のユースケース &#x200B;](bi-extension-usecases.md)を参照してください。
 
+
+## 値なしの処理方法
+
+様々な&#x200B;**[!UICONTROL 値なし]** ユースケース シナリオの処理方法について詳しくは、[値なし](./no-value.md)の処理方法の記事を参照してください。
+
+
 ## 文字列スキーマフィールドからの指標の作成 {#string}
 
 例えば、データビューを作成する際に、文字列である[!UICONTROL &#x200B; ページタイトル &#x200B;] スキーマフィールドから[!UICONTROL 注文]指標を作成できます。
-
-
 
 1. **[!UICONTROL コンポーネント]** タブで、**[!UICONTROL ページタイトル]**&#x200B;を[!UICONTROL 含まれるコンポーネント &#x200B;]の下の&#x200B;**[!UICONTROL 指標]** セクションにドラッグします。
 1. ドラッグした指標をハイライト表示し、上の&#x200B;**[!UICONTROL コンポーネント設定]**&#x200B;で`Orders`という名前に変更します

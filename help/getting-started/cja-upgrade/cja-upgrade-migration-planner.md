@@ -8,9 +8,9 @@ hide: true
 source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
 source-wordcount: '2338'
-ht-degree: 5%
+ht-degree: 16%
 ---
-# タグからXDMへの移行 {#upgrade-migration-planner}
+# タグから XDM への移行 {#upgrade-migration-planner}
 
 {{upgrade-note-step}}
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="migration_intro"
 >title="移行の概要"
->abstract="Customer Journey Analyticsにアップグレードする際に、タグ実装をAdobe Experience Platform Web SDKに移行します。<br/>既存の移行を続行するか、新しい移行を開始します。"
+>abstract="Customer Journey Analytics にアップグレードする際は、タグの実装を Adobe Experience Platform Web SDK に移行します。<br/>既存の移行を続行するか、新しい移行を開始します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -246,7 +246,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 >[!CONTEXTUALHELP]
 >id="migration_mapping_sets"
 >title="マッピングセット"
->abstract="マッピングセットは、Analytics変数をXDM フィールドにマッピングする方法を決定します。<br/>新しいマッピングセットを作成するか、既存のマッピングセットを選択して、複数の移行に同じマッピングを適用します。 他の移行タスクでマッピングセットを参照することもできます。"
+>abstract="マッピングセットは、Analytics 変数を XDM フィールドにマッピングする方法を決定します。<br/>新しいマッピングセットを作成するか、既存のマッピングセットを選択して、複数の移行をまたいで同じマッピングを適用します。 また、他の移行タスクでマッピングセットを参照することもできます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -261,7 +261,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 >[!CONTEXTUALHELP]
 >id="migration_mapping_schema"
 >title="スキーマの選択"
->abstract="マッピングセットは、Analytics変数をXDM フィールドにマッピングする方法を決定します。<br/>新しいマッピングセットを作成するか、既存のマッピングセットを選択して、複数の移行に同じマッピングを適用します。 他の移行タスクでマッピングセットを参照することもできます。"
+>abstract="マッピングセットは、Analytics 変数を XDM フィールドにマッピングする方法を決定します。<br/>新しいマッピングセットを作成するか、既存のマッピングセットを選択して、複数の移行をまたいで同じマッピングを適用します。 また、他の移行タスクでマッピングセットを参照することもできます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -269,8 +269,8 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_field_group"
->title="フィールドグループ設定"
->abstract="可能な場合は、公開済みのAdobe フィールドグループを使用するように、標準フィールドグループを選択します。 これにより、最大限の一貫性が確保され、標準フィールドが使用できない場合は、カスタムテナントフィールドにフォールバックされます。<br/>可能な場合は、テナント名前空間のカスタムフィールドを使用するカスタムフィールドグループを選択します。 これにより、最大限の柔軟性を実現できます。"
+>title="フィールドグループ参照"
+>abstract="可能な場合は、標準フィールドグループを選択して、公開済みの Adobe フィールドグループを使用します。 これにより、最大限の一貫性が確保され、標準フィールドが使用できない場合は、カスタムテナントフィールドにフォールバックされます。<br/>可能な場合は、カスタムフィールドグループを選択して、テナント名前空間のカスタムフィールドを使用します。 これにより、最大限の柔軟性が確保されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -279,7 +279,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 >[!CONTEXTUALHELP]
 >id="migration_mapping_lookback"
 >title="ルックバック期間"
->abstract="どの変数がアクティブにデータを受信しているかを判断する際にどの程度前を見ているかを制御します。 ルックバック期間内のデータを含む変数は、スキーマに含まれます。"
+>abstract="アクティブにデータを受信している変数を判断する際、過去まで遡る程度を制御します。 ルックバック期間内のデータを含む変数は、スキーマに含まれます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -305,7 +305,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
    * [!UICONTROL **Standard first**]：可能な場合は、公開されたAdobe フィールドグループを使用します。 これにより、最大限の一貫性が確保され、標準フィールドが使用できない場合は、カスタムテナントフィールドにフォールバックされます。
 
-   * [!UICONTROL **カスタム first**]：可能な場合は、テナント名前空間のカスタムフィールドを使用します。 これにより、最大限の柔軟性を実現できます。
+   * [!UICONTROL **カスタム first**]：可能な場合は、テナント名前空間のカスタムフィールドを使用します。 これにより、最大限の柔軟性が確保されます。
 
    <!-- * [!UICONTROL **Ask each time**]: Prompt for each signal so you can decide individually. -->
 

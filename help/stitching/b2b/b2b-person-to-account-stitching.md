@@ -30,7 +30,7 @@ topic_v2:
 source-git-commit: 76379e1cd9a42f2b2651a66768c195776eabecff
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 21%
+ht-degree: 25%
 ---
 # B2B担当者とアカウントの連携
 
@@ -153,12 +153,12 @@ B2B ユーザーによるアカウント結合を有効にする前に、Adobe E
 
 まず、接続レベルでB2B ステッチを有効にして設定します。 接続用にB2B ステッチが設定されている場合、その接続内の個々のイベントデータセットに対して個人からアカウントへのステッチをアクティベートできます。
 
-### アカウントのステッチ設定にB2B人物を設定する {#configure-b2b-stitching-settings}
+### B2B ユーザーとアカウントのステッチの設定 {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
 >title="B2B ステッチの設定"
->abstract="「**[!UICONTROL B2B ステッチ設定を開く]**」を選択して、B2B ユーザーをアカウント ステッチに設定します。 接続がまだ保存されていない場合、設定には「**[!UICONTROL _保存されていない変更_]**」というラベルが付けられます。"
+>abstract="「**[!UICONTROL B2B ステッチ設定を開く]**」を選択して、B2B ユーザーとアカウントのステッチを設定します。 接続がまだ保存されていない場合、設定には「**[!UICONTROL _保存されていない変更_]**」というラベルが付けられます。"
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
@@ -183,7 +183,7 @@ B2B ユーザーによるアカウント結合を有効にする前に、Adobe E
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="開始時間"
->abstract="アカウントとの関係がアクティブになったタイミングを示すタイムスタンプフィールドを選択します。"
+>abstract="ユーザーとアカウントの関係がいつアクティブになったかを示す「タイムスタンプ」フィールドを選択します。"
 
 
 >[!CONTEXTUALHELP]
@@ -231,14 +231,14 @@ B2B ユーザーによるアカウント結合を有効にする前に、Adobe E
 
    1. **[!UICONTROL _未保存の変更_]** インジケーターは、[接続を保存](#save)するまで、**B2B ステッチ設定を開く** ボタンの横に表示されます。
 
-### イベントデータセットのアカウント合成をB2B人物に対して有効にする
+### イベントデータセットで B2B ユーザーとアカウントのステッチを有効にする
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="ユーザーとアカウントのステッチを有効にする"
->abstract="有効にすると、このデータセットは B2B ユーザーとアカウントのステッチを使用します。 **[!UICONTROL 永続的な人物ID]**&#x200B;値は、設定された&#x200B;**[!UICONTROL 人物ID名前空間]**&#x200B;から値に昇格され、その後、人物からアカウントへのデータセットに基づいてアカウント IDを検索するために使用されます。<br/>無効になっている場合、このデータセットでは B2B ユーザーとアカウントのステッチを使用しないため、代わりに必要な&#x200B;**[!UICONTROL アカウント ID]** を選択する必要があります。"
->additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="アカウントのステッチ設定にB2B人物を設定する"
+>abstract="有効にすると、このデータセットは B2B ユーザーとアカウントのステッチを使用します。 **[!UICONTROL 永続的ユーザー ID]** の値は、設定した&#x200B;**[!UICONTROL ユーザー識別子名前空間]**&#x200B;の値へと昇格され、ユーザーとアカウントのデータセットに基づいてアカウント ID を検索するために使用されます。<br/>無効になっている場合、このデータセットでは B2B ユーザーとアカウントのステッチを使用しないので、代わりに必要な&#x200B;**[!UICONTROL アカウント ID]** を選択する必要があります。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="B2B ユーザーとアカウントのステッチの設定"
 
 接続レベルでB2B ステッチを設定した後、B2Bの人物がステッチを行うイベントデータセットごとに個別にステッチを考慮できるようにする必要があります。
 

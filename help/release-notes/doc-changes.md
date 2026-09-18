@@ -8,38 +8,58 @@ autotag-review: '2026-05-19T11:00:09.733Z'
 TQID: 'https://experienceleague.adobe.com/hHcvSYqGtYuKbPLvtu2qALBNLA0cogWxEUYxu-ktUvM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+    internal-label: Release notes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
+    internal-label: Privacy
+source-git-commit: 29538d06c3b4a6db567c2a84e5785cc56af3d33d
 workflow-type: tm+mt
-source-wordcount: 7045
-ht-degree: 98%
-
+source-wordcount: '7124'
+ht-degree: 97%
 ---
-
 
 # Customer Journey Analytics - ドキュメントのアップデート
 
@@ -50,6 +70,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年9月** | |
+| 統合されたブログ投稿 | 以下のブログ記事を掲載しました。<ul><li>[Adobe CJAで「値なし」を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=ja#M598)</li><li>[Adobe Experience PlatformとCustomer Journey Analytics Data Egressの使用例の詳細](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=ja)</li></ul>[&#x200B; データの書き出し](/help/use-cases/data-export/overview.md)のユースケースと、新しい[値なし](/help/use-cases/data-views/no-value.md)のユースケースの記事で。 |
 | 新しいサイズ変更ショートカットアクション | Analysis Workspaceの新しいキーボードショートカットを使用すると、パネルまたはビジュアライゼーションのサイズを[変更できます](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization)幅、幅、高さ、短くできます。 |
 | **2026年8月** | |
 | オーディエンスの更新に関する情報を明確化 | [&#x200B; オーディエンスを公開](/help/components/audiences/publish.md#audience-builder)すると、更新するようにスケジュールできるオーディエンスの数は、Customer Journey Analyticsの使用権限によって異なり、75 ～ 150であることが明確になりました。 |

@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: 0b2548c1caa15fe7e50c000178e691ea9743ff19
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1502'
 ht-degree: 90%
 ---
 # Adobe Customer Journey Analytics ガイド {#using}
@@ -511,6 +511,7 @@ ht-degree: 90%
       + [製品価値の構築](/help/use-cases/b2b/b2b-edition/build-product-value.md)
   + 複雑なデータ {#complex-data}
     + [オブジェクトの配列を使用](../use-cases/object-arrays.md)
+    + [処理No value](../use-cases/data-views/no-value.md)
   + クロスチャネルデータ {#cross-channel}
     + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
     + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
@@ -520,6 +521,9 @@ ht-degree: 90%
     + [データセットの書き出し](../use-cases/data-export/export-datasets.md)
     + [フルテーブルの書き出し](../use-cases/data-export/export-full-table.md)
     + [クエリサービスとデータセットの書き出し](../use-cases/data-export/queryservice-export-datasets.md)
+    + [Workspace書き出し](../use-cases/data-export/workspace-export.md)
+    + [Report Builder](../use-cases/data-export/report-builder.md)
+    + [レポート API](../use-cases/data-export/reporting-api.md)
   + データ取り込み {#data-ingestion}
     + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
     + [Adobe Experience Platform オーディエンスの取り込みと活用](../use-cases/data-ingestion/ingest-aep-segments.md)
