@@ -75,7 +75,7 @@ Adobe Analyticsでは、すべてのイベントがライブでデバイス ID�
 
 Customer Journey Analyticsでは、イベントは順番に収集されず、デバイス IDの代わりに個人IDが使用されるため、レポート時にCustomer Journey Analyticsでアトリビューションとセッションを更新できます。 こうしたデータ収集は、次のような柔軟性をもたらします。
 
-* 結合すると、匿名のイベントを既知のイベントに関連付けて、毎日または毎週&#x200B;_リプレイ_ データを再生できます。 詳しくは、[ ステッチ ](../../stitching/overview.md)を参照してください。
+* 結合すると、匿名のイベントを既知のイベントに関連付けて、毎日または毎週&#x200B;_リプレイ_ データを再生できます。 詳しくは、[&#x200B; ステッチ &#x200B;](../../stitching/overview.md)を参照してください。
 * セッション化と永続的な値は、常に変更されます
   * 新しいデータが収集されるか、
   * 結合すると、ユーザーの履歴にイベントが追加されます。
@@ -121,8 +121,8 @@ Customer Journey Analyticsでは、イベントは順番に収集されず、デ
 
 複数の機能で同じユースケースを実装できます。 最適なオプションを選択したら、次のことを検討します。
 
-* **データボリューム**: [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)や[Report Builder](/help/use-cases/data-export/report-builder.md)などのアドホックメソッドは、数万行に制限されています。 [ テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)および[ データセットの書き出し](/help/use-cases/data-export/export-datasets.md)は、数百万行をサポートしています。
-* **Rawと処理済みデータ**: [ データセットの書き出し](/help/use-cases/data-export/export-datasets.md)および[Query Service （Data Distiller）とデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)により、データレイクから未処理の生データが配信されます。 [BI拡張機能](/help/use-cases/data-export/bi-extension.md)、[ テーブル全体を書き出し](/help/use-cases/data-export/export-full-table.md)、[Workspace書き出し](/help/use-cases/data-export/workspace-export.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)、および[ レポート API](/help/use-cases/data-export/reporting-api.md)は、Customer Journey Analyticsが既に処理したデータ（アトリビューション、セッション化、計算指標など）を配信します。
-* **技術的な専門知識**: [Query Service （Data Distiller）およびデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)と[BI拡張機能](/help/use-cases/data-export/bi-extension.md)には、SQLに関する知識が必要です。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)と[Report Builder](/help/use-cases/data-export/report-builder.md)は、ポイント&amp;クリック操作のインターフェイスを使用しています。 [ レポート API](/help/use-cases/data-export/reporting-api.md)には、プログラミングの知識が必要です。
-* **スケジュール設定**: [ データセットの書き出し](/help/use-cases/data-export/export-datasets.md)、[ テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)では、定期的な配信がサポートされます。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md) ダウンロードはアドホックのみです。
+* **データボリューム**: [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)や[Report Builder](/help/use-cases/data-export/report-builder.md)などのアドホックメソッドは、数万行に制限されています。 [&#x200B; テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)および[&#x200B; データセットの書き出し](/help/use-cases/data-export/export-datasets.md)は、数百万行をサポートしています。
+* **Rawと処理済みデータ**: [&#x200B; データセットの書き出し](/help/use-cases/data-export/export-datasets.md)および[Query Service （Data Distiller）とデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)により、データレイクから未処理の生データが配信されます。 [BI拡張機能](/help/use-cases/data-export/bi-extension.md)、[&#x200B; テーブル全体を書き出し](/help/use-cases/data-export/export-full-table.md)、[Workspace書き出し](/help/use-cases/data-export/workspace-export.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)、および[&#x200B; レポート API](/help/use-cases/data-export/reporting-api.md)は、Customer Journey Analyticsが既に処理したデータ（アトリビューション、セッション化、計算指標など）を配信します。
+* **技術的な専門知識**: [Query Service （Data Distiller）およびデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)と[BI拡張機能](/help/use-cases/data-export/bi-extension.md)には、SQLに関する知識が必要です。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)と[Report Builder](/help/use-cases/data-export/report-builder.md)は、ポイント&amp;クリック操作のインターフェイスを使用しています。 [&#x200B; レポート API](/help/use-cases/data-export/reporting-api.md)には、プログラミングの知識が必要です。
+* **スケジュール設定**: [&#x200B; データセットの書き出し](/help/use-cases/data-export/export-datasets.md)、[&#x200B; テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)では、定期的な配信がサポートされます。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md) ダウンロードはアドホックのみです。
 * **出力形式と宛先**: クラウドストレージのファイル、BI ツールのテーブル、Excelのワークブック、API呼び出しからの応答のいずれが必要かを検討し、それを提供する機能と一致させます。
