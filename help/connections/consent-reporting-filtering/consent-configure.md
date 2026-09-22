@@ -102,7 +102,7 @@ ht-degree: 28%
 
 1. 「**[!UICONTROL 設定を作成]**」を選択します。
 
-   ![同意設定ページ ](assets/consent-configure.png)
+   ![同意設定ページ &#x200B;](assets/consent-configure.png)
 
 1. 「**[!UICONTROL 詳細]**」セクションで、次の情報を指定します。
 
@@ -121,7 +121,7 @@ ht-degree: 28%
 
 1. 同意データのレポートを有効にするかどうかを選択します。
 
-   レポートを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
+   レポートを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
 
    レポートを有効にして設定するには：
 
@@ -137,7 +137,7 @@ ht-degree: 28%
 
    フィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者が有効なすべての同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。
 
-   フィルタリングを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
+   フィルタリングを有効にするタイミングについて詳しくは、[同意レポートとフィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering)を参照してください。
 
    フィルタリングを有効にして設定するには：
 
@@ -147,9 +147,9 @@ ht-degree: 28%
 
       >[!NOTE]
       >
-      >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング ](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
+      >マーケティングアクションのフィルタリングが有効になっている場合、Customer Journey Analyticsは、訪問者がそのマーケティングアクションに適用される&#x200B;**all**&#x200B;同意ポリシーに一致する場合にのみ、訪問者のデータを取り込みます。 詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)の[同意フィルタリング &#x200B;](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering)を参照してください。
 
-      マーケティングアクションは、Experience Platformで設定したデータ使用ラベルとポリシーに関連付けられます。 詳しくは、[ ラベル、ポリシー、およびマーケティングアクション ](/help/data-views/data-governance.md)を参照してください。
+      マーケティングアクションは、Experience Platformで設定したデータ使用ラベルとポリシーに関連付けられます。 詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。
 
       | マーケティングアクション | 説明 |
       | --------- | ---------- |
@@ -170,7 +170,7 @@ ht-degree: 28%
 
 [設定を作成した後](#create-a-configuration)、設定された接続の下のデータビューに同意ポリシーコンポーネントが追加されたことを確認できます。
 
-データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[ アクセス制御](/help/technotes/access-control.md)を参照してください。
+データビューで同意ポリシーコンポーネントを表示するには、データビューが割り当てられている製品プロファイルの製品プロファイル管理者である必要があります。 詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md)を参照してください。
 
 データビューで同意ポリシーコンポーネントを表示するには：
 

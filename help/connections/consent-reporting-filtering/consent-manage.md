@@ -56,9 +56,9 @@ ht-degree: 5%
 
    * **[!UICONTROL ステータス]**：設定のステータス。
 
-   列アイコン ![列アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
+   列アイコン ![列アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
 
-1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![ フィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![&#x200B; フィルターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 
