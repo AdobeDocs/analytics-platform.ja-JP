@@ -23,14 +23,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
 ---
 # 同意レポートとフィルタリングのユースケース
-
-{{release-limited-testing}}
 
 同意のレポートとフィルタリングは、訪問者の同意ポリシーのメンバーシップに関するレポートを作成し、同意のない訪問者がデータをCustomer Journey Analyticsに入力する前に、必要に応じて除外するのに役立ちます。 概要情報については、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)を参照してください。
 

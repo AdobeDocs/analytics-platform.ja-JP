@@ -21,14 +21,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 5%
 ---
 # 同意レポートとフィルタリング設定の管理
-
-{{release-limited-testing}}
 
 同意レポートとフィルター設定を[作成した後](/help/connections/consent-reporting-filtering/consent-configure.md)、表示、編集、または削除できます。
 
@@ -58,9 +56,9 @@ ht-degree: 5%
 
    * **[!UICONTROL ステータス]**：設定のステータス。
 
-   列アイコン ![列アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
+   列アイコン ![列アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
 
-1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![&#x200B; フィルターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![ フィルターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 
