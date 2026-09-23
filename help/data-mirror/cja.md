@@ -43,7 +43,7 @@ Customer Journey AnalyticsでExperience Platform Data Mirror機能を使用す�
 
 ## データビュー
 
-リレーショナルスキーマのフィールドを、データビューのコンポーネント（指標とディメンション）として定義します。 データミラーフィールドは、**[!UICONTROL イベントデータセット]** フォルダーの&#x200B;**[!UICONTROL アドホックおよびリレーショナルフィールド]** サブフォルダーで使用できます。 [派生フィールド ](/help/data-views/derived-fields/derived-fields.md)または[ コンポーネント設定](/help/data-views/component-settings/overview.md)などの機能を使用して、リレーショナルフィールドに基づくコンポーネントを変更します。
+リレーショナルスキーマのフィールドを、データビューのコンポーネント（指標とディメンション）として定義します。 データミラーフィールドは、**[!UICONTROL イベントデータセット]** フォルダーの&#x200B;**[!UICONTROL アドホックおよびリレーショナルフィールド]** サブフォルダーで使用できます。 [派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)または[&#x200B; コンポーネント設定](/help/data-views/component-settings/overview.md)などの機能を使用して、リレーショナルフィールドに基づくコンポーネントを変更します。
 
 
 ## Workspace プロジェクト

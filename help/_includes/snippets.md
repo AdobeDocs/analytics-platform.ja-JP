@@ -331,5 +331,5 @@ Customer Journey Analytics には前処理と後処理の概念がないので�
 
 >[!IMPORTANT]
 >
->リレーショナルデータセットは、リレーショナルスキーマタイプに基づいています。 そのリレーショナルスキーマで定義された関係記述子は関係がなく、Customer Journey Analyticsの一般的なコネクションの定義と設定、またはリレーショナルデータセットのデータセット設定には適用されません。 <br/><br>Customer Journey Analytics レポートと分析の場合、[ データセット設定](/help/connections/create-connection.md#relational-dataset)で、共通の個人IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を明示的に設定する必要があります。
+>リレーショナルデータセットは、リレーショナルスキーマタイプに基づいています。 そのリレーショナルスキーマで定義された関係記述子は関係がなく、Customer Journey Analyticsの一般的なコネクションの定義と設定、またはリレーショナルデータセットのデータセット設定には適用されません。 <br/><br>Customer Journey Analytics レポートと分析の場合、[&#x200B; データセット設定](/help/connections/create-connection.md#relational-dataset)で、共通の個人IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を明示的に設定する必要があります。
 >
