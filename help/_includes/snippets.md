@@ -1,9 +1,8 @@
 ---
-source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
-source-wordcount: '5455'
-ht-degree: 98%
-
+source-wordcount: '5542'
+ht-degree: 97%
 ---
 # スニペット
 
@@ -326,3 +325,11 @@ Customer Journey Analytics には前処理と後処理の概念がないので�
 ## CJA データフィードユーザーエージェント {#cja-df-ua}
 
 ユーザーエージェント情報とデバイスルックアップ情報の両方を同時に収集することはできません。これらのディメンションの母集団は相互に排他的です。 [データストリームを設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)する際は、ユーザーエージェントを直接収集するか、デバイスルックアップ情報（ユーザーエージェントに基づく）を収集するかを選択する必要があります。
+
+
+## 関係データセットの重要なメッセージ {#relational-dataset-important}
+
+>[!IMPORTANT]
+>
+>リレーショナルデータセットは、リレーショナルスキーマタイプに基づいています。 そのリレーショナルスキーマで定義された関係記述子は関係がなく、Customer Journey Analyticsの一般的なコネクションの定義と設定、またはリレーショナルデータセットのデータセット設定には適用されません。 <br/><br>Customer Journey Analytics レポートと分析の場合、[&#x200B; データセット設定](/help/connections/create-connection.md#relational-dataset)で、共通の個人IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を明示的に設定する必要があります。
+>

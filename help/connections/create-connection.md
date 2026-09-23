@@ -5,6 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -31,7 +32,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
 source-wordcount: '10488'
 ht-degree: 91%
@@ -538,8 +539,9 @@ ht-degree: 91%
 | データセットタイプ | 説明 | タイムスタンプ | スキーマ | ユーザー ID |
 |---|---|---|---|---|
 | **[!UICONTROL アドホック]** | 単一のデータセットでのみ使用するために名前空間が設定されたフィールドを持つ[アドホックスキーマ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/api/ad-hoc)に基づくアドホックデータ。 | アドホックデータセットに対して選択するデータセットタイプによって異なります。 | *アドホック*&#x200B;動作に基づくクラスに基づいたアドホックスキーマ | アドホックデータセットに対して選択するデータセットタイプによって異なります。 |
-| **[!UICONTROL モデル]** | リレーショナルスキーマに基づいたリレーショナルデータ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 | 任意のリレーショナルスキーマ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 |
+| **[!UICONTROL リレーショナル]** | リレーショナルスキーマに基づいたリレーショナルデータ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 | 任意のリレーショナルスキーマ。 | リレーショナルデータセットに対して選択するデータセットタイプによって異なります。 |
 
+{{relational-dataset-important}}
 
 ### データセットを追加
 
@@ -721,6 +723,8 @@ ht-degree: 91%
 
 すべてのデータセットとデータセットタイプには、新しいデータを読み込むかどうかや、バックフィルをリクエストするかどうかなどの[一般的な設定と詳細](#general-dataset-settings-and-details)があります。
 
+
+
 #### イベントデータセット
 
 イベントデータセットの特定の設定は、接続のタイプによって異なります。
@@ -861,6 +865,8 @@ ht-degree: 91%
 >
 >リレーショナルデータセットは主に、今後の Customer Journey Analytics 用の Adobe Experience Platform Data Mirror 機能をサポートするために使用されます。
 >
+
+{{relational-dataset-important}}
 
 リレーショナルデータセットの特定の設定は次のとおりです。
 
