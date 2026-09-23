@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 28%
@@ -85,8 +85,6 @@ ht-degree: 28%
 >abstract="同意していない訪問者のデータが Customer Journey Analytics に取り込まれないように除外するには、このオプションを有効にします。 有効にすると、訪問者のデータは、訪問者が以下で有効なすべての同意ポリシーに一致する場合にのみ取り込まれます。 <br>このオプションは、取り込み時に同意していない訪問者データを除外する要件を持つ組織を対象としています。"
 
 <!-- markdownlint-enable MD034 -->
-
-{{release-limited-testing}}
 
 システム管理者は、1つ以上の接続に対して、同意レポートおよびオプションで同意フィルタリングを有効にできます。 概要情報については、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)を参照してください。
 

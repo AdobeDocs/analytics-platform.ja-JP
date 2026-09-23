@@ -2,7 +2,7 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 0b2548c1caa15fe7e50c000178e691ea9743ff19
+source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 90%
@@ -145,11 +145,11 @@ ht-degree: 90%
     + [分析](/help/connections/audience-analysis/analyze-audiences.md)
     + [ユースケース](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + 同意に関するレポートとフィルタリング {#consent-reporting-filtering}
-    + {hide-from-toc}[概要](/help/connections/consent-reporting-filtering/consent-overview.md)
-    + {hide-from-toc}[設定](/help/connections/consent-reporting-filtering/consent-configure.md)
-    + {hide-from-toc}[管理](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[分析](/help/connections/consent-reporting-filtering/consent-analyze.md)
-    + {hide-from-toc}[ユースケース](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+    + [概要](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + [設定](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + [管理](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + [分析](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + [ユースケース](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + データビュー {#cja-dataviews}
   + [データビューの概要](../data-views/data-views.md)
   + [データビューの作成または編集](../data-views/create-dataview.md)
