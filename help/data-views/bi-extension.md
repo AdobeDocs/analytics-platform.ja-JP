@@ -8,27 +8,36 @@ exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Privacy
+source-git-commit: 8dc03b7c76c53c327f4a20c8fa9d75298d3d13c1
 workflow-type: tm+mt
-source-wordcount: 3763
-ht-degree: 82%
-
+source-wordcount: '3765'
+ht-degree: 81%
 ---
-
 # Customer Journey Analytics BI 拡張機能
 
 {{select-package}}
@@ -312,7 +321,7 @@ Customer Journey Analytics BI 拡張機能を使用して様々なユースケ�
 
 ## 機能
 
-デフォルトでは、データビューには、わかりやすい名前から生成されたテーブルセーフ名が付けられます。 例えば、[!UICONTROL マイ web データビュー]という名前のデータビューのビュー名は `my_web_data_view` です。 BI ツールで使用するデータビューの優先名を定義できます。 詳しくは、[データビュー設定](create-dataview.md#settings)を参照してください。
+デフォルトでは、データビューには、データビューのデフォルトの外部IDから生成されたテーブル名があります。 例えば、**[!UICONTROL My Web Data View]**&#x200B;という名前のデータビューには、外部ID `My_web_data_view`があります。 BI ツールで使用するデータビューの優先名を定義できます。 詳しくは、[データビュー設定](create-dataview.md#settings)を参照してください。
 
 データビュー ID をテーブル名として使用する場合は、接続時にデータベース名にオプションの `CJA_USE_IDS` 設定を追加できます。 例えば、`prod:cja?CJA_USE_IDS` は、`dv_ABC123` のような名前でデータビューを表示します。
 
@@ -327,12 +336,12 @@ Experience Platform で使用されるデータセットに関して作成され
 標準の PostgreSQL CLI では、`\dv` を使用してビューをリストできます
 
 ```sql
-prod:all=> \dv
+prod:cja=> \dv
                        List of relations
  Schema |                    Name                    | Type |  Owner             
 --------+--------------------------------------------+------+----------
- public | my_web_data_view                           | view | postgres
- public | my_mobile_data_view                        | view | postgres
+ public | My_web_data_view                           | view | postgres
+ public | My_mobile_data_view                        | view | postgres
 ```
 
 ### ネスト化とフラット化

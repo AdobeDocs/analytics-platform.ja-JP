@@ -8,19 +8,21 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: caf1e4497d5dbe370ce23481ee1fbf1b6db59bf6
+    internal-label: Admin
+source-git-commit: 79f124f639c35a97991690e18f6451fc20b02da9
 workflow-type: tm+mt
-source-wordcount: 1788
+source-wordcount: '1788'
 ht-degree: 20%
-
 ---
-
 # ステッチを有効にする
 
 接続の一部として設定した1つ以上のイベントデータセットでステッチを有効にできます。 ライセンスを取得したCustomer Journey Analytics パッケージによって、ステッチに使用できるイベントデータセットの数が決まります。
@@ -38,58 +40,58 @@ ht-degree: 20%
 * 永続的なIDまたは人物IDに[Experience Data Model （XDM）スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home) フィールドを使用する場合は、イベントデータセットのスキーマでIDが適切にマークされていることを確認してください。 [ID名前空間の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)を参照してください。
 * 永続的IDと個人IDの両方のID カバレッジを確認します。
 
-   * **[!UICONTROL 永続的ID]**
+  * **[!UICONTROL 永続的ID]**
 
-     永続的ID フィールドがnullではない7日間のデータをクエリし、データセット内のすべてのイベントの7日間のデータのクエリで割ります。 この割合は95%以上である必要があります。
+    永続的ID フィールドがnullではない7日間のデータをクエリし、データセット内のすべてのイベントの7日間のデータのクエリで割ります。 この割合は95%以上である必要があります。
 
-     検証に使用できるクエリの例：
+    検証に使用できるクエリの例：
 
-     ```sql
-     SELECT
-       COUNT(*) AS total_events,
-       COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
-       ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
-     FROM 
-       {DATASET_TABLE_NAME}
-     WHERE
-       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-     ```
+    ```sql
+    SELECT
+      COUNT(*) AS total_events,
+      COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
+      ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
+    FROM 
+      {DATASET_TABLE_NAME}
+    WHERE
+      TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+      AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
+    ```
 
-     ここで：
+    ここで：
 
-      * `{PERSISTENT_ID_FIELD}`は永続IDのフィールドです。 例：`identityMap.ecid[0]`。
+    * `{PERSISTENT_ID_FIELD}`は永続IDのフィールドです。 例：`identityMap.ecid[0]`。
+    * `{DATASET_TABLE_NAME}`は、イベントデータセットのテーブル名です。
+    * `{FORMAT_STRING}`は、タイムスタンプフィールドの書式文字列です。 例：`MM/DD/YY HH12:MI AM`。
+    * `{START_DATE}`は開始日です。 例：`2024-01-01 00:00:00`。
+    * `{END_DATE}`は標準形式の終了日です。 例：`2024-01-08 00:00:00`。
+
+
+  * **[!UICONTROL ユーザー ID]**
+    * グラフベースの合成の場合、ID グラフに、選択した永続的ID名前空間と人物ID名前空間のID値をリンクするフラグメントが含まれていることを確認します。 [Experience Platform ID グラフビューア &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}に移動してテストを実行し、サンプルの永続的ID値を使用してグラフをクエリできます。 これらの永続的ID値がグラフ内の人物ID値にリンクされているかどうかを確認します。
+    * フィールドベースのステッチの場合は、個人ID フィールドがnullでない7日間のデータをクエリし、データセット内のすべてのイベントの7日間のデータのクエリで割ります。 この割合は、理想的には5%を超えるはずです。
+
+      検証に使用できるクエリの例：
+
+      ```sql
+      SELECT
+        COUNT(*) AS total_events,
+        COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+        ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+      FROM 
+        {DATASET_TABLE_NAME}
+      WHERE
+        TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+        AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
+      ```
+
+      ここで：
+
+      * `{PERSON_ID_FIELD}`は人物IDのフィールドです。 例：`identityMap.crmId[0]`。
       * `{DATASET_TABLE_NAME}`は、イベントデータセットのテーブル名です。
       * `{FORMAT_STRING}`は、タイムスタンプフィールドの書式文字列です。 例：`MM/DD/YY HH12:MI AM`。
       * `{START_DATE}`は開始日です。 例：`2024-01-01 00:00:00`。
       * `{END_DATE}`は標準形式の終了日です。 例：`2024-01-08 00:00:00`。
-
-
-   * **[!UICONTROL ユーザー ID]**
-      * グラフベースの合成の場合、ID グラフに、選択した永続的ID名前空間と人物ID名前空間のID値をリンクするフラグメントが含まれていることを確認します。 [Experience Platform ID グラフビューア &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}に移動してテストを実行し、サンプルの永続的ID値を使用してグラフをクエリできます。 これらの永続的ID値がグラフ内の人物ID値にリンクされているかどうかを確認します。
-      * フィールドベースのステッチの場合は、個人ID フィールドがnullでない7日間のデータをクエリし、データセット内のすべてのイベントの7日間のデータのクエリで割ります。 この割合は、理想的には5%を超えるはずです。
-
-        検証に使用できるクエリの例：
-
-        ```sql
-        SELECT
-          COUNT(*) AS total_events,
-          COUNT({PERSON_ID_FIELD}) AS events_with_personid,
-          ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
-        FROM 
-          {DATASET_TABLE_NAME}
-        WHERE
-          TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-          AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-        ```
-
-        ここで：
-
-         * `{PERSON_ID_FIELD}`は人物IDのフィールドです。 例：`identityMap.crmId[0]`。
-         * `{DATASET_TABLE_NAME}`は、イベントデータセットのテーブル名です。
-         * `{FORMAT_STRING}`は、タイムスタンプフィールドの書式文字列です。 例：`MM/DD/YY HH12:MI AM`。
-         * `{START_DATE}`は開始日です。 例：`2024-01-01 00:00:00`。
-         * `{END_DATE}`は標準形式の終了日です。 例：`2024-01-08 00:00:00`。
 
 
 
@@ -99,8 +101,8 @@ ht-degree: 20%
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
->title="ID グラフへの変更"
->abstract="ステッチに ID グラフを使用する前に、ID グラフの設定が完了していることを確認します。"
+>title="ID グラフに変更"
+>abstract="ステッチに ID グラフを使用する前に、ID グラフの設定が完了していることを確認してください。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/stitching/gbs" text="グラフベースのステッチ"
 
 >[!CONTEXTUALHELP]
@@ -150,14 +152,14 @@ ht-degree: 20%
 
 1. 「**[!UICONTROL 永続ID]**」ドロップダウンメニューから永続IDを選択します。
 
-   永続的IDに&#x200B;**[!UICONTROL ID マップ]**&#x200B;を選択する場合は、名前空間を選択します。 選択肢は次の2つです。
+   永続的IDに&#x200B;**[!UICONTROL ID マップ]**&#x200B;を選択する場合は、名前空間を選択します。 次の 2 つのオプションがあります。
 
    * 「**[!UICONTROL プライマリ ID名前空間を使用]**」を選択して、プライマリ ID名前空間を使用します。
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
 1. 「**[!UICONTROL 人物ID]**」ドロップダウンメニューから人物IDを選択します。
 
-   ユーザーIDに「**[!UICONTROL ID マップ]**」を選択した場合は、名前空間を選択します。 選択肢は次の2つです。
+   ユーザーIDに「**[!UICONTROL ID マップ]**」を選択した場合は、名前空間を選択します。 次の 2 つのオプションがあります。
 
    * 「**[!UICONTROL プライマリ ID名前空間を使用]**」を選択して、プライマリ ID名前空間を使用します。
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
@@ -194,8 +196,8 @@ ht-degree: 20%
 **[!UICONTROL ステッチ指標]**&#x200B;は、過去7日間のイベントタイムスタンプを含むデータのサンプルセットを使用して計算されます。 このデータのサンプルセットは、通常、**[!UICONTROL Preview]** テーブルで使用されるサンプルデータとは異なります。 指標を結合すると、次の項目の詳細が表示されます。
 
 * **[!UICONTROL 人物ID カバレッジ]**：ステッチプロセス（ライブおよびリプレイ）中に識別に使用される、選択した人物IDのカバレッジ。
-   * フィールドベースのステッチングを最適に行うには、永続ID （デバイス情報）ごとに少なくとも1つのイベントで個人ID （ユーザー情報）を送信する必要があります。
-   * 最適なグラフベースのステッチ結果を得るには、各永続的IDのID グラフに（永続的ID、人物ID）リレーションを存在させる必要があります。
+  * フィールドベースのステッチングを最適に行うには、永続ID （デバイス情報）ごとに少なくとも1つのイベントで個人ID （ユーザー情報）を送信する必要があります。
+  * 最適なグラフベースのステッチ結果を得るには、各永続的IDのID グラフに（永続的ID、人物ID）リレーションを存在させる必要があります。
 
   個人IDのカバレッジはパーセントで表示され、安定した開発または実稼動設定で推奨されるものと比較されます。 このカバレッジ値が高いほど、選択した人物IDでより良いステッチ結果が得られます。
 
