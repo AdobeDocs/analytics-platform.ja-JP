@@ -4,7 +4,6 @@ description: Customer Journey Analytics用Experience Platform Data MirrorのCust
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hold: true
 exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
 TQID: https://experienceleague.adobe.com/1LArX1cyRWpEY8O9xMwTcgwc0aUTjMrniFiDXtpkCNY
 product_v2:
@@ -21,7 +20,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 94404934f0dc12e2d61c8694c2ac85a896fdf2cd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 2%
@@ -43,7 +42,7 @@ Customer Journey AnalyticsでExperience Platform Data Mirror機能を使用す�
 
 ## データビュー
 
-リレーショナルスキーマのフィールドを、データビューのコンポーネント（指標とディメンション）として定義します。 データミラーフィールドは、**[!UICONTROL イベントデータセット]** フォルダーの&#x200B;**[!UICONTROL アドホックおよびリレーショナルフィールド]** サブフォルダーで使用できます。 [派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)または[&#x200B; コンポーネント設定](/help/data-views/component-settings/overview.md)などの機能を使用して、リレーショナルフィールドに基づくコンポーネントを変更します。
+リレーショナルスキーマのフィールドを、データビューのコンポーネント（指標とディメンション）として定義します。 データミラーフィールドは、**[!UICONTROL イベントデータセット]** フォルダーの&#x200B;**[!UICONTROL アドホックおよびリレーショナルフィールド]** サブフォルダーで使用できます。 [派生フィールド ](/help/data-views/derived-fields/derived-fields.md)または[ コンポーネント設定](/help/data-views/component-settings/overview.md)などの機能を使用して、リレーショナルフィールドに基づくコンポーネントを変更します。
 
 
 ## Workspace プロジェクト

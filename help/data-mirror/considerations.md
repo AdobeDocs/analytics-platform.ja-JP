@@ -4,7 +4,6 @@ description: データウェアハウスネイティブソリューションとC
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hold: true
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
 product_v2:
@@ -28,14 +27,18 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # Experience Platform Data Mirrorに関する検討事項
 
 この記事では、Data Mirror データセットを設定する際に考慮すべき要素について説明します。
+
+## 制限事項
+
+{{relational-dataset-important}}
 
 ## ソーステーブルへの新しい列
 
@@ -95,7 +98,7 @@ CDC対応データミラーデータセットのソーステーブルに新し�
 
 ## ガバナンスの違い
 
-XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[&#x200B; フィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[&#x200B; フィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
+XDM [ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[ フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[ フィールド ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
 
 リレーショナルスキーマでは、列名は独立しています。 テーブル `customers`の`email`という名前の列は、テーブル `prospects`の`email`という名前の列とは独立しており、異なります。 この動作は、ラベル（DULE使用ラベルやポリシーなど）をミラーデータセットのフィールドに個別に適用する必要があることを意味します。 上記の例に基づいて、`customers` データセットの`email` フィールドと`prospects` データセットの`email` フィールドの両方にラベルを適用する必要があります。
 
@@ -103,10 +106,6 @@ XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/
 
 * 顧客は、より多くの手作業によるガバナンスと設定に取り組む必要があります。
 * 明示的なガイダンスが必要な場合があるため、フィールドグループを介した1回限りのラベル付けが適切なガバナンスに十分であると仮定しないでください。
-
-## データセット設定
-
-{{relational-dataset-important}}
 
 ## ステッチ
 
@@ -120,9 +119,9 @@ XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/
 
 システムキーとフィールドには、次の考慮事項が適用されます。
 
-* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[&#x200B; フィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
-* [&#x200B; マッピングフェーズ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
+* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[ フィールドマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
+* [ マッピングフェーズ ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
 
 ## ミラーデータのバッチサイズ
 
-接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[&#x200B; バッチ取り込みのガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。
+接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[ バッチ取り込みのガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。

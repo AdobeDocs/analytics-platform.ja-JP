@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '5542'
-ht-degree: 97%
+source-wordcount: '5602'
+ht-degree: 96%
 ---
 # スニペット
 
@@ -329,7 +329,10 @@ Customer Journey Analytics には前処理と後処理の概念がないので�
 
 ## 関係データセットの重要なメッセージ {#relational-dataset-important}
 
+リレーショナルデータセットは、リレーショナルスキーマタイプに基づいています。 そのリレーショナルスキーマ **で定義されたリレーションシップ記述子は、一般的なCustomer Journey Analytics接続の定義と設定、または具体的にはリレーショナルデータセットのデータセット設定には**&#x200B;適用されません。
+
+さらに、Customer Journey Analyticsでは、標準XDM スキーマ **のフィールドは、リレーショナルスキーマの類似した名前付きフィールドと**&#x200B;を自動的に結合しません。
 >[!IMPORTANT]
 >
->リレーショナルデータセットは、リレーショナルスキーマタイプに基づいています。 そのリレーショナルスキーマで定義された関係記述子は関係がなく、Customer Journey Analyticsの一般的なコネクションの定義と設定、またはリレーショナルデータセットのデータセット設定には適用されません。 <br/><br>Customer Journey Analytics レポートと分析の場合、[&#x200B; データセット設定](/help/connections/create-connection.md#relational-dataset)で、共通の個人IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を明示的に設定する必要があります。
+>Customer Journey Analyticsのレポートと分析では、共通の人物IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を[ データセット設定](/help/connections/create-connection.md#relational-dataset)で明示的に設定する必要があります。 <br/><br/>派生フィールド [ フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge-fields)関数を使用して、XDM スキーマとリレーショナルスキーマで類似の名前付きフィールド（オブジェクト配列の一部ではない）を結合することを検討してください。 オブジェクト配列内のフィールドの場合、XDMと関係スキーマの間でフィールドを結合するソリューションは現在存在しません。
 >
