@@ -40,9 +40,9 @@ ht-degree: 5%
 
 | 変換 | コンポーネント設定（CJA） | 派生フィールド （CJA） | 推奨される方法（CJA） | SQLの難しさ | 注意点 |
 | --- | --- | --- | --- | --- | --- |
-| **条件ロジックの適用または条件による値のフィルタリング** | [値を含める / 除外](/help/data-views/component-settings/include-exclude-values.md) | ](/help/data-views/derived-fields/derived-fields.md#casewhen)の場合[ ケース | コンポーネント設定<p>限定的な派生フィールドのいずれかを使用しないため、推奨されます。</p> | 文字列に簡単<p>指標の中程度から難しい（`CASE` ステートメントと`COUNT`を組み合わせる必要があります）</p> | |
+| **条件ロジックの適用または条件による値のフィルタリング** | [値を含める / 除外](/help/data-views/component-settings/include-exclude-values.md) | [&#128279;](/help/data-views/derived-fields/derived-fields.md#casewhen)の場合 ケース | コンポーネント設定<p>限定的な派生フィールドのいずれかを使用しないため、推奨されます。</p> | 文字列に簡単<p>指標の中程度から難しい（`CASE` ステートメントと`COUNT`を組み合わせる必要があります）</p> | |
 | **成功イベントの属性クレジット** | [アトリビューション](/help/data-views/component-settings/attribution.md) | 使用不可 | コンポーネント設定 | 該当なし | データフィードのディメンションにのみ適用されます。 指標の場合、データフィードの動作は複製されません。 |
-| **数値を範囲にバケット化** | [値のバケット化](/help/data-views/component-settings/value-bucketing.md) | 手動[ ケースの場合](/help/data-views/derived-fields/derived-fields.md#casewhen) | コンポーネント設定<p>使いやすさと、限定的な派生フィールドを使用しないため、おすすめです。</p> | 困難 | 複雑さは、コンポーネントの設定（最も簡単）から派生フィールド（中程度、手動のCase Whenを使用）からSQL （最も複雑）へと増加します。 |
+| **数値を範囲にバケット化** | [値のバケット化](/help/data-views/component-settings/value-bucketing.md) | 手動[&#x200B; ケースの場合](/help/data-views/derived-fields/derived-fields.md#casewhen) | コンポーネント設定<p>使いやすさと、限定的な派生フィールドを使用しないため、おすすめです。</p> | 困難 | 複雑さは、コンポーネントの設定（最も簡単）から派生フィールド（中程度、手動のCase Whenを使用）からSQL （最も複雑）へと増加します。 |
 | **参照スタイルのマッピングを使用して値を分類** | 使用不可 | [分類](/help/data-views/derived-fields/derived-fields.md#classify) | 派生フィールド <p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるので、推奨されます。</p> | 容易/中程度 | |
 | **フィールド値を区切り記号と組み合わせる** | 使用不可 | [連結](/help/data-views/derived-fields/derived-fields.md#concatenate) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるので、推奨されます。</p> | 容易/中程度 | 複数のディメンション列をフリーフォームテーブルに追加する機能をミラーリングします。この機能は、テーブルの書き出し全体に限定されます。 派生フィールドを使用すると、データフィードで同様の出力を使用できるようになります。 |
 | **フィールドのデータ型を変換** | 使用不可 | [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるので、推奨されます。</p> | 容易/中程度 | |
@@ -52,20 +52,20 @@ ht-degree: 5%
 | **リテラル値を検索して置換** | 使用不可 | [検索と置換](/help/data-views/derived-fields/derived-fields.md#find-and-replace) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 容易/中程度 | |
 | **表示用の値の書式設定** | [書式](/help/data-views/component-settings/format.md) | 使用不可 | コンポーネント設定<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 困難 | <!-- Date-time formatting isn't yet reflected in data feed output — feeds currently show the standard timestamp regardless of this setting, though Adobe plans to support this for general availability. Whether numeric formats (decimal, currency, percent) on metrics affect data feed output is still being confirmed with the team.--> |
 | **概要データセットからディメンションをグループ化** | 該当なし | 該当なし | 該当なし | 該当なし | 概要データグループは、データフィードでは使用されない概要データセットにのみ適用されます。 この変換は、データフィード出力には適用されません。 |
-| **空白（「値なし」フィールド）を処理** | [値オプションなし](/help/data-views/component-settings/no-value-options.md)<br/> 「値なし」を値として扱う&#x200B;[!UICONTROL **オプションはデータフィードに適用されますが、[!UICONTROL ** デフォルトで「値なし」を表示しない&#x200B;**]および[!UICONTROL ** デフォルトで「値なし」を表示する&#x200B;**]オプションはデータフィードに適用されません。**] | 使用不可 | コンポーネント設定 | 不可 | すべての「値なし」は、「値なし」文字列ではなく、最終的なデータフィード出力でnullとして返されます。 |
+| **空白（「値なし」フィールド）を処理** | [値オプションなし](/help/data-views/component-settings/no-value-options.md)<br/> 「値なし」を値として扱う&#x200B;[!UICONTROL **オプションはデータフィードに適用されますが、[!UICONTROL ** デフォルトで「値なし」を表示しない&#x200B;**]および[!UICONTROL **&#x200B; デフォルトで「値なし」を表示する&#x200B;**]オプションはデータフィードに適用されません。**] | 使用不可 | コンポーネント設定 | 不可 | すべての「値なし」は、「値なし」文字列ではなく、最終的なデータフィード出力でnullとして返されます。 |
 | **参照データセットから値を検索** | 使用不可 | [ルックアップ](/help/data-views/derived-fields/derived-fields.md#lookup) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 容易/中程度<p>ルックアップテーブルは既に存在する必要があります。</p> | |
 | **文字列を小文字にする** | [動作](/help/data-views/component-settings/behavior.md) | [小文字](/help/data-views/derived-fields/derived-fields.md#lowercase) | コンポーネント設定<p>次の理由により推奨：</p><ul><li>同じロジックがAnalysis Workspaceとデータフィード出力の両方に一貫して適用されます（SQLでは不可能）</li><li>制限付きの派生フィールドは使用されません。</li></ul> | 容易/中程度 | |
-| **複数のフィールドを1つに結合** | 使用不可 | [ フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 容易/中程度 | |
+| **複数のフィールドを1つに結合** | 使用不可 | [&#x200B; フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 容易/中程度 | |
 | **URLをコンポーネントに解析** | [部分文字列](/help/data-views/component-settings/substring.md) （URL解析メソッド） | [URL解析](/help/data-views/derived-fields/derived-fields.md#urlparse) | コンポーネント設定<p>限定的な派生フィールドのいずれかを使用しないため、推奨されます。</p> | 困難<p>同じコンポーネントを抽出するには、カスタム文字列解析が必要です。</p> | <!-- Possible discrepancy: in the component settings meeting, Matt and Derek described all Substring methods, including URL parse, as roughly interchangeable across component setting, derived field, and SQL ("either one would work... maybe a preference"), which is a looser SQL-difficulty read than "Difficult." Flagged for Luke to reconcile; not changed without confirmation. --> |
 | **数値フィールドに対して基本的な計算を実行** | 使用不可 | [数学](/help/data-views/derived-fields/derived-fields.md#math) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 容易/中程度 | |
-| **ディメンション値をイベント全体で保持** | [永続性](/help/data-views/component-settings/persistence.md) | 現在利用できません<!-- Derek: considering adding this to FDL and surfacing it in derived fields; not currently possible. --> | コンポーネント設定<p>使いやすさと、限定的な派生フィールドを使用しないため、おすすめです。</p> | 困難 | ルックバック日付範囲は、スコープ依存派生フィールド関数と同じように操作します。 [ ルックバック日付範囲について](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range)を参照してください。 |
+| **ディメンション値をイベント全体で保持** | [永続性](/help/data-views/component-settings/persistence.md) | 現在利用できません<!-- Derek: considering adding this to FDL and surfacing it in derived fields; not currently possible. --> | コンポーネント設定<p>使いやすさと、限定的な派生フィールドを使用しないため、おすすめです。</p> | 困難 | ルックバック日付範囲は、スコープ依存派生フィールド関数と同じように操作します。 [&#x200B; ルックバック日付範囲について](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range)を参照してください。 |
 | **正規表現を使用して値を置き換える** | [部分文字列](/help/data-views/component-settings/substring.md) （Regex メソッド） | [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace) | コンポーネント設定<p>3つのアプローチはすべて同じ結果を生成しますが、次の理由からコンポーネント設定を優先します。</p><ul><li>同じロジックがAnalysis Workspaceとデータフィード出力の両方に一貫して適用されます（SQLでは不可能）</li><li>制限付きの派生フィールドは使用されません。</li></ul> | 容易/中程度 | |
 | **セッション内の次または前の値を解決** | 使用不可 | [次または前](/help/data-views/derived-fields/derived-fields.md#next-previous) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 困難 | 範囲の設定によって異なります。 [範囲の設定がデータフィードに与える影響](#scope-settings)を参照してください。 |
 | **2つの日付の差分を返す** | 使用不可 | [日付計算](/help/data-views/derived-fields/derived-fields.md#datemath) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 困難 | 範囲の設定によって異なります。 [範囲の設定がデータフィードに与える影響](#scope-settings)を参照してください。 |
 | **指標をイベントベース、プロファイルベース、または合計ベースとしてスコープ付け** | [範囲](/help/data-views/component-settings/scope.md) | 使用不可 | | | <!--Not yet discussed with the team. Don't assume this affects data feed output until confirmed.--> |
 | **区切り値を分割** | [部分文字列](/help/data-views/component-settings/substring.md) （区切り文字または左/右メソッドから） | [分割](/help/data-views/derived-fields/derived-fields.md#split) | コンポーネント設定<p>次の理由により推奨：</p><ul><li>同じロジックがAnalysis Workspaceとデータフィード出力の両方に一貫して適用されます（SQLでは不可能）</li><li>制限付きの派生フィールドは使用されません。</li></ul> | 容易/中程度 | |
 | **スコープ全体で値を要約または集計する** | 使用不可 | [要約](/help/data-views/derived-fields/derived-fields.md#summarize) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 困難 | 範囲の設定によって異なります。 [範囲の設定がデータフィードに与える影響](#scope-settings)を参照してください。 |
-| **文字列から文字をトリミング** | [部分文字列](/help/data-views/component-settings/substring.md) （Trim メソッド） | [ トリミング ](/help/data-views/derived-fields/derived-fields.md#trim) | コンポーネント設定<p>次の理由により推奨：</p><ul><li>同じロジックがAnalysis Workspaceとデータフィード出力の両方に一貫して適用されます（SQLでは不可能）</li><li>制限付きの派生フィールドは使用されません。</li></ul> | 容易/中程度 | |
+| **文字列から文字をトリミング** | [部分文字列](/help/data-views/component-settings/substring.md) （Trim メソッド） | [&#x200B; トリミング &#x200B;](/help/data-views/derived-fields/derived-fields.md#trim) | コンポーネント設定<p>次の理由により推奨：</p><ul><li>同じロジックがAnalysis Workspaceとデータフィード出力の両方に一貫して適用されます（SQLでは不可能）</li><li>制限付きの派生フィールドは使用されません。</li></ul> | 容易/中程度 | |
 
 {style="table-layout:auto"}
 
@@ -74,12 +74,12 @@ ht-degree: 5%
 日付計算、重複排除、次または前、および各要約は、イベント、セッション、または人物の&#x200B;[!UICONTROL **スコープ**]&#x200B;設定によって異なります（使用可能なオプションは機能によって異なります）。 深度には設定可能な範囲フィールドはありませんが、標準のイベント深度ディメンションと同様に、本質的にセッションに関連付けられています。 スコープを持つフィールドは、そのスコープ内のすべての行に同じ値を書き込み、その値はルックバック日付範囲内のデータによって異なります。
 <!-- Open question as of 2026-09-09: is the lookback date range boundary anchored to a fixed point (e.g., midnight), or does it float with the feed run time, and is this configurable? Pending confirmation from Ron Fulkerson. -->
 
-[ ルックバック日付範囲](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range)はデータフィード配信ごとに前にスライドするため、同じフィールドは、既に発生したイベントであっても、後の配信で異なる値を返すことができます。
+[&#x200B; ルックバック日付範囲](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range)はデータフィード配信ごとに前にスライドするため、同じフィールドは、既に発生したイベントであっても、後の配信で異なる値を返すことができます。
 
 スコープサイズに伴うリスクの増加：個人の履歴はフィード実行内に自然な時間境界がないので、個人のスコープはセッションのスコープよりもリスクが高くなります。
 
 ## 派生フィールド関数テンプレート
 
-[派生フィールド関数テンプレート ](/help/data-views/derived-fields/derived-fields.md#templates)を使用すると、マーケティングチャネルの作成、ボットの検出、URLからのUTM パラメーターの抽出など、特定のユースケース用の派生フィールドをすばやく作成できます。 テンプレートは事前定義済みのルールのチェーンから構築されているので、SQLで同じロジックをゼロから再現する場合は、`Marketing Channel Template`と同様に、ほとんどの場合、それを使用することが推奨されます。
+[派生フィールド関数テンプレート &#x200B;](/help/data-views/derived-fields/derived-fields.md#templates)を使用すると、マーケティングチャネルの作成、ボットの検出、URLからのUTM パラメーターの抽出など、特定のユースケース用の派生フィールドをすばやく作成できます。 テンプレートは事前定義済みのルールのチェーンから構築されているので、SQLで同じロジックをゼロから再現する場合は、`Marketing Channel Template`と同様に、ほとんどの場合、それを使用することが推奨されます。
 
 テンプレートにスコープ設定に依存する関数が含まれている場合、その関数のスコープの注意がテンプレートに継承されます。 [範囲の設定がデータフィードに与える影響](#scope-settings)を参照してください。

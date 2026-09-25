@@ -46,7 +46,7 @@ XDM スキーマでは、サブイベントを文字列配列またはオブジ�
 
 ## データフィード出力のサブイベントデータのクエリ
 
-サブイベントデータ [はCustomer Journey Analytics データフィード ](#customer-journey-analytics-vs-adobe-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
+サブイベントデータ [はCustomer Journey Analytics データフィード &#x200B;](#customer-journey-analytics-vs-adobe-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
 次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用します。 SnowflakeやDatabricksなどの他のデータウェアハウスも、構文の違いが少なくても同じアプローチをサポートしています。
 
