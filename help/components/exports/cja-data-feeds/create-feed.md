@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
+source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
 workflow-type: tm+mt
-source-wordcount: '4217'
-ht-degree: 31%
+source-wordcount: '4250'
+ht-degree: 30%
 ---
 # データフィードの作成
 
@@ -299,6 +299,10 @@ ht-degree: 31%
    +++
 
 1. （オプション）カンバス上のコンポーネントをドラッグして並べ替えます。 定義した順序は、書き出されたデータフィードファイルの列順序として保持されます。
+
+1. （オプション）列の境界線をドラッグして、カンバス上の列のサイズを変更します。
+
+   列の幅はCookieに保存され、次回このデータフィードに戻ったときに同じブラウザーに保持されます。
 
 1. （オプション）データフィード出力に表示されるコンポーネント IDを変更します。
 
