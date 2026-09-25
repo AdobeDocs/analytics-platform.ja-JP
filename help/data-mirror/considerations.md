@@ -98,7 +98,7 @@ CDC対応データミラーデータセットのソーステーブルに新し�
 
 ## ガバナンスの違い
 
-XDM [ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[ フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[ フィールド ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
+XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[&#x200B; フィールドグループ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[&#x200B; フィールド &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
 
 リレーショナルスキーマでは、列名は独立しています。 テーブル `customers`の`email`という名前の列は、テーブル `prospects`の`email`という名前の列とは独立しており、異なります。 この動作は、ラベル（DULE使用ラベルやポリシーなど）をミラーデータセットのフィールドに個別に適用する必要があることを意味します。 上記の例に基づいて、`customers` データセットの`email` フィールドと`prospects` データセットの`email` フィールドの両方にラベルを適用する必要があります。
 
@@ -119,9 +119,9 @@ XDM [ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platf
 
 システムキーとフィールドには、次の考慮事項が適用されます。
 
-* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[ フィールドマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
-* [ マッピングフェーズ ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
+* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[&#x200B; フィールドマッピング &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
+* [&#x200B; マッピングフェーズ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
 
 ## ミラーデータのバッチサイズ
 
-接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[ バッチ取り込みのガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。
+接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[&#x200B; バッチ取り込みのガードレール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。

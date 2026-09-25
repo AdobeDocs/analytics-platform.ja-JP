@@ -334,5 +334,5 @@ Customer Journey Analytics には前処理と後処理の概念がないので�
 さらに、Customer Journey Analyticsでは、標準XDM スキーマ **のフィールドは、リレーショナルスキーマの類似した名前付きフィールドと**&#x200B;を自動的に結合しません。
 >[!IMPORTANT]
 >
->Customer Journey Analyticsのレポートと分析では、共通の人物IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を[ データセット設定](/help/connections/create-connection.md#relational-dataset)で明示的に設定する必要があります。 <br/><br/>派生フィールド [ フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge-fields)関数を使用して、XDM スキーマとリレーショナルスキーマで類似の名前付きフィールド（オブジェクト配列の一部ではない）を結合することを検討してください。 オブジェクト配列内のフィールドの場合、XDMと関係スキーマの間でフィールドを結合するソリューションは現在存在しません。
+>Customer Journey Analyticsのレポートと分析では、共通の人物IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を[&#x200B; データセット設定](/help/connections/create-connection.md#relational-dataset)で明示的に設定する必要があります。 <br/><br/>派生フィールド [&#x200B; フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge-fields)関数を使用して、XDM スキーマとリレーショナルスキーマで類似の名前付きフィールド（オブジェクト配列の一部ではない）を結合することを検討してください。 オブジェクト配列内のフィールドの場合、XDMと関係スキーマの間でフィールドを結合するソリューションは現在存在しません。
 >
