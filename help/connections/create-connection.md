@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
+source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
 workflow-type: tm+mt
-source-wordcount: '10488'
-ht-degree: 91%
+source-wordcount: '10597'
+ht-degree: 90%
 ---
 # 接続の作成または編集 {#create-or-edit-a-connection}
 
@@ -844,13 +844,13 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->設定と選択は可能ですが、パフォーマンス上の理由から、時系列（イベント、概要）データにアドホックデータセットを使用しないでください。 リレーショナルデータセットまたは汎用 XDM ベースのデータセットは、アドホックデータセットよりも時系列データにはるかに適しています。
+>設定および選択は可能ですが、パフォーマンス上の理由から、時系列（イベント、概要）データにアドホックデータセットを使用することは避ける必要があります。 リレーショナルデータセットまたは汎用 XDM ベースのデータセットは、アドホックデータセットよりも時系列データにはるかに適しています。
 
 アドホックデータセットには次の特定の設定があります。
 
 | 設定 | 選択したデータセットタイプ | 説明 |
 |---|---|---|
-| **[!UICONTROL データセットタイプ]** | 該当なし | アドホックデータセット内のデータのタイプ。 使用できる値は、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;です。 |
+| **[!UICONTROL データセットタイプ]** | 該当なし | アドホックデータセット内のデータのタイプ。 使用可能な値は、**[!UICONTROL Event]**、**[!UICONTROL Profile]** （[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}では使用できません）、**[!UICONTROL Lookup]**&#x200B;および&#x200B;**[!UICONTROL Summary]**&#x200B;です。 アカウントベースの接続にアドホックプロファイルデータを使用する場合は、**[!UICONTROL データセットの種類]**&#x200B;として&#x200B;**[!UICONTROL 参照]**&#x200B;を選択し、**[!UICONTROL キー]**&#x200B;と&#x200B;**[!UICONTROL 一致するキー]**&#x200B;を使用してアカウントデータを取り込みます。 |
 | **[!UICONTROL ユーザー ID]** | イベント、プロファイル | アドホックまたはリレーショナルのスキーマから、ユーザー ID を表すフィールドを選択します。 このフィールドには、データセット内の任意のフィールドを指定できます。 **[!UICONTROL ID 名前空間フィールド]**&#x200B;または&#x200B;**[!UICONTROL 非 ID フィールド]**&#x200B;から選択します。 <br/>アドホックスキーマ内の 1 つ以上のフィールドに ID としてラベル付けされ、ID 名前空間がある場合にのみ、**[!UICONTROL ID 名前空間]**&#x200B;から識別子を選択できます。 |
 | **[!UICONTROL ID 名前空間]** | イベント | **[!UICONTROL 非 ID]** フィールドからユーザー ID を選択した場合は、ID 名前空間を選択します。 |
 | **[!UICONTROL タイムスタンプ]** | イベント、概要 | タイムスタンプフィールドを表すアドホックスキーマからフィールドを選択します。 このフィールドには、`DateTime` タイプの使用可能な任意のフィールドを指定できます。 |
@@ -871,7 +871,7 @@ ht-degree: 91%
 
 | 設定 | 選択したデータセットタイプ | 説明 |
 |---|---|---|
-| **[!UICONTROL データセットタイプ]** | 該当なし | リレーショナルデータセット内のデータのタイプ。<br/> データセットに時系列データが含まれる場合、使用可能な値は&#x200B;**[!UICONTROL イベント]**&#x200B;と&#x200B;**[!UICONTROL 概要]**&#x200B;です。 <br/>データセットにレコードデータが含まれる場合、使用可能な値は&#x200B;**[!UICONTROL プロファイル]**&#x200B;と&#x200B;**[!UICONTROL ルックアップ]**&#x200B;です。 |
+| **[!UICONTROL データセットタイプ]** | 該当なし | リレーショナルデータセット内のデータのタイプ。<br/> データセットに時系列データが含まれる場合、使用可能な値は&#x200B;**[!UICONTROL イベント]**&#x200B;と&#x200B;**[!UICONTROL 概要]**&#x200B;です。 <br/> データセットにレコードデータが含まれる場合、使用可能な値は&#x200B;**[!UICONTROL プロファイル]** （[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}では使用できません）と&#x200B;**[!UICONTROL ルックアップ]**&#x200B;です。 アカウントベースの接続にリレーショナルプロファイルデータを使用する場合は、**[!UICONTROL データセットの種類]**&#x200B;として&#x200B;**[!UICONTROL 参照]**&#x200B;を選択し、**[!UICONTROL キー]**&#x200B;と&#x200B;**[!UICONTROL 一致するキー]**&#x200B;を使用してアカウントデータを取り込みます。 |
 | **[!UICONTROL ユーザー ID]** | イベント、プロファイル | リレーショナルスキーマから、ユーザー ID を表すフィールドを選択します。 選択は、リレーショナルスキーマ内の、ID としてマークされ、ID 名前空間を持つフィールドのリストに制限されます。 |
 | **[!UICONTROL タイムスタンプ]** | イベント、概要 | スキーマのタイムスタンプ記述子として定義されるフィールド。 このフィールドは自動的に入力されます。 |
 | **[!UICONTROL キー]** | ルックアップ | ルックアップデータセットに使用するキーです。<br/>ルックアップデータセット用に選択したキーの値がレコードに含まれていない場合、そのレコードはスキップされます。 |
