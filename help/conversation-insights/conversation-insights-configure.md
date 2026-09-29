@@ -34,7 +34,7 @@ ht-degree: 7%
 
 会話インサイト設定を作成または編集できるのはシステム管理者のみです。
 
-[会話インサイト設定インターフェイス ](./conversation-insights-manage.md)から設定を作成または編集します。
+[会話インサイト設定インターフェイス &#x200B;](./conversation-insights-manage.md)から設定を作成または編集します。
 
 ## 欠落しているブレンド済みデータセットを復元
 
@@ -56,7 +56,7 @@ ht-degree: 7%
 
 1. 「**[!UICONTROL データセット]**」セクションで、次の情報を指定します。
 
-   ![会話インサイトデータセット ](assets/conversation-insights-configuration-datasets.png)
+   ![会話インサイトデータセット &#x200B;](assets/conversation-insights-configuration-datasets.png)
 
    | フィールド | 説明 |
    |---------|----------|
