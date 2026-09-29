@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-TQID: https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw
+TQID: 'https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,9 +14,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
     internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -33,10 +37,10 @@ topic_v2:
     internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 1%
+ht-degree: 4%
 ---
 # データ書き出しのユースケース {#data-export-use-cases}
 
@@ -47,7 +51,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="データフィードと同様の書き出し機能の使用"
->abstract="データフィードの完全な代替機能は、Customer Journey Analyticsではまだ使用できませんが、テーブルの書き出し、Platform データセットの書き出し、BI ツールの統合、レポート APIを通じて同様の機能を使用できます。"
+>abstract="データフィードの完全な代替機能は、Customer Journey Analytics ではまだ使用できませんが、完全なテーブルの書き出し、Platform データセットの書き出し、BI ツールの統合、レポート API 経由で同様の機能を使用できます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +79,7 @@ Adobe Analyticsでは、すべてのイベントがライブでデバイス ID�
 
 Customer Journey Analyticsでは、イベントは順番に収集されず、デバイス IDの代わりに個人IDが使用されるため、レポート時にCustomer Journey Analyticsでアトリビューションとセッションを更新できます。 こうしたデータ収集は、次のような柔軟性をもたらします。
 
-* 結合すると、匿名のイベントを既知のイベントに関連付けて、毎日または毎週&#x200B;_リプレイ_ データを再生できます。 詳しくは、[&#x200B; ステッチ &#x200B;](../../stitching/overview.md)を参照してください。
+* 結合すると、匿名のイベントを既知のイベントに関連付けて、毎日または毎週&#x200B;_リプレイ_ データを再生できます。 詳しくは、[ ステッチ ](../../stitching/overview.md)を参照してください。
 * セッション化と永続的な値は、常に変更されます
   * 新しいデータが収集されるか、
   * 結合すると、ユーザーの履歴にイベントが追加されます。
@@ -121,8 +125,8 @@ Customer Journey Analyticsでは、イベントは順番に収集されず、デ
 
 複数の機能で同じユースケースを実装できます。 最適なオプションを選択したら、次のことを検討します。
 
-* **データボリューム**: [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)や[Report Builder](/help/use-cases/data-export/report-builder.md)などのアドホックメソッドは、数万行に制限されています。 [&#x200B; テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)および[&#x200B; データセットの書き出し](/help/use-cases/data-export/export-datasets.md)は、数百万行をサポートしています。
-* **Rawと処理済みデータ**: [&#x200B; データセットの書き出し](/help/use-cases/data-export/export-datasets.md)および[Query Service （Data Distiller）とデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)により、データレイクから未処理の生データが配信されます。 [BI拡張機能](/help/use-cases/data-export/bi-extension.md)、[&#x200B; テーブル全体を書き出し](/help/use-cases/data-export/export-full-table.md)、[Workspace書き出し](/help/use-cases/data-export/workspace-export.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)、および[&#x200B; レポート API](/help/use-cases/data-export/reporting-api.md)は、Customer Journey Analyticsが既に処理したデータ（アトリビューション、セッション化、計算指標など）を配信します。
-* **技術的な専門知識**: [Query Service （Data Distiller）およびデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)と[BI拡張機能](/help/use-cases/data-export/bi-extension.md)には、SQLに関する知識が必要です。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)と[Report Builder](/help/use-cases/data-export/report-builder.md)は、ポイント&amp;クリック操作のインターフェイスを使用しています。 [&#x200B; レポート API](/help/use-cases/data-export/reporting-api.md)には、プログラミングの知識が必要です。
-* **スケジュール設定**: [&#x200B; データセットの書き出し](/help/use-cases/data-export/export-datasets.md)、[&#x200B; テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)では、定期的な配信がサポートされます。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md) ダウンロードはアドホックのみです。
+* **データボリューム**: [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)や[Report Builder](/help/use-cases/data-export/report-builder.md)などのアドホックメソッドは、数万行に制限されています。 [ テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)および[ データセットの書き出し](/help/use-cases/data-export/export-datasets.md)は、数百万行をサポートしています。
+* **Rawと処理済みデータ**: [ データセットの書き出し](/help/use-cases/data-export/export-datasets.md)および[Query Service （Data Distiller）とデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)により、データレイクから未処理の生データが配信されます。 [BI拡張機能](/help/use-cases/data-export/bi-extension.md)、[ テーブル全体を書き出し](/help/use-cases/data-export/export-full-table.md)、[Workspace書き出し](/help/use-cases/data-export/workspace-export.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)、および[ レポート API](/help/use-cases/data-export/reporting-api.md)は、Customer Journey Analyticsが既に処理したデータ（アトリビューション、セッション化、計算指標など）を配信します。
+* **技術的な専門知識**: [Query Service （Data Distiller）およびデータセットの書き出し](/help/use-cases/data-export/queryservice-export-datasets.md)と[BI拡張機能](/help/use-cases/data-export/bi-extension.md)には、SQLに関する知識が必要です。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md)と[Report Builder](/help/use-cases/data-export/report-builder.md)は、ポイント&amp;クリック操作のインターフェイスを使用しています。 [ レポート API](/help/use-cases/data-export/reporting-api.md)には、プログラミングの知識が必要です。
+* **スケジュール設定**: [ データセットの書き出し](/help/use-cases/data-export/export-datasets.md)、[ テーブル全体の書き出し](/help/use-cases/data-export/export-full-table.md)、[Report Builder](/help/use-cases/data-export/report-builder.md)では、定期的な配信がサポートされます。 [Workspace書き出し](/help/use-cases/data-export/workspace-export.md) ダウンロードはアドホックのみです。
 * **出力形式と宛先**: クラウドストレージのファイル、BI ツールのテーブル、Excelのワークブック、API呼び出しからの応答のいずれが必要かを検討し、それを提供する機能と一致させます。
