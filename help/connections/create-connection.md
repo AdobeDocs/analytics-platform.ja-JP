@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
+TQID: 'https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -21,6 +21,8 @@ subfeature_v2:
     internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -31,10 +33,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
+source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
 workflow-type: tm+mt
-source-wordcount: '10597'
-ht-degree: 90%
+source-wordcount: '10738'
+ht-degree: 89%
 ---
 # 接続の作成または編集 {#create-or-edit-a-connection}
 
@@ -724,7 +726,29 @@ ht-degree: 90%
 
 
 
-#### イベントデータセット
+#### イベントデータセット {#event-dataset-settings}
+
+<!-- RIdM: Lengthy contextual help due to not yey allowed public facing docs. Modify when public facing docs are allowed. -->
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter"
+>title="行のフィルタリングを有効にする"
+>abstract="行フィルターは、Customer Journey Analyticsに取り込むイベントを決定します。 包含ルールに一致するイベントのみが取り込まれます。 その他のすべてのイベントは永続的に除外され、Customer Journey Analyticsでのレポート、セグメント化、または分析に使用できなくなります。<ul><li>最大10個のフィルターを作成できます。</li><li> フィルターの変更は、変更後に取り込まれた新しいデータにのみ適用され、以前に取り込まれたデータに過去のデータが影響を与えたり、過去のバックフィルをトリガーしたりすることはありません。</li></ul>"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_field"
+>title="フィールド"
+>abstract="条件に使用するイベントデータセットからフィールドを選択します。 任意のタイプの任意のフィールドを使用できます。"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_operator"
+>title="条件"
+>abstract="演算子を選択します。 演算子は、選択したフィールドを値に対して検証するために使用されます。"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_values"
+>title="値"
+>abstract="1つ以上の値を入力します。 正確な文字列値が使用されます。 値を区切るにはコンマを使用します。 各コンマ区切り値は一意と見なされ、条件に含まれます。"
 
 イベントデータセットの特定の設定は、接続のタイプによって異なります。
 
