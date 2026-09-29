@@ -2,18 +2,31 @@
 title: 会話インサイト設定の作成または編集
 description: 会話インサイト設定の設定方法について説明します。
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 8%
+source-wordcount: '654'
+ht-degree: 7%
 ---
 # 設定の作成または編集
 
-
-会話インサイトを利用すれば、大規模な言語モデル（LLM）または人間による会話を大規模に分析し、カスタマージャーニー全体を通じて会話のコンテキストを提供できます。 会話インサイトを通じて、実際のユーザーの成果に対する代表者の影響を把握することができます。
+会話インサイトを活用すれば、顧客に提供するエージェント体験から会話を分析できます。 そのようなエージェントの体験は、大規模言語モデル（LLM）にもとづいて提供されるか、または人間の会話にもとづいて提供されます。 たとえば、顧客やコールセンターとのやり取りを担当するチャットボットは、文字起こしを処理します。
+会話インサイトを通じて、実際のユーザーの成果に対する代表者の影響を把握することができます。
 
 会話インサイト設定インターフェイスを使用すると、設定と関連するアーティファクト（接続、データビューなど）をすばやく作成または編集できます。
 
@@ -21,7 +34,7 @@ ht-degree: 8%
 
 会話インサイト設定を作成または編集できるのはシステム管理者のみです。
 
-[会話インサイト設定インターフェイス &#x200B;](./conversation-insights-manage.md)から設定を作成または編集します。
+[会話インサイト設定インターフェイス ](./conversation-insights-manage.md)から設定を作成または編集します。
 
 ## 欠落しているブレンド済みデータセットを復元
 
@@ -43,7 +56,7 @@ ht-degree: 8%
 
 1. 「**[!UICONTROL データセット]**」セクションで、次の情報を指定します。
 
-   ![会話インサイトデータセット &#x200B;](assets/conversation-insights-configuration-datasets.png)
+   ![会話インサイトデータセット ](assets/conversation-insights-configuration-datasets.png)
 
    | フィールド | 説明 |
    |---------|----------|
@@ -88,7 +101,7 @@ ht-degree: 8%
 
    * 作成されていない新しい設定の場合は、**[!UICONTROL Discard]**&#x200B;を選択します。
 
-   * 保存する新しい設定で、アーティファクトを作成しない（データビューの更新など）場合は、**[!UICONTROL 後で保存]**&#x200B;を選択します。 後で設定を見直して、実際の設定の作成を完了できます。
+   * 保存する新しい設定で、アーティファクトを作成しない（データビューの更新など）場合は、**[!UICONTROL 後で保存]**&#x200B;を選択します。 後で設定を再確認し、設定の実際の作成を完了できます。
 
    * **[!UICONTROL 作成]**&#x200B;を選択して、新しい設定を作成します。
 

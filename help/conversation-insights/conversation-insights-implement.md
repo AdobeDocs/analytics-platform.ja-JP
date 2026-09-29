@@ -2,13 +2,26 @@
 title: 会話インサイトの実装
 description: 会話インサイト用にエージェントアプリケーションまたはサービスを測定する方法について説明します。
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 7%
+source-wordcount: '2322'
+ht-degree: 6%
 ---
 # 会話インサイトの実装
 
@@ -19,19 +32,19 @@ ht-degree: 7%
 >[!PREREQUISITES]
 >
 >* データを収集するには、Experience Platform環境（組織とサンドボックス）が使用可能である必要があります。
->* Adobeの組織は、実験的なエージェントと会話のフィールドグループに対して有効にする必要があります。
+>* エージェント型フィールドグループと会話フィールドグループに対して、Adobe組織を有効にする必要があります。
 >
 
 ## スキーマとデータセット
 
-主な会話イベントのデータセット（プロンプト、応答、フィードバック）を設定します。 これらのデータセットは、同じスキーマ（汎用的なConversation Insights スキーマなど）に基づくことも、個々のスキーマに基づくこともできます。
-プロンプト、レスポンス、フィードバックに対して個別のデータセットを定義したり、データセットにデータを組み合わせたりできます。 例えば、プロンプトや回答にデータセットを、フィードバックにデータセットを使用できます。 単一のデータセットを使用して会話イベントを更新したりできます。
+主な会話イベントのデータセット（プロンプト、応答、フィードバック）を設定します。 プロンプト、応答、フィードバックのデータセットは、[会話イベント フィールドグループ ](#conversation-event-field-group)を使用してXDM エクスペリエンスイベントの基本スキーマを拡張する必要があり、オプションで[ エージェント情報フィールドグループ ](#agentic-information-field-group)とその他[の追加フィールドグループ ](#additional-field-groups)を含めることができます。
 
-プロンプト、応答、およびフィードバックデータセットに使用されるスキーマは、必須フィールドグループを含むXDM Experience Event ベーススキーマを拡張する必要があります。 追加のフィールドグループを使用してXDM Experience Event基本スキーマを拡張できます。
+プロンプト、レスポンス、フィードバックに対して個別のデータセットを定義したり、データセットにデータを組み合わせたりできます。 例えば、プロンプトや回答にデータセットを、フィードバックにデータセットを使用できます。 単一のデータセットを使用して会話イベントを更新したりできます。
+データセットには同じ基本スキーマを使用します。
 
 ### エージェント情報フィールドグループ
 
-**[!UICONTROL エージェント情報]** フィールドグループは必須フィールドグループであり、`agenticExperience` オブジェクトを使用します。
+**[!UICONTROL エージェント情報]** フィールドグループは、オプションのフィールドグループであり、`agenticExperience` オブジェクトを使用します。 エージェント情報を追跡する場合は、このフィールドグループの使用を検討してください。
 
 +++ 詳細
 
@@ -203,7 +216,7 @@ ht-degree: 7%
 
 #### 会話
 
-一意の`conversationID`が会話を識別します。 例：`conversationID = "conv-001"`。 スキーマは`conversationName`もサポートしています。 会話の全体的なコンテキストを説明する、人間が読み取れる名前（例：`France Geography Q&A`）。
+一意の`conversationID`が会話を識別します。 例：`conversationID = "conv-001"`。 スキーマは`conversationName`もサポートしています。 会話の全体的なコンテキストを説明する、人間が読み取れる名前（例：`France Geography Q&A`）。 会話名は自動生成されますが、生成された名前を更新できます。 会話名も`signals[].name`に入力されます。
 
 `conversationID`を使用すると、関連するすべてのturns イベントを同じ会話型エクスペリエンスにグループ化できます。
 
@@ -216,7 +229,7 @@ ht-degree: 7%
 `conversationID = "conv-001"`
 `turnID = "turn-001"`
 
-同じ`conversationID`と`turnID`を使用して、そのターンに関連付けられたプロンプト、応答、フィードバックを関連付けます。 この相関関係は、別々に配信されるか、異なるデータセットに格納されるレコードをまたいで機能します。
+同じ`conversationID`と`turnID`を使用して、そのターンに関連付けられたプロンプト、応答、フィードバックを関連付けます。 この相関関係は、別々に配信されるか、異なるデータセットに格納されるレコードをまたいで機能します。 `turnId`は、同じ会話内で一意である必要があるだけで、会話間で再利用できます。 例えば、`conversationID` `conv-001`と`conv-002`の会話では、`turn-001`を`turnID`として使用できます。
 
 
 #### プロンプト
@@ -231,7 +244,7 @@ ht-degree: 7%
 |---|---|
 | `prompt.source` | 誰が、何をプロンプトコンテンツとして制作したのか、一般的にはエンドユーザーです。 |
 | `prompt.raw[]` | 1つ以上の生コンテンツセグメント。 |
-| `prompt.raw[].text` | 実際のプロンプトテキストやコンテンツ。 |
+| `prompt.raw[].text` | 実際のプロンプトテキストまたはコンテンツへのリンク（スクリーンショットなど）。 |
 | `prompt.raw[].purpose` | ユーザー入力やリンクなど、コンテンツの目的。 |
 
 1つのプロンプトに複数の生セグメントを含めることができます。 例えば、ユーザーがテキストを入力し、URLを含めるとします。
@@ -257,6 +270,8 @@ ht-degree: 7%
 | `response.raw[].purpose` | コンテンツセグメントの目的。 |
 
 文書化されたソースタイプには、次のものが含まれます。
+
+<!-- randy buck to provide additional details -->
 
 | ソース | 意味 |
 |---|----|
@@ -287,7 +302,9 @@ ht-degree: 7%
 
 #### シグナル
 
-シグナルとは、会話コンテンツに関する体系化された分析観察のことです。 信号抽出サービスは、信号を抽出する。
+シグナルとは、会話コンテンツに関する体系化された分析観察のことです。 Signal サービスは、標準の信号を提供します。 シグナルを提供するためにアクションは必要ありませんが、統合の一部としてシグナルを追加できます。
+
+<!-- randy buck to provide additional details -->
 
 信号には次のフィールドがあります。
 
@@ -360,9 +377,6 @@ ht-degree: 7%
 
 +++
 
-
-
-
 ### 追加のフィールドグループ
 
 プロンプト、応答、フィードバックのデータセットに使用するスキーマに、オプションのフィールドグループを追加できます。 次に例を示します。
@@ -382,9 +396,9 @@ ht-degree: 7%
 
 | 値 | 説明 |
 |---|---|
-| `conversation turn` | プロンプトと応答による完全な会話の順番 |
-| `conversation recommendation` | 会話ベースのレコメンデーション |
-| `conversation feedback` | フィードバック専用イベント |
+| `conversation.turn` | プロンプトと応答による完全な会話の順番 |
+| `conversation.recommendation` | 会話ベースのレコメンデーション |
+| `conversation.feedback` | フィードバック専用イベント |
 
 
 ### ソースタイプ
@@ -401,6 +415,8 @@ ht-degree: 7%
 ### 目的の種類（生テキスト）
 
 `prompt`、`response`、または`feedback` オブジェクト内の`raw` オブジェクトの任意の要素で、`purpose`属性に次のいずれかの値を設定する必要があります。
+
+<!-- randy buck to provide details -->
 
 | 値 | 説明 |
 |---|---|
