@@ -39,7 +39,7 @@ Adobe Customer Journey Analytics でアラートを使用するプロセスは�
 
 さまざまな種類のデータをAdobe Experience Platformに取り込むことができるため、アラートに含めることができるすべてのデータが時間単位のアラートに適しているわけではありません。 特定の種類のデータを確実に取り込み、1時間の制約の中で利用することはできません。
 
-詳しくは、「[ データ取り込み時間が異なる](#data-ingestion-times-vary)」を参照してください。
+詳しくは、「[&#x200B; データ取り込み時間が異なる](#data-ingestion-times-vary)」を参照してください。
 
 ## データ収集にかかる時間は様々です
 
@@ -53,7 +53,7 @@ Adobe Customer Journey Analytics でアラートを使用するプロセスは�
 
 * Platform データセットへのバッチデータの配信の遅延
 
-  一部のデータは、より早くレポートするために利用できる場合がありますが、すべての[ バッチデータはPlatform データセット ](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.)に取り込まれます。通常、データイベント時間から3～9時間経過したデータが取り込まれます。 アラートを正確に実行するには、データの取り込みを完了し、すべてのバッチデータをデータセットに格納する必要があります。<!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
+  一部のデータは、より早くレポートするために利用できる場合がありますが、すべての[&#x200B; バッチデータはPlatform データセット &#x200B;](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.)に取り込まれます。通常、データイベント時間から3～9時間経過したデータが取り込まれます。 アラートを正確に実行するには、データの取り込みを完了し、すべてのバッチデータをデータセットに格納する必要があります。<!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
 
 このため、取り込み可能な様々な種類のイベントデータのデータ取り込みは、データのイベント時間から3～9時間経過した後にのみ完了します。 アラートを正確にするには、特定のイベント範囲のイベントデータが完全である必要があります。つまり、指定されたイベント範囲について、アドビがイベントデータを受信しなくなっている状態でなければなりません。
 
@@ -61,12 +61,12 @@ Adobe Customer Journey Analytics でアラートを使用するプロセスは�
 
 デフォルトの 9 時間の遅延を 0～24 時間の間で調整できます。 ただし、遅延を 9 時間未満に短縮すると、不完全なデータをレポートすることになり、アラート情報が不正確になる場合があります。
 
-遅延の調整方法と、その際に考慮すべき要因について詳しくは、[ アラートの作成](/help/components/c-intelligent-alerts/alert-builder.md)を参照してください。
+遅延の調整方法と、その際に考慮すべき要因について詳しくは、[&#x200B; アラートの作成](/help/components/c-intelligent-alerts/alert-builder.md)を参照してください。
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
 ## アラートの作成方法が少ない
 
-Adobe AnalyticsのAnalysis Workspaceでは、様々な方法で[Analysis Workspaceからアラートを作成できます](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder)。 Customer Journey Analyticsでは、フリーフォームテーブルの選択範囲からAnalysis Workspaceで作成できるのは[ アラート ](alert-builder.md)のみです。
+Adobe AnalyticsのAnalysis Workspaceでは、様々な方法で[Analysis Workspaceからアラートを作成できます](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder)。 Customer Journey Analyticsでは、フリーフォームテーブルの選択範囲からAnalysis Workspaceで作成できるのは[&#x200B; アラート &#x200B;](alert-builder.md)のみです。
 
-Adobe AnalyticsとCustomer Journey Analyticsの両方で、[ アラートマネージャー](alert-manager.md)によるアラートの作成がサポートされています
+Adobe AnalyticsとCustomer Journey Analyticsの両方で、[&#x200B; アラートマネージャー](alert-manager.md)によるアラートの作成がサポートされています
