@@ -174,5 +174,5 @@ Customer Journey Analyticsは、Experience Platform データセットについ�
 
 >[!MORELIKETHIS]
 >
->[Meta Ads ソースコネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Meta Ads ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
