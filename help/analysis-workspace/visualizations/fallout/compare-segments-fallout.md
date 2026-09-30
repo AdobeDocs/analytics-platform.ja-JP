@@ -1,6 +1,6 @@
 ---
 description: Analysis Workspaceのフォールアウト分析で、タッチポイントからセグメントを作成し、タッチポイントとしてセグメントを追加し、様々なセグメントの主要なワークフローを比較する方法を説明します。
-keywords: フォールアウトとセグメント作成;フォールアウト分析におけるセグメント;フォールアウトでのセグメント比較
+keywords: フォールアウトとセグメント化;フォールアウト分析におけるセグメント;フォールアウトでのセグメント比較
 title: フォールアウト分析でのセグメントの適用
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
@@ -9,25 +9,31 @@ autotag-review: '2026-05-19T08:42:20.474Z'
 TQID: 'https://experienceleague.adobe.com/ZJqvJYmUSMfWD-yX3B-qbR5QNq7bjr9xtGN-yPXkl5E'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '484'
 ht-degree: 23%
-
 ---
+# フォールアウト分析でセグメントを適用する
 
-# フォールアウト分析でのセグメントの適用
-
-タッチポイントからセグメントを作成したり、セグメントをタッチポイントとして追加したり、Analysis Workspace の様々なセグメントにわたって主なワークフローを比較したりできます。
+顧客接点からセグメントを作成したり、セグメントを顧客接点として追加したり、Analysis Workspace で様々なセグメント間の主なワークフローを比較したりできます。
 
 >[!IMPORTANT]
 >
@@ -45,7 +51,7 @@ Should we add B2B context here?
 
 ## タッチポイントからのセグメントの作成
 
-1. 特に関心があり、他のレポートに適用するのに便利そうな特定のタッチポイントからセグメントを作成します。 タッチポイントを右クリックし、**[!UICONTROL タッチポイントからセグメントを作成]**&#x200B;を選択します。
+1. 特に関心があり、他のレポートに適用するのに有用と思われる特定の顧客接点からセグメントを作成します。 タッチポイントを右クリックし、**[!UICONTROL タッチポイントからセグメントを作成]**&#x200B;を選択します。
 
    ![&#x200B; タッチポイントからセグメントを作成がハイライト表示されたタッチポイント ドロップダウンメニュー。](assets/fallout-createsegment.png)
 
@@ -57,7 +63,7 @@ Should we add B2B context here?
 
    このセグメントは、任意のプロジェクトで使用できるようになりました。
 
-## セグメントのタッチポイントとしての追加
+## セグメントを顧客接点として追加
 
 例えば、米国のユーザーの傾向やフォールアウトへの影響を確認したい場合は、米国のユーザーセグメントをフォールアウトにドラッグします。
 
@@ -65,9 +71,9 @@ Should we add B2B context here?
 
 または、米国のユーザーセグメントを別のチェックポイントにドラッグして、AND タッチポイントを作成することもできます。
 
-## フォールアウトでのセグメントの比較
+## フォールアウトでセグメントを比較
 
-フォールアウトビジュアライゼーションでは、無数のセグメントを比較できます。
+フォールアウトビジュアライゼーションでは、無制限の数のセグメントを比較できます。
 
 1. 左側の[!UICONTROL &#x200B; セグメント &#x200B;] パネルから、比較するセグメントを選択します。 この例では、3つのセグメントが選択されています。*フライトの詳細：ページバージョン A*、*フライトの詳細：ページバージョン B*、*フライトの詳細：ページバージョン C*。
 1. 3つのセグメントをビジュアライゼーションの上部にあるセグメントドロップゾーンにドラッグします。

@@ -5,30 +5,43 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
+TQID: 'https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
+    internal-label: Email marketing
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 10442
-ht-degree: 97%
-
+source-wordcount: '10602'
+ht-degree: 98%
 ---
-
 # 派生フィールド {#derived-fields}
 
 >[!CONTEXTUALHELP]
@@ -756,8 +769,8 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 ## ユースケース 1 {#classify-uc1}
 
-`hotelID`のキー列と`hotelID`に関連付けられた1つ以上の追加の列（`city`、`rooms`、`hotel name`）を含むCSV ファイルがあります。
-ディメンションで[!DNL Hotel ID]を収集していますが、CSV ファイルの`hotelID`から派生した[!DNL Hotel Name] ディメンションを作成する必要があります。
+`hotelID` のキー列と、`hotelID` に関連付けられた `city`、`rooms`、`hotel name` などの 1 つ以上の追加の列を含む CSV ファイルがあります。
+ディメンションで [!DNL Hotel ID] を収集していますが、CSV ファイル内の `hotelID` から派生した [!DNL Hotel Name] ディメンションを作成したいと考えています。
 
 **CSV ファイルの構造と内容**
 
@@ -1015,8 +1028,8 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 セッション内の顧客が注文を行うまでの検索時間を分単位で理解したいと考えています。
 
-2つの[[!UICONTROL CASE WHEN]関数](#case-when)の結果である新しい`Time Between Search And Order In Minutes`派生フィールドを定義して、[!UICONTROL 検索時間]と[!UICONTROL 注文時間]の値を定義します。
-次に、これらの2つの値を使用して、[!UICONTROL &#x200B; スコープ &#x200B;]が[!UICONTROL &#x200B; セッション &#x200B;]に設定された[!UICONTROL DATE MATH]関数と、[!UICONTROL 検索時間]および[!UICONTROL 注文時間]に設定された値と[!UICONTROL 出力精度]が[!UICONTROL 分]に設定された値との差を計算します。両方の値について、[!UICONTROL 最初の[!UICONTROL 検索時間]と[!UICONTROL 注文時間]が返されるように、最初の]を返すを選択します。
+2 つの [[!UICONTROL CASE WHEN] 関数](#case-when)の結果を新しい `Time Between Search And Order In Minutes` の派生フィールドとして定義し、[!UICONTROL 検索時間]と[!UICONTROL 注文時間]の値を定義します。
+次に、これらの 2 つの値を使用して、[!UICONTROL 範囲]を[!UICONTROL セッション]、値を[!UICONTROL 検索時間]と[!UICONTROL 注文時間]、[!UICONTROL 出力精度]を[!UICONTROL 分]に設定した [!UICONTROL DATE MATH] 関数で差分を計算します。 最初の[!UICONTROL 検索時間]と[!UICONTROL 注文時間]が返されるように、両方の値に対して「[!UICONTROL 最初を返す]」を選択します。
 
 ![日付計算ルールのスクリーンショット 3](assets/datemath-3.png)
 
@@ -1288,7 +1301,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 1. セレクターから「**[!UICONTROL スキーマフィールド]**」を選択します。
 1. ![スキーマフィールドアイコン](assets/Smock_Folder_18_N.svg) **[!UICONTROL ルックアップデータセット]** を選択します。
 1. ルックアップデータセットを選択し、ルックアップに使用するフィールドを見つけます。
-1. 関数で使用可能な入力フィールドにルックアップフィールドをドラッグ&amp;ドロップします（例：Case When）。 有効な場合、**[!UICONTROL + Add]**&#x200B;というラベルの青いボックスを使用すると、フィールドをドロップし、ルックアップフィールドをドロップした関数の前にルックアップ関数を自動的に挿入できます。挿入されたルックアップ関数には、すべてのフィールドに関連する値が自動的に入力されます。
+1. ルックアップフィールドを、関数の使用可能な入力フィールド（例：Case When）のいずれかにドラッグ＆ドロップします。 有効な場合、「**[!UICONTROL + 追加]**」というラベルの付いた青色のボックスを使用してフィールドをドロップすると、ルックアップフィールドをドロップした関数の前にルックアップ関数が自動的に挿入されます。 挿入されたルックアップ関数には、すべてのフィールドの関連する値が自動的に入力されます。
    ![ルックアップでのドラッグ](assets/lookup-drag.png)
 
 +++
@@ -1410,7 +1423,7 @@ Adobe Target を通じて表示されるパーソナライズされたバナー�
 
 数式を作成するには：
 
-1. 「数式」フィールドに入力し、入力した値に一致する数値フィールドをポップアップメニューに表示します。または、左ペインの使用可能なフィールドから数値フィールドをドラッグ&amp;ドロップすることもできます。
+1. 数式フィールドに入力を開始するだけで、入力した内容に一致する数値フィールドがポップアップメニューに表示されます。 または、左側のパネルの使用可能なフィールドから数値フィールドをドラッグ＆ドロップすることもできます。
    ![数学の詳細情報 1](assets/math-more-info-1.png)
 
 1. オペランド（例：乗算の場合は `*`）を追加し、その後に別のフィールドまたは静的な値を追加します。 括弧を使用して、より複雑な数式を定義できます。

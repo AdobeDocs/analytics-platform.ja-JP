@@ -4,35 +4,50 @@ description: Customer Journey Analytics のランディングページ。
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-TQID: https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA
+TQID: 'https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 743
-ht-degree: 62%
-
+source-wordcount: '1063'
+ht-degree: 64%
 ---
-
 # Customer Journey Analytics ガイド
 
-このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。 Customer Journey Analytics を使用すると、任意のチャネル（オンラインとオフラインの両方）から顧客データを Adobe Experience Platform に取り込むことができます。 また、Analysis Workspace を使用すると、既存のデジタルデータと同様にこのデータを分析することもできます。
+このテクニカルドキュメントガイドでは、Customer Journey Analytics のセルフサポートを提供します。 Customer Journey Analytics を使用すると、任意のチャネル（オンラインとオフラインの両方）から顧客データを Adobe Experience Platform に取り込むことができます。 そして、このデータを、現在 Analysis Workspace で既存のデジタルデータを分析しているのと同じように分析します。
 
 Customer Journey Analyticsなら、Analysis Workspace内のオンラインとオフラインのデータを共通の顧客IDでつなぎ合わせる方法を制御でき、顧客データ全体でアトリビューション、セグメント、フロー、フォールアウトなどを実行できます。
 
@@ -50,7 +65,7 @@ Analysis Workspaceでパネルを分割できるようになりました。 パ�
 
 >[!TAB 複数のディメンション列]
 
-フリーフォームテーブルには最大5つのディメンション列を含めることができるため、複数のディメンション項目を並べて表示できます。 ディメンション項目の各行は、連結された単一のディメンション項目のように動作します。
+フリーフォームテーブルには最大5つのディメンション列を含めることができるため、複数のディメンション項目を並べて表示できます。 ディメンション項目の各行は、単一の連結されたディメンション項目のように動作します。
 
 [![画像](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
 
@@ -72,7 +87,7 @@ Audience Analysisを使用すると、Experience Platform プロファイルデ�
 
 >[!TAB リアルタイムレポート]
 
-Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。
+Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネルで、データとビジュアライゼーションをリアルタイムに表示および更新します。
 
 [![画像](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
 
@@ -96,7 +111,7 @@ Content Analytics を使用すると、大量のコンテンツデータをす�
 
 ## 基本について学ぶ
 
-まず、以下のリンクの資料を読んで、Customer Journey Analytics の機能を理解してください。
+まず、以下のリンク先の資料を読んで、Customer Journey Analytics の機能や特長について理解してください。
 
 
 <table style="table-layout:fixed">

@@ -8,23 +8,29 @@ autotag-review: '2026-05-19T08:30:25.509Z'
 TQID: 'https://experienceleague.adobe.com/S9PlaFSE-szemwSU8Cehhfxc9r0bem1qyxfI9S8ohXg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 534
+source-wordcount: '543'
 ht-degree: 61%
-
 ---
-
-# 数と変更の概要
+# サマリー数と変化量
 
 >[!BEGINSHADEBOX]
 
@@ -58,7 +64,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 ![数値の概要ビジュアライゼーション](asses/../assets/summary-number.png)
 
-ビジュアライゼーション設定の一部として、特定の数値の概要オプションを使用できます。
+ビジュアライゼーション設定の一部として、固有のサマリー数オプションを使用できます。
 
 | オプション | 定義 |
 |--- |--- |
@@ -72,7 +78,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 >[!CONTEXTUALHELP]
 >id="workspace_summarychange_button"
 >title="変更の概要"
->abstract="2 つの数値間の差分（変化）を表示するビジュアライゼーションの作成"
+>abstract="2 つの数値間の差分（変化量）を表示するビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -100,9 +106,9 @@ The green and red color of the Summary Change can be controlled through [custom 
 
 | オプション | 定義 |
 |--- |--- |
-| **[!UICONTROL 変化率を表示]** | 2 つの数値間の変化率を表示します。 |
-| **[!UICONTROL 生の差異を表示]** | 2 つの数値間の生の差異を表示します。 また、値の省略形を使用し、小数点以下 3 桁まで表示できます。 |
-| **[!UICONTROL 値を短縮]** | 変更した値をインテリジェントに短縮するには、「**[!UICONTROL 値を短縮]**」を選択します。 選択した場合、短縮の量を定義する数値を入力します。 次に例を示します。<br/><table><tr><td>**元の値**</td><td>**短縮の値**</td><td>**結果**</td></tr><tr><td>$12,011,141.25</td><td>未選択</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`0` に設定</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td> 選択済み、`1` に設定</td><td  align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`2` に設定</td><td align="right">$12.01M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`3` に設定</td><td align="right">$12.011M</td></tr></table> |
+| **[!UICONTROL 変化率を表示]** | 2 つの数値間の変更率を表示します。 |
+| **[!UICONTROL 生の差異を表示]** | 2 つの数値間の差分を表示します。 また、値の省略形を使用し、小数点以下 3 桁まで表示できます。 |
+| **[!UICONTROL 値を短縮]** | 変更した値をインテリジェントに短縮するには、「**[!UICONTROL 値を短縮]**」を選択します。 選択した場合は、省略の度合いを指定する数値を入力します。 次に例を示します。<br/><table><tr><td>**元の値**</td><td>**短縮の値**</td><td>**結果**</td></tr><tr><td>$12,011,141.25</td><td>未選択</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`0` に設定</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td> 選択済み、`1` に設定</td><td  align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`2` に設定</td><td align="right">$12.01M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、`3` に設定</td><td align="right">$12.011M</td></tr></table> |
 
 >[!MORELIKETHIS]
 >

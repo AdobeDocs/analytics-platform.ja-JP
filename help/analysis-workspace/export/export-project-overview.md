@@ -9,22 +9,30 @@ autotag-review: '2026-05-19T08:26:15.356Z'
 TQID: 'https://experienceleague.adobe.com/9pyrzsluOss-Dz4yrDJAmVqxjjeiEYTNILIz4llAMPA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 299
+source-wordcount: '299'
 ht-degree: 96%
-
 ---
-
 # 書き出しの概要
 
 Analysis Workspace から Customer Journey Analytics プロジェクトの一部を書き出すことができます。 サードパーティのツールで使用したり、外部データと組み合わせたりするなど、様々な目的に合わせて Customer Journey Analytics レポートを書き出すことができます。
@@ -35,7 +43,7 @@ Analysis Workspace から Customer Journey Analytics プロジェクトの一部
 
 Customer Journey Analytics レポートは、PDF、CSV、または JSON ファイルとして書き出すことができます。
 
-* **PDF：**&#x200B;関係者とビジュアルデータを簡単に共有できる方法を提供します。 PDF ファイルには、プロジェクトで表示される（表示可能な）すべてのテーブルとビジュアライゼーションが含まれています。
+* **PDF：**&#x200B;関係者とビジュアルデータを簡単に共有できる方法を提供します。 PDF ファイルには、プロジェクトで表示されている（可視の）すべてのテーブルとビジュアライゼーションが含まれています。
 
 * **CSV：** Excel などのスプレッドシートアプリケーションで生データを表示できます。 CSV ファイルには、プレーンテキストデータが含まれています。
 
@@ -43,12 +51,12 @@ Customer Journey Analytics レポートは、PDF、CSV、または JSON ファ�
 
 ## 書き出し方法
 
-Analysis Workspace から書き出すには、様々な方法があります。 書き出し方法を選択する際は、書き出す対象と、書き出しにアクセスする必要があるユーザーを考慮します。
+Analysis Workspace から書き出すには、様々な方法があります。 書き出し方法を選択する際は、何を書き出すのか、また書き出された結果にアクセスする必要があるユーザーは誰かを考慮します。
 
 | 書き出し方法 | この方法を使用するケース |
 |---------|----------|
 | [ワークステーションにダウンロード](/help/analysis-workspace/export/download-send.md) | <li>プロジェクトを個人用ワークステーションにダウンロードする。</li><li>アドホックデータのみをダウンロードする（スケジュールされていないもの）。</li> <li>最大 50,000 行をダウンロードする。</li> <!--true? Are there 2 different options to download to your workstation? is this emailing it? --> |
 | [他のユーザーに送信](/help/analysis-workspace/export/t-schedule-report.md) | <li>書き出された Customer Journey Analytics データを組織の他のユーザーにメールで送信する。</li><li>アドホックで、またはスケジュールに従ってメールを送信する。</li> <li>メールには最大400行を含めます。</li> <!--true?--> |
-| [クラウドの場所に書き出し](/help/analysis-workspace/export/export-cloud.md) | <li>以下のようなクラウドの場所に書き出す場合 <ul><li>Adobe Experience Platform データランディングゾーン</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>アドホックに指定するか、スケジュールに従ってデータを書き出す。</li><li>大量の Customer Journey Analytics データを保存する。</li><li>数千または数百万の行を含む完全なテーブルを書き出す。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [クラウドの場所に書き出し](/help/analysis-workspace/export/export-cloud.md) | <li>以下のようなクラウドの場所に書き出します： <ul><li>Adobe Experience Platform データランディングゾーン</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>アドホックに、またはスケジュールに従ってデータを書き出す。</li><li>大量の Customer Journey Analytics データを保存する。</li><li>数千または数百万の行を含む完全なテーブルを書き出す。<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}

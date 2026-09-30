@@ -1,35 +1,49 @@
 ---
 title: Customer Journey Analytics の概要
-description: どのように Customer Journey Analytics を使用すれば、Experience Platform からのデータと共に Analysis Workspace を使用できるかを説明します。
+description: Customer Journey Analytics を使用して、Experience Platform のデータで Analysis Workspace を活用する方法を学びます。
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-TQID: https://experienceleague.adobe.com/ECcpEFMughC-9Tf1P6-0f82-NusPJ4r5johJMLnD34w
+TQID: 'https://experienceleague.adobe.com/ECcpEFMughC-9Tf1P6-0f82-NusPJ4r5johJMLnD34w'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1186
+source-wordcount: '1186'
 ht-degree: 96%
-
 ---
-
 # Customer Journey Analytics の概要
 
 Customer Journey Analytics は、Adobe Experience Platform からのデータと共に Analysis Workspace の機能を使用できるアドビの次世代 Analytics ソリューションです。 数年分のデータを分類、セグメント化、クエリ、視覚化できます。また、あらゆるデータスキーマやデータタイプを保持できる Platform の機能と組み合わせられます。 **エクスペリエンスデータモデル（XDM）**&#x200B;を使用すると、データを均一に表示および整理し、組み合わせや探索に対応できます。 **Adobe Experience Platform クエリサービス**&#x200B;では、SQL 互換のツールとフレームワークを使用して、すべてのデータをクエリし、操作できます。
@@ -76,7 +90,7 @@ Customer Journey Analytics では、次のことが可能です。
 * **データアナリスト向けデータサイエンスの機能を活用**：Customer Journey Analytics を使用すると、専門家でなくてもデータサイエンスを活用して、深いインサイトと分析を解き放つことができます。
 * **オンデマンドレポートを使用してデータセットの視覚化や操作を行う**：ワークスペースでは、いくつかの基本的なルールに準拠した Adobe Experience Platform のデータセットを使用できます。
 * **Web 以外の表示データ**：ワークスペースは、「ヒット」または「イベント」の厳密な定義に制限されなくなりました。 カスタムスキーマでは、データと定義を完全に制御できます。
-* **データ操作をより詳細に制御**：アップロードしたデータの変更、データセットの作成、ワークスペースへの読み込みを行います。 Adobe Experience Platform は、Experience Platform クエリサービスを通じて、クエリ、抽出、変換およびツールの読み込みを行います。
+* **データ操作をより詳細に制御**：アップロードしたデータの変更、データセットの作成、ワークスペースへの読み込みを行います。 Adobe Experience Platform は、Experience Platform クエリサービスを通じて、クエリ、抽出、変換およびロードをおこなうためのツールを提供します。
 
 ## 前提条件
 

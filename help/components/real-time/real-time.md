@@ -4,27 +4,37 @@ title: リアルタイムレポートの概要
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+TQID: 'https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: d1779026-aeed-458e-a1c7-839d4acac922
+    internal-label: Real-time reporting
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: '855'
 ht-degree: 6%
-
 ---
-
 # リアルタイムレポートの概要
 
 Customer Journey Analytics のリアルタイムレポートでは、Analysis Workspace の 1 つ以上のパネル内のデータとビジュアライゼーションをリアルタイムで表示および更新します。
@@ -43,16 +53,16 @@ Customer Journey Analytics のリアルタイムレポートでは、Analysis Wo
 * リアルタイムのレポートにとって最も価値のあるユースケースは、大規模なセールス、プロモーション、製品の発売です。
 そのリリースの一部として、次のことを確認します。
 
-   * 前回の売上と比較した売上の割合は？
-   * 今回の製品発売と前回の製品発売との比較はどうなっていますか？
-   * この重要な日やイベントのプロモーションは実際に機能しますか？
+  * 前回の売上と比較した売上の割合は？
+  * 今回の製品発売と前回の製品発売との比較はどうなっていますか？
+  * この重要な日やイベントのプロモーションは実際に機能しますか？
 
 * リアルタイムのレポートにおける関連性は高いものの、価値が低いユースケースとして、検証ユースケースがあります。
 次のように検証します。
 
-   * 最近開始したキャンペーンジャーニーは実際に機能していますか？
-   * 新製品ページが公開されたら、そのページから顧客データを収集していますか？
-   * ライブメディアイベントは成功していますか？
+  * 最近開始したキャンペーンジャーニーは実際に機能していますか？
+  * 新製品ページが公開されたら、そのページから顧客データを収集していますか？
+  * ライブメディアイベントは成功していますか？
 
 運用モニタリングのユースケースでは、リアルタイムのレポートは考慮しないでください。 サイトが適切に動作しているかどうかを確認できます。 [&#x200B; リアルタイム更新トグル &#x200B;](use-real-time.md)は、30分後に自動的に無効になり、リアルタイムレポートの更新が停止されるので、これらのユースケースに対する信頼できる情報源としてリアルタイムレポートを使用しないでください。
 
@@ -88,5 +98,5 @@ Customer Journey Analyticsでは、データの収集方法によってリアル
 * ステッチとリアルタイムのレポートを組み合わせることはできません。 リアルタイムレポートでは、イベントレベルとセッションレベルのデータを使用しますが、個人ベースのデータには関連性が低くなります。
 * ハートビートで収集されたメディア指標は、メディアの開始とメディアのクローズの指標を除き、使用できません。 その場合でも、リアルタイムのレポートを使用して、メディアのユースケースを実現できます。
 * [&#x200B; ダウンロードまたはエクスポート オプション &#x200B;](/help/analysis-workspace/export/download-send.md)を使用してプロジェクトをダウンロードしたり、フリーフォームテーブルからデータをエクスポートしたりする場合は、次の点を考慮してください。
-   * ダウンロードされたCSV プロジェクトまたはエクスポートされたCSV ファイルには、ダウンロードまたはエクスポートの時点で利用可能なリアルタイム データが含まれます。
-   * ダウンロードされたPDF プロジェクトには、リアルタイム更新が無効になっている場合に表示されるデータと同様の、非リアルタイムデータが含まれています。
+  * ダウンロードされたCSV プロジェクトまたはエクスポートされたCSV ファイルには、ダウンロードまたはエクスポートの時点で利用可能なリアルタイム データが含まれます。
+  * ダウンロードされたPDF プロジェクトには、リアルタイム更新が無効になっている場合に表示されるデータと同様の、非リアルタイムデータが含まれています。

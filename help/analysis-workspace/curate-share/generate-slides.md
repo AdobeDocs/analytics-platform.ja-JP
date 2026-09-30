@@ -5,32 +5,47 @@ title: Workspace レポートからのプレゼンテーションの生成
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-TQID: https://experienceleague.adobe.com/FS8pF5-orvK65JCWs8stf2gMbrUXYmcsM-DXJhzlML4
+TQID: 'https://experienceleague.adobe.com/FS8pF5-orvK65JCWs8stf2gMbrUXYmcsM-DXJhzlML4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1720
+source-wordcount: '1720'
 ht-degree: 9%
-
 ---
-
 # Data storytelling: Workspace レポートからスライドプレゼンテーションを生成する {#generate-powerpoint}
 
 >[!NOTE]
@@ -92,7 +107,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
 **セクション区切り記号：**&#x200B;適切に配置され、名前が付けられたセクション区切り記号でインサイトを分割します。
 
-## Workspace プロジェクトに基づく .pptx プレゼンテーションの生成
+## Workspace プロジェクトに基づいて .pptx プレゼンテーションを生成する
 
 <!-- markdownlint-disable MD034 -->
 
@@ -239,21 +254,21 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
   ほとんどのビジュアライゼーションは、Workspace プロジェクトから生成されるスライドに含めることができます。 ただし、次のビジュアライゼーションは含めることができず、設定オプションが表示されるときにグレー表示されます。
 
-   * 面グラフ
+  * 面グラフ
 
-   * ブレット
+  * ブレット
 
-   * コホートテーブル
+  * コホートテーブル
 
-   * コンボ
+  * コンボ
 
-   * 複数のディメンション列を持つフリーフォームテーブル（1つのディメンション列を持つテーブルがサポートされています）
+  * 複数のディメンション列を持つフリーフォームテーブル（1つのディメンション列を持つテーブルがサポートされています）
 
-   * ジャーニーキャンバス
+  * ジャーニーキャンバス
 
-   * 散布図
+  * 散布図
 
-   * ツリーマップ
+  * ツリーマップ
 
 * ガイド付き分析
 

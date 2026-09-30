@@ -1,6 +1,6 @@
 ---
 title: Analytics ソースコネクタの作成とフィールドのマッピング
-description: Analytics ソースコネクタの作成とフィールドのマッピング方法について説明します
+description: Analytics ソースコネクタの作成方法とフィールドのマッピング方法について学ぶ
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,25 +9,34 @@ autotag-review: '2026-05-19T08:18:13.585Z'
 TQID: 'https://experienceleague.adobe.com/IQVDwcpMVnEa-dFXbNkpmHQRofC6d8z2ocf-PIaK--Q'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Administration
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: '758'
 ht-degree: 100%
-
 ---
-
 # Analytics ソースコネクタの作成とフィールドのマッピング {#create-source-connector}
 
 <!-- markdownlint-disable MD034 -->
@@ -44,7 +53,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
 >title="Analytics ソースコネクタの作成とスキーマフィールドのマッピング"
->abstract="ソースコネクタを使用する場合は、Adobe Analytics フィールドを組織のスキーマにマッピングする方法を知っている必要があります。 このインターフェイスを使用して、ソースコネクタにそのマッピングを提供します。 この手順は、Customer Journey Analytics に履歴データを追加する手順の一部です。<br><br>この手順にかかる時間は、マッピングする必要があるディメンションと指標の数に大きく依存します。 この手順は、退屈で反復的な作業ですが、それほど難しいものではありません。 データストリームマッピングが完了するまでに約 1 週間の作業がかかると予想されます。"
+>abstract="ソースコネクタは、Adobe Analytics フィールドを組織のスキーマにどのようにマッピングするかを把握している必要があります。 このインターフェイスを使用して、ソースコネクタにそのマッピングを提供します。 この手順は、Customer Journey Analytics に履歴データを追加する手順の一部です。<br><br>この手順にかかる時間は、マッピングする必要があるディメンションと指標の数に大きく依存します。 この手順は、退屈で反復的な作業ですが、それほど難しいものではありません。 データストリームマッピングが完了するまでに約 1 週間の作業がかかると予想されます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -70,9 +79,9 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 ## Analytics ソースコネクタの作成とフィールドのマッピング
 
-カスタムスキーマを作成したら、履歴データに使用する Adobe Analytics ソースコネクタを作成する必要があります （ソースコネクタの作成に関するより包括的で一般的なガイドラインについて詳しくは、[UI でのAdobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください）。
+カスタムスキーマを作成したら、履歴データに使用する Adobe Analytics ソースコネクタを作成する必要があります。 （ソースコネクタの作成に関するより包括的で一般的なガイドラインについて詳しくは、[UI でのAdobe Analytics ソース接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)を参照してください）。
 
-履歴データに使用する Adobe Analytics ソースコネクタを作成するには：
+履歴データに使用する Adobe Analytics ソースコネクタを作成するには、
 
 1. Platform UI の左側のパネルにある「**[!UICONTROL 接続]**」セクションで、「**[!UICONTROL ソース]**」を選択します。
 

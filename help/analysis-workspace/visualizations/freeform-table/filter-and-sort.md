@@ -4,27 +4,36 @@ title: フィルターと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-TQID: https://experienceleague.adobe.com/P8WPSJz11Eg8-jtrT3oXJT6C2fuI3OZf-FdY2zh2Kh8
+TQID: 'https://experienceleague.adobe.com/P8WPSJz11Eg8-jtrT3oXJT6C2fuI3OZf-FdY2zh2Kh8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1582
+source-wordcount: '1582'
 ht-degree: 47%
-
 ---
-
 # フリーフォームテーブルのフィルターと並べ替え
 
 Analysis Workspace のフリーフォームテーブルは、インタラクティブなデータ分析の基盤となります。 そのため、何千行もの情報を含めることができます。 データのフィルターと並べ替えは、最も重要な情報を効率的に表示するうえで重要な役割を果たします。

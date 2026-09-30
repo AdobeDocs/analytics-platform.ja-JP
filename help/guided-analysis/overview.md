@@ -5,30 +5,43 @@ keywords: Product Analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-TQID: https://experienceleague.adobe.com/fQgAV5IWbQdocTV83hG11T7NFJdS0hqqF7ruX74hEdw
+TQID: 'https://experienceleague.adobe.com/fQgAV5IWbQdocTV83hG11T7NFJdS0hqqF7ruX74hEdw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1857
+source-wordcount: '1857'
 ht-degree: 98%
-
 ---
-
 # ガイド付き分析の概要
 
 ガイド付き分析を使用すると、マーケティング担当者から製品担当者、アナリストまで、様々なユーザーが Customer Journey Analytics のクロスチャネルデータに基づいて構築されたガイド付きワークフローを通じて、カスタマージャーニーに関する高品質なデータとインサイトをセルフサービスで入手できます。 Analysis Workspace やモバイルスコアカードと同様に、ガイド付き分析では、[データビュー](/help/data-views/data-views.md)のデータを使用します。このビューは、[接続](../connections/overview.md)を通じて Adobe Experience Platform のデータを参照します。 ガイド付き分析で作成した多くのレポートは、Analysis Workspace にシームレスに転送して、さらに調査できます。

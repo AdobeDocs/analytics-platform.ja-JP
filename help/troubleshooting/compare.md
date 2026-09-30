@@ -6,28 +6,39 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: クエリサービス;クエリサービス;SQL 構文
-TQID: https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE
+TQID: 'https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: cbc7b6aa-4963-4ebf-9bb9-963336957623
+    internal-label: Troubleshooting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 770
+source-wordcount: '770'
 ht-degree: 100%
-
 ---
-
 # Analytics Source Connector データと Adobe Analytics の比較
 
 組織で Customer Journey Analytics を導入すると、Adobe Analytics と Customer Journey Analytics のデータにいくつか違いが出る可能性があります。 これらの違いは正常であり、いくつかの理由で発生する可能性があります。 Customer Journey Analytics は、Adobe Analytics のデータに関する制限の一部を改善できるように設計されています。 この柔軟性により、Customer Journey Analytics でのデータの解釈方法にいくつか違いが生じる可能性があります。 この記事では、Customer Journey Analytics と Adobe Analytics でのデータの処理方法に関する潜在的な違いを理解します。

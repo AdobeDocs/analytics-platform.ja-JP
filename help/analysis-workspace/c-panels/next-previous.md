@@ -8,28 +8,34 @@ autotag-review: '2026-05-19T08:23:13.905Z'
 TQID: 'https://experienceleague.adobe.com/nGn-OZXsx06SRHoBpANkmZIfOftsuSOFJi0aWe-v5sQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 526
+source-wordcount: '526'
 ht-degree: 89%
-
 ---
-
 # 次または前の項目パネル {#next-or-previous-item-panel}
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
 >title="次または前の項目"
->abstract="パネルを作成して、ユーザーが来訪前にいたディメンションまたはユーザーが次に移動するディメンションを理解します。"
+>abstract="パネルを作成して、ユーザーが来訪前にいたディメンションや、ユーザーが次に移動するディメンションを把握します。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
@@ -69,7 +75,7 @@ _この記事では、_&#x200B;の次または前の項目パネルについて�
 | 入力 | 説明 |
 | --- | --- |
 | **[!UICONTROL ディメンション]** | 次または前の項目を探索するディメンションを選択します。 |
-| **[!UICONTROL ディメンション項目]** | 次／前のお問い合わせの中心となる特定のディメンション項目を選択します。 |
+| **[!UICONTROL ディメンション項目]** | 次／前の分析の中心となる特定のディメンション項目を選択します。 |
 | **[!UICONTROL 方向]** | [!UICONTROL 次]または[!UICONTROL 前]のどちらのディメンション項目を検索するかを指定します。 |
 | **[!UICONTROL コンテナ]** | 問い合わせの範囲を決定するために、コンテナ（**[!UICONTROL グローバルアカウント]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL アカウント]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 購買グループ]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL 商談]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL セッション]**&#x200B;または&#x200B;**[!UICONTROL ユーザー]**）を選択します。 |
 
@@ -89,7 +95,7 @@ _この記事では、_&#x200B;の次または前の項目パネルについて�
 | --- | --- |
 | **[!UICONTROL 横棒グラフ]** | 選択したディメンション項目に基づいて、次の（または前の）項目を一覧表示します。 個々のバーの上にポインタを合わせると、フリーフォームテーブル内の対応する項目がハイライト表示されます。 |
 | **[!UICONTROL 数値の概要]** | 今月（これまで）のすべての次または前のディメンション項目の発生件数の概要。 |
-| **[!UICONTROL フリーフォームテーブル]** | 選択したディメンション項目に基づいて、次の（または前の）項目を表形式で一覧表示します。 例えば、ホームページまたはワークスペースページの後（または前）にその人物が訪問した一番人気のページ（発生ごと）。 |
+| **[!UICONTROL フリーフォームテーブル]** | 選択したディメンション項目に基づいて、次の（または前の）項目を表形式で一覧表示します。 例えば、ホームページまたはワークスペースページの後（または前）に、その人物が訪問したページのうち、発生件数ベースで一番人気のページはどれかを確認できます。 |
 
 {style="table-layout:auto"}
 

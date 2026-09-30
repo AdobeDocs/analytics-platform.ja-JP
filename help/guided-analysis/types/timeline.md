@@ -5,29 +5,43 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-TQID: https://experienceleague.adobe.com/17wzuDrTYs5VGC85jXh3eacQKO0-590t0K-XfggT6D4
+TQID: 'https://experienceleague.adobe.com/17wzuDrTYs5VGC85jXh3eacQKO0-590t0K-XfggT6D4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 582
+source-wordcount: '583'
 ht-degree: 100%
-
 ---
-
 # [!UICONTROL タイムライン]分析 {#timeline}
 
 <!-- markdownlint-disable MD034 -->
@@ -39,7 +53,7 @@ ht-degree: 100%
 
 <!-- markdownlint-enable MD034 -->
 
-![タイムライン](/help/assets/icons/Timeline.svg) **[!UICONTROL タイムライン]**&#x200B;分析を使用すると、ユーザーレベルのセッションイベントの推移を監視して、エクスペリエンスのパターンを見つけ、より良いユーザーストーリーを伝えることができます。 左側のパネルでは、プロパティ値とセグメントでストリームをフィルタリングできます。 右側のパネルでは、フィルター条件に一致するユーザーのランダム化リストから選択できます。 中央の領域には、タイムスタンプ、プロパティ値、期間で構成される、選択したユーザーのセッション別のストリームが表示されます。 特定のセッションの最後のイベントでは、期間は使用できません。
+![タイムライン](/help/assets/icons/Timeline.svg) **[!UICONTROL タイムライン]**&#x200B;分析を使用すると、ユーザーレベルのセッションイベントの推移を監視して、エクスペリエンスのパターンを見つけ、より良いユーザーストーリーを伝えることができます。 左側のパネルでは、プロパティ値とセグメントでストリームをフィルターできます。 右側のパネルでは、フィルター条件に一致するユーザーのランダムなリストから選択できます。 中央の領域には、タイムスタンプ、プロパティ値、期間で構成される、選択したユーザーのセッション別のストリームが表示されます。 特定のセッションの最後のイベントでは、期間は使用できません。
 
 
 >[!NOTE]
@@ -76,16 +90,16 @@ ht-degree: 100%
 [!UICONTROL タイムライン]分析には次のグラフ設定が用意されており、グラフの上にあるメニューで調整できます。
 
 * **[!UICONTROL 次の形式で表示]**：目的のプロパティ値を表示します。
-   * [!UICONTROL すべてを表示]：セッション内のすべてのプロパティ値を表示します。
-   * [!UICONTROL ハイライト表示]：クエリフィルターに一致するセッション内のプロパティ値を視覚的にハイライト表示します。
-   * [!UICONTROL 表示のみ]：クエリフィルターに一致するセッション内のプロパティ値のみを表示します。
+  * [!UICONTROL すべてを表示]：セッション内のすべてのプロパティ値を表示します。
+  * [!UICONTROL ハイライト表示]：クエリフィルターに一致するセッション内のプロパティ値を視覚的にハイライト表示します。
+  * [!UICONTROL 表示のみ]：クエリフィルターに一致するセッション内のプロパティ値のみを表示します。
 
 ### 日付範囲
 
-分析に対する目的の日付範囲。 この設定には、次の 2 つのコンポーネントがあります。
+分析に使用する希望の日付範囲。 この設定には、次の 2 つのコンポーネントがあります。
 
 * **[!UICONTROL 間隔]**：トレンドデータの表示に使用する日付の精度。 この設定は、タイムラインなどの非トレンド分析には影響を与えません。
-* **[!UICONTROL 日付]**：開始日と終了日。 便宜上、周期的な日付範囲のプリセットと以前に保存したカスタム範囲を使用できます。または、カレンダーセレクターを使用して固定日付範囲を選択することもできます。
+* **[!UICONTROL 日付]**：開始日と終了日。 日付範囲のプリセット（ローリング）や、以前に保存したカスタム範囲を使用することもできます。また、カレンダーセレクターを使用して固定の日付範囲を選択することもできます。
 
 
 <!--

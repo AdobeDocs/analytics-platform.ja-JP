@@ -4,22 +4,26 @@ title: 予測の表示
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-TQID: https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc
+TQID: 'https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: '372'
 ht-degree: 5%
-
 ---
-
 # 予測を表示
 
 フリーフォームテーブルまたは折れ線グラフで予測を表示できます。
@@ -56,8 +60,8 @@ ht-degree: 5%
 
 * 折れ線グラフの指標の現在の値は、縦棒で示されます。 垂直線の上にカーソルを合わせると、最後の現在の日付が表示されます。
 * 1つ以上の指標の予測値は、点線を使用して垂直バーから直接表示されます。 指標の任意のデータポイントにカーソルを合わせることができます。 ポップアップに次の内容が表示されます。
-   * 予測の日付
-   * 指標の予測値
-   * 指標の予測値の上限
-   * 指標の予測値の下限
+  * 予測の日付
+  * 指標の予測値
+  * 指標の予測値の上限
+  * 指標の予測値の下限
 * シェーディングされた領域は、予測の信頼帯を示します。

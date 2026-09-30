@@ -4,27 +4,35 @@ description: Analysis WorkspaceのMedia Average Minute Audience パネルの使�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-TQID: https://experienceleague.adobe.com/d5xE5n-OpioBQy-j3wGrxO7GBcOJrqbNZ1C0lS1iAYM
+TQID: 'https://experienceleague.adobe.com/d5xE5n-OpioBQy-j3wGrxO7GBcOJrqbNZ1C0lS1iAYM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1714
+source-wordcount: '1714'
 ht-degree: 88%
-
 ---
-
 # メディア分平均オーディエンスパネル {#media-average-minute-audience-panel}
 
 <!-- markdownlint-disable MD034 -->

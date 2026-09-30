@@ -1,5 +1,5 @@
 ---
-description: Adobe Experience Platform 顧客 AI データが Customer Journey Analytics の Workspace とどのように統合されるのかを説明します。
+description: Adobe Experience Platform 顧客 AI データが Customer Journey Analytics の Workspace とどのように統合されるかを確認します。
 title: 顧客 AI データの統合
 role: Admin
 solution: Customer Journey Analytics
@@ -9,26 +9,36 @@ autotag-review: '2026-05-19T09:14:55.236Z'
 TQID: 'https://experienceleague.adobe.com/4SG79HyhFS5kr-kXXVGb-cTI8j3St6CwztOW-x1xXi8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: cbde176d-5423-4c67-8a87-bc8faefd3a44
+    internal-label: Customer AI integration
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 983
+source-wordcount: '983'
 ht-degree: 93%
-
 ---
-
 # 顧客 AI データの統合
 
 {{release-limited-testing}}
@@ -37,25 +47,25 @@ ht-degree: 93%
 
 顧客 AI は、影響力のある要因の助けを借りて、顧客が何をする可能性があるかとその理由を知ることができます。 さらに、マーケターは、顧客 AI の予測と洞察を活用して、最も適切なオファーとメッセージを提供することで、顧客のエクスペリエンスをパーソナライズできます。
 
-顧客 AI は、傾向スコアリングに個々の行動データとプロファイルデータに依存します。 顧客 AI には、Adobe Analytics、Adobe Audience Manager、消費者エクスペリエンスイベントデータ、エクスペリエンスイベントデータなど、複数のデータソースを柔軟に取り込むことができます。 Experience Platform ソースコネクタを使用して Adobe Audience Manager と Adobe Analytics のデータを取り込むと、モデルは自動的に標準のイベントタイプを選択し、モデルのトレーニングとスコアリングを実施します。 標準のイベントタイプを使用せずに独自のエクスペリエンスイベントデータセットを取り込む場合、モデルで使用するには、関連するフィールドをカスタムイベントまたはプロファイル属性としてマッピングする必要があります。 これは、Experience Platform の顧客 AI の設定手順で行えます。
+顧客 AI は、傾向スコアリングに個人の行動データとプロファイルデータに依存します。 顧客 AI には、Adobe Analytics、Adobe Audience Manager、消費者エクスペリエンスイベントデータ、エクスペリエンスイベントデータなど、複数のデータソースを柔軟に取り込むことができます。 Experience Platform ソースコネクタを使用して Adobe Audience Manager と Adobe Analytics のデータを取り込むと、モデルは自動的に標準のイベントタイプを選択し、モデルのトレーニングとスコアリングを実施します。 標準のイベントタイプを使用せずに独自のエクスペリエンスイベントデータセットを取り込む場合、モデルで使用するには、関連するフィールドをカスタムイベントまたはプロファイル属性としてマッピングする必要があります。 これは、Experience Platform の顧客 AI の設定手順で行えます。
 
 顧客 AI は、顧客 AI 対応データセットを Customer Journey Analytics のデータビューおよびレポートで利用できる範囲で、Customer Journey Analytics と統合できます。 次のことができます。
 
 * **ユーザーのセグメントの傾向スコアを経時的に追跡する**。
-   * ユースーケース：特定のセグメントの顧客がコンバージョンする可能性を把握します。
-   * 例：ホテルのコンサート会場で宿泊客がショーチケットを購入する可能性をホテルチェーンのマーケターが把握したい場合。
+  * ユースケース：特定のセグメントの顧客がコンバージョンする可能性を把握します。
+  * 例：ホテルのコンサート会場で宿泊客がショーチケットを購入する可能性をホテルチェーンのマーケターが把握したい場合。
 * **傾向スコアに関連付けられている成功イベントまたは属性を分析する**。
-   * ユースーケース：傾向スコアに関連付けられている属性や成功イベントを把握します。
-   * 例：ホテルのコンサート会場でのショーチケットの購入が傾向スコアにどのように関連付けられているかをホテルチェーンのマーケターが把握したい場合。
+  * ユースケース：傾向スコアに関連付けられている属性や成功イベントを把握します。
+  * 例：ホテルのコンサート会場でのショーチケットの購入が傾向スコアにどのように関連付けられているかをホテルチェーンのマーケターが把握したい場合。
 * **異なるスコアリング実行での顧客傾向のエントリフローに従う**。
-   * ユースーケース：最初は傾向の低いユーザーだったのが、時間の経過と共に傾向の高いユーザーになった顧客を把握します。
-   * 例：最初はショーチケットを購入する傾向が低い顧客として特定されたが、時間が経つにつれて、ショーチケットを購入する傾向が高い顧客になった宿泊客をホテルチェーンのマーケターが把握したい場合。
+  * ユースケース：最初は低傾向ユーザーだったのが、時間の経過と共に高傾向ユーザーになった顧客を把握します。
+  * 例：最初はショーチケットを購入する傾向が低い顧客として特定されたが、時間が経つにつれて、ショーチケットを購入する傾向が高い顧客になった宿泊客をホテルチェーンのマーケターが把握したい場合。
 * **傾向の分布を確認する**。
-   * ユースーケース：傾向スコアの分布を把握して、より正確にセグメントを定義します。
-   * 例：小売業者がある製品に対して 50 ドル割引のプロモーションを実施したい場合。 予算などが理由で、非常に限られたプロモーションだけを実施したい場合もあります。データを分析し、顧客の上位80%のみをターゲットにすることにしました。
+  * ユースケース：傾向スコアの分布を把握して、より正確にセグメントを定義します。
+  * 例：小売業者がある製品に対して 50 ドル割引のプロモーションを実施したい場合。 予算などが理由で、非常に限られたプロモーションだけを実施したい場合もあります。データを分析し、顧客の上位80%のみをターゲットにすることにしました。
 * **特定のコホートのアクションを遂行する傾向を経時的に確認する**。
-   * ユースーケース：特定のコホートを経時的に追跡します。
-   * 例：ブロンズ層とシルバー層の対比またはシルバー層とゴールド層の対比をホテルチェーンのマーケターが経時的に追跡したい場合。 各コホートのホテル予約の傾向を経時的に確認できます。
+  * ユースケース：特定のコホートを経時的に追跡します。
+  * 例：ブロンズ層とシルバー層の対比またはシルバー層とゴールド層の対比をホテルチェーンのマーケターが経時的に追跡したい場合。 各コホートのホテル予約の傾向を経時的に確認できます。
 
 実際に顧客 AI データを Customer Journey Analytics と統合するには、次の手順に従います。
 
@@ -70,7 +80,7 @@ ht-degree: 93%
 
 ## 手順 2：顧客 AI データセットへの Customer Journey Analytics 接続を設定する
 
-Customer Journey Analytics で、顧客 AI 用に計測された Experience Platform データセットに、[1 つ以上の接続を作成](/help/connections/create-connection.md)できるようになりました。 「アカウントをアップグレードする可能性」などの予測はそれぞれ、1 つのデータセットと同じです。 これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」という接頭辞が付きます。
+Customer Journey Analytics で、顧客 AI 用に計測された Experience Platform データセットに、[1 つ以上の接続を作成](/help/connections/create-connection.md)できるようになりました。 「アカウントをアップグレードする可能性」などの予測は、それぞれ 1 つのデータセットに相当します。 これらのデータセットには、「Customer AI Scores in EE Format - name_of_application」という接頭辞が付きます。
 
 >[!IMPORTANT]
 >
@@ -92,19 +102,19 @@ Customer Journey Analytics で、確立した接続の一部として得られ�
 
 ![&#x200B; データビューウィンドウの作成](assets/create-dataview.png)
 
-## 手順 4：Workspace での CAI スコアのレポート
+## 手順 4：Workspace で CAI スコアをレポート
 
 Customer Journey Analytics Workspace で新しいプロジェクトを作成し、ビジュアライゼーションを取り込みます。
 
 ### 傾向スコアのトレンド
 
-CAI データを含む Workspace プロジェクトの例を次に示します。CAI データは、経時的なユーザーのセグメントの傾向スコアのトレンドを、積み重ね棒グラフで表示します。
+CAI データを含む Workspace プロジェクトの例を次に示します。このプロジェクトでは、ユーザーセグメントの傾向スコアの推移を、積み重ね棒グラフで表示しています。
 
 ![スコアバケット](assets/workspace-scores.png)
 
-### 理由コードを含むテーブル
+### 理由コードのテーブル
 
-次の表に、セグメントの傾向が高いまたは低い理由コードを示します。
+次のテーブルは、セグメントに高または低傾向スコアが付与される理由コードを示しています。
 
 ![理由コード](assets/reason-codes.png)
 

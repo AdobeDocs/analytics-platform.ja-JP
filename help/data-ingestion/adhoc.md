@@ -5,30 +5,42 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
-TQID: https://experienceleague.adobe.com/eqmDvuaNGFj8q2pfKNCzf5-affyrUTYP7MA5UgsRrCI
+TQID: 'https://experienceleague.adobe.com/eqmDvuaNGFj8q2pfKNCzf5-affyrUTYP7MA5UgsRrCI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1674
+source-wordcount: '1674'
 ht-degree: 27%
-
 ---
-
-# アドホックデータの取り込みと使用
+# アドホックデータの取り込みと活用
 
 このクイックスタートガイドでは、Experience Platformにアドホックデータを取り込み、そのデータをCustomer Journey Analyticsで使用する方法について説明します。
 
@@ -46,7 +58,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->このクイックスタートガイドでは、を使用してアドホックデータをExperience Platformに取り込み、そのアドホックデータをCustomer Journey Analyticsで使用する方法について簡単に説明します。 参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドでは、を使用してアドホックデータをExperience Platformに取り込み、そのアドホックデータをCustomer Journey Analyticsで使用する方法について簡単に説明します。 追加情報への参照がある場合は、その内容を確認することを強くお勧めします。
 
 
 ## CSV ファイルを使用したデータセットの作成
@@ -176,11 +188,11 @@ Adobe Analyticsとの連携により、Experience Platformのデータセット�
 
 [接続](/help/connections/overview.md)を作成すると、[&#x200B; データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス &#x200B;](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。
 
-## データ表示の設定
+## データビューを設定
 
-データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データ表示は、Analysis Workspace でレポートの準備を行う際に定義します。
+データビューは、Customer Journey Analytics に特有のコンテナで、接続からのデータをどのように解釈するかを指定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データビューは、Analysis Workspace でレポートの準備を行う際に定義します。
 
-データ表示を作成するには：
+データビューを作成するには：
 
 1. Customer Journey Analytics UIの上部メニューで、**[!UICONTROL データビュー]** （オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から）を選択します。
 
@@ -242,4 +254,4 @@ Analysis Workspaceは、データにもとづいて分析データを迅速に�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。 まず、収集するアドホックデータ（CSV ファイル）を定義します。 ワークフローを使用して、そのCSV ファイルからアドホックデータセットとスキーマを作成しました。 取り込んだアドホックデータやその他のデータを使用するように、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。 まず、収集するアドホックデータ（CSV ファイル）を定義します。 ワークフローを使用して、そのCSV ファイルからアドホックデータセットとスキーマを作成しました。 取り込んだアドホックデータやその他のデータを使用するように、Customer Journey Analyticsで接続を定義しました。 データビューの定義では、使用するディメンションと指標を指定でき、最後にそのデータを視覚化および分析する最初のプロジェクトを作成しました。

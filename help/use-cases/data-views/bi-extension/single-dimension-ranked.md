@@ -9,22 +9,28 @@ autotag-review: '2026-05-19T09:43:29.052Z'
 TQID: 'https://experienceleague.adobe.com/Sh1xJ0RXluNN0HlY2xlLVBs5-sahCwkcahQaThFCJpA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1337
+source-wordcount: '1337'
 ht-degree: 1%
-
 ---
-
 # 単一ディメンションのランク
 
 
@@ -188,7 +194,7 @@ ht-degree: 1%
 1. 適切な選択を行い、提案された値を入力します。これにより、フィルターの読み取り&#x200B;**[!UICONTROL は]**&#x200B;個の`1000000`個の&#x200B;**[!UICONTROL と]**&#x200B;個の`2000000`の間になります。
 1. **[!UICONTROL 実行]**&#x200B;を選択します。
 1. 行のビジュアライゼーションを表示するには、**[!UICONTROL ‣ ビジュアライゼーション]**&#x200B;を選択します。
-1. **[!UICONTROL ビジュアライゼーション]**&#x200B;の&#x200B;**[!UICONTROL 編集]**&#x200B;を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで以下を行います。
+1. **[!UICONTROL ビジュアライゼーション]**&#x200B;の&#x200B;**[!UICONTROL 編集]**&#x200B;を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで次の操作を行います。
    1. 「**[!UICONTROL シリーズ]**」タブを選択します。
    1. 下にスクロールして&#x200B;**[!UICONTROL 購入履歴]**&#x200B;を表示し、**[!UICONTROL 種類]**&#x200B;を&#x200B;**[!UICONTROL 行]**&#x200B;に変更します。
    1. 「**[!UICONTROL Y]**」タブを選択します。

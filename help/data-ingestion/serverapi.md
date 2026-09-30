@@ -5,32 +5,47 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-TQID: https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk
+TQID: 'https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2447
-ht-degree: 62%
-
+source-wordcount: '2447'
+ht-degree: 63%
 ---
-
 # Edge Network Server APIを介したデータの取り込み
 
 このクイックスタートガイドでは、Adobe Experience Platform Edge Network Server APIとEdge Networkを使用して、IoT デバイス、セットトップボックス、ゲーム機、デスクトップアプリケーションなどのデバイスからAdobe Experience Platformにトラッキングデータを直接取り込む方法について説明します。 そのデータをCustomer Journey Analyticsで使用し。
@@ -60,11 +75,11 @@ ht-degree: 62%
 
 Adobe Experience Platformにデータを取り込むには、まず、収集するデータを定義する必要があります。 ダウンストリームの機能で認識し、処理するには、Adobe Experience Platform に取り込まれるすべてのデータが、標準的な非正規化された構造に準拠する必要があります。 Experience Data Model （XDM）は、スキーマの形式で構造を提供する標準フレームワークです。
 
-スキーマを定義したら、1 つ以上のデータセットを使用して、データの収集を保存および管理します。 データセットは、スキーマ（列）とフィールド（行）を含むデータのコレクション（通常はテーブル）のストレージおよび管理構造です。
+スキーマを定義したら、1 つ以上のデータセットを使用して、データのコレクションを保存および管理します。 データセットは、スキーマ（列）とフィールド（行）を含むデータのコレクション（通常はテーブル）のストレージおよび管理構造です。
 
 Adobe Experience Platform に取り込まれるすべてのデータは、データセットとして保持する前に、事前定義済みのスキーマに準拠している必要があります。
 
-### スキーマの設定
+### スキーマを設定する
 
 コンソールでゲームをプレイしているプロファイルから、識別、スコア、進行状況などの最小限のデータを追跡する必要があります。
 まず、このデータをモデル化するスキーマを定義する必要があります。
@@ -128,7 +143,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![ID オブジェクト](./assets/identification-field-gaming.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、ゲームをプレイしているプロフィールを、ゲーム機へのログインに使用するExperience Cloud IDとメールアドレスを使用して特定する必要があります。 個人の識別を追跡するために使用できる他の多くの属性があります。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合は、Experience Cloud IDとゲームコンソールへのログインに使用するメールアドレスを使用して、ゲームをプレイしているプロファイルを特定する必要があります。 個人の識別を追跡するために使用できる他の多くの属性があります。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -136,7 +151,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![ECID を ID として指定](./assets/specify-identity-gaming.png)
 
-   Experience Cloud ID を、Adobe Experience Platform Identity Service が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
+   Experience Cloud ID を、Adobe Experience Platform Identity Service（ID サービス）が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 ecid 属性にフィンガープリントアイコンが表示されます。
 
@@ -144,7 +159,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![メールを ID として指定](./assets/specify-email-identity-gaming.png)
 
-   メールアドレスを、Adobe Experience Platform Identity Service がプロファイルの動作を組み合わせる（ステッチする）ために使用するもう一つの ID として指定します。
+   メールアドレスを、Adobe Experience Platform Identity Service（ID サービス）がプロファイルの動作を組み合わせる（ステッチする）ために使用するもう 1 つの ID として指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 メール属性にフィンガープリントアイコンが表示されます。
 
@@ -174,11 +189,11 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 - Profile Core v2 フィールドグループをスキーマに追加します。
 
-- Profile Core v2 フィールドグループに基づいて ID オブジェクトを追加します。
+- Profile Core v2 フィールドグループに基づいて識別オブジェクトを追加します。
 
 - Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
 
-- プロファイルでスキーマを有効にする
+- プロファイル用にスキーマを有効にする
 
 フィールドグループと個々のフィールドをスキーマに追加、またはスキーマから削除する方法について詳しくは、[UI でのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja)を参照してください。
 
@@ -186,7 +201,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 スキーマを使用して、データモデルを定義しました。 データセットを使用して、そのデータを保存および管理するための構造を定義する必要があります。
 
-データセットを設定するには：
+データセットを設定するには、次の手順を実行します。
 
 1. Adobe Experience Platform UI の左パネルの「[!UICONTROL データ管理]」で、「**[!UICONTROL データセット]**」を選択します。
 
@@ -208,7 +223,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 7. 「**[!UICONTROL プロファイル]**」スイッチを選択します。
 
-   プロファイルのデータセットを有効にするよう求められます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
+   プロファイル用にデータセットを有効にするよう求めるプロンプトが表示されます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
 
    >[!IMPORTANT]
    >
@@ -220,7 +235,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 ## データストリームの設定
 
-データストリームは、Adobe Experience Platform WebおよびMobile SDKとAdobe Experience Platform Edge Network Server APIを実装する際のサーバーサイド設定を表します。 Adobe Experience Platform SDKとEdge Network Server APIを使用してデータを収集すると、データはAdobe Experience Platform Edge Networkに送信されます。 これは、データの転送先となるサービスを決定するデータストリームです。
+データストリームは、Adobe Experience Platform Web と Mobile SDK、および Adobe Experience Platform Edge Network Server API を実装する際のサーバーサイド設定を表します。 Adobe Experience Platform SDKとEdge Network Server APIを使用してデータを収集すると、データはAdobe Experience Platform Edge Networkに送信されます。 これは、データの転送先となるサービスを決定するデータストリームです。
 
 設定では、ゲームから収集したデータをAdobe Experience Platformのデータセットに送信する必要があります。
 
@@ -325,11 +340,11 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - 各データセットに対して、次の手順を行います。
 
-      - Adobe Experience Platform のデータセットスキーマで定義されている使用可能な ID から[!UICONTROL ユーザー ID] を選択します。
+     - Adobe Experience Platform のデータセットスキーマで定義されている使用可能な ID から[!UICONTROL ユーザー ID] を選択します。
 
-      - [!UICONTROL データソースタイプ]リストから正しいデータソースを選択します。 「**[!UICONTROL その他]**」を指定している場合は、データソースの説明を追加します。
+     - [!UICONTROL データソースタイプ]リストから正しいデータソースを選択します。 「**[!UICONTROL その他]**」を指定している場合は、データソースの説明を追加します。
 
-      - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
+     - 必要に応じて&#x200B;**[!UICONTROL すべての新しいデータを読み込み]**&#x200B;および&#x200B;**[!UICONTROL データセットの既存データのバックフィル]**&#x200B;を選択します。
 
    - 「**[!UICONTROL データセットを追加]**」を選択します。
 
@@ -339,9 +354,9 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
 ## データ表示の設定
 
-データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データ表示は、Analysis Workspace でレポートの準備を行う際に定義します。
+データビューは、Customer Journey Analytics に特有のコンテナで、接続からのデータをどのように解釈するかを指定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データビューは、Analysis Workspace でレポートの準備を行う際に定義します。
 
-データ表示を作成するには：
+データビューを作成するには：
 
 1. Customer Journey Analytics UIの上部メニューで、**[!UICONTROL データビュー]** （オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から）を選択します。
 
@@ -390,7 +405,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペース - 空のプロジェクト](./assets/cja-projects-2.png)
 
-4. リストからデータ表示を選択します。
+4. リストからデータビューを選択します。
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 

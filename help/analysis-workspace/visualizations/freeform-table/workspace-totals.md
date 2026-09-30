@@ -4,25 +4,32 @@ title: 合計
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-TQID: https://experienceleague.adobe.com/BoH9J-fL9UxPG4wId9-GU7muMNR10aeWe0BBd1NQOjo
+TQID: 'https://experienceleague.adobe.com/BoH9J-fL9UxPG4wId9-GU7muMNR10aeWe0BBd1NQOjo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 502
+source-wordcount: '502'
 ht-degree: 88%
-
 ---
-
 # 合計 {#workspace-totals}
 
 >[!CONTEXTUALHELP]
@@ -31,7 +38,7 @@ ht-degree: 88%
 >abstract="静的な行を含むテーブルや分類では、総計はサポートされません。"
 
 
-フリーフォームテーブルでは、合計行が各分類レベルに表示され、2 つの合計を示すことができます。
+フリーフォームテーブルでは、合計行が各分類レベルに表示され、2 つの合計を表示できます。
 
 ![総計とテーブルの合計をハイライト表示するフリーフォームテーブル。](assets/total-row.png)
 
@@ -62,6 +69,6 @@ ht-degree: 88%
 |---|---|
 | グレーの列の割合は、どの&#x200B;*合計*&#x200B;に基づいていますか？ | この&#x200B;*合計*&#x200B;は、**[!UICONTROL 行設定]**&#x200B;の&#x200B;**[!UICONTROL 割合]**&#x200B;の設定の選択によって異なります。<ul><li>列別に割合を計算 - この設定はデフォルトです。 割合は、テーブルの合計に基づきます。</li><li>行別に割合を計算 - 割合は総計に基づきます。</li></ul> |
 | **[!UICONTROL 「値なし」を含める]**&#x200B;設定は、合計にどのように影響を与えますか？ | **[!UICONTROL 「値なし」を含める]**&#x200B;設定がオフの場合、**[!UICONTROL 値なし]**&#x200B;の行はテーブルから削除され、テーブルの合計となり、[*合計*&#x200B;指標タイプ](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)を使用する計算指標に引き継がれます。 |
-| フリーフォームテーブルにカスタムテーブルセグメントを適用する場合、そのセグメントに対してすべての計算指標と条件付き書式設定を利用できますか？ | 現在は利用できません。 **[!UICONTROL 「値なし」を含める]**&#x200B;は考慮されますが、カスタムテーブルセグメントは次に影響しません。<ul><li>条件付き書式で使用される列の最大／最小範囲は、すべてのデータを対象とします。</li><li>**[!UICONTROL 総計]**&#x200B;指標タイプを活用する計算指標。</li><li>フリーフォームテーブル内の行をまたいで計算する関数（列の合計値、列の最大値、列の最小値、カウント、平均、中央値、パーセンタイル、四分位数、行数、標準偏差、分散、累積、累積平均、回帰バリアント、t スコア、t 検定、z スコア、z 検定）を使用する計算指標。</li></ul> |
+| フリーフォームテーブルにカスタムテーブルセグメントを適用した場合、そのセグメントはすべての計算指標と条件付き書式設定に反映されますか。 | 現在は利用できません。 **[!UICONTROL 「値なし」を含める]**&#x200B;は考慮されますが、カスタムテーブルセグメントは次に影響しません。<ul><li>条件付き書式で使用される列の最大／最小範囲は、すべてのデータを対象とします。</li><li>**[!UICONTROL 総計]**&#x200B;指標タイプを活用する計算指標。</li><li>フリーフォームテーブル内の行をまたいで計算する関数（列の合計、列の最大値、列の最小値、カウント、平均、中央値、パーセンタイル、四分位数、行数、標準偏差、分散、累積、累積平均、回帰のバリエーション、t スコア、t 検定、z スコア、z 検定）を使用する計算指標。</li></ul> |
 | 計算指標では、**[!UICONTROL 総計]**&#x200B;指標タイプで何が反映されますか？ | **[!UICONTROL 総計]**&#x200B;では引き続き&#x200B;**[!UICONTROL 総計]**&#x200B;を参照しますが、テーブルに適用されたセグメントや&#x200B;**[!UICONTROL テーブルの合計]**&#x200B;は反映されません。 |
 | フリーフォームテーブルからデータをコピーして貼り付けるか、CSV でデータをダウンロードすると、合計はどのように表示されますか。 | 合計行には、**[!UICONTROL テーブルの合計]**&#x200B;のみが反映され、列の&#x200B;**[!UICONTROL 合計を表示]**&#x200B;設定が考慮されます。 |

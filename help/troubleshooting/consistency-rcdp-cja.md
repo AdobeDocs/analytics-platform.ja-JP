@@ -4,30 +4,38 @@ title: 指標とオーディエンスメンバーシップの一貫性
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-TQID: https://experienceleague.adobe.com/IYlFUArrqejRjs5uDJ0MNGixQG4IP6ly4qLQBMALCjA
+TQID: 'https://experienceleague.adobe.com/IYlFUArrqejRjs5uDJ0MNGixQG4IP6ly4qLQBMALCjA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 671
+source-wordcount: '671'
 ht-degree: 100%
-
 ---
-
 # 指標とオーディエンスメンバーシップの一貫性
 
 実際のシナリオでは、Real-time Customer Data Platform（Real-time CDP）と Customer Journey Analytics 全体で指標とオーディエンスメンバーシップのカウントの一貫性を保証することはできません。 このドキュメントでは、その理由を説明します。
 
-Real-time CDP と Customer Journey Analytics の間でオーディエンスのメンバーシップカウントを比較する場合、これら 2 つのツールが持つ異なる目的に注意する必要があります。 Real-time CDP は、顧客プロファイルデータを使用して個々の消費者にデジタルエクスペリエンスをターゲティングする一方で、Customer Journey Analytics は、主要なビジネス指標やセグメントのパターンの理解に役立ちます。 Customer Journey Analytics から Real-time CDP へのオーディエンスの公開では、これらのツールのユーザーは、Customer Journey Analytics で得られた知識を活用し、インサイトを簡単かつ自然に「アクティベート」できますが、これらのツールは根本的に異なる目的を持っています。
+Real-time CDP と Customer Journey Analytics の間でオーディエンスのメンバーシップカウントを比較する場合、これら 2 つのツールが持つ異なる目的に注意する必要があります。 Real-time CDP は、顧客プロファイルデータを使用して個人消費者にデジタルエクスペリエンスをターゲティングする一方で、Customer Journey Analytics は、主要なビジネス指標やセグメントのパターンの理解に役立ちます。 Customer Journey Analytics から Real-time CDP へのオーディエンスの公開では、これらのツールのユーザーは、Customer Journey Analytics で得られた知識を活用し、インサイトを簡単かつ自然に「アクティベート」できますが、これらのツールは根本的に異なる目的を持っています。
 
 ## ID 設定の違い
 
@@ -44,15 +52,15 @@ Customer Journey Analytics は、[ステッチ](../stitching/overview.md)を使�
 
 Customer Journey Analytics を使用すると、フィールドの結合、フィールドの分割のほか、包含／除外、部分文字列、値の重複排除、セッション化、行レベルのフィルタリングといった操作など、クエリ時に大幅なデータ変更を行うことができます。
 
-Real-time CDP は、様々なデータ操作ツールのセットを提供します。 [結合ポリシー](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ja)を適用し、データの優先順位付けおよびデータの組み合わせを決定し、ユーザーの統一されたビューを作成します。
+Real-time CDP は、異なるデータ操作ツールのセットを提供します。 [結合ポリシー](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ja)を適用し、データの優先順位付けおよびデータの組み合わせを決定し、ユーザーの統一されたビューを作成します。
 
-## TTL（Time to Live）とデータ取り込みの違い
+## TTL（Time to Live）とデータインジェストの違い
 
 Real-time CDP と Customer Journey Analytics のデータセットが同じであっても、Real-time CDP は限られた期間の履歴のみを保持する場合があります。 それに対して、Customer Journey Analytics には数年分のデータが存在する可能性があります。 追加事項：
 
 * Customer Journey Analytics と Real-time CDP のユーザーは、データのカスタム保持期間を互いに独立して設定できます。
 
-* Real-time CDP と Customer Journey Analytics は、データ取り込みの異なるロジックを持っています。 Customer Journey Analytics は、ユーザー ID やタイムスタンプのないレコードを無視し、単一のプロファイル／ユーザーが持つレコードの数に厳密な制限を設けています。
+* Real-time CDP と Customer Journey Analytics は、データ取り込みの異なるロジックを持っています。 Customer Journey Analytics は、ユーザー ID やタイムスタンプのないレコードを無視し、単一のプロファイル／個人が持つレコードの数に厳密な制限を設けています。
 
 * Real-time CDP のユーザーは、主にプロファイルへのデータのオンボーディングとアドホックなクエリを促進するために、レイク内のデータに 7 日間アクセスできます。
 

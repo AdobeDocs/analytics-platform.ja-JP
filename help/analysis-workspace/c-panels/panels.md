@@ -4,30 +4,41 @@ title: Analysis Workspaceのパネルの概要
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-TQID: https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8
+TQID: 'https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2809
+source-wordcount: '2812'
 ht-degree: 41%
-
 ---
-
 # パネルの概要 {#panels-overview}
 
 [!UICONTROL パネル]は、テーブルとビジュアライゼーションのコレクションです。 パネルには、Workspace の左上のアイコンまたは[空のパネル](/help/analysis-workspace/c-panels/blank-panel.md)からアクセスできます。 パネルは、期間、データビュー、分析ユースケースに従ってプロジェクトを整理する場合に役立ちます。
@@ -43,10 +54,10 @@ ht-degree: 41%
 | [実験](experimentation.md) | 様々なユーザーエクスペリエンス、マーケティングまたはメッセージングのバリエーションを比較して、特定の結果を導くのに最適なものを判断します。 |
 | [フリーフォーム](freeform-panel.md) | 無制限の比較および分類を実行し、ビジュアライゼーションを追加して豊かなデータのストーリーを示します。 |
 | [メディア分平均オーディエンス](average-minute-audience-panel.md) | 特定のコンテンツまたはカスタマイズされた期間での分平均オーディエンスを分析します。 |
-| [メディア同時閲覧者数](media-concurrent-viewers.md) | 同時実行のピークの詳細と分類および比較機能を使用して、経時的に同時視聴者を分析します。 |
+| [メディア同時閲覧者数](media-concurrent-viewers.md) | ピーク時の同時視聴数の詳細や分類・比較機能を使用して、同時閲覧者数の推移を分析します。 |
 | [メディア再生滞在時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | 再生時間を分析して、同時実行のピークが発生する場所やドロップダウンが発生する場所を把握ﬀます。 |
 | [次または前の項目](next-previous.md) | ユーザーが移動する次のページまたは前のページを表示します。 |
-| [クイックインサイト](quickinsight.md) | フリーフォームテーブルとそれに伴うビジュアライゼーションを素早く作成し、インサイトを迅速に分析して取得します。 |
+| [クイックインサイト](quickinsight.md) | フリーフォームテーブルとそれに伴うビジュアライゼーションを迅速に作成し、インサイトをより速く分析して取得します。 |
 
 
 分析を開始するには、[!UICONTROL クイックインサイト]パネル、[!UICONTROL 空白]パネル、[!UICONTROL フリーフォーム]パネルが最適です。一方、[!UICONTROL アトリビューション]は、より高度な分析に適しています。 キャンバスの下部に ![AddCircle](/help/assets/icons/AddCircle.svg) が表示されるので、いつでも空白のパネルを追加できます。
@@ -148,12 +159,12 @@ ht-degree: 41%
 
      括弧内のテキストを選択して（例：**[!UICONTROL 固定開始 – ローリング日]**）、パネルを拡張し、**[!UICONTROL 開始]**&#x200B;および&#x200B;**[!UICONTROL 終了]**&#x200B;の詳細を指定できます。
 
-      1. 「**[!UICONTROL 開始日]**」、「**[!UICONTROL 終了日]**」または「**[!UICONTROL 固定日]**」を選択します。
-      1. 「**[!UICONTROL 開始日]**」または「**[!UICONTROL 終了日]**」を選択すると、完全な式を作成できます。 例：**[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**。 式の個々の部分に適した値を選択します。
-         * 現在の値を選択します。 例：**[!UICONTROL 現在の年]**。
-         * 追加の計算の値を選択します。 例：**[!UICONTROL plus]**。
-         * 追加の計算を指定した場合は、値を指定します。 例：`1`。
-         * 追加の計算を指定した場合は、計算に使用する期間を選択します。 例：**[!UICONTROL day]**。
+     1. 「**[!UICONTROL 開始日]**」、「**[!UICONTROL 終了日]**」または「**[!UICONTROL 固定日]**」を選択します。
+     1. 「**[!UICONTROL 開始日]**」または「**[!UICONTROL 終了日]**」を選択すると、完全な式を作成できます。 例：**[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**。 式の個々の部分に適した値を選択します。
+        * 現在の値を選択します。 例：**[!UICONTROL 現在の年]**。
+        * 追加の計算に使用する値を選択します。 例：**[!UICONTROL plus]**。
+        * 追加の計算を指定した場合は、値を指定します。 例：`1`。
+        * 追加の計算を指定した場合は、計算に使用する期間を選択します。 例：**[!UICONTROL day]**。
 
      周期的な日付の計算の詳細を非表示にするには、「**[!UICONTROL 詳細を非表示]**」を選択します。
 
@@ -184,14 +195,14 @@ ht-degree: 41%
    ![&#x200B; ドロップゾーンを追加または置換](assets/add-or-replace-to-drop-zone.png)
 
    * 選択範囲をドロップして、次のコンポーネントを作成します。
-      * ❷をドロップした任意のセグメントコンポーネントの[&#x200B; セグメント &#x200B;](#segment)。
-      * ❸をドロップしたセグメント以外のコンポーネント（日付範囲、指標、ディメンション、ディメンション項目）の[&#x200B; クイックセグメント &#x200B;](#quick-segment)。
+     * ❷をドロップした任意のセグメントコンポーネントの[&#x200B; セグメント &#x200B;](#segment)。
+     * ❸をドロップしたセグメント以外のコンポーネント（日付範囲、指標、ディメンション、ディメンション項目）の[&#x200B; クイックセグメント &#x200B;](#quick-segment)。
    * **を押しながら選択範囲**&#x200B;をドロップし（シフト）、次のコンポ⇧ネントを作成します。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択したセグメント ❹に対するフィルタリング対象のアイテム。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択した日付範囲❺でフィルタリングする項目。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択した指標に対してフィルターを適用する項目❻が含まれています。
-      * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)または分類[&#x200B; ドロップダウンメニュー](#drop-down-menu)で、選択したディメンション *個のアイテム*&#x200B;に対してフィルタリングまたは分類するアイテムが❼に含まれています。
-      * 動的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)または分類[&#x200B; ドロップダウンメニュー](#drop-down-menu)で、選択したディメンションに対してフィルタリングまたは分類する項目が含まれています（❽）。
+     * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択したセグメント ❹に対するフィルタリング対象のアイテム。
+     * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択した日付範囲❺でフィルタリングする項目。
+     * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)と、選択した指標に対してフィルターを適用する項目❻が含まれています。
+     * 静的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)または分類[&#x200B; ドロップダウンメニュー](#drop-down-menu)で、選択したディメンション *個のアイテム*&#x200B;に対してフィルタリングまたは分類するアイテムが❼に含まれています。
+     * 動的セグメント [&#x200B; ドロップダウンメニュー](#drop-down-menu)または分類[&#x200B; ドロップダウンメニュー](#drop-down-menu)で、選択したディメンションに対してフィルタリングまたは分類する項目が含まれています（❽）。
 
 
 ### セグメント
@@ -241,7 +252,7 @@ ht-degree: 41%
 * ![分類](/help/assets/icons/Breakdown.svg)を選択し、![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL セグメント]** | **[!UICONTROL コンポーネント ❾のコンテキストメニューからパネル]**&#x200B;内のデータをフィルタリングします。
 
 
-#### パネルの分割
+#### パネルの分類
 
 **⇧を保持している間に**&#x200B;をドロップした&#x200B;*ディメンション* コンポーネントの場合、セグメントドロップダウンメニューが作成されます。 ドロップダウンメニューを設定して、ドロップされたディメンション項目（[静的](#static)分類ドロップダウンメニュー）またはディメンションコンポーネント（[動的](#dynamic)分類ドロップダウンメニュー）に使用できる項目に基づいてパネルを分類できます。 ドロップダウンメニューを明示的に設定して、分類を使用してパネルを分割するには、次の手順を実行します。
 
@@ -317,7 +328,7 @@ ht-degree: 41%
 | オプション | 説明 |
 | --- | --- |
 | **[!UICONTROL コピーしたパネルを挿入]** | コピーしたパネルをプロジェクト内の別の場所または別のプロジェクトにペーストできます。 |
-| **[!UICONTROL コピーしたビジュアライゼーションを挿入]** | コピーしたビジュアライゼーションをプロジェクト内の別の場所または別のプロジェクトにペーストできます。 |
+| **[!UICONTROL コピーしたビジュアライゼーションを挿入]** | コピーしたビジュアライゼーションをパネル内の別の場所、プロジェクト内の別の場所、または別のプロジェクトにペーストできます。 |
 | **[!UICONTROL データビューをすべてのパネルに適用]** | このパネルのデータビューをプロジェクト内の他のすべてのパネルに適用します。 |
 | **[!UICONTROL パネルをコピー]** | パネルをコピーして、プロジェクト内の別の場所または別のプロジェクトに挿入できます。 |
 | **[!UICONTROL パネルを複製]** | 現在のパネルの完全な複製を作成して、修正できます。 |

@@ -5,28 +5,39 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+TQID: 'https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2355
+source-wordcount: '2375'
 ht-degree: 15%
-
 ---
-
 # リレーショナルデータのミラー化と使用
 
 このクイックスタートガイドでは、[Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md)を使用して、Adobe Experience Platformのデータウェアハウスネイティブソリューションからリレーショナルデータをミラーリングする方法について説明します。 そのデータをCustomer Journey Analyticsで使用する必要があります。
@@ -227,15 +238,15 @@ Experience Platformのインターフェイスで、次の操作を行います�
 
 * **[!UICONTROL Google BigQueryのアカウント設定が既にある場合の既存アカウント]**。 「[&#x200B; データを選択](#select-data)」手順に進みます。
 * Google BigQueryに接続する必要がある場合は、**[!UICONTROL 新しいアカウント]**&#x200B;を作成します。
-   1. **[!UICONTROL アカウント名]**&#x200B;と（オプション） **[!UICONTROL 説明]**&#x200B;を指定します。
-   1. **[!UICONTROL 認証タイプ]**&#x200B;を選択：**[!UICONTROL 基本認証]**&#x200B;または&#x200B;**[!UICONTROL サービス認証]**。 選択内容に基づいて、必要な情報を入力します。
-   1. 「**[!UICONTROL ソースに接続]**」を選択
+  1. **[!UICONTROL アカウント名]**&#x200B;と（オプション） **[!UICONTROL 説明]**&#x200B;を指定します。
+  1. **[!UICONTROL 認証タイプ]**&#x200B;を選択：**[!UICONTROL 基本認証]**&#x200B;または&#x200B;**[!UICONTROL サービス認証]**。 選択内容に基づいて、必要な情報を入力します。
+  1. 「**[!UICONTROL ソースに接続]**」を選択
 
-      ![Google BigQuery – 認証](assets/googlebg-authentication.png)
+     ![Google BigQuery – 認証](assets/googlebg-authentication.png)
 
-      接続が確認されました。 ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]**&#x200B;は、接続が成功したことを示します。
+     接続が確認されました。 ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]**&#x200B;は、接続が成功したことを示します。
 
-   1. 「**[!UICONTROL 次へ]**」を選択します。
+  1. 「**[!UICONTROL 次へ]**」を選択します。
 
   [Snowflake Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks)または[Azure](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続方法と認証方法について詳しくは、Experience Platformのドキュメントを参照してください。
 

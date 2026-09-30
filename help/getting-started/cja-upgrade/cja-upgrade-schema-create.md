@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics のカスタムスキーマの作成
-description: Customer Journey Analytics のカスタムスキーマの作成方法について説明します
+title: Customer Journey Analytics 用カスタムスキーマの作成
+description: Customer Journey Analytics 用のカスタムスキーマの作成方法を学びます
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,32 +9,41 @@ autotag-review: '2026-05-19T08:15:52.067Z'
 TQID: 'https://experienceleague.adobe.com/RxYBLvBJnhWb-YL6HeVpTz-9dKrr5DQZhOBond8Xano'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1294
+source-wordcount: '1294'
 ht-degree: 100%
-
 ---
-
-# Customer Journey Analytics で使用するカスタムスキーマの作成 {#create-custom-schema}
+# Customer Journey Analytics 用にカスタムスキーマを作成する {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create"
->title="Adobe Experience Platform で目的のカスタムスキーマを作成"
+>title="Adobe Experience Platform で目的のカスタムスキーマを作成する"
 >abstract="Adobe Experience Platform UI を使用してスキーマを作成し、アドビがデータを格納するための正しい形式を認識できるようにします。<br><br>この手順には、組織で合意されたスキーマの実際の作成が含まれます。 Adobe Experience Platform インターフェイスでスキーマを作成するのにかかる推定時間は、作成する必要があるディメンションと指標の数に応じて約 1 週間です。"
 
 >[!CONTEXTUALHELP]
@@ -45,7 +54,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="プロファイルのスキーマを有効にする"
->abstract="Adobe Real-Time CDP で使用するために、スキーマ内のプロファイルを有効にします。 この手順は、Adobe Real-Time CDP と統合する必要があることを選択したユーザーに表示されます。<br><br>この手順では 1 つのボックスをクリックするだけなので、数秒で完了します。"
+>abstract="Adobe Real-time CDP で使用するために、スキーマ内のプロファイルを有効にします。 この手順は、Adobe Real-Time CDP と統合する必要があることを選択したユーザーに表示されます。<br><br>この手順では 1 つのボックスをクリックするだけなので、数秒で完了します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -53,7 +62,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->カスタムスキーマの作成を開始する前に、組織全体のデータチームや他の関係者と協力して、Customer Journey Analytics や使用する他の Adobe Experience Platform アプリケーションに対する組織の理想的なスキーマ設計を特定します。 詳しくは、[Customer Journey Analytics で使用するスキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。
+>カスタムスキーマの作成を開始する前に、組織全体のデータチームや他の関係者と協力して、Customer Journey Analytics や使用している他の Adobe Experience Platform アプリケーション向けの、組織にとって理想的なスキーマ設計を特定します。 詳しくは、[Customer Journey Analytics で使用するスキーマの設計](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。
 
 次の節では、Customer Journey Analytics で使用できるスキーマの作成方法について説明します。 次のスキーマオプションを使用できます。
 
@@ -114,7 +123,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
       「**[!UICONTROL 戻る]**」を選択してプレビューを閉じます。
 
-   1. （オプション）含める追加のフィールドグループを選択します。
+   1. （オプション）含めたい追加のフィールドグループを選択します。
 
       カスタム XDM スキーマを作成するのではなく、デフォルトの Adobe Analytics スキーマを使用することを選択した場合は、ここで Adobe Analytics ExperienceEvent フィールドグループを追加できます。 ただし、アドビでは、このフィールドグループを追加するのではなく、カスタム XDM スキーマを作成することをお勧めします。
 
@@ -144,7 +153,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    ![ID オブジェクト](assets/identification-field.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別する必要があります。 ユーザーの ID を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別する必要があります。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -152,7 +161,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    ![ECID を ID として指定](./assets/specify-identity.png)
 
-   Experience Cloud ID を、Adobe Experience Platform Identity Service が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
+   Experience Cloud ID を、Adobe Experience Platform Identity Service（ID サービス）が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 ecid 属性にフィンガープリントアイコンが表示されます。
 
@@ -160,7 +169,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    ![メールを ID として指定](./assets/specify-email-identity.png)
 
-   メールアドレスを、Adobe Experience Platform Identity Service がプロファイルの動作を組み合わせる（ステッチする）ために使用するもう一つの ID として指定します。
+   メールアドレスを、Adobe Experience Platform Identity Service（ID サービス）がプロファイルの動作を組み合わせる（ステッチする）ために使用するもう 1 つの ID として指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 メール属性にフィンガープリントアイコンが表示されます。
 
@@ -182,19 +191,19 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    Web サイトから取得できるデータをモデル化する、最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすることで、web サイトから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
 
-   行動データの横にある、サイトからプロファイル属性データ（ニュースレターを購読したプロファイルの詳細など）を取り込むこともできます。
+   行動データに加えて、サイトからプロファイル属性データ（ニュースレターを購読しているプロファイルの詳細など）を取り込むこともできます。
 
-   このプロファイルデータを取得するには、次を実行します。
+   このプロファイルデータを取得するには、次の操作を行います。
 
    * XDM Individual Profile クラスに基づいてスキーマを作成します。
 
    * Profile Core v2 フィールドグループをスキーマに追加します。
 
-   * Profile Core v2 フィールドグループに基づいて ID オブジェクトを追加します。
+   * Profile Core v2 フィールドグループに基づいて識別オブジェクトを追加します。
 
    * Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
 
-   * プロファイルでスキーマを有効にする
+   * プロファイル用にスキーマを有効にする
 
    フィールドグループと個々のフィールドをスキーマに追加、またはスキーマから削除する方法について詳しくは、[UI でのスキーマの作成と編集](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja)を参照してください。
 

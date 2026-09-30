@@ -18,15 +18,15 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 20%
 ---
 # 設定の作成または編集
 
 会話インサイトを活用すれば、顧客に提供するエージェント体験から会話を分析できます。 そのようなエージェントの体験は、大規模言語モデル（LLM）にもとづいて提供されるか、または人間の会話にもとづいて提供されます。 たとえば、顧客やコールセンターとのやり取りを担当するチャットボットは、文字起こしを処理します。
-会話インサイトを通じて、実際のユーザーの成果に対する代表者の影響を把握することができます。
+会話インサイトを通じて、実際のユーザーの成果に対するエージェントの影響を把握できます。
 
 会話インサイト設定インターフェイスを使用すると、設定と関連するアーティファクト（接続、データビューなど）をすばやく作成または編集できます。
 
@@ -114,7 +114,47 @@ ht-degree: 7%
 
 ## データビューの検証
 
-（関連するデータセットから表示される指標とディメンションについて説明します）
+[設定手順](#configuration-steps)で設定したデータビューには、[&#x200B; データビュー](/help/data-views/manage-dataviews.md)の&#x200B;**[!UICONTROL 統合]**&#x200B;の値として&#x200B;**[!UICONTROL 会話インサイト]**&#x200B;があります。
+
+設定された各データビューについて、次の手順を実行します。
+
+* **Containers**: [Containers タブ &#x200B;](/help/data-views/create-dataview.md#containers)には、新しい&#x200B;**[!UICONTROL コンテナ名]**: **[!UICONTROL 会話]**&#x200B;と&#x200B;**[!UICONTROL 表示名]**: **[!UICONTROL コンテナ]**&#x200B;が追加の&#x200B;**[!UICONTROL システム]** **[!UICONTROL コンテナタイプ]**&#x200B;として含まれています。
+* **コンポーネント**：追加のスキーマフィールドフォルダーが表示されます。 例：agentExperienceとconversation さらに、次のコンポーネントが自動的に追加されます。
+
+  | 指標 | スキーマデータタイプ | スキーマパス |
+  |---|---|---|
+  | 顧客フィードバック | 文字列 | eventType |
+  | 肯定的なセンチメント | 文字列 | 派生フィールド |
+  | レコメンデーション | 文字列 | eventType |
+  | 回転 | 文字列 | eventType |
+
+  | ディメンション | スキーマデータタイプ | スキーマパス |
+  |---|---|---|
+  | エージェント ID | 文字列 | `agenticExperience.agents.agentID` |
+  | エージェント名 | 文字列 | `agenticExperience.agents.name` |
+  | Concierge 名 | 文字列 | `agenticExperience.name` |
+  | Concierge のバージョン | 文字列 | `agenticExperience.version` |
+  | 会話 ID | 文字列 | `conversation.conversationID` |
+  | 会話名 | 文字列 | `conversation.conversationName` |
+  | 会話シグナル名 | 文字列 | `conversation.signals.name` |
+  | 会話の概要のブール値 | ブール値 | `conversation.signals.values.booleanValue` |
+  | 会話の概要の信頼性 | Double | `conversation.signals.values.confidence` |
+  | 会話の概要のメタデータキー | 文字列 | `conversation.signals.values.metadata.key` |
+  | 会話の概要の数値 | Double | `conversation.signals.values.numberValue` |
+  | 会話の概要の修飾子 | 文字列 | `conversation.signals.values.qualifiers` |
+  | 会話トーン信号 | 文字列 | `conversation.signals.attributes.tones.values` |
+  | 環境 | 文字列 | `agenticExperience.environment` |
+  | フィードバックの分類 | 文字列 | 派生フィールド |
+  | フィードバック評価の分類 | 文字列 | `conversation.feedback.rating.classification` |
+  | フィードバックセクションの目的 | 文字列 | `conversation.feedback.raw.purpose` |
+  | フィードバックソース | 文字列 | `conversation.feedback.source` |
+  | フレーズ | 文字列 | `conversation.signals.attributes.subjects.values.phrase` |
+  | 応答の生テキスト | 文字列 | `conversation.response.raw.text` |
+  | 応答ソース | 文字列 | `conversation.response.source` |
+  | センチメントの分類 | 文字列 | 派生フィールド |
+  | スキル名 | 文字列 | `agenticExperience.agents.skills.name` |
+  | スキルバージョン | 文字列 | `agenticExperience.agents.skills.version` |
+  | 値 | 文字列 | `agenticExperience.agents.skills.parameters.value` |
 
 
 <!--

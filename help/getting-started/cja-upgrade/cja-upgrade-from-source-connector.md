@@ -1,5 +1,5 @@
 ---
-title: Analytics ソースコネクタから Customer Journey Analytics 向け Web SDK への移行
+title: Customer Journey Analytics 用 Web SDK への Analytics ソースコネクタからの移行
 description: Customer Journey Analytics にアップグレードする際に、Analytics ソースコネクタから Web SDK に移行する方法について説明します
 role: Admin
 solution: Customer Journey Analytics
@@ -9,26 +9,35 @@ autotag-review: '2026-05-19T08:14:22.976Z'
 TQID: 'https://experienceleague.adobe.com/af02lBhLgsKQOkm2yVW4jHvFYVbqOCDi6-puKoKytMo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: '539'
 ht-degree: 100%
-
 ---
-
-# Analytics ソースコネクタから Customer Journey Analytics 向け Web SDK への移行 {#transition-from-source-connector}
+# Customer Journey Analytics 用 Web SDK への Analytics ソースコネクタからの移行 {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -44,7 +53,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-delete"
 >title="既存の Analytics ソースコネクタの削除"
->abstract="現在使用している Analytics ソースコネクタは、組織のカスタムスキーマと互換性がありません。 ただし、データは Analytics レポートスイートにまだ存在しています。 この手順では、現在の Analytics ソースコネクタを削除するので、後続の手順で正しいスキーマを使用して再作成できます。<br><br>ソースコネクタを削除する前に、組織内の他のユーザーと調整して、ソースコネクタの削除が組織内のレポートに影響を与えないことを確認することをお勧めします。 この調整が完了するまでに数週間かかる可能性があります。"
+>abstract="現在使用している Analytics ソースコネクタは、組織のカスタムスキーマと互換性がありません。 ただし、データは Analytics レポートスイートにまだ存在しています。 この手順では、現在の Analytics ソースコネクタを削除し、後続の手順で正しいスキーマを使用して再作成できるようにします。<br><br>ソースコネクタを削除する前に、組織内の他のユーザーと調整して、ソースコネクタの削除が組織内のレポートに影響を与えないことを確認することをお勧めします。 この調整が完了するまでに数週間かかる可能性があります。"
 
 <!-- markdownlint-enable MD034 -->
 

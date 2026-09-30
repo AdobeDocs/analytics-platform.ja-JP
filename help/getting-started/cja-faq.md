@@ -5,33 +5,49 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-TQID: https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo
+TQID: 'https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2320
+source-wordcount: '2323'
 ht-degree: 95%
-
 ---
-
 # よくある質問
 
 Adobe Customer Journey Analytics は、次世代の分析製品です。 この記事では、Customer Journey Analytics に関するよくある質問に対する回答を示します。 詳しくは、[Customer Journey Analytics 機能のサポート](/help/getting-started/aa-vs-cja/cja-aa.md)を参照してください。
@@ -78,21 +94,21 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 
 +++**ステッチでは「再生」はどのように機能しますか？**
 
-ステッチでは、学習した一意の ID に基づいてデータを「再生」します。 再生は、当面、識別されたデバイスから、最初は未認証のイベントをステッチすることを目的としています。 [詳細情報](../stitching/overview.md)
+ステッチでは、学習した一意の ID に基づいてデータを「再生」します。 Replay は、その間に識別されたデバイスからの、当初は未認証だったイベントをステッチすることを目的としています。 [詳細情報](../stitching/overview.md)
 
 +++
 
 
 +++**履歴データのステッチ（バックフィル）はどのように機能しますか？**
 
-最初にオンにした際、アドビでは、選択した期間（お客様に使用権限がある Customer Journey Analytics パッケージに応じて、最大 25 か月）まで遡るステッチデータのバックフィルを提供します。 このバックフィルを行うには、ステッチされていない過去のデータに一時的な ID が存在する必要があります。 [詳細情報](../stitching/overview.md)
+最初にオンにした際、アドビでは、選択した期間（お客様に使用権限がある Customer Journey Analytics パッケージに応じて、最大 25 か月）まで遡るステッチデータのバックフィルを提供します。 このバックフィルを行うには、その期間まで遡ったステッチされていないデータ内に一時的な ID が存在している必要があります。 [詳細情報](../stitching/overview.md)
 
 +++
 
 
 +++**ステッチされていないプロファイルデータセットレコードの場合は、どのような動作が想定されますか？**
 
-**シナリオの例**：`CRMid` をユーザー ID として使用することで、Customer Journey Analytics 接続の 2 つのデータセットを結合します。 1 つは、すべてのレコードで `CRMid` を使用した web イベントデータセットです。 もう 1 つのデータセットは、CRM プロファイルデータセットです。 CRM データセットの 40％は、web イベントデータセットに `CRMid` が存在します。 残りの 60％は、web イベントデータセットには存在しません。これらのレコードは、Analysis Workspace のレポートに表示されますか？<p> **回答**：イベントが関連付けられていないプロファイル行は、Customer Journey Analytics に保存されます。 ただし、その ID に関連付けられたイベントが表示されるまでは、Analysis Workspace で表示できません。
+**シナリオの例**：`CRMid` をユーザー ID として使用することで、Customer Journey Analytics 接続の 2 つのデータセットを結合します。 1 つは、すべてのレコードで `CRMid` を使用した web イベントデータセットです。 もう 1 つのデータセットは、CRM プロファイルデータセットです。 CRM データセットの 40％は、web イベントデータセットに `CRMid` が存在します。 残りの 60％は、web イベントデータセットには存在しません。これらのレコードは、Analysis Workspace のレポートに表示されますか？<p> **回答**：イベントが関連付けられていないプロファイル行は、Customer Journey Analytics に保存されます。 ただし、その ID に関連付けられたイベントが発生するまでは、Analysis Workspace で表示できません。
 
 +++
 
@@ -100,7 +116,7 @@ Customer Journey Analytics には、[データ準備](https://experienceleague.a
 
 +++**異なる [!UICONTROL Adobe Experience Platform] サンドボックスのデータを 1 つの [!UICONTROL Customer Journey Analytics] 接続に結合することはできますか？**
 
-いいえ。サンドボックス全体のデータにアクセスすることはできません。 同じサンドボックス内にあるデータセットのみを組み合わせることができます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#select-sandbox-and-datasets)
+いいえ。サンドボックスをまたいでデータにアクセスすることはできません。 同じサンドボックス内にあるデータセットのみを組み合わせることができます。 [詳細情報](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#select-sandbox-and-datasets)
 
 +++
 
@@ -248,7 +264,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 ## &#x200B;10. 使用超過について {#overage}
 
-使用量制限は、アドビによって定期的にモニタリングされ、適用されます。 「データ行」とは、Customer Journey Analytics 内で分析に使用できる 1 日あたりの平均データ行数を意味します。
+使用量制限は、アドビによって定期的にモニターされ、適用されます。 「データ行」とは、Customer Journey Analytics 内で分析に使用できる 1 日あたりの平均データ行数を意味します。
 
 例えば、契約では 100 万行のデータを使用できるとします。 Customer Journey Analytics の使用開始 1 日目に 200 万行のデータをアップロードし、 2 日目に 100 万行を削除して、ライセンスの残りの期間は、許可されたデータ行の最大値（この例では、100 万行）以内に使用量を抑えたとします。 この場合でも、契約条件によっては、「データ行」ライセンスの使用量制限を超えた 1 日目について、超過分の料金（日割り計算）が発生することがあります。
 
@@ -273,13 +289,13 @@ Adobe CX Enterpriseでは、Regional Data Collection （RDC）を使用して、
 
 地域データ収集プロセスでは、次の手順に従います。
 
-1. DNS は、訪問者に最も近いデータ収集センターの IP アドレスに、収集のホスト名を自動で解決します。
+1. DNS は、訪問者に最も近いデータ収集センターの IP アドレスに、データ収集ホスト名を自動的に解決します。
 1. 訪問者はデータをその場所に送信します。
 1. データは、安全な接続を介して、データストリームまたはイベント転送設定によって定義されたソリューションに即座に転送されます。
 
 地域データ収集を使用すると、次のような利点があります。
 
-* **パフォーマンス**：RDC により、訪問者は最も近い DCC に接続します。 この最適化により、応答時間が最速になり、追跡の精度が向上し、読み込み時間が短縮します。
+* **パフォーマンス**：RDC により、訪問者は最も近い DCC に接続します。 この最適化により、応答時間が最も短くなり、トラッキングの精度が向上し、読み込み時間が短縮します。
 * **冗長性**：DCC と DPC 間の通信が中断されると、アドビの RDC インフラストラクチャがデータをローカルに保存し、その後そのデータを通信が復旧した際に DPC に送信します。
 
 RDC には現在、次の場所が含まれています（変更される場合があります）：
@@ -296,7 +312,7 @@ RDC には現在、次の場所が含まれています（変更される場合�
 
 データが地域のデータセンターに到達すると、データストリームの設定によって、データのルーティング方法が決まります。
 
-Customer Journey Analytics には Adobe Experience Platform からのデータセットが必要なので、データストリーム／イベント転送設定では、地域のデータセンターから Adobe Experience Platform インスタンスが配置されているデータセンターにデータをルーティングするために Adobe Experience Platform サービスが必要です。 Customer Journey Analytics とそのサポートサービスおよびインフラストラクチャは、同じ Adobe Experience Platform インスタンスにデプロイされます。
+Adobe Customer Journey Analytics では Adobe Experience Platform からのデータセットが必要なため、データストリーム／イベント転送設定では、Adobe Experience Platform サービスを使用して、地域のデータセンターから Adobe Experience Platform インスタンスが配置されているデータセンターにデータをルーティングする必要があります。 Customer Journey Analytics とそのサポートサービスおよびインフラストラクチャは、同じ Adobe Experience Platform インスタンスにデプロイされます。
 
 
 Adobe Experience Platform Edge Network とその地域のデータセンターを超えたデータ収集プロセスについて詳しくは、[データ収集の概要](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=ja)を参照してください。
