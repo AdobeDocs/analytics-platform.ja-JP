@@ -18,9 +18,33 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '12'
+source-wordcount: '132'
 ht-degree: 0%
 ---
 # 会話インサイトの分析
+
+## シンプルな分析
+
+会話インサイトを分析するには、Analysis Workspaceでプロジェクトを作成または編集し、プロジェクト内の1つ以上のパネルのデータビューとして、設定されたデータビューのいずれかを使用します。
+
++++ プロジェクト例
+
+![会話インサイトの基本的なサンプルプロジェクト ](assets/conversation-insights-analyze-sample-project-basic.png)
+
++++
+
+## コンテクストに即した大規模な会話分析
+
+会話を大規模に分析し、カスタマージャーニー全体を通じて、これらの会話のコンテキストを提供します。
+
+* 会話インサイトイベントを、他のイベントデータセットや追加のプロファイルおよびルックアップデータセットと組み合わせることができます。 これらのデータセットを、会話インサイト設定で選択した接続に追加します。
+* 会話インサイト設定で選択したデータビューに、追加のコンポーネント（指標とディメンション）を追加します。
+* ...
+
++++ プロジェクト例
+
+決定されます。
+
++++ 

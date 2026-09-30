@@ -18,10 +18,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 6%
+source-wordcount: '2592'
+ht-degree: 5%
 ---
 # 会話インサイトの実装
 
@@ -37,10 +37,227 @@ ht-degree: 6%
 
 ## スキーマとデータセット
 
-主な会話イベントのデータセット（プロンプト、応答、フィードバック）を設定します。 プロンプト、応答、フィードバックのデータセットは、[会話イベント フィールドグループ &#x200B;](#conversation-event-field-group)を使用してXDM エクスペリエンスイベントの基本スキーマを拡張する必要があり、オプションで[&#x200B; エージェント情報フィールドグループ &#x200B;](#agentic-information-field-group)とその他[の追加フィールドグループ &#x200B;](#additional-field-groups)を含めることができます。
+主な会話イベントのデータセット（プロンプト、応答、フィードバック）を設定します。 プロンプト、応答、フィードバックのデータセットは、[会話イベント フィールドグループ ](#conversation-event-field-group)を使用してXDM エクスペリエンスイベントの基本スキーマを拡張する必要があり、オプションで[ エージェント情報フィールドグループ ](#agentic-information-field-group)とその他[の追加フィールドグループ ](#additional-field-groups)を含めることができます。
 
-プロンプト、レスポンス、フィードバックに対して個別のデータセットを定義したり、データセットにデータを組み合わせたりできます。 例えば、プロンプトや回答にデータセットを、フィードバックにデータセットを使用できます。 単一のデータセットを使用して会話イベントを更新したりできます。
-データセットには同じ基本スキーマを使用します。
+プロンプト、レスポンス、フィードバックに対して個別のデータセットを定義したり、データセットにデータを組み合わせたりできます。 例えば、プロンプトや回答にデータセットを、フィードバックにデータセットを使用できます。 または、[仕組み](/help/conversation-insights/conversation-insights-overview.md#how-it-works)に示すように、会話イベントのタイプごとに個別のデータセットを使用します。
+
+説明するには、次を使用します。
+
+* **個別データセット実装**。 プロンプト、レスポンス、フィードバックのイベント用にデータセットを分離します。 次の場合は、この実装アプローチに従ってください。
+
+  * クライアント実装の状態を維持することが少ない。
+  * 応答の遅延や非存在に関わらず、プロンプトデータを送信します。
+
+* **データセットの実装を組み合わせて**。 たとえば、プロンプトと応答のイベントデータセットを組み合わせたもの、フィードバックイベントデータセットを個別に作成するというものです。  次の場合は、この実装アプローチに従ってください。
+
+  * 実装で完全なターンをサポートするため、コールを減らしたい場合。
+  * 応答が届くのを待つ際に、待ち時間は気にしないでください。
+
+>[!IMPORTANT]
+>
+>データセットには同じ基本スキーマを使用します。
+>
+
+データセットのレイアウトと、これらのデータセットへの会話イベントの配信は、別々の懸念事項です。 データが利用可能になればすぐに各会話イベントを送信し、安定した会話識別子とターン識別子を確保します。 安定したIDは、データセット間で[Conversation Blender サービス ](#data-blending)による適切な相関関係を促進します。
+
+
+### 会話イベントフィールドグループ
+
+**[!UICONTROL 会話イベント]** フィールドグループは必須フィールドグループであり、`conversation` オブジェクトを使用します。
+
+会話オブジェクトは、次のデータをキャプチャします。
+
+#### 会話
+
+一意の`conversationID`が会話を識別します。 例：`conversationID = "conv-001"`。 `conversationID`を使用すると、関連するすべてのturns イベントを同じ会話型エクスペリエンスにグループ化できます。
+
+スキーマは`conversationName`もサポートしています。 会話の全体的なコンテキストを説明する、人間が読み取れる名前（例：`France Geography Q&A`）。 会話名は自動生成されますが、生成された名前を更新できます。 会話名も`signals[].name`に入力されます。 Adobeは、`signals[].name` = &quot;title&quot;信号と同じ値を`conversationName`に入力します。 入力した任意のデータセットに`conversation.conversationName`を設定し、Adobeが提供する値を上書きできます。
+
+#### ターン
+
+ターンとは、会話内のひとつのインタラクションサイクルのことです。
+
+`turnID`一意の`turnID`はターンを識別します。 次に例を示します。
+
+`conversationID = "conv-001"`
+`turnID = "turn-001"`
+
+同じ`conversationID`と`turnID`を使用して、そのターンに関連付けられたプロンプト、応答、フィードバックを関連付けます。 この相関関係は、別々に配信されるか、異なるデータセットに格納されるレコードをまたいで機能します。 `turnId`は、同じ会話内で一意である必要があるだけで、会話間で再利用できます。 例えば、`conversationID` `conv-001`と`conv-002`の会話では、`turn-001`を`turnID`として使用できます。
+
+
+#### プロンプト
+
+プロンプトは、エージェントに送信された入力です。 ほとんどの顧客シナリオでは、この入力はユーザーの質問、リクエスト、命令、またはメッセージです。
+
+プロンプトは次の表現を使用します：`conversation.prompt`
+
+重要なプロンプトフィールドは次のとおりです。
+
+| フィールド | 意味 |
+|---|---|
+| `prompt.source` | 誰が、何をプロンプトコンテンツとして制作したのか、一般的にはエンドユーザーです。 |
+| `prompt.raw[]` | 1つ以上の生コンテンツセグメント。 |
+| `prompt.raw[].text` | 実際のプロンプトテキストまたはコンテンツへのリンク（スクリーンショットなど）。 |
+| `prompt.raw[].purpose` | ユーザー入力やリンクなど、コンテンツの目的。 |
+
+1つのプロンプトに複数の生セグメントを含めることができます。 例えば、ユーザーがテキストを入力し、URLを含めるとします。
+
+* `Prompt`
+  * `"What is the capital of France"`
+  * `"https://example.com/france"`
+
+
+#### 応答
+
+応答とは、エージェントまたは他の応答者から返されるコンテンツです。
+
+`conversation.response`一意の`responseID`は応答を表します。
+
+重要な応答フィールドは次のとおりです。
+
+| フィールド | 意味 |
+|---|---|
+| `response.source` | 誰が、何が、反応を生んだのか。 |
+| `response.raw[]` | 1つ以上のレスポンシブコンテンツセグメント |
+| `response.raw[].text` | 応答テキストまたはコンテンツ。 |
+| `response.raw[].purpose` | コンテンツセグメントの目的。 |
+
+文書化されたソースタイプには、次のものが含まれます。
+
+<!-- randy buck to provide additional details -->
+
+| ソース | 意味 |
+|---|----|
+| `bot` | 自動エージェント応答： |
+| `canned` | 事前定義済みまたはテンプレート化された応答。 |
+| `concierge` | 人間のエージェント応答： |
+| `end-user` | 該当する場合、人間が生成したコンテンツ： |
+
+#### フィードバック
+
+フィードバックとは、インタラクションに対するユーザーの明示的な評価または反応を指します。
+
+フィードバック構造に含まれるもの：`conversation.feedback`。
+
+例：
+
+* `feedback.raw[].text: "Great help"`
+* `feedback.rating.score:` 1
+* `feedback.rating.classification`: `"Thumbs Up"`
+* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
+
+文書化された評価スコアの範囲は`-1.0`から`1.0`です。
+
+フィードバックイベントは、`eventType = "conversation.feedback"`を使用してフィードバック専用イベントとして表すことができます。
+
+フィードバックが特定のターンに適用される場合は、会話ブレンダーがフィードバックを関連するインタラクションに関連付けられるように、適切な`conversationID`と`turnID`を保持します。
+
+
+#### シグナル
+
+シグナルとは、会話コンテンツに関する体系化された分析観察のことです。 [信号抽出サービス ](#signal-extraction)は、標準装備の信号を提供します。 シグナルを提供するためにアクションは必要ありませんが、統合の一部としてシグナルを追加できます。
+
+信号には次のフィールドがあります。
+
+| フィールド | 意味 |
+|---|----|
+| `scope` | turnやconversation-to-dateなど、信号の導出に使用される入力範囲。 |
+| `name` | 被写体、インテント、トーン、センチメントなどの信号ID。 製品定義の信号名もサポートされています。 |
+| `type` | 値タイプ：文字列、数値、またはブール値。 |
+| `values[]` | 信号に関連付けられた1つ以上の値。 |
+| `stringValue` | 意図、トーン、被写体などの文字列信号の値。 |
+| `numberValue` | センチメントスコアなどの数値シグナル値。 |
+| `booleanValue` | true/false シグナル値。 |
+| `confidence` | シグナル値に対するオプションのプロデューサーの信頼性（通常は0 ～ 1の間）。 |
+| `qualifiers[]` | シグナル値にコンテキストを追加するオプション記述子。 |
+| `metadata[]` | オプションのプロデューサー定義キー/値メタデータ。 |
+
+
+信号抽出サービスは、信号データセットの`signals` オブジェクトにデータを入力します。
+
+以前の`signals[].attributes.{subjects,intents,tones,sentiment}` コンテナは非推奨です。
+
+#### ソースタイプ
+
+イベント内の各`prompt`、`response`または`feedback` オブジェクトに`source`の値を設定する必要があります。 どんな値でも構いません。 データの出所を把握するのに役立つ値を使用します。 次に例を示します。
+
+| 値 | 説明 |
+|---|---|
+| `end-user` | 人間によるユーザー入力： |
+| `agent` | エージェント入力： |
+| `bot` | 自動エージェント応答： |
+| `canned-prompt` | 事前に定義/テンプレート化された応答： |
+| `concierge` | 人間のエージェント応答： |
+
+#### 目的の種類（生テキスト）
+
+`purpose`属性の値は、`prompt`、`response`、または`feedback` オブジェクト内の`raw` オブジェクトの任意の要素に設定する必要があります。 任意の文字列値を使用できます。 このフィールドは、生のテキストに保存されている内容を区別するために使用されます。 有用な値は次のとおりです。他の値も同様に有効です。
+
+| 値 | 説明 |
+|---|---|
+| `free-form-text` | フリーフォームテキスト : |
+| `screenshot` | スクリーンショットの詳細： |
+| `attachment` | 添付ファイルの詳細： |
+| `link` | 外部リンク。 |
+| `url` | URL: |
+| `image-link` | リンクから画像へ。 |
+| `citation` | 引用： |
+| `media` | メディア： |
+
+
+
+#### 会話
+
+会話オブジェクトの詳細については、以下を参照してください。
+
++++ 詳細 
+
+| フィールドパス（ドット表記法） | タイプ | 値の例 | メモ |
+|---|---|---|---|
+| `conversationID` | string | `"conv-001"` | 複数のターンを一緒にグループ化します。 |
+| `conversationName` | string | `"France Geography Q&A"` | **新規。** 全体のコンテキストを表す会話に付けられた名前。 |
+| `turnID` | string | `"turn-001"` | このターンの一意のID。 |
+| `prompt.source` | string | `"end-user"` | プロンプトのSource、その他のオプションには、キャッシュ値、定型値などが含まれます。 |
+| `prompt.raw[]` | 配列 | 以下のRaw オブジェクトを参照してください | 生のプロンプトデータ： |
+| `prompt.raw[].text` | string | `"What is the capital of France?"` | 実際のテキストコンテンツ： |
+| `prompt.raw[].purpose` | string | `"User Input"` | このテキストセグメントの目的。 |
+| `response.source` | string | `"bot"` | 応答のSource。 |
+| `response.raw[]` | 配列 | 以下のRaw オブジェクトを参照してください | 生の応答データ： |
+| `response.raw[].text` | string | `"The capital of France is Paris."` | 応答テキストコンテンツ： |
+| `response.raw[].purpose` | string | `"main"` | レスポンスセグメントの目的。その他のオプションには、リンク、写真などが含まれます。 |
+| `feedback.source` | string | `"end-user"` | Source of feedback。 |
+| `feedback.raw[]` | 配列 | 以下のRaw オブジェクトを参照してください | 生のフィードバックデータ : |
+| `feedback.raw[].text` | string | `"Great help"` | フィードバックテキスト： |
+| `feedback.raw[].purpose` | string | `"free-form text"` | フィードバックセグメントの目的。スクリーンショットやメディアなど、他のオプションも考えられます |
+| `feedback.rating.score` | number | `1` | `-1.0`から`1.0`までの数値の評価スコア。 |
+| `feedback.rating.classification` | string | `"Thumbs Up"` | レーティング分類： |
+| `feedback.rating.reasons[]` | 配列 | `["Accurate", "Quick response"]` | 評価理由の配列。 |
+| `signals[]` | 配列 | 以下の信号オブジェクトを参照してください | このイベントとこれまでの会話にもとづいて導き出されたシグナルです。 各エントリは、独自のスコープを持つ単一の名前付き信号です。 |
+| `signals[].scope` | string | `"turn"` | この一連のシグナルが導き出される入力の範囲（ターン、会話の最新、最後のN ターン、フィードバック）。 |
+| `signals[].attributes` | オブジェクト | 以下の属性を参照してください | **非推奨です。** 信号属性のコンテナ。 各属性は、値または値を含むオブジェクトです。 これは、シグナルを生成するために使用されるマシンラーニング/エージェント情報の母集団をサポートする予想されるニーズに対応するためです。 |
+| `signals[].attributes.subjects` | オブジェクト | 以下の被写体を参照 | **非推奨です。** サブジェクト コンテナ。 |
+| `signals[].attributes.subjects.values[]` | 配列 | 以下の件名の値を参照 | **非推奨です。** 件名の値の配列。 |
+| `signals[].attributes.subjects.values[].phrase` | string | `"product pricing"` | **非推奨です。** スコープ付き入力から抽出されたフレーズまたはキーワード。 |
+| `signals[].attributes.subjects.values[].qualifiers[]` | 配列 | `["important", "urgent"]` | **非推奨です。** フレーズの修飾子のリスト |
+| `signals[].attributes.intents` | オブジェクト | 以下のインテントを参照 | **非推奨です。** インテントコンテナ： |
+| `signals[].attributes.intents.values[]` | 配列 | `["make a purchase", "learn more"]` | **非推奨です。** スコープ付き入力から派生したインテント。 |
+| `signals[].attributes.tones` | オブジェクト | 以下のトーンを参照してください | **非推奨です。** トーンコンテナ： |
+| `signals[].attributes.tones.values[]` | 配列 | `["thrilled", "contemplative"]` | **非推奨です。** 範囲を指定した入力から派生したトーン。 |
+| `signals[].attributes.sentiment` | オブジェクト | 以下のセンチメントを参照してください | **非推奨です。** センチメントコンテナ： |
+| `signals[].attributes.sentiment.value` | number | `0.71` | **非推奨です。** センチメントを示す`-1` （負）から`1` （正）までのスコア。 |
+| `signals[].name` | string | `"sentiment"` | **New** （非推奨の`attributes` コンテナに置き換わります）。 このシグナルの識別子（例：「被写体」、「インテント」、「トーン」、「センチメント」、またはプロデューサー定義の名前）。 プロデューサーは、スキーマを変更することなく新しい信号タイプを追加できます。 |
+| `signals[].type` | string | `"number"` | **新規。** このシグナルの値のデータ型（`string`、`number`または`boolean`）。 `values[]`の各エントリに入力される入力値フィールドを消費者に示します。 |
+| `signals[].values[]` | 配列 | 以下のvalues オブジェクトを参照してください | この信号の1つ以上の値。 |
+| `signals[].values[].stringValue` | string | `"curious"` | `type`が文字列の場合に入力されます。 意図、トーン、抽出されたフレーズなどのカテゴリ値/ |
+| `signals[].values[].numberValue` | number | `0.71` | `type`が数値の場合に入力されます。 例えば、`-1`から`1`までのセンチメントスコア、または適用度/ |
+| `signals[].values[].booleanValue` | ブール型 | `true` | `type`がブール値の場合に入力されます。 `true` / `false` フラグ |
+| `signals[].values[].confidence` | number | `0.9` | **新規。** プロデューサーがこの値に割り当てる信頼度（`0`から`1`まで）。 |
+| `signals[].values[].qualifiers[]` | 配列 | `["important", "urgent"]` | この値の追加の記述子。キーワードと同様ですが、より意味のある/ |
+| `signals[].values[].metadata[]` | 配列 | 以下のパラメーターを参照してください | **新規。** この値に対するプロデューサー定義のメタデータをキーと値のペアとして使用します（例：signal/を生成したML/agentに関するコンテキスト）。 |
+
++++
+
+
 
 ### エージェント情報フィールドグループ
 
@@ -77,7 +294,7 @@ ht-degree: 6%
 | `skills[].score` | number | `0.95` | スキルのマッチング結果のスコア |
 | `skills[].failed` | ブール型 | `false` | スキルの実行に失敗したことを示すフラグ |
 | `skills[].errorReason` | string | `"timeout"` | `failed`がtrueの場合、スキルが失敗した理由 |
-| `skills[].sequenceNumber` | 整数 | `1` | サブエージェントが並行して実行されるため、単一のエージェント実行内でこのスキルコールのインデックスが単調に増加します。これはターン・グローバルではありません。 消費者は`agentID`、次いで`sequenceNumber`、`timestamp`をタイブレークとして注文します。 オプション |
+| `skills[].sequenceNumber` | 整数 | `1` | 単一のエージェント実行内のこのスキルコールのインデックスを単調に増加させます。 サブエージェントが並行して実行されるので、このインデックスはターン・グローバルではありません。 消費者は`agentID`、次いで`sequenceNumber`、`timestamp`をタイブレークとして注文します。 オプション |
 | `skills[].timestamp` | string （date-time） | `"2026-09-11T00:03:15Z"` | スキルが呼び出された時間（ISO 8601 UTC）。 `sequenceNumber`の後にキーを注文しています。 プロデューサーは必ずこれを入力する必要があります |
 | `skills[].skillSource` | string | `"inline"` | スキル定義がランタイムに配信された方法：`inline` （コンテキストにインラインで読み込まれた）または`deferred` （オンデマンドで読み込まれた） |
 | `skills[].executionContext` | string | `"inline"` | スキルが呼び出し元エージェントに対して実行される場所：`inline`または`forked` （分岐されたサブエージェントコンテキストで実行） |
@@ -207,176 +424,6 @@ ht-degree: 6%
 
 +++
 
-
-### 会話イベントフィールドグループ
-
-**[!UICONTROL 会話イベント]** フィールドグループは必須フィールドグループであり、`conversation` オブジェクトを使用します。
-
-会話オブジェクトは、次のデータをキャプチャします。
-
-#### 会話
-
-一意の`conversationID`が会話を識別します。 例：`conversationID = "conv-001"`。 スキーマは`conversationName`もサポートしています。 会話の全体的なコンテキストを説明する、人間が読み取れる名前（例：`France Geography Q&A`）。 会話名は自動生成されますが、生成された名前を更新できます。 会話名も`signals[].name`に入力されます。
-
-`conversationID`を使用すると、関連するすべてのturns イベントを同じ会話型エクスペリエンスにグループ化できます。
-
-#### ターン
-
-ターンとは、会話内のひとつのインタラクションサイクルのことです。
-
-`turnID`一意の`turnID`はターンを識別します。 次に例を示します。
-
-`conversationID = "conv-001"`
-`turnID = "turn-001"`
-
-同じ`conversationID`と`turnID`を使用して、そのターンに関連付けられたプロンプト、応答、フィードバックを関連付けます。 この相関関係は、別々に配信されるか、異なるデータセットに格納されるレコードをまたいで機能します。 `turnId`は、同じ会話内で一意である必要があるだけで、会話間で再利用できます。 例えば、`conversationID` `conv-001`と`conv-002`の会話では、`turn-001`を`turnID`として使用できます。
-
-
-#### プロンプト
-
-プロンプトは、エージェントに送信された入力です。 ほとんどの顧客シナリオでは、この入力はユーザーの質問、リクエスト、命令、またはメッセージです。
-
-プロンプトは次の表現を使用します：`conversation.prompt`
-
-重要なプロンプトフィールドは次のとおりです。
-
-| フィールド | 意味 |
-|---|---|
-| `prompt.source` | 誰が、何をプロンプトコンテンツとして制作したのか、一般的にはエンドユーザーです。 |
-| `prompt.raw[]` | 1つ以上の生コンテンツセグメント。 |
-| `prompt.raw[].text` | 実際のプロンプトテキストまたはコンテンツへのリンク（スクリーンショットなど）。 |
-| `prompt.raw[].purpose` | ユーザー入力やリンクなど、コンテンツの目的。 |
-
-1つのプロンプトに複数の生セグメントを含めることができます。 例えば、ユーザーがテキストを入力し、URLを含めるとします。
-
-* `Prompt`
-  * `"What is the capital of France"`
-  * `"https://example.com/france"`
-
-
-#### 応答
-
-応答とは、エージェントまたは他の応答者から返されるコンテンツです。
-
-`conversation.response`一意の`responseID`は応答を表します。
-
-重要な応答フィールドは次のとおりです。
-
-| フィールド | 意味 |
-|---|---|
-| `response.source` | 誰が、何が、反応を生んだのか。 |
-| `response.raw[]` | 1つ以上のレスポンシブコンテンツセグメント |
-| `response.raw[].text` | 応答テキストまたはコンテンツ。 |
-| `response.raw[].purpose` | コンテンツセグメントの目的。 |
-
-文書化されたソースタイプには、次のものが含まれます。
-
-<!-- randy buck to provide additional details -->
-
-| ソース | 意味 |
-|---|----|
-| `bot` | 自動エージェント応答： |
-| `canned` | 事前定義済みまたはテンプレート化された応答。 |
-| `concierge` | 人間のエージェント応答： |
-| `end-user` | 該当する場合、人間が生成したコンテンツ： |
-
-#### フィードバック
-
-フィードバックとは、インタラクションに対するユーザーの明示的な評価または反応を指します。
-
-フィードバック構造に含まれるもの：`conversation.feedback`。
-
-例：
-
-* `feedback.raw[].text: "Great help"`
-* feedback.rating.score: 1
-* feedback.rating.classification: &quot;Thumbs Up&quot;
-* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
-
-文書化された評価スコアの範囲は`-1.0`から`1.0`です。
-
-フィードバックイベントは、`eventType = "conversation.feedback"`を使用してフィードバック専用イベントとして表すことができます。
-
-フィードバックが特定のターンに適用される場合は、会話ブレンダーがフィードバックを関連するインタラクションに関連付けられるように、適切な`conversationID`と`turnID`を保持します。
-
-
-#### シグナル
-
-シグナルとは、会話コンテンツに関する体系化された分析観察のことです。 Signal サービスは、標準の信号を提供します。 シグナルを提供するためにアクションは必要ありませんが、統合の一部としてシグナルを追加できます。
-
-<!-- randy buck to provide additional details -->
-
-信号には次のフィールドがあります。
-
-| フィールド | 意味 |
-|---|----|
-| `scope` | turnやconversation-to-dateなど、信号の導出に使用される入力範囲。 |
-| `name` | 被写体、インテント、トーン、センチメントなどの信号ID。 製品定義の信号名もサポートされています。 |
-| `type` | 値タイプ：文字列、数値、またはブール値。 |
-| `values[]` | 信号に関連付けられた1つ以上の値。 |
-| `stringValue` | 意図、トーン、被写体などの文字列信号の値。 |
-| `numberValue` | センチメントスコアなどの数値シグナル値。 |
-| `booleanValue` | true/false シグナル値。 |
-| `confidence` | シグナル値に対するオプションのプロデューサーの信頼性（通常は0 ～ 1の間）。 |
-| `qualifiers[]` | シグナル値にコンテキストを追加するオプション記述子。 |
-| `metadata[]` | オプションのプロデューサー定義キー/値メタデータ。 |
-
-
-信号抽出サービスは、信号データセットの`signals` オブジェクトにデータを入力します。
-
-以前の`signals[].attributes.{subjects,intents,tones,sentiment}` コンテナは非推奨です。
-
-#### 会話
-
-会話オブジェクトの詳細については、以下を参照してください。
-
-+++ 詳細 
-
-| フィールドパス（ドット表記法） | タイプ | 値の例 | メモ |
-|---|---|---|---|
-| `conversationID` | string | `"conv-001"` | 複数のターンをグループ化 |
-| `conversationName` | string | `"France Geography Q&A"` | **新規。** 全体のコンテキストを表す会話に付けられた名前 |
-| `turnID` | string | `"turn-001"` | このターンの一意のID |
-| `prompt.source` | string | `"end-user"` | プロンプトのSource、その他のオプションには、キャッシュ値、定型値などが含まれます。 |
-| `prompt.raw[]` | 配列 | 以下のRaw オブジェクトを参照してください | 生のプロンプト データ |
-| `prompt.raw[].text` | string | `"What is the capital of France?"` | 実際のテキストコンテンツ |
-| `prompt.raw[].purpose` | string | `"User Input"` | このテキストセグメントの目的 |
-| `response.source` | string | `"bot"` | 応答のSource |
-| `response.raw[]` | 配列 | 以下のRaw オブジェクトを参照してください | 生の応答データ |
-| `response.raw[].text` | string | `"The capital of France is Paris."` | 応答テキストコンテンツ |
-| `response.raw[].purpose` | string | `"main"` | レスポンスセグメントの目的。その他のオプションには、リンク、写真などが含まれます。 |
-| `feedback.source` | string | `"end-user"` | Source of feedback |
-| `feedback.raw[]` | 配列 | 以下のRaw オブジェクトを参照してください | 生のフィードバックデータ |
-| `feedback.raw[].text` | string | `"Great help"` | フィードバックテキスト |
-| `feedback.raw[].purpose` | string | `"free-form text"` | フィードバックセグメントの目的。スクリーンショットやメディアなど、他のオプションも考えられます |
-| `feedback.rating.score` | number | `1` | -1.0から1.0までの数値レーティングスコア |
-| `feedback.rating.classification` | string | `"Thumbs Up"` | 評定分類 |
-| `feedback.rating.reasons[]` | 配列 | `["Accurate", "Quick response"]` | 評価理由の配列 |
-| `signals[]` | 配列 | 以下の信号オブジェクトを参照してください | このイベントとこれまでの会話にもとづいて導き出されたシグナルです。 各エントリは、独自のスコープを持つ1つの名前付き信号です |
-| `signals[].scope` | string | `"turn"` | この一連のシグナルが導き出される入力の範囲（ターン、会話の最新、最後のN ターン、フィードバック） |
-| `signals[].attributes` | オブジェクト | 以下の属性を参照してください | **非推奨です。** 信号属性のコンテナ。 各属性は、値または値を含むオブジェクトです。 これは、シグナルを生成するために使用されるマシンラーニング/エージェント情報の母集団をサポートする予想されるニーズに対応するためです。 |
-| `signals[].attributes.subjects` | オブジェクト | 以下の被写体を参照 | **非推奨です。** 被写体コンテナ |
-| `signals[].attributes.subjects.values[]` | 配列 | 以下の件名の値を参照 | **非推奨です。** 件名の値の配列 |
-| `signals[].attributes.subjects.values[].phrase` | string | `"product pricing"` | **非推奨です。** 範囲を指定した入力から抽出されたフレーズまたはキーワード |
-| `signals[].attributes.subjects.values[].qualifiers[]` | 配列 | `["important", "urgent"]` | **非推奨です。** フレーズの修飾子のリスト |
-| `signals[].attributes.intents` | オブジェクト | 以下のインテントを参照 | **非推奨です。** インテントコンテナ |
-| `signals[].attributes.intents.values[]` | 配列 | `["make a purchase", "learn more"]` | **非推奨です。** スコープ付き入力から派生したインテント |
-| `signals[].attributes.tones` | オブジェクト | 以下のトーンを参照してください | **非推奨です。** トーンコンテナ |
-| `signals[].attributes.tones.values[]` | 配列 | `["thrilled", "contemplative"]` | **非推奨です。** 範囲指定された入力から派生したトーン |
-| `signals[].attributes.sentiment` | オブジェクト | 以下のセンチメントを参照してください | **非推奨です。** センチメントコンテナ |
-| `signals[].attributes.sentiment.value` | number | `0.71` | **非推奨です。** センチメントを示す–1 （負）から1 （正）のスコア |
-| `signals[].name` | string | `"sentiment"` | **New** （非推奨の`attributes` コンテナに置き換わります）。 このシグナルの識別子（例：「被写体」、「インテント」、「トーン」、「センチメント」、またはプロデューサー定義の名前）。プロデューサーは、スキーマを変更することなく、新しいシグナルタイプを追加できます |
-| `signals[].type` | string | `"number"` | **新規。** このシグナルの値のデータ型（`string`、`number`または`boolean`） — `values[]`の各エントリに入力される入力値フィールドを消費者に伝えます |
-| `signals[].values[]` | 配列 | 以下のvalues オブジェクトを参照してください | この信号の1つ以上の値 |
-| `signals[].values[].stringValue` | string | `"curious"` | `type`が「文字列」の場合に入力されます。意図、トーン、抽出されたフレーズなどのカテゴリ値です |
-| `signals[].values[].numberValue` | number | `0.71` | `type`が「数値」の場合に入力されます。例えば、-1から1までのセンチメントスコアや、適用度などです |
-| `signals[].values[].booleanValue` | ブール型 | `true` | `type`が「ブール値」 — true/false フラグの場合に入力 |
-| `signals[].values[].confidence` | number | `0.9` | **新規。** プロデューサーがこの値に割り当てる信頼性（0から1まで） |
-| `signals[].values[].qualifiers[]` | 配列 | `["important", "urgent"]` | キーワードと同様ですが、より意味のある、この値の追加の記述子 |
-| `signals[].values[].metadata[]` | 配列 | 以下のパラメーターを参照してください | **新規。** この値に対するプロデューサー定義のメタデータをキーと値のペアとして（例：シグナルを生成したML/エージェントに関するコンテキスト） |
-
-+++
-
 ### 追加のフィールドグループ
 
 プロンプト、応答、フィードバックのデータセットに使用するスキーマに、オプションのフィールドグループを追加できます。 次に例を示します。
@@ -396,37 +443,9 @@ ht-degree: 6%
 
 | 値 | 説明 |
 |---|---|
-| `conversation.turn` | プロンプトと応答による完全な会話の順番 |
-| `conversation.recommendation` | 会話ベースのレコメンデーション |
-| `conversation.feedback` | フィードバック専用イベント |
-
-
-### ソースタイプ
-
-イベント内の各`prompt`、`response`、または`feedback` オブジェクトに対して、`source`に次のいずれかの値を設定する必要があります。
-
-| 値 | 説明 |
-|---|---|
-| `end-user` | 人間によるユーザー入力 |
-| `bot` | 自動エージェント応答 |
-| `canned` | 事前に定義/テンプレート化された応答 |
-| `concierge` | 人間のエージェントの応答 |
-
-### 目的の種類（生テキスト）
-
-`prompt`、`response`、または`feedback` オブジェクト内の`raw` オブジェクトの任意の要素で、`purpose`属性に次のいずれかの値を設定する必要があります。
-
-<!-- randy buck to provide details -->
-
-| 値 | 説明 |
-|---|---|
-| `User Input` | プライマリユーザー入力 |
-| `main` | メインの応答コンテンツ |
-| `advertisement` | プロモーションコンテンツ |
-| `citation` | 参照/ソースリンク |
-| `link` | 外部リンク |
-| `image` | 画像参照 |
-| `enum picker` | 構造化されたフィードバックの選択 |
+| `conversation.turn` | プロンプトと回答にもとづき、会話を完成させます。 |
+| `conversation.recommendation` | 会話ベースのレコメンデーション： |
+| `conversation.feedback` | 会話フィードバック専用イベント： |
 
 
 ### 例
@@ -637,7 +656,25 @@ ht-degree: 6%
 
 ## 信号抽出
 
-シグナル抽出はデータ収集後に行われます。 エージェントのアプリケーションまたはサービスは、追加のシグナルを入力しません。
+シグナル抽出はデータ収集後に行われます。 エージェントのアプリケーションまたはサービスは、追加のシグナルを入力できます。
+
+### シグナル名
+
+`signals[].name`の値を設定する必要があります。 任意の文字列値を使用できます。ただし、Adobeは、信号抽出プロセス中に次の名前を入力します。 これらの値は上書きされるので、送信するシグナルに`name`にこれらの値を使用しないでください。
+
+* `intents`
+* `sentiment`
+* `tones`
+* `topics`
+* `keywords`
+* `title`
+
+### シグナルスコープ
+
+任意の文字列値を使用できます。ただし、Adobeは、信号抽出プロセス中に次のスコープを生成します。 これらの値は上書きされるので、送信するシグナルに`scope`にこれらの値を使用しないでください。
+
+* `turn`
+* `feedback`
 
 +++ シグナルを含むターンイベントの例
 
