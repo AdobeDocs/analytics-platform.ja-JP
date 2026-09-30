@@ -74,9 +74,9 @@ B2B データの個人ベースの検索をサポートする接続を適切に�
 1. 接続に追加するルックアップデータセットごとに、**[!UICONTROL データセットを編集]** ダイアログの&#x200B;**[!UICONTROL キー]**&#x200B;と&#x200B;**[!UICONTROL 一致するキー]**&#x200B;を使用して、イベントデータセットとの関係を明示的に定義する必要があります。
 1. 個人ベースのB2B ルックアップ用に変換するルックアップデータセットごとに、**[!UICONTROL データセットの変換]**&#x200B;を有効にして、個人ベースのルックアップ用にデータが変換されるようにします。 詳細については、[B2B ルックアップ用データセットの変換](/help/connections/transform-datasets-b2b-lookups.md)を参照してください。
 
-   ![ キー – 一致するキー](assets/key-matchingkey.png)
+   ![&#x200B; キー – 一致するキー](assets/key-matchingkey.png)
 
-   以下の表は、各データセットの[!UICONTROL 人物ID]、[!UICONTROL  キー]、[!UICONTROL 一致するキー]の値の例の概要を示しています。
+   以下の表は、各データセットの[!UICONTROL 人物ID]、[!UICONTROL &#x200B; キー]、[!UICONTROL 一致するキー]の値の例の概要を示しています。
 
    >[!IMPORTANT]
    >
@@ -88,18 +88,18 @@ B2B データの個人ベースの検索をサポートする接続を適切に�
    |---|---|---|---|
    | B2B アクティビティデータセット | SourceKey <br/>**personKey.sourceKey** | | |
    | B2B人物データセット | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**❶ |
-   | B2B商談データセット | | Source キー&#x200B;<br/>**opportunityKey.sourceKey**❷ | SourceKey<br/> （B2B商談関係データセット） <br/>**opportunityKey.sourceKey**❷ |
-   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**❸<br/> |
-   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/> （B2B マーケティングリスト メンバーデータセット） <br/>**marketingListKey.sourceKey**❹ |
-   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**❺ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**❺ |
-   | B2B オポチュニティと人物の関係データセット | | SourceKey <br/>**personKey.sourceKey** y❻ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**❻ |
-   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❼ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**❼ |
-   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**❽ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**❽ |
+   | B2B アカウントデータセット | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br> （B2B Person Dataset） <br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | B2B商談データセット | | Source キー&#x200B;<br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/> （B2B商談関係データセット） <br/>**opportunityKey.sourceKey**&#x200B;❷ |
+   | B2B キャンペーンデータセット | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/> （B2B キャンペーンメンバーデータセット） <br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | B2B マーケティングリストデータセット | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/> （B2B マーケティングリスト メンバーデータセット） <br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | B2B アカウント人物関係データセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❺ |
+   | B2B オポチュニティと人物の関係データセット | | SourceKey <br/>**personKey.sourceKey** y❻ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❻ |
+   | B2B キャンペーンメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❼ |
+   | B2B マーケティングリストメンバーデータセット | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source キー<br/> （イベントデータセット） <br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 
-データセットの設定の設定方法について詳しくは、[ データセットの追加と設定](../../connections/create-connection.md)を参照してください。
+データセットの設定の設定方法について詳しくは、[&#x200B; データセットの追加と設定](../../connections/create-connection.md)を参照してください。
 
 
 ## データビュー
@@ -112,7 +112,7 @@ Workspaceプロジェクトを構築する際に、適切なB2B ディメンシ�
 
 >[!IMPORTANT]
 >
->以下のテーブルの指標とその値（**コンポーネント名**、**データセット**、**データセットの種類**、および&#x200B;**[!UICONTROL スキーマパス ]）**&#x200B;は&#x200B;**例**&#x200B;です。 特定の状況に合わせて、関連するB2B指標（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
+>以下のテーブルの指標とその値（**コンポーネント名**、**データセット**、**データセットの種類**、および&#x200B;**[!UICONTROL スキーマパス &#x200B;]）**&#x200B;は&#x200B;**例**&#x200B;です。 特定の状況に合わせて、関連するB2B指標（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
 >
 
 | コンポーネント名 | データセット | データタイプ | スキーマパス |
@@ -131,7 +131,7 @@ Workspaceプロジェクトを構築する際に、適切なB2B ディメンシ�
 
 >[!IMPORTANT]
 >
->次の表のディメンションとその値（**コンポーネント名**、**データセット**、**データセットの種類**、および&#x200B;**[!UICONTROL スキーマパス ]）**&#x200B;は&#x200B;**例**&#x200B;です。 特定の状況に合わせて、B2B ディメンション（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
+>次の表のディメンションとその値（**コンポーネント名**、**データセット**、**データセットの種類**、および&#x200B;**[!UICONTROL スキーマパス &#x200B;]）**&#x200B;は&#x200B;**例**&#x200B;です。 特定の状況に合わせて、B2B ディメンション（コンポーネント名、データセット、データタイプ、スキーマパス）を定義します。
 >
 
 | コンポーネント名 | データセット | データタイプ | スキーマパス |
@@ -157,5 +157,5 @@ Workspaceプロジェクトを構築する際に、適切なB2B ディメンシ�
 
 以下は、上記の接続とデータビューに依存するサンプルプロジェクトのスクリーンショットです。 ビジュアライゼーションの説明では、変換されたB2B ルックアップデータに依存するフリーフォームテーブルのビジュアライゼーションについて説明します。
 
-![ サンプルプロジェクト ](assets/sample-workspace-project.png)
+![&#x200B; サンプルプロジェクト &#x200B;](assets/sample-workspace-project.png)
 
