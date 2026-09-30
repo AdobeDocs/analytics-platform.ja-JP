@@ -63,7 +63,7 @@ Experience Platformの関連するB2B データセットをすべて含めるよ
 -->
 
 
-B2B ルックアップスキーマ、プロファイルスキーマ、イベントスキーマの関係は、Experience Platform内のB2B セットアップで定義されます。 [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)のスキーマと[Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b)の2つのスキーマ間の多対一のリレーションシップを定義します。
+B2B ルックアップスキーマ、プロファイルスキーマ、イベントスキーマの関係は、Experience Platform内のB2B セットアップで定義されます。 [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)のスキーマと[Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/relationship-b2b)の2つのスキーマ間の多対一のリレーションシップを定義します。
 
 
 B2B データの個人ベースの検索をサポートする接続を適切に設定するには、次の図を参照して概要を説明し、次の手順に従います。
