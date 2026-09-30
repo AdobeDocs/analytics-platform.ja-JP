@@ -7,25 +7,33 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 TQID: https://experienceleague.adobe.com/DWTWJ2Bd9iEPO2awiiOLcUzUGPc-clZul3dNFcyWvxk
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6bcbf10e6bff660f57f598f6cf75b43eb75c7db3
 workflow-type: tm+mt
-source-wordcount: 459
+source-wordcount: '459'
 ht-degree: 88%
-
 ---
-
 # プロジェクトの作成 {#create-projects}
 
 
@@ -49,15 +57,15 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 * プロジェクトに[パネル](/help/analysis-workspace/c-panels/panels.md)を追加します。 例えば、 **[!DNL Example Panel]** は ➊ です。
 
 * パネルに[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を追加します。 例：
-   * **[!DNL Line Graph]**&#x200B;[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
-   * **[!DNL Countries]**&#x200B;[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
+  * **[!DNL Line Graph]**&#x200B;[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
+  * **[!DNL Countries]**&#x200B;[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
 * ビジュアライゼーションに[コンポーネント](/help/components/overview.md)を追加します。 例：
-   * **[!DNL Store Country]**&#x200B;[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
-   * **[!DNL People]**&#x200B;[&#x200B;指標](/help/components/apply-create-metrics.md)➎
-   * **[!DNL Avg Order Value]**&#x200B;[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
-   * **[!DNL Mobile App Sessions]**&#x200B;[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
-   * **[!DNL Last Month]**&#x200B;[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
-   * **[!DNL Example]**&#x200B;[&#x200B;注釈](/help/components/annotations/overview.md)➒
+  * **[!DNL Store Country]**&#x200B;[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
+  * **[!DNL People]**&#x200B;[&#x200B;指標](/help/components/apply-create-metrics.md)➎
+  * **[!DNL Avg Order Value]**&#x200B;[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
+  * **[!DNL Mobile App Sessions]**&#x200B;[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
+  * **[!DNL Last Month]**&#x200B;[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
+  * **[!DNL Example]**&#x200B;[&#x200B;注釈](/help/components/annotations/overview.md)➒
 
 
 ## プロジェクト情報および設定 {#project-info-settings}
@@ -76,10 +84,10 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="コメントを許可"
->abstract="有効にすると、Analysis Workspace でプロジェクトの右側のパネルにコメント領域が表示されます。"
+>abstract="有効にすると、Analysis Workspace のプロジェクトの右側のパネルにコメント領域が表示されます。"
 
 
-プロジェクト設定は、現在アクティブなプロジェクトに関するプロジェクトレベルの情報を提供します。
+プロジェクト設定では、現在アクティブなプロジェクトに関するプロジェクトレベルの情報が提供されます。
 
 ![プロジェクト情報および設定ウィンドウ](./assets/projectinfo.png)。
 
@@ -92,11 +100,17 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 | 最終変更日 | プロジェクトの最終変更日。 |
 | タグ | プロジェクトに適用されているタグを一覧表示して、分類を容易にします。 |
 | 説明 | 説明は、プロジェクトの目的を明確にするのに役立ちます。 説明をダブルクリックして編集できます。 |
-| 繰り返しインスタンスをカウント | レポート内でレポートインスタンスがカウントされるかどうかを指定します。 メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。 |
+| 繰り返しインスタンスをカウント | レポート内で繰り返しインスタンスがカウントされるかどうかを指定します。 メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。 |
 | 注釈を表示 | このプロジェクトに対して注釈を表示するかどうかを指定します。 |
-| [プロジェクトカラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Workspace で使用する分類カラーパレットを変更するには、色弱のユーザー向け用に最適化されている既定のパレットを選択するか、カスタムパレットを指定します。 この機能は、ほとんどのビジュアライゼーションを含む Workspace の多くの機能に影響します。 |
-| [表示密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータの量を増やすことができます。 |
-| コメントを許可 | このオプションが有効になっている場合、Analysis Workspace のプロジェクトの右側のパネルでコメント領域が使用できます。 詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。 |
+| [プロジェクトカラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Workspace で使用する分類カラーパレットは、色弱のユーザー向けに最適化された既定のパレットを選択するか、カスタムパレットを指定することで変更できます。 この機能は、ほとんどのビジュアライゼーションを含む Workspace の多くの機能に影響します。 |
+| [表示密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らし、1 画面に表示されるデータ量を増やすことができます。 |
+| コメントを許可 | このオプションが有効になっている場合、Analysis Workspace のプロジェクトの右側のパネルでコメント領域を使用できます。 詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。 |
 
+<!--
 
+Add this to the table above (second-to-last-row) when cached results releases: 
+
+- [Use cached results for faster loading](/help/analysis-workspace/build-workspace-project/cached-results.md) - When enabled, results load faster for 12 hours after someone first opens the project. Data continues to flow in the background. To load the latest results, refresh individual panels or the entire project. -
+
+-->
 
