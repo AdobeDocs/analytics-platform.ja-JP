@@ -40,7 +40,7 @@ Customer Journey Analytics ランディングページには、次のサブタ�
 
 **[!UICONTROL 学習]**：実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。 Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する情報と、組織に固有のアップグレードステップを動的に生成するツールも含まれています。
 
-![CJA ランディングページ左パネル ](assets/cja-landing-page-left-rail.png)
+![CJA ランディングページ左パネル &#x200B;](assets/cja-landing-page-left-rail.png)
 
 
 >[!BEGINSHADEBOX]
@@ -172,7 +172,7 @@ Customer Journey Analyticsへのアップグレードに関する情報にアク
 
 このページは、Adobe AnalyticsからCustomer Journey Analyticsへの完全なアップグレードがまだ完了していないお客様向けです。 組織固有の状況に応じて動的に生成されるアップグレードステップの結果を示すアンケートを提供します。
 
-詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の「組織のアップグレード手順を動的に生成する](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization)」を参照してください。[
+詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の「組織のアップグレード手順を動的に生成する[&#128279;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization)」を参照してください。
 
 ## 好みのランディングページ
 

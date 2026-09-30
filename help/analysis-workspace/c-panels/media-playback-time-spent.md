@@ -54,7 +54,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_****_<br/>_ メディア再生滞在時間パネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。[ メディア再生滞在時間パネル _。![
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ メディア再生滞在時間パネル [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)を参照してください。 メディア再生滞在時間パネル _。
 
 >[!ENDSHADEBOX]
 
@@ -148,7 +148,7 @@ Analysis Workspace では、再生滞在時間は、特定の時点でのメデ�
 
 >[!MORELIKETHIS]
 >
->[ パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[&#x200B; パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
 >[メディア同時視聴者数パネル](media-concurrent-viewers.md)
 >

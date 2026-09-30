@@ -57,7 +57,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_****_<br/>_ アトリビューションパネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/attribution)を参照してください。[ アトリビューションパネル _。![
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ アトリビューションパネル [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/attribution)を参照してください。 アトリビューションパネル _。
 
 >[!ENDSHADEBOX]
 
@@ -92,7 +92,7 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 
    ![選択した複数のディメンションと指標を表示するアトリビューションパネルウィンドウ。](assets/attribution-panel.png)
 
-1. **[!UICONTROL 含まれるモデル]**&#x200B;から1つ以上の[属性モデル ](#attribution-models)を選択し、**[!UICONTROL コンテナ]**&#x200B;から[ コンテナ ](#container)を選択し、比較に使用する&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;から[ ルックバックウィンドウ ](#lookback-window)を選択します。
+1. **[!UICONTROL 含まれるモデル]**&#x200B;から1つ以上の[属性モデル &#x200B;](#attribution-models)を選択し、**[!UICONTROL コンテナ]**&#x200B;から[&#x200B; コンテナ &#x200B;](#container)を選択し、比較に使用する&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;から[&#x200B; ルックバックウィンドウ &#x200B;](#lookback-window)を選択します。
 
 1. 「**[!UICONTROL 作成]**」を選択して、パネル内のビジュアライゼーションを作成します。
 

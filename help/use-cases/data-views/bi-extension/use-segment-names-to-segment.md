@@ -68,18 +68,18 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
 
-   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL filterName is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL filterName is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 基本フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
    1. **[!UICONTROL 検索]** フィールドの下で、**[!UICONTROL 釣り商品]**&#x200B;を選択します。これは、Customer Journey Analyticsで定義されている既存のフィルターの名前です。
-   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 詳細フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;]****[!UICONTROL &#x200B;が&#x200B;]**`1/1/2023`**[!UICONTROL &#x200B;および&#x200B;]****[!UICONTROL &#x200B;が&#x200B;]**`2/1/2023`より前の場合に、**[!UICONTROL &#x200B;項目を表示するようにフィルターを定義します。
+   1. 値&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`1/1/2023`**&#x200B;[!UICONTROL &#x200B;および&#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が&#x200B;]&#x200B;**`2/1/2023`より前の場合に、**&#x200B;項目を表示するようにフィルターを定義します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、**[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL filterName]**&#x200B;を削除します。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、**[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL daterange]**&#x200B;を削除します。
 
    適用された&#x200B;**[!UICONTROL filterName]** フィルターでテーブルが更新されます。 Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc9-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc9-powerbi-final.png)
 
 
 >[!TAB Tableau Desktop]
@@ -105,7 +105,7 @@ Customer Journey Analyticsで使用するセグメントを調べます。
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2023/02/01]**&#x200B;に指定します。
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択して、別のフィルターを追加します。

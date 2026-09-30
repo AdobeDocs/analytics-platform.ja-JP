@@ -47,7 +47,7 @@ Experience Platform Data Mirror Customer Journey Analytics版では、複数のE
 
 ## スキーマ
 
-ミラーリングするデータウェアハウスネイティブテーブルである[ リレーショナルスキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational){target="_blank"}を作成する必要があります。 リレーショナルスキーマを構築する場合は、次の要件が満たされていることを確認します。
+ミラーリングするデータウェアハウスネイティブテーブルである[&#x200B; リレーショナルスキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational){target="_blank"}を作成する必要があります。 リレーショナルスキーマを構築する場合は、次の要件が満たされていることを確認します。
 
 * リレーショナルスキーマのタイプを求めるプロンプトが表示されたら、「手動」オプションを選択します。
 * データのタイプに適したスキーマを選択します。 Experience Platform Data Mirrorは、主に時系列データ（イベントデータなど）に使用されますが、レコードベースのデータ（ルックアップやプロファイル）にも使用できます。
@@ -64,7 +64,7 @@ Experience Platform Data Mirror Customer Journey Analytics版では、複数のE
 ## データセット
 
 スキーマのデータセットを事前に設定することも、ソースコネクタを設定するときにデータセットを作成することもできます。
-事前にデータセットを作成するか、データセットを選択する場合は、先ほど作成したリレーショナル [ スキーマ ](#schema)をデータが使用していることを確認してください。
+事前にデータセットを作成するか、データセットを選択する場合は、先ほど作成したリレーショナル [&#x200B; スキーマ &#x200B;](#schema)をデータが使用していることを確認してください。
 
 
 ## ソースコネクタ
@@ -114,4 +114,4 @@ Experience Platform Data Mirror Customer Journey Analytics版では、複数のE
 >
 >[Data Mirror クイックスタートガイド：リレーショナルデータのミラーと使用](relational.md)
 >[Data Mirror （Experience Platform ドキュメント）](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->[リレーショナルスキーマ （Experience Platform ドキュメント） ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)
+>[リレーショナルスキーマ （Experience Platform ドキュメント） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/relational)

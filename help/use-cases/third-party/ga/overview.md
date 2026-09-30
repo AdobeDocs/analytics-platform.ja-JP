@@ -37,7 +37,7 @@ ht-degree: 70%
 
 >[!BEGINSHADEBOX]
 
-このガイドでは、管理者向けのデータ移行について説明します。 Customer Journey AnalyticsでGA4 レポートを見つけたいアナリストの場合は、[Google Analytics 4からCustomer Journey Analytics](/help/getting-started/ga-to-cja/home.md)への移行および[Customer Journey AnalyticsでのGA4 レポート ](/help/getting-started/ga-to-cja/reports.md)を参照してください。
+このガイドでは、管理者向けのデータ移行について説明します。 Customer Journey AnalyticsでGA4 レポートを見つけたいアナリストの場合は、[Google Analytics 4からCustomer Journey Analytics](/help/getting-started/ga-to-cja/home.md)への移行および[Customer Journey AnalyticsでのGA4 レポート &#x200B;](/help/getting-started/ga-to-cja/reports.md)を参照してください。
 
 >[!ENDSHADEBOX]
 

@@ -63,7 +63,7 @@ Quantum Metricは、ページ読み込みの遅さ、ページ読み込みエラ
 1. [experience.adobe.com](https://experience.adobe.com)にログインします。
 1. **[!UICONTROL データ収集]** > **[!UICONTROL スキーマ]**&#x200B;に移動します。
 1. リストから目的のスキーマを選択します。
-1. 目的のオブジェクトの横にある「![ フィールドを追加」アイコン ](/help/assets/icons/AddCircle.svg)を選択します。 例えば、`Implementation Details`の横です。
+1. 目的のオブジェクトの横にある「![&#x200B; フィールドを追加」アイコン &#x200B;](/help/assets/icons/AddCircle.svg)を選択します。 例えば、`Implementation Details`の横です。
 1. 右側に、必要な[!UICONTROL 名前]を入力します。 例：`qmErrorName`。
 1. 目的の[!UICONTROL 表示名]を入力します。 例：`Quantum Metric error name`。
 1. [!UICONTROL Type]を&#x200B;**[!UICONTROL String]**&#x200B;として選択します。
@@ -82,7 +82,7 @@ return true;
 
 次に、動的に設定されたデータ要素をXDM オブジェクトに追加します。
 
-![量子指標エラー名のスクリーンショット ](assets/error-name.png)
+![量子指標エラー名のスクリーンショット &#x200B;](assets/error-name.png)
 
 ## 手順3:Customer Journey Analyticsのデータビューに1つ以上のディメンションと指標を追加する
 
@@ -94,7 +94,7 @@ return true;
 1. 左側のQuantum Metric friction event フィールドのリストを見つけて、中央の指標エリアにドラッグします。
 1. 右側のペインで、[値を含める/除外](/help/data-views/component-settings/include-exclude-values.md)設定を、追跡する目的のフリクションイベントに設定します。 同じ指標に複数のフリクションイベントを追加して、組み合わせることができます。 また、フリクションイベントフィールドの別のコピーを指標エリアにドラッグして、他のフリクションイベントを別の指標として追跡することもできます。
 1. 必要なすべてのディメンションと指標を作成したら、**[!UICONTROL 保存]**&#x200B;をクリックします。
-1. エラーイベントの完全なリストについては、量子指標のドキュメントを参照してください。 さらに質問がある場合は、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page)からリクエストを送信してください。
+1. エラーイベントの完全なリストについては、量子指標のドキュメントを参照してください。 さらに質問がある場合は、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル &#x200B;](https://community.quantummetric.com/s/public-support-page)からリクエストを送信してください。
 
 ## ステップ 4:Analysis Workspaceの残りのデータでディメンションと指標を使用する
 
@@ -103,10 +103,10 @@ return true;
 1. [experience.adobe.com](https://experience.adobe.com)にログインします。
 1. Customer Journey Analyticsに移動し、上部メニューの&#x200B;**[!UICONTROL Workspace]**&#x200B;を選択します。
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
-1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
+1. [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
 1. 目的のディメンションと指標をWorkspaceキャンバスにドラッグして分析します。
 
-![ フリクショングラフ ](assets/friction-graph.png)
+![&#x200B; フリクショングラフ &#x200B;](assets/friction-graph.png)
 
 考えられる分析のアイデアは次のとおりです。
 

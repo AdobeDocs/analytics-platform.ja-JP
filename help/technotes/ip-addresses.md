@@ -39,7 +39,7 @@ ht-degree: 32%
 
 一部のファイアウォール構成では、アドビのデータ収集サーバーまたはデータにアクセスするためのサーバーの IP アドレスをブロックするものがあります。 このリストの範囲を使用して、組織のファイアウォール設定を変更し、アクセスを許可したり、組織内からデータを送信したりできます。
 
-このページには、アウトバウンドシステムを機能させるために許可リストに追加する必要があるip アドレスが含まれています（例：[ クラウドプロバイダーへのデータの書き出し](/help/analysis-workspace/export/export-cloud.md)）。
+このページには、アウトバウンドシステムを機能させるために許可リストに追加する必要があるip アドレスが含まれています（例：[&#x200B; クラウドプロバイダーへのデータの書き出し](/help/analysis-workspace/export/export-cloud.md)）。
 
 >[!IMPORTANT]
 >
@@ -165,6 +165,6 @@ ht-degree: 32%
 
 >[!MORELIKETHIS]
 >
->Customer Journey Analyticsで使用されている[ ドメイン ](domains.md)
+>Customer Journey Analyticsで使用されている[&#x200B; ドメイン &#x200B;](domains.md)
 >
->CX Enterpriseで使用される[IP アドレス ](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>CX Enterpriseで使用される[IP アドレス &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

@@ -188,7 +188,7 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 | [!UICONTROL レポートツール] | [!UICONTROL Labs のアクセス] | ユーザーは Customer Journey Analytics の「[ラボ](/help/labs/labs.md)」タブにアクセスできます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 注釈の作成] | ユーザーは[注釈](/help/components/annotations/overview.md)を作成できます。 ユーザーは、作成した注釈または共有されている注釈に対してのみ、タグ付け、共有、削除、名前変更を行うことができます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL オーディエンスビュー] | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |
-| [!UICONTROL レポートツール] | [!UICONTROL オーディエンスの作成] | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 Adobe Experience Platformで[ セグメントの管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)が必要です。 |
+| [!UICONTROL レポートツール] | [!UICONTROL オーディエンスの作成] | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 Adobe Experience Platformで[&#x200B; セグメントの管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)が必要です。 |
 | [!UICONTROL レポートツール] | [!UICONTROL データストーリーテリング] | ユーザーは [Workspace プロジェクトに基づいてスライドプレゼンテーションを生成](/help/analysis-workspace/curate-share/generate-slides.md)できます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 監査ログへのアクセス] | [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 任意のユーザーとプロジェクトリンクを共有] | ユーザーは[任意のユーザーとプロジェクトを共有](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)できます。 |
@@ -196,7 +196,7 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 | [!UICONTROL レポートツール] | [!UICONTROL AI アシスタント：製品知識] | ユーザーは [AI アシスタント](../ai-assistant.md)にアクセスして、製品知識を得ることができます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL Data Insights Agent] | AIを活用したデータインサイト用の[Data Insights Agent](../data-analysis-ai.md)にアクセスできます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL インテリジェントキャプション] | ユーザーは[インテリジェントキャプション](/help/analysis-workspace/visualizations/intelligent-captions.md)にアクセスできます |
-| [!UICONTROL レポートツール] | [!UICONTROL MCP アクセス ] | [Customer Journey Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/cja/)へのアクセスを許可します。 |
+| [!UICONTROL レポートツール] | [!UICONTROL MCP アクセス &#x200B;] | [Customer Journey Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/cja/)へのアクセスを許可します。 |
 | [!UICONTROL データビューツール] | [!UICONTROL 完全なテーブルの書き出し] | ユーザーは[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)ことができます。 |
 | [!UICONTROL データビューツール] | [!UICONTROL CJA BI 拡張機能] | ユーザーは [BI 拡張機能](../data-views/bi-extension.md)を使用できます。 |
 

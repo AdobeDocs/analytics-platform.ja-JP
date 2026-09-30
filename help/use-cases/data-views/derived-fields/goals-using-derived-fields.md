@@ -37,7 +37,7 @@ ht-degree: 9%
 
 このユースケースでは、派生フィールドの力を使用して特定のディメンションの目標を設定し、これらの目標をWorkspace プロジェクトで使用する方法について説明します。
 
-派生フィールドについて詳しくない場合は、[ チュートリアル ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja)および[ ドキュメント ](/help/data-views/derived-fields/derived-fields.md)を参照して、概要を確認してください。
+派生フィールドについて詳しくない場合は、[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja)および[&#x200B; ドキュメント &#x200B;](/help/data-views/derived-fields/derived-fields.md)を参照して、概要を確認してください。
 
 
 ## 目標の定義
@@ -60,11 +60,11 @@ ht-degree: 9%
 
 各マーケティングチャネルの月間売上目標を設定します。 次に手順を示します。
 
-1. `Monthly Marketing Channel Revenue Goal (Incremental)`という名前の[ マーケティングチャネル関数テンプレート ](/help/data-views/derived-fields/derived-fields.md#marketing-channels)を使用して、新しい派生フィールドを作成します。
+1. `Monthly Marketing Channel Revenue Goal (Incremental)`という名前の[&#x200B; マーケティングチャネル関数テンプレート &#x200B;](/help/data-views/derived-fields/derived-fields.md#marketing-channels)を使用して、新しい派生フィールドを作成します。
 
 1. URL PARSE ルールとCASE WHEN ルールの組み合わせに基づいて、各マーケティングチャネルを適切に識別するためのすべてのルールを定義します。 次に例を示します。
 
-   ![ マーケティングチャネル派生フィールドのルールの定義](assets/goals-derived-field-marketing-channel-1.png)
+   ![&#x200B; マーケティングチャネル派生フィールドのルールの定義](assets/goals-derived-field-marketing-channel-1.png)
 
 1. **[!UICONTROL カスタム数値]**&#x200B;を設定することで、最終的なCASE WHEN ルールの特定のマーケティングチャネルに対して、毎月の売上目標を表す静的な値を明示的に設定します。 以下の[!DNL Monthly Goal] ルールを参照してください。
 
@@ -88,7 +88,7 @@ Workspace プロジェクトで目標を使用するには、計算指標の機�
 
 これらの計算指標を使用して、フリーフォームテーブルやビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
 
-マーケティング売上目標を示す![ フリーフォームテーブル ](assets/freeform-table-marketing-channel-revenue-goals.png)
+マーケティング売上目標を示す![&#x200B; フリーフォームテーブル &#x200B;](assets/freeform-table-marketing-channel-revenue-goals.png)
 
 
 
@@ -105,4 +105,4 @@ Workspace プロジェクトで目標を使用するには、計算指標の機�
 
 これらの計算指標を使用して、フリーフォームテーブルやビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
 
-マーケティング売上目標を示す![ フリーフォームテーブル ](assets/freeform-table-product-order-goals.png)
+マーケティング売上目標を示す![&#x200B; フリーフォームテーブル &#x200B;](assets/freeform-table-product-order-goals.png)

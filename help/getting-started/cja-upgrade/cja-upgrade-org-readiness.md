@@ -46,7 +46,7 @@ ht-degree: 15%
 ---
 # 組織が Customer Journey Analytics にアップグレードするための準備
 
-アップグレードを成功させる一環として、（[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)で説明しているように）特定の運用上の考慮事項に焦点を当てて組織を準備します。 組織を準備するには、次のことをお勧めします。
+アップグレードを成功させる一環として、（[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)で説明しているように）特定の運用上の考慮事項に焦点を当てて組織を準備します。 組織を準備するには、次のことをお勧めします。
 
 * 主要な関係者からの同意と調整の獲得
 

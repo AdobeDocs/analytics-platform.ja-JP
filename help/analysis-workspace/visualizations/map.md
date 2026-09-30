@@ -74,7 +74,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンの[Map](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)を参照してください。_
+_この記事では、この記事の_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンの[Map](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -82,7 +82,7 @@ Analysis Workspaceの![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]**
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ マップのビジュアライゼーション ](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; マップのビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -90,7 +90,7 @@ Analysis Workspaceの![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]**
 
 ### データビューでのコンテキストラベルの追加
 
-Customer Journey Analytics データビュー設定では、管理者は[ コンテキストラベル ](/help/data-views/component-settings/overview.md)をディメンションまたは指標に追加でき、[!UICONTROL map] ビジュアライゼーションなどのCustomer Journey Analytics サービスは、これらのラベルを目的に使用できます。
+Customer Journey Analytics データビュー設定では、管理者は[&#x200B; コンテキストラベル &#x200B;](/help/data-views/component-settings/overview.md)をディメンションまたは指標に追加でき、[!UICONTROL map] ビジュアライゼーションなどのCustomer Journey Analytics サービスは、これらのラベルを目的に使用できます。
 
 #### マップビジュアライゼーションの緯度と経度に必要なコンテキストラベル
 
@@ -113,7 +113,7 @@ Customer Journey Analytics データビュー設定では、管理者は[ コン
 
    これらのスキーマフィールドがデータビューにディメンションとして存在する場合、コンテキストラベルは自動的に適用され、マップビジュアライゼーションは追加の設定なしで使用します。
 
-   ![ データビューに緯度と経度のスキーマフィールドを追加](assets/dataview-lat-long-default.png)
+   ![&#x200B; データビューに緯度と経度のスキーマフィールドを追加](assets/dataview-lat-long-default.png)
 
 1. （条件付き）緯度と経度データに使用するカスタムディメンションがある場合は、カスタムフィールドにコンテキストラベルを設定できます。
 
@@ -121,17 +121,17 @@ Customer Journey Analytics データビュー設定では、管理者は[ コン
 
    1. 右側のパネルの&#x200B;**[!UICONTROL コンポーネント設定]** セクションの&#x200B;**[!UICONTROL コンテキストラベル]** フィールドで、`Longitude`と入力し、ドロップダウンメニューから選択します。
 
-      ![緯度と経度のコンテキストラベル ](assets/map-context-labels-lat-long.png)
+      ![緯度と経度のコンテキストラベル &#x200B;](assets/map-context-labels-lat-long.png)
 
    1. このプロセスを繰り返して、緯度データを含むディメンションに&#x200B;**[!UICONTROL Latitude]** コンテキストラベルを追加します。
 
-   1. （オプション）デフォルトでは、これらのディメンションはマップのビジュアライゼーションで町または郵便番号レベルに正確であり、Workspace レポートには2つの小数点以下桁が表示されます。 マップのビジュアライゼーションで1 メートル以内に正確に調整し、Workspace レポートで5つの小数点以下桁を表示できます。 精度レベルの調整方法について詳しくは、[ ディメンションの正確な場所の設定](#configure-precise-locations-for-dimensions)を参照してください。
+   1. （オプション）デフォルトでは、これらのディメンションはマップのビジュアライゼーションで町または郵便番号レベルに正確であり、Workspace レポートには2つの小数点以下桁が表示されます。 マップのビジュアライゼーションで1 メートル以内に正確に調整し、Workspace レポートで5つの小数点以下桁を表示できます。 精度レベルの調整方法について詳しくは、[&#x200B; ディメンションの正確な場所の設定](#configure-precise-locations-for-dimensions)を参照してください。
 
 1. **[!UICONTROL 保存して続行]** > **[!UICONTROL 保存して終了]**&#x200B;を選択します。
 
 #### 地域テンプレートに必要なコンテキストラベル
 
-Adobeには、マップ ビジュアライゼーションを使用する[事前定義済みテンプレート ](/help/analysis-workspace/templates/use-templates.md#web-audience)がいくつか用意されています。 各テンプレートを使用するには、対応するコンテキストラベルをデータビューのディメンションに追加する必要があります。
+Adobeには、マップ ビジュアライゼーションを使用する[事前定義済みテンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md#web-audience)がいくつか用意されています。 各テンプレートを使用するには、対応するコンテキストラベルをデータビューのディメンションに追加する必要があります。
 
 以下は、テンプレートと必要なコンテキストラベルです。 これらのラベルが存在しない場合、使用する地域データがないため、テンプレートは機能しません。
 
@@ -139,7 +139,7 @@ Adobeには、マップ ビジュアライゼーションを使用する[事前�
 |---------|----------|
 | 地域 - 国 | [!UICONTROL 地域：地域の国] |
 | 地域 - 地域 | [!UICONTROL 地域：地域] |
-| 地域 - 都市 | [!UICONTROL 地域：地域シティ ] |
+| 地域 - 都市 | [!UICONTROL 地域：地域シティ &#x200B;] |
 | 地域 - 米国の州 | [!UICONTROL 地域：地域の状態] |
 | 地域 - 米国 DMA | [!UICONTROL 地域：地域Dma] |
 
@@ -157,7 +157,7 @@ Adobeには、マップ ビジュアライゼーションを使用する[事前�
 
    これらのスキーマフィールドがデータビューにディメンションとして存在する場合、コンテキストラベルは自動的に適用され、地域テンプレートは追加の設定なしで使用されます。
 
-   ![ ジオスキーマフィールドをデータビューに追加](assets/dataview-geo-default.png)
+   ![&#x200B; ジオスキーマフィールドをデータビューに追加](assets/dataview-geo-default.png)
 
 1. （条件付き）地域データに使用するカスタムディメンションがある場合は、カスタムフィールドにコンテキストラベルを設定できます。
 
@@ -165,7 +165,7 @@ Adobeには、マップ ビジュアライゼーションを使用する[事前�
 
    1. 右側のパネルの&#x200B;**[!UICONTROL コンポーネント設定]** セクションの&#x200B;**[!UICONTROL コンテキストラベル]** フィールドで、`Geo Country`と入力し、ドロップダウンメニューから選択します。
 
-      ![ テンプレートのコンテキストラベル ](assets/map-context-labels-templates.png)
+      ![&#x200B; テンプレートのコンテキストラベル &#x200B;](assets/map-context-labels-templates.png)
 
    1. このプロセスを繰り返して、対応するデータを含む各ディメンションに&#x200B;**[!UICONTROL 地域：地域]**、**[!UICONTROL 地域：地域City]**、**[!UICONTROL 地域：地域State]**、**[!UICONTROL 地域：Dma]** コンテキストラベルを追加します。
 
@@ -182,11 +182,11 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 | 機能 | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
 | データソース | データソースとして、データビューで利用可能なあらゆるセグメントを使用できます。 | 次のオプションが用意されています。 <ul><li>モバイル緯度経度</li><li>地理的Dimension<br/>訪問者のIP アドレスに基づく訪問者の場所に関する地理的セグメンテーションデータを表します。 </li></ul> |
-| 精度 | 精度の高いデータセットの場合、データビューのディメンションを設定して、最大5つの小数点以下桁を表示できます。 これにより、マップの視覚化が1 メートル以内で正確になります。 <p>詳しくは、[ ディメンションの正確な場所の設定](#configure-precise-locations-for-dimensions)を参照してください。</p> | データは、[!UICONTROL 国]、[!UICONTROL 地域]、[!UICONTROL 都市] レベルに正確です。 （DMAまたはZip コードレベルには適用されません）。 |
-| 選択範囲からセグメントを作成する | マップビジュアライゼーションで選択した特定の領域に基づいてセグメントを作成します。 <p>詳しくは、[ マップのビジュアライゼーションからセグメントを作成](#create-a-segment-from-the-map-visualization)を参照してください。</p> | 一般的に、マップビジュアライゼーションでレポートされるデータに基づいてセグメントを作成します。 |
-| 選択範囲からオーディエンスを作成 | マップビジュアライゼーションで選択した特定の領域に基づいて、オーディエンスを作成します。 <p>詳しくは、[ マップのビジュアライゼーションからのオーディエンスの作成](#create-an-audience-from-the-map-visualization)を参照してください。 | マップ ビジュアライゼーションからオーディエンスを作成できません。 |
-| 選択範囲からトレンドを作成 | マップのビジュアライゼーションで選択した特定の領域に基づいて、トレンド折れ線グラフのビジュアライゼーションを作成します。 <p>詳しくは、[ マップのビジュアライゼーションからトレンドラインチャートを作成](#create-a-trended-line-chart-from-the-map-visualization)を参照してください。<!-- is this correct? --> | マップ ビジュアライゼーションからトレンドを作成できません。 |
-| 選択範囲から分類を追加 | マップビジュアライゼーションで選択した特定の領域内の特定のディメンション項目、指標、セグメント、日付範囲を分割します。 <p>詳しくは、[ マップの視覚化から分類を追加する](#add-a-breakdown-from-the-map-visualization)を参照してください。 | マップ ビジュアライゼーションから分類を追加できません。 |
+| 精度 | 精度の高いデータセットの場合、データビューのディメンションを設定して、最大5つの小数点以下桁を表示できます。 これにより、マップの視覚化が1 メートル以内で正確になります。 <p>詳しくは、[&#x200B; ディメンションの正確な場所の設定](#configure-precise-locations-for-dimensions)を参照してください。</p> | データは、[!UICONTROL 国]、[!UICONTROL 地域]、[!UICONTROL 都市] レベルに正確です。 （DMAまたはZip コードレベルには適用されません）。 |
+| 選択範囲からセグメントを作成する | マップビジュアライゼーションで選択した特定の領域に基づいてセグメントを作成します。 <p>詳しくは、[&#x200B; マップのビジュアライゼーションからセグメントを作成](#create-a-segment-from-the-map-visualization)を参照してください。</p> | 一般的に、マップビジュアライゼーションでレポートされるデータに基づいてセグメントを作成します。 |
+| 選択範囲からオーディエンスを作成 | マップビジュアライゼーションで選択した特定の領域に基づいて、オーディエンスを作成します。 <p>詳しくは、[&#x200B; マップのビジュアライゼーションからのオーディエンスの作成](#create-an-audience-from-the-map-visualization)を参照してください。 | マップ ビジュアライゼーションからオーディエンスを作成できません。 |
+| 選択範囲からトレンドを作成 | マップのビジュアライゼーションで選択した特定の領域に基づいて、トレンド折れ線グラフのビジュアライゼーションを作成します。 <p>詳しくは、[&#x200B; マップのビジュアライゼーションからトレンドラインチャートを作成](#create-a-trended-line-chart-from-the-map-visualization)を参照してください。<!-- is this correct? --> | マップ ビジュアライゼーションからトレンドを作成できません。 |
+| 選択範囲から分類を追加 | マップビジュアライゼーションで選択した特定の領域内の特定のディメンション項目、指標、セグメント、日付範囲を分割します。 <p>詳しくは、[&#x200B; マップの視覚化から分類を追加する](#add-a-breakdown-from-the-map-visualization)を参照してください。 | マップ ビジュアライゼーションから分類を追加できません。 |
 
 ## マップビジュアライゼーションの作成 {#begin-building-map}
 
@@ -199,11 +199,11 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
 <!-- markdownlint-enable MD034 -->
 
-1. 左側のパネルで&#x200B;[!UICONTROL **ビジュアライゼーション**] アイコンを選択し、**[!UICONTROL マップ]** ビジュアライゼーション ![ マップ ](/help/assets/icons/Globe.svg)をフリーフォームテーブルを含むパネルにドラッグします。
+1. 左側のパネルで&#x200B;[!UICONTROL **ビジュアライゼーション**] アイコンを選択し、**[!UICONTROL マップ]** ビジュアライゼーション ![&#x200B; マップ &#x200B;](/help/assets/icons/Globe.svg)をフリーフォームテーブルを含むパネルにドラッグします。
 
    または
 
-   [ ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)の「[ ビジュアライゼーションをパネルに追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)」セクションで説明されているいずれかの方法で、マップビジュアライゼーションを追加します。
+   [&#x200B; ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)の「[&#x200B; ビジュアライゼーションをパネルに追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)」セクションで説明されているいずれかの方法で、マップビジュアライゼーションを追加します。
 
    ![マップ設定](assets/map-configuration.png){width="50%"}
 
@@ -228,11 +228,11 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
    ![](assets/map-visualization.png)
 
-1. [ マップの可視化を表示](#view-a-map-visualization)および[可視化の設定](#configure-visualization-settings)を続行します。
+1. [&#x200B; マップの可視化を表示](#view-a-map-visualization)および[可視化の設定](#configure-visualization-settings)を続行します。
 
 ## マップのビジュアライゼーションの表示
 
-1. まだ使用していない場合は、[ マップ ビジュアライゼーションの作成](#begin-building-a-map-visualization)の説明に従ってマップ ビジュアライゼーションを作成します。
+1. まだ使用していない場合は、[&#x200B; マップ ビジュアライゼーションの作成](#begin-building-a-map-visualization)の説明に従ってマップ ビジュアライゼーションを作成します。
 
 1. Analysis Workspaceのマップビジュアライゼーションで、次のいずれかの操作を行います。
 
@@ -242,7 +242,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
      * マウスのスクロールホイールまたはトラックパッド上の同様のアクションを使用します。
 
-     * マップビジュアライゼーションのプラスアイコン ![ ズームインアイコン ](assets/map-zoomin-icon.png)を選択します。
+     * マップビジュアライゼーションのプラスアイコン ![&#x200B; ズームインアイコン &#x200B;](assets/map-zoomin-icon.png)を選択します。
 
      マップはそれに応じてズームします。 必要なディメンション（国/都道府県/市区町村）は、ズームレベルに基づいて自動的に更新されます。
 
@@ -252,17 +252,17 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
      * マウスのスクロールホイールまたはトラックパッド上の同様のアクションを使用します。
 
-     * マップ ビジュアライゼーションのマイナス アイコン ![ ズームアウト アイコン ](assets/map-zoomout-icon.png)を選択します。
+     * マップ ビジュアライゼーションのマイナス アイコン ![&#x200B; ズームアウト アイコン &#x200B;](assets/map-zoomout-icon.png)を選択します。
 
      マップはそれに応じてズームします。 必要なディメンション（国/都道府県/市区町村）は、ズームレベルに基づいて自動的に更新されます。
 
    * **回転**: マップをマウスでドラッグしながら[!UICONTROL Ctrl] キーを押すと、マップを2Dまたは3Dで回転できます。
 
-     マップを元の北向きにリセットするには、コンパスアイコン ![ コンパスアイコン ](assets/map-compass-icon.png)を選択します。
+     マップを元の北向きにリセットするには、コンパスアイコン ![&#x200B; コンパスアイコン &#x200B;](assets/map-compass-icon.png)を選択します。
 
-   * **選択ツール**: マップの領域を選択して、[ セグメントを作成](#create-a-segment-from-the-map-visualization)、[ トレンドを作成](#create-a-trended-line-chart-from-the-map-visualization)、または[分類を追加](#add-a-breakdown-from-the-map-visualization)できます。
+   * **選択ツール**: マップの領域を選択して、[&#x200B; セグメントを作成](#create-a-segment-from-the-map-visualization)、[&#x200B; トレンドを作成](#create-a-trended-line-chart-from-the-map-visualization)、または[分類を追加](#add-a-breakdown-from-the-map-visualization)できます。
 
-     選択ツール ![ マップ選択アイコン ](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択します。
+     選択ツール ![&#x200B; マップ選択アイコン &#x200B;](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択します。
 
    * **比較**：同じプロジェクト内の2つ以上のマップビジュアライゼーションを並べて配置して比較できます。
 
@@ -276,7 +276,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
      * 緑と赤の配色は、正と負を示します。
 
-   * **追加のビジュアライゼーション設定**: ビジュアライゼーションヘッダーの設定アイコン ![設定](/help/assets/icons/Setting.svg)を選択して、マップビジュアライゼーションの追加の設定を表示します。 詳しくは、[ ビジュアライゼーション設定の設定](#configure-visualization-settings)を参照してください。
+   * **追加のビジュアライゼーション設定**: ビジュアライゼーションヘッダーの設定アイコン ![設定](/help/assets/icons/Setting.svg)を選択して、マップビジュアライゼーションの追加の設定を表示します。 詳しくは、[&#x200B; ビジュアライゼーション設定の設定](#configure-visualization-settings)を参照してください。
 
 1. **すべてのマップ設定（座標、ズーム、回転）を保存するプロジェクトを**&#x200B;保存します。
 1. （オプション）ビジュアライゼーションの下にあるフリーフォームテーブルは、左側のパネルから場所の寸法と指標をドラッグして入力できます。
@@ -314,13 +314,13 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
 1. データビューで、「**[!UICONTROL コンポーネント]**」タブを選択します。
 
-1. 設定する緯度と経度に使用する寸法を選択します。 使用しているディメンションについて詳しくは、[ マップの可視化で緯度と経度に必要なコンテキストラベル ](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization)を参照してください。
+1. 設定する緯度と経度に使用する寸法を選択します。 使用しているディメンションについて詳しくは、[&#x200B; マップの可視化で緯度と経度に必要なコンテキストラベル &#x200B;](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization)を参照してください。
 
 1. ディメンションの精度レベルを設定します。
 
    1. 設定するディメンションを選択したまま、右側のパネルで「**[!UICONTROL 形式]**」セクションを展開します。
 
-      書式セクションが展開された![ ディメンション項目が選択されました](assets/map-dimension-format.png)
+      書式セクションが展開された![&#x200B; ディメンション項目が選択されました](assets/map-dimension-format.png)
 
    1. **[!UICONTROL 小数点以下桁]** フィールドで、目的の精度レベルを反映するように小数点以下桁の数を変更します。
 
@@ -352,9 +352,9 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
    * **マップに現在表示されているすべての要素からセグメントを作成するには：** マップ上の任意の場所を右クリックし、**[!UICONTROL 現在のビューからセグメントを作成]**&#x200B;を選択します。
 
-   * **マップのより特定の領域のセグメントを作成するには：**&#x200B;選択ツール ![ マップ選択アイコン ](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択してから、**[!UICONTROL 選択範囲からセグメントを作成]**&#x200B;を選択します。
+   * **マップのより特定の領域のセグメントを作成するには：**&#x200B;選択ツール ![&#x200B; マップ選択アイコン &#x200B;](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択してから、**[!UICONTROL 選択範囲からセグメントを作成]**&#x200B;を選択します。
 
-1. セグメントビルダーを使用して、新しいセグメントを定義します。 詳しくは、[ セグメントビルダー](/help/components/segments/seg-builder.md)を参照してください。
+1. セグメントビルダーを使用して、新しいセグメントを定義します。 詳しくは、[&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を参照してください。
 
 ## マップのビジュアライゼーションからオーディエンスを作成する
 
@@ -368,9 +368,9 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
    * **現在マップに表示されているすべての要素からオーディエンスを作成するには：** マップ上の任意の場所を右クリックし、**[!UICONTROL 現在のビューからオーディエンスを作成]**&#x200B;を選択します。
 
-   * **マップのより特定の領域のオーディエンスを作成するには：**&#x200B;選択ツール ![ マップ選択アイコン ](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択し、**[!UICONTROL 選択範囲からオーディエンスを作成]**&#x200B;を選択します。
+   * **マップのより特定の領域のオーディエンスを作成するには：**&#x200B;選択ツール ![&#x200B; マップ選択アイコン &#x200B;](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択し、**[!UICONTROL 選択範囲からオーディエンスを作成]**&#x200B;を選択します。
 
-1. オーディエンスビルダーを使用して、新しいオーディエンスを定義します。 詳しくは、[ オーディエンスの作成と公開](/help/components/audiences/publish.md)の[ オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を参照してください
+1. オーディエンスビルダーを使用して、新しいオーディエンスを定義します。 詳しくは、[&#x200B; オーディエンスの作成と公開](/help/components/audiences/publish.md)の[&#x200B; オーディエンスビルダー](/help/components/audiences/publish.md#audience-builder)を参照してください
 
 ## マップのビジュアライゼーションからトレンド折れ線グラフを作成
 
@@ -384,7 +384,7 @@ Customer Journey Analyticsのマップビジュアライゼーションは、次
 
    * **現在マップに表示されているすべてのものからトレンドラインチャートを作成するには：** マップ上の任意の場所を右クリックし、現在のビューから&#x200B;**[!UICONTROL トレンド]**&#x200B;を選択します。
 
-   * **マップのより特定の領域のトレンドラインチャートを作成するには：**&#x200B;選択ツール ![ マップ選択アイコン ](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択し、**[!UICONTROL トレンド]**&#x200B;を選択します。
+   * **マップのより特定の領域のトレンドラインチャートを作成するには：**&#x200B;選択ツール ![&#x200B; マップ選択アイコン &#x200B;](assets/map-selection-icon.png)をクリックし、マウスをドラッグして目的の領域を選択し、**[!UICONTROL トレンド]**&#x200B;を選択します。
 
    トレンドラインを含む折れ線グラフのビジュアライゼーションが作成されます。 このビジュアライゼーションについて詳しくは、[行](/help/analysis-workspace/visualizations/line.md)を参照してください。
 

@@ -69,14 +69,14 @@ ht-degree: 1%
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
 
-   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL daterangeName is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterangeName is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 基本フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
    1. 「**[!UICONTROL 検索]**」フィールドの下で、「**[!UICONTROL 昨年2023]**」を選択します。これは、Customer Journey Analyticsで定義された日付範囲の名前です。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、**[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL daterangeName]**&#x200B;を削除します。
 
    適用された&#x200B;**[!UICONTROL daterangeName]** フィルターでテーブルが更新されます。 Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc8-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc8-powerbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -99,7 +99,7 @@ ht-degree: 1%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Name]**&#x200B;を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Name]**&#x200B;を選択します。
 1. **[!UICONTROL Cc データビューのデータレンジ名]** フィルターを&#x200B;**[!UICONTROL is]**&#x200B;として指定し、値のリストから&#x200B;**[!UICONTROL 昨年2023]**&#x200B;を選択します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから：
    1. **[!UICONTROL Daterange Month]**&#x200B;を選択してから、**[!UICONTROL Month]**&#x200B;を選択します。

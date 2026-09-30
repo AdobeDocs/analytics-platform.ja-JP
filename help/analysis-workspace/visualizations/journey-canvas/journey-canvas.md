@@ -75,7 +75,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_ジャーニーキャンバスの概要](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/journey-canvas/journey-canvas)を[Customer Journey Analytics **![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**でジャーニーキャンバスのビジュアライゼーションについて説明します。_<br/>_&#x200B;この記事の概要&#x200B;_を参照してください。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_ジャーニーキャンバスの概要[&#128279;](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/journey-canvas/journey-canvas)をCustomer Journey Analytics **![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**&#x200B;でジャーニーキャンバスのビジュアライゼーションについて説明します。_<br/>_&#x200B;この記事の概要&#x200B;_を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -83,7 +83,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせてジャーニーノードを作成して、[ユーザージャーニーの分析を作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。 変更を行うと、データがリアルタイムで更新されます。
 
-[ ノードは、](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)を「最終パス」として接続しています。つまり、訪問者は、2つのノード間で発生するイベントに関係なく、最終的に1つのノードから他のノードに移動する限りカウントされます。 ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナの設定によって決まります。
+[&#x200B; ノードは、](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)を「最終パス」として接続しています。つまり、訪問者は、2つのノード間で発生するイベントに関係なく、最終的に1つのノードから他のノードに移動する限りカウントされます。 ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナの設定によって決まります。
 
 ![ジャーニーキャンバス](assets/journey-canvas.png)
 
@@ -230,7 +230,7 @@ Journey Optimizer とジャーニーキャンバス間の同期を理解する�
 
   「任意のユーザーと共有」リンクを使用すると、Journey Optimizer で行った変更は、プロジェクトを Customer Journey Analytics に保存するまで、ジャーニーキャンバスに反映されません。
 
-  「誰とでも共有」リンクの詳細については、[ プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の「[誰とでもプロジェクトを共有する（ログイン不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)」を参照してください。
+  「誰とでも共有」リンクの詳細については、[&#x200B; プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の「[誰とでもプロジェクトを共有する（ログイン不要） &#x200B;](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)」を参照してください。
 
 ### ジャーニーキャンバスでジャーニーを変更した後の違い {#differences-after-modifying}
 

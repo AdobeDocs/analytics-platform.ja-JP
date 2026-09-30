@@ -51,7 +51,7 @@ ht-degree: 3%
 1. [experience.adobe.com](https://experience.adobe.com)にログインします。
 1. **[!UICONTROL データ収集]** > **[!UICONTROL スキーマ]**&#x200B;に移動します。
 1. リストから目的のスキーマを選択します。
-1. 目的のオブジェクトの横にある「![ フィールドを追加」アイコン ](/help/assets/icons/AddCircle.svg)を選択します。 例えば、`Implementation Details`の横です。
+1. 目的のオブジェクトの横にある「![&#x200B; フィールドを追加」アイコン &#x200B;](/help/assets/icons/AddCircle.svg)を選択します。 例えば、`Implementation Details`の横です。
 1. 右側に、必要な[!UICONTROL 名前]を入力します。 例：`qmSessionId`。
 1. 目的の[!UICONTROL 表示名]を入力します。 例：`Quantum Metric session ID`。
 1. [!UICONTROL Type]を&#x200B;**[!UICONTROL String]**&#x200B;として選択します。
@@ -68,7 +68,7 @@ Adobe Experience Platformに送信するデータに量子指標セッション 
 1. 次の設定を設定します。
    * **[!UICONTROL 名前]**: `Quantum Metric session ID`
    * **[!UICONTROL 拡張機能]**：[!UICONTROL コア]
-   * **[!UICONTROL データ要素タイプ]**: [!UICONTROL  カスタムコード ]
+   * **[!UICONTROL データ要素タイプ]**: [!UICONTROL &#x200B; カスタムコード &#x200B;]
 1. 「**[!UICONTROL エディターを開く]**」ボタンを選択し、次のコードを貼り付けます。
 
    ```js
@@ -116,7 +116,7 @@ Workspaceでフリーフォームテーブルを作成し、セッション ID�
 1. [experience.adobe.com](https://experience.adobe.com)にログインします。
 1. Customer Journey Analyticsに移動し、上部メニューの&#x200B;**[!UICONTROL Workspace]**&#x200B;を選択します。
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
-1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
+1. [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
 1. セッション ID ディメンションをWorkspace キャンバスにドラッグします。
 1. ディメンション列ヘッダーを右クリックし、**[!UICONTROL すべてのディメンション項目のハイパーリンクを作成]**&#x200B;を選択します。
 1. **[!UICONTROL カスタム URLを作成]**&#x200B;を選択します。
@@ -128,12 +128,12 @@ Workspaceでフリーフォームテーブルを作成し、セッション ID�
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
-各セッション IDはクリック可能なリンクになっています。 Analysis Workspace ディメンション項目へのハイパーリンクの追加について詳しくは、[ フリーフォームテーブルでのハイパーリンクの作成](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)を参照してください。
+各セッション IDはクリック可能なリンクになっています。 Analysis Workspace ディメンション項目へのハイパーリンクの追加について詳しくは、[&#x200B; フリーフォームテーブルでのハイパーリンクの作成](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)を参照してください。
 
-![ セッション再生](assets/session-replay.png)
+![&#x200B; セッション再生](assets/session-replay.png)
 
 ## ステップ 5: Customer Journey Analyticsからセッションを表示する
 
 セッションのリプレイを調べたい興味深いセグメントを見つけたら、セッション ID リンクを含むパネルに適用できます。 このテーブルは、そのセグメント内のすべてのセッションを返し、いずれかのセッションをクリックすると、量子指標をさらに調べることができます。
 
-詳しくは、[Quantum Metricに関するセッション再生](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay)のエンタープライズガイドを参照してください。 また、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page)からリクエストを送信することもできます。
+詳しくは、[Quantum Metricに関するセッション再生](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay)のエンタープライズガイドを参照してください。 また、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル &#x200B;](https://community.quantummetric.com/s/public-support-page)からリクエストを送信することもできます。

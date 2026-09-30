@@ -119,9 +119,9 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
       フィールドグループは、スキーマを簡単に拡張できる、再利用可能なオブジェクトと属性のコレクションです。
 
-   1. [!UICONTROL  フィールドグループを追加] ダイアログで、リストから&#x200B;**[!UICONTROL ブラインドライト]** フィールドグループを選択します。 このフィールドグループは、コンソールで「Blinding Light」というタイトルの架空のゲームをプレイしているユーザーの進捗状況を追跡するために作成されました。
+   1. [!UICONTROL &#x200B; フィールドグループを追加] ダイアログで、リストから&#x200B;**[!UICONTROL ブラインドライト]** フィールドグループを選択します。 このフィールドグループは、コンソールで「Blinding Light」というタイトルの架空のゲームをプレイしているユーザーの進捗状況を追跡するために作成されました。
 
-      ![光フィールドグループ ](assets/schema-fieldgroup-blindinglight.png)
+      ![光フィールドグループ &#x200B;](assets/schema-fieldgroup-blindinglight.png)
 
       「プレビュー」ボタンを選択すると、このフィールドグループに属するフィールド（`scores > afterMatch` など）のプレビューを表示できます。
 
@@ -135,7 +135,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![スキーマ追加フィールドボタンの例](./assets/example-gamingschema-plus.png)
 
-1. [!UICONTROL  フィールドプロパティ ] パネルで、`identification`を[!UICONTROL  フィールド名]として、**[!UICONTROL 識別]**&#x200B;を[!UICONTROL 表示名]として入力し、**[!UICONTROL オブジェクト]**&#x200B;を[!UICONTROL  タイプ ]として選択し、**[!UICONTROL ExperienceEvent Core v2.1]**&#x200B;を[!UICONTROL  フィールドグループ ]として選択します。
+1. [!UICONTROL &#x200B; フィールドプロパティ &#x200B;] パネルで、`identification`を[!UICONTROL &#x200B; フィールド名]として、**[!UICONTROL 識別]**&#x200B;を[!UICONTROL 表示名]として入力し、**[!UICONTROL オブジェクト]**&#x200B;を[!UICONTROL &#x200B; タイプ &#x200B;]として選択し、**[!UICONTROL ExperienceEvent Core v2.1]**&#x200B;を[!UICONTROL &#x200B; フィールドグループ &#x200B;]として選択します。
 
    >[!NOTE]
    >
@@ -306,7 +306,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 POST リクエストの例では、`{DATASTREAM_ID}`は先ほど設定したデータストリームの例の識別子を指します。 `{sandbox}`は、カスタムブラインドライトフィールドグループへのパスを識別するサンドボックスの一意の名前です。
 
-Edge Network Server APIの使用方法について詳しくは、[ インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=ja)および[非インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html)を参照してください。
+Edge Network Server APIの使用方法について詳しくは、[&#x200B; インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=ja)および[非インタラクティブデータ収集](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html)を参照してください。
 
 ## 接続の設定
 
@@ -384,7 +384,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -409,7 +409,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。
+5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 

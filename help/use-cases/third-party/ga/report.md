@@ -39,7 +39,7 @@ ht-degree: 83%
 ---
 # Google Analytics データに関するレポート
 
-Customer Journey Analytics でデータを取得したら、そのデータをレポートする際に役立つシナリオを次の例で示します。 Customer Journey AnalyticsのGA4 レポートに相当する項目の包括的なルックアップについては、「[Customer Journey AnalyticsのGA4 レポート ](/help/getting-started/ga-to-cja/reports.md)」を参照してください。
+Customer Journey Analytics でデータを取得したら、そのデータをレポートする際に役立つシナリオを次の例で示します。 Customer Journey AnalyticsのGA4 レポートに相当する項目の包括的なルックアップについては、「[Customer Journey AnalyticsのGA4 レポート &#x200B;](/help/getting-started/ga-to-cja/reports.md)」を参照してください。
 
 ## Web データとアプリデータを結合したデータセットとして視覚化する
 

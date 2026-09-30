@@ -55,7 +55,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Media Average minute audience panel](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_**Customer Journey Analytics**_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_ Adobe <br/>_。[Media Average minute audience panelを参照してください。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Media Average minute audience panel[&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_&#x200B;**Customer Journey Analytics**&#x200B;_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_ Adobe <br/>_。Media Average minute audience panelを参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -107,7 +107,7 @@ Analysis Workspace では、分平均オーディエンスは次の情報を提�
    | [!UICONTROL **ここにセグメント（または他のコンポーネント）をドロップ**] | 他のパネルと同様に、この設定では、作成したセグメントに基づいて選択内容がセグメント化されます。 この設定を使用すると、特定のプラットフォーム、ライブストリーム、その他の一般的なメディアのセグメントを確認することができます。 |
    | [!UICONTROL **指標の計算対象**] | [**[!UICONTROL 特定のコンテンツ]**](#specific-content)の分平均オーディエンスを表示するかどうかを選択します。 または、[**[!UICONTROL カスタム期間]**](#custom-time-period)の分平均オーディエンスを表示する場合も同様です。<br/><br/>次の場合に&#x200B;[!UICONTROL **カスタム期間**]&#x200B;を選択します。 <ul><li>期間を使用できない場合、または </li><li>複数のコンテンツを含む時系列データについて、分平均オーディエンスを表示する場合、または</li><li>（ライブストリームやイベント中など）特定の期間が割り当てられていないコンテンツの場合</li></ul></li></li></ul> <p>この設定により、ワークフローとレポートの出力が変更されます。</p> |
 
-1. [!UICONTROL **指標の計算**] ドロップダウンメニューで選択したオプションに応じて、[特定のコンテンツ ](#specific-content)または[ カスタム期間](#custom-time-period)を続行します。
+1. [!UICONTROL **指標の計算**] ドロップダウンメニューで選択したオプションに応じて、[特定のコンテンツ &#x200B;](#specific-content)または[&#x200B; カスタム期間](#custom-time-period)を続行します。
 
 #### 特定のコンテンツ
 
@@ -208,7 +208,7 @@ Analysis Workspace では、分平均オーディエンスは次の情報を提�
 
 >[!MORELIKETHIS]
 >
-> [ パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [&#x200B; パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 > [メディア同時視聴者数パネル](media-concurrent-viewers.md)
 > [メディア再生滞在時間パネル](media-playback-time-spent.md)
 >

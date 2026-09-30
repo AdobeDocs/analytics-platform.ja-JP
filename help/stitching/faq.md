@@ -350,6 +350,6 @@ curl -X PATCH \
 
 +++回答
 
-デフォルトでは、ステッチされた名前空間の値は小文字です。 したがって、`custEmail`は`custemail`になります。 ID名前空間値`custEmail`を持つ別のデータセットがある場合、2つの値が一致しません。 レポートでこの動作を回避するには、[lowercase （） ](/help/data-views/derived-fields/derived-fields.md#lowercase)派生フィールド関数を使用して、ID名前空間値を一致させることができます。
+デフォルトでは、ステッチされた名前空間の値は小文字です。 したがって、`custEmail`は`custemail`になります。 ID名前空間値`custEmail`を持つ別のデータセットがある場合、2つの値が一致しません。 レポートでこの動作を回避するには、[lowercase （） &#x200B;](/help/data-views/derived-fields/derived-fields.md#lowercase)派生フィールド関数を使用して、ID名前空間値を一致させることができます。
 
 +++

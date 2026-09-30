@@ -36,18 +36,18 @@ ht-degree: 48%
 ---
 # マーケティングチャネルディメンションの使用
 
-組織で[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用してレポートスイートデータをCustomer Journey Analyticsに取り込む場合、Customer Journey Analyticsで接続を設定して、マーケティングチャネルディメンションに関するレポートを作成できます。
+組織で[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用してレポートスイートデータをCustomer Journey Analyticsに取り込む場合、Customer Journey Analyticsで接続を設定して、マーケティングチャネルディメンションに関するレポートを作成できます。
 
 >[!IMPORTANT]
 >
->マーケティングチャネルディメンションについてレポートするネイティブ製品機能については、[派生フィールド – マーケティングチャネルテンプレート ](/help/data-views/derived-fields/derived-fields.md#marketing-channels)を参照してください。
+>マーケティングチャネルディメンションについてレポートするネイティブ製品機能については、[派生フィールド – マーケティングチャネルテンプレート &#x200B;](/help/data-views/derived-fields/derived-fields.md#marketing-channels)を参照してください。
 >
 
 
 ## 前提条件
 
-* [Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用して、レポートスイートデータを既にAdobe Experience Platformに読み込む必要があります。 他のデータソースはサポートされません。マーケティングチャネルは Analytics レポートスイートの処理ルールに依存しているためです。
-* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。 Adobe Analytics コンポーネントガイドの「[ マーケティングチャネルの処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules)」を参照してください。
+* [Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)を使用して、レポートスイートデータを既にAdobe Experience Platformに読み込む必要があります。 他のデータソースはサポートされません。マーケティングチャネルは Analytics レポートスイートの処理ルールに依存しているためです。
+* マーケティングチャネルの処理ルールは、事前に設定しておく必要があります。 Adobe Analytics コンポーネントガイドの「[&#x200B; マーケティングチャネルの処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules)」を参照してください。
 
 ## マーケティングチャネルのスキーマ要素
 
@@ -74,7 +74,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->アトリビューションとCustomer Journey Analyticsに関するマーケティングチャネルの効果を最大化するために、一部の[改訂されたベストプラクティス ](https://experienceleague.adobe.com/ja/docs/analytics/components/marketing-channels/mchannel-best-practices)を利用できます。
+>アトリビューションとCustomer Journey Analyticsに関するマーケティングチャネルの効果を最大化するために、一部の[改訂されたベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/components/marketing-channels/mchannel-best-practices)を利用できます。
 
 マーケティングチャネルの設定の動作は、Platform データとレポートスイートデータで異なります。 Customer Journey Analyticsのマーケティングチャネルを設定する際には、次の違いを考慮してください。
 

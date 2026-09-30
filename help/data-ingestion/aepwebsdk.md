@@ -110,7 +110,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![ スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
+      ![&#x200B; スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -286,7 +286,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
    タグに名前を付け、「**[!UICONTROL Web]**」を選択し、ドメイン名を入力します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![ プロパティの作成](./assets/create-property.png)
+   ![&#x200B; プロパティの作成](./assets/create-property.png)
 
 ### タグの設定
 
@@ -317,7 +317,7 @@ Adobe Experience Platform Web SDK 拡張を作成して設定するには：
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=ja)を参照してください。
 
-Web SDKにはExperience Platform ID サービスが含まれているため、[!UICONTROL Experience Cloud ID サービス ] タグ拡張機能をプロパティに追加する必要はありません。
+Web SDKにはExperience Platform ID サービスが含まれているため、[!UICONTROL Experience Cloud ID サービス &#x200B;] タグ拡張機能をプロパティに追加する必要はありません。
 
 #### **データ要素**
 
@@ -577,7 +577,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -602,7 +602,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

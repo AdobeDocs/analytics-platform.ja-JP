@@ -74,23 +74,23 @@ ALTER TABLE myDeltaTable SET TBLPROPERTIES (delta.enableChangeDataFeed = true)
 set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 ```
 
-詳しくは、変更データフィードの有効化に関する[[!DNL Azure Databricks]  ガイド ](https://docs.databricks.com/aws/en/delta/delta-change-data-feed#enable-change-data-feed)を参照してください。
+詳しくは、変更データフィードの有効化に関する[[!DNL Azure Databricks]  ガイド &#x200B;](https://docs.databricks.com/aws/en/delta/delta-change-data-feed#enable-change-data-feed)を参照してください。
 
 [!DNL Azure Databricks] ソース接続の変更データキャプチャを有効にする手順については、次のドキュメントを参照してください。
 
-* [ ベース接続 [!DNL Azure Databricks] を作成](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
-* [ データベース ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)のソース接続を作成します。
+* [&#x200B; ベース接続 [!DNL Azure Databricks] を作成](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks)。
+* [&#x200B; データベース &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)のソース接続を作成します。
 
 ## [!DNL Google BigQuery]
 
 [!DNL Google BigQuery] ソース接続で変更データキャプチャを使用するには、[!DNL Google Cloud] コンソールの[!DNL Google BigQuery] ページに移動し、`enable_change_history`を`TRUE`に設定します。 このプロパティは、データテーブルの変更履歴を有効にします。
 
-詳しくは、 [!DNL GoogleSQL]](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)の[ データ定義言語ステートメントに関するガイドを参照してください。
+詳しくは、 [!DNL GoogleSQL]&#x200B;[&#128279;](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)の データ定義言語ステートメントに関するガイドを参照してください。
 
 [!DNL Google BigQuery] ソース接続の変更データキャプチャを有効にする手順については、次のドキュメントを参照してください。
 
-* [ ベース接続 [!DNL Google BigQuery] を作成](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
-* [ データベース ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)のソース接続を作成します。
+* [&#x200B; ベース接続 [!DNL Google BigQuery] を作成](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery)。
+* [&#x200B; データベース &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)のソース接続を作成します。
 
 ## [!DNL Snowflake]
 
@@ -102,12 +102,12 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 ```
 
-詳細については、[[!DNL Snowflake] 変更条項の使用に関するガイド ](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes)を参照してください。
+詳細については、[[!DNL Snowflake] 変更条項の使用に関するガイド &#x200B;](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes)を参照してください。
 
 [!DNL Snowflake] ソース接続の変更データキャプチャを有効にする手順については、次のドキュメントを参照してください。
 
-* [ ベース接続 [!DNL Snowflake] を作成](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
-* [ データベース ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)のソース接続を作成します。
+* [&#x200B; ベース接続 [!DNL Snowflake] を作成](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake)。
+* [&#x200B; データベース &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection)のソース接続を作成します。
 
 
 >[!MORELIKETHIS]

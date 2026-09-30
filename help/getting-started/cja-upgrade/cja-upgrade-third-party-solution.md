@@ -65,5 +65,5 @@ Google Analytics などのサードパーティ分析ソリューションから
 
 具体的なアドバイス、ガイダンス、サポートが必要な場合は、アドビ担当者にお問い合わせください。
 
-特にGoogle Analytics 4からアクセスする場合は、[ レポートの等価性、データモデルの違い、指標の比較に関するアナリスト向けガイダンスについては、「Google Analytics 4からCustomer Journey Analyticsへの移行](../ga-to-cja/home.md)」を参照してください。
+特にGoogle Analytics 4からアクセスする場合は、[&#x200B; レポートの等価性、データモデルの違い、指標の比較に関するアナリスト向けガイダンスについては、「Google Analytics 4からCustomer Journey Analyticsへの移行](../ga-to-cja/home.md)」を参照してください。
 

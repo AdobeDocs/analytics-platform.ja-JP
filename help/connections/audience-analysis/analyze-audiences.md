@@ -45,7 +45,7 @@ ht-degree: 0%
 
 <!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
-オーディエンス概要テンプレートへのアクセス方法について詳しくは、[ テンプレートを使用](/help/analysis-workspace/templates/use-templates.md)の「[ テンプレートにアクセスして実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)」を参照してください。
+オーディエンス概要テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートを使用](/help/analysis-workspace/templates/use-templates.md)の「[&#x200B; テンプレートにアクセスして実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)」を参照してください。
 
 オーディエンスの概要テンプレートには、次のパネルが含まれています。
 

@@ -80,7 +80,7 @@ XDM オブジェクトでデータを収集する代わりに、データレイ�
 
 ## メリットとデメリット
 
-このメソッドは、Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)でAppMeasurement データ収集ロジックを使用する[と相互に排他的です。両方のメソッドで同じタスクが実行されます。
+このメソッドは、Customer Journey Analytics[&#128279;](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)でAppMeasurement データ収集ロジックを使用すると相互に排他的です。両方のメソッドで同じタスクが実行されます。
 
 次に、このアップグレードの代替手段を使用する利点と欠点を示します。
 

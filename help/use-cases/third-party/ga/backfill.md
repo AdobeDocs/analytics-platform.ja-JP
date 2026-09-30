@@ -116,11 +116,11 @@ Google Cloud Platform で、**エクスポート／GCS にエクスポート**&#
 
 >[!TIP]
 >
->Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 [結合データセット ](/help/connections/combined-dataset.md)を使用して、Customer Journey Analyticsのデータセットを結合できます。
+>Google Analytics の履歴データとライブストリーミングデータの両方をインポートする場合は、必ず両方のデータセットで同じスキーマを使用してください。 [結合データセット &#x200B;](/help/connections/combined-dataset.md)を使用して、Customer Journey Analyticsのデータセットを結合できます。
 
 選択した XDM スキーマを使用して、GA イベントデータを作成済みの既存データセットにマッピングしたり、データセットを作成したりできます。 スキーマを選択すると、Experience Platform は機械学習を適用して、Google Analytics データの各フィールドを自動的に [XDM スキーマ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja#ui)に事前マッピングします。
 
-GA データフィールドとTarget スキーママッピングを強調表示する![ スキーママップ ](../../assets/schema-map.png)
+GA データフィールドとTarget スキーママッピングを強調表示する![&#x200B; スキーママップ &#x200B;](../../assets/schema-map.png)
 
 フィールドから XDM スキーマへのマッピングが完了したら、このインポートを繰り返しスケジュールしたり、取り込みプロセス中にエラー検証を適用したりできます。 この検証により、読み込んだデータに問題がないことを確認できます。
 

@@ -56,7 +56,7 @@ Analytics ソースコネクタは、デフォルトで1つの組織内のAdobe 
 
 | イラスト | 説明 |
 |---|---|
-| ![複数のIMS組織をまたいでデータをマッピング ](/help/getting-started/assets/map-data-across-ims-orgs.png) | このマッピングを使用すると、IMS組織3内でプロビジョニングされたCustomer Journey Analyticsの1つの接続から、IMS組織1、IMS組織2およびIMS組織3に存在するレポートスイートについてレポートできます。 |
+| ![複数のIMS組織をまたいでデータをマッピング &#x200B;](/help/getting-started/assets/map-data-across-ims-orgs.png) | このマッピングを使用すると、IMS組織3内でプロビジョニングされたCustomer Journey Analyticsの1つの接続から、IMS組織1、IMS組織2およびIMS組織3に存在するレポートスイートについてレポートできます。 |
 
 {style="table-layout:fixed"}
 
@@ -74,7 +74,7 @@ Analytics ソースコネクタは、デフォルトで1つの組織内のAdobe 
 
 Adobe アカウントマネージャーが、複数の組織からAnalytics データをマッピングするリクエストを含むメールを受信すると、そのリクエストはAdobe内でレビューされます。 Adobeのアカウントマネージャーから、その他の質問やオプションのトレーニングなどの情報を受け取ることができます。
 
-承認されると、リクエストされたマッピングが作成され、通知されます。 ソース IMS組織名は、Experience PlatformのAnalytics レポートスイートの[ リスト ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)のレポートスイートの名前に追加されます。
+承認されると、リクエストされたマッピングが作成され、通知されます。 ソース IMS組織名は、Experience PlatformのAnalytics レポートスイートの[&#x200B; リスト &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)のレポートスイートの名前に追加されます。
 
 
 ## 制限事項
@@ -92,16 +92,16 @@ Adobe アカウントマネージャーが、複数の組織からAnalytics デ�
 
 ### プロファイル
 
-*Cross-IMS データマッピング*&#x200B;機能が承認されたら、宛先IMS組織内の1つ以上のレポートスイートのデータをExperience Platformに追加できます。 これは、[Analytics ソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)の設定を通じて行います。 ターゲットデータセットは、Experience Platformで作成されます。 この設定とプロセスの一環として、1つ以上のレポートスイートからプロファイルサービスにプロファイルデータを送信するオプションがあります。
+*Cross-IMS データマッピング*&#x200B;機能が承認されたら、宛先IMS組織内の1つ以上のレポートスイートのデータをExperience Platformに追加できます。 これは、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)の設定を通じて行います。 ターゲットデータセットは、Experience Platformで作成されます。 この設定とプロセスの一環として、1つ以上のレポートスイートからプロファイルサービスにプロファイルデータを送信するオプションがあります。
 
-上記のように、設定とプロセスの結果であるプロファイルの合計数を見積もります。 合計数が、宛先組織に対して契約上の権利を持つプロファイルの数以内であることを確認します。 [ フィルタールールと条件](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}を適用して、プロファイルサービスへの取り込みにデータを選択的に含めたり除外したりします。 関連するレポートスイートのプロファイルサービスにプロファイルデータを送信するオプションを無効にします。
+上記のように、設定とプロセスの結果であるプロファイルの合計数を見積もります。 合計数が、宛先組織に対して契約上の権利を持つプロファイルの数以内であることを確認します。 [&#x200B; フィルタールールと条件](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}を適用して、プロファイルサービスへの取り込みにデータを選択的に含めたり除外したりします。 関連するレポートスイートのプロファイルサービスにプロファイルデータを送信するオプションを無効にします。
 
 
 #### ステッチ
 
-[ フィールドベース ](/help/stitching/fbs.md)と[ グラフベース ](/help/stitching/gbs.md)の両方をターゲットデータセットにステッチできます。 これらの1つ以上のターゲットデータセットでグラフベースのステッチを使用する場合は、[ プロファイル ](#profiles) セクションで説明しているように、プロファイル数の契約上の使用権限を維持してください。
+[&#x200B; フィールドベース &#x200B;](/help/stitching/fbs.md)と[&#x200B; グラフベース &#x200B;](/help/stitching/gbs.md)の両方をターゲットデータセットにステッチできます。 これらの1つ以上のターゲットデータセットでグラフベースのステッチを使用する場合は、[&#x200B; プロファイル &#x200B;](#profiles) セクションで説明しているように、プロファイル数の契約上の使用権限を維持してください。
 
-リアルタイム顧客プロファイルのライセンスを取得していなくても、1つ以上のターゲットデータセットでグラフベースのステッチを使用する場合は、これらのターゲットデータセットに対してのみ[ID サービス ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)を有効にしてください。
+リアルタイム顧客プロファイルのライセンスを取得していなくても、1つ以上のターゲットデータセットでグラフベースのステッチを使用する場合は、これらのターゲットデータセットに対してのみ[ID サービス &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)を有効にしてください。
 
 
 ### 権限
@@ -110,5 +110,5 @@ Adobe アカウントマネージャーが、複数の組織からAnalytics デ�
 
 ### データに関するレポート
 
-*Cross-IMS データマッピング*&#x200B;機能は、Customer Journey Analytics [connection](/help/connections/overview.md)、1つ以上の[ データビュー](/help/data-views/data-views.md)、および[ ワークスペースプロジェクト ](/help/analysis-workspace/home.md)の一部としてデータを使用できるようにするための最初のステップに過ぎません。 1つのIMS組織で現在利用可能なデータを注意深く調べる必要があります。 また、データを適切にレポートするために、データ準備、派生フィールド、追加のルックアップテーブルなどの機能を検討します。
+*Cross-IMS データマッピング*&#x200B;機能は、Customer Journey Analytics [connection](/help/connections/overview.md)、1つ以上の[&#x200B; データビュー](/help/data-views/data-views.md)、および[&#x200B; ワークスペースプロジェクト &#x200B;](/help/analysis-workspace/home.md)の一部としてデータを使用できるようにするための最初のステップに過ぎません。 1つのIMS組織で現在利用可能なデータを注意深く調べる必要があります。 また、データを適切にレポートするために、データ準備、派生フィールド、追加のルックアップテーブルなどの機能を検討します。
 

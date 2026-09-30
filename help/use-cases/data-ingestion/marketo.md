@@ -61,7 +61,7 @@ Experience Platformで利用可能なMarketo Engageデータセットを活用�
 * Marketo Engageのレポート機能は、Marketoでのマーケティングプログラムの測定と最適化に最適で、迅速かつ処方しやすく、マーケターにも使いやすい機能です。
 * Customer Data Analyticsは、Marketo データを含むがこれに限定されない、複数のチャネル、製品、事業部門にまたがるカスタマージャーニー向けに、より広範でカスタマイズ可能なジャーニーソリューションを提供します。
 
-詳しくは、[ レポート比較](#reporting-comparison)を参照してください。
+詳しくは、[&#x200B; レポート比較](#reporting-comparison)を参照してください。
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Marketo アクティビティデータをCustomer Journey Analyticsに取り込�
 
 Marketo データにはECIDがネイティブに含まれていませんが、ECID フィールドは、`munchkin.js` ライブラリで収集されるカスタムフィールドとして追加できます。 この追加により、Marketoと既存のCustomer Data Analytics web ジャーニーとの間で共通のIDが作成されます。
 
-MarketoとCustomer Journey Analytics データをリンクするには、関連するデータセットに[ グラフベースのステッチング ](/help/stitching/gbs.md)を使用します。 実装に基づいて、使用可能なIDをいくつか使用できます。
+MarketoとCustomer Journey Analytics データをリンクするには、関連するデータセットに[&#x200B; グラフベースのステッチング &#x200B;](/help/stitching/gbs.md)を使用します。 実装に基づいて、使用可能なIDをいくつか使用できます。
 
 * Experience Platform ID サービスによって提供されるECID
 * 電子メール
@@ -117,7 +117,7 @@ MarketoとCustomer Journey Analytics データをリンクするには、関連�
 
 +++Adobe Experience PlatformへのMarketo データの取り込み
 
-[Marketo Engage コネクタ ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、MarketoからExperience Platformにデータを取り込み、Experience Platform アプリケーションを使用してこのデータを最新の状態に保ちます。
+[Marketo Engage コネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)を使用して、MarketoからExperience Platformにデータを取り込み、Experience Platform アプリケーションを使用してこのデータを最新の状態に保ちます。
 
 +++
 
@@ -141,9 +141,9 @@ Experience Platform データセットについてレポートを作成するに
 1. [Analytics Workspace](/help/analysis-workspace/home.md) を開いて、新しいプロジェクトを作成します。
 B2B/B2P CDPを導入しているお客様は、Customer Journey AnalyticsでB2C スタイルの分析を実施できます。 B2B オブジェクトは、まだ使用できません。
 
-1. Web ページビューの[ セグメント ](/help/components/segments/seg-create.md)を次のように作成します – イベントタイプ = web.webpagedetails.pageViews :
+1. Web ページビューの[&#x200B; セグメント &#x200B;](/help/components/segments/seg-create.md)を次のように作成します – イベントタイプ = web.webpagedetails.pageViews :
 
-   イベントとイベントタイプを表示する![定義ウィンドウ ](../assets/marketo-filter.png)
+   イベントとイベントタイプを表示する![定義ウィンドウ &#x200B;](../assets/marketo-filter.png)
 
 1. フリーフォームテーブル - Web ページビューに作成したセグメントを取り込み、月日範囲を取り込みます。 このアクションを使用すると、毎月リード数でweb ページへのアクセス数を確認できます。
 
@@ -151,7 +151,7 @@ B2B/B2P CDPを導入しているお客様は、Customer Journey AnalyticsでB2C 
 
 1. または、Person Key またはワークメールアドレスのディメンションを取り込みます。 このアクションは、各リードが訪問したWeb ページを表示します。
 
-   イベントとworkEmail.AddressおよびWeb ページビューを示す![ フリーフォームテーブル。](../assets/marketo-freeform2.png)
+   イベントとworkEmail.AddressおよびWeb ページビューを示す![&#x200B; フリーフォームテーブル。](../assets/marketo-freeform2.png)
 
 Customer Journey AnalyticsのMarketo Engage データは、Marketo Engageのレポートに表示されるものとは異なる場合があります。
 

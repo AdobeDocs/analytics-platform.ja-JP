@@ -32,7 +32,7 @@ ht-degree: 3%
 
 # Google Analytics 4からCustomer Journey Analyticsへの移行
 
-このガイドでは、Google Analytics 4について詳しいアナリストが、Adobe Customer Journey Analyticsで同等の概念とレポートを学ぶのに役立ちます。 レポートではなく技術的な実装を担当する場合は、Web SDKの設定とデータ取り込みに関するガイダンスについては、[ サードパーティ分析ソリューションからCustomer Journey Analyticsへのアップグレード ](../cja-upgrade/cja-upgrade-third-party-solution.md)を参照してください。 既存のGoogle Analytics データをAdobe Experience Platformに移行する必要がある場合は、[Google Analyticsからのデータの移行](/help/use-cases/third-party/ga/overview.md)を参照してください。
+このガイドでは、Google Analytics 4について詳しいアナリストが、Adobe Customer Journey Analyticsで同等の概念とレポートを学ぶのに役立ちます。 レポートではなく技術的な実装を担当する場合は、Web SDKの設定とデータ取り込みに関するガイダンスについては、[&#x200B; サードパーティ分析ソリューションからCustomer Journey Analyticsへのアップグレード &#x200B;](../cja-upgrade/cja-upgrade-third-party-solution.md)を参照してください。 既存のGoogle Analytics データをAdobe Experience Platformに移行する必要がある場合は、[Google Analyticsからのデータの移行](/help/use-cases/third-party/ga/overview.md)を参照してください。
 
 ## GA4とCustomer Journey Analyticsの主な違い
 
@@ -53,7 +53,7 @@ GA4とCustomer Journey Analyticsでは、プラットフォームレベルでデ
 |---|---|
 | Google アカウント | Adobe IMS組織 |
 | プロパティ | 接続+ データビュー |
-| データストリーム | Platformの[!UICONTROL  イベントデータセット ] |
+| データストリーム | Platformの[!UICONTROL &#x200B; イベントデータセット &#x200B;] |
 | データフィルター | データビューコンポーネントフィルター |
 | サブプロパティ | フィルターを適用した個別のデータビュー |
 | ロールアッププロパティ | 複数のデータセットを組み合わせた接続 |

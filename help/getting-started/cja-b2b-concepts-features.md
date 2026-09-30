@@ -66,7 +66,7 @@ Customer Journey Analyticsでは、コネクションとデータビューの設
 
 Customer Journey Analyticsは、「Person」、「Session」、「Event」の3つのコンテナを中心に構築されています。 設定中、これらのコンテナは暗黙的に生成されます。
 
-データビューを設定するときに、これらのコンテナの名前を再定義できますが、コンテナ間の階層と関係は事前に定義されています。 セッションコンテナは、データビューの[ セッション設定](/help/data-views/session-settings.md)でセッションを定義する方法に基づいて生成されます。
+データビューを設定するときに、これらのコンテナの名前を再定義できますが、コンテナ間の階層と関係は事前に定義されています。 セッションコンテナは、データビューの[&#x200B; セッション設定](/help/data-views/session-settings.md)でセッションを定義する方法に基づいて生成されます。
 
 ![B2C](assets/b2c-containers.png){zoomable="yes"}
 
@@ -75,7 +75,7 @@ Customer Journey Analyticsは、「Person」、「Session」、「Event」の3�
 
 Customer Journey Analytics B2B editionでは、生成されたコンテナのリストにアカウントコンテナが追加されます。 また、グローバルアカウント、購買グループ、商談など、追加のコンテナの生成を設定することもできます。
 
-コンテナ間の階層と関係が予め定められている。 商談、購買グループ、人物はすべて、アカウントコンテナの兄弟コンテナです。 この階層では、個人コンテナとイベントコンテナの間のセッションコンテナが、データビューの[ セッション設定](/help/data-views/session-settings.md)でセッションを定義する方法に基づいて生成されます。 アカウントコンテナとイベントコンテナの間など、追加のセッションコンテナは現在生成されず、サポートされています。 B2B コンテナの説明と基本的な使用方法については、次の表を参照してください。
+コンテナ間の階層と関係が予め定められている。 商談、購買グループ、人物はすべて、アカウントコンテナの兄弟コンテナです。 この階層では、個人コンテナとイベントコンテナの間のセッションコンテナが、データビューの[&#x200B; セッション設定](/help/data-views/session-settings.md)でセッションを定義する方法に基づいて生成されます。 アカウントコンテナとイベントコンテナの間など、追加のセッションコンテナは現在生成されず、サポートされています。 B2B コンテナの説明と基本的な使用方法については、次の表を参照してください。
 
 ![B2B](assets/b2b-containers.png){zoomable="yes"}
 
@@ -94,23 +94,23 @@ Customer Journey Analytics B2B editionでは、生成されたコンテナのリ
 
 Analysis Workspaceでは、B2B コンテナを使用して、特定のB2B機能を実行できます。
 
-* **セグメント化**: [B2B セグメントコンテナ ](/help/components/segments/seg-overview.md#b2b-containers)を使用すると、個人、セッション、イベントを超えるコンテナスコープでセグメントを構築できます。 例：イベント登録セグメントのアカウント、購買グループおよびステージ 5の商談セグメントのアカウント。
+* **セグメント化**: [B2B セグメントコンテナ &#x200B;](/help/components/segments/seg-overview.md#b2b-containers)を使用すると、個人、セッション、イベントを超えるコンテナスコープでセグメントを構築できます。 例：イベント登録セグメントのアカウント、購買グループおよびステージ 5の商談セグメントのアカウント。
 
   >[!NOTE]
   >
   >Customer Journey Analytics B2B editionのアカウントベースの設定のB2B イベントデータには、個人またはセッションを持たない行が含まれる場合があります。 例：商談ステージの進行を詳細に示す行。 セグメントを評価する際は、メンバーとセッションが適切な基準ではない可能性があることに留意してください。
   >
 
-* **アトリビューション**：新しいB2B コンテナは、[ アトリビューションパネル ](/help/analysis-workspace/c-panels/attribution.md)、[ アトリビューションコンポーネント設定](/help/data-views/component-settings/attribution.md)、[計算指標](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)、または[列のフリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)で使用できます。 アカウントのルックバックが13か月に延長されました。
+* **アトリビューション**：新しいB2B コンテナは、[&#x200B; アトリビューションパネル &#x200B;](/help/analysis-workspace/c-panels/attribution.md)、[&#x200B; アトリビューションコンポーネント設定](/help/data-views/component-settings/attribution.md)、[計算指標](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)、または[列のフリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)で使用できます。 アカウントのルックバックが13か月に延長されました。
 
-* **ビジュアライゼーション**: [ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[ フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、[ コホートテーブル ](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)のビジュアライゼーションは、新しいB2B コンテナをサポートしています。 例えば、新しいコンテナを使用して、購買グループがコンテンツをどのように使用しているのか、商談コホートが販売のクローズにどのように向かっているのかを把握できます。
-これらのビジュアライゼーションのデフォルトコンテナは、[ ユーザー設定](/help/analysis-workspace/user-preferences.md#visualizations-preferences)で設定することもできます。
+* **ビジュアライゼーション**: [&#x200B; フォールアウト &#x200B;](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)、[&#x200B; フロー](/help/analysis-workspace/visualizations/c-flow/flow.md)、[ジャーニーキャンバス &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)、[&#x200B; コホートテーブル &#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)のビジュアライゼーションは、新しいB2B コンテナをサポートしています。 例えば、新しいコンテナを使用して、購買グループがコンテンツをどのように使用しているのか、商談コホートが販売のクローズにどのように向かっているのかを把握できます。
+これらのビジュアライゼーションのデフォルトコンテナは、[&#x200B; ユーザー設定](/help/analysis-workspace/user-preferences.md#visualizations-preferences)で設定することもできます。
 
 セグメント、アトリビューション、ビジュアライゼーションをB2B コンテナと組み合わせることで、B2Bの詳細な分析とインサイトを獲得できます。
 
 ## スキーマ
 
-Customer Journey Analytics B2B Editionでは、[Adobe Experience Data Model （XDM） ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して、B2B データを標準化し、B2B データのスキーマを定義します。 スキーマは、Real-time CDP B2B edition](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)で提供される[標準クラスに基づいて作成することも、独自のカスタムクラスとスキーマを使用することもできます。 [ ユースケース ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)記事では、Real-time CDP B2B edition クラスとスキーマを使用していますが、標準クラスとスキーマを使用するには、Real-time CDP B2B edition ライセンスは必要ありません。
+Customer Journey Analytics B2B Editionでは、[Adobe Experience Data Model （XDM） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して、B2B データを標準化し、B2B データのスキーマを定義します。 スキーマは、Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)で提供される標準クラスに基づいて作成することも、独自のカスタムクラスとスキーマを使用することもできます。 [&#x200B; ユースケース &#x200B;](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)記事では、Real-time CDP B2B edition クラスとスキーマを使用していますが、標準クラスとスキーマを使用するには、Real-time CDP B2B edition ライセンスは必要ありません。
 
 ## データセット
 
@@ -125,14 +125,14 @@ Customer Journey Analytics B2Bでは、次のデータタイプとデータセ�
 
 Customer Journey Analytics B2B editionのアカウントベースの接続の例：
 
-![ アカウントベースの接続の例](assets/b2b-datasets.png)
+![&#x200B; アカウントベースの接続の例](assets/b2b-datasets.png)
 
-Customer Journey Analytics B2B editionでは、[接続マップ ](/help/connections/create-connection.md#connection-map) インターフェイスを使用して、接続のデータセット間の関係の概要を表示できます。
+Customer Journey Analytics B2B editionでは、[接続マップ &#x200B;](/help/connections/create-connection.md#connection-map) インターフェイスを使用して、接続のデータセット間の関係の概要を表示できます。
 
 
 Customer Journey Analyticsと同様に、イベントベースの時系列データはCustomer Journey Analytics B2B editionの中核を担っています。 アカウントベースの接続の主な違いは、イベントデータセット内のすべてのレコードに個人IDではなくアカウント IDが必要になることです。
 
-Customer Journey Analytics B2B editionでアカウントベースの接続に[ データセット設定](/help/connections/create-connection.md#dataset-settings)を設定する場合、一部の設定で使用できるオプションは、[ データセットの種類](/help/connections/create-connection.md#dataset-types)によって異なります。 例えば、次のようなことが必要です。
+Customer Journey Analytics B2B editionでアカウントベースの接続に[&#x200B; データセット設定](/help/connections/create-connection.md#dataset-settings)を設定する場合、一部の設定で使用できるオプションは、[&#x200B; データセットの種類](/help/connections/create-connection.md#dataset-types)によって異なります。 例えば、次のようなことが必要です。
 
 * イベントデータセット用に設定した各コンテナの識別子を指定します。
 * プロファイルデータセットのアカウントフィールドまたはグローバルアカウントフィールドを定義します。

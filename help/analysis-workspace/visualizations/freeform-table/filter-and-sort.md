@@ -53,7 +53,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 * テーブルにフィルターを適用
 * オーディエンスセグメントの使用
 
-各メソッドが[ フリーフォームテーブル合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)にどのような影響を与えるかを必ず確認してください。
+各メソッドが[&#x200B; フリーフォームテーブル合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)にどのような影響を与えるかを必ず確認してください。
 
 ### テーブルから特定の行を除外
 
@@ -123,7 +123,7 @@ Note: this option does not seem to work. AN-338422
 
 スパークラインに加えて、接続されたラインのビジュアライゼーションに含めるフィルター条件を設定できます。 （デフォルトでは、フィルター条件は行のビジュアライゼーションに含まれません。 折れ線グラフは、接続されたテーブルで選択された行のデータを表示します。 行が選択されていない場合は、接続されたテーブルの最初のディメンションのデータのみが表示されます）。
 
-スパークラインと折れ線グラフの視覚化について詳しくは、[ フリーフォームテーブルのトレンド データの表示](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)を参照してください。
+スパークラインと折れ線グラフの視覚化について詳しくは、[&#x200B; フリーフォームテーブルのトレンド データの表示](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)を参照してください。
 
 #### フィルター条件を含める行のビジュアライゼーションの設定
 
@@ -131,7 +131,7 @@ Note: this option does not seem to work. AN-338422
 
    スパークラインセルを選択すると、濃いグレーで表示されます。 これは、フィルター条件が接続された行のビジュアライゼーションに含まれていることを示します。 フィルター条件は、列のセグメントとして適用されます。<!--show how to see it? Show what the segment looks like when it's applied? -->
 
-   ![ スパークラインが選択されました](assets/table-sparkline-selected.png)
+   ![&#x200B; スパークラインが選択されました](assets/table-sparkline-selected.png)
 
 #### 列の合計が不正確になるタイミングを把握する
 
@@ -151,7 +151,7 @@ Note: this option does not seem to work. AN-338422
 
 ### オーディエンスセグメントの使用
 
-詳しくは、[ セグメント化の概要](/help/components/segments/seg-overview.md)を参照してください。
+詳しくは、[&#x200B; セグメント化の概要](/help/components/segments/seg-overview.md)を参照してください。
 
 ## テーブルの並べ替え
 
@@ -185,7 +185,7 @@ Analysis Workspaceでは、自由形式テーブルのデータを、ディメ�
 
 1. 「**[!UICONTROL 高度な並べ替え]**」を選択します。
 
-   ![高度な並べ替えダイアログ ](assets/sort-advanced-dialog.png)
+   ![高度な並べ替えダイアログ &#x200B;](assets/sort-advanced-dialog.png)
 
 1. 詳細な並べ替えダイアログで、次のいずれかの操作を行います。
 
@@ -205,7 +205,7 @@ Analysis Workspaceでは、自由形式テーブルのデータを、ディメ�
 
 並べ替えが列に適用される場合、並べ替えアイコンは表示されたままになります。 矢印は、データの並べ替え方法を示します（![昇順の場合は](/help/assets/icons/SortOrderUp.svg)、降順の場合は![並べ替え](/help/assets/icons/SortOrderDown.svg)）。
 
-![ マルチソートの例](assets/dimensions-multiple-sort.png)
+![&#x200B; マルチソートの例](assets/dimensions-multiple-sort.png)
 
 #### 並べ替えの優先順位
 
@@ -231,4 +231,4 @@ Analysis Workspaceでは、自由形式テーブルのデータを、ディメ�
 
 各列に並べ替え優先順位を割り当てることで、テーブルでのデータの表示方法を正確に制御できます。 この例では、情報は最初に月の日別、次に時間の日別、最後にイベント別に並べ替えられます。
 
-![ マルチソートの例](assets/dimensions-multiple-sort.png)
+![&#x200B; マルチソートの例](assets/dimensions-multiple-sort.png)

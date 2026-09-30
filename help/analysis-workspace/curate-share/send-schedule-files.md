@@ -38,7 +38,7 @@ ht-degree: 52%
 
 プロジェクトをキュレーションして共有したり、プロジェクトをPDFまたはCSV ファイルとして組織内の受信者に送信したり、Analysis Workspaceの&#x200B;**[!UICONTROL Share]** メニューまたはインターフェイスの右上の&#x200B;**[!UICONTROL Share]**&#x200B;を選択した場合に使用できるオプションを使用して、他のユーザーとプロジェクトを送信したりできます。
 
-![ オプションの共有](assets/share-options.png)
+![&#x200B; オプションの共有](assets/share-options.png)
 
 | オプション | 説明 |
 |---|---|

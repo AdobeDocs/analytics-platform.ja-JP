@@ -116,7 +116,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 セグメントは、技術的には Adobe Analytics から Customer Journey Analytics に移行されませんが、コンポーネント移行ツールを使用して、Customer Journey Analytics で Adobe Analytics セグメントを再作成できます。 セグメントは、マッピングされたディメンションと指標に基づいて Customer Journey Analytics で再作成されます。 詳しくは、[Adobe Analytics から Customer Journey Analytics へのコンポーネントとプロジェクトの移行の準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)を参照してください。
 
-[!UICONTROL  セグメント ] （[!UICONTROL  セグメント ]）を[!DNL Customer Journey Analytics]からExperience Platform Unified Profileに共有または公開することはできませんが、この機能は開発中です。
+[!UICONTROL &#x200B; セグメント &#x200B;] （[!UICONTROL &#x200B; セグメント &#x200B;]）を[!DNL Customer Journey Analytics]からExperience Platform Unified Profileに共有または公開することはできませんが、この機能は開発中です。
 
 セグメントの概念が変わることに加えて、セグメントコンテナも更新されます。
 
@@ -126,7 +126,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 ## 計算指標の概念の変更
 
-計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL  Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
+計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL &#x200B; Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
 
 
 >[!BEGINSHADEBOX]

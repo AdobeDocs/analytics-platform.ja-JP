@@ -43,24 +43,24 @@ ht-degree: 14%
 ## 前提条件
 
 * [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)、特にリアルタイム顧客プロファイルへのアクセス。
-* Experience Platform [ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home)および[ データセット ](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)を作成および管理するためのアクセス権。
+* Experience Platform [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home)および[&#x200B; データセット &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/overview)を作成および管理するためのアクセス権。
 * [Experience Platform Query Service](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)へのアクセス （およびSQLの書き込み機能）。
 * データの変換を実行できるツールへのアクセス。
 * Customer Journey Analytics へのアクセス。 Customer Journey Analytics接続とデータビューを作成および変更するには、[Customer Journey Analytics製品管理者](/help/technotes/access-control.md)である必要があります。
-* [Experience Platform API （Catalog Service APIおよびSegmentation Service API）の認証とアクセス ](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication)。 組織とサンドボックスの開発者コンソールでプロジェクトを作成し、API呼び出しを正常に送信するために必要な情報を持っていることを確認する必要があります。
+* [Experience Platform API （Catalog Service APIおよびSegmentation Service API）の認証とアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication)。 組織とサンドボックスの開発者コンソールでプロジェクトを作成し、API呼び出しを正常に送信するために必要な情報を持っていることを確認する必要があります。
 
 ## 手順
 
 暫定的なソリューションには、次の手順が含まれます。
 
-1. [ オーディエンスの選択（Experience Platform UI） ](#select-audiences)。
-1. [ プロファイル対応データセット（Experience Platform API）を作成](#create-a-profile-enabled-dataset)。
-1. [ オーディエンスのエクスポート （Experience Platform API） ](#export-audiences)。
-1. [出力を変換する（Experience Platform UIなど） ](#transform-the-output)。
-1. [ スキーマとデータセットの作成（Experience Platform UI） ](#create-a-schema-and-dataset)。
-1. [接続の追加または編集（Customer Journey Analytics UI） ](#add-or-edit-a-connection)。
-1. [ データビューの設定（Customer Journey Analytics UI） ](#configure-a-data-view)。
-1. [ レポートと分析（Customer Journey Analytics UI） ](#report-and-analyze)。
+1. [&#x200B; オーディエンスの選択（Experience Platform UI） &#x200B;](#select-audiences)。
+1. [&#x200B; プロファイル対応データセット（Experience Platform API）を作成](#create-a-profile-enabled-dataset)。
+1. [&#x200B; オーディエンスのエクスポート （Experience Platform API） &#x200B;](#export-audiences)。
+1. [出力を変換する（Experience Platform UIなど） &#x200B;](#transform-the-output)。
+1. [&#x200B; スキーマとデータセットの作成（Experience Platform UI） &#x200B;](#create-a-schema-and-dataset)。
+1. [接続の追加または編集（Customer Journey Analytics UI） &#x200B;](#add-or-edit-a-connection)。
+1. [&#x200B; データビューの設定（Customer Journey Analytics UI） &#x200B;](#configure-a-data-view)。
+1. [&#x200B; レポートと分析（Customer Journey Analytics UI） &#x200B;](#report-and-analyze)。
 
 
 ### オーディエンスを選択
@@ -80,7 +80,7 @@ Experience Platform UI で：
 
 ### プロファイル対応データセットの作成
 
-コアベースの&#x200B;**[!UICONTROL XDM個人プロファイル]** スキーマに基づいてデータセットを作成する必要があります。 Experience Platform UIでデータセットを作成する際に、そのコアベースのXDM個人プロファイルをスキーマとして選択することはできません。 代わりに、[Catalog Service APIを使用して、`_xdm.context.profile__union` スキーマに基づいてデータセット ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset)を作成します。
+コアベースの&#x200B;**[!UICONTROL XDM個人プロファイル]** スキーマに基づいてデータセットを作成する必要があります。 Experience Platform UIでデータセットを作成する際に、そのコアベースのXDM個人プロファイルをスキーマとして選択することはできません。 代わりに、[Catalog Service APIを使用して、`_xdm.context.profile__union` スキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset)を作成します。
 
 +++ データセット作成リクエスト
 
@@ -126,7 +126,7 @@ curl -X POST \
 
 ### オーディエンスの書き出し
 
-選択したオーディエンスを、作成したデータセットに書き出します。 [ セグメント化サービス APIを使用して、オーディエンスをデータセットに送信する書き出しジョブ ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#create)を作成します。
+選択したオーディエンスを、作成したデータセットに書き出します。 [&#x200B; セグメント化サービス APIを使用して、オーディエンスをデータセットに送信する書き出しジョブ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#create)を作成します。
 
 +++ ジョブリクエストをエクスポート
 
@@ -194,7 +194,7 @@ curl -X POST https://platform.adobe.io/data/core/ups/export/jobs \
 
 +++
 
-[ セグメント化サービス APIを使用して、書き出しジョブ ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get)のステータスを確認します。
+[&#x200B; セグメント化サービス APIを使用して、書き出しジョブ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get)のステータスを確認します。
 
 +++ 特定の書き出しジョブリクエストの取得
 
@@ -228,7 +228,7 @@ curl -X GET https://platform.adobe.io/data/core/ups/export/jobs/{EXPORT_JOB_ID} 
 
 Experience Platform UI で：
 
-1. **[!UICONTROL データ管理]** > ![ データ ](/help/assets/icons2/Data.svg) **[!UICONTROL データセット]**&#x200B;を選択します。
+1. **[!UICONTROL データ管理]** > ![&#x200B; データ &#x200B;](/help/assets/icons2/Data.svg) **[!UICONTROL データセット]**&#x200B;を選択します。
 1. 作成したデータセットを選択します。例：**[!UICONTROL CJA用のセグメント書き出しジョブデータセット]**
 
    ![データセットアクティビティ](assets/dataset-activity.png)
@@ -249,7 +249,7 @@ Experience Platform Query Serviceに接続するPSQL クライアントを使用
 
 Experience Platform UI の場合：
 
-1. **[!UICONTROL データ管理]** > ![ データ検索](/help/assets/icons2/DataSearch.svg) **[!UICONTROL クエリ]**&#x200B;を選択します。
+1. **[!UICONTROL データ管理]** > ![&#x200B; データ検索](/help/assets/icons2/DataSearch.svg) **[!UICONTROL クエリ]**&#x200B;を選択します。
 1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 資格情報]**&#x200B;を選択します。
 
 Customer Journey Analytics Query Serviceに接続するようにPSQL クライアントを設定するには、資格情報を使用します。
@@ -352,7 +352,7 @@ JSON形式のクエリの結果は、次のようになります。
 
 Experience Platform UI の場合：
 
-1. **[!UICONTROL データ管理]** > ![ スキーマ ](/help/assets/icons2/Schema.svg) **[!UICONTROL スキーマ]**&#x200B;を選択します。
+1. **[!UICONTROL データ管理]** > ![&#x200B; スキーマ &#x200B;](/help/assets/icons2/Schema.svg) **[!UICONTROL スキーマ]**&#x200B;を選択します。
 1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL スキーマの作成]**&#x200B;を選択します。 ドロップダウンメニューから「**[!UICONTROL Standard]**」を選択します。
 1. 「**[!UICONTROL スキーマを作成]**」ダイアログで「**[!UICONTROL 手動]**」を選択し、**[!UICONTROL 選択]**」を使用して続行します。
 1. **[!UICONTROL スキーマを作成]** ウィザードの&#x200B;**[!UICONTROL クラスを選択]**&#x200B;手順で次の操作を行います。
@@ -363,9 +363,9 @@ Experience Platform UI の場合：
    1. （オプション） **[!UICONTROL 説明]**&#x200B;を入力します。
    1. 「**[!UICONTROL 完了]**」を選択します。
 1. **[!UICONTROL audienceMembershipId]**&#x200B;と&#x200B;**[!UICONTROL audienceMembershipName]**&#x200B;という2つのフィールドを含むカスタムフィールドグループ（例えば、**[!UICONTROL Audience Membership]**&#x200B;という名前）を含むようにスキーマを設定します。
-1. **[!UICONTROL personID]** フィールドが&#x200B;**[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]**&#x200B;であり、**[!UICONTROL Email]**&#x200B;がI**[!UICONTROL ID名前空間]であることを確認し**す。
+1. **[!UICONTROL personID]** フィールドが&#x200B;**[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]**&#x200B;であり、**[!UICONTROL Email]**&#x200B;がI&#x200B;**[!UICONTROL ID名前空間]であることを確認し**&#x200B;す。
 
-   ![書き出し用セグメント ](assets/segment-for-export.png)
+   ![書き出し用セグメント &#x200B;](assets/segment-for-export.png)
 
 1. すべての変更を&#x200B;**[!UICONTROL 適用]**&#x200B;します。 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
@@ -377,7 +377,7 @@ Experience Platform UI の場合：
 
 Experience Platform UI の場合：
 
-1. **[!UICONTROL データ管理]** > ![ データ ](/help/assets/icons2/Data.svg) **[!UICONTROL データセット]**&#x200B;を選択します。
+1. **[!UICONTROL データ管理]** > ![&#x200B; データ &#x200B;](/help/assets/icons2/Data.svg) **[!UICONTROL データセット]**&#x200B;を選択します。
 1. ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL データセットを作成]**&#x200B;を選択します。
 1. 「**[!UICONTROL スキーマからデータセットを作成]**」をクリックします。
 1. **[!UICONTROL スキーマからデータセットを作成]** ウィザードで、**[!UICONTROL スキーマを選択]**&#x200B;手順で次の操作を行います。
@@ -387,7 +387,7 @@ Experience Platform UI の場合：
    1. データセットの&#x200B;**[!UICONTROL 名前]**&#x200B;を入力します。
    1. （オプション）データセットの&#x200B;**[!UICONTROL 説明]**&#x200B;を入力します。
    1. 「**[!UICONTROL 完了]**」を選択します。
-1. データセット **[!UICONTROL データセット]** > データセット _]**の**[!UICONTROL _&#x200B;名で、変換されたJSON データファイルをドラッグし、ファイルを&#x200B;**[!UICONTROL ファイルにドロップします]**。 このアクションは、書き出されたJSON データのデータセットへの取り込みを開始します。
+1. データセット **[!UICONTROL データセット]** > データセット _&#x200B;**の**&#x200B;_&#x200B;名で、変換されたJSON データファイルをドラッグし、ファイルを&#x200B;**[!UICONTROL ファイルにドロップします]**。 このアクションは、書き出されたJSON データのデータセットへの取り込みを開始します。
 1. 取り込んだバッチを確認します。 データセットに失敗したバッチが含まれる場合は、**[!UICONTROL データ管理]** > ![監視](/help/assets/icons2/Monitoring.svg) **[!UICONTROL 監視]**&#x200B;を使用して、その理由を確認します。 例えば、スキーマに存在しないフィールド名をJSONで定義したとします。
 
 
@@ -407,7 +407,7 @@ Customer Journey Analytics UIの場合：
 1. 作成したデータセットと、変換されたJSON データを取り込んだデータセットを選択します。
 1. データセットを設定します。 次に例を示します。
 
-   ![接続 – オーディエンスデータを書き出したデータセット ](assets/connection-add-dataset.png)
+   ![接続 – オーディエンスデータを書き出したデータセット &#x200B;](assets/connection-add-dataset.png)
 
 1. 接続を&#x200B;**[!UICONTROL 保存]**&#x200B;します。
 
@@ -508,6 +508,6 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 * Customer Journey Analytics内でオーディエンスデータが常に更新されるように、このプロセスを定期的に実行する必要があります。
 * 1つのCustomer Journey Analyticsコネクション内に複数のオーディエンスをインポートできます。 これによりプロセスはさらに複雑になりますが、実現は可能です。 これを機能させるには、前述のプロセスに少し修正を加える必要があります。
   1. RTCP 内のオーディエンスコレクションの目的の各オーディエンスに対して、このプロセスを実行します。
-  1. Customer Journey Analyticsでは、プロファイルデータセットの配列/オブジェクト配列をサポートしています。 `audienceMembershipId`または`audienceMembershipIdName`に[ オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=ja)を使用することが最適です。
+  1. Customer Journey Analyticsでは、プロファイルデータセットの配列/オブジェクト配列をサポートしています。 `audienceMembershipId`または`audienceMembershipIdName`に[&#x200B; オブジェクトの配列](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=ja)を使用することが最適です。
   1. データビューで、`audienceMembershipId` フィールドの部分文字列変換を使用して、新しいディメンションを作成し、コンマ区切り値の文字列を配列に変換します。 メモ：現在、配列の値は 10 個までという制限があります。
   1. Customer Journey Analytics Workspace内のこの新しいディメンション `audienceMembershipIds`についてレポートできるようになりました。

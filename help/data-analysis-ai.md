@@ -84,7 +84,7 @@ Data Insights Agentを使用してAnalysis Workspaceでデータ中心の質問�
 
 * **契約によるアクセス**：AI アシスタントで Data Insights Agent を使用できない場合は、組織の管理者またはアドビアカウントチームにお問い合わせください。 組織が Data Insights Agent の使用を開始する前に、生成 AI に関連する特定の法的条項に同意する必要があります。
 
-* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が ]Adobe Admin Console[!UICONTROL  で付与されている必要があります。
+* **権限**：ユーザーが Data Insights Agent にアクセスするには、必要な権限が Adobe Admin Console で付与されている必要があります。
 
   権限を付与するには、[製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)が[!UICONTROL Admin Console]で次の手順を実行する必要があります。
   1. **[!UICONTROL Admin Console]** で、「**[!UICONTROL 製品]**」タブを選択して&#x200B;**[!UICONTROL すべての製品とサービス]**&#x200B;ページを表示します。
@@ -112,7 +112,7 @@ Data Insights Agentを使用してAnalysis Workspaceでデータ中心の質問�
   >
   >データビューを有効にする際は、次の点を考慮してください。
   >* IMS 組織ごとに最大 50 個のデータビューを有効にできます。 特定の組織のすべての製品プロファイルで 50 個を超えるデータビューを有効にした場合、Data Insights Agent は最もよく使用されている 50 個のデータビューを使用します。
-  >  データビュー](/help/data-views/manage-dataviews.md#manage-data-views)のData Insights Agent列の[情報を使用して、IMS組織内でData Insights Agentに対して有効になっているデータビューの数を表示できます。
+  >  データビュー[&#128279;](/help/data-views/manage-dataviews.md#manage-data-views)のData Insights Agent列の情報を使用して、IMS組織内でData Insights Agentに対して有効になっているデータビューの数を表示できます。
   >* Data Insights Agent は、有効にしたその日のうちに、含まれるデータビューを参照できます。
 
   Data Insights Agent でデータビューを有効にするには：
@@ -123,7 +123,7 @@ Data Insights Agentを使用してAnalysis Workspaceでデータ中心の質問�
 
      ![Data Insights Agent に対してデータビューを有効にする](assets/data-view-enable-dia.png)
 
-     Data Insights Agentのデータビューを有効にする方法について詳しくは、「[ データビューのAI設定](/help/data-views/create-dataview.md#ai-settings)」を参照してください。
+     Data Insights Agentのデータビューを有効にする方法について詳しくは、「[&#x200B; データビューのAI設定](/help/data-views/create-dataview.md#ai-settings)」を参照してください。
 
   IMS 組織の Data Insights Agent トに対して有効なデータビューの数を表示するには：
 
@@ -190,7 +190,7 @@ Data Insights Agentを使用してAnalysis Workspaceでデータ中心の質問�
 
 **プロンプト：**&#x200B;プロンプトウィンドウに&#x200B;*「利益を追加」*&#x200B;と入力します。
 
-**応答：****[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
+**応答：**&#x200B;**[!UICONTROL 棒グラフ]**&#x200B;を使った最も簡潔な回答を提供し、利益指標をフリーフォームテーブルの列として追加しています。
 
 ![棒グラフ](/help/assets/ai-asst-result4.png)
 
@@ -299,7 +299,7 @@ Data Insights Agent が正しいコンポーネントを見つけて、追加情
 
 >[!MORELIKETHIS]
 >
->[ コンポーネント設定](/help/data-views/component-settings/overview.md)
+>[&#x200B; コンポーネント設定](/help/data-views/component-settings/overview.md)
 >[データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)
 >[計算指標を承認](/help/components/calc-metrics/cm-workflow/cm-approving.md)
 >[セグメントの共有](/help/components/segments/seg-share.md)
