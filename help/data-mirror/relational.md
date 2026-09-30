@@ -248,7 +248,7 @@ Experience Platformのインターフェイスで、次の操作を行います�
 
   1. 「**[!UICONTROL 次へ]**」を選択します。
 
-  [Snowflake Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)または[Azure](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続方法と認証方法について詳しくは、Experience Platformのドキュメントを参照してください。
+  [Snowflake Databricks](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/databricks)または[Azure](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake) コネクタを使用する場合の接続方法と認証方法について詳しくは、Experience Platformのドキュメントを参照してください。
 
 
 ### データを選択

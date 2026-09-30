@@ -74,7 +74,7 @@ Analytics ソースコネクタは、デフォルトで1つの組織内のAdobe 
 
 Adobe アカウントマネージャーが、複数の組織からAnalytics データをマッピングするリクエストを含むメールを受信すると、そのリクエストはAdobe内でレビューされます。 Adobeのアカウントマネージャーから、その他の質問やオプションのトレーニングなどの情報を受け取ることができます。
 
-承認されると、リクエストされたマッピングが作成され、通知されます。 ソース IMS組織名は、Experience PlatformのAnalytics レポートスイートの[&#x200B; リスト &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)のレポートスイートの名前に追加されます。
+承認されると、リクエストされたマッピングが作成され、通知されます。 ソース IMS組織名は、Experience PlatformのAnalytics レポートスイートの[&#x200B; リスト &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)のレポートスイートの名前に追加されます。
 
 
 ## 制限事項
@@ -94,7 +94,7 @@ Adobe アカウントマネージャーが、複数の組織からAnalytics デ�
 
 *Cross-IMS データマッピング*&#x200B;機能が承認されたら、宛先IMS組織内の1つ以上のレポートスイートのデータをExperience Platformに追加できます。 これは、[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics)の設定を通じて行います。 ターゲットデータセットは、Experience Platformで作成されます。 この設定とプロセスの一環として、1つ以上のレポートスイートからプロファイルサービスにプロファイルデータを送信するオプションがあります。
 
-上記のように、設定とプロセスの結果であるプロファイルの合計数を見積もります。 合計数が、宛先組織に対して契約上の権利を持つプロファイルの数以内であることを確認します。 [&#x200B; フィルタールールと条件](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}を適用して、プロファイルサービスへの取り込みにデータを選択的に含めたり除外したりします。 関連するレポートスイートのプロファイルサービスにプロファイルデータを送信するオプションを無効にします。
+上記のように、設定とプロセスの結果であるプロファイルの合計数を見積もります。 合計数が、宛先組織に対して契約上の権利を持つプロファイルの数以内であることを確認します。 [&#x200B; フィルタールールと条件](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"}を適用して、プロファイルサービスへの取り込みにデータを選択的に含めたり除外したりします。 関連するレポートスイートのプロファイルサービスにプロファイルデータを送信するオプションを無効にします。
 
 
 #### ステッチ

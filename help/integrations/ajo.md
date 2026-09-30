@@ -90,7 +90,7 @@ High Throughput トランザクションメッセージングアドオンが有�
 * **[!UICONTROL 7日間のP95待ち時間ウィジェット]**:P95待ち時間を、前週からの変化率を含む単一の値として表示します。
 * **[!UICONTROL 7日間のP95 スループット ウィジェット]**: P95 スループットを前週からの変化率を含む1つの値として表示します。
 
-これらのデータセットとHigh Throughput トランザクションメッセージアドオンについて詳しくは、Adobe Journey Optimizer ドキュメントの[API トリガーキャンペーンの高スループットモードの有効化](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput)を参照してください。
+これらのデータセットとHigh Throughput トランザクションメッセージアドオンについて詳しくは、Adobe Journey Optimizer ドキュメントの[API トリガーキャンペーンの高スループットモードの有効化](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput)を参照してください。
 
 ### データビュー
 

@@ -183,7 +183,7 @@ Adobe Analyticsとの連携により、Experience Platformのデータセット�
 
 >[!IMPORTANT]
 >
->時系列データにアドホックデータセットとスキーマを使用しない一般的な推奨事項に加えて、時系列データに&#x200B;**[!UICONTROL CSV]**&#x200B;からデータセットを作成ワークフローを使用することはできません。 このワークフローでは、すべてのフィールドを後で変更できない文字列型に定義します。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプの少なくとも1つのフィールドの定義が必要です。<br/> アドホック時系列データを使用する必要がある場合は、[APIを使用してアドホックスキーマを作成し](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)、次に[&#x200B; スキーマからデータセットを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
+>時系列データにアドホックデータセットとスキーマを使用しない一般的な推奨事項に加えて、時系列データに&#x200B;**[!UICONTROL CSV]**&#x200B;からデータセットを作成ワークフローを使用することはできません。 このワークフローでは、すべてのフィールドを後で変更できない文字列型に定義します。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプの少なくとも1つのフィールドの定義が必要です。<br/> アドホック時系列データを使用する必要がある場合は、[APIを使用してアドホックスキーマを作成し](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)、次に[&#x200B; スキーマからデータセットを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
 
 
 [接続](/help/connections/overview.md)を作成すると、[&#x200B; データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス &#x200B;](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。

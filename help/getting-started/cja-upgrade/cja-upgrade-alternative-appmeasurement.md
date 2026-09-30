@@ -101,7 +101,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。
+      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。
 
    1. スキーマの選択。
 
@@ -127,7 +127,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データストリームマッピングを使用すると、データオブジェクトのすべてのフィールドをXDM スキーマにマッピングできます。
 
-      詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
+      詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
 
 {{upgrade-final-step}} を参照してください。
 

@@ -144,7 +144,7 @@ Adobe Analyticsでは、多くのチームが`events`変数を指標を追跡す
 
 1. **Adobe Analyticsが認識し、自動的にマッピングするXDM フィールドパスを使用する：** Edge Networkを通じて認識されたXDM フィールドをAdobe Analyticsに送信すると、追加の設定なしで[自動的にマッピングされます](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
 1. **組織固有の概念にカスタム XDM フィールドを使用：** Analytics変数に自動的にマッピングされていないXDM フィールドは、Adobe Analyticsで[&#x200B; コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)として転送されます。
-1. **Adobe Analytics処理ルールを使用して、これらのコンテキストデータ変数をprop/eVar:** [処理ルール &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)にマッピングすると、カスタム XDM フィールドを任意のeVarまたはpropにマッピングできます。 このコンセプトは、Adobe Analyticsのパリティレポートをサポートし、スキーマをクリーンでCustomer Journey Analyticsを中心に保ちます。
+1. **Adobe Analytics処理ルールを使用して、これらのコンテキストデータ変数をprop/eVar:** [処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)にマッピングすると、カスタム XDM フィールドを任意のeVarまたはpropにマッピングできます。 このコンセプトは、Adobe Analyticsのパリティレポートをサポートし、スキーマをクリーンでCustomer Journey Analyticsを中心に保ちます。
 
 ## 関係者の特定と所有権の定義
 
@@ -162,7 +162,7 @@ Adobe Analyticsでは、多くのチームが`events`変数を指標を追跡す
 スキーマの設計では、組織のプライバシーポリシーに従って、プライバシーとガバナンスに対する期待を反映する必要があります。 スキーマを設計する際には、次の点を考慮してください。
 
 * 定義済みのユースケースをサポートするために必要な情報だけを収集。
-* 同意とデータ使用要件が、収集戦略に反映されるようにします。 詳しくは、[Web SDKを使用してお客様の同意データを処理する](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk)を参照してください。
+* 同意とデータ使用要件が、収集戦略に反映されるようにします。 詳しくは、[Web SDKを使用してお客様の同意データを処理する](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/governance-privacy-security/consent/sdk)を参照してください。
 * Adobe Experience Platformのガバナンスツール内で、機密性の高いフィールドがどのようにラベル付けされ、制御されているかを検討します。 詳しくは、[Adobe Customer Journey AnalyticsとData Governance](/help/privacy/privacy-overview.md)を参照してください。
 
 ## 次の手順
