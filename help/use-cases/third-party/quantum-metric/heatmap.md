@@ -9,23 +9,32 @@ autotag-review: '2026-05-19T09:50:41.180Z'
 TQID: 'https://experienceleague.adobe.com/EvPGghY3E7eoiJb6TcWnaOhneS6oQJj4bcwU3K2v3Ng'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: '366'
 ht-degree: 1%
-
 ---
-
 # Customer Journey AnalyticsでQuantum Metric ヒートマップを使用する
 
 量子指標のヒートマッピングをCJAデータにリンクすることで、ページレベルのエンゲージメントをより深く理解し、消費者の行動にもとづいてページを最適化できます。 Workspaceを使用すると、消費者のユーザーフローを把握し、消費者があるページから次のページに至るまでの経路を確認できます。 ハイパーリンクされたページ URLをクリックすると、ユーザーがコンテンツにどのように関与するかを視覚的にヒートマップできます。 Quantum Metric HeatmappingをCJAにリンクすることで、ページレベルのインタラクションをビジネス成果に関連付け、分析を次のレベルに引き上げることができます。
@@ -41,7 +50,7 @@ Quantum Metricのヒートマップ機能にアクセスするには、Quantum M
 1. [experience.adobe.com](https://experience.adobe.com)にログインします。
 1. Customer Journey Analyticsに移動し、上部メニューの&#x200B;**[!UICONTROL Workspace]**&#x200B;を選択します。
 1. 既存のプロジェクトを選択するか、プロジェクトを作成します。
-1. [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
+1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
 1. ページ URL ディメンションをWorkspace キャンバスにドラッグします。
 1. ディメンション列ヘッダーを右クリックし、**[!UICONTROL すべてのディメンション項目のハイパーリンクを作成]**&#x200B;を選択します。
 1. **[!UICONTROL カスタム URLを作成]**&#x200B;を選択します。
@@ -54,8 +63,8 @@ Quantum Metricのヒートマップ機能にアクセスするには、Quantum M
 1. 「**[!UICONTROL 作成]**」をクリックします。
 1. リンクの1つをテストして、Quantum Metric拡張機能が表示されているURLで開くかどうかを確認します。 これらのリンクは新しいタブで開くため、Workspace プロジェクトは開いたままになります。
 
-![&#x200B; ヒートマップ &#x200B;](assets/heatmap.png)
+![ ヒートマップ ](assets/heatmap.png)
 
 ## ステップ 2: Customer Journey Analytics内のリンクをクリックしてヒートマップを表示する
 
-ヒートマッピングを調べたいページが見つかったら、それを目的のパネルに適用できます。 このテーブルは、Quantum Metricを使用して、ヒートマップ、スクロール深度、およびインタラクション用のキーゾーンを探索できるURLを返します。 詳しくは、[量子指標ヒートマップ製品の概要](https://www.quantummetric.com/platform/interaction-heatmaps)を参照してください。 また、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル &#x200B;](https://community.quantummetric.com/s/public-support-page)からリクエストを送信することもできます。
+ヒートマッピングを調べたいページが見つかったら、それを目的のパネルに適用できます。 このテーブルは、Quantum Metricを使用して、ヒートマップ、スクロール深度、およびインタラクション用のキーゾーンを探索できるURLを返します。 詳しくは、[量子指標ヒートマップ製品の概要](https://www.quantummetric.com/platform/interaction-heatmaps)を参照してください。 また、Quantum Metric カスタマーサポート担当者にお問い合わせいただくか、[Quantum Metric カスタマーリクエストポータル ](https://community.quantummetric.com/s/public-support-page)からリクエストを送信することもできます。

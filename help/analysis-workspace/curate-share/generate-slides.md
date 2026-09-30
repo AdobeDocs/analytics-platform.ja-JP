@@ -5,32 +5,47 @@ title: Workspace レポートからのプレゼンテーションの生成
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-TQID: https://experienceleague.adobe.com/FS8pF5-orvK65JCWs8stf2gMbrUXYmcsM-DXJhzlML4
+TQID: 'https://experienceleague.adobe.com/FS8pF5-orvK65JCWs8stf2gMbrUXYmcsM-DXJhzlML4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1720
+source-wordcount: '1720'
 ht-degree: 9%
-
 ---
-
 # Data storytelling: Workspace レポートからスライドプレゼンテーションを生成する {#generate-powerpoint}
 
 >[!NOTE]
@@ -92,7 +107,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
 **セクション区切り記号：**&#x200B;適切に配置され、名前が付けられたセクション区切り記号でインサイトを分割します。
 
-## Workspace プロジェクトに基づく .pptx プレゼンテーションの生成
+## Workspace プロジェクトに基づいて .pptx プレゼンテーションを生成する
 
 <!-- markdownlint-disable MD034 -->
 
@@ -118,7 +133,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
    スライドを生成ダイアログが表示されます。
 
-   ![&#x200B; スライドの生成ダイアログ &#x200B;](assets/generate-slides.png)
+   ![ スライドの生成ダイアログ ](assets/generate-slides.png)
 
 1. 次の情報を指定します。
 
@@ -126,7 +141,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
    |---------|----------|
    | **[!UICONTROL 表紙タイトル]** | プレゼンテーションのタイトルを指定します。 このタイトルは、プレゼンテーションのタイトルスライドに表示されます。 |
    | **[!UICONTROL 発表者の名前を含める]** | 発表者の名前を指定します。 この名前は、プレゼンテーションのタイトルスライドの表紙の下に表示されます。 |
-   | **[!UICONTROL パネルとビジュアライゼーションを含む]** | プレゼンテーションに含めるパネルとビジュアライゼーションを選択します。 最大 50 個のビジュアライゼーションを含めることができます。<p>ビジュアライゼーションがグレー表示されている場合、その後にテキスト **[!UICONTROL （サポートされていません）]**&#x200B;または&#x200B;**[!UICONTROL （制限データ）]**&#x200B;が続きます。</p><ul><li>**サポートされていません**：ほとんどのパネルとビジュアライゼーションがサポートされています。 サポートされていないパネルとビジュアライゼーションについて詳しくは、[&#x200B; サポートされていないプロジェクト要素と機能](#unsupported-project-elements-and-features)を参照してください。</li><li>**制限付きデータ**：このビジュアライゼーションには、組織が適用するデータガバナンスポリシーによって書き出すことが制限されているコンポーネントが含まれています。 システム管理者に連絡して、どのコンポーネントが書き出しから制限されているかを確認し、制限されたコンポーネントを削除してからスライドを生成します。</li></ul> |
+   | **[!UICONTROL パネルとビジュアライゼーションを含む]** | プレゼンテーションに含めるパネルとビジュアライゼーションを選択します。 最大 50 個のビジュアライゼーションを含めることができます。<p>ビジュアライゼーションがグレー表示されている場合、その後にテキスト **[!UICONTROL （サポートされていません）]**&#x200B;または&#x200B;**[!UICONTROL （制限データ）]**&#x200B;が続きます。</p><ul><li>**サポートされていません**：ほとんどのパネルとビジュアライゼーションがサポートされています。 サポートされていないパネルとビジュアライゼーションについて詳しくは、[ サポートされていないプロジェクト要素と機能](#unsupported-project-elements-and-features)を参照してください。</li><li>**制限付きデータ**：このビジュアライゼーションには、組織が適用するデータガバナンスポリシーによって書き出すことが制限されているコンポーネントが含まれています。 システム管理者に連絡して、どのコンポーネントが書き出しから制限されているかを確認し、制限されたコンポーネントを削除してからスライドを生成します。</li></ul> |
    | **[!UICONTROL コンポーネントを強調]** | プレゼンテーションで強調する指標とディメンションをビジュアライゼーションから選択します。 データストーリーのテーマや全体的なストーリーを作成すると、選択したコンポーネントのランクが上がり、重みが増します。 <p>強調を適用しない場合、コンポーネントは次のようにプレゼンテーションに表示されます。<ul><li>**指標とディメンション：**&#x200B;斜体</li><li>**Dimension項目：**&#x200B;引用符</li></ul></p><p>強調を適用すると、コンポーネントは次のようにプレゼンテーションに表示されます。</p><ul><li>**指標とディメンション：**&#x200B;斜体と太字</li><li>**Dimension項目：**&#x200B;対応するディメンションが強調されている場合の太字<p>ディメンション項目がチャートでハイライト表示されている場合、ディメンション項目にもカラーが適用されます。</p></li></ul> |
 
    <!-- 
@@ -138,19 +153,19 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
    目的の色を選択して、プレゼンテーションのカラーテーマを選択するだけです。
 
-   ![&#x200B; デフォルトのテーマを使用してスライドを生成](assets/generate-slides-default-theme.png)
+   ![ デフォルトのテーマを使用してスライドを生成](assets/generate-slides-default-theme.png)
 
 1. （条件付き）スライド プレゼンテーションを企業テーマと一致させる必要がある場合は、**[!UICONTROL テンプレートをアップロード]**&#x200B;を選択します。 このオプションでは、カスタムテンプレートをアップロードし、カスタムスタイルを適用する必要があります。
 
    アップロードした最新のカスタムテンプレートは、ブラウザーキャッシュにローカルに保存され、今後のスライドプレゼンテーションの生成時に使用できます。
 
-   ![&#x200B; カスタムテンプレートを使用してスライドを生成](assets/generate-slides-upload-template.png)
+   ![ カスタムテンプレートを使用してスライドを生成](assets/generate-slides-upload-template.png)
 
    カスタムテンプレートをアップロードするには、次のいずれかの操作を行います。
 
    +++（推奨）空白のテンプレートをダウンロードして変更する
 
-   1. [この空のテンプレート &#x200B;](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?)をダウンロードします。
+   1. [この空のテンプレート ](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?)をダウンロードします。
 
    1. 空白のテンプレートにカスタムスタイルを適用します。
 
@@ -164,7 +179,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
    1. **[!UICONTROL レイアウトマッピング]** セクションでは、生成されたプレゼンテーションで使用される各スライドレイアウトが、アップロードしたテーマのスライドに自動的にマッピングされます。 選択内容を確認して、正しいことを確認します。
 
-      ![&#x200B; レイアウトマッピング &#x200B;](assets/generate-slides-layout-mapping.png)
+      ![ レイアウトマッピング ](assets/generate-slides-layout-mapping.png)
 
    1. （条件付き）スライドレイアウトが正しくマッピングされていない場合は、アップロードしたプレゼンテーションから選択したスライドの上の&#x200B;**[!UICONTROL 選択範囲を変更]**&#x200B;を選択し、レイアウトに一致するスライドを選択します。
 
@@ -188,7 +203,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
    1. **[!UICONTROL レイアウトマッピング]** セクションでは、生成されたプレゼンテーションで使用される各スライドレイアウトが、アップロードしたテーマのスライドに自動的にマッピングされます。 選択内容を確認して、正しいことを確認します。
 
-      ![&#x200B; カスタムテンプレートをマッピングするレイアウト &#x200B;](assets/generate-slides-layout-mapping-custom-template.png)
+      ![ カスタムテンプレートをマッピングするレイアウト ](assets/generate-slides-layout-mapping-custom-template.png)
 
    1. （条件付き）スライドレイアウトが正しくマッピングされていない場合は、アップロードしたプレゼンテーションから選択したスライドの上の&#x200B;**[!UICONTROL 選択範囲を変更]**&#x200B;を選択し、レイアウトに一致するスライドを選択します。
 
@@ -212,7 +227,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
 スライドを生成するライセンスを持つ組織の製品プロファイル管理者は、必要に応じてアクセスを無効にできます。
 
-[!UICONTROL Adobe Admin Console]では、[!UICONTROL &#x200B; レポートツール &#x200B;] **[!UICONTROL データstorytelling]**&#x200B;権限によって、この機能へのアクセス権が決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、アクセスを無効にする場合、[!UICONTROL Admin Console]で次の手順に従う必要があります。
+[!UICONTROL Adobe Admin Console]では、[!UICONTROL  レポートツール ] **[!UICONTROL データstorytelling]**&#x200B;権限によって、この機能へのアクセス権が決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、アクセスを無効にする場合、[!UICONTROL Admin Console]で次の手順に従う必要があります。
 1. **[!UICONTROL Admin Console]**／**[!UICONTROL 製品とサービス]**／**[!UICONTROL Customer Journey Analytics]**／**[!UICONTROL 製品プロファイル]**&#x200B;に移動します。
 1. [!UICONTROL Data storytelling]へのアクセスを提供する製品プロファイルのタイトルを選択します。
 1. 特定の製品プロファイルで、「**[!UICONTROL 権限]**」を選択します。
@@ -223,7 +238,7 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
 1. 「**[!UICONTROL 保存]**」を選択して権限を保存します。
 
-詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md#access-control)の[&#x200B; ユーザーレベルのアクセス &#x200B;](/help/technotes/access-control.md#user-level-access)を参照してください。
+詳しくは、[ アクセス制御](/help/technotes/access-control.md#access-control)の[ ユーザーレベルのアクセス ](/help/technotes/access-control.md#user-level-access)を参照してください。
 
 ## サポートされていないプロジェクト要素と機能 {#unsupported}
 
@@ -239,27 +254,27 @@ Analysis Workspaceでは、次のプロジェクト要素を考慮してデー�
 
   ほとんどのビジュアライゼーションは、Workspace プロジェクトから生成されるスライドに含めることができます。 ただし、次のビジュアライゼーションは含めることができず、設定オプションが表示されるときにグレー表示されます。
 
-   * 面グラフ
+  * 面グラフ
 
-   * ブレット
+  * ブレット
 
-   * コホートテーブル
+  * コホートテーブル
 
-   * コンボ
+  * コンボ
 
-   * 複数のディメンション列を持つフリーフォームテーブル（1つのディメンション列を持つテーブルがサポートされています）
+  * 複数のディメンション列を持つフリーフォームテーブル（1つのディメンション列を持つテーブルがサポートされています）
 
-   * ジャーニーキャンバス
+  * ジャーニーキャンバス
 
-   * 散布図
+  * 散布図
 
-   * ツリーマップ
+  * ツリーマップ
 
 * ガイド付き分析
 
 * データガバナンスポリシーによる書き出しが制限されているコンポーネント
 
-  詳しくは、[失敗した書き出しのトラブルシューティング &#x200B;](/help/components/exports/troubleshoot-exports.md)を参照してください。
+  詳しくは、[失敗した書き出しのトラブルシューティング ](/help/components/exports/troubleshoot-exports.md)を参照してください。
 
 ## 限定的なサポートにとどまるプロジェクト要素および機能
 

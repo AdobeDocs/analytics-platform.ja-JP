@@ -3,7 +3,18 @@ title: データフィードのサブイベントとオブジェクト配列に�
 description: Customer Journey Analytics データフィードがスキーマ配列からサブイベントを書き出し、Workspaceのように階層を統合するのではなく階層を保持する方法について説明します。
 hide: true
 feature: Components
-source-git-commit: afc1b55eb54b5f3342800489d0a7f63508ee8b10
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 1%
@@ -46,7 +57,7 @@ XDM スキーマでは、サブイベントを文字列配列またはオブジ�
 
 ## データフィード出力のサブイベントデータのクエリ
 
-サブイベントデータ [はCustomer Journey Analytics データフィード &#x200B;](#customer-journey-analytics-vs-adobe-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
+サブイベントデータ [はCustomer Journey Analytics データフィード ](#customer-journey-analytics-vs-adobe-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
 次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用します。 SnowflakeやDatabricksなどの他のデータウェアハウスも、構文の違いが少なくても同じアプローチをサポートしています。
 

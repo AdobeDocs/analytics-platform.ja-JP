@@ -12,11 +12,15 @@ product_v2:
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
     internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
     internal-label: Data ingestion
   - id: e1471301-a189-438e-8d48-264a8db508a6
     internal-label: Data views
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -27,7 +31,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 1%
@@ -98,7 +102,7 @@ CDC対応データミラーデータセットのソーステーブルに新し�
 
 ## ガバナンスの違い
 
-XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[&#x200B; フィールドグループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[&#x200B; フィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
+XDM [ スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition)と[ フィールドグループ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)などの基本概念では、フィールドグループ内の定義された[ フィールド ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)が、フィールドグループが使用されるすべてのデータセットにラベルを反映します。 例えば、フィールドグループ `identities`の電子メールフィールド `emailID`は、フィールドグループ `identities`が使用されているすべてのデータセットで同じラベルが付けられます。
 
 リレーショナルスキーマでは、列名は独立しています。 テーブル `customers`の`email`という名前の列は、テーブル `prospects`の`email`という名前の列とは独立しており、異なります。 この動作は、ラベル（DULE使用ラベルやポリシーなど）をミラーデータセットのフィールドに個別に適用する必要があることを意味します。 上記の例に基づいて、`customers` データセットの`email` フィールドと`prospects` データセットの`email` フィールドの両方にラベルを適用する必要があります。
 
@@ -119,9 +123,9 @@ XDM [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/
 
 システムキーとフィールドには、次の考慮事項が適用されます。
 
-* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[&#x200B; フィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
-* [&#x200B; マッピングフェーズ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
+* プライマリキー、バージョン記述子、およびタイムスタンプ記述子は、リレーショナル XDM スキーマのルートレベルのフィールドである必要があります。 取り込み中に[ フィールドマッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)を使用して、この要件をサポートします。
+* [ マッピングフェーズ ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中に、適切なソースフィールドを省略できます。
 
 ## ミラーデータのバッチサイズ
 
-接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[&#x200B; バッチ取り込みのガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。
+接続の一部として設定されているミラーデータ セットの場合、ミラーデータ セットのデータを取り込む各バッチが100 GBを超えないようにする必要があります。 詳細については、[ バッチ取り込みのガードレール ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}を参照してください。

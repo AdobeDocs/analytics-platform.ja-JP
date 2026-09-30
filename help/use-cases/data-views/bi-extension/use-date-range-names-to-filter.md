@@ -9,22 +9,28 @@ autotag-review: '2026-05-19T09:40:38.657Z'
 TQID: 'https://experienceleague.adobe.com/98raijZwviVsIrYb7S5y8BYfOZf4-yKKSANeSRfpmM0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: '612'
 ht-degree: 1%
-
 ---
-
 # フィルターに日付範囲名を使用する
 
 この使用例では、Customer Journey Analyticsで定義した日付範囲を使用して、過去1年間の発生件数（イベント）をフィルタリングおよびレポートします。
@@ -63,14 +69,14 @@ ht-degree: 1%
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
 
-   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterangeName is （All）]**&#x200B;を選択します。
+   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL daterangeName is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 基本フィルタリング]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
    1. 「**[!UICONTROL 検索]**」フィールドの下で、「**[!UICONTROL 昨年2023]**」を選択します。これは、Customer Journey Analyticsで定義された日付範囲の名前です。
    1. ![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、**[!UICONTROL 列]**&#x200B;から&#x200B;**[!UICONTROL daterangeName]**&#x200B;を削除します。
 
    適用された&#x200B;**[!UICONTROL daterangeName]** フィルターでテーブルが更新されます。 Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc8-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc8-powerbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -93,7 +99,7 @@ ht-degree: 1%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Name]**&#x200B;を選択します。
+   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Name]**&#x200B;を選択します。
 1. **[!UICONTROL Cc データビューのデータレンジ名]** フィルターを&#x200B;**[!UICONTROL is]**&#x200B;として指定し、値のリストから&#x200B;**[!UICONTROL 昨年2023]**&#x200B;を選択します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから：
    1. **[!UICONTROL Daterange Month]**&#x200B;を選択してから、**[!UICONTROL Month]**&#x200B;を選択します。

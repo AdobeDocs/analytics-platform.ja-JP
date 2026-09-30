@@ -9,24 +9,34 @@ autotag-review: '2026-05-19T09:33:58.249Z'
 TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+    internal-label: Schema
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: cf731116-8803-4027-85aa-9c0a126e8321
+    internal-label: Dataset configuration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 518
+source-wordcount: '518'
 ht-degree: 59%
-
 ---
-
 # オブジェクトの配列を使用
 
 一部のプラットフォームスキーマでは、オブジェクト配列を使用できます。 Adobe Customer Journey Analyticsは、イベントデータ、ルックアップデータ、プロファイルデータ内のオブジェクト配列の取り込みとレポート作成をサポートしています。 最も一般的な例の 1 つに、複数の製品が入った買い物かごがあります。 各製品には、名前、SKU、カテゴリ、価格、数量、および追跡したいその他のディメンションがあります。 これらのファセットにはそれぞれ個別の要件がありますが、すべて同じヒットに適合する必要があります。
@@ -285,5 +295,5 @@ Customer Journey Analyticsでは、同じ名前の指標が異なるオブジェ
 
 ## 制限事項
 
-Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [&#x200B; リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[&#x200B; データモデルの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-model-limits)」と「[&#x200B; データサイズの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
+Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [ リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[ データモデルの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)」と「[ データサイズの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
 

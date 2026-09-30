@@ -5,31 +5,45 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-TQID: https://experienceleague.adobe.com/tkPB8BHD6t3LiIhTiLyoQYH-Ucknl1YyUm5MOcxujBY
+TQID: 'https://experienceleague.adobe.com/tkPB8BHD6t3LiIhTiLyoQYH-Ucknl1YyUm5MOcxujBY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2150
+source-wordcount: '2150'
 ht-degree: 75%
-
 ---
-
 # ソースコネクタを使用したデータの取り込みと使用
 
 このクイックスタートガイドでは、ソースコネクタを使用して Adobe Experience Platform にデータを取り込み、そのデータを Customer Journey Analytics で使用する方法について説明します。
@@ -89,7 +103,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![&#x200B; スキーマ &#x200B;](./assets/create-pr-schema-wizard-step-2.png)の名前を付けるフィールドを表示するスキーマウィンドウを作成します
+      ![ スキーマ ](./assets/create-pr-schema-wizard-step-2.png)の名前を付けるフィールドを表示するスキーマウィンドウを作成します
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -129,7 +143,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![メールを ID として指定](./assets/specify-email-loyalty-id.png)
 
-   メールアドレスを、Adobe Experience Platform Identity Service がプロファイルの動作を組み合わせる（ステッチする）ために使用する ID として指定します。
+   メールアドレスを、Adobe Experience Platform ID サービスがプロファイルの動作を組み合わせる（ステッチする）ために使用する ID として指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 メール属性にフィンガープリントアイコンが表示されます。
 
@@ -177,7 +191,7 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 7. 「**[!UICONTROL プロファイル]**」スイッチを選択します。
 
-   プロファイルのデータセットを有効にするよう求められます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
+   プロファイル用にデータセットを有効にするよう求めるプロンプトが表示されます。 有効にすると、データセットは、取り込んだデータを使用してリアルタイム顧客プロファイルを強化します。
 
    >[!IMPORTANT]
    >
@@ -188,17 +202,17 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 データセットの表示、プレビュー、作成、削除の方法について詳しくは、[データセット UI ガイド](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ja)を参照してください。 リアルタイム顧客プロファイルのデータセットを有効にする方法について説明します。
 
 
-## ソースコネクタの使用
+## ソースコネクタを使用する
 
-ロイヤルティデータをどこで受け取るかに応じて、Adobe Experience Platform で使用可能な関連するソースコネクタを選択します。
+ロイヤルティデータをどこで受け取るかに応じて、Adobe Experience Platform で使用可能な該当するソースコネクタを選択します。
 
 さまざまなソースからデータを取り込むことができます。 以下に、利用可能な多くのソースのほんの一部を示します。
 
-- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)などが含まれます）
+- Adobe アプリケーション （ソースコネクタには、[Adobe Analytics](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/adobe-applications/analytics)、[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)などが含まれます）
 
-- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/cloud-storage/blob)などが含まれます）
+- クラウドストレージ （ソースコネクタには、[Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3)、[Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)などが含まれます）
 
-- データベース （ソースコネクタには、[Snowflake](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/databases/sql-server)などが含まれます）
+- データベース （ソースコネクタには、[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)、[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)などが含まれます）
 
 ソースコネクタを設定するには：
 
@@ -230,9 +244,9 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 Adobe Analytics ソースコネクタの使用方法については、[従来のAdobe Analyticsからのデータの取り込みと使用](./analytics.md)を参照してください。
 
-HTTP API ソースコネクタの使用方法については、[&#x200B; ストリーミングデータの取り込みと使用](./streaming.md)を参照してください。
+HTTP API ソースコネクタの使用方法については、[ ストリーミングデータの取り込みと使用](./streaming.md)を参照してください。
 
-ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja#terms-and-conditions)を参照してください。
+ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)を参照してください。
 
 
 ## 接続の設定
@@ -281,13 +295,13 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    1. 「**[!UICONTROL 保存]**」を選択します。
 
-[接続](/help/connections/overview.md)を作成すると、[&#x200B; データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス &#x200B;](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。
+[接続](/help/connections/overview.md)を作成すると、[ データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス ](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。
 
-## データ表示の設定
+## データビューを設定
 
-データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データ表示は、Analysis Workspace でレポートの準備を行う際に定義します。
+データビューは、Customer Journey Analytics に特有のコンテナで、接続からのデータをどのように解釈するかを指定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データビューは、Analysis Workspace でレポートの準備を行う際に定義します。
 
-データ表示を作成するには：
+データビューを作成するには：
 
 1. Customer Journey Analytics UIの上部メニューで、**[!UICONTROL データビュー]** （オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から）を選択します。
 
@@ -317,7 +331,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -338,11 +352,11 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペース - 空のプロジェクト](./assets/cja-projects-2.png)
 
-4. リストからデータ表示を選択します。
+4. リストからデータビューを選択します。
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
@@ -350,4 +364,4 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。 どのロイヤルティデータ（スキーマ）を収集するか、Adobe Experience Platform 内のどこにそのデータセットを保存するかを定義することで、まず適切なソースコネクタを設定し、ロイヤルティデータを提供します。 取り込んだロイヤルティデータと他のデータを使用するよう、Customer Journey Analytics で接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。 どのロイヤルティデータ（スキーマ）を収集するか、Adobe Experience Platform 内のどこに（データセット）として保存するかを定義することから始め、ロイヤルティデータを提供するための適切なソースコネクタを設定しました。 取り込んだロイヤルティデータと他のデータを使用するよう、Customer Journey Analytics で接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。

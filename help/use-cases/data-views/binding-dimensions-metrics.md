@@ -4,22 +4,28 @@ description: 複雑な永続性分析のために、オブジェクト配列に�
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/1QpmW2FTqA2B7JgqJEO6MNJzrBkGIL9s4gZYxhIp9UI
+TQID: 'https://experienceleague.adobe.com/1QpmW2FTqA2B7JgqJEO6MNJzrBkGIL9s4gZYxhIp9UI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1357
+source-wordcount: '1357'
 ht-degree: 70%
-
 ---
-
 # バインディングディメンションと指標を使用する
 
 Customer Journey Analytics には、設定されたヒットの後でディメンション値を保持する方法がいくつか用意されています。 アドビが提供する永続性メソッドの 1 つにバインディングがあります。 以前のバージョンの Adobe Analyticsでは、この概念はマーチャンダイジングと呼ばれていました。
@@ -448,4 +454,4 @@ Analysis Workspaceは、他のプロファイルからの検索を考慮せず�
 
 >[!MORELIKETHIS]
 >
->データビュー[&#128279;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=ja) チュートリアルの バインディングディメンション。
+>データビュー](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) チュートリアルの[ バインディングディメンション。

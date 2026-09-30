@@ -4,27 +4,37 @@ description: Adobe TargetとCustomer Journey Analyticsの統合
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-TQID: https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ
+TQID: 'https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 34593a4407e6334e9abab6034accd84fc5a70d33
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 452
+source-wordcount: '452'
 ht-degree: 40%
-
 ---
-
 # ターゲットレポート
 
 Customer Journey AnalyticsのTarget Reportingを使用すると、Adobe Target アクティビティをCustomer Journey Analyticsで直接測定およびレポートできます。 この機能は、Analytics for Target （A4T）を介してAdobe Analytics（AA）で実行されるものと同等ですが、Adobe Experience Platform（AEP）との接続性があります。 Customer Journey Analyticsをレポートソースとして使用するTarget アクティビティを作成すると、対応するサンドボックスにAdobe Target Classification Eventsという名前のルックアップデータセットが作成されます。 このルックアップデータセットは、Target アクティビティ IDをユーザーフレンドリーな属性（アクティビティ名やエクスペリエンス名など）で分類することで、レポートを強化します。

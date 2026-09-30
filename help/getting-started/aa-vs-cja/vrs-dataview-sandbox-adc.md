@@ -4,30 +4,40 @@ description: 仮想レポート環境とサンドボックス環境について�
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-TQID: https://experienceleague.adobe.com/U-90bs2lmli3TxdxDyu2jQZvIU29C80tbiHSDyAmGFA
+TQID: 'https://experienceleague.adobe.com/U-90bs2lmli3TxdxDyu2jQZvIU29C80tbiHSDyAmGFA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 785
+source-wordcount: '785'
 ht-degree: 94%
-
 ---
-
 # 仮想レポートスイート、データビュー、Adobe Experience Platform サンドボックスおよび Analytics ソースコネクタ
 
-アドビでは、仮想レポート環境サンドボックス環境を作成するための様々な手段を提供しています。 次の機能の類似点と相違点およびこれらの機能が [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)にどのように関連するかを理解する場合に役立ちます。
+アドビでは、仮想レポート環境とサンドボックス環境を作成するための様々な手段を提供しています。 次の機能の類似点と相違点およびこれらの機能が [Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)にどのように関連するかを理解する場合に役立ちます。
 
 * Adobe Analytics 仮想レポートスイート
 * Customer Journey Analytics データビュー
@@ -41,19 +51,19 @@ ht-degree: 94%
 
 * Adobe Analytics セグメントに基づくことができる。
 * 履歴データにも新しいデータにも、非破壊で適用できる。
-* 異なるビジネスチームで使用するために、Adobe Analytics レポートスイートの上に 1 つまたは複数の仮想ビューを作成できる。
-* Adobe Analytics のユーザーごとに異なる種類のデータへのアクセスを制御し、キュレーションするために使用される可能性がある。
+* 異なるビジネスチームで使用するために、Adobe Analytics レポートスイートの上に構築された 1 つまたは複数の仮想ビューを作成できる。
+* Adobe Analytics のユーザーごとに異なる種類のデータへのアクセスを制御し、キュレーションするために使用できる場合があります。
 * Adobe Analytics にオプションの[レポート時の処理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=ja)機能を提供する。 この場合、仮想レポートスイートは、「訪問」のカスタム定義を作成するために使用されることがあります。
 * セグメント評価と同様に、レポート実行時に適用される。 これは、データが収集され、Adobe Analytics 内に保存された&#x200B;_後_&#x200B;です。
 * Adobe Analytics の[クロスデバイス分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=ja)に必要。
-* 標準の Analytics レポートスイート（250 eVar、250 prop、1000 イベント）と同じ数の変数を使用できるが、仮想レポートスイートのキュレーションによって、ユーザーに公開する変数を制限できる。
+* 標準の Analytics レポートスイート（250 eVar、250 prop、1000 イベント）と同じ数の変数を使用できますが、仮想レポートスイートのキュレーションによって、ユーザーに公開する変数を制限できます。
 * カスタムカレンダーオプションをサポートする。
 
-仮想レポートスイートに該当しないこと：
+仮想レポートスイートではないもの：
 
 * レポートスイートを組み合わせる手段。
 * Adobe Analytics Data Warehouse で利用可能。
-* Analytics ソースコネクタを介した Adobe Experience Platform へのデータフローのソースとして利用できる。 Analytics ソースコネクタで使用できるのは、完全な（非仮想）レポートスイートのみです。
+* Adobe Experience Platform へのデータフローのソースとして、Analytics ソースコネクタ経由で利用できる。 Analytics ソースコネクタで使用できるのは、完全な（非仮想）レポートスイートのみです。
 
 
 ## Customer Journey Analytics データビュー
@@ -68,13 +78,13 @@ ht-degree: 94%
 * Customer Journey Analytics のユーザーごとに異なる種類のデータへのアクセスを制御し、キュレーションするために使用される可能性がある。
 * Customer Journey Analytics 接続を通じて Customer Journey Analytics に取り込まれるデータを変換および強化するための強力な非破壊オプションを提供する。
 * Customer Journey Analytics のレポート時の処理機能に基づく。
-* 「セッション」のカスタム定義をユーザーが作成できるようにする。
+* ユーザーが「セッション」のカスタム定義を作成できる。
 * セグメント評価と同様に、レポート実行時に適用されます。 これは、ソースコネクタ（Adobe Analytics など）が Adobe Experience Platform データレイク内のデータセットにデータを書き込んだ&#x200B;_後_&#x200B;と、Customer Journey Analytics 接続を介してデータが Customer Journey Analytics に取り込まれた&#x200B;_後_&#x200B;です。
-* 変数の数は無制限だが、キュレーションにより、ユーザーに公開する変数を制限できる
-* イベント、セッションおよび人物コンテナにカスタムの名前を付けることができる。
+* 変数の数は無制限だが、キュレーションにより、ユーザーに公開する変数を制限できる。
+* イベント、セッションおよび Person コンテナにカスタム名を付けることができる。
 * カスタムカレンダーオプションをサポートする。
 
-データビューに該当しないこと：
+データビューでできないこと：
 
 * レポートスイートや他のデータセットを組み合わせるための手段を直接提供する。 代わりに、データセットは Customer Journey Analytics 接続で組み合わされます。 Customer Journey Analytics 接続から組み合わされたデータは、その接続に基づくすべてのデータビューで使用できます。
 
@@ -82,7 +92,7 @@ ht-degree: 94%
 
 詳しくは、[サンドボックスの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ja)を参照してください。
 
-Adobe Experience Platform サンドボックスに該当すること：
+Adobe Experience Platform サンドボックス：
 
 * 1つのAdobe Experience Platform インスタンスを個別の仮想環境（開発、テスト、ステージ、実稼動環境など）に分割する手段を提供します。 進化させるのに役立つ機能のリリースが予定されています。
 * 所定の環境のすべてのデータとアプリケーションを保持するコンテナと考えることができる。

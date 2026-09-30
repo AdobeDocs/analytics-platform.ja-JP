@@ -9,27 +9,35 @@ autotag-review: '2026-05-19T06:55:50.510Z'
 TQID: 'https://experienceleague.adobe.com/dTARH-90RV1yHWQX3tqotqum-WizfgFh5mgUeYySI6c'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 442
+source-wordcount: '442'
 ht-degree: 9%
-
 ---
-
 # 派生フィールドを使用した目標に関するレポート
 
 このユースケースでは、派生フィールドの力を使用して特定のディメンションの目標を設定し、これらの目標をWorkspace プロジェクトで使用する方法について説明します。
 
-派生フィールドについて詳しくない場合は、[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja)および[&#x200B; ドキュメント &#x200B;](/help/data-views/derived-fields/derived-fields.md)を参照して、概要を確認してください。
+派生フィールドについて詳しくない場合は、[ チュートリアル ](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=ja)および[ ドキュメント ](/help/data-views/derived-fields/derived-fields.md)を参照して、概要を確認してください。
 
 
 ## 目標の定義
@@ -52,11 +60,11 @@ ht-degree: 9%
 
 各マーケティングチャネルの月間売上目標を設定します。 次に手順を示します。
 
-1. `Monthly Marketing Channel Revenue Goal (Incremental)`という名前の[&#x200B; マーケティングチャネル関数テンプレート &#x200B;](/help/data-views/derived-fields/derived-fields.md#marketing-channels)を使用して、新しい派生フィールドを作成します。
+1. `Monthly Marketing Channel Revenue Goal (Incremental)`という名前の[ マーケティングチャネル関数テンプレート ](/help/data-views/derived-fields/derived-fields.md#marketing-channels)を使用して、新しい派生フィールドを作成します。
 
 1. URL PARSE ルールとCASE WHEN ルールの組み合わせに基づいて、各マーケティングチャネルを適切に識別するためのすべてのルールを定義します。 次に例を示します。
 
-   ![&#x200B; マーケティングチャネル派生フィールドのルールの定義](assets/goals-derived-field-marketing-channel-1.png)
+   ![ マーケティングチャネル派生フィールドのルールの定義](assets/goals-derived-field-marketing-channel-1.png)
 
 1. **[!UICONTROL カスタム数値]**&#x200B;を設定することで、最終的なCASE WHEN ルールの特定のマーケティングチャネルに対して、毎月の売上目標を表す静的な値を明示的に設定します。 以下の[!DNL Monthly Goal] ルールを参照してください。
 
@@ -80,7 +88,7 @@ Workspace プロジェクトで目標を使用するには、計算指標の機�
 
 これらの計算指標を使用して、フリーフォームテーブルやビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
 
-マーケティング売上目標を示す![&#x200B; フリーフォームテーブル &#x200B;](assets/freeform-table-marketing-channel-revenue-goals.png)
+マーケティング売上目標を示す![ フリーフォームテーブル ](assets/freeform-table-marketing-channel-revenue-goals.png)
 
 
 
@@ -97,4 +105,4 @@ Workspace プロジェクトで目標を使用するには、計算指標の機�
 
 これらの計算指標を使用して、フリーフォームテーブルやビジュアライゼーションの進行状況をレポートできます。 次に例を示します。
 
-マーケティング売上目標を示す![&#x200B; フリーフォームテーブル &#x200B;](assets/freeform-table-product-order-goals.png)
+マーケティング売上目標を示す![ フリーフォームテーブル ](assets/freeform-table-product-order-goals.png)

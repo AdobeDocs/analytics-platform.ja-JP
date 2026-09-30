@@ -4,29 +4,39 @@ description: Analysis Workspaceでアトリビューションパネルを使用�
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-TQID: https://experienceleague.adobe.com/sMLOCsAtZVm-fyHPTkPl-ftUHt3k7DvjPrDYPAuAQTw
+TQID: 'https://experienceleague.adobe.com/sMLOCsAtZVm-fyHPTkPl-ftUHt3k7DvjPrDYPAuAQTw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Implementation
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 689
+source-wordcount: '689'
 ht-degree: 90%
-
 ---
-
 # アトリビューションパネル {#attribution-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -47,7 +57,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ アトリビューションパネル [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/attribution)を参照してください。 アトリビューションパネル _。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_****_<br/>_ アトリビューションパネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/attribution)を参照してください。[ アトリビューションパネル _。![
 
 >[!ENDSHADEBOX]
 
@@ -82,7 +92,7 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 
    ![選択した複数のディメンションと指標を表示するアトリビューションパネルウィンドウ。](assets/attribution-panel.png)
 
-1. **[!UICONTROL 含まれるモデル]**&#x200B;から1つ以上の[属性モデル &#x200B;](#attribution-models)を選択し、**[!UICONTROL コンテナ]**&#x200B;から[&#x200B; コンテナ &#x200B;](#container)を選択し、比較に使用する&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;から[&#x200B; ルックバックウィンドウ &#x200B;](#lookback-window)を選択します。
+1. **[!UICONTROL 含まれるモデル]**&#x200B;から1つ以上の[属性モデル ](#attribution-models)を選択し、**[!UICONTROL コンテナ]**&#x200B;から[ コンテナ ](#container)を選択し、比較に使用する&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;から[ ルックバックウィンドウ ](#lookback-window)を選択します。
 
 1. 「**[!UICONTROL 作成]**」を選択して、パネル内のビジュアライゼーションを作成します。
 

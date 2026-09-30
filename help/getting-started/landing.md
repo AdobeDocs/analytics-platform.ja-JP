@@ -4,24 +4,32 @@ title: Customer Journey Analytics のランディングページ
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-TQID: https://experienceleague.adobe.com/yj0864tQCuKNQocyhuqyi-N647uoy2IeqhT9RHmrRK0
+TQID: 'https://experienceleague.adobe.com/yj0864tQCuKNQocyhuqyi-N647uoy2IeqhT9RHmrRK0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 680
+source-wordcount: '680'
 ht-degree: 45%
-
 ---
-
 # Customer Journey Analytics のランディングページ
 
 Customer Journey Analytics ランディングページには、次のサブタブが含まれます。
@@ -32,12 +40,12 @@ Customer Journey Analytics ランディングページには、次のサブタ�
 
 **[!UICONTROL 学習]**：実践的なビデオツアー、チュートリアル、ドキュメントへのリンクが含まれています。 Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに関する情報と、組織に固有のアップグレードステップを動的に生成するツールも含まれています。
 
-![CJA ランディングページ左パネル &#x200B;](assets/cja-landing-page-left-rail.png)
+![CJA ランディングページ左パネル ](assets/cja-landing-page-left-rail.png)
 
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace のランディングページ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -114,7 +122,7 @@ The available columns are:
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
-| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=ja) for you to design and build. |
+| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
 | [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest CX Enterprise release notes. |
 | Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
@@ -164,7 +172,7 @@ Customer Journey Analyticsへのアップグレードに関する情報にアク
 
 このページは、Adobe AnalyticsからCustomer Journey Analyticsへの完全なアップグレードがまだ完了していないお客様向けです。 組織固有の状況に応じて動的に生成されるアップグレードステップの結果を示すアンケートを提供します。
 
-詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の「組織のアップグレード手順を動的に生成する[&#128279;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization)」を参照してください。
+詳しくは、[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)の「組織のアップグレード手順を動的に生成する](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization)」を参照してください。[
 
 ## 好みのランディングページ
 

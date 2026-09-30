@@ -4,27 +4,35 @@ description: Analysis WorkspaceのMedia Concurrent Viewers パネルの使用方
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-TQID: https://experienceleague.adobe.com/IkzScFK8pyrB-ejW-Kjtgwm-A5XfdLSR-5JqrU30EGw
+TQID: 'https://experienceleague.adobe.com/IkzScFK8pyrB-ejW-Kjtgwm-A5XfdLSR-5JqrU30EGw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1211
+source-wordcount: '1215'
 ht-degree: 90%
-
 ---
-
 # メディア同時視聴者数パネル {#media-concurrent-viewers-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -41,21 +49,21 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="メディア同時視聴者数"
->abstract="同時視聴者数の推移を分析し、ピーク時の同時実行を表示して、オプションでセグメント、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
+>abstract="同時閲覧者数の推移を分析し、ピーク時の同時閲覧者数を確認し、必要に応じてセグメント、ディメンション、ディメンション項目または日付範囲を使用して分類および比較します。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ メディア同時視聴者数パネル [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を参照してください。 メディア同時視聴者数パネル _。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_****_<br/>_ メディア同時視聴者数パネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)を参照してください。[ メディア同時視聴者数パネル _。![
 
 >[!ENDSHADEBOX]
 
 
 >[!NOTE]
 >
->メディア分平均オーディエンスパネルは、Customer Journey Analytics 用ストリーミングメディアコレクションアドオンを購入したお客様のみが使用できます。
+>メディア分平均オーディエンスパネルは、Customer Journey Analytics 用 Streaming Media Collection アドオンを購入したお客様のみが使用できます。
 >
 >詳しくは、アドビ担当営業または販売店か、アドビアカウントチームにお問い合わせください。
 >
@@ -69,7 +77,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [メディア同時視聴者数パネル](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -81,7 +89,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 
 1. **[!UICONTROL メディア同時視聴者数]**&#x200B;パネルを作成します。 パネルの作成方法について詳しくは、[パネルの作成](panels.md#create-a-panel)を参照してください。
 
-1. ストリーミングメディアコレクションから設定されたコンポーネントを含むパネルのデータビューを選択します。
+1. 必ず、ストリーミングメディアコレクションから設定されたコンポーネントを含むデータビューを、パネル用に選択してください。
 
 1. パネルの[入力](#panel-input)を指定します。
 
@@ -95,7 +103,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 |---|---|
 | **[!UICONTROL パネルの日付範囲]** | パネルの日付範囲のデフォルトは「今日」です。  一度に 1 日または複数の月を表示するように編集できます。<br> <br>この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。  日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。 |
 | **[!UICONTROL 精度]** | 精度のデフォルトは分単位です。<br>このビジュアライゼーションは、1,440行のデータに制限されています（例えば、分単位の精度で24時間）。  日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。 |
-| **[!UICONTROL パネルの概要番号]** | 同時視聴者数の日時の詳細を表示するには、概要番号を使用できます。 最大値は、ピーク同時実行性の詳細を示します。 **[!UICONTROL 最小値]**&#x200B;は、トラフの詳細を示します。  パネルのデフォルトでは「最大」のみが表示されますが、「最小」または「最大」と「最小」の両方を表示するように変更できます。<br><br>分類を使用している場合は、それぞれに概要番号が表示されます。 |
+| **[!UICONTROL パネルの概要番号]** | 同時視聴者数の日時の詳細を表示するには、概要番号を使用できます。 最大値は、ピーク時の同時閲覧者数の詳細を示します。 **[!UICONTROL 最小値]**&#x200B;は、トラフの詳細を示します。  パネルのデフォルトでは「最大」のみが表示されますが、「最小」または「最大」と「最小」の両方を表示するように変更できます。<br><br>分類を使用している場合は、それぞれに概要番号が表示されます。 |
 | **[!UICONTROL シリーズの分類]** | オプションとして、セグメント、ディメンション、ディメンション項目または日付範囲でビジュアライゼーションを分類できます。<br>一度に 10 行まで表示できます。 分類は 1 つのレベルに制限されます。<br>ディメンションをドラッグすると、選択したパネルの日付範囲に基づいて、上位のディメンション項目が自動的に選択されます。<br>日付範囲を比較するには、2 つ以上の日付範囲をシリーズ分類セグメントにドラッグします。 |
 
 次に、**[!UICONTROL 最大のみ]**&#x200B;の概要番号を使用して、**[!UICONTROL 分]**&#x200B;の精度に設定されたパネルの例を示します。 **[!UICONTROL その他]**、**[!UICONTROL テーブル]**、**[!UICONTROL 携帯電話]**、**[!UICONTROL ゲームコンソール]**、**[!UICONTROL メディアプレーヤー]**、**[!UICONTROL セットトップボックス]**、**[!UICONTROL テレビ]**&#x200B;に分類されます。
@@ -118,7 +126,7 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 
 | 指標 | 説明 |
 |---|---|
-| **[!UICONTROL 同時視聴者数]** | セッション数にかかわらず、特定の時点におけるメディアストリームを視聴しているユニークユーザー数です。 |
+| **[!UICONTROL 同時視聴者数]** | セッション数にかかわらず、特定の時点においてメディアストリームを視聴している一意の人物数です。 |
 
 このビューでは、フリーフォームテーブルは使用できません。  データソースを表示するには、折れ線グラフビジュアライゼーションのコンテキストメニューからデータソースをダウンロードし、「**[!UICONTROL データを CSV としてダウンロード]**」を選択します。  シリーズの分類が含まれています。
 
@@ -130,20 +138,20 @@ Analysis Workspace では、同時視聴者数指標は、セッション数に�
 |---|---|
 | フリーフォームテーブルはどこにありますか？ データソースの確認方法を教えてください。 | このビューでは、フリーフォームテーブルは使用できません。  折れ線グラフのコンテキストメニューからデータソースをダウンロードし、「**[!UICONTROL データを CSV としてダウンロード]**」を選択します。 |
 | 精度が変更されたのはなぜですか？ | この視覚化は、1440 行のデータに制限されています（例えば、分レベルの粒度で 24 時間）。  日付範囲と精度の組み合わせの結果が 1440 行を超える場合、精度は日付範囲全体に対応するように自動的に更新されます。<br><br>広い日付範囲から狭い日付範囲に変更する場合、日付範囲が変更されると、精度は許容できる最小の詳細度に更新されます。 より高い精度を表示するには、パネルを編集して再作成します。 |
-| ビデオ名、セグメント、コンテンツタイプなどを比較するにはどうすればよいですか？ | 単一のビジュアライゼーション内でこれらの項目を比較するには、セグメント、ディメンションまたはシリーズ分類セグメント内の特定のディメンション項目をドラッグします。<br><br>ビューの分類は 10 個に制限されています。  10 を超える表示を行うには、複数のパネルを使用する必要があります。 |
+| ビデオ名、セグメント、コンテンツタイプなどを比較するにはどうすればよいですか？ | 単一のビジュアライゼーション内でこれらの項目を比較するには、セグメント、ディメンション、または特定のディメンション項目をシリーズ分類セグメントにドラッグします。<br><br>ビューの分類は 10 個に制限されています。  10 を超える表示を行うには、複数のパネルを使用する必要があります。 |
 | 日付範囲の比較方法を教えてください。 | 単一のビジュアライゼーション内の日付範囲を比較するには、2 つ以上の日付範囲をドラッグして、シリーズの分類を使用します。  これらの日付範囲がパネルの日付範囲より優先されます。 |
 | ビジュアライゼーションのタイプを変更する方法を教えてください。 | このパネルでは、時系列の線のビジュアライゼーションのみが可能です。 |
 | 異常値検出を実行できますか？ | いいえ。  このパネルでは異常値検出は利用できません。 |
-| アクティブセッションではなく、ユニークユーザーを使用するのはなぜですか？ | ユニークユーザーを使用すると、（セッションの終了と開始が同時に行われる）番組の境界で不要なスパイクを削除できます。 |
-| 同時視聴者数の精度を分単位よりも細かくするとはどういう意味ですか？ | 精度が 1 分を超える場合、同時視聴者数はその時間範囲内のすべての分におけるユニーク同時視聴者数の合計です。  例えば、時間レベルの精度の同時視聴者数は、その時間内のすべての分のユニーク同時視聴者数の合計です。 |
-| ワークスペースパネルには、同時視聴者数レポートと同じ情報が表示されますか？ | いいえ。  Analysis Workspace では、同時視聴者数指標は、特定の時点におけるメディアストリームを視聴しているユニークユーザー数として定義されます。 セッション数には関係ありません。<br><br>この指標は、同時アクティブセッションを使用する、「レポート」セクションの同時視聴者数レポートとは異なります。 ユニークユーザーを使用すると、（セッションの終了と開始が同時に行われる）番組の境界で不要なピークが削除されます。 |
+| アクティブセッションではなく、一意の人物を使用するのはなぜですか？ | ユニークユーザーを使用すると、（セッションの終了と開始が同時に行われる）番組の境界で不要なスパイクを削除できます。 |
+| 同時視聴者数の精度を分単位よりも細かくするとはどういう意味ですか？ | 精度が 1 分を超える場合、同時視聴者数はその時間範囲内のすべての分におけるユニーク同時視聴者数の合計です。  例えば、時間レベルの精度の場合、同時閲覧者数は、その時間内のすべての分における一意の同時閲覧者数の合計です。 |
+| ワークスペースパネルには、同時視聴者数レポートと同じ情報が表示されますか？ | いいえ。  Analysis Workspace では、同時閲覧者数指標は、特定の時点にメディアストリームを視聴している一意の人物の数として定義されます。 セッション数には関係ありません。<br><br>この指標は、同時アクティブセッションを使用する、「レポート」セクションの同時視聴者数レポートとは異なります。 一意の人物を使用すると、番組の境目（セッションの終了と開始が同時に行われる）で発生する不要なピークが除外されます。 |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->
 
 
 >[!MORELIKETHIS]
 >
->[&#x200B; パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[メディア再生滞在時間パネル](media-playback-time-spent.md)
+>[ パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[メディア再生に費やした時間パネル](media-playback-time-spent.md)
 >[メディア分平均オーディエンスパネル](average-minute-audience-panel.md)
 >

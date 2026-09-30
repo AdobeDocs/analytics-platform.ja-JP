@@ -3,23 +3,30 @@ title: アトリビューションのベストプラクティス
 description: 使用するアトリビューションモデルを決定する際のベストプラクティスを理解します。
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-TQID: https://experienceleague.adobe.com/noNo2rP-srAtUJbG-kYgipLHknMsWWZR4iJwDv-2ioc
+TQID: 'https://experienceleague.adobe.com/noNo2rP-srAtUJbG-kYgipLHknMsWWZR4iJwDv-2ioc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+    internal-label: Attribution
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 466
+source-wordcount: '466'
 ht-degree: 63%
-
 ---
-
 # アトリビューションのベストプラクティス
 
 組織に適したアトリビューションモデルの選択は、多くの考慮事項に基づいて行います。 この記事では、メソドロジーと一般的なベストプラクティスについて解説します。
@@ -43,7 +50,7 @@ ht-degree: 63%
 
 ### 上位ファネル分析
 
-上位ファネル分析は、ブランドや製品の認知度の作成に使用されるチャネルを分析します。 例えば、ほとんどのテレビ広告の目標はブランド認知度の向上です。 テレビ広告は時間の経過とともに忘れられるので、[時間減衰アトリビューションモデル &#x200B;](/help/analysis-workspace/attribution/models.md)を使用することができます。
+上位ファネル分析では、ブランドや製品の認知を高めるために使用されるチャネルを対象とします。 例えば、ほとんどのテレビ広告の目標はブランド認知度の向上です。 テレビ広告は時間の経過とともに忘れられるので、[時間減衰アトリビューションモデル ](/help/analysis-workspace/attribution/models.md)を使用することができます。
 
 ### 下部ファネル分析
 
@@ -57,13 +64,13 @@ ht-degree: 63%
 
 仮説が「*私のファーストタッチチャネルは、私のラストタッチチャネルよりもコンバージョンに大きな影響を与えます。*」
 
-この場合、[逆J字型アトリビューションモデル &#x200B;](/help/analysis-workspace/attribution/models.md)を使用して、この仮説をテストします。 このモデルでは、ファーストタッチポイントに対するクレジットの 60% が与えられます。
+この場合、[逆J字型アトリビューションモデル ](/help/analysis-workspace/attribution/models.md)を使用して、この仮説をテストします。 このモデルでは、ファーストタッチポイントに対するクレジットの 60% が与えられます。
 
 **例 2**
 
 仮説が次のようであるとします。*「特定の業界（旅行業界など）では、顧客は製品を購入する前に多くの調査を行うため、アトリビューション期間は30日ではなく60日または90日です。*」
 
-この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
+この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
 
 ## アルゴリズムによるアトリビューション
 
@@ -73,5 +80,5 @@ ht-degree: 63%
 
 * Analysis Workspace だけに依存するのではなく、データサイエンティストのサービスを使用する必要性が生じる場合があります。
 * Adobe データフィードのように、生データを使用できます。
-* インプレッションデータを考慮する場合は、例えば[Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)の使用を検討してください。
+* インプレッションデータを考慮する場合は、例えば[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)の使用を検討してください。
 

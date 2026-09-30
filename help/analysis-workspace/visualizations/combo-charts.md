@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:32:13.517Z'
 TQID: 'https://experienceleague.adobe.com/xXpUD-E71BVVe0WOQ-tbLILq1c5kRN-Jy2xHufxBfBk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 617
+source-wordcount: '626'
 ht-degree: 92%
-
 ---
-
 # コンボ {#combo}
 
 <!-- markdownlint-disable MD034 -->
@@ -37,9 +42,9 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics** のコンボビジュアライゼーションについて説明します。_
+_この記事では、_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics** のコンボビジュアライゼーションについて説明します。_
 
-_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについて詳しくは、[コンボ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)を参照してください。_
+_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについて詳しくは、[コンボ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -58,7 +63,7 @@ _この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x2
 * 1 つ以上の比較を追加する場合は、[!UICONTROL 時間比較]など、同じタイプの比較にする必要があります。
 * 最大 5 つの比較を追加できます。
 * 1 つの指標に最大 3 つのセグメントを適用できます。
-* 計算指標は複合グラフではサポートされません。
+* 計算指標はコンボグラフではサポートされません。
 
 ## 使用
 
@@ -78,7 +83,7 @@ _この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x2
 
 1. 「**[!UICONTROL 作成]**」を選択します。
 
-   出力は、例えば次のようになります。
+   出力は次のようになります。
 
    ![現在の期間を棒グラフで示し、比較期間を折れ線グラフで示したコンボグラフ](assets/combo-output.png)
 
@@ -110,7 +115,7 @@ _この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x2
 
 >[!MORELIKETHIS]
 >
->[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

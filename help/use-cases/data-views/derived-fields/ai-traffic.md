@@ -21,28 +21,33 @@ feature_v2:
     internal-label: Integrations
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
     internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
     internal-label: Data views
   - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
     internal-label: Derived fields
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-  - 
-    id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: ''
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-    internal-label: Artificial intelligence
+    internal-label: ''
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
+    internal-label: ''
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-    internal-label: Customer journeys
+    internal-label: ''
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-    internal-label: Data collection
+    internal-label: ''
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-    internal-label: Data management
-source-git-commit: 0a86745b9a1a1e14c3e77fcfa5b97ba0c5236d10
+    internal-label: ''
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 3%
@@ -53,7 +58,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[検出方法](#detection-methods)、[検出シグネチャ &#x200B;](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
+>[検出方法](#detection-methods)、[検出シグネチャ ](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
 >
 
 ## 検出方法
@@ -285,12 +290,12 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 ## 実装
 
-[派生フィールド &#x200B;](#derived-fields)、[&#x200B; セグメント &#x200B;](#segments)、[&#x200B; ワークスペースプロジェクト &#x200B;](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[&#x200B; データビュー](/help/data-views/data-views.md)、および[&#x200B; ワークスペースプロジェクト &#x200B;](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
+[派生フィールド ](#derived-fields)、[ セグメント ](#segments)、[ ワークスペースプロジェクト ](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[ データビュー](/help/data-views/data-views.md)、および[ ワークスペースプロジェクト ](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
 
 
 ### 派生フィールド
 
-検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[&#x200B; ユーザーエージェント ID](#user-agent-identification)、[&#x200B; クエリパラメーター検出](#query-parameter-detection)、[&#x200B; リファラー分類](#referrer-classification)の派生フィールドを定義します。
+検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[ ユーザーエージェント ID](#user-agent-identification)、[ クエリパラメーター検出](#query-parameter-detection)、[ リファラー分類](#referrer-classification)の派生フィールドを定義します。
 
 #### LLM/AI ユーザーエージェントの識別
 
@@ -317,19 +322,19 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 専用セグメントを設定して、LLMとAIが生成したトラフィックに関連するイベント、セッション、人物を特定するのに役立ちます。 例えば、先ほど作成した派生フィールドを使用して、LLMとAIが生成したトラフィックを識別するセグメントを定義します。
 
-![LLMとAI生成トラフィックセグメント &#x200B;](assets/aitraffic-segment.png){zoomable="yes"}
+![LLMとAI生成トラフィックセグメント ](assets/aitraffic-segment.png){zoomable="yes"}
 
 
 ### ワークスペースプロジェクト
 
 派生フィールドとセグメントを使用して、LLMとAIが生成したトラフィックをレポートし、分析します。 例えば、以下の注釈付きプロジェクトを参照してください。
 
-![LLMとAI生成トラフィックのWorkspace プロジェクト &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![LLMとAI生成トラフィックのWorkspace プロジェクト ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->このユースケース記事は、ブログ記事[Adobe Customer Journey AnalyticsでのLLMおよびAI生成トラフィックのトラッキングと分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=ja)に基づいています。
+>このユースケース記事は、ブログ記事[Adobe Customer Journey AnalyticsでのLLMおよびAI生成トラフィックのトラッキングと分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)に基づいています。
 >
 >

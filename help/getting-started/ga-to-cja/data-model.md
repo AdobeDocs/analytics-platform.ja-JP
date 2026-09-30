@@ -7,23 +7,32 @@ feature: Basics
 exl-id: a5f9e2c7-3b1d-4a8e-b6f0-2c9d7e4a5180
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 692
-ht-degree: 0%
-
+source-wordcount: '704'
+ht-degree: 2%
 ---
-
 
 # GA4 データモデルとCustomer Journey Analyticsのマッピング
 
@@ -50,8 +59,8 @@ Customer Journey Analyticsでは、次の3つのデータセットタイプを�
 
 | CJAのデータセットタイプ | GA4当量 | What it holds |
 |---|---|---|
-| [!UICONTROL &#x200B; イベントデータセット &#x200B;] | GA4 イベントストリーム | 時系列のインタラクション（ページビュー、クリック、購入） |
-| [!UICONTROL &#x200B; プロファイルデータセット &#x200B;] | GA4 ユーザーのプロパティ | 個人レベルの属性（CRM フィールド、ロイヤルティステータス、デモグラフィック） |
+| [!UICONTROL  イベントデータセット ] | GA4 イベントストリーム | 時系列のインタラクション（ページビュー、クリック、購入） |
+| [!UICONTROL  プロファイルデータセット ] | GA4 ユーザーのプロパティ | 個人レベルの属性（CRM フィールド、ロイヤルティステータス、デモグラフィック） |
 | [!UICONTROL ルックアップデータセット] | 参照テーブルとして使用されるGA4 カスタムディメンション | キー値参照データ（製品カタログ、キャンペーン名） |
 
 Customer Journey Analyticsには、eVar、prop、Success イベントがありません。 あらゆるディメンションと指標は、XDM スキーマフィールドから直接取得されています。 一意のディメンション値の数に制限はありません。
@@ -64,7 +73,7 @@ SDKを通じて、一連のイベントを自動的に収集します。 次の�
 |---|---|
 | `page_view` | `xdm.web.webPageDetails.pageViews` （標準XDM フィールド） |
 | `session_start` | セッション開始（自動、データビューセッション定義ごと） |
-| `first_visit` | [!UICONTROL 最初のセッション &#x200B;] セグメント |
+| `first_visit` | [!UICONTROL 最初のセッション ] セグメント |
 | `scroll` | カスタムイベント（明示的な実装マッピングが必要） |
 | `click` | `xdm.web.webInteraction` フィールド （実装が必要） |
 | `video_start` / `video_complete` | Media Collection スキーマフィールド（Adobe ストリーミングメディアサービスを使用） |
@@ -79,12 +88,12 @@ SDKを通じて、一連のイベントを自動的に収集します。 次の�
 
 GA4では、カスタムイベントには名前と最大25個のパラメーターがあります。 Customer Journey Analyticsでは、カスタムイベントは、実装中に定義されたカスタム XDM スキーマフィールドにマッピングされます。
 
-* **イベント名**&#x200B;は、XDM フィールドのフィールド値になります（通常は[`xdm.eventType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/experienceevent)）。
-* 各&#x200B;**パラメーター**&#x200B;は個別のXDM スキーマフィールドになります。 任意のXDM フィールドは、[&#x200B; データビューの設定](/help/data-views/component-settings/overview.md)時に、ディメンションまたは指標として公開できます。
+* **イベント名**&#x200B;は、XDM フィールドのフィールド値になります（通常は[`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)）。
+* 各&#x200B;**パラメーター**&#x200B;は個別のXDM スキーマフィールドになります。 任意のXDM フィールドは、[ データビューの設定](/help/data-views/component-settings/overview.md)時に、ディメンションまたは指標として公開できます。
 
 >[!NOTE]
 >
->組織のカスタムイベントの特定のXDM フィールドパスは、Web SDKの実装中に決定されます。 レポートを作成する前に、実装チームと協力して特定のフィールドマッピングを理解しましょう。 詳しくは、[&#x200B; スキーマの構築](../cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。
+>組織のカスタムイベントの特定のXDM フィールドパスは、Web SDKの実装中に決定されます。 レポートを作成する前に、実装チームと協力して特定のフィールドマッピングを理解しましょう。 詳しくは、[ スキーマの構築](../cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。
 
 ## ユーザープロパティ
 
@@ -94,4 +103,4 @@ GA4 ユーザープロパティは、ユーザーに設定された永続的な�
 
 このアプローチにより、Customer Journey AnalyticsはGA4のユーザープロパティモデルよりも柔軟性が高まります。GA4では、SDKで定義されたユーザープロパティに制限が設けられていますが、Customer Journey Analyticsプロファイルデータセットには、結合可能なIDを共有する限り、あらゆるシステム（CRM、ロイヤルティプラットフォーム、サポートレコード）の任意の属性を含めることができます。
 
-組織が引き続きAdobe Experience PlatformにGA データを取り込む必要がある場合は、管理者向けの設定ガイドについては、[Google Analyticsの履歴データの取り込み](/help/use-cases/third-party/ga/backfill.md)および[&#x200B; ストリーミング Google Analytics データの設定](/help/use-cases/third-party/ga/streaming.md)を参照してください。
+組織が引き続きAdobe Experience PlatformにGA データを取り込む必要がある場合は、管理者向けの設定ガイドについては、[Google Analyticsの履歴データの取り込み](/help/use-cases/third-party/ga/backfill.md)および[ ストリーミング Google Analytics データの設定](/help/use-cases/third-party/ga/streaming.md)を参照してください。

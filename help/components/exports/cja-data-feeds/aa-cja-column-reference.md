@@ -8,33 +8,50 @@ autotag-review: '2026-05-19T09:53:49.596Z'
 TQID: 'https://experienceleague.adobe.com/Yt2CmGRpO6s8natf9s-KLsMBKHc-qdSQHvi3UyPyLgg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3921
+source-wordcount: '3921'
 ht-degree: 48%
-
 ---
-
 # Adobe Analytics データフィード列のCustomer Journey Analyticsへのマッピング
 
 {{release-limited-testing}}
@@ -45,7 +62,7 @@ Adobe AnalyticsとCustomer Journey Analytics データフィード列の間の�
 
 >[!NOTE]
 >
->この参照には、[Analytics データフィード列リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
+>この参照には、[Analytics データフィード列リファレンス ](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference)に基づいて、Adobeが現在と見なす列のみが含まれます。 この表に記載されていないAnalytics データフィード列を積極的に使用している場合は、組織のソリューション設計文書を参照して、Customer Journey Analyticsでの最適な同等の値を判断してください。
 
 +++**`accept_language`**
 
@@ -166,7 +183,7 @@ User-Agent クライアントヒント JavaScript API を通じて収集され�
 
 Adobe Analyticsでは、クライアントヒントがこの列に連結された文字列として含まれていました。 `user_agent`列よりも現代的なアプローチと見なされます。
 
-Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/commands/configure/context) コンテキスト文字列を使用して、このデータを収集できます。 1つの長い連結された文字列の代わりに、複数のXDM フィールドが入力されます。
+Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) コンテキスト文字列を使用して、このデータを収集できます。 1つの長い連結された文字列の代わりに、複数のXDM フィールドが入力されます。
 
 * **オペレーティングシステムのバージョン**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
 * **アーキテクチャ**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
@@ -176,7 +193,7 @@ Web SDKの設定時に[`highEntropyUserAgentHints`](https://experienceleague.ado
 * **ブラウザー名**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **ブラウザーバージョン**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-詳しくは、[&#x200B; ユーザーエージェントクライアントヒント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
+詳しくは、[ ユーザーエージェントクライアントヒント ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)を参照してください。
 
 {{cja-df-ua}}
 
@@ -322,7 +339,7 @@ Customer Journey Analyticsには、タイムスタンプと非タイムスタン
 
 `visitorID` を使用して設定されている場合のカスタム訪問者 ID。
 
-Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/profile/identitymap)を使用して任意の数のIDをサポートします。 組織でカスタム IDを使用している場合は、ID マップ内にある可能性があります。
+Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)を使用して任意の数のIDをサポートします。 組織でカスタム IDを使用している場合は、ID マップ内にある可能性があります。
 
 {{cja-df-post}}
 
@@ -368,7 +385,7 @@ Customer Journey Analyticsは、[`identityMap`](https://experienceleague.adobe.c
 
 ドメイン ディメンション。 訪問者のインターネットアクセスポイントに基づいています。
 
-[&#x200B; データストリームの設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)時に&#x200B;**[!UICONTROL ネットワークルックアップ]**&#x200B;を有効にします。 スキーマに含まれている場合、XDM フィールドは`xdm.environment.domain`です。
+[ データストリームの設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)時に&#x200B;**[!UICONTROL ネットワークルックアップ]**&#x200B;を有効にします。 スキーマに含まれている場合、XDM フィールドは`xdm.environment.domain`です。
 
 +++
 
@@ -388,7 +405,7 @@ Customer Journey AnalyticsにはVISTA ルールの概念がないため、この
 
 {{cja-df-na}}
 
-Customer Journey Analyticsには、すべての指標の重複排除フラグとして機能する単一のフィールドはありません。 代わりに、各指標には独自の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)が含まれます。 そのため、このAdobe Analytics データフィード列に対応するフィールドはCustomer Journey Analyticsにありません。
+Customer Journey Analyticsには、すべての指標の重複排除フラグとして機能する単一のフィールドはありません。 代わりに、各指標には独自の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)が含まれます。 そのため、このAdobe Analytics データフィード列に対応するフィールドはCustomer Journey Analyticsにありません。
 
 +++
 
@@ -396,9 +413,9 @@ Customer Journey Analyticsには、すべての指標の重複排除フラグと
 
 このヒットの購入イベントが重複しているので無視されるかどうかを判定するフラグ。
 
-このAnalytics データフィード列への直接翻訳はありませんが、購入の重複を排除する機能は引き続き存在します。 [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、**[!UICONTROL 重複排除ID]**&#x200B;が`xdm.commerce.purchases.id`の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)を設定できます。
+このAnalytics データフィード列への直接翻訳はありませんが、購入の重複を排除する機能は引き続き存在します。 [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、**[!UICONTROL 重複排除ID]**&#x200B;が`xdm.commerce.purchases.id`の[指標の重複排除コンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)を設定できます。
 
-重複する購入のフラグを設定する場合に直接翻訳が必要な場合は、ルールセットの&#x200B;**Deduplicate**&#x200B;関数を使用して[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を使用できます。
+重複する購入のフラグを設定する場合に直接翻訳が必要な場合は、ルールセットの&#x200B;**Deduplicate**&#x200B;関数を使用して[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を使用できます。
 
 +++
 
@@ -431,7 +448,7 @@ Adobe Advertising統合で使用されるEF ID。
 
 {{cja-df-post}}
 
-スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
+スキーマで[[!UICONTROL Commerceの詳細]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、一部の指標は次のXDM フィールドに直接マッピングされる場合があります。
 
 * **チェックアウト**: `xdm.commerce.checkouts.value`
 * **買い物かごに追加**: `xdm.commerce.productListAdds.value`
@@ -444,7 +461,7 @@ Adobe Advertising統合で使用されるEF ID。
 一部の指標では、Adobe Analyticsで重複排除を完全に制御できるイベントのシリアル化を使用する場合があります。 [指標の重複排除](/help/data-views/component-settings/metric-deduplication.md) コンポーネント設定を使用して、重複排除パリティを実現できます。
 
 * Adobe Analyticsで訪問別に指標の重複排除を行う場合は、その指標のコンポーネント設定で重複排除スコープをセッションに設定できます。
-* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
+* 指標がAdobe Analyticsのイベント IDによって重複を排除する場合、その指標のXDM オブジェクトに`value`と`id` フィールドの両方が含まれている可能性があります。 スキーマで[[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) フィールドグループを使用している場合、これらの指標はXDM フィールドに存在する可能性があります。指標のコンポーネント設定で&#x200B;**[!UICONTROL 重複排除ID]** フィールドを設定できます。
 
   * **チェックアウト**: `xdm.commerce.checkouts.id`
   * **買い物かごに追加**: `xdm.commerce.productListAdds.id`
@@ -463,8 +480,8 @@ Adobe Advertising統合で使用されるEF ID。
 
 Customer Journey Analyticsは、標準搭載の「除外されたヒット」を尊重しません。 ただし、特定のヒットを除外するようにフラグを付けるXDM フィールドがある場合は、この機能を再作成できます。
 
-1. 除外されたヒットをフラグするXDM フィールドが、コンポーネント（ディメンションまたは指標）として含まれていることを確認します（このフラグの設定方法に応じて）。 レポート [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/overview)で「非表示」コンポーネントを選択すると、このフィールドに有益である可能性が高いです。
-1. [&#x200B; データビュー設定](/help/data-views/session-settings.md)で、**[!UICONTROL セグメントを追加]** ドロップダウンメニューを選択し、**[!UICONTROL セグメントを作成]**&#x200B;を選択します。
+1. 除外されたヒットをフラグするXDM フィールドが、コンポーネント（ディメンションまたは指標）として含まれていることを確認します（このフラグの設定方法に応じて）。 レポート ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)で「[非表示」コンポーネントを選択すると、このフィールドに有益である可能性が高いです。
+1. [ データビュー設定](/help/data-views/session-settings.md)で、**[!UICONTROL セグメントを追加]** ドロップダウンメニューを選択し、**[!UICONTROL セグメントを作成]**&#x200B;を選択します。
 1. 除外ヒットコンポーネントが存在するすべてのイベント、または除外する値を含むすべてのイベントを除外するセグメントを作成します。
 1. セグメントとデータビューの両方で&#x200B;**[!UICONTROL 保存]**&#x200B;を選択します。
 
@@ -989,7 +1006,7 @@ Mobile Services のローンチ用語
 
 {{cja-df-lookup}}
 
-[&#x200B; データストリームを設定する場合](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)、**[!UICONTROL デバイス検索]**&#x200B;を有効にできます。 有効な場合は、**[!UICONTROL オペレーティングシステム]**&#x200B;のチェックボックスをオンにします。 これにより、スキーマにこれらのフィールドが含まれている場合、次のXDM フィールドが自動的に入力されます。
+[ データストリームを設定する場合](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)、**[!UICONTROL デバイス検索]**&#x200B;を有効にできます。 有効な場合は、**[!UICONTROL オペレーティングシステム]**&#x200B;のチェックボックスをオンにします。 これにより、スキーマにこれらのフィールドが含まれている場合、次のXDM フィールドが自動的に入力されます。
 
 * **OS ベンダー**: `xdm.environment.operatingSystemVendor`
 * **OS名**: `xdm.environment.operatingSystem`

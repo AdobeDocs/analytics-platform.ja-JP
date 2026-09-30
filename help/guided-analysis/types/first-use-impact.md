@@ -5,24 +5,34 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-TQID: https://experienceleague.adobe.com/TRLnyHuOUno5zy2QT2Uc8vFnWeVy2snRu-ispS0ClKk
+TQID: 'https://experienceleague.adobe.com/TRLnyHuOUno5zy2QT2Uc8vFnWeVy2snRu-ispS0ClKk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 678
+source-wordcount: '678'
 ht-degree: 100%
-
 ---
-
 # [!UICONTROL 最初の使用の影響]分析 {#first-use-impact}
 
 <!-- markdownlint-disable MD034 -->
@@ -36,7 +46,7 @@ ht-degree: 100%
 
 ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL 初回使用の影響]**&#x200B;分析では、ユーザーが初めて製品機能を使用する前と後に実行された主要指標の比較を示します。 このレポートの横軸はイベント前後の相対的な時間間隔で、縦軸は目的の主要指標を測定します。 グラフの中央にある縦棒グラフは、特定のユーザーが機能を初めて使用した 0 日目を表します。 ユーザーが必ずしも同じ日に機能を採用するわけではなく、ロールアウトは数日にわたって行われる可能性があるので、0 日目は個人ユーザーごとに異なる意味を持つ場合があります。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423498/?captions=jpn&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 ## ユースケース
 

@@ -8,23 +8,30 @@ autotag-review: '2026-05-19T08:43:31.310Z'
 TQID: 'https://experienceleague.adobe.com/WrOP1B4Dclj004zTWZMACNAVusD47Ugi0IrlXVUrZ88'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 951
+source-wordcount: '951'
 ht-degree: 74%
-
 ---
-
 # 列設定
 
 [!UICONTROL 列設定]では、列の書式を設定できます。一部の列には条件付き書式を設定することもできます。
@@ -32,7 +39,7 @@ ht-degree: 74%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -98,7 +105,7 @@ ht-degree: 74%
 
 
 
-[&#x200B; データビュー](/help/data-views/component-settings/attribution.md)で設定されているデフォルトのアトリビューションモデルを上書きできます。
+[ データビュー](/help/data-views/component-settings/attribution.md)で設定されているデフォルトのアトリビューションモデルを上書きできます。
 
 >[!NOTE]
 >
@@ -118,7 +125,7 @@ Analysis Workspaceで指標にデフォルト以外のアトリビューショ�
 
 2. **[!UICONTROL 列アトリビューションモデル]**&#x200B;で、「**[!UICONTROL モデル]**」と「**[!UICONTROL ルックバックウィンドウ]**」を選択します。 ルックバックウィンドウでは、各コンバージョンに適用されるデータアトリビューションのウィンドウを決定します。
 
-   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 &#x200B;](assets/attribution-select.png)
+   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 ](assets/attribution-select.png)
 
 
 ### アトリビューションモデル

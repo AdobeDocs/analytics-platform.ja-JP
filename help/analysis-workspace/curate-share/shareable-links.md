@@ -5,24 +5,31 @@ title: 共有可能なリンクの作成
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-TQID: https://experienceleague.adobe.com/JAaRhcC3q49W00TRNo5yQ3HQU9dHrSJ7j5Uhll0fT3U
+TQID: 'https://experienceleague.adobe.com/JAaRhcC3q49W00TRNo5yQ3HQU9dHrSJ7j5Uhll0fT3U'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 357
+source-wordcount: '357'
 ht-degree: 42%
-
 ---
-
 # 共有可能なリンクの作成
 
 Analysis Workspace には、プロジェクトやプロジェクトの特定の部分へのリンクを取得する機能など、ユーザーとプロジェクトを共有するための様々な方法が用意されています。 リンクタイプによっては、プロジェクトにアクセスする前にCustomer Journey Analyticsにログインする必要があるものもあれば、そうでないものもあります。
@@ -31,7 +38,7 @@ Analysis Workspace には、プロジェクトやプロジェクトの特定の�
 
 プロジェクトへのリンクを共有するには、共有するプロジェクトに移動し、「**[!UICONTROL 共有]** > **[!UICONTROL プロジェクトリンクを取得]** （または&#x200B;**[!UICONTROL 共有]** > **[!UICONTROL Workspace ユーザーと共有]** > **[!UICONTROL リンクで共有]**）に移動」を選択します。 リンクを共有するユーザーは、ログインする必要があります。
 
-リンクの受信者が[&#x200B; プロジェクトの役割](/help/analysis-workspace/curate-share/share-projects.md)を割り当てられていない場合、管理者は&#x200B;**[!UICONTROL 元の編集]**&#x200B;を受け取り、管理者以外のユーザーは&#x200B;**[!UICONTROL コピーの編集]**&#x200B;を受け取ります。
+リンクの受信者が[ プロジェクトの役割](/help/analysis-workspace/curate-share/share-projects.md)を割り当てられていない場合、管理者は&#x200B;**[!UICONTROL 元の編集]**&#x200B;を受け取り、管理者以外のユーザーは&#x200B;**[!UICONTROL コピーの編集]**&#x200B;を受け取ります。
 
 ## 誰とでも共有できる読み取り専用リンクを取得
 
@@ -48,11 +55,11 @@ Analysis Workspace プロジェクトへの読み取り専用リンクは、Cust
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; プロジェクトの内外へのリンク &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=ja){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ プロジェクトの内外へのリンク ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=ja){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
-![&#x200B; ビジュアライゼーションを取得リンクがハイライト表示されたヘッダーを右クリックした後のドロップダウンメニュー。](assets/get-visualization-link.png)
+![ ビジュアライゼーションを取得リンクがハイライト表示されたヘッダーを右クリックした後のドロップダウンメニュー。](assets/get-visualization-link.png)
 
 ## 目次でリンクを使用する {#TOC}
 

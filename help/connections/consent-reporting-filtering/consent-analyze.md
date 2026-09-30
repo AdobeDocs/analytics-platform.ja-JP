@@ -18,12 +18,14 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 7%
@@ -56,7 +58,7 @@ Experience Platform プロファイルデータセットからCustomer Journey A
 
 ### 派生フィールド
 
-派生フィールドは、同意ポリシーIDを抽出するために`consentPoliciesIDMap` フィールドを参照します。 この派生フィールドを、追加の同意ベースのディメンションのベースとして使用できます。 派生フィールドについて詳しくは、[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を参照してください。
+派生フィールドは、同意ポリシーIDを抽出するために`consentPoliciesIDMap` フィールドを参照します。 この派生フィールドを、追加の同意ベースのディメンションのベースとして使用できます。 派生フィールドについて詳しくは、[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を参照してください。
 
 ## Analysis Workspaceの同意ポリシーコンポーネントの使用
 
@@ -74,4 +76,4 @@ Experience Platform プロファイルデータセットからCustomer Journey A
 
 同意レポート用にデータビューが設定されている場合、Customer Journey Analytics では、Analysis Workspace で同意ポリシー分析テンプレートを自動的に使用できます。 このテンプレートは、訪問者の同意ポリシーメンバーシップに関するレポートの出発点を提供します。
 
-テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートへのアクセスと実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)を参照してください。
+テンプレートへのアクセス方法について詳しくは、[ テンプレートへのアクセスと実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)を参照してください。

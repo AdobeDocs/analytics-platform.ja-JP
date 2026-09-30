@@ -4,28 +4,39 @@ description: Adobe Journey Optimizer で生成したデータを取り込み、C
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
+TQID: 'https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3841
+source-wordcount: '3841'
 ht-degree: 90%
-
 ---
-
 # Journey Optimizer の統合
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/get-started/get-started) は、接続され、コンテキストに応じて、パーソナライズされたエクスペリエンスを提供するのに役立ちます。 お客様がカスタマージャーニーの次のステップに進めるよう支援します。
@@ -59,12 +70,12 @@ Journey Optimizer の Customer Journey Analytics レポートを有効にする�
 | データセット名 | スキーマ | データセットタイプ | データソースタイプ | ユーザー ID | キー | 一致するキー | 新しいデータを読み込む | データをバックフィル |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL AJO エンティティデータセット] | [!UICONTROL AJO エンティティレコードスキーマ] | [!UICONTROL ルックアップ] | [!UICONTROL その他] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL ジャーニーステップイベント] | [!UICONTROL Journey Orchestration のジャーニーステップイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL ジャーニーステップイベント] | [!UICONTROL Journey Orchestration のジャーニーステップイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO メッセージフィードバックイベントデータセット] | [!UICONTROL AJO メッセージフィードバックイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 | [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントデータセット] | [!UICONTROL AJO プッシュトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL AJO Message Feedback Event Dataset - Non Profile] <br/> （以下の[High Throughput アドオンデータセット &#x200B;](#high-throughput-add-on-datasets)の節を参照） | [!UICONTROL AJO メッセージフィードバックイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
-| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット – プロファイル以外] <br/> （以下の[高スループットアドオンデータセット &#x200B;](#high-throughput-add-on-datasets)節を参照） | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO Message Feedback Event Dataset - Non Profile] <br/> （以下の[High Throughput アドオンデータセット ](#high-throughput-add-on-datasets)の節を参照） | [!UICONTROL AJO メッセージフィードバックイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
+| [!UICONTROL AJO メールトラッキングエクスペリエンスイベントデータセット – プロファイル以外] <br/> （以下の[高スループットアドオンデータセット ](#high-throughput-add-on-datasets)節を参照） | [!UICONTROL AJO メールトラッキングエクスペリエンスイベントスキーマ] | [!UICONTROL イベント] | [!UICONTROL その他] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![緑のステータス](assets/../../connections/assets/status-green.svg) オン | ![グレーのステータス](assets/../../connections/assets/status-gray.svg) オフ |
 
 #### ハイスループットアドオンデータセット
 
@@ -79,7 +90,7 @@ High Throughput トランザクションメッセージングアドオンが有�
 * **[!UICONTROL 7日間のP95待ち時間ウィジェット]**:P95待ち時間を、前週からの変化率を含む単一の値として表示します。
 * **[!UICONTROL 7日間のP95 スループット ウィジェット]**: P95 スループットを前週からの変化率を含む1つの値として表示します。
 
-これらのデータセットとHigh Throughput トランザクションメッセージアドオンについて詳しくは、Adobe Journey Optimizer ドキュメントの[API トリガーキャンペーンの高スループットモードの有効化](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput)を参照してください。
+これらのデータセットとHigh Throughput トランザクションメッセージアドオンについて詳しくは、Adobe Journey Optimizer ドキュメントの[API トリガーキャンペーンの高スループットモードの有効化](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput)を参照してください。
 
 ### データビュー
 
@@ -148,8 +159,8 @@ Journey Optimizer データが Adobe Experience Platform に入ったら、Journ
 | AJO プッシュトラッキングエクスペリエンスイベントデータセット | イベント | ユーザー ID：`IdentityMap` | プッシュトラッキングイベント（[!UICONTROL アプリの起動回数]など）が含まれています。 |
 | ジャーニーステップイベント | イベント | ユーザー ID：`_experience.journeyOrchestration.`<br>`stepEvents.profileID` | ジャーニーの各ノードに参加したプロファイルを示すイベントが含まれています。 |
 | AJO エンティティデータセット | ルックアップ | キー：`_id`<br>一致するキー：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | すべての Journey Optimizer イベントデータにジャーニーとキャンペーンメタデータを関連付ける分類が含まれています。 |
-| AJO Message Feedback Event Dataset - Non Profile | イベント | ユーザー ID：`IdentityMap` | プロファイル以外のメッセージ配信フィードバックイベントを含みます。 [高スループットトランザクションメッセージングアドオン &#x200B;](#high-throughput-add-on-datasets)が有効になっている場合にのみ使用できます。 |
-| AJO メールトラッキングエクスペリエンスイベントデータセット – プロファイル以外 | イベント | ユーザー ID：`IdentityMap` | プロファイル以外のメールトラッキングエクスペリエンスイベントが含まれています。 [高スループットトランザクションメッセージングアドオン &#x200B;](#high-throughput-add-on-datasets)が有効になっている場合にのみ使用できます。 |
+| AJO Message Feedback Event Dataset - Non Profile | イベント | ユーザー ID：`IdentityMap` | プロファイル以外のメッセージ配信フィードバックイベントを含みます。 [高スループットトランザクションメッセージングアドオン ](#high-throughput-add-on-datasets)が有効になっている場合にのみ使用できます。 |
+| AJO メールトラッキングエクスペリエンスイベントデータセット – プロファイル以外 | イベント | ユーザー ID：`IdentityMap` | プロファイル以外のメールトラッキングエクスペリエンスイベントが含まれています。 [高スループットトランザクションメッセージングアドオン ](#high-throughput-add-on-datasets)が有効になっている場合にのみ使用できます。 |
 
 {style="table-layout:auto"}
 

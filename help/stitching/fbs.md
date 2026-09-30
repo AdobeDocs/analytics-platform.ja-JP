@@ -9,28 +9,35 @@ autotag-review: '2026-05-19T09:20:59.053Z'
 TQID: 'https://experienceleague.adobe.com/V2OisDuYtD0SxUo8OlCEMKJ5wYEWS7nfxOp2IOMQWJQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1938
+source-wordcount: '1938'
 ht-degree: 82%
-
 ---
-
 # フィールドベースのステッチ
 
 フィールドベースの合成では、イベントデータセットと、そのデータセットの永続的ID （cookie）および人物IDを指定します。 フィールドベースの合成では、特定の永続IDを持つ匿名イベントに対して、Customer Journey Analytics data analysisで個人ID情報を使用できるようにします。  その情報は、その特定の永続的IDの個人IDを持つ行から取得されます。
 
-イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[&#x200B; データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
+イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[ データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
 
 Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連するID グラフにアクセスできない場合）は、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合は、フィールドベースのステッチを使用できます。
 
@@ -232,7 +239,7 @@ Bob が様々なイベントをイベントデータセットの一部として�
   - **ユーザー ID** - 一部の行で使用できる識別子。 例えば、プロファイルの認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。 事実上任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチの結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、ユーザー ID を送信する必要があります。 Customer Journey Analytics 接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の識別子を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

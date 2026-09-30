@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
+TQID: 'https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,11 +14,15 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
     internal-label: Data governance
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
     internal-label: Privacy
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -33,7 +37,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 8dc03b7c76c53c327f4a20c8fa9d75298d3d13c1
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '3765'
 ht-degree: 81%
@@ -74,7 +78,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 無期限の資格情報を使用するには：
 
-1. Experience Platform[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials#non-expiring-credentials)で有効期限のない資格情報を作成します。 既存の有効期限のない資格情報を使用する場合は、これらの資格情報が[OAuth](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/credentials#migrate-credentials)に移行されていることを確認してください。
+1. Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)で[有効期限のない資格情報を作成します。 既存の有効期限のない資格情報を使用する場合は、これらの資格情報が[OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)に移行されていることを確認してください。
 
 1. 期限切れでない資格情報がCustomer Journey Analyticsの製品および製品プロファイルで使用できることを確認します。 組織で次の手順を実行するには、システム管理者である必要があります。
    1. ![App](/help/assets/icons/Apps.svg)から&#x200B;**[!UICONTROL Admin Console]**&#x200B;を選択します。
@@ -136,7 +140,7 @@ Adobe Experience Platform で：
 
    1. **[!UICONTROL データベース]** ドロップダウンメニューのデータベースのリストから、サンドボックスの`cja` データベースを選択します。 例：`prod:cja`。
 
-   1. コマンド文字列をコピーするには、「**[!UICONTROL **&#x200B; PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
+   1. コマンド文字列をコピーするには、「**[!UICONTROL ** PSQL コマンド&#x200B;**]**」セクションの![コピー](assets/Smock_Copy_18_N.svg)を使用します。
 
 1. コマンドウィンドウまたはターミナルウィンドウを開きます。
 
@@ -169,9 +173,9 @@ Adobe Experience Platform で：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL ** PostgreSQL データベース&#x200B;**]**」を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL ** PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -210,7 +214,7 @@ Adobe Experience Platform で：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから「**[!UICONTROL ** PostgreSQL **]**」を選択します。
 
    1. [!UICONTROL PostgreSQL] ダイアログの場合：
 

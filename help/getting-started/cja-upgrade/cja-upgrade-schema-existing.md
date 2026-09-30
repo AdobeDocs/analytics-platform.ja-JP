@@ -9,25 +9,34 @@ autotag-review: '2026-05-19T08:16:39.426Z'
 TQID: 'https://experienceleague.adobe.com/aBDtVtJ215UOK0slRC4ORwfnqZhaYtBXAI4-amzZ9Gw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 476
+source-wordcount: '476'
 ht-degree: 100%
-
 ---
-
 # Customer Journey Analytics のスキーマを選択 {#choose-schema}
 
 <!-- markdownlint-disable MD034 -->
@@ -35,11 +44,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
 >title="カスタムスキーマの使用"
->abstract="（推奨）スキーマをカスタマイズすると、組織は必要なもののみを追跡でき、乱雑で不要なフィールドに関連付けられたオーバーヘッドを回避できます。 このオプションには、Web SDK によって追加されたフィールドグループと、組織にカスタムのフィールドグループが含まれます。"
+>abstract="（推奨）スキーマをカスタマイズすると、組織は必要なもののみを追跡でき、乱雑で不要なフィールドに関連付けられたオーバーヘッドを回避できます。 このオプションには、Web SDK によって追加されたフィールドグループと、組織固有のカスタムフィールドグループが含まれます。"
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
->title="デフォルトのスキーマの使用"
+>title="デフォルトのスキーマを使用"
 >abstract="（非推奨）Adobe Analytics スキーマには 1,000 を超えるフィールドが含まれており、スキーマが乱雑で複雑になる場合があります。 組織は、Customer Journey Analytics では使用されていない従来の概念である prop と eVar の概念に引き続き従わざるを得なくなります。 他の Adobe Experience Platform サービスとの統合はより困難です。"
 
 <!-- markdownlint-enable MD034 -->
@@ -48,7 +57,7 @@ ht-degree: 100%
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-Customer Journey Analytics にアップグレードする場合、アドビでは、他のプラットフォームサービスの使用を開始する際に組織のニーズに合わせてカスタムエクスペリエンスデータモデル（XDM）スキーマを作成することをお勧めします。 または、既存の Adobe Analytics スキーマを使用することもできます。
+Customer Journey Analytics にアップグレードする場合、アドビでは、他の Adobe Experience Platform サービスの使用を開始する際に組織のニーズにより適合させるため、カスタムのエクスペリエンスデータモデル（XDM）スキーマを作成することを推奨します。 または、既存の Adobe Analytics スキーマを使用することもできます。
 
 それぞれのメリットとデメリットを考慮します。
 
@@ -66,7 +75,7 @@ Customer Journey Analytics にアップグレードする場合、アドビで�
 
 | メリット | デメリット |
 |----------|---------|
-| <p>Adobe Analytics スキーマを使用すると、次のようなメリットがあります。</p><ul><li>アップグレードのしやすさ<p>既にAdobe Experience Platform Web SDK を使用して Adobe Analytics にデータを送信している場合は、データストリームに追加サービスを追加して、Adobe Experience Platform にデータを送信できます（これは Customer Journey Analytics 設定で使用できます）。</p></li></ul> | <p>Adobe Analytics スキーマを使用すると、次のようなデメリットがあります。</p><ul><li>Adobe Analytics スキーマを使用しても、他の Platform アプリケーションでの使用方法が制限されることはありませんが、スキーマは他の方法よりも複雑になります。 これは、Adobe Analytics スキーマには、組織で使用される可能性が低い Adobe Analytics に固有のオブジェクトが多数含まれているからです。<p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要があります。</p></li></ul> |
+| <p>Adobe Analytics スキーマを使用すると、次のようなメリットがあります。</p><ul><li>アップグレードのしやすさ<p>既に Adobe Experience Platform Web SDK を使用して Adobe Analytics にデータを送信している場合は、データストリームに追加サービスを追加して、Adobe Experience Platform にデータを送信できます（これは Customer Journey Analytics の設定で使用できます）。</p></li></ul> | <p>Adobe Analytics スキーマを使用する場合のデメリットには、次のようなものがあります。</p><ul><li>Adobe Analytics スキーマを使用しても、他のプラットフォームアプリケーションでの使用方法が制限されることはありませんが、スキーマは本来よりも複雑になります。 これは、Adobe Analytics スキーマには、組織で使用されることがほとんどない Adobe Analytics 固有のオブジェクトが多数含まれているためです。<p>スキーマの変更が必要な場合は、数千もの未使用フィールドを調べて、更新が必要なフィールドを見つける必要があります。</p></li></ul> |
 
 
 

@@ -4,27 +4,36 @@ title: フィルターと並べ替え
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-TQID: https://experienceleague.adobe.com/P8WPSJz11Eg8-jtrT3oXJT6C2fuI3OZf-FdY2zh2Kh8
+TQID: 'https://experienceleague.adobe.com/P8WPSJz11Eg8-jtrT3oXJT6C2fuI3OZf-FdY2zh2Kh8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1582
+source-wordcount: '1582'
 ht-degree: 47%
-
 ---
-
 # フリーフォームテーブルのフィルターと並べ替え
 
 Analysis Workspace のフリーフォームテーブルは、インタラクティブなデータ分析の基盤となります。 そのため、何千行もの情報を含めることができます。 データのフィルターと並べ替えは、最も重要な情報を効率的に表示するうえで重要な役割を果たします。
@@ -44,7 +53,7 @@ Analysis Workspace のフィルターは、最も重要な情報を表示する�
 * テーブルにフィルターを適用
 * オーディエンスセグメントの使用
 
-各メソッドが[&#x200B; フリーフォームテーブル合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)にどのような影響を与えるかを必ず確認してください。
+各メソッドが[ フリーフォームテーブル合計](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)にどのような影響を与えるかを必ず確認してください。
 
 ### テーブルから特定の行を除外
 
@@ -114,7 +123,7 @@ Note: this option does not seem to work. AN-338422
 
 スパークラインに加えて、接続されたラインのビジュアライゼーションに含めるフィルター条件を設定できます。 （デフォルトでは、フィルター条件は行のビジュアライゼーションに含まれません。 折れ線グラフは、接続されたテーブルで選択された行のデータを表示します。 行が選択されていない場合は、接続されたテーブルの最初のディメンションのデータのみが表示されます）。
 
-スパークラインと折れ線グラフの視覚化について詳しくは、[&#x200B; フリーフォームテーブルのトレンド データの表示](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)を参照してください。
+スパークラインと折れ線グラフの視覚化について詳しくは、[ フリーフォームテーブルのトレンド データの表示](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)を参照してください。
 
 #### フィルター条件を含める行のビジュアライゼーションの設定
 
@@ -122,7 +131,7 @@ Note: this option does not seem to work. AN-338422
 
    スパークラインセルを選択すると、濃いグレーで表示されます。 これは、フィルター条件が接続された行のビジュアライゼーションに含まれていることを示します。 フィルター条件は、列のセグメントとして適用されます。<!--show how to see it? Show what the segment looks like when it's applied? -->
 
-   ![&#x200B; スパークラインが選択されました](assets/table-sparkline-selected.png)
+   ![ スパークラインが選択されました](assets/table-sparkline-selected.png)
 
 #### 列の合計が不正確になるタイミングを把握する
 
@@ -142,7 +151,7 @@ Note: this option does not seem to work. AN-338422
 
 ### オーディエンスセグメントの使用
 
-詳しくは、[&#x200B; セグメント化の概要](/help/components/segments/seg-overview.md)を参照してください。
+詳しくは、[ セグメント化の概要](/help/components/segments/seg-overview.md)を参照してください。
 
 ## テーブルの並べ替え
 
@@ -176,7 +185,7 @@ Analysis Workspaceでは、自由形式テーブルのデータを、ディメ�
 
 1. 「**[!UICONTROL 高度な並べ替え]**」を選択します。
 
-   ![高度な並べ替えダイアログ &#x200B;](assets/sort-advanced-dialog.png)
+   ![高度な並べ替えダイアログ ](assets/sort-advanced-dialog.png)
 
 1. 詳細な並べ替えダイアログで、次のいずれかの操作を行います。
 
@@ -196,7 +205,7 @@ Analysis Workspaceでは、自由形式テーブルのデータを、ディメ�
 
 並べ替えが列に適用される場合、並べ替えアイコンは表示されたままになります。 矢印は、データの並べ替え方法を示します（![昇順の場合は](/help/assets/icons/SortOrderUp.svg)、降順の場合は![並べ替え](/help/assets/icons/SortOrderDown.svg)）。
 
-![&#x200B; マルチソートの例](assets/dimensions-multiple-sort.png)
+![ マルチソートの例](assets/dimensions-multiple-sort.png)
 
 #### 並べ替えの優先順位
 
@@ -222,4 +231,4 @@ Analysis Workspaceでは、自由形式テーブルのデータを、ディメ�
 
 各列に並べ替え優先順位を割り当てることで、テーブルでのデータの表示方法を正確に制御できます。 この例では、情報は最初に月の日別、次に時間の日別、最後にイベント別に並べ替えられます。
 
-![&#x200B; マルチソートの例](assets/dimensions-multiple-sort.png)
+![ マルチソートの例](assets/dimensions-multiple-sort.png)

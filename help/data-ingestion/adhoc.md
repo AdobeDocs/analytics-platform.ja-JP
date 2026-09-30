@@ -5,30 +5,42 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
-TQID: https://experienceleague.adobe.com/eqmDvuaNGFj8q2pfKNCzf5-affyrUTYP7MA5UgsRrCI
+TQID: 'https://experienceleague.adobe.com/eqmDvuaNGFj8q2pfKNCzf5-affyrUTYP7MA5UgsRrCI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1674
+source-wordcount: '1674'
 ht-degree: 27%
-
 ---
-
-# アドホックデータの取り込みと使用
+# アドホックデータの取り込みと活用
 
 このクイックスタートガイドでは、Experience Platformにアドホックデータを取り込み、そのデータをCustomer Journey Analyticsで使用する方法について説明します。
 
@@ -46,7 +58,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->このクイックスタートガイドでは、を使用してアドホックデータをExperience Platformに取り込み、そのアドホックデータをCustomer Journey Analyticsで使用する方法について簡単に説明します。 参照する際には、追加情報を調べることを強くお勧めします。
+>このクイックスタートガイドでは、を使用してアドホックデータをExperience Platformに取り込み、そのアドホックデータをCustomer Journey Analyticsで使用する方法について簡単に説明します。 追加情報への参照がある場合は、その内容を確認することを強くお勧めします。
 
 
 ## CSV ファイルを使用したデータセットの作成
@@ -81,20 +93,20 @@ ht-degree: 27%
       1. オプションの&#x200B;**[!UICONTROL 説明]**&#x200B;を追加します。 例：`Sample data from a CSV file`。
       1. 1つ以上のオプションの&#x200B;**[!UICONTROL タグ]**&#x200B;を追加するか、1つ以上の既存の&#x200B;**[!UICONTROL タグ]**&#x200B;を選択します。
 
-         ![&#x200B; アドホックデータセットの設定](assets/adhoc-dataset-configure.png)
+         ![ アドホックデータセットの設定](assets/adhoc-dataset-configure.png)
 
       1. 「**[!UICONTROL 次へ]**」を選択します。
    1. **[!UICONTROL データを追加]** ステップで：
       1. 「**[!UICONTROL ファイルを選択]**」を選択して、コンピューターまたはネットワークからCSV ファイルを選択します。 または、ファイルをコンピューターまたはネットワーク上の場所から&#x200B;**[!UICONTROL ファイルをドラッグ&amp;ドロップ]**&#x200B;します。 ファイルがアップロードされ、**[!UICONTROL サンプルデータ]**&#x200B;が表示されます。
       1. **[!UICONTROL エラー診断]**&#x200B;と&#x200B;**[!UICONTROL 部分取り込み]**&#x200B;を環境設定に従って有効または無効にします。 **[!UICONTROL 部分取り込みを有効にする]**&#x200B;場合、**[!UICONTROL エラーしきい値%]**&#x200B;を定義できます。
 
-         ![&#x200B; アドホックデータセットにデータを追加](assets/adhoc-dataset-adddata.png)
+         ![ アドホックデータセットにデータを追加](assets/adhoc-dataset-adddata.png)
 
       1. 「**[!UICONTROL 完了]**」を選択します。
 
 データの準備とアップロードが完了すると、Experience Platform インターフェイスの&#x200B;**[!UICONTROL データセット]**&#x200B;にリダイレクトされます。<br/> ステータスが![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL Processing]**&#x200B;の&#x200B;**[!UICONTROL Sample Data from CSV]** データセットの&#x200B;**[!UICONTROL データセットアクティビティ]**&#x200B;が表示されます。
 
-![&#x200B; アドホックデータのデータセットアクティビティ &#x200B;](assets/datasets-dataset-activity.png)
+![ アドホックデータのデータセットアクティビティ ](assets/datasets-dataset-activity.png)
 
 アドホックデータを検査するには：
 
@@ -102,7 +114,7 @@ ht-degree: 27%
 1. **[!UICONTROL データセット]**&#x200B;の「**[!UICONTROL 参照]**」タブを選択します。 データセットが一覧表示されます。
 1. **[!UICONTROL スキーマ]**&#x200B;列からスキーマの名前を選択します。 例：**[!UICONTROL CSVからのサンプルデータ…]**
 
-   ![&#x200B; アドホックデータセットのスキーマを選択](assets/adhoc-schema-selection.png)
+   ![ アドホックデータセットのスキーマを選択](assets/adhoc-schema-selection.png)
 
 1. ポップアップで、**[!UICONTROL スキーマ名]**&#x200B;を選択します。 例：**[!UICONTROL CSVからのサンプルデータ – アドホックスキーマ - XXXXXXXXXXX]**。 **[!UICONTROL スキーマ]** > **[!UICONTROL CSVからのサンプルデータ – アドホックスキーマ - XXXXXXXXXXXXX]** インターフェイスにリダイレクトされます。
 
@@ -110,11 +122,11 @@ ht-degree: 27%
 
 - **[!UICONTROL スキーマ]**/**[!UICONTROL CSVからのサンプルデータ – アドホックスキーマ - XXXXXXXXXXX]**&#x200B;の下にある最も上位のテナント名オブジェクトを選択して、オブジェクト内のフィールドを表示します。 オブジェクト内のフィールドは、CSV ファイルの構造を表します。 スキーマは、アドホックデータのアップロードに基づいて自動的に作成されます。
 
-  ![&#x200B; アドホックスキーマ &#x200B;](dataset/../assets/adhoc-schema.png)
+  ![ アドホックスキーマ ](dataset/../assets/adhoc-schema.png)
 
   >[!NOTE]
   >
-  >ワークフローでは、スキーマ内のすべてのフィールドを文字列型に定義します。 このタイプは、後の段階で変更することはできません。 アドホックスキーマの定義に柔軟性が必要な場合は、[APIを使用してアドホックスキーマを作成し](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc)、[&#x200B; スキーマからデータセットを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
+  >ワークフローでは、スキーマ内のすべてのフィールドを文字列型に定義します。 このタイプは、後の段階で変更することはできません。 アドホックスキーマの定義に柔軟性が必要な場合は、[APIを使用してアドホックスキーマを作成し](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc)、[ スキーマからデータセットを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
   > 
 
 
@@ -122,7 +134,7 @@ ht-degree: 27%
 
 ## 接続の設定
 
-Customer Journey AnalyticsでExperience Platform データセットを使用するには、[&#x200B; ワークフロー](#create-a-dataset-with-a-csv-file)から得られるアドホックデータセットを含む接続を作成します
+Customer Journey AnalyticsでExperience Platform データセットを使用するには、[ ワークフロー](#create-a-dataset-with-a-csv-file)から得られるアドホックデータセットを含む接続を作成します
 
 Adobe Analyticsとの連携により、Experience PlatformのデータセットをWorkspaceに統合できます。 これらのデータセットについてレポートを作成するには、まずExperience PlatformとWorkspaceのデータセット間の接続を確立する必要があります。
 
@@ -144,7 +156,7 @@ Adobe Analyticsとの連携により、Experience Platformのデータセット�
 
 1. 「**[!UICONTROL データセットを追加]**」の「**[!UICONTROL データセットを選択]**」手順で、次の操作を行います。
 
-   1. 先ほど作成したデータセット（例：**[!UICONTROL CSVからのデータのサンプル]**）と、接続に含めるその他のデータセットを選択します。 アドホックデータセットには、**[!UICONTROL Adhoc]** [!UICONTROL &#x200B; データセットの種類]があります。
+   1. 先ほど作成したデータセット（例：**[!UICONTROL CSVからのデータのサンプル]**）と、接続に含めるその他のデータセットを選択します。 アドホックデータセットには、**[!UICONTROL Adhoc]** [!UICONTROL  データセットの種類]があります。
 
       ![データセットを追加](./assets/cja-connections-adhoc-2.png)
 
@@ -167,20 +179,20 @@ Adobe Analyticsとの連携により、Experience Platformのデータセット�
 
    1. 「**[!UICONTROL 保存]**」を選択します。
 
-アドホックデータセットで使用できる設定について詳しくは、[&#x200B; アドホックデータセット設定](/help/connections/create-connection.md#adhoc-dataset)を参照してください。
+アドホックデータセットで使用できる設定について詳しくは、[ アドホックデータセット設定](/help/connections/create-connection.md#adhoc-dataset)を参照してください。
 
 >[!IMPORTANT]
 >
->時系列データにアドホックデータセットとスキーマを使用しない一般的な推奨事項に加えて、時系列データに&#x200B;**[!UICONTROL CSV]**&#x200B;からデータセットを作成ワークフローを使用することはできません。 このワークフローでは、すべてのフィールドを後で変更できない文字列型に定義します。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプの少なくとも1つのフィールドの定義が必要です。<br/> アドホック時系列データを使用する必要がある場合は、[APIを使用してアドホックスキーマを作成し](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)、次に[&#x200B; スキーマからデータセットを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
+>時系列データにアドホックデータセットとスキーマを使用しない一般的な推奨事項に加えて、時系列データに&#x200B;**[!UICONTROL CSV]**&#x200B;からデータセットを作成ワークフローを使用することはできません。 このワークフローでは、すべてのフィールドを後で変更できない文字列型に定義します。 時系列ベースのデータセット（イベントまたは概要）を接続に追加する場合、このタイプのデータセットには、DateTime タイプの少なくとも1つのフィールドの定義が必要です。<br/> アドホック時系列データを使用する必要がある場合は、[APIを使用してアドホックスキーマを作成し](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438)、次に[ スキーマからデータセットを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/datasets/user-guide#schema) ワークフローを使用することを検討してください。
 
 
-[接続](/help/connections/overview.md)を作成すると、[&#x200B; データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス &#x200B;](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。
+[接続](/help/connections/overview.md)を作成すると、[ データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス ](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。
 
-## データ表示の設定
+## データビューを設定
 
-データ表示は、Customer Journey Analytics に特有のコンテナで、接続からデータを解釈する方法を決定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データ表示は、Analysis Workspace でレポートの準備を行う際に定義します。
+データビューは、Customer Journey Analytics に特有のコンテナで、接続からのデータをどのように解釈するかを指定できます。 Analysis Workspace で使用可能なすべてのディメンションと指標、およびこれらのディメンションと指標からデータを取得する列を指定します。 データビューは、Analysis Workspace でレポートの準備を行う際に定義します。
 
-データ表示を作成するには：
+データビューを作成するには：
 
 1. Customer Journey Analytics UIの上部メニューで、**[!UICONTROL データビュー]** （オプションで&#x200B;**[!UICONTROL データ管理]**&#x200B;から）を選択します。
 
@@ -203,13 +215,13 @@ Adobe Analyticsとの連携により、Experience Platformのデータセット�
       1. **[!UICONTROL イベントデータセット]**&#x200B;を選択します。
       1. 「**[!UICONTROL アドホックおよびリレーショナルフィールド]**」を選択します。
 
-         ![&#x200B; データビュー – アドホックコンポーネント &#x200B;](assets/cja-dataview-components-adhoc.png)
+         ![ データビュー – アドホックコンポーネント ](assets/cja-dataview-components-adhoc.png)
 
       1. アドホックスキーマから&#x200B;**[!UICONTROL 指標]**&#x200B;または&#x200B;**[!UICONTROL ディメンション]**&#x200B;にフィールドをドラッグ&amp;ドロップします。
 
 
 
-   1. オプションで、[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を使用して、アドホックフィールドをデフォルトの文字列タイプおよび形式から別のタイプまたは形式に変更します。
+   1. オプションで、[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を使用して、アドホックフィールドをデフォルトの文字列タイプおよび形式から別のタイプまたは形式に変更します。
 
    1. 「**[!UICONTROL 保存して続行]**」を選択します。
 
@@ -217,7 +229,7 @@ Adobe Analyticsとの連携により、Experience Platformのデータセット�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成および編集方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。 また、データビューで使用できるコンポーネントや、セグメントとセッションの設定の使用方法についても説明します。
+データビューの作成および編集方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。 また、データビューで使用できるコンポーネントや、セグメントとセッションの設定の使用方法についても説明します。
 
 
 ## プロジェクトの設定
@@ -234,12 +246,12 @@ Analysis Workspaceは、データにもとづいて分析データを迅速に�
 
 1. 「**[!UICONTROL 空のプロジェクト]**」を選択します。
 
-1. リストから[&#x200B; データビュー](#set-up-a-data-view)を選択します。
+1. リストから[ データビュー](#set-up-a-data-view)を選択します。
 
-1. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 高度なデータにもとづいた指標やディメンションを含めることができます。
+1. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 高度なデータにもとづいた指標やディメンションを含めることができます。
 
 コンポーネント、ビジュアライゼーション、パネルを使用してプロジェクトを作成し、分析を構築する方法について詳しくは、[Analysis Workspace の概要](../analysis-workspace/home.md)を参照してください。
 
 >[!SUCCESS]
 >
->すべての手順が完了しました。 まず、収集するアドホックデータ（CSV ファイル）を定義します。 ワークフローを使用して、そのCSV ファイルからアドホックデータセットとスキーマを作成しました。 取り込んだアドホックデータやその他のデータを使用するように、Customer Journey Analyticsで接続を定義しました。 データ表示の定義では、使用するディメンションと指標を指定でき、最後に、最初のプロジェクトを作成し、データを視覚化および分析します。
+>すべての手順が完了しました。 まず、収集するアドホックデータ（CSV ファイル）を定義します。 ワークフローを使用して、そのCSV ファイルからアドホックデータセットとスキーマを作成しました。 取り込んだアドホックデータやその他のデータを使用するように、Customer Journey Analyticsで接続を定義しました。 データビューの定義では、使用するディメンションと指標を指定でき、最後にそのデータを視覚化および分析する最初のプロジェクトを作成しました。

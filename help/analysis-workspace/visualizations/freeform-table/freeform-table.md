@@ -4,25 +4,32 @@ description: Analysis Workspaceのデータ分析の基盤となるフリーフ�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-TQID: https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8
+TQID: 'https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 815
+source-wordcount: '824'
 ht-degree: 94%
-
 ---
-
 # フリーフォームテーブルの概要 {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -37,7 +44,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ フリーフォームテーブル [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)を参照してください。 フリーフォームテーブル _
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_****_<br/>_ フリーフォームテーブル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table)を参照してください。[ フリーフォームテーブル _![
 
 >[!ENDSHADEBOX]
 
@@ -100,7 +107,7 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 
 | オプション | 説明 |
 |---|---|
-| **[!UICONTROL 各列の日付をすべて同じ行から始まるように整列]** | 各列の日付をすべて同じ行から始まるように整列するかしないかを指定します。 |
+| **[!UICONTROL 各列の日付をすべて同じ行から始まるように整列]** | 各列の日付をすべて同じ行から開始するように整列するかどうかを指定します。 |
 
 
 ## コンテキストメニュー
@@ -118,13 +125,13 @@ Analysis Workspace では、![テーブル](/help/assets/icons/Table.svg) **[!UI
 | **[!UICONTROL 完全なテーブルを書き出し...]** | 指定したクラウドの場所に完全なテーブルを書き出します。 詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し](../../export/export-cloud.md)を参照してください。 |
 | **[!UICONTROL ビジュアライゼーションを複製]** | ビジュアライゼーションの完全な複製を作成します。 |
 | **[!UICONTROL 説明を編集]** | ビジュアライゼーションの説明テキストを追加（または編集）します。 [テキスト](../text.md)を参照してください。 |
-| **[!UICONTROL ビジュアライゼーションリンクを取得]** | リンクをコピーして、ビジュアライゼーションと直接共有します。 共有リンクダイアログにリンクが表示されます。 「コピー」を選択して、リンクをクリップボードにコピーします。 |
+| **[!UICONTROL ビジュアライゼーションリンクを取得]** | リンクをコピーして、他のユーザーとビジュアライゼーションを直接共有します。 共有リンクダイアログにリンクが表示されます。 「コピー」を選択して、リンクをクリップボードにコピーします。 |
 | **[!UICONTROL やり直し]** | 現在のビジュアライゼーションの設定を削除し、ゼロから再設定できるようにします。 |
 
 
 >[!MORELIKETHIS]
 >
->[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

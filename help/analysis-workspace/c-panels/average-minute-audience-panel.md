@@ -4,27 +4,35 @@ description: Analysis WorkspaceのMedia Average Minute Audience パネルの使�
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-TQID: https://experienceleague.adobe.com/d5xE5n-OpioBQy-j3wGrxO7GBcOJrqbNZ1C0lS1iAYM
+TQID: 'https://experienceleague.adobe.com/d5xE5n-OpioBQy-j3wGrxO7GBcOJrqbNZ1C0lS1iAYM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1714
+source-wordcount: '1714'
 ht-degree: 88%
-
 ---
-
 # メディア分平均オーディエンスパネル {#media-average-minute-audience-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -47,7 +55,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Media Average minute audience panel[&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_&#x200B;**Customer Journey Analytics**&#x200B;_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_ Adobe <br/>_。Media Average minute audience panelを参照してください。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Media Average minute audience panel](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)を参照してください。_**Customer Journey Analytics**_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_ Adobe <br/>_。[Media Average minute audience panelを参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -99,7 +107,7 @@ Analysis Workspace では、分平均オーディエンスは次の情報を提�
    | [!UICONTROL **ここにセグメント（または他のコンポーネント）をドロップ**] | 他のパネルと同様に、この設定では、作成したセグメントに基づいて選択内容がセグメント化されます。 この設定を使用すると、特定のプラットフォーム、ライブストリーム、その他の一般的なメディアのセグメントを確認することができます。 |
    | [!UICONTROL **指標の計算対象**] | [**[!UICONTROL 特定のコンテンツ]**](#specific-content)の分平均オーディエンスを表示するかどうかを選択します。 または、[**[!UICONTROL カスタム期間]**](#custom-time-period)の分平均オーディエンスを表示する場合も同様です。<br/><br/>次の場合に&#x200B;[!UICONTROL **カスタム期間**]&#x200B;を選択します。 <ul><li>期間を使用できない場合、または </li><li>複数のコンテンツを含む時系列データについて、分平均オーディエンスを表示する場合、または</li><li>（ライブストリームやイベント中など）特定の期間が割り当てられていないコンテンツの場合</li></ul></li></li></ul> <p>この設定により、ワークフローとレポートの出力が変更されます。</p> |
 
-1. [!UICONTROL **指標の計算**] ドロップダウンメニューで選択したオプションに応じて、[特定のコンテンツ &#x200B;](#specific-content)または[&#x200B; カスタム期間](#custom-time-period)を続行します。
+1. [!UICONTROL **指標の計算**] ドロップダウンメニューで選択したオプションに応じて、[特定のコンテンツ ](#specific-content)または[ カスタム期間](#custom-time-period)を続行します。
 
 #### 特定のコンテンツ
 
@@ -200,7 +208,7 @@ Analysis Workspace では、分平均オーディエンスは次の情報を提�
 
 >[!MORELIKETHIS]
 >
-> [&#x200B; パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [ パネルを作成](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 > [メディア同時視聴者数パネル](media-concurrent-viewers.md)
 > [メディア再生滞在時間パネル](media-playback-time-spent.md)
 >

@@ -4,23 +4,28 @@ title: 統計手法
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-TQID: https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI
+TQID: 'https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 552
+source-wordcount: '552'
 ht-degree: 4%
-
 ---
-
 # 統計的手法
 
 現在、予測サービスはProphetをサポートしており、ほとんどのデータで効率的かつ確実に動作することが示されています。 Prophetは、Metaによって開発されたオープンソースの予測パッケージです。 データをトレンド、季節、イベントの要素に分解します。 預言者モデルは効率的で、多くの予測アプリケーションに合わせて適切に拡張します。 さらに、モデルは外れ値や欠落データに対しても効果的です。

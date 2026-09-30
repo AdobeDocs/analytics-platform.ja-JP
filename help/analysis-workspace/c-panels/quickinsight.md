@@ -4,27 +4,35 @@ title: クイックインサイトパネル
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-TQID: https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw
+TQID: 'https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1166
+source-wordcount: '1166'
 ht-degree: 88%
-
 ---
-
 # クイックインサイトパネル {#quick-insights-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -39,7 +47,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、_&#x200B;のクイックインサイトパネルについて説明します。![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**Customer Journey Analytics**&#x200B;_。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンについては、[&#x200B; クイックインサイトパネル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
+_この記事では、_&#x200B;のクイックインサイトパネルについて説明します。![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**Customer Journey Analytics**_。<br/>_この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンについては、[ クイックインサイトパネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/quickinsight)を参照してください。_
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +62,7 @@ _この記事では、_&#x200B;のクイックインサイトパネルについ�
 * セグメントを作成する場所はどこか。
 * その他の機能
 
-これらの質問を解決するために、[!UICONTROL &#x200B; クイックインサイト &#x200B;]では、最も人気のあるディメンション、指標、セグメント、日付範囲を示すアルゴリズムを利用しています。 このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。 実際、次に示すように、ドロップダウンメニューに[!UICONTROL POPULAR]のタグが付けられたディメンション、指標、セグメントが表示されます。
+これらの質問を解決するために、[!UICONTROL  クイックインサイト ]では、最も人気のあるディメンション、指標、セグメント、日付範囲を示すアルゴリズムを利用しています。 このアルゴリズムは、[!UICONTROL Analysis Workspace] での会社のデータコンポーネント使用状況に基づいています。 実際、次に示すように、ドロップダウンメニューに[!UICONTROL POPULAR]のタグが付けられたディメンション、指標、セグメントが表示されます。
 
 ![クイックインサイトパネル。](assets/popular-tag.png)
 

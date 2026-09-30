@@ -9,22 +9,28 @@ autotag-review: '2026-05-19T09:43:29.052Z'
 TQID: 'https://experienceleague.adobe.com/Sh1xJ0RXluNN0HlY2xlLVBs5-sahCwkcahQaThFCJpA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1337
+source-wordcount: '1337'
 ht-degree: 1%
-
 ---
-
 # 単一ディメンションのランク
 
 
@@ -34,7 +40,7 @@ ht-degree: 1%
 
 使用例の&#x200B;**[!UICONTROL Single Dimension Ranked]** パネルの例：
 
-![Customer Journey Analytics単一ディメンションのランク付けビジュアライゼーション &#x200B;](../assets/cja-single-dimension-ranked.png)
+![Customer Journey Analytics単一ディメンションのランク付けビジュアライゼーション ](../assets/cja-single-dimension-ranked.png)
 
 +++
 
@@ -59,9 +65,9 @@ ht-degree: 1%
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
 
-   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
+   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 相対日付]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が過去&#x200B;]&#x200B;**`1`**&#x200B;[!UICONTROL &#x200B;暦年&#x200B;]&#x200B;**の場合、フィルターを**&#x200B;項目を表示するように定義します。
+   1. 値&#x200B;]****[!UICONTROL &#x200B;が過去&#x200B;]**`1`**[!UICONTROL &#x200B;暦年&#x200B;]**の場合、フィルターを**[!UICONTROL &#x200B;項目を表示するように定義します。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
 
    適用された&#x200B;**[!UICONTROL daterange]** フィルターでテーブルが更新されます。
@@ -97,7 +103,7 @@ ht-degree: 1%
 
    折れ線グラフと積み上げ棒グラフが更新されます。 Power BI デスクトップは以下のようになります。
 
-   ![Power BI デスクトップ版ユースケース 5 グラフ &#x200B;](../assets/uc5-pbi-chart.png)
+   ![Power BI デスクトップ版ユースケース 5 グラフ ](../assets/uc5-pbi-chart.png)
 
 1. 折れ線グラフと積み重ね棒グラフのビジュアライゼーション：
 
@@ -106,7 +112,7 @@ ht-degree: 1%
 
    メインビューが更新され、行のビジュアライゼーションと表の両方が表示されます。
 
-   ![Power BI デスクトップ版ユースケース 2の最終的な日次トレンドのビジュアライゼーション &#x200B;](../assets/uc5-pbi-final.png)
+   ![Power BI デスクトップ版ユースケース 2の最終的な日次トレンドのビジュアライゼーション ](../assets/uc5-pbi-final.png)
 
 >[!TAB Tableau Desktop]
 
@@ -161,22 +167,22 @@ ht-degree: 1%
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
+   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2024/01/01]**&#x200B;に指定します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから、**[!UICONTROL 製品名]**&#x200B;を選択します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣カスタムフィールド]** セクションから：
    1. 「**[!UICONTROL + Add]**」ドロップダウンメニューから「**[!UICONTROL Custom Measure]**」を選択します。
    1. **[!UICONTROL カスタムメジャーを作成]** ダイアログで、次の操作を行います。
-      1. **[!UICONTROL フィールドから**&#x200B;[!UICONTROL &#x200B;購入収益&#x200B;]&#x200B;**を選択して]** ドロップダウンメニューを測定します。
+      1. **[!UICONTROL フィールドから**[!UICONTROL &#x200B;購入収益&#x200B;]**を選択して]** ドロップダウンメニューを測定します。
       1. 「**[!UICONTROL Measure type]**」ドロップダウンメニューから「**[!UICONTROL Sum]**」を選択します。
       1. **[!UICONTROL 名前]**&#x200B;のカスタムフィールド名を入力してください。 例：`Purchase Revenue`。
       1. 「**[!UICONTROL フィールドの詳細]**」タブを選択します。
-      1. **[!UICONTROL 形式]** ドロップダウンメニューから&#x200B;**[!UICONTROL 小数点]**&#x200B;を選択し、`0`が&#x200B;**[!UICONTROL 小数点]**&#x200B;に入力されていることを確認します。
-         ![Looker カスタム指標フィールド &#x200B;](../assets/uc5-looker-customfield.png)
+      1. **[!UICONTROL 形式]** ドロップダウンメニューから&#x200B;**[!UICONTROL 小数点]**&#x200B;を選択し、`0`が&#x200B;**[!UICONTROL 小数点]**に入力されていることを確認します。
+         ![Looker カスタム指標フィールド ](../assets/uc5-looker-customfield.png)
       1. 「**[!UICONTROL 保存]**」を選択します。
    1. 「**[!UICONTROL + Add]**」ドロップダウンメニューから「**[!UICONTROL Custom Measure]**」をもう一度選択します。 **[!UICONTROL カスタム]**&#x200B;測定を作成ダイアログで、次の操作を行います。
-      1. **[!UICONTROL フィールドから**&#x200B;[!UICONTROL &#x200B;購入&#x200B;]&#x200B;**を選択して]** ドロップダウンメニューを測定します。
+      1. **[!UICONTROL フィールドから**[!UICONTROL &#x200B;購入&#x200B;]**を選択して]** ドロップダウンメニューを測定します。
       1. 「**[!UICONTROL Measure type]**」ドロップダウンメニューから「**[!UICONTROL Sum]**」を選択します。
       1. **[!UICONTROL 名前]**&#x200B;のカスタムフィールド名を入力してください。 例：`Sum of Purchases`。
       1. 「**[!UICONTROL フィールドの詳細]**」タブを選択します。
@@ -188,17 +194,17 @@ ht-degree: 1%
 1. 適切な選択を行い、提案された値を入力します。これにより、フィルターの読み取り&#x200B;**[!UICONTROL は]**&#x200B;個の`1000000`個の&#x200B;**[!UICONTROL と]**&#x200B;個の`2000000`の間になります。
 1. **[!UICONTROL 実行]**&#x200B;を選択します。
 1. 行のビジュアライゼーションを表示するには、**[!UICONTROL ‣ ビジュアライゼーション]**&#x200B;を選択します。
-1. **[!UICONTROL ビジュアライゼーション]**&#x200B;の&#x200B;**[!UICONTROL 編集]**&#x200B;を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで以下を行います。
+1. **[!UICONTROL ビジュアライゼーション]**&#x200B;の&#x200B;**[!UICONTROL 編集]**&#x200B;を選択して、ビジュアライゼーションを更新します。 ポップアップダイアログで次の操作を行います。
    1. 「**[!UICONTROL シリーズ]**」タブを選択します。
    1. 下にスクロールして&#x200B;**[!UICONTROL 購入履歴]**&#x200B;を表示し、**[!UICONTROL 種類]**&#x200B;を&#x200B;**[!UICONTROL 行]**&#x200B;に変更します。
    1. 「**[!UICONTROL Y]**」タブを選択します。
-   1. **[!UICONTROL 購入]**&#x200B;を&#x200B;**[!UICONTROL 左1]** コンテナから&#x200B;**[!UICONTROL *シリーズをここにドラッグして、新しい左軸&#x200B;*]**&#x200B;を作成します。 このアクションにより、**[!UICONTROL &#x200B;左2 &#x200B;]**&#x200B;コンテナが作成されます。
+   1. **[!UICONTROL 購入]**&#x200B;を&#x200B;**[!UICONTROL 左1]** コンテナから&#x200B;**[!UICONTROL *シリーズをここにドラッグして、新しい左軸&#x200B;*]**を作成します。 このアクションにより、**[!UICONTROL &#x200B;左2 ]**コンテナが作成されます。
       ![Looker ビジュアライゼーション設定](../assets/uc5-looker-visualization.png)
    1. **[!UICONTROL 編集]**&#x200B;の横にある![CrossSize75](/help/assets/icons/CrossSize75.svg)を選択して、ポップアップダイアログを非表示にします
 
 次のようなビジュアライゼーションと表が表示されます。
 
-![Looker結果の日次トレンド &#x200B;](../assets/uc5-looker-result.png)
+![Looker結果の日次トレンド ](../assets/uc5-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]

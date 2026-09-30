@@ -9,22 +9,30 @@ autotag-review: '2026-05-19T10:44:54.802Z'
 TQID: 'https://experienceleague.adobe.com/ljj9CIUW58m27w8Mo9HlRJ0kgYXGIgqwuarPR2wNUjw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 503
+source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # Customer Journey AnalyticsでのExperience Platform オーディエンスの分析 {#analyze-audiences-RTCDP}
 
 オーディエンス分析設定[を作成すると、作成するように設定したデータビューで、新しいディメンションとしてオーディエンスデータが使用できるようになります](/help/connections/audience-analysis/audience-analysis-configure.md)。 オーディエンス分析ディメンションが追加されたデータビューにアクセスできる場合は、Analysis Workspaceの任意の場所で新しいオーディエンスディメンションを使用できます。
@@ -37,7 +45,7 @@ ht-degree: 0%
 
 <!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
-オーディエンス概要テンプレートへのアクセス方法について詳しくは、[&#x200B; テンプレートを使用](/help/analysis-workspace/templates/use-templates.md)の「[&#x200B; テンプレートにアクセスして実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)」を参照してください。
+オーディエンス概要テンプレートへのアクセス方法について詳しくは、[ テンプレートを使用](/help/analysis-workspace/templates/use-templates.md)の「[ テンプレートにアクセスして実行](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template)」を参照してください。
 
 オーディエンスの概要テンプレートには、次のパネルが含まれています。
 

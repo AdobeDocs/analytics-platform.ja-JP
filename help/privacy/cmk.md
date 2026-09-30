@@ -8,25 +8,34 @@ autotag-review: '2026-05-19T09:16:21.318Z'
 TQID: 'https://experienceleague.adobe.com/jx1pw9U5sw42999O132esMBoUcQ8hWuUKzzN3WLAcyY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: c5ed78d1-99be-42e1-b164-a20a3685241e
+    internal-label: Customer managed keys
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 561
+source-wordcount: '561'
 ht-degree: 87%
-
 ---
-
 # 顧客管理キー
 
 Adobe Customer Journey Analytics は、[Healthcare Shield](https://www.adobe.com/trust/compliance/hipaa-ready.html) およびプライバシーとセキュリティシールドのお客様が Customer Journey Analytics データに顧客管理キー（CMK）を使用するためのオプションを提供します。 このプロセスは、[Adobe Experience Platform CMK の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys/overview)とは別のものです。 顧客管理キーは、[Healthcare Shield またはプライバシーとセキュリティシールド](https://experienceleague.adobe.com/ja/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield)アドオンサービスを購入した組織のみが利用できます。
@@ -39,7 +48,7 @@ Azure で実行されている Customer Journey Analytics の CMK を設定す�
 1. Azure で、自分がアプリケーション管理者、クラウドアプリケーション管理者、グローバル管理者などの権限がある役割を持つ管理者であることを確認します。 詳しくは、[Microsoft Entra のビルトインの役割](https://learn.microsoft.com/ja-jp/entra/identity/role-based-access-control/permissions-reference)を参照してください。
 1. Customer Journey Analytics でのみ使用する新しい Azure Key Vault を作成します。 詳しくは、[Microsoft Azure Key Vault ドキュメント](https://learn.microsoft.com/ja-jp/azure/key-vault/general/)を参照してください。
 1. Key Vault 内のキーへのアクセス権を Adobe Azure アプリに付与します。 これには、次のいずれかの方法を使用します。
-   * 次のURLを介した承認同意による権限の付与：[https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
+   * 次のURLを介した承認同意による権限の付与：[https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&amp;redirect_uri=https://experience.adobe.com&amp;scope=user.read](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
 
    * [既存のアカウントに対する顧客管理キーの設定](https://learn.microsoft.com/ja-jp/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)の手順に従います。 Adobe アプリケーション ID は次のとおりです。
 

@@ -9,35 +9,46 @@ autotag-review: '2026-05-19T08:48:44.273Z'
 TQID: 'https://experienceleague.adobe.com/hE-nAiD8K4lHdZkC2YJpqpqfh2d3CY6tq4KiTJjEXs0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: cf731116-8803-4027-85aa-9c0a126e8321
+    internal-label: Dataset configuration
   - id: e0cfe18a-f68c-495b-bafc-f6bcc0392d6c
+    internal-label: Identity
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 521
+source-wordcount: '521'
 ht-degree: 10%
-
 ---
-
 # B2B ルックアップ用にデータセットを変換
 
 B2B データ（アカウント、商談、マーケティングリスト、キャンペーンなど）での個人ベースの検索をサポートするために、B2B ルックアップデータセットの変換を行うことで、データ精度を向上させることができます。
 
 この変換は、次のクラスに基づくB2B ルックアップスキーマのデータを含むデータセットでのみ使用できます。
 
-* [XDM ビジネスアカウントユーザーの関係](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM ビジネスマーケティングリストメンバー](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM Business Campaign Members](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM ビジネスアカウントユーザーの関係](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM ビジネスマーケティングリストメンバー](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -87,4 +98,4 @@ B2B ルックアップデータセットの変換を有効にするには：
 
 この変換により、4つのスキーマクラスのそれぞれのデータセットが変更され（下の図ではオレンジ色）、各人識別子に対して、ルックアップデータセット内の関連データ（アカウント、商談、マーケティングリスト、またはキャンペーン）用の（オブジェクト）配列が作成されます（下の図ではピンク色）。 この変換により、個人ID ベースの検索を正しく処理できるようになります。
 
-![B2B スキーマ &#x200B;](./assets/b2b-schemas.png)
+![B2B スキーマ ](./assets/b2b-schemas.png)

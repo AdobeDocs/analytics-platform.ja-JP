@@ -5,31 +5,45 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-TQID: https://experienceleague.adobe.com/XK781eI953KTIHbIX8M9l09QnOcILsNas1-DNmi57Gc
+TQID: 'https://experienceleague.adobe.com/XK781eI953KTIHbIX8M9l09QnOcILsNas1-DNmi57Gc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1223
+source-wordcount: '1223'
 ht-degree: 76%
-
 ---
-
 # Adobe Analyticsからのデータの取り込みと活用
 
 このクイックスタートガイドでは、Adobe Analytics が収集したデータを Customer Journey Analytics で使用する方法について説明します。
@@ -38,7 +52,7 @@ ht-degree: 76%
 >
 >Adobe Analyticsのライセンスを取得し、文書化された実装方法のいずれかを使用して、1つ以上のweb サイトにデプロイします。
 >
->- [Analytics Edge を使用した Experience Platform の実装](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=ja)
+>- [Analytics Edge を使用した Experience Platform の実装](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >- [Adobe Analytics 拡張機能を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=ja)
 >- [JavaScript を使用した Analytics の実装](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja)
 
@@ -80,7 +94,7 @@ Adobe Analytics ソースコネクタを作成するには：
 
 5. 「**[!UICONTROL デフォルトのスキーマ]**」を[!UICONTROL ターゲットスキーマ]として選択します。 Adobe Experience Platform は、選択した Adobe Analytics レポートスイートのすべての標準フィールドをマッピングするために、スキーマと対応するデータセットを自動的に作成します。
 
-   デフォルトスキーマが選択された![Adobe Experience Platform ウィンドウ &#x200B;](./assets/default-schema.png)
+   デフォルトスキーマが選択された![Adobe Experience Platform ウィンドウ ](./assets/default-schema.png)
 
    「**[!UICONTROL 次へ]**」を選択します。
 
@@ -127,7 +141,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    - Adobe Analytics ソースコネクタによって自動的に作成されたデータセットと、接続に含める他のデータセットを選択します。
 
-     ![&#x200B; データセット ウィンドウを追加](./assets/cja-connections-2a.png)
+     ![ データセット ウィンドウを追加](./assets/cja-connections-2a.png)
 
    - 「**[!UICONTROL 次へ]**」を選択します。
 
@@ -183,7 +197,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -208,7 +222,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

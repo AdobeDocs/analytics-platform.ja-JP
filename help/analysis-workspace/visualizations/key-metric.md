@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:31:00.048Z'
 TQID: 'https://experienceleague.adobe.com/y3VfcvJp8lCmBLHy4-zPEb6Y7dzjfcDPjSMlKGPNR-A'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 960
+source-wordcount: '969'
 ht-degree: 91%
-
 ---
-
 # 主要指標の概要 {#key-metric-summary}
 
 >[!CONTEXTUALHELP]
@@ -33,7 +38,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** バージョンの&#x200B;_Customer Journey Analytics[主要指標の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)を参照してください。![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**。_<br/>_&#x200B;この記事の主要指標の概要&#x200B;_を参照してください。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** バージョンの&#x200B;_Customer Journey Analytics[主要指標の概要](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)を参照してください。![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_****。_<br/>_&#x200B;この記事の主要指標の概要&#x200B;_を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +55,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 このビジュアライゼーションは、次のような様々な一般的なユースケースに対応しています。
 
-* アナリストは前年の同じ期間と比較して今月の機会創出の様相を把握しようとしています。
+* 前年の同じ期間と比較して、今月の機会創出の状況を把握しようとしているアナリスト。
 
 * マーケターは特定のリードタイプのリードジェネレーションが今月から先月にかけてどのように変化したかを調べています。
 
@@ -111,7 +116,7 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. 
 -->
 
-主要指標の概要の出力は次のようになります。
+キーメトリック概要の出力は次のようになります。
 
 ![指標、変更の概要、数値の概要、折れ線グラフを表示する主要指標の出力。](assets/key-metrics.png)
 
@@ -140,10 +145,10 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 | 設定 | 説明 |
 | --- | --- |
-| **[!UICONTROL 変化率を強調]** | ビジュアライゼーションの中央に目立つ太字で変更概要を表示します |
-| **[!UICONTROL 数値を強調]** | ビジュアライゼーションの中央に目立つ太字で数値概要を表示します |
+| **[!UICONTROL 変化率を強調]** | ビジュアライゼーションの中央に目立つ太字でサマリー変更を表示します |
+| **[!UICONTROL 数値を強調]** | ビジュアライゼーションの中央に目立つ太字でサマリー数値を表示します |
 | **[!UICONTROL 凡例を表示]** | ビジュアライゼーションの下部に凡例を表示または非表示にします |
-| **[!UICONTROL 注釈を表示]** | 管理者に追加された注釈を表示または非表示にします |
+| **[!UICONTROL 注釈を表示]** | 管理者によって追加された注釈を表示または非表示にします |
 | **[!UICONTROL タイトルを非表示]** | ビジュアライゼーションのタイトルを非表示にします。 |
 | **[!UICONTROL 割合 (％)]** | ビジュアライゼーションを数値ではなく割合で表示します。 |
 | **[!UICONTROL トレンドラインを表示]** | ビジュアライゼーションにトレンドラインを表示します。 |
@@ -151,7 +156,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 | **[!UICONTROL 比較率とトレンドラインを表示]** | 比較データを表示または非表示にします。 非表示の場合、比較折れ線グラフと変更概要オブジェクトの両方が非表示になります。 |
 | **[!UICONTROL 合計数を表示]** | 数値概要を表示または非表示 |
 | **[!UICONTROL 生の差異を表示]** | プライマリ日付範囲とセカンダリ日付範囲の指標の合計値の生の差異を表示または非表示 |
-| **[!UICONTROL 値を短縮]** | 数値をインテリジェントに短縮するには、「**[!UICONTROL 値を短縮]**」を選択します。 選択した場合、短縮の量を定義する数値を入力します。 次に例を示します。<br/><table><tr><td>**元の値**</td><td>**短縮**</td><td>**結果**</td></tr><tr><td>$12,011,141.25</td><td>未選択</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>選択済み、1 に設定</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、2 に設定</td><td align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、2 に設定</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>選択、3 に設定</td><td align="right">$12.011M</td></tr></table> |
+| **[!UICONTROL 値を短縮]** | 数値をインテリジェントに短縮するには、「**[!UICONTROL 値を短縮]**」を選択します。 選択した場合、短縮の量を定義する数値を入力します。 次に例を示します。<br/><table><tr><td>**元の値**</td><td>**短縮**</td><td>**結果**</td></tr><tr><td>$12,011,141.25</td><td>未選択</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>選択済み、1 に設定済み</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、2 に設定</td><td align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>選択済み、2 に設定</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>選択、3 に設定</td><td align="right">$12.011M</td></tr></table> |
 
 ## ビジュアライゼーションの編集
 
@@ -161,10 +166,10 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
    これで、元の[設定ビュー](#configure)に戻りました。
 
-1. 必要に応じて、指標、プライマリ日付範囲、比較日付範囲またはセグメントを変更します。
+1. 必要に応じて、指標、プライマリの日付範囲、比較の日付範囲、またはセグメントを変更します。
 
 >[!MORELIKETHIS]
 >
->[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

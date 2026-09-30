@@ -4,27 +4,37 @@ title: プロジェクトとデータのダウンロード
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-TQID: https://experienceleague.adobe.com/GZEoPBNO5ELAQTN-44YR9A7zCWy-0hgVB98wNDsvXzE
+TQID: 'https://experienceleague.adobe.com/GZEoPBNO5ELAQTN-44YR9A7zCWy-0hgVB98wNDsvXzE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Governance
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1251
+source-wordcount: '1251'
 ht-degree: 23%
-
 ---
-
 # プロジェクトとデータのダウンロード
 
 Analysis Workspace プロジェクトとデータをローカルデバイスにダウンロードできます。 このダウンロードは、データのコピー、CSV （コンマ区切り値データ）ファイル、またはPDF（ポータブルドキュメントフォーマット）ドキュメントに使用できます。
@@ -44,8 +54,8 @@ PDFとしてプロジェクトをダウンロードする際は、次の点を�
 
 * プロジェクトがワークステーションにダウンロードされるまで、プロジェクトを離れないでください。 PDFをレンダリングするためにAdobe サーバー上でプロジェクトを再実行するため、ダウンロードには数分かかる場合があります。 ダウンロードのレンダリング中も、引き続きプロジェクトに変更を加えることができます。 PDFのレンダリングに5分以上かかる場合は、代わりに[PDF](../curate-share/send-schedule-files.md)に電子メールを送信するように求められます。
 * ダウンロードは、ページ番号が適用されない単一ページとしてレンダリングされます。
-* PDFには、Analysis Workspaceのブラウザーページに表示される内容が含まれています。 切り捨てられたコンテンツを避けるには、![&#x200B; サイズ変更](/help/assets/icons/Resize.svg)を選択して、カスタムサイズのビジュアライゼーションまたはパネルのサイズを自動的に変更します。
-* フリーフォームテーブル内の[&#x200B; ハイパーリンク &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)は、ダウンロードしたPDFでクリックできます。
+* PDFには、Analysis Workspaceのブラウザーページに表示される内容が含まれています。 切り捨てられたコンテンツを避けるには、![ サイズ変更](/help/assets/icons/Resize.svg)を選択して、カスタムサイズのビジュアライゼーションまたはパネルのサイズを自動的に変更します。
+* フリーフォームテーブル内の[ ハイパーリンク ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)は、ダウンロードしたPDFでクリックできます。
 
 プロジェクトをPDF ファイルとしてダウンロードするには：
 
@@ -114,7 +124,7 @@ Only relevant as soon as CJA supports Map visualization
 >
 > ディメンションが 50,000 項目を超える場合は、異なる並べ替え指標が適用されたファイルをダウンロードするか、セグメントを適用します。 例えば、あるダウンロードでは訪問回数の降順で並べ替え、2 回目のダウンロードでは訪問回数の昇順で並べ替えます。 この説明は、ロングテールの項目を取得するのに役立ちます。
 
-プロジェクト内で複数のタスクを使用できます。また、ダウンロードの処理中に、同じタブで新しい Workspace プロジェクトに移動することもできます。 新しいブラウザータブを開くと、ダウンロードは一時停止します。 Workspace を完全に終了するか、ブラウザータブを閉じると、ダウンロードはキャンセルされます。
+プロジェクト内で複数のタスクを同時に実行できます。また、ダウンロードの処理中に、同じタブで新しい Workspace プロジェクトに移動することもできます。 新しいブラウザータブを開くと、ダウンロードは一時停止します。 Workspace を完全に終了するか、ブラウザータブを閉じると、ダウンロードはキャンセルされます。
 
 
 ### ダウンロードした項目ファイル {#items-file}
@@ -131,7 +141,7 @@ Only relevant as soon as CJA supports Map visualization
 
 ファイルがダウンロードされると、次の通知が表示されます。
 
-* 青い&#x200B;**[!UICONTROL _テーブル名&#x200B;_-_Dimension _.csvがリクエストされました。_x _%完了]**&#x200B;進行状況を示します。 いつでもダウンロードをキャンセルするには、「**[!UICONTROL ダウンロードをキャンセル]**」を選択します。 メッセージを閉じる場合は、![CrossSize100](/help/assets/icons/CrossSize100.svg)を選択します。これにより、ダウンロードがキャンセルされません。
+* 青い&#x200B;**[!UICONTROL _テーブル名&#x200B;_-_Dimension _.csvがリクエストされました。_x _%完了]**進行状況を示します。 いつでもダウンロードをキャンセルするには、「**[!UICONTROL ダウンロードをキャンセル]**」を選択します。 メッセージを閉じる場合は、![CrossSize100](/help/assets/icons/CrossSize100.svg)を選択します。これにより、ダウンロードがキャンセルされません。
 * ファイルのダウンロードが完了すると、緑色の&#x200B;**[!UICONTROL _テーブル名&#x200B;_-_Dimension _.csvがダウンロードされました]**。 ファイルは、ブラウザー用に設定されたダウンロードフォルダーにダウンロードされます。
 
 一度に複数のダウンロードをリクエストする場合、前のダウンロードが完了するまで、追加のダウンロードがキューに入れられるという通知が届きます。
@@ -139,7 +149,7 @@ Only relevant as soon as CJA supports Map visualization
 
 ## 機密データのダウンロード {#sensitive}
 
-データのダウンロードを防ぐ[&#x200B; データガバナンスポリシー](/help/data-views/data-governance.md)を想像してみてください。 このポリシーは、レポート対象のデータビューでオンになっています。 その結果、プロジェクトのダウンロード（PDF ファイルを電子メールで送信したり共有したりする場合など）では、機密性の高いデータフィールドがハッシュ化されます。 Analysis Workspaceでもこれらのフィールドについて分析できます。 プロジェクトを電子メールで送信するか、その他の方法で共有しようとすると、PDFまたはCSV ファイルに機密データフィールドが空として表示されます。
+データのダウンロードを防ぐ[ データガバナンスポリシー](/help/data-views/data-governance.md)を想像してみてください。 このポリシーは、レポート対象のデータビューでオンになっています。 その結果、プロジェクトのダウンロード（PDF ファイルを電子メールで送信したり共有したりする場合など）では、機密性の高いデータフィールドがハッシュ化されます。 Analysis Workspaceでもこれらのフィールドについて分析できます。 プロジェクトを電子メールで送信するか、その他の方法で共有しようとすると、PDFまたはCSV ファイルに機密データフィールドが空として表示されます。
 
 機密性の高いラベルが付いたデータフィールドがデータビューに含まれる場合、画面からデータを選択してコピーするオプションは、データビュー内のすべてのデータに対して制限されます。
 
@@ -147,6 +157,6 @@ Only relevant as soon as CJA supports Map visualization
 
 | 質問 | 回答 |
 | --- | --- |
-| ダウンロードしたPDFが1 ページのみなのはなぜですか？ | [PDFのダウンロード &#x200B;](#download-as-csv-or-pdf)機能では、ダウンロードしたPDFにページネーションを設定できません。 |
-| **[!UICONTROL 項目をCSV]**&#x200B;としてダウンロードするオプションを使用して、50,000件以上の項目を書き出せますか？ | 各ダウンロードには最大 50,000 個のディメンションアイテムを含めることができますが、テーブルの種類を変更してテールがより長いアイテムを取得したり、フィルターを適用して特定のアイテムをダウンロードしたりできます。 |
-| 「**[!UICONTROL ビジュアライゼーションをコピー]**」は何を実行しますか？ | [!UICONTROL **クリップボードにデータをコピー**]&#x200B;または&#x200B;[!UICONTROL **クリップボードに選択範囲をコピー**]&#x200B;とは異なり、**[!UICONTROL ビジュアライゼーションをコピー]** コンテキストメニューオプションは書き出しオプションではありません。 このオプションを使用すると、Workspaceのある場所から別の場所に[&#x200B; ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)または[&#x200B; パネル &#x200B;](/help/analysis-workspace/c-panels/panels.md#context-menu)をコピーできます。 例えば、同じプロジェクト内のパネル間の移動、または別のプロジェクト間の移動などです。 |
+| ダウンロードしたPDFが1 ページのみなのはなぜですか？ | [PDFのダウンロード ](#download-as-csv-or-pdf)機能では、ダウンロードしたPDFにページネーションを設定できません。 |
+| **[!UICONTROL 項目をCSV]**&#x200B;としてダウンロードするオプションを使用して、50,000件以上の項目を書き出せますか？ | 各ダウンロードには最大 50,000 個のディメンション項目を含めることができますが、テーブルの並べ替えを変更してテールがより長い項目を取得したり、フィルターを適用してより特定の項目をダウンロードしたりできます。 |
+| 「**[!UICONTROL ビジュアライゼーションをコピー]**」は何を実行しますか？ | [!UICONTROL **クリップボードにデータをコピー**]&#x200B;または&#x200B;[!UICONTROL **クリップボードに選択範囲をコピー**]&#x200B;とは異なり、**[!UICONTROL ビジュアライゼーションをコピー]** コンテキストメニューオプションは書き出しオプションではありません。 このオプションを使用すると、Workspaceのある場所から別の場所に[ ビジュアライゼーション ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)または[ パネル ](/help/analysis-workspace/c-panels/panels.md#context-menu)をコピーできます。 例えば、同じプロジェクト内のパネル間の移動、または別のプロジェクト間の移動などです。 |

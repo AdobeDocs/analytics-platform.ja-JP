@@ -4,28 +4,37 @@ title: ジャーニーキャンバスの概要
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-TQID: https://experienceleague.adobe.com/Do8cPaEd0i-v2tU2-5bWklgBv8rvIkY2ISEMeKy-E-A
+TQID: 'https://experienceleague.adobe.com/Do8cPaEd0i-v2tU2-5bWklgBv8rvIkY2ISEMeKy-E-A'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2040
+source-wordcount: '2040'
 ht-degree: 95%
-
 ---
-
 # ジャーニーキャンバスの概要 {#journey-canvas-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -66,7 +75,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_ジャーニーキャンバスの概要[&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/journey-canvas/journey-canvas)をCustomer Journey Analytics **![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**&#x200B;でジャーニーキャンバスのビジュアライゼーションについて説明します。_<br/>_&#x200B;この記事の概要&#x200B;_を参照してください。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_ジャーニーキャンバスの概要](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/journey-canvas/journey-canvas)を[Customer Journey Analytics **![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_**でジャーニーキャンバスのビジュアライゼーションについて説明します。_<br/>_&#x200B;この記事の概要&#x200B;_を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -74,7 +83,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 イベント、ディメンション項目、セグメント、日付範囲を任意に組み合わせてジャーニーノードを作成して、[ユーザージャーニーの分析を作成](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)できます。 ノードを接続してジャーニーのフローを作成し、複数のパスと決定ポイントを含めます。 キャンバス上のノードをドラッグして、ジャーニーのイベントと条件を並べ替えます。 変更を行うと、データがリアルタイムで更新されます。
 
-[&#x200B; ノードは、](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)を「最終パス」として接続しています。つまり、訪問者は、2つのノード間で発生するイベントに関係なく、最終的に1つのノードから他のノードに移動する限りカウントされます。 ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナの設定によって決まります。
+[ ノードは、](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes)を「最終パス」として接続しています。つまり、訪問者は、2つのノード間で発生するイベントに関係なく、最終的に1つのノードから他のノードに移動する限りカウントされます。 ユーザーがパスに沿って移動するために割り当てられた時間は、コンテナの設定によって決まります。
 
 ![ジャーニーキャンバス](assets/journey-canvas.png)
 
@@ -221,7 +230,7 @@ Journey Optimizer とジャーニーキャンバス間の同期を理解する�
 
   「任意のユーザーと共有」リンクを使用すると、Journey Optimizer で行った変更は、プロジェクトを Customer Journey Analytics に保存するまで、ジャーニーキャンバスに反映されません。
 
-  「誰とでも共有」リンクの詳細については、[&#x200B; プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の「[誰とでもプロジェクトを共有する（ログイン不要） &#x200B;](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)」を参照してください。
+  「誰とでも共有」リンクの詳細については、[ プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の「[誰とでもプロジェクトを共有する（ログイン不要） ](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)」を参照してください。
 
 ### ジャーニーキャンバスでジャーニーを変更した後の違い {#differences-after-modifying}
 
@@ -278,5 +287,5 @@ Analysis Workspace で使用可能な任意のディメンションまたは指�
 
 >[!MORELIKETHIS]
 >
-> * [Adobe Customer Journey Analytics でのジャーニーキャンバスビジュアライゼーションのガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=ja)
+> * [Adobe Customer Journey Analytics でのジャーニーキャンバスビジュアライゼーションのガイド](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

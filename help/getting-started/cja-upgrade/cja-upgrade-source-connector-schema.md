@@ -1,6 +1,6 @@
 ---
-title: Analytics ソースコネクタ用のカスタムスキーマの作成
-description: Analytics ソースコネクタのカスタムスキーマを作成する方法を学ぶ
+title: Analytics ソースコネクタ用のカスタムスキーマを作成
+description: Analytics ソースコネクタ用のカスタムスキーマの作成方法について説明します
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,24 +9,31 @@ autotag-review: '2026-05-19T08:17:31.632Z'
 TQID: 'https://experienceleague.adobe.com/ov6cr-MF9OeH8OU23Km0KdD2l0LirVpVor4nndHpqo8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 587
+source-wordcount: '587'
 ht-degree: 100%
-
 ---
-
-# Analytics ソースコネクタ用のカスタムスキーマの作成 {#create-custom-schema}
+# Analytics ソースコネクタ用のカスタムスキーマを作成 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -56,7 +63,7 @@ Analytics ソースコネクタを使用して、Adobe Analytics レポートス
 
 Analytics ソースコネクタを使用して履歴データを Customer Journey Analytics に取り込むには、次の操作を行う必要があります。
 
-1. 以下に説明するように、Analytics ソースコネクタのカスタムスキーマを作成します。
+1. 以下に説明するように、Analytics ソースコネクタ用のカスタムスキーマを作成します。
 
 1. Analytics ソースコネクタがまだない場合は、[Analytics ソースコネクタを作成し、フィールドをカスタムスキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)。
 
@@ -64,15 +71,15 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
-1. [接続への Analytics ソースコネクタデータセットの追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+1. [Analytics ソースコネクタのデータセットを接続に追加](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
-## Analytics ソースコネクタ用のカスタムスキーマの作成
+## Analytics ソースコネクタ用のカスタムスキーマを作成
 
 Customer Journey Analytics で使用するには、Experience Platform Web SDK 実装用の[新しいカスタムスキーマを作成](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)しておく必要があります。 このスキーマには、データを収集するフィールドのフィールドグループを含める必要があります。
 
 次に、Web SDK スキーマと同じフィールドグループを使用し、Analytics ソースコネクタで使用できる新しいスキーマに追加する必要があります。
 
-Analytics ソースコネクタのこのスキーマには、を含める必要があります。
+Analytics ソースコネクタ用のこのスキーマには、次の項目を含める必要があります。
 
 * Web SDK 実装用に作成したカスタムスキーマに含まれるすべてのフィールドグループ（作成したカスタムフィールドグループを含む）。 （デフォルトのフィールドグループに含まれないカスタムフィールドは、カスタムフィールドグループの一部として Web SDK スキーマに追加する必要があります。）
 

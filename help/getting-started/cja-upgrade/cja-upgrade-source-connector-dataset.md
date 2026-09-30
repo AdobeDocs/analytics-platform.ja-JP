@@ -1,6 +1,6 @@
 ---
 title: 接続への Analytics ソースコネクタデータセットの追加
-description: 接続への Analytics ソースコネクタデータセットの追加方法について説明します。
+description: 接続に Analytics ソースコネクタのデータセットを追加する方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,39 +9,48 @@ autotag-review: '2026-05-19T08:17:07.805Z'
 TQID: 'https://experienceleague.adobe.com/ZApVB2SBLls5HAfUSb32CZ6-jers0cVaQjCXX9ThODo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 905
+source-wordcount: '905'
 ht-degree: 92%
-
 ---
-
 # 接続への Analytics ソースコネクタデータセットの追加 {#upgrade-source-connector-dataset}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
->title="接続への Analytics ソースコネクタデータセットの追加"
+>title="お使いの接続に Analytics ソースコネクタのデータセットを追加"
 >abstract="Analytics レポートスイートの履歴データが Adobe Experience Platform にあるので、そのデータセットを Customer Journey Analytics を最初に設定した際に作成した既存の接続に追加します。 この手順が完了すると、Customer Journey Analytics の履歴データを使用できるようになります。<br><br>Customer Journey Analytics の接続にデータセットを追加するのは簡単で、完了するまでに数分しかかかりません。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-## Analytics ソースコネクタを使用して、履歴データを Customer Journey Analytics に取り込む方法について
+## Analytics ソースコネクタを使用して履歴データを Customer Journey Analytics に取り込む方法を理解する
 
 Analytics ソースコネクタを使用して、Adobe Analytics レポートスイートデータを Adobe Experience Platform に取り込むことができます。 その後、このデータは、Customer Journey Analytics で履歴データとして使用できます。
 
@@ -55,11 +64,11 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    または
 
-   既に Analytics ソースコネクタがある場合は、[&#x200B; ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
+   既に Analytics ソースコネクタがある場合は、[ ソースコネクタのフィールドを XDM スキーマにマッピングします](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)。
 
-1. 以下の説明に従って、接続に Analytics ソースコネクタデータセットを追加します。
+1. 以下の説明に従って、接続に Analytics ソースコネクタのデータセットを追加します。
 
-## 接続への Analytics ソースコネクタデータセットの追加
+## Analytics ソースコネクタのデータセットを接続に追加
 
 [履歴データ用の Analytics ソースコネクタを作成](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)すると、Analytics データ用のデータセットが自動的に作成されます。
 
@@ -79,7 +88,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    ![接続を編集](assets/connection-add-dateset2.png)
 
-1. スクロールして、Analytics ソースコネクタの作成時に自動的に作成されたデータセットを探します。
+1. スクロールするか検索して、Analytics ソースコネクタの作成時に自動的に作成されたデータセットを探します。
 
    このデータセットの名前は、レポートスイートの名前の後に `midValues` を付けたものです。 例：`My report suite midValues`
 
@@ -93,7 +102,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
    | 設定 | 説明 |
    | --- | --- |
-   | **[!UICONTROL ユーザー ID]** | イベントデータセットとプロファイルデータセットでのみ使用できます。 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字が区別されると見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
+   | **[!UICONTROL ユーザー ID]** | イベントおよびプロファイルデータセットでのみ使用できます。 使用可能な ID のドロップダウンメニューからユーザー ID を選択します。 これらの ID は、Experience Platform 内のデータセットスキーマで定義されています。 ユーザー ID として ID マップを使用する方法については、次を参照してください。<p>選択するユーザー ID がない場合は、1 つ以上のユーザー ID がスキーマで定義されていないことを意味します。 詳しくは、[UI で ID フィールドを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity)を参照してください。 <p>選択したユーザー ID の値は、大文字と小文字を区別するものと見なされます。 例えば、`abc123` と `ABC123` は 2 つの異なる値です。 |
    | **[!UICONTROL タイムスタンプ]** | イベントおよび概要データセットの場合のみ、この設定は、Experience Platform のイベントベースのスキーマからデフォルトのタイムスタンプフィールドに自動的に設定されます。 |
    | **[!UICONTROL タイムゾーン]** | 概要データでのみ使用できます。 時系列の概要データに適したタイムゾーンを選択します。 |
    | **[!UICONTROL データソースタイプ]** | データソースのタイプを選択します。 <br/>データソースのタイプを以下に示します。 <ul><li>[!UICONTROL Web データ]</li><li>[!UICONTROL モバイルアプリデータ]</li><li>[!UICONTROL POS データ]</li><li>[!UICONTROL CRM データ]</li><li>[!UICONTROL サーベイデータ]</li><li>[!UICONTROL コールセンターデータ]</li><li>[!UICONTROL 製品データ]</li><li> [!UICONTROL アカウントデータ]</li><li> [!UICONTROL トランザクションデータ]</li><li>[!UICONTROL 顧客フィードバックデータ]</li><li> [!UICONTROL その他]</li></ul>このフィールドは、使用中のデータソースのタイプを調査するために使用します。 |
@@ -102,11 +111,11 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. 「**[!UICONTROL 新しいデータをインポート]**」セクションで、「**[!UICONTROL すべての新しいデータをインポート]**」オプションを無効のままにします。
 
-   履歴データに Analytics ソースコネクタデータセットを使用しているので、収集された将来のデータをこのデータセットに取り込みたくない場合があります。
+   履歴データに Analytics ソースコネクタデータセットを使用しているので、このデータセットに収集される将来のデータは取り込みたくありません。
 
 1. 「**[!UICONTROL データセットのバックフィル]**」セクションで、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。
 
-1. 開始日と終了日を入力するか、カレンダーアイコン ![&#x200B; カレンダー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
+1. 開始日と終了日を入力するか、カレンダーアイコン ![ カレンダー ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
 
    バックフィルをリクエストする日付を指定する場合は、明示的に指定します。 いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 
@@ -126,6 +135,6 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. （条件付き）ルックアップデータセットを使用する場合、ルックアップデータセットを作成して接続に追加する必要があります。 詳しくは、[Customer Journey Analytics でルックアップデータセットを作成してデータを分類](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)を参照してください。
 
-   これは、web SDK 実装を構成するときにまだ実行していない場合にのみ必要です。
+   これは、Web SDK 実装を構成するときにまだ実行していない場合にのみ必要です。
 
 {{upgrade-final-step}}

@@ -5,31 +5,45 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-TQID: https://experienceleague.adobe.com/KSyql1S40ikIGYXmnvqaTtApViuAgVaPRqfVu-nk-8k
+TQID: 'https://experienceleague.adobe.com/KSyql1S40ikIGYXmnvqaTtApViuAgVaPRqfVu-nk-8k'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2044
+source-wordcount: '2044'
 ht-degree: 83%
-
 ---
-
 # ストリーミングデータの取り込みと使用
 
 このクイックスタートガイドでは、ストリーミングデータを Adobe Experience Platform に取り込んで、そのデータを Customer Journey Analytics で使用する方法について説明します。
@@ -256,7 +270,7 @@ HTTP API ソースコネクタを作成するには：
 
 ストリーミングエンドポイント URL をコピーし、それを使用して、Adobe Experience Platform ロイヤルティデータセットにデータをストリーミングするようロイヤルティアプリケーションを設定できます。
 
-より包括的なチュートリアルについては、[UIを使用したHTTP API ストリーミング接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=ja)を参照してください。
+より包括的なチュートリアルについては、[UIを使用したHTTP API ストリーミング接続の作成](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html)を参照してください。
 
 - 認証の使用方法，
 - 受信データがXDM スキーマと互換性がない場合にデータをマッピングする方法
@@ -345,7 +359,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -370,7 +384,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

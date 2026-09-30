@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics ユーザー向けユーザーガイド
+title: Adobe Analytics ユーザーガイド
 description: 企業が Adobe Analytics から Customer Journey Analytics にデータを移行する際にユーザーの観点から考慮すべき事項
 role: User
 solution: Customer Journey Analytics
@@ -9,33 +9,49 @@ autotag-review: '2026-05-19T06:30:45.150Z'
 TQID: 'https://experienceleague.adobe.com/Qyb6t5w-DTcecgqvhUE6NplDrlPmW2lzhk0RWbf7g-g'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1539
+source-wordcount: '1539'
 ht-degree: 94%
-
 ---
-
 # Adobe Analytics ユーザー向けユーザーガイド
 
-組織が Adobe Customer Journey Analytics の採用に着手すると、Adobe Analytics と Customer Journey Analytics の間にいくつかの類似点と相違点があることに気づく場合があります。 このページでは、この CJA の実装と新しいレポートワークフローに慣れるために、これらの相違点について説明します。 また、新しい概念に関する追加のリソースを提供するほか、アナリストとしてのジャーニーをより簡単に成功させるための手順についても説明します。
+組織が Adobe Customer Journey Analytics の採用に着手すると、Adobe Analytics と Customer Journey Analytics の間にいくつかの類似点と相違点があることに気づく場合があります。 このページでは、新しい実装とレポート用ワークフローに組織が慣れるのに役立つよう、これらの相違点について説明します。 このページでは、新しい概念に関する追加のリソースを提供するほか、アナリストとしてのジャーニーをより容易かつ成功しやすくするための手順についても説明します。
 
 Customer Journey Analytics のいくつかの機能は、業界標準に合わせて名前が変更され、再設計されています。 更新された用語には、セグメント、仮想レポートスイート、分類、顧客属性、コンテナ名などがあります。 カスタムディメンションおよび指標を柔軟に使用できるように、eVar と prop の制限は撤廃されました。
 
@@ -76,11 +92,11 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 -->
 
 
-アドビでは、Analytics ソースコネクタや Web SDK を使用したレポートスイートデータなど、Adobe Experience Platform にデータを取り込む方法を複数用意しています。 複数のレポートスイートにある既存の実装を Experience Platform で組み合わせることもできます。 これらのデータセットに基づく接続とデータビューを使用すると、別のレポートスイートに以前に存在していたデータを組み合わせることができます。
+Adobe は、Analytics ソースコネクタや Web SDK を使用したレポートスイートデータなど、Adobe Experience Platform にデータを取り込むための複数の方法を提供しています。 複数のレポートスイートにある既存の実装を Experience Platform で組み合わせることもできます。 これらのデータセットに基づく接続とデータビューを使用すると、別のレポートスイートに以前に存在していたデータを組み合わせることができます。
 
 ## 仮想レポートスイートの概念の変更 {#data-views}
 
-[!UICONTROL データビュー]は、現在の仮想レポートスイートの概念をさらに拡大するものです。接続で使用可能になる[データ](/help/data-views/create-dataview.md)を、さらに制御できるようになります。 これらの変更により、タイムゾーンやセッションのタイムアウト間隔などの一般的な設定が、設定したり遡及したりできるようになりました。 アトリビューションや有効期限などの個々の変数設定は、レポートレベルまたはデータビューレベルでカスタマイズすることもできます。 これらの設定は、ノンデストラクティブ（非破壊的）であり遡及可能です。
+[!UICONTROL データビュー]は、現在の仮想レポートスイートの概念をさらに拡大するものです。接続で使用可能になる[データ](/help/data-views/create-dataview.md)を、さらに制御できるようになります。 これらの変更により、タイムゾーンやセッションのタイムアウト間隔などの一般的な設定を変更でき、過去のデータにも遡って適用できるようになりました。 アトリビューションや有効期限などの個々の変数設定は、レポートレベルまたはデータビューレベルでカスタマイズすることもできます。 これらの設定は、ノンデストラクティブ（非破壊的）であり遡及可能です。
 
 右上のレポートスイートセレクターで、使用可能なデータビューから目的のデータビューを選択できるようになりました。
 
@@ -92,7 +108,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 
 従来の Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL イベント]の概念は、[!UICONTROL Customer Journey Analytics] には存在しません。 Adobe Analyticsでは、eVarとpropにコンテンツ、顧客、キャンペーンなどの説明が保存され、イベントには収益、サブスクリプション、生成されたリードなどがカウントされます。 Customer Journey Analytics では、両方のタイプのデータが保持され、Analysis Workspace の左パネルの「ディメンション」または「指標」から、同じ方法でアクセスできます。
 
-Customer Journey Analytics では、ディメンション、指標、リストフィールドなど、無制限のスキーマ要素を使用できます。 これらは、Experience Platform 内のディメンション、指標、リストフィールドなど、無制限のスキーマ要素にマッピングされます。 Adobe Analytics ではルールの処理後にすべての訪問およびアトリビューションの設定が適用されますが、Customer Journey Analytics ではクエリ時に適用されます。
+Customer Journey Analytics では、ディメンション、指標、リストフィールドなど、無制限のスキーマ要素を使用できます。 これらは、Experience Platform 内のディメンション、指標、リストフィールドなど、無制限のスキーマ要素にマッピングされます。 Adobe Analytics で処理ルール適用後に設定されていたすべての訪問およびアトリビューション設定は、Customer Journey Analytics ではクエリ時に適用されるようになりました。
 
 この柔軟性により、1 つのスキーマフィールドをディメンションと指標の両方で使用し、異なるトラッキングニーズに対応することも可能になりました。
 
@@ -100,9 +116,9 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 セグメントは、技術的には Adobe Analytics から Customer Journey Analytics に移行されませんが、コンポーネント移行ツールを使用して、Customer Journey Analytics で Adobe Analytics セグメントを再作成できます。 セグメントは、マッピングされたディメンションと指標に基づいて Customer Journey Analytics で再作成されます。 詳しくは、[Adobe Analytics から Customer Journey Analytics へのコンポーネントとプロジェクトの移行の準備](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=ja)を参照してください。
 
-[!UICONTROL &#x200B; セグメント &#x200B;] （[!UICONTROL &#x200B; セグメント &#x200B;]）を[!DNL Customer Journey Analytics]からExperience Platform Unified Profileに共有または公開することはできませんが、この機能は開発中です。
+[!UICONTROL  セグメント ] （[!UICONTROL  セグメント ]）を[!DNL Customer Journey Analytics]からExperience Platform Unified Profileに共有または公開することはできませんが、この機能は開発中です。
 
-セグメントの概念の変更に加えて、セグメントコンテナも次のように更新されます。
+セグメントの概念が変わることに加えて、セグメントコンテナも更新されます。
 
 * **ヒットコンテナは、[!UICONTROL イベント]コンテナになりました。** [!UICONTROL イベント]コンテナを使用すると、個々のイベントに基づいてユーザー情報を分類できます。
 * **訪問コンテナは、[!UICONTROL セッション]コンテナになりました**。 [!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。
@@ -110,7 +126,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 ## 計算指標の概念の変更
 
-計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL &#x200B; Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
+計算指標には、Adobe Analytics と Customer Journey Analytics の間で同様の名前を付けます。 ただし、[!UICONTROL  Customer Journey Analytics] では、eVar、prop またはイベントを使用しなくなりました。代わりに Experience Platform スキーマ要素を使用します。 この基本的な変更は、既存の計算指標のいずれも [!UICONTROL Customer Journey Analytics] と互換性がないことを意味します。
 
 
 >[!BEGINSHADEBOX]
@@ -125,7 +141,7 @@ Customer Journey Analytics では、ディメンション、指標、リスト�
 
 同じデータビューで、同じ変数の複数のバージョンを持つことができます。 例えば、30 日後に期限切れになるトラッキングコードディメンションと、セッションの終わりに期限切れになるトラッキングコードディメンションを設定できます。 これらのトラッキングコードディメンションは、両方とも同じソースデータを使用しますが、アトリビューション設定が異なります。
 
-また、同じ接続に基づいて複数のデータビューを持つこともできます。 例えば、セッションタイムアウトが 30 分のデータビューと、セッションタイムアウトが 15 分のデータビューです。 両方のデータビューが右上のセレクターに表示されるので、シームレスに切り替えることができます。
+また、同じ接続に基づいて複数のデータビューを持つこともできます。 例えば、セッションタイムアウトが 30 分のデータビューと、セッションタイムアウトが 15 分のデータビューを持つことができます。 両方のデータビューが右上のセレクターに表示されるので、シームレスに切り替えることができます。
 
 ## 分類の概念の変更
 
@@ -142,7 +158,7 @@ Customer Journey Analytics では、ECID 以外にも ID の概念を拡張し�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics での ID の使用](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

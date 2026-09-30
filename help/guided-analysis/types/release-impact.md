@@ -5,24 +5,34 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Product Analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-TQID: https://experienceleague.adobe.com/2PKIwvFwCv5FiL7WgeJPksm74c8m5B4L33RZouD-t1o
+TQID: 'https://experienceleague.adobe.com/2PKIwvFwCv5FiL7WgeJPksm74c8m5B4L33RZouD-t1o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 532
+source-wordcount: '532'
 ht-degree: 100%
-
 ---
-
 # [!UICONTROL リリース影響]分析 {#release-impact}
 
 <!-- markdownlint-disable MD034 -->
@@ -36,7 +46,7 @@ ht-degree: 100%
 
 ![リリース](/help/assets/icons/Release.svg) **[!UICONTROL リリースの影響]**&#x200B;分析では、特定の日付の前後の主要指標のパフォーマンスの比較が表示されます。 このレポートの横軸は時間間隔を、縦軸は目的の主要指標を示します。 グラフの中央にある縦棒は、前後を比較する日付を表します。 この日付は通常、製品の更新やキャンペーンのローンチなど、測定したい製品の重要な変更を表します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423451/?captions=jpn&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## ユースケース
 

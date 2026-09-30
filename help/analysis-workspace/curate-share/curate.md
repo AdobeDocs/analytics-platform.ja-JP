@@ -5,38 +5,47 @@ title: プロジェクトのキュレーション
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-TQID: https://experienceleague.adobe.com/FX7KMzyOtrWzD-RUT-iEQZvJslmaes8dej76Jbj79OA
+TQID: 'https://experienceleague.adobe.com/FX7KMzyOtrWzD-RUT-iEQZvJslmaes8dej76Jbj79OA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+    internal-label: Administration
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 508
+source-wordcount: '508'
 ht-degree: 98%
-
 ---
-
 # プロジェクトのキュレーション
 
 キュレーションを使用すると、プロジェクトを共有する前にコンポーネント（ディメンション、指標、セグメント、日付範囲）を制限できます。 受信者がプロジェクトを開くと、その受信者向けにキュレーションされた限られたコンポーネントのみが表示されます。 キュレーションはオプションですが、プロジェクトを共有する前に行うことをお勧めします。
 
 >[!NOTE]
-> 製品プロファイルは、ユーザーに表示されるコンポーネントを管理する主要メカニズムです。 これらは、[CX Enterprise Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-tool-experience-cloud)で管理されます。 キュレーションはセカンダリセグメントです。
+> 製品プロファイルは、ユーザーに表示されるコンポーネントを管理する主要メカニズムです。 これらは[CX Enterprise Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-tool-experience-cloud)で管理されます。 キュレーションはセカンダリセグメントです。
 
 ## プロジェクトキュレーションの適用
 
-1. **[!UICONTROL 共有]**／**[!UICONTROL プロジェクトデータをキュレート]**&#x200B;をクリックします。
+1. **[!UICONTROL 共有]**／**[!UICONTROL プロジェクトデータをキュレート]**をクリックします。
 プロジェクトで使用されるコンポーネントが自動的に追加されます。
 プロジェクトに複数のデータビューがある場合、プロジェクト内の各データビューにキュレートドロップターゲットが表示されます。
 1. （オプション）さらにコンポーネントを追加するには、左側のパネルから共有するコンポーネントを「**[!UICONTROL コンポーネントをキュレート]**」フィールドにドラッグします。

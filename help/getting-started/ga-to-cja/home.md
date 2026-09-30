@@ -7,24 +7,32 @@ feature: Basics
 exl-id: 3d7c8b91-f2a4-4e6b-9c1d-5f8e3a720469
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 590
+source-wordcount: '590'
 ht-degree: 3%
-
 ---
-
 
 # Google Analytics 4からCustomer Journey Analyticsへの移行
 
-このガイドでは、Google Analytics 4について詳しいアナリストが、Adobe Customer Journey Analyticsで同等の概念とレポートを学ぶのに役立ちます。 レポートではなく技術的な実装を担当する場合は、Web SDKの設定とデータ取り込みに関するガイダンスについては、[&#x200B; サードパーティ分析ソリューションからCustomer Journey Analyticsへのアップグレード &#x200B;](../cja-upgrade/cja-upgrade-third-party-solution.md)を参照してください。 既存のGoogle Analytics データをAdobe Experience Platformに移行する必要がある場合は、[Google Analyticsからのデータの移行](/help/use-cases/third-party/ga/overview.md)を参照してください。
+このガイドでは、Google Analytics 4について詳しいアナリストが、Adobe Customer Journey Analyticsで同等の概念とレポートを学ぶのに役立ちます。 レポートではなく技術的な実装を担当する場合は、Web SDKの設定とデータ取り込みに関するガイダンスについては、[ サードパーティ分析ソリューションからCustomer Journey Analyticsへのアップグレード ](../cja-upgrade/cja-upgrade-third-party-solution.md)を参照してください。 既存のGoogle Analytics データをAdobe Experience Platformに移行する必要がある場合は、[Google Analyticsからのデータの移行](/help/use-cases/third-party/ga/overview.md)を参照してください。
 
 ## GA4とCustomer Journey Analyticsの主な違い
 
@@ -45,7 +53,7 @@ GA4とCustomer Journey Analyticsでは、プラットフォームレベルでデ
 |---|---|
 | Google アカウント | Adobe IMS組織 |
 | プロパティ | 接続+ データビュー |
-| データストリーム | Platformの[!UICONTROL &#x200B; イベントデータセット &#x200B;] |
+| データストリーム | Platformの[!UICONTROL  イベントデータセット ] |
 | データフィルター | データビューコンポーネントフィルター |
 | サブプロパティ | フィルターを適用した個別のデータビュー |
 | ロールアッププロパティ | 複数のデータセットを組み合わせた接続 |
