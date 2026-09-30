@@ -67,6 +67,6 @@ Adobe Customer Journey Analytics でアラートを使用するプロセスは�
 
 ## アラートの作成方法が少ない
 
-Adobe AnalyticsのAnalysis Workspaceでは、様々な方法で[Analysis Workspaceからアラートを作成できます](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder)。 Customer Journey Analyticsでは、フリーフォームテーブルの選択範囲からAnalysis Workspaceで作成できるのは[&#x200B; アラート &#x200B;](alert-builder.md)のみです。
+Adobe AnalyticsのAnalysis Workspaceでは、様々な方法で[Analysis Workspaceからアラートを作成できます](https://experienceleague.adobe.com/ja/docs/analytics/components/alerts/alert-builder)。 Customer Journey Analyticsでは、フリーフォームテーブルの選択範囲からAnalysis Workspaceで作成できるのは[&#x200B; アラート &#x200B;](alert-builder.md)のみです。
 
 Adobe AnalyticsとCustomer Journey Analyticsの両方で、[&#x200B; アラートマネージャー](alert-manager.md)によるアラートの作成がサポートされています
