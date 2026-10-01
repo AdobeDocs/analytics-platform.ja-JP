@@ -137,9 +137,9 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
   | [!UICONTROL データガバナンス] | [!UICONTROL &#x200B; データ使用ポリシーの表示] | 組織に属するデータ使用ポリシーに対する読み取り専用アクセス。 |
   | [!UICONTROL データガバナンス] | [!UICONTROL &#x200B; データ使用ポリシーの管理] | データ使用ポリシーの読み取り、作成、編集、および削除へのアクセス。 |
 
-  Experience Platformの権限について詳しくは、[&#x200B; サンドボックスと権限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
+  Experience Platformの権限について詳しくは、[&#x200B; サンドボックスと権限](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
 
-* Journey OptimizerがJourney Optimizer Connectionsが存在するCustomer Journey Analyticsと統合されている場合、Connectionsにアクセスするには[ジャーニー権限](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)も追加する必要があります。
+* Journey OptimizerがJourney Optimizer Connectionsが存在するCustomer Journey Analyticsと統合されている場合、Connectionsにアクセスするには[ジャーニー権限](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)も追加する必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
@@ -150,14 +150,14 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
 * [宛先](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets)へのデータセットの書き出し
 
-  このタスクを実行するには、次の[宛先の権限](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls)を提供する&#x200B;**Experience Platform ロール**&#x200B;の一部である必要があります。
+  このタスクを実行するには、次の[宛先の権限](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/home#access-controls)を提供する&#x200B;**Experience Platform ロール**&#x200B;の一部である必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
   | [!UICONTROL 宛先] | [!UICONTROL 宛先の管理] | 宛先接続と宛先アカウントの読み取り、作成および削除へのアクセス。 |
   | [!UICONTROL 宛先] | [!UICONTROL 宛先のアクティブ化] | ユーザーが既存の宛先に対してセグメントをアクティブ化できるようにします。 アクティベーションワークフローのマッピングステップを有効にします。 また、この権限の場合は、データを宛先に対してアクティブ化するユーザーに宛先の表示権限も付与する必要があります。 |
 
-  Experience Platformの権限について詳しくは、[&#x200B; サンドボックスと権限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
+  Experience Platformの権限について詳しくは、[&#x200B; サンドボックスと権限](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
 
 
 * [BI 拡張機能](../data-views/bi-extension.md)の使用
