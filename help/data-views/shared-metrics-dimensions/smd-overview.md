@@ -33,7 +33,7 @@ ht-degree: 3%
 ---
 # 共有指標とディメンションの概要
 
-共有指標とディメンションは、任意の数のデータビューで使用できるディメンションと指標を一元管理するための場所を提供します。 これらのコンポーネントは、複数のデータビューを使用している組織にとって特に有用であり、そうしたデータビュー間でコンポーネント設定が共通している場合に、いっそう効果を発揮します。 共有されている指標とディメンションに対して行われた変更は、共有されているすべてのデータビューにすばやく適用されます。 個々のデータビューを編集する場合、コンポーネント名の横にある![共有コンポーネントアイコン ](/help/assets/icons/CCLibrary.svg) アイコンを使用して、共有ディメンションと指標を識別できます。
+共有指標とディメンションは、任意の数のデータビューで使用できるディメンションと指標を一元管理するための場所を提供します。 これらのコンポーネントは、複数のデータビューを使用している組織にとって特に有用であり、そうしたデータビュー間でコンポーネント設定が共通している場合に、いっそう効果を発揮します。 共有されている指標とディメンションに対して行われた変更は、共有されているすべてのデータビューにすばやく適用されます。 個々のデータビューを編集する場合、コンポーネント名の横にある![共有コンポーネントアイコン &#x200B;](/help/assets/icons/CCLibrary.svg) アイコンを使用して、共有ディメンションと指標を識別できます。
 
 共有ディメンションと指標を使用すると、多くのデータビューで共通コンポーネントを使用できますが、接続間で共有することはできません。
 
@@ -49,7 +49,7 @@ ht-degree: 3%
 1. 同じコンポーネント IDを使用するが、異なるコンポーネント設定を持つすべてのコンポーネントを確認します。 重複するコンポーネントの各グループについて、そのコンポーネント IDを共有する他のすべてのコンポーネントに適用する目的のコンポーネント設定を選択します。
 1. 同じコンポーネント IDを使用し、同じコンポーネント設定を持つすべてのコンポーネントを確認します。 これらのディメンションや指標は、容易かつ安全に統合できます。
 
-## [!UICONTROL 共有指標とディメンション ] マネージャー
+## [!UICONTROL 共有指標とディメンション &#x200B;] マネージャー
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL データビュー]** > **[!UICONTROL 共有メトリクスとディメンション]**
 
@@ -71,15 +71,15 @@ ht-degree: 3%
 
 ![使用可能なディメンションと指標のプレビュー](assets/shared-metrics-dimensions.png)
 
-* **フィルター**: ![ フィルターアイコン ](../../assets/icons/Filter.svg) アイコンを選択して、使用可能なフィルターを表示または非表示にします。 次のフィルターを使用できます。
+* **フィルター**: ![&#x200B; フィルターアイコン &#x200B;](../../assets/icons/Filter.svg) アイコンを選択して、使用可能なフィルターを表示または非表示にします。 次のフィルターを使用できます。
   * **[!UICONTROL コンポーネントタイプ]**: ディメンションのみを表示するか、指標のみを表示します。
   * **[!UICONTROL データセット]**: コンポーネントが共有されているデータビューにデータセットが含まれているコンポーネントのみを表示します。
   * **[!UICONTROL データビュー]**：そのデータビューに共有されているコンポーネントのみを表示します。
   * **[!UICONTROL 作成者]**：特定のユーザーが作成したコンポーネントのみを表示します。
   * **[!UICONTROL 重複]**：別のコンポーネントと同じコンポーネント IDを持つコンポーネントのみを表示します。 これらのフィルターは、概要カードを使用してコンポーネントを確認するのと同じです。
-* **検索**: ![検索アイコン ](../../assets/icons/Search.svg) アイコンを使用して、名前でコンポーネントを検索します。
+* **検索**: ![検索アイコン &#x200B;](../../assets/icons/Search.svg) アイコンを使用して、名前でコンポーネントを検索します。
 * **[!UICONTROL 接続]**: [接続](/help/connections/overview.md)を変更するドロップダウンメニュー。 共有ディメンションと指標は、常に単一の接続に固有です。
-* **[!UICONTROL テーブルをカスタマイズ]**: ![ テーブルをカスタマイズ アイコン ](/help/assets/icons/ColumnSetting.svg) アイコンを選択して、テーブルの列を表示または非表示にします。 使用可能なオプションは次のとおりです。
+* **[!UICONTROL テーブルをカスタマイズ]**: ![&#x200B; テーブルをカスタマイズ アイコン &#x200B;](/help/assets/icons/ColumnSetting.svg) アイコンを選択して、テーブルの列を表示または非表示にします。 使用可能なオプションは次のとおりです。
   * **[!UICONTROL フィールド名]**：共有ディメンションまたは指標の名前。 このフィールドは常に表示されます。
   * **[!UICONTROL タイプ]**: コンポーネントがディメンションか指標かを示します。 このフィールドは常に表示されます。
   * **[!UICONTROL データセットの種類]**: データセットの種類。 ほとんどのデータセットはイベントデータセットです。
@@ -90,23 +90,23 @@ ht-degree: 3%
   * **[!UICONTROL コンポーネント ID]**: ディメンションまたは指標のコンポーネント ID。 このインターフェイスで同じコンポーネント IDを共有するコンポーネントは、レビューおよび重複排除する必要があります。
   * **[!UICONTROL スキーマ]**: ディメンションまたは指標のスキーマパス。 例：`web.webPageDetails.URL`。
   * **[!UICONTROL 説明]**: コンポーネントの[説明](/help/data-views/component-settings/overview.md)。
-  * **[!UICONTROL コンテキストラベル]**: コンポーネントの[ コンテキストラベル ](/help/data-views/component-settings/overview.md)。
+  * **[!UICONTROL コンテキストラベル]**: コンポーネントの[&#x200B; コンテキストラベル &#x200B;](/help/data-views/component-settings/overview.md)。
   * **[!UICONTROL 値を含める/除外]**: [値を含める/除外](/help/data-views/component-settings/include-exclude-values.md)で指定されたルールの数を一覧表示します。
-  * **[!UICONTROL データ使用ラベル]**: スキーマフィールドの[ データ使用ラベル ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview)。
+  * **[!UICONTROL データ使用ラベル]**: スキーマフィールドの[&#x200B; データ使用ラベル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview)。
   * **[!UICONTROL 非推奨]**：非推奨フラグが設定されているかどうかを示します。
   * **[!UICONTROL Format]**：値が表示される形式。 ブール値は通常`True | False`、指標は通常`Decimal`などとして表示されます。
   * **[!UICONTROL 指標の重複排除]**: コンポーネントの[指標の重複排除](/help/data-views/component-settings/metric-deduplication.md)設定。
-  * **[!UICONTROL ビヘイビアー]**: コンポーネントの[ ビヘイビアー](/help/data-views/component-settings/behavior.md)設定。
-  * **[!UICONTROL アトリビューション]**: コンポーネントの[ アトリビューション ](/help/data-views/component-settings/attribution.md)設定。
-  * **[!UICONTROL 値なしオプション]**: コンポーネントの[値なしオプション ](/help/data-views/component-settings/no-value-options.md)。
+  * **[!UICONTROL ビヘイビアー]**: コンポーネントの[&#x200B; ビヘイビアー](/help/data-views/component-settings/behavior.md)設定。
+  * **[!UICONTROL アトリビューション]**: コンポーネントの[&#x200B; アトリビューション &#x200B;](/help/data-views/component-settings/attribution.md)設定。
+  * **[!UICONTROL 値なしオプション]**: コンポーネントの[値なしオプション &#x200B;](/help/data-views/component-settings/no-value-options.md)。
   * **[!UICONTROL 値のグループ化]**: コンポーネントの[値のグループ化](/help/data-views/component-settings/value-bucketing.md)設定。
   * **[!UICONTROL 永続性]**: コンポーネントの[永続性](/help/data-views/component-settings/persistence.md)設定。
-  * **[!UICONTROL 小文字]**: コンポーネントの[ ビヘイビアー](/help/data-views/component-settings/behavior.md)設定に基づいて、コンポーネントが小文字で有効かどうかを示します。
+  * **[!UICONTROL 小文字]**: コンポーネントの[&#x200B; ビヘイビアー](/help/data-views/component-settings/behavior.md)設定に基づいて、コンポーネントが小文字で有効かどうかを示します。
   * **[!UICONTROL 部分文字列]**: コンポーネントの[部分文字列](/help/data-views/component-settings/substring.md)設定。
-  * **[!UICONTROL 概要データグループ]**: コンポーネントの[概要データグループ ](/help/data-views/component-settings/summary-data-group.md)設定。
+  * **[!UICONTROL 概要データグループ]**: コンポーネントの[概要データグループ &#x200B;](/help/data-views/component-settings/summary-data-group.md)設定。
   * **[!UICONTROL 作成日]**: コンポーネントが作成またはインポートされた日付。
   * **[!UICONTROL 最終変更日]**: コンポーネントが作成後に変更された場合、最終変更日。
-* **[!UICONTROL ジョブ履歴]**：多数のコンポーネントをインポートまたは共有すると、ジョブが自動的に作成されます。 ![履歴アイコン ](/help/assets/icons/History.svg) アイコンを選択すると、個々のデータビューからディメンションと指標をインポートするすべてのインスタンスを表示するモーダルウィンドウが開きます。 読み込みまたは共有アクションのいずれも、ジョブをトリガーするのに十分なサイズになっていない場合、このボタンは表示されません。
+* **[!UICONTROL ジョブ履歴]**：多数のコンポーネントをインポートまたは共有すると、ジョブが自動的に作成されます。 ![履歴アイコン &#x200B;](/help/assets/icons/History.svg) アイコンを選択すると、個々のデータビューからディメンションと指標をインポートするすべてのインスタンスを表示するモーダルウィンドウが開きます。 読み込みまたは共有アクションのいずれも、ジョブをトリガーするのに十分なサイズになっていない場合、このボタンは表示されません。
 
 ## コンポーネントを編集するか、データビューにコンポーネントを共有する
 
@@ -114,8 +114,8 @@ ht-degree: 3%
 
 ![使用可能なアクションのプレビュー](assets/smd-actions.png)
 
-* ![鉛筆アイコン ](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**：選択したディメンションと指標を[共有コンポーネントエディター](shared-component-editor.md)で開き、[ コンポーネント設定](/help/data-views/component-settings/overview.md)を調整できます。 複数のコンポーネントを選択して編集すると、すべてのコンポーネントがコンポーネントエディターで開きます。 コンポーネントエディターでShift キーを押しながらクリックすると、複数のコンポーネントに対して同じフィールドを編集できます。
-* ![共有アイコン ](/help/assets/icons/ShareAlt.svg) **[!UICONTROL データビューに共有]**：選択した接続内で使用可能なすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントを使用可能にする各データビューのチェックボックスをオンにし、**[!UICONTROL 共有]**&#x200B;を選択します。
-* ![共有解除アイコン ](/help/assets/icons/SaveTo.svg) **[!UICONTROL データビューからの共有解除]**：このコンポーネントが現在共有されているすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントの可用性を削除する各データビューのチェックボックスをオンにし、**[!UICONTROL 共有を解除]**&#x200B;を選択します。
-* ![ アイコンの複製](/help/assets/icons/Copy.svg) **[!UICONTROL 複製]**：選択したコンポーネントのコピーを作成します。 新しいコンポーネント IDが、重複したコンポーネントに対して生成されます。
-* ![ アイコンを削除](/help/assets/icons/Delete.svg) **[!UICONTROL 削除]**：選択したコンポーネントをインターフェイスから削除します。 選択したコンポーネントが任意のデータビューと共有されている場合、それらのコンポーネントは共有されません。
+* ![鉛筆アイコン &#x200B;](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**：選択したディメンションと指標を[共有コンポーネントエディター](shared-component-editor.md)で開き、[&#x200B; コンポーネント設定](/help/data-views/component-settings/overview.md)を調整できます。 複数のコンポーネントを選択して編集すると、すべてのコンポーネントがコンポーネントエディターで開きます。 コンポーネントエディターでShift キーを押しながらクリックすると、複数のコンポーネントに対して同じフィールドを編集できます。
+* ![共有アイコン &#x200B;](/help/assets/icons/ShareAlt.svg) **[!UICONTROL データビューに共有]**：選択した接続内で使用可能なすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントを使用可能にする各データビューのチェックボックスをオンにし、**[!UICONTROL 共有]**&#x200B;を選択します。
+* ![共有解除アイコン &#x200B;](/help/assets/icons/SaveTo.svg) **[!UICONTROL データビューからの共有解除]**：このコンポーネントが現在共有されているすべてのデータビューを表示するウィンドウを開きます。 このコンポーネントの可用性を削除する各データビューのチェックボックスをオンにし、**[!UICONTROL 共有を解除]**&#x200B;を選択します。
+* ![&#x200B; アイコンの複製](/help/assets/icons/Copy.svg) **[!UICONTROL 複製]**：選択したコンポーネントのコピーを作成します。 新しいコンポーネント IDが、重複したコンポーネントに対して生成されます。
+* ![&#x200B; アイコンを削除](/help/assets/icons/Delete.svg) **[!UICONTROL 削除]**：選択したコンポーネントをインターフェイスから削除します。 選択したコンポーネントが任意のデータビューと共有されている場合、それらのコンポーネントは共有されません。
