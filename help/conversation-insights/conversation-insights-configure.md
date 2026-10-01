@@ -18,10 +18,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 20%
+source-wordcount: '810'
+ht-degree: 16%
 ---
 # 設定の作成または編集
 
@@ -34,7 +34,7 @@ ht-degree: 20%
 
 会話インサイト設定を作成または編集できるのはシステム管理者のみです。
 
-[会話インサイト設定インターフェイス &#x200B;](./conversation-insights-manage.md)から設定を作成または編集します。
+[会話インサイト設定インターフェイス ](./conversation-insights-manage.md)から設定を作成または編集します。
 
 ## 欠落しているブレンド済みデータセットを復元
 
@@ -56,7 +56,7 @@ ht-degree: 20%
 
 1. 「**[!UICONTROL データセット]**」セクションで、次の情報を指定します。
 
-   ![会話インサイトデータセット &#x200B;](assets/conversation-insights-configuration-datasets.png)
+   ![会話インサイトデータセット ](assets/conversation-insights-configuration-datasets.png)
 
    | フィールド | 説明 |
    |---------|----------|
@@ -80,7 +80,7 @@ ht-degree: 20%
    1. 「**[!UICONTROL 接続を使用]**」を選択します。
 
    * 選択する接続のリストで検索するには、![検索](/help/assets/icons/Search.svg) フィールドを使用します。
-   * テーブルに表示する列を設定するには、![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
+   * テーブルに表示する列を設定するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg)を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
 
 1. 「**[!UICONTROL データビュー]**」セクションで、データビューが既に設定されていない場合は、「**[!UICONTROL データビューを選択]**」を選択してデータビューを選択します。
 
@@ -95,7 +95,7 @@ ht-degree: 20%
    1. 「**[!UICONTROL データビューを使用]**」を選択して、データビューを使用します。 キャンセルするには、「キャンセル」を選択します。
 
    * 選択するデータビューのリストで検索するには、![検索](/help/assets/icons/Search.svg) フィールドを使用します。
-   * テーブルに表示する列を設定するには、![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
+   * テーブルに表示する列を設定するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg)を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
 
 1. 設定を完了するには：
 
@@ -114,11 +114,11 @@ ht-degree: 20%
 
 ## データビューの検証
 
-[設定手順](#configuration-steps)で設定したデータビューには、[&#x200B; データビュー](/help/data-views/manage-dataviews.md)の&#x200B;**[!UICONTROL 統合]**&#x200B;の値として&#x200B;**[!UICONTROL 会話インサイト]**&#x200B;があります。
+[設定手順](#configuration-steps)で設定したデータビューには、[ データビュー](/help/data-views/manage-dataviews.md)の&#x200B;**[!UICONTROL 統合]**&#x200B;の値として&#x200B;**[!UICONTROL 会話インサイト]**&#x200B;があります。
 
 設定された各データビューについて、次の手順を実行します。
 
-* **Containers**: [Containers タブ &#x200B;](/help/data-views/create-dataview.md#containers)には、新しい&#x200B;**[!UICONTROL コンテナ名]**: **[!UICONTROL 会話]**&#x200B;と&#x200B;**[!UICONTROL 表示名]**: **[!UICONTROL コンテナ]**&#x200B;が追加の&#x200B;**[!UICONTROL システム]** **[!UICONTROL コンテナタイプ]**&#x200B;として含まれています。
+* **Containers**: [Containers タブ ](/help/data-views/create-dataview.md#containers)には、新しい&#x200B;**[!UICONTROL コンテナ名]**: **[!UICONTROL 会話]**&#x200B;と&#x200B;**[!UICONTROL 表示名]**: **[!UICONTROL コンテナ]**&#x200B;が追加の&#x200B;**[!UICONTROL システム]** **[!UICONTROL コンテナタイプ]**&#x200B;として含まれています。
 * **コンポーネント**：追加のスキーマフィールドフォルダーが表示されます。 例：agentExperienceとconversation さらに、次のコンポーネントが自動的に追加されます。
 
   | 指標 | スキーマデータタイプ | スキーマパス |

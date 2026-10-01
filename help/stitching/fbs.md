@@ -28,16 +28,16 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1926'
 ht-degree: 82%
 ---
 # フィールドベースのステッチ
 
 フィールドベースの合成では、イベントデータセットと、そのデータセットの永続的ID （cookie）および人物IDを指定します。 フィールドベースの合成では、特定の永続IDを持つ匿名イベントに対して、Customer Journey Analytics data analysisで個人ID情報を使用できるようにします。  その情報は、その特定の永続的IDの個人IDを持つ行から取得されます。
 
-イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[&#x200B; データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
+イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[ データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
 
 Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連するID グラフにアクセスできない場合）は、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合は、フィールドベースのステッチを使用できます。
 
@@ -151,7 +151,7 @@ Bob が様々なイベントをイベントデータセットの一部として�
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![下矢印](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![下矢印](/help/assets/icons/ArrowDown.svg) |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
@@ -214,7 +214,7 @@ Bob が様々なイベントをイベントデータセットの一部として�
 | イベント | タイムスタンプ | 永続 ID（Cookie ID） | ユーザー ID | 結果のID （ライブステッチ後） | 結果のID （リプレイ後） | ユーザー ID | 結果のID （プライバシーリクエスト後） |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 2023-05-12 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上矢印](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上矢印](/help/assets/icons/ArrowUp.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 3 | 2023-05-12 12:03 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
 | 5 | 2023-05-12 12:05 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
@@ -239,7 +239,7 @@ Bob が様々なイベントをイベントデータセットの一部として�
   - **ユーザー ID** - 一部の行で使用できる識別子。 例えば、プロファイルの認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。 事実上任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチの結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、ユーザー ID を送信する必要があります。 Customer Journey Analytics 接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の識別子を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

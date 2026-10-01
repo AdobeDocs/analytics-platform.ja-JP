@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '945'
 ht-degree: 74%
 ---
 # 列設定
@@ -39,14 +39,14 @@ ht-degree: 74%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-[!UICONTROL 列設定]にアクセスするには、列見出しで ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) を選択します。
+[!UICONTROL 列設定]にアクセスするには、列見出しで ![列設定](/help/assets/icons2/Settings.svg) を選択します。
 
 ![列設定](assets/column-settings.png)
 
@@ -105,7 +105,7 @@ ht-degree: 74%
 
 
 
-[&#x200B; データビュー](/help/data-views/component-settings/attribution.md)で設定されているデフォルトのアトリビューションモデルを上書きできます。
+[ データビュー](/help/data-views/component-settings/attribution.md)で設定されているデフォルトのアトリビューションモデルを上書きできます。
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Analysis Workspaceで指標にデフォルト以外のアトリビューショ�
 
 2. **[!UICONTROL 列アトリビューションモデル]**&#x200B;で、「**[!UICONTROL モデル]**」と「**[!UICONTROL ルックバックウィンドウ]**」を選択します。 ルックバックウィンドウでは、各コンバージョンに適用されるデータアトリビューションのウィンドウを決定します。
 
-   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 &#x200B;](assets/attribution-select.png)
+   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 ](assets/attribution-select.png)
 
 
 ### アトリビューションモデル

@@ -7,29 +7,37 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 TQID: https://experienceleague.adobe.com/xTwvC1oPjibPO1fMs1ig4CTqonTwEq20gY-FxlWgHSM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates, Templates (CJA)
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1888
+source-wordcount: '1882'
 ht-degree: 100%
-
 ---
-
 # テンプレートの作成と管理
 
-管理者はテンプレートを作成し、ログイン会社内の他のユーザーが使用できるように保存できます。
+管理者はテンプレートを作成し、ログインしている会社内の他のユーザーが使用できるように保存できます。
 
 ログイン会社の人物が、これらの会社テンプレートを使用するには、[テンプレートの使用](/help/analysis-workspace/templates/use-templates.md)を参照してください。
 
@@ -44,7 +52,7 @@ ht-degree: 100%
 
 <!-- markdownlint-enable MD034 -->
 
-ログイン会社の人物が使用できる新しいテンプレートを作成するには：
+自身がログインしている会社のユーザーが使用できる、新しいテンプレートを作成するには：
 
 1. Analysis Workspace で、プロジェクトを目的の状態に作成します。
 
@@ -59,11 +67,11 @@ ht-degree: 100%
    | **[!UICONTROL 名前]** | テンプレートのわかりやすい名前を入力します。 |
    | **[!UICONTROL 説明]** | テンプレートの使用目的を説明する短い説明を入力します。 |
    | **[!UICONTROL このテンプレートを使用する理由]** | このテンプレートの使用方法について組織内の人物に通知する、短い説明を入力します。 この説明は、テンプレートのプレビューページに表示されます。 |
-   | **[!UICONTROL チャネル]** | このテンプレートに適用される、該当のチャネルを選択します。 複数のチャネル（**[!UICONTROL web]**、**[!UICONTROL モバイル]**、**[!UICONTROL クロスチャネル]**、**[!UICONTROL コールセンター]**、**[!UICONTROL ストア内]**）を選択できます。<p>選択した項目によって、テンプレートが表示される場所と、組織テンプレートページからそのテンプレートにアクセスするユーザーに適用されるセグメントが決定します。</p> |
+   | **[!UICONTROL チャネル]** | このテンプレートに適用される、該当のチャネルを選択します。 複数のチャネル（**[!UICONTROL web]**、**[!UICONTROL モバイル]**、**[!UICONTROL クロスチャネル]**、**[!UICONTROL コールセンター]**、**[!UICONTROL ストア内]**）を選択できます。<p>選択した項目によって、テンプレートが表示される場所と、組織テンプレートページからそのテンプレートにアクセスするユーザーに適用されるセグメントが決まります。</p> |
    | **[!UICONTROL ユースケース]** | このテンプレートに適用されるユースケースを選択します。 **[!UICONTROL エンゲージメント]**、**[!UICONTROL コンバージョン]**、**[!UICONTROL オーディエンス]**、**[!UICONTROL 獲得]**、**[!UICONTROL Journey Optimizer]** など、複数のユースケースを選択できます。 <p>選択した項目によって、組織テンプレートページのテンプレートの位置が決まります。 ユーザーは、テンプレートに移動するか、ユースケース別にリストをフィルタリングできます。 </p><p>**メモ：**「**[!UICONTROL Journey Optimizer]**」オプションを選択すると、テンプレートを Adobe Journey Optimizer で使用できるようになります。 Journey Optimizer では、**[!UICONTROL レポート]**&#x200B;ページにドロップダウンメニューがあるので、ユーザーはこのテンプレートまたはデフォルトのテンプレートを選択できます。 詳しくは、Journey Optimizer ドキュメントの[更新されたレポートエクスペリエンスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)を参照してください。</p><p>「Journey Optimizer」オプションを選択する場合は、次の点を考慮してください。</p><ul><li>このオプションを使用できるのは、Customer Journey Analytics で使用しているデータビューに Journey Optimizer データが存在する場合のみです。</li><li>Journey Optimizer でこのテンプレートを使用すると、Customer Journey Analytics でこのテンプレートに選択されているデータビューに関係なく、Adobe Journey Optimizer でデフォルトのデータビューとして設定されているデータビューが使用されます。 <br/>データビューを Journey Optimizer のデフォルトのデータビューとして設定する方法については、[データビューの作成または編集[の](/help/data-views/create-dataview.md#compatibility)互換性](/help/data-views/create-dataview.md)を参照してください。</li></ul> |
    | **[!UICONTROL Journey Optimizer アクティビティタイプ]** | このテンプレートに関連付ける Journey Optimizer アクティビティタイプ（**[!UICONTROL キャンペーン]**、**[!UICONTROL ジャーニー]**、**[!UICONTROL ランディングページ]**、**[!UICONTROL レポート]**&#x200B;または&#x200B;**[!UICONTROL サブスクリプション]**）を選択します。 <p>このテンプレートをすべてのアクティビティタイプに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「**[!UICONTROL ユースケース]**」フィールドで **[!UICONTROL Journey Optimizer]** を選択した場合にのみ表示されます。</p> |
    | **[!UICONTROL Journey Optimizer アクティビティ]** | このテンプレートに関連付ける Journey Optimizer アクティビティを選択します。 <p>このテンプレートを選択したアクティビティタイプのすべてのアクティビティに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「**[!UICONTROL ユースケース]**」フィールドで **[!UICONTROL Journey Optimizer]** を選択した場合にのみ表示されます。</p> |
-   | **[!UICONTROL タグ]** | テンプレートに適用するタグを指定します。 ここで追加したタグによって、ユーザーはテンプレートのリストをフィルタリングできます。 |
+   | **[!UICONTROL タグ]** | テンプレートに適用するタグを指定します。 ここで追加したタグによって、ユーザーはテンプレートのリストをフィルターできます。 |
 
 1. 「[!UICONTROL **テンプレートとして保存**]」を選択します。
 
@@ -114,7 +122,7 @@ ht-degree: 100%
    | **[!UICONTROL ユースケース]** | このテンプレートに適用されるユースケースを選択します。 **[!UICONTROL エンゲージメント]**、**[!UICONTROL コンバージョン]**、**[!UICONTROL オーディエンス]**、**[!UICONTROL 獲得]**、**[!UICONTROL Journey Optimizer]** など、複数のユースケースを選択できます。 <p>選択した項目によって、組織テンプレートページのテンプレートの位置が決まります。 ユーザーは、テンプレートに移動するか、ユースケース別にリストをフィルタリングできます。 </p><p>**メモ：**「**[!UICONTROL Journey Optimizer]**」オプションを選択すると、テンプレートを Adobe Journey Optimizer で使用できるようになります。 Journey Optimizer では、**[!UICONTROL レポート]**&#x200B;ページにドロップダウンメニューがあるので、ユーザーはこのテンプレートまたはデフォルトのテンプレートを選択できます。 詳しくは、Journey Optimizer ドキュメントの[更新されたレポートエクスペリエンスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)を参照してください。</p><p>「Journey Optimizer」オプションを選択する場合は、次の点を考慮してください。</p><ul><li>このオプションを使用できるのは、Customer Journey Analytics で使用しているデータビューに Journey Optimizer データが存在する場合のみです。</li><li>Journey Optimizer でこのテンプレートを使用すると、Customer Journey Analytics でこのテンプレートに選択されているデータビューに関係なく、Adobe Journey Optimizer でデフォルトのデータビューとして設定されているデータビューが使用されます。 <br/>データビューを Journey Optimizer のデフォルトのデータビューとして設定する方法については、[データビューの作成または編集[の](/help/data-views/create-dataview.md#compatibility)互換性](/help/data-views/create-dataview.md)を参照してください。</li></ul> |
    | **[!UICONTROL Journey Optimizer アクティビティタイプ]** | このテンプレートに関連付ける Journey Optimizer アクティビティタイプ（**[!UICONTROL キャンペーン]**、**[!UICONTROL ジャーニー]**、**[!UICONTROL ランディングページ]**、**[!UICONTROL レポート]**&#x200B;または&#x200B;**[!UICONTROL サブスクリプション]**）を選択します。 <p>このテンプレートをすべてのアクティビティタイプに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「**[!UICONTROL ユースケース]**」フィールドで **[!UICONTROL Journey Optimizer]** を選択した場合にのみ表示されます。</p> |
    | **[!UICONTROL Journey Optimizer アクティビティ]** | このテンプレートに関連付ける Journey Optimizer アクティビティを選択します。 <p>このテンプレートを選択したアクティビティタイプのすべてのアクティビティに関連付ける場合は、このフィールドを空白のままにします。</p><p>このフィールドは、「**[!UICONTROL ユースケース]**」フィールドで **[!UICONTROL Journey Optimizer]** を選択した場合にのみ表示されます。</p> |
-   | **[!UICONTROL タグ]** | テンプレートに適用するタグを指定します。 ここで追加したタグによって、ユーザーはテンプレートのリストをフィルタリングできます。 |
+   | **[!UICONTROL タグ]** | テンプレートに適用するタグを指定します。 ここで追加したタグによって、ユーザーはテンプレートのリストをフィルターできます。 |
 
 1. 「[!UICONTROL **テンプレートとして保存**]」を選択します。
 
@@ -130,7 +138,7 @@ ht-degree: 100%
 
    会社テンプレートのリストが表示されます。 すべての標準プロジェクトは、ピン留めされていない限り、表示されません。
 
-   会社テンプレートは、テンプレート名の前にある ![テンプレートアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) で識別できます。
+   会社テンプレートは、テンプレート名の前にある ![テンプレートアイコン](/help/assets/icons/FileTemplate.svg) で識別できます。
 
    ![会社テンプレートフィルターを表示](assets/company-templates-filter.png)
 
@@ -144,7 +152,7 @@ ht-degree: 100%
 
 1. （オプション）通常の表示に戻るには、フィルターパネルで「**[!UICONTROL 会社テンプレート]**」を選択解除します。
 
-## 特定のテンプレートのデータビューへの欠落しているコンポーネントの追加
+## 特定のテンプレートのデータビューに欠落しているコンポーネントを追加する
 
 デフォルトでは、アドビが提供する一部のテンプレートは、データビューにないコンポーネントが含まれているので使用できません。
 
@@ -166,23 +174,23 @@ ht-degree: 100%
 
    * **列表示** ![列表示アイコン](assets/column-view-icon.png) でテンプレートを表示している場合：
 
-      1. データビューでまだ使用する準備が整っていないテンプレートに移動し、テンプレート名の横にある情報アイコンを選択します。
+     1. データビューでまだ使用する準備が整っていないテンプレートに移動し、テンプレート名の横にある情報アイコンを選択します。
 
-         ![会社テンプレート情報](assets/company-template-info.png)
+        ![会社テンプレート情報](assets/company-template-info.png)
 
-      1. 「**[!UICONTROL プレビュー]**」を選択します。
+     1. 「**[!UICONTROL プレビュー]**」を選択します。
 
-         ![テンプレートのプレビューページ](assets/template-preview.png)
+        ![テンプレートのプレビューページ](assets/template-preview.png)
 
    * **カードビュー** ![カードビューアイコン](assets/card-view-icon.png) でテンプレートを表示している場合：
 
-      1. データビューでまだ使用する準備が整っていないテンプレートを見つけます。
+     1. データビューでまだ使用する準備が整っていないテンプレートを見つけます。
 
-         ![会社テンプレートカードビュー](assets/company-template-cards.png)
+        ![会社テンプレートカードビュー](assets/company-template-cards.png)
 
-      1. テンプレートにポインタを合わせて、「**[!UICONTROL プレビュー]**」を選択します。
+     1. テンプレートにポインタを合わせて、「**[!UICONTROL プレビュー]**」を選択します。
 
-         ![テンプレートのプレビューページ](assets/template-preview.png)
+        ![テンプレートのプレビューページ](assets/template-preview.png)
 
 1. 「**[!UICONTROL 欠落しているコンポーネント]**」セクションには、データビューに欠落しているコンポーネントのリストが表示されます。 「**[!UICONTROL これらのコンポーネントをデータビューに追加]**」を選択します。
 
@@ -196,7 +204,7 @@ ht-degree: 100%
 
    * 「**[!UICONTROL 含まれるコンポーネント]**」セクションで、欠落しているコンポーネントに使用する、データビューに既に含まれているコンポーネントを選択します。
 
-   * 欠落しているコンポーネントに使用する新しいコンポーネントをデータビューに追加し、このコンポーネントを選択します。
+   * 欠落しているコンポーネントに使用する新しいコンポーネントをデータビューに追加し、そのコンポーネントを選択します。
 
      データビューに新しいコンポーネントを追加するには、スキーマフィールドのリストを検索し、「**[!UICONTROL 含まれるコンポーネント]**」セクションにドラッグします。
 
@@ -211,7 +219,7 @@ ht-degree: 100%
 1. 欠落している各コンポーネントに対して、一致するコンテキストラベルをデータビューのコンポーネントに追加するプロセスを繰り返します。
 
 
-## 会社テンプレートへのアクセス
+## 会社テンプレートにアクセスする
 
 アドビが提供するテンプレートと同様に、組織内のユーザーは管理者が作成したテンプレートにアクセスできます。
 

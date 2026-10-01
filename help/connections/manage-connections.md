@@ -10,27 +10,36 @@ autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
+    internal-label: Data management
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 7319
-ht-degree: 87%
-
+source-wordcount: '7127'
+ht-degree: 86%
 ---
-
 # 接続の管理 {#manage-connections}
 
 >[!CONTEXTUALHELP]
@@ -62,18 +71,18 @@ ht-degree: 87%
 
 **[!UICONTROL リスト]**&#x200B;インターフェイスは、接続のデフォルトのインターフェイスです。 選択されていない場合は、「**[!UICONTROL リスト]**」タブを選択してインターフェイスにアクセスします。
 
-**[!UICONTROL リスト]**&#x200B;インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
+**[!UICONTROL リスト]**インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
 △
-![&#x200B; リストビュー](assets/list-view.png)
+![ リストビュー](assets/list-view.png)
 
 テーブルでは、次の列またはアイコンを使用できます。
 
 | 列またはアイコン | 説明 |
 | --- | --- |
 | **[!UICONTROL _名前_]** | 接続のわかりやすい名前です。 ハイパーリンクされた名前を選択すると、[接続の詳細](#connection-details)が表示されます。 |
-| ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | [!UICONTROL 含まれるデータセット]、[!UICONTROL サンドボックス]、[!UICONTROL 所有者]などの情報を表示するには、接続名の横にある ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) を選択します。<p>ポップアップウィンドウにデータセットの詳細が表示されます。 <p>![接続情報ポップアップ](assets/connection-info-popup.png) |
-| ![データビュー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | 接続の[データビューを作成](#create-a-data-view)するには、![データビュー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) を選択します。 このアイコンは、接続にデータビューがまだ関連付けられていない場合にのみ表示されます。 |
-| ![詳細情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 「![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)」を選択すると、コンテキストメニューが開きます。 以下を選択できます。 <p>![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]**&#x200B;を選択すると、接続を[編集](#edit-a-connection)できます。<p>![削除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 削除]** を選択すると、接続を[削除](#delete-a-connection)できます。<p>![データビュー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 新しいデータビューを作成]**&#x200B;を選択すると、接続の[新しいデータビューを作成](#create-a-data-view)できます。<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 接続マップ]**&#x200B;を選択すると、接続の[接続マップ](#map-a-connection)を表示できます。 |
+| ![情報](/help/assets/icons/InfoOutline.svg) | [!UICONTROL 含まれるデータセット]、[!UICONTROL サンドボックス]、[!UICONTROL 所有者]などの情報を表示するには、接続名の横にある ![情報](/help/assets/icons/InfoOutline.svg) を選択します。<p>ポップアップウィンドウにデータセットの詳細が表示されます。 <p>![接続情報ポップアップ](assets/connection-info-popup.png) |
+| ![データビュー](/help/assets/icons/DataAdd.svg) | 接続の[データビューを作成](#create-a-data-view)するには、![データビュー](/help/assets/icons/DataAdd.svg) を選択します。 このアイコンは、接続にデータビューがまだ関連付けられていない場合にのみ表示されます。 |
+| ![詳細情報](/help/assets/icons/More.svg) | 「![その他](/help/assets/icons/More.svg)」を選択すると、コンテキストメニューが開きます。 以下を選択できます。 <p>![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**&#x200B;を選択すると、接続を[編集](#edit-a-connection)できます。<p>![削除](/help/assets/icons/Delete.svg) **[!UICONTROL 削除]** を選択すると、接続を[削除](#delete-a-connection)できます。<p>![データビュー](/help/assets/icons/DataAdd.svg) **[!UICONTROL 新しいデータビューを作成]**&#x200B;を選択すると、接続の[新しいデータビューを作成](#create-a-data-view)できます。<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 接続マップ]**&#x200B;を選択すると、接続の[接続マップ](#map-a-connection)を表示できます。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 接続タイプ&#x200B;]** | 接続のタイプ：**[!UICONTROL ユーザー]**&#x200B;ベースまたは&#x200B;**[!UICONTROL アカウント]**&#x200B;ベースの接続。 |
 | **[!UICONTROL データセット]** | 接続の一部であるデータセットへの 1 つ以上のリンク。 データセットのハイパーリンクを選択すると、接続内のデータセットを表示できます。 選択した接続にさらにデータセットを含める場合は、「**[!UICONTROL +*x* 以上]**」を選択して、**[!UICONTROL 含まれるデータセット]**&#x200B;パネルを表示します。 このパネルには、すべてのデータセットへのリンクと、接続の一部である特定のデータセットを ![検索](/help/assets/icons/Search.svg) 検索するオプションが表示されます。<p>![含まれるデータセット](assets/datasets-included.png)<p>データセット名を選択すると、Experience Platform インターフェイスの新しいタブにデータセットが開きます。 |
 | **[!UICONTROL サンドボックス]** | この接続がデータセットを取得する [Experience Platform サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)。 このサンドボックスは、接続を作成した際に選択します。 接続を保存すると、サンドボックスを変更できません。 |
@@ -85,15 +94,15 @@ ht-degree: 87%
 | **[!UICONTROL 統合]** | 接続が有効になっている Experience Platform アプリケーションを表示します。 |
 | **[!UICONTROL CJA で使用]** | Customer Journey Analytics での使用に対して接続が有効になっているかどうかを示します。 |
 
-テーブルに表示する列を設定するには、![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
+テーブルに表示する列を設定するには、![列設定](/help/assets/icons/ColumnSetting.svg) を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
 
 ### 接続を検索
 
-![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ボックスを使用して接続をすばやく検索できます。
+![検索](/help/assets/icons/Search.svg) ボックスを使用して接続をすばやく検索できます。
 
 ### 接続を絞り込む
 
-接続のリストにフィルターを適用するには、![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
+接続のリストにフィルターを適用するには、![ フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
 
 | フィルターオプション | 説明 |
 |---------|----------|
@@ -104,20 +113,20 @@ ht-degree: 87%
 | **[!UICONTROL CJA で使用]** | 「**[!UICONTROL オン]**」を選択すると、Customer Journey Analytics での使用が有効になっている接続のみが表示されます。 「**[!UICONTROL オフ]**」を選択すると、Customer Journey Analytics での使用がまだ有効になっていない接続のみが表示されます。 |
 | **[!UICONTROL 統合]** | 選択した統合を持つ接続のみが表示されます。 |
 
-「![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
+「![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
 
 ### 接続の編集
 
 接続を編集するには：
 
-1. 接続名の横にある ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) を選択します
-1. コンテキストメニューから ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
+1. 接続名の横にある ![その他](/help/assets/icons/More.svg) を選択します
+1. コンテキストメニューから ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。
 
 または、次の操作を実行できます。
 
 1. 接続のテーブル行を選択します。
 
-1. 青色のアクションバーから ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を選択します。
+1. 青色のアクションバーから ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。
 
 詳しくは、[接続の作成または編集](create-connection.md)を参照してください。
 
@@ -126,14 +135,14 @@ ht-degree: 87%
 
 接続を削除するには：
 
-1. 接続名の横にある ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) を選択します。
-1. ![削除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 削除]** を選択します。
+1. 接続名の横にある ![その他](/help/assets/icons/More.svg) を選択します。
+1. ![削除](/help/assets/icons/Delete.svg) **[!UICONTROL 削除]** を選択します。
 
 または、次の操作を実行できます。
 
 1. 接続行を選択します。
 
-1. 青色のアクションバーから ![削除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 削除]** を選択します。
+1. 青色のアクションバーから ![削除](/help/assets/icons/Delete.svg) **[!UICONTROL 削除]** を選択します。
 
 接続を削除すると、削除されたデータビューと影響を受けるワークスペースプロジェクトが&#x200B;**[!UICONTROL 接続を削除]**&#x200B;パネルに表示されます。
 
@@ -152,14 +161,14 @@ ht-degree: 87%
 
 接続のデータビューを作成するには：
 
-1. 接続名の横にある ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) を選択します。
-1. ![データビューを追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 新しいデータビューを作成]** を選択します。
+1. 接続名の横にある ![その他](/help/assets/icons/More.svg) を選択します。
+1. ![データビューを追加](/help/assets/icons/DataAdd.svg) **[!UICONTROL 新しいデータビューを作成]** を選択します。
 
 または、次の操作を実行できます。
 
 1. 接続行を選択します。
 
-1. 青色のアクションバーから ![データビューを追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL データビューを作成]** を選択します。
+1. 青色のアクションバーから ![データビューを追加](/help/assets/icons/DataAdd.svg) **[!UICONTROL データビューを作成]** を選択します。
 
 詳しくは、[データビューの作成または編集](/help/data-views/create-dataview.md)を参照してください。
 
@@ -255,7 +264,7 @@ Customer Journey Analytics から接続を削除するには：
 
 接続の一部であるデータセット間の関係の詳細を示す[接続マップ](/help/connections/create-connection.md#connection-map)を表示するには：
 
-1. 接続名の横にある ![その他](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) を選択します。
+1. 接続名の横にある ![その他](/help/assets/icons/More.svg) を選択します。
 1. ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 接続マップ]** を選択します。
 
 ### 接続の詳細 {#connection-detail}
@@ -272,15 +281,15 @@ Customer Journey Analytics から接続を削除するには：
 
 | ユーザーインターフェイス | 説明 |
 | --- | --- |
-| ![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 接続を編集]** | 接続の詳細を編集するには、![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 接続を編集]** を選択します。 詳しくは、[接続の作成または編集](create-connection.md)を参照してください。 |
+| ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 接続を編集]** | 接続の詳細を編集するには、![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 接続を編集]** を選択します。 詳しくは、[接続の作成または編集](create-connection.md)を参照してください。 |
 | **[!UICONTROL *データセットセレクター&#x200B;*]** | 接続の詳細を表示する 1 つまたはすべてのデータセットを選択します。 複数のデータセットを選択することはできません。 デフォルトは&#x200B;**[!UICONTROL すべてのデータセット]**&#x200B;です。 |
-| **[!UICONTROL *日付範囲セレクター&#x200B;*]** | 接続の詳細を表示するデータ範囲を選択します。 開始日、終了日を編集するか、![カレンダー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) を選択して日付範囲セレクターを開きます。 日付範囲セレクターで、定義済みの期間の 1 つ（例：**[!UICONTROL 過去 6 か月間]**）を使用して日付範囲を選択するか、カレンダーを使用して開始日と終了日を選択します。 「**[!UICONTROL 適用]**」を選択して、新しい日付範囲を接続の詳細に適用します。 |
+| **[!UICONTROL *日付範囲セレクター&#x200B;*]** | 接続の詳細を表示するデータ範囲を選択します。 開始日、終了日を編集するか、![カレンダー](/help/assets/icons/Calendar.svg) を選択して日付範囲セレクターを開きます。 日付範囲セレクターで、定義済みの期間の 1 つ（例：**[!UICONTROL 過去 6 か月間]**）を使用して日付範囲を選択するか、カレンダーを使用して開始日と終了日を選択します。 「**[!UICONTROL 適用]**」を選択して、新しい日付範囲を接続の詳細に適用します。 |
 | **[!UICONTROL 使用可能なイベントデータのレコード]** | **接続全体について**、レポートに使用できるイベントデータセット行の合計数。 このカウントは、日付範囲やデータセットの選択とは無関係です。 |
-| [!UICONTROL **[!UICONTROL 指標]**] | 追加、スキップおよび削除されたイベント、ルックアップ、プロファイル、概要データセットレコードと、追加されたバッチの数を要約します。 これらの指標は、**選択したデータセットと日付範囲**&#x200B;に基づいています。<p>「**[!UICONTROL 詳細を確認]**」を選択すると、**[!UICONTROL スキップされた詳細を確認]**&#x200B;ポップアップが表示されます。 ポップアップには、すべてのイベントデータセットまたは選択したデータセットのスキップされたレコードの数と理由が一覧表示されます。<p>![スキップされたレコード](assets/skipped-records.png)<p>詳細情報が表示されている ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ポップアップを選択します。 [!UICONTROL 空の訪問者 ID] など、スキップされた理由によっては、ポップアップに **[!UICONTROL EQS のサンプル PSQL]**（クエリサービス用の Experience Platform）が表示され、[クエリサービス](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)で使用してデータセット内のスキップされたレコードのクエリを実行できます。 ![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL EQS 用サンプル PSQL をコピー]** を選択して SQL をコピーします。 |
+| [!UICONTROL **[!UICONTROL 指標]**] | 追加、スキップおよび削除されたイベント、ルックアップ、プロファイル、概要データセットレコードと、追加されたバッチの数を要約します。 これらの指標は、**選択したデータセットと日付範囲**&#x200B;に基づいています。<p>「**[!UICONTROL 詳細を確認]**」を選択すると、**[!UICONTROL スキップされた詳細を確認]**&#x200B;ポップアップが表示されます。 ポップアップには、すべてのイベントデータセットまたは選択したデータセットのスキップされたレコードの数と理由が一覧表示されます。<p>![スキップされたレコード](assets/skipped-records.png)<p>詳細情報が表示されている ![情報](/help/assets/icons/InfoOutline.svg) ポップアップを選択します。 [!UICONTROL 空の訪問者 ID] など、スキップされた理由によっては、ポップアップに **[!UICONTROL EQS のサンプル PSQL]**（クエリサービス用の Experience Platform）が表示され、[クエリサービス](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)で使用してデータセット内のスキップされたレコードのクエリを実行できます。 ![コピー](/help/assets/icons/Copy.svg) **[!UICONTROL EQS 用サンプル PSQL をコピー]** を選択して SQL をコピーします。 |
 | **[!UICONTROL 追加されたレコード]** | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間に追加された行数を示すビジュアライゼーション。 10 分ごとに更新されます。 |
 | **[!UICONTROL スキップされたレコード]** | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間にスキップされた行数を示すビジュアライゼーション。 レコードをスキップする理由としては、タイムスタンプの欠落、ユーザー ID またはアカウント ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} の欠落または無効などがあります。 10 分ごとに更新されます。 <p>無効な ID （`undefined`、`00000000` または特定の月に 100 万回を超えるイベントに表示される[!UICONTROL ユーザー ID] 内の数字と文字の組み合わせなど）は、特定のユーザーに関連付けることができない ID です。 これらの行はシステムに取り込むことができないので、取り込みやレポートでエラーが発生しやすくなります。 無効なユーザー ID またはアカウント ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} を修正するには、次の 3 つのオプションがあります。<ul><li>[ステッチ](/help/stitching/overview.md)を使用して、未定義またはすべてがゼロのユーザー ID に有効なユーザー ID を入力する。</li><li>ユーザー ID を空白にする。この ID は取り込み時にスキップされます（無効なユーザー ID やすべてがゼロのユーザー ID よりも優先されます）。</li><li>データを取り込む前に、システム内の無効なユーザー ID を修正する。</li></ul> |
 | **[!UICONTROL 削除されたレコード]** | **選択したデータセットと日付範囲**&#x200B;に対して、選択した期間に削除された行数を示すビジュアライゼーション。 例えば、[!DNL Experience Platform] でデータセットが削除された可能性があるとします。 10 分ごとに更新されます。<p>シナリオによっては、ステッチや一部のルックアップデータセットの更新などにより、この値に置き換えられたレコードが含まれる場合もあります。 この例では、次を考慮します。</p><ul><li>1 つのレコードを XDM 個人プロファイルデータセットにアップロードします。これにより、Customer Journey Analytics がプロファイルルックアップデータとして取り込むように設定されます。 接続の詳細では、このデータセットには 1 つのレコードが追加されたと表示されます。</li><li>元のレコードの複製を同じ AEP データセットにアップロードします。これにより、2 つのレコードが含まれるようになります。 Customer Journey Analytics では、プロファイルまたはアカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ルックアップデータセットから追加のレコードを取り込みます。 Customer Journey Analytics では、そのユーザー ID またはアカウント ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} の接続にプロファイルレコードまたはアカウントレコードが既に取り込まれていることを確認して、以前のバージョンを削除し、新しいプロファイルデータを追加します。 接続の詳細では、このアクションは 1 つのレコードが追加され、1 つのレコードが削除されたことを表します。これは、Customer Journey Analytics が取り込まれたユーザー ID またはアカウント ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} の最新のプロファイルルックアップデータのみを保持するからです。</li><li>合計すると、AEP データセットには同一の 2 つのレコードが含まれます。 これとは別に、Customer Journey Analytics 接続の詳細には、このプロファイルデータセットに対して 2 つのレコードが追加され、1 つのレコードが削除されました、という取り込まれたデータのステータスが表示されます。 </li></ul> |
-| ![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | データセット検索フィールド。 データセット名またはデータセット ID でデータセットテーブルを検索できます。 |
+| ![検索](/help/assets/icons/Search.svg) | データセット検索フィールド。 データセット名またはデータセット ID でデータセットテーブルを検索できます。 |
 | [!UICONTROL データセットテーブル] | 接続に含まれるデータセットです。 詳しくは、以下の表を参照してください。 単一のデータセットを選択 ![SelectBox](/help/assets/icons/SelectBox.svg) すると、選択したデータセットの接続の詳細のみが表示されます。 これは、**[!UICONTROL _データセットセレクター_]**&#x200B;からデータセットを選択することに相当します。 |
 
 データセットテーブルには、データセットごとに次の列が表示されます。
@@ -296,7 +305,7 @@ Customer Journey Analytics から接続を削除するには：
 | **[!UICONTROL 前回追加した日時]** | 接続に追加された最新のバッチのタイムスタンプ。 |
 | **[!UICONTROL データソースタイプ]** | ソースタイプ。 データセットを接続に追加する際に、ソースタイプを定義します。 |
 | **[!UICONTROL データセットタイプ]** | [データセットタイプ](create-connection.md#dataset-types)。 タイプには、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;を指定できます。 アドホックデータセットまたはリレーショナルデータセットは、**[!UICONTROL （アドホック）]**&#x200B;または&#x200B;**[!UICONTROL （リレーショナル）]**&#x200B;で識別されます。 例えば、**[!UICONTROL イベント （アドホック）]**&#x200B;や&#x200B;**[!UICONTROL ルックアップ（リレーショナル）]**&#x200B;などです。 |
-| **[!UICONTROL ステッチ]** | 接続UI[&#128279;](/help/stitching/use-stitching-ui.md)でデータセットのステッチが[有効になっている場合、値は&#x200B;**[!UICONTROL true]**&#x200B;です。 それ以外の場合、値は&#x200B;**[!UICONTROL false]**&#x200B;です。 ステッチ プロシージャ &#x200B;](/help/stitching//use-stitching.md)に対する リクエストの結果であるステッチされたデータセットは、このテーブルでステッチされたものとして識別されず、デフォルトでは&#x200B;**[!UICONTROL false]**&#x200B;の値を持ちます。 |
+| **[!UICONTROL ステッチ]** | 接続UI](/help/stitching/use-stitching-ui.md)でデータセットのステッチが[有効になっている場合、値は&#x200B;**[!UICONTROL true]**&#x200B;です。 それ以外の場合、値は&#x200B;**[!UICONTROL false]**&#x200B;です。 ステッチ プロシージャ ](/help/stitching//use-stitching.md)に対する[ リクエストの結果であるステッチされたデータセットは、このテーブルでステッチされたものとして識別されず、デフォルトでは&#x200B;**[!UICONTROL false]**&#x200B;の値を持ちます。 |
 | **[!UICONTROL スキーマ]** | データセットのベースとなる Experience Platform スキーマ。 |
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットが新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：データセットが新しいデータを読み込むように設定されていない場合。 |
 | **[!UICONTROL データセットを変換]** | 適用可能な B2B ルックアップデータセットの変換ステータス。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：変換に対して有効である適用可能なデータセットの場合。 <p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：変換に対して有効でない適用可能なデータセットの場合。<p>**[!UICONTROL 該当なし]**：変換に対して適用可能でない他のすべてのデータセットの場合。 |
@@ -313,14 +322,14 @@ Customer Journey Analytics から接続を削除するには：
 
 | オプション | 説明 |
 | --- | --- |
-| ![更新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL 更新]** | 接続を更新し、最近追加されたレコードを反映するには、![更新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL 更新]** を選択します。 |
-| ![削除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)、**[!UICONTROL 削除]** | この接続を[削除](#delete-a-connection)します。 |
-| ![データビューを追加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL データビューを作成]** | この接続に基づいて[データビューを作成します](#create-a-data-view)。 詳しくは、[データビュー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views)を参照してください。 |
+| ![更新](/help/assets/icons/Refresh.svg) **[!UICONTROL 更新]** | 接続を更新し、最近追加されたレコードを反映するには、![更新](/help/assets/icons/Refresh.svg) **[!UICONTROL 更新]** を選択します。 |
+| ![削除](/help/assets/icons/Delete.svg)、**[!UICONTROL 削除]** | この接続を[削除](#delete-a-connection)します。 |
+| ![データビューを追加](/help/assets/icons/DataAdd.svg) **[!UICONTROL データビューを作成]** | この接続に基づいて[データビューを作成します](#create-a-data-view)。 詳しくは、[データビュー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views)を参照してください。 |
 | **[!UICONTROL CJA で使用]** | Customer Journey Analytics で Journey Optimizer 接続を使用すると、Journey Optimizer 接続に付加価値をもたらすことができます。 詳しくは、[Customer Journey Analytics での Journey Optimizer 接続の使用](#use-a-journey-optimizer-connection-in-customer-journey-analytics)を参照してください。 |
 | **[!UICONTROL 接続名]** | 接続のわかりやすい名前。 |
 | **[!UICONTROL 接続の説明]** | この接続の目的を説明するより詳細な説明。 |
 | **[!UICONTROL サンドボックス]** | この接続がデータセットを取得する [Experience Platform サンドボックス](https://experienceleague.adobe.com/ja/docs/experience-platform/sandbox/home)。 このサンドボックスは、接続を作成した際に選択します。 接続を保存すると、サンドボックスを変更できません。 |
-| **[!UICONTROL 接続 ID]** | 接続用に生成された識別子。 値をコピーするには、![コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) を使用します。 |
+| **[!UICONTROL 接続 ID]** | 接続用に生成された識別子。 値をコピーするには、![コピー](/help/assets/icons/Copy.svg) を使用します。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL プライマリ ID タイプ&#x200B;]** | 接続のプライマリ ID タイプ：ユーザーベースの接続の場合は&#x200B;**[!UICONTROL ユーザー]**、アカウントベースの接続の場合は&#x200B;**[!UICONTROL アカウント]**。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL コンテナ&#x200B;]** | 接続用に設定されたコンテナ。 |
 | **[!UICONTROL 接続を使用するデータビュー]** | この接続を使用するデータビュー。 |
@@ -337,13 +346,13 @@ Customer Journey Analytics から接続を削除するには：
 
 | 詳細 | 説明 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID &#x200B;]** | 接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID &#x200B;]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID ]** | 接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID ]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
 | **[!UICONTROL ユーザー ID]** | 接続のユーザー ID として指定した ID。 |
 | **[!UICONTROL キー]** | ルックアップデータセットに指定したキー。 |
 | **[!UICONTROL 一致するキー]** | ルックアップデータセットに指定した一致するキー。 |
 | **[!UICONTROL タイムスタンプ]** | イベントデータセットに定義されたタイムスタンプ。 |
-| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。 データが追加されると、レポートにデータが表示されるまでの待ち時間は発生しません。 ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
+| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。 データが追加されると、レポートにデータが表示されるまでの待ち時間は発生しません。 ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
 | **[!UICONTROL 追加されたレコード]** | 選択した日付範囲で接続に追加されたデータセットのレコード（行）の数。 |
 | **[!UICONTROL スキップされたレコード]** | 選択した日付範囲で接続のデータ転送中にスキップされたデータセットのレコード（行）の数。 |
 | **[!UICONTROL 追加されたバッチ]** | 接続に追加されたバッチ数。 |
@@ -563,7 +572,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 詳細分類]**&#x200B;テーブルを使用すると、、接続別、データセット別別、サンドボックス別、タグ別に詳細な指標を表示できます。 データセット名はレポート期間中に変更される場合があるので、データセットは名前ではなく ID を使用してレポートされます。 不明なデータセットまたは接続は、ID を使用してレポートされます。
 
-  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット &#x200B;]は表示されなくなります。
+  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット ]は表示されなくなります。
 
   * 分類を変更するには、「**[!UICONTROL 表示別]**」と「**[!UICONTROL 分類別]**」の組み合わせを選択します。
 
@@ -612,7 +621,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 月間Content Analytics行]** サブパネルは、毎月システムに追加される月間Content Analytics レコードの合計数を測定し、insightにデータの増加と取り込み率を提供します。 サブパネルには、今月取り込まれた行数の合計数と前月からの変化の概要が表示されます。
 
-  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![ カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
 
   +++
 
@@ -620,7 +629,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 詳細分類]**&#x200B;テーブルを使用すると、、接続別、データセット別別、サンドボックス別、タグ別に詳細な指標を表示できます。 データセット名はレポート期間中に変更される場合があるので、データセットは名前ではなく ID を使用してレポートされます。 不明なデータセットまたは接続は、ID を使用してレポートされます。
 
-  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット &#x200B;]は表示されなくなります。
+  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット ]は表示されなくなります。
 
   * 分類を変更するには、「**[!UICONTROL 表示別]**」と「**[!UICONTROL 分類別]**」の組み合わせを選択します。
 
@@ -720,7 +729,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 月次メディア開始]** サブパネルは、毎月システムに追加される月次メディア開始レコードの合計数を測定し、insightにデータの増加と取り込み率を提供します。 サブパネルには、今月取り込まれた行数の合計数と前月からの変化の概要が表示されます。
 
-  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![ カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
 
   +++
 

@@ -7,28 +7,34 @@ role: User
 TQID: https://experienceleague.adobe.com/e0vvc9JN5k-KPI2zVAezIjdgViKdAcLJEAx0QUV-tAA
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 885
+source-wordcount: '870'
 ht-degree: 9%
-
 ---
-
 # 指標
 
-指標を使用すると、Analysis Workspace でデータポイントを数量化できます。 これらは、ビジュアライゼーション内の列として最も一般的に使用され、ディメンションに関連付けられます。
+指標を使用すると、Analysis Workspace 内のデータを定量化できます。 これらは、ビジュアライゼーション内の列として最も一般的に使用され、ディメンションに関連付けられます。
 
-## Analysis Workspace での指標の使用
+## Analysis Workspace で指標を使用する
 
 Analysis Workspaceでは、指標を柔軟に使用できます。 指標を空のフリーフォームテーブルにドラッグすると、指標がプロジェクトの日付期間にわたってトレンド表示されます。 ディメンションが存在する場合は、指標をドラッグして、各ディメンション項目と比較した指標を表示することもできます。 既存の指標ヘッダーの上に指標をドラッグすると、その指標に置き換わり、ヘッダーの横にある指標をドラッグすると、両方の指標を並べて表示できます。
 
@@ -44,9 +50,9 @@ Analysis Workspaceに指標やその他の種類のコンポーネントを追�
 
   Adobe Analyticsとは異なり、Customer Journey Analyticsでは、接続とデータビューの範囲内で、標準の指標を柔軟に定義できます。
 
-   * **人物**: Customer Journey Analyticsの人物メトリックは、人物IDの異なるカウントです。 接続でデータセットを設定する際に人物IDとして選択した内容に応じて、人物の指標は異なる意味を持つことができます。
-   * **セッション**: Customer Journey Analyticsのセッション指標は、データビューのセッション設定の一部として定義されるものです。 [&#x200B; セッション設定](/help/data-views/session-settings.md)を参照してください。
-   * **イベント**: Customer Journey Analyticsのイベント指標は、接続の一部として設定したイベントデータセットの一部であるイベントで構成されます。
+  * **人物**: Customer Journey Analyticsの人物メトリックは、人物IDの異なるカウントです。 接続でデータセットを設定する際に人物IDとして選択した内容に応じて、人物の指標は異なる意味を持つことができます。
+  * **セッション**: Customer Journey Analyticsのセッション指標は、データビューのセッション設定の一部として定義されるものです。 [ セッション設定](/help/data-views/session-settings.md)を参照してください。
+  * **イベント**: Customer Journey Analyticsのイベント指標は、接続の一部として設定したイベントデータセットの一部であるイベントで構成されます。
 
   標準指標の完全なリストについては、[標準指標](#standard-metrics)を参照してください。
 
@@ -54,7 +60,7 @@ Analysis Workspaceに指標やその他の種類のコンポーネントを追�
 
 * **計算指標テンプレート** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)：計算指標と同様に動作するAdobe定義の指標。 Workspace プロジェクトでそのまま使用することも、コピーを保存してロジックをカスタマイズすることもできます。 [既定の計算指標](calc-metrics/cm-workflow/../default-calcmetrics.md)を参照してください。
 
-指標が承認されているかどうかを確認できます![承認済みアイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)。 指標の詳細が必要な場合は、指標にカーソルを合わせて、![情報アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)を選択します。 詳しくは、[&#x200B; コンポーネント情報](use-components-in-workspace.md#component-info)を参照してください。
+指標が承認されているかどうかを確認できます![ チェックマーク ](/help/assets/icons/Checkmark.svg)。 指標の詳細が必要な場合は、指標にカーソルを合わせて、![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。 詳しくは、[ コンポーネント情報](use-components-in-workspace.md#component-info)を参照してください。
 
 
 ## 標準指標
@@ -71,7 +77,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
 ### すべてのプロジェクトの計算指標の作成
 
-[計算指標ビルダー](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)を使用して、[計算指標を作成](/help/components/calc-metrics/cm-workflow/cm-workflow.md)できます。 この方法で作成すると、コンポーネントリストで計算指標を使用できるようになります。このリストは、組織全体のプロジェクトで使用できます。
+[計算指標ビルダー](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md)を使用して、[計算指標を作成](/help/components/calc-metrics/cm-workflow/cm-workflow.md)できます。 この方法で作成すると、計算指標はコンポーネントリストに表示され、組織全体のプロジェクトで使用できるようになります。
 
 ### 単一プロジェクトの計算指標の作成
 
@@ -89,7 +95,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
 1. **[!UICONTROL 選択範囲から指標を作成]**&#x200B;を選択
 
-   選択範囲から作成を強調表示する![Workspace パネル &#x200B;](assets/create-metric-from-selection.png)
+   選択範囲から作成を強調表示する![Workspace パネル ](assets/create-metric-from-selection.png)
 
 1. このプロジェクトのみの計算指標を作成するには、使用可能なオプションから選択します。
 
@@ -118,11 +124,11 @@ Customer Journey Analyticsの標準指標の完全なリスト：
    * [!UICONTROL **変化率**]：選択した2つの列の変化率を示す新しい列を作成します。
 
 
-## 様々なアトリビューションモデルとの指標の比較
+## 異なるアトリビューションモデル間で指標を比較
 
 指標の1つのアトリビューションモデルを別のアトリビューションモデルにすばやく比較するには、指標のコンテキストメニューから「**[!UICONTROL アトリビューションモデルを比較]**」を選択します。
 
-![&#x200B; アトリビューションモデルの比較を強調表示するWorkspace パネル &#x200B;](assets/compare-attribution.png)
+![ アトリビューションモデルの比較を強調表示するWorkspace パネル ](assets/compare-attribution.png)
 
 このショートカットを使用すると、指標をドラッグして2回設定することなく、あるアトリビューションモデルを別のアトリビューションモデルと比較できます。
 
