@@ -43,7 +43,7 @@ Experience Platformに次のアクセス権があることを確認します。
 
 ## ペイドメディアデータモデル
 
-有料メディアデータでは、スタースキーマを使用します。 1つの[概要指標データセット ](#summary-metrics-dataset)がファクトテーブルとして機能し、6つの参照データセットが関連するディメンションを提供します。 ルックアップデータセットは、エンティティ `GUID`およびアカウント、キャンペーン、広告グループ、広告、アセット、エクスペリエンスのネイティブ ID値によって概要指標データセットに結合されます。
+有料メディアデータでは、スタースキーマを使用します。 1つの[概要指標データセット &#x200B;](#summary-metrics-dataset)がファクトテーブルとして機能し、6つの参照データセットが関連するディメンションを提供します。 ルックアップデータセットは、エンティティ `GUID`およびアカウント、キャンペーン、広告グループ、広告、アセット、エクスペリエンスのネイティブ ID値によって概要指標データセットに結合されます。
 
 ルックアップデータセットは、次の2つの共通の構成要素を共有します。
 
@@ -110,7 +110,7 @@ Experience Platformに次のアクセス権があることを確認します。
 
 1. 必要なExperience Platform ソース権限とアドプラットフォームへのアクセス権があることを確認します。
 1. Experience Platformで、**[!UICONTROL ソース]** > **[!UICONTROL カタログ]** > **[!UICONTROL Advertising]**&#x200B;に移動します。
-1. 
+1. &#x200B;
    1. 有料メディアデータセットを含むサンドボックスに入っていることを確認します。
 1. 使用するコネクタ （例：**[!DNL Meta Ads]**）を選択します。 **[!UICONTROL セットアップ]**&#x200B;を選択して新しい接続を作成するか、**[!UICONTROL データを追加]**&#x200B;を選択して既存の接続にデータを追加します。
 1. 必要な広告主レベルのアクセス権を持つユーザーでログインして、[!DNL OAuth 2.0]で認証します。
@@ -140,7 +140,7 @@ Customer Journey Analyticsは、Experience Platform データセットについ�
 1. 概要指標データセットを概要データとして追加します。 複数の概要指標データセットが使用可能な場合は、[search](/help/connections/create-connection.md#add-datasets)を使用して`Paid Media` クラスでフィルタリングし、適切なデータセットを特定します。
 1. 各参照データセットを参照データセットとして追加します。 アカウント、キャンペーン、広告グループ、広告、アセット、エクスペリエンスの対応するエンティティ GUID ID ID ID （Adobeが生成したグローバルキー）を使用して、ルックアップデータセットを概要データに結合します。 一部のソースプラットフォームでは、ネイティブ ID値の結合もサポートしている場合があります。
 1. 必要に応じて、集計有料メディアデータをID、トラッキングコード、または`UTM` パラメーターなどの共有メタデータに関連付ける場合は、クリックストリームイベントデータを追加します。
-1. 各データセットの[ データセット固有の設定](/help/connections/create-connection.md#dataset-settings)を確認します。
+1. 各データセットの[&#x200B; データセット固有の設定](/help/connections/create-connection.md#dataset-settings)を確認します。
 1. 接続を保存し、接続がデータのバックフィルを開始することを確認します。
 
 ペイドメディアデータは集計データであり、個人レベルのID合成には依存しません。 概要テーブルのエンティティ IDは、参照テーブル内の類似のIDに結合するために使用されます。
@@ -159,7 +159,7 @@ Customer Journey Analyticsは、Experience Platform データセットについ�
 * **ディメンション**：キャンペーン、チャネル、広告ネットワーク、広告グループ、広告、アセット、アカウント、地域、デバイスタイプ。
 * **指標**：インプレッション数、クリック数、クリックスルー率、支出、コンバージョン数、コンバージョン値、エンゲージメント、関連する動画またはインプレッション共有指標。
 * **派生フィールド**: [解析](/help/data-views/derived-fields/derived-fields.md#url-parse)、[正規表現](/help/data-views/derived-fields/derived-fields.md#regex-replace)、または[参照](/help/data-views/derived-fields/derived-fields.md#lookup) ロジックを使用してディメンションを正規化または分類し、広告ネットワーク全体で一貫したチャネルとキャンペーンの値を生成します。
-* **概要グループ化**: [複数のデータセットからの関連値を、統合された有料チャネルディメンションなどの単一のレポートディメンション ](/help/data-views/component-settings/summary-data-group.md)に結合します。
+* **概要グループ化**: [複数のデータセットからの関連値を、統合された有料チャネルディメンションなどの単一のレポートディメンション &#x200B;](/help/data-views/component-settings/summary-data-group.md)に結合します。
 * **計算指標**:CPC、CPM、CPA、CTR、コンバージョン率など、再利用可能な効率性の指標を定義します。
 
 ## 検証
@@ -186,5 +186,5 @@ Customer Journey Analyticsは、Experience Platform データセットについ�
 
 >[!MORELIKETHIS]
 >
->[Meta Ads ソースコネクタ ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Meta Ads ソースコネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
