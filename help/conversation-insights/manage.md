@@ -16,7 +16,7 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
@@ -28,6 +28,7 @@ ht-degree: 6%
 会話インサイト設定を管理できるのはシステム管理者のみです。
 
 会話インサイトについて詳しくは、[会話インサイトの概要](/help/conversation-insights/overview.md)を参照してください。
+
 
 ## 既存の設定の表示とフィルター
 
@@ -55,7 +56,7 @@ ht-degree: 6%
 
    テーブルに表示する列を設定するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg)を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
 
-1. （オプション）設定のリストをフィルタリングするには、![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、![ フィルター](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 

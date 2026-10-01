@@ -17,11 +17,12 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
 ---
+
 # 会話インサイトの分析
 
 ## シンプルな分析
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 +++ プロジェクト例
 
-![会話インサイトの基本的なサンプルプロジェクト &#x200B;](assets/conversation-insights-analyze-sample-project-basic.png)
+![会話インサイトの基本的なサンプルプロジェクト ](assets/conversation-insights-analyze-sample-project-basic.png)
 
 +++
 
