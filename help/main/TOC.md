@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 9d7c1ca888432c74251b3bc131efc97d19c4ef8b
+source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 90%
+source-wordcount: '1510'
+ht-degree: 89%
 ---
 # Adobe Customer Journey Analytics ガイド {#using}
 
@@ -529,6 +529,7 @@ ht-degree: 90%
   + データ取り込み {#data-ingestion}
     + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
     + [Adobe Experience Platform オーディエンスの取り込みと活用](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + {hide-from-toc}[有料メディアデータを取り込んで使用](/help/use-cases/data-ingestion/paid-media.md)
   + データビュー {#data-views}
     + [データビューのユースケース](/help/use-cases/data-views/data-views-usecases.md)
     + [バインディングディメンションと指標の使用](/help/use-cases/data-views/binding-dimensions-metrics.md)
