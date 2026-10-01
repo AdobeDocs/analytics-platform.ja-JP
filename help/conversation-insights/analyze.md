@@ -30,7 +30,7 @@ ht-degree: 0%
 
 +++ プロジェクト例
 
-![会話インサイトの基本的なサンプルプロジェクト ](assets/conversation-insights-analyze-sample-project-basic.png)
+![会話インサイトの基本的なサンプルプロジェクト &#x200B;](assets/conversation-insights-analyze-sample-project-basic.png)
 
 +++
 
