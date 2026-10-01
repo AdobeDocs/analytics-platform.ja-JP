@@ -41,7 +41,7 @@ ht-degree: 2%
 
 オーディエンス分析設定を管理できるのはシステム管理者のみです。
 
-オーディエンス分析について詳しくは、[ オーディエンス分析の概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください。
+オーディエンス分析について詳しくは、[&#x200B; オーディエンス分析の概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください。
 
 ## 既存の設定の表示とフィルター
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**&#x200B;を選択します。
 
-   ![ オーディエンス分析のメイン ページ ](assets/audience-analysis-manage-configurations.png)
+   ![&#x200B; オーディエンス分析のメイン ページ &#x200B;](assets/audience-analysis-manage-configurations.png)
 
    各設定について、次の情報の列を使用できます。
 
@@ -65,9 +65,9 @@ ht-degree: 2%
 
    * **[!UICONTROL ステータス]**：設定のステータス。 可能なステータスは、「完了」、「進行中」、「失敗」です。<!--true?-->
 
-   列アイコン ![列アイコン ](/help/assets/icons2/ColumnSettings.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
+   列アイコン ![列アイコン &#x200B;](/help/assets/icons2/ColumnSettings.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
 
-1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![ オーディエンス分析フィルターアイコン ](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![&#x200B; オーディエンス分析フィルターアイコン &#x200B;](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 
@@ -83,7 +83,7 @@ ht-degree: 2%
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**&#x200B;を選択します。
 
-   ![ オーディエンス分析のメイン ページ ](assets/audience-analysis-manage-configurations.png)
+   ![&#x200B; オーディエンス分析のメイン ページ &#x200B;](assets/audience-analysis-manage-configurations.png)
 
 1. 編集する設定の名前を選択します。
 
@@ -99,6 +99,6 @@ ht-degree: 2%
 
 1. Customer Journey Analyticsで、**[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**&#x200B;を選択します。
 
-   ![ オーディエンス分析のメイン ページ ](assets/audience-analysis-manage-configurations.png)
+   ![&#x200B; オーディエンス分析のメイン ページ &#x200B;](assets/audience-analysis-manage-configurations.png)
 
 1. 削除する設定の横にあるチェックボックスを選択し、**[!UICONTROL 削除]**&#x200B;を選択します。

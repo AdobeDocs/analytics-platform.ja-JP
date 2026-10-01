@@ -51,7 +51,7 @@ Analysis Workspaceに指標やその他の種類のコンポーネントを追�
   Adobe Analyticsとは異なり、Customer Journey Analyticsでは、接続とデータビューの範囲内で、標準の指標を柔軟に定義できます。
 
   * **人物**: Customer Journey Analyticsの人物メトリックは、人物IDの異なるカウントです。 接続でデータセットを設定する際に人物IDとして選択した内容に応じて、人物の指標は異なる意味を持つことができます。
-  * **セッション**: Customer Journey Analyticsのセッション指標は、データビューのセッション設定の一部として定義されるものです。 [ セッション設定](/help/data-views/session-settings.md)を参照してください。
+  * **セッション**: Customer Journey Analyticsのセッション指標は、データビューのセッション設定の一部として定義されるものです。 [&#x200B; セッション設定](/help/data-views/session-settings.md)を参照してください。
   * **イベント**: Customer Journey Analyticsのイベント指標は、接続の一部として設定したイベントデータセットの一部であるイベントで構成されます。
 
   標準指標の完全なリストについては、[標準指標](#standard-metrics)を参照してください。
@@ -60,7 +60,7 @@ Analysis Workspaceに指標やその他の種類のコンポーネントを追�
 
 * **計算指標テンプレート** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg)：計算指標と同様に動作するAdobe定義の指標。 Workspace プロジェクトでそのまま使用することも、コピーを保存してロジックをカスタマイズすることもできます。 [既定の計算指標](calc-metrics/cm-workflow/../default-calcmetrics.md)を参照してください。
 
-指標が承認されているかどうかを確認できます![ チェックマーク ](/help/assets/icons/Checkmark.svg)。 指標の詳細が必要な場合は、指標にカーソルを合わせて、![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。 詳しくは、[ コンポーネント情報](use-components-in-workspace.md#component-info)を参照してください。
+指標が承認されているかどうかを確認できます![&#x200B; チェックマーク &#x200B;](/help/assets/icons/Checkmark.svg)。 指標の詳細が必要な場合は、指標にカーソルを合わせて、![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。 詳しくは、[&#x200B; コンポーネント情報](use-components-in-workspace.md#component-info)を参照してください。
 
 
 ## 標準指標
@@ -95,7 +95,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
 1. **[!UICONTROL 選択範囲から指標を作成]**&#x200B;を選択
 
-   選択範囲から作成を強調表示する![Workspace パネル ](assets/create-metric-from-selection.png)
+   選択範囲から作成を強調表示する![Workspace パネル &#x200B;](assets/create-metric-from-selection.png)
 
 1. このプロジェクトのみの計算指標を作成するには、使用可能なオプションから選択します。
 
@@ -128,7 +128,7 @@ Customer Journey Analyticsの標準指標の完全なリスト：
 
 指標の1つのアトリビューションモデルを別のアトリビューションモデルにすばやく比較するには、指標のコンテキストメニューから「**[!UICONTROL アトリビューションモデルを比較]**」を選択します。
 
-![ アトリビューションモデルの比較を強調表示するWorkspace パネル ](assets/compare-attribution.png)
+![&#x200B; アトリビューションモデルの比較を強調表示するWorkspace パネル &#x200B;](assets/compare-attribution.png)
 
 このショートカットを使用すると、指標をドラッグして2回設定することなく、あるアトリビューションモデルを別のアトリビューションモデルと比較できます。
 

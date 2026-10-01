@@ -33,14 +33,14 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->管理者は、[ データビュー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views)の一部として、参加などのデフォルト以外のアトリビューションモデルを使用して指標を作成できます。 詳しくは、[ アトリビューションコンポーネント設定](../../../data-views/component-settings/attribution.md)を参照してください。
+>管理者は、[&#x200B; データビュー](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/data-views)の一部として、参加などのデフォルト以外のアトリビューションモデルを使用して指標を作成できます。 詳しくは、[&#x200B; アトリビューションコンポーネント設定](../../../data-views/component-settings/attribution.md)を参照してください。
 
 以下の手順は、[計算指標の作成権限](/help/technotes//access-control.md#user-level-access)を持つユーザーが参加指標を作成する方法を示しています。
 
 1. [計算指標](cm-workflow.md)を作成し、[計算指標ビルダー](cm-build-metrics.md)で、指標`Participation`または類似の名前を付けます。
 1. 成功イベントを含む指標（例：[!DNL Orders]）を[!UICONTROL **[!UICONTROL 定義]**]領域にドラッグします。
 1. 指標に「![歯車](/help/assets/icons2/Settings.svg)」を選択します。
-1. 表示されるポップアップで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択して、そのイベントの[ アトリビューションモデル ](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)を&#x200B;**[!UICONTROL 参加]**&#x200B;に定義し、[!UICONTROL  コンテナ ]の&#x200B;**[!UICONTROL セッション]**&#x200B;を選択します。 「**[!UICONTROL 適用]**」を選択して確認します。
+1. 表示されるポップアップで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択して、そのイベントの[&#x200B; アトリビューションモデル &#x200B;](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)を&#x200B;**[!UICONTROL 参加]**&#x200B;に定義し、[!UICONTROL &#x200B; コンテナ &#x200B;]の&#x200B;**[!UICONTROL セッション]**&#x200B;を選択します。 「**[!UICONTROL 適用]**」を選択して確認します。
 
 
    ![列アトリビューションモデルのポップアップに、「モデルとして選択された参加」と「ルックバックウィンドウ用に選択されたセッション」が表示されている](assets/participation-setup.png)。
@@ -52,4 +52,4 @@ ht-degree: 6%
 1. [!UICONTROL **保存**]&#x200B;を選択して、指標を保存します。
 1. レポートで計算指標を使用します。 例えば、レポートで計算された[!DNL Orders (Session Participation)]指標を使用して、注文を含むセッションに貢献した（または参加した）顧客層を表示します。
 
-   顧客層と注文を示す![ フリーフォームテーブル。](assets/participation-pages-customer-tier.png)
+   顧客層と注文を示す![&#x200B; フリーフォームテーブル。](assets/participation-pages-customer-tier.png)

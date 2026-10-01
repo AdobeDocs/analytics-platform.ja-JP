@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ## テーブルでの予測の表示
 
-時系列フリーフォームテーブルで予測を表示できます。 [!UICONTROL 予測を表示]が[ ユーザー設定](../user-preferences.md)でフリーフォームテーブルに対して有効になっている場合、予測は、テーブルに追加された最初の指標列に対して自動的に表示されます。 追加の列の場合：
+時系列フリーフォームテーブルで予測を表示できます。 [!UICONTROL 予測を表示]が[&#x200B; ユーザー設定](../user-preferences.md)でフリーフォームテーブルに対して有効になっている場合、予測は、テーブルに追加された最初の指標列に対して自動的に表示されます。 追加の列の場合：
 
 1. 列ヘッダーの列設定アイコン ![列設定](/help/assets/icons2/Settings.svg)を選択し、オプションのリストで&#x200B;**[!UICONTROL 予測を表示]**&#x200B;が選択されていることを確認します。 詳しくは、[列設定](../visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 予測は、次の表に示されています。
 
-![ テーブルに予測を表示](assets/show-forecast-table.png)
+![&#x200B; テーブルに予測を表示](assets/show-forecast-table.png)
 
 * 各セルの予測値と割合は、**ダークグレー**&#x200B;で表示されます。
 * 予測値を示すには、予測記号![ForecastAnalytics](/help/assets/icons/ForecastAnalytics.svg)がセルの右上隅に表示されます。

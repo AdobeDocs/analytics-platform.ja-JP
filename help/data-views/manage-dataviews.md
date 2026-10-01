@@ -36,13 +36,13 @@ ht-degree: 10%
 # データビューの管理
 
 
-1つ以上のデータビュー](/help/data-views/create-dataview.md)を[作成または編集したら、**[!UICONTROL データビュー]**&#x200B;でそれらを管理できます。
+1つ以上のデータビュー[&#128279;](/help/data-views/create-dataview.md)を作成または編集したら、**[!UICONTROL データビュー]**&#x200B;でそれらを管理できます。
 
 Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONTROL Data Management]** > **[!UICONTROL Data views]**&#x200B;を選択します。
 
 **[!UICONTROL データビュー]** インターフェイスには、使用可能なすべてのデータビューのテーブルが表示されます。
 
-![ データビューインターフェイス ](/help/data-views/assets/data-views.png)
+![&#x200B; データビューインターフェイス &#x200B;](/help/data-views/assets/data-views.png)
 
 次の列とアイコンを表に示します。
 
@@ -50,7 +50,7 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 | --- | --- |
 | **[!UICONTROL 名前]** | データビューの名前。 |
 | ![情報](/help/assets/icons/InfoOutline.svg) | データビューに関する情報を表示するには、データビュー名の横にある![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。<br/> データビューに関する詳細がポップアップウィンドウに表示されます。 |
-| ![詳細情報](/help/assets/icons/More.svg) | 「![その他](/help/assets/icons/More.svg)」を選択すると、コンテキストメニューが開きます。 データビューを<br/>![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** ～ [編集](#edit-data-views)を選択できます。<br/>![ コピー](/help/assets/icons/Copy.svg) **[!UICONTROL コピー]**&#x200B;から[ データビューをコピー](#copy-data-views)。<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;から[delete](#delete-data-views) データビューを削除します。<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV]**&#x200B;に書き出して[ データビューの詳細をCSV ファイルに書き出します](#export-data-views-to-csv)。<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]**&#x200B;から[新しいWorkspace プロジェクト ](#create-project-from-data-views)を作成します。<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable forEnable for]** a}を1}の1}を1}を1}有効にをををに有効に有効有効してをを有効を有効有効有効使用して{a}します。Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Data Insights Agent]**&#x200B;を無効にして、Data Insights Agentのデータビューを無効にします。 |
+| ![詳細情報](/help/assets/icons/More.svg) | 「![その他](/help/assets/icons/More.svg)」を選択すると、コンテキストメニューが開きます。 データビューを<br/>![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** ～ [編集](#edit-data-views)を選択できます。<br/>![&#x200B; コピー](/help/assets/icons/Copy.svg) **[!UICONTROL コピー]**&#x200B;から[&#x200B; データビューをコピー](#copy-data-views)。<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;から[delete](#delete-data-views) データビューを削除します。<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV]**&#x200B;に書き出して[&#x200B; データビューの詳細をCSV ファイルに書き出します](#export-data-views-to-csv)。<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]**&#x200B;から[新しいWorkspace プロジェクト &#x200B;](#create-project-from-data-views)を作成します。<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable forEnable for]** a&rbrace;を1&rbrace;の1&rbrace;を1&rbrace;を1&rbrace;有効にをををに有効に有効有効してをを有効を有効有効有効使用して{a}します。Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Data Insights Agent]**&#x200B;を無効にして、Data Insights Agentのデータビューを無効にします。 |
 | **[!UICONTROL 接続]** | データビューに関連付けられている接続の名前。 |
 | **[!UICONTROL サンドボックス]** | データビューに関連付けられているサンドボックスの名前。 |
 | **[!UICONTROL 所有者]** | データビューの所有者。 |
@@ -69,7 +69,7 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 
 ## データビューのフィルタリング
 
-データビューのリストにフィルターを適用するには、![ フィルター](/help/assets/icons/Filter.svg) アイコンを選択し、次のフィルターオプションから選択します。
+データビューのリストにフィルターを適用するには、![&#x200B; フィルター](/help/assets/icons/Filter.svg) アイコンを選択し、次のフィルターオプションから選択します。
 
 | フィルターオプション | 説明 |
 |---------|----------|
@@ -80,7 +80,7 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 | **[!UICONTROL CJA で使用]** | 「**[!UICONTROL On]**」を選択すると、Customer Journey Analyticsでの使用が有効なデータビューのみが表示されます。 「**[!UICONTROL Off]**」を選択すると、Customer Journey Analyticsでの使用がまだ有効になっていないデータビューのみが表示されます。 |
 
 
-「![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
+「![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
 
 ## データビューの作成
 
@@ -89,7 +89,7 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 
 ## データビューの編集
 
-[ データビューを編集する場合](/help/data-views/create-dataview.md):
+[&#x200B; データビューを編集する場合](/help/data-views/create-dataview.md):
 
 1. データビュー名の横にある![詳細](/help/assets/icons/More.svg)を選択します。
 1. コンテキストメニューから ![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を選択します。
@@ -105,12 +105,12 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 データビューをコピーする場合：
 
 1. データビュー名の横にある![詳細](/help/assets/icons/More.svg)を選択します。
-1. コンテキストメニューから「![ コピー](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]**」を選択します。
+1. コンテキストメニューから「![&#x200B; コピー](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]**」を選択します。
 
 または、次の操作を実行できます。
 
 1. 1つ以上のデータビュー行を選択します。
-1. 青いアクションバーから「![ コピー](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]**」を選択します。
+1. 青いアクションバーから「![&#x200B; コピー](/help/assets/icons/Copy.svg)**[!UICONTROL コピー]**」を選択します。
 
 データビューがコピーされ、名前に&#x200B;**[!UICONTROL （コピー）]**&#x200B;が追加されてリストに追加されます。
 
@@ -129,7 +129,7 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 
 1つ以上のデータビューを削除すると、**[!UICONTROL データビューを削除]** パネルに、影響を受けるプロジェクトが示されます。
 
-![ データビューを削除](/help/data-views/assets/delete-data-view.png)
+![&#x200B; データビューを削除](/help/data-views/assets/delete-data-view.png)
 
 
 * ➊ **[!UICONTROL 確認]**&#x200B;では、データビューの削除の影響が示されます。
