@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1926'
 ht-degree: 82%
 ---
 # フィールドベースのステッチ
@@ -151,7 +151,7 @@ Bob が様々なイベントをイベントデータセットの一部として�
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![下矢印](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![下矢印](/help/assets/icons/ArrowDown.svg) |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
@@ -214,7 +214,7 @@ Bob が様々なイベントをイベントデータセットの一部として�
 | イベント | タイムスタンプ | 永続 ID（Cookie ID） | ユーザー ID | 結果のID （ライブステッチ後） | 結果のID （リプレイ後） | ユーザー ID | 結果のID （プライバシーリクエスト後） |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 2023-05-12 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上矢印](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上矢印](/help/assets/icons/ArrowUp.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 3 | 2023-05-12 12:03 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
 | 5 | 2023-05-12 12:05 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |

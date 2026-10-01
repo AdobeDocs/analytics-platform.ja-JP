@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4250'
+source-wordcount: '4244'
 ht-degree: 30%
 ---
 # データフィードの作成
@@ -129,7 +129,7 @@ ht-degree: 30%
 
    ここで適用するセグメントは、データビューですでに適用されている可能性のあるセグメントに加えたものです。
 
-1. （オプション）左側のパネルで、**検索** フィールドを使用して、特定のコンポーネントを検索します。 または、**並べ替え** アイコン ![&#x200B; コンポーネントの並べ替えアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)を選択して、次のいずれかの並べ替えオプションを適用します。
+1. （オプション）左側のパネルで、**検索** フィールドを使用して、特定のコンポーネントを検索します。 または、**並べ替え** アイコン ![&#x200B; コンポーネントの並べ替えアイコン &#x200B;](/help/assets/icons/SortOrderDown.svg)を選択して、次のいずれかの並べ替えオプションを適用します。
 
    | オプション | 関数 |
    | --------- | ---------- |

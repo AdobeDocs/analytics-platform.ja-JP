@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3512'
 ht-degree: 63%
 ---
 # モバイル SDK経由でのデータ取り込み
@@ -380,7 +380,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
      - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - [!UICONTROL Mobile Core - Foreground]の横にある![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)をクリックします。
+   - [!UICONTROL Mobile Core - Foreground]の横にある![Plus](/help/assets/icons/AddCircle.svg)をクリックします。
 
      - [!UICONTROL 拡張機能] リストから&#x200B;**[!UICONTROL Mobile Core]**&#x200B;を選択します。
 
@@ -388,7 +388,7 @@ Adobe Experience Platform のタグは、ルールベースのシステムに従
 
      - 「**[!UICONTROL 変更を保持]**」を選択します。
 
-   - [!UICONTROL &#x200B; アクション &#x200B;]の下にある![&#x200B; プラス &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)追加をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
+   - [!UICONTROL &#x200B; アクション &#x200B;]の下にある![&#x200B; プラス &#x200B;](/help/assets/icons/AddCircle.svg)追加をクリックします。 [!UICONTROL アクション設定]ダイアログで、次の手順を実行します。
 
      - [!UICONTROL 拡張機能] リストから&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**&#x200B;を選択します。
 
@@ -447,9 +447,9 @@ Adobe Experience Platform タグは、Adobe Experience Platform Edge Networkの�
 
 1. 左パネルで「**[!UICONTROL 環境]**」を選択します。
 
-2. 環境のリストから、正しいインストール ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) ボタンを選択します。
+2. 環境のリストから、正しいインストール ![Box](/help/assets/icons/Box.svg) ボタンを選択します。
 
-   [!UICONTROL &#x200B; モバイルインストール手順] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連するコードスニペットの横にある「![&#x200B; コピー](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)」ボタンを使用します。
+   [!UICONTROL &#x200B; モバイルインストール手順] ダイアログで、適切なプラットフォーム（[!UICONTROL iOS]、[!UICONTROL Android]）を選択します。 次に、モバイルアプリの設定と初期化に使用する関連するコードスニペットの横にある「![&#x200B; コピー](/help/assets/icons/Copy.svg)」ボタンを使用します。
 
    ![環境](./assets/environment-mobile.png)
 

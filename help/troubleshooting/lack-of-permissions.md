@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 94%
+source-wordcount: '212'
+ht-degree: 93%
 ---
 # 権限の不足
 
@@ -64,7 +64,7 @@ ht-degree: 94%
 
 1. 関連する役割に移動します。
 
-1. 役割を編集するには、![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)「**[!UICONTROL 編集]**」を選択します。
+1. 役割を編集するには、![編集](/help/assets/icons/Edit.svg)「**[!UICONTROL 編集]**」を選択します。
 
 1. **[!UICONTROL データ使用ポリシーを管理]**&#x200B;と&#x200B;**[!UICONTROL データ使用ポリシーを表示]**&#x200B;が&#x200B;**[!UICONTROL データガバナンス]**&#x200B;コンテナに追加されていることを確認します。
 

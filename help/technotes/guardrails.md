@@ -8,31 +8,44 @@ exl-id: f093ac54-7d31-449b-a441-a65856a1d535
 TQID: https://experienceleague.adobe.com/vNCqAk1-4e34AJrXqzHJgrTDtly-FZTqOGRISjkX5Q8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
+    internal-label: Administration
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 2440
+source-wordcount: '2440'
 ht-degree: 12%
-
 ---
-
 # Customer Journey Analyticsのガードレール
 
 このドキュメントでは、Customer Journey Analyticsの様々なコンポーネントに関する制限について説明します。 ガードレール、スコープパラメーター、および使用権限については、[Customer Journey Analyticsの商品説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics.html)、Adobe Analytics アドオンの[商品説明：Customer Journey Analytics](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html)、または[Customer Journey Analytics B2B editionの商品説明](https://helpx.adobe.com/jp/legal/product-descriptions/customer-journey-analytics-b2b.html)を参照してください。
@@ -94,9 +107,9 @@ ht-degree: 12%
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
-| Attribution AI models | 35 | Maximum number of Attribution AI Model per year to analyze the impact of up to an average of 60 independent touchpoints on a specified conversion event.  | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
-| Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
-| Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) |
+| Attribution AI models | 35 | Maximum number of Attribution AI Model per year to analyze the impact of up to an average of 60 independent touchpoints on a specified conversion event.  | ![check](/help/assets/icons/Checkmark.svg)  |
+| Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](/help/assets/icons/Checkmark.svg)  |
+| Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](/help/assets/icons/Checkmark.svg) |
 
 -->
 

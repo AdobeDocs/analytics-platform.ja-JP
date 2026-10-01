@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '10602'
+source-wordcount: '10578'
 ht-degree: 98%
 ---
 # 派生フィールド {#derived-fields}
@@ -877,10 +877,10 @@ Customer Journey Analytics では、次のデフォルトのコンテナモデ�
 
 分類ルールインターフェイスでは、次の追加機能を使用できます。
 
-- すべてのテーブルの値をすばやくクリアするには、![消去](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL すべてのテーブルの値をクリア]** を選択します。
-- 「値が等しい場合」の元の値と「値を次の値に置換」の新しい値を含む CSV ファイルをアップロードするには、![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL CSV をアップロード]** を選択します。
-- アップロードする元の値と新しい値を含む CSV ファイルを作成するためのテンプレートをダウンロードするには、![ダウンロード](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV テンプレートをダウンロード]** を選択します。
-- ルールインターフェイスに入力されたすべての元の値と新しい値を含む CSV ファイルをダウンロードするには、![ダウンロード](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV 値をダウンロード]** を選択します。
+- すべてのテーブルの値をすばやくクリアするには、![消去](/help/assets/icons/Erase.svg) **[!UICONTROL すべてのテーブルの値をクリア]** を選択します。
+- 「値が等しい場合」の元の値と「値を次の値に置換」の新しい値を含む CSV ファイルをアップロードするには、![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV をアップロード]** を選択します。
+- アップロードする元の値と新しい値を含む CSV ファイルを作成するためのテンプレートをダウンロードするには、![ダウンロード](/help/assets/icons/Download.svg) **[!UICONTROL CSV テンプレートをダウンロード]** を選択します。
+- ルールインターフェイスに入力されたすべての元の値と新しい値を含む CSV ファイルをダウンロードするには、![ダウンロード](/help/assets/icons/Download.svg) **[!UICONTROL CSV 値をダウンロード]** を選択します。
 
 
 +++

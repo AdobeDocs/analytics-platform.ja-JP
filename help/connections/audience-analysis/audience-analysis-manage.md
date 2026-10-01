@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 5%
+source-wordcount: '296'
+ht-degree: 2%
 ---
 # オーディエンス分析の設定の管理{#manage-audience-analysis}
 
@@ -65,9 +65,9 @@ ht-degree: 5%
 
    * **[!UICONTROL ステータス]**：設定のステータス。 可能なステータスは、「完了」、「進行中」、「失敗」です。<!--true?-->
 
-   列アイコン ![列アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
+   列アイコン ![列アイコン &#x200B;](/help/assets/icons2/ColumnSettings.svg)を選択し、非表示にする列の選択を解除してから&#x200B;**[!UICONTROL 適用]**&#x200B;を選択すると、列を非表示にできます。
 
-1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![&#x200B; オーディエンス分析フィルターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、**フィルター** ![&#x200B; オーディエンス分析フィルターアイコン &#x200B;](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 

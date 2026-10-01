@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '899'
 ht-degree: 92%
 ---
 # 接続への Analytics ソースコネクタデータセットの追加 {#upgrade-source-connector-dataset}
@@ -115,7 +115,7 @@ Analytics ソースコネクタを使用して履歴データを Customer Journe
 
 1. 「**[!UICONTROL データセットのバックフィル]**」セクションで、「**[!UICONTROL バックフィルをリクエスト]**」を選択します。
 
-1. 開始日と終了日を入力するか、カレンダーアイコン ![&#x200B; カレンダー &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
+1. 開始日と終了日を入力するか、カレンダーアイコン ![&#x200B; カレンダー &#x200B;](/help/assets/icons/Calendar.svg) をクリックして、Customer Journey Analytics への接続のバックフィルに含める期間を定義します。
 
    バックフィルをリクエストする日付を指定する場合は、明示的に指定します。 いくつかの要因に応じて、次のいずれかの操作を行うことができます。
 

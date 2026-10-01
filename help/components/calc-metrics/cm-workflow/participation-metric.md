@@ -6,22 +6,27 @@ exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
 TQID: https://experienceleague.adobe.com/no7rAZUl25LTEPqwRyC7vY4XcottzPGRq-DCAR5ez54
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 232
-ht-degree: 9%
-
+source-wordcount: '226'
+ht-degree: 6%
 ---
-
 # パーティシペーション指標
 
 参加指標は、ディメンションの個々の値（ページビューなど）が、特定の指標（注文数など）を含むセッションに貢献したり、参加したりする方法を定量化するために使用されます。
@@ -34,7 +39,7 @@ ht-degree: 9%
 
 1. [計算指標](cm-workflow.md)を作成し、[計算指標ビルダー](cm-build-metrics.md)で、指標`Participation`または類似の名前を付けます。
 1. 成功イベントを含む指標（例：[!DNL Orders]）を[!UICONTROL **[!UICONTROL 定義]**]領域にドラッグします。
-1. 指標に「![歯車](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)」を選択します。
+1. 指標に「![歯車](/help/assets/icons2/Settings.svg)」を選択します。
 1. 表示されるポップアップで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択して、そのイベントの[&#x200B; アトリビューションモデル &#x200B;](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md)を&#x200B;**[!UICONTROL 参加]**&#x200B;に定義し、[!UICONTROL &#x200B; コンテナ &#x200B;]の&#x200B;**[!UICONTROL セッション]**&#x200B;を選択します。 「**[!UICONTROL 適用]**」を選択して確認します。
 
 

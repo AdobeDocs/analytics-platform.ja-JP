@@ -7,28 +7,38 @@ exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
 TQID: https://experienceleague.adobe.com/b-y-D9Ba6SlV0tW8D1btQLWYU32HpKrgG3DIftie1W8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1364
-ht-degree: 61%
-
+source-wordcount: '1322'
+ht-degree: 59%
 ---
-
 # コンポーネント情報の表示
 
 データディクショナリを使用すると、コンポーネントに関する情報（説明、類似コンポーネント、コンポーネントが頻繁に使用する他のコンポーネントなど）を表示できます。
@@ -51,19 +61,19 @@ ht-degree: 61%
 
    コンポーネントのタイプは、カラーとアイコンの両方で識別できます。
 
-   * **ディメンション** ![Dimension アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)はオレンジ色です
+   * **ディメンション** ![Dimension アイコン &#x200B;](/help/assets/icons/Data.svg)はオレンジ色です
 
-   * **セグメント** ![&#x200B; セグメントアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)は青です
+   * **セグメント** ![&#x200B; セグメントアイコン &#x200B;](/help/assets/icons/Segmentation.svg)は青です
 
-   * **日付範囲** ![日付範囲アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)は紫色です
+   * **日付範囲** ![日付範囲アイコン &#x200B;](/help/assets/icons/Calendar.svg)は紫色です
 
-   * **指標** ![指標アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)は緑色です
+   * **指標** ![指標アイコン &#x200B;](/help/assets/icons/Event.svg)は緑色です
 
    * **Adobe アイコン** ![Adobe アイコン &#x200B;](assets/default-calc-metric-icon.png)は、計算指標テンプレートまたはセグメント テンプレートを示します
 
-   * **電卓アイコン** ![電卓アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)は、組織内のAnalytics管理者によって作成された計算指標を示します
+   * **電卓アイコン** ![電卓アイコン &#x200B;](/help/assets/icons/Calculator.svg)は、組織内のAnalytics管理者によって作成された計算指標を示します
 
-1. （オプション）**フィルター**&#x200B;アイコン ![データ辞書のフィルターアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) を選択し、次のフィルターオプションのいずれかを選択して、コンポーネントのリストをフィルタリングします。
+1. （オプション）**フィルター**&#x200B;アイコン ![データ辞書のフィルターアイコン](/help/assets/icons/Filter.svg) を選択し、次のフィルターオプションのいずれかを選択して、コンポーネントのリストをフィルタリングします。
 
    | オプション | 関数 |
    |---------|----------|
@@ -82,7 +92,7 @@ ht-degree: 61%
 
    {style="table-layout:auto"}
 
-1. （オプション）「**並べ替え**」アイコン ![コンポーネントを並べ替えアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) を選択し、次のフィルターオプションのいずれかを選択してコンポーネントのリストを並べ替えます。
+1. （オプション）「**並べ替え**」アイコン ![コンポーネントを並べ替えアイコン](/help/assets/icons/SortOrderDown.svg) を選択し、次のフィルターオプションのいずれかを選択してコンポーネントのリストを並べ替えます。
 
    | オプション | 関数 |
    |---------|----------|

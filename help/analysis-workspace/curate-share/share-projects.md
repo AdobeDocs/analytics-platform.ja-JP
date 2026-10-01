@@ -8,31 +8,44 @@ role: User
 TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share, Curate and share (CJA)
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: Privacy
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 2183
+source-wordcount: '2177'
 ht-degree: 90%
-
 ---
-
 # プロジェクトの共有 {#share-projects}
 
 >[!CONTEXTUALHELP]
@@ -72,7 +85,7 @@ ht-degree: 90%
 
 特定の役割をユーザーやグループと共有したり、リンクを共有したりできます。
 
-* [特定のプロジェクトロールを共有](#share-a-specific-project-role)
+* [プロジェクトの特定の役割を共有](#share-a-specific-project-role)
 
 * [プロジェクトへのリンクの共有](#share-a-link-to-a-project)
 
@@ -80,7 +93,7 @@ ht-degree: 90%
 
 特定のプロジェクトの役割を組織内のユーザーやグループと共有する場合は、以下の点を考慮してください。
 
-* プロジェクトの役割（**[!UICONTROL オリジナルを編集]**、**[!UICONTROL コピーを編集]**&#x200B;および&#x200B;**[!UICONTROL 読み取り専用]**）は、ユーザーと特定のプロジェクト ID に結び付けられます。 プロジェクト ロールは、[CX Enterprise Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-getting-started)で管理されているユーザー権限とは独立しています。
+* プロジェクトの役割（**[!UICONTROL オリジナルを編集]**、**[!UICONTROL コピーを編集]**&#x200B;および&#x200B;**[!UICONTROL 読み取り専用]**）は、ユーザーと特定のプロジェクト ID に結び付けられます。 プロジェクトの役割は、[CX Enterprise Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-getting-started)で管理されているユーザー権限とは独立しています。
 
 * Customer Journey Analyticsでは、グループは[CX Enterprise Admin Console](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/admin-getting-started)の製品プロファイルによって定義されます。 管理者は、*すべて*&#x200B;を含む任意のグループと共有できます。 管理者以外のユーザーは、*すべて*&#x200B;を除き、自分が属するグループと共有できます。
 
@@ -94,7 +107,7 @@ ht-degree: 90%
 
   次に、プロジェクト A と B が受信者 4 および 7 と共有されます。 新しい共有リストはプロジェクト A では 1、2、3、4、7 になり、プロジェクト B では 4、5、6、7 になりました。
 
-特定のプロジェクトロールを組織内のユーザーまたはグループと共有するには、次の手順に従います。
+プロジェクトの特定の役割を組織内のユーザーまたはグループと共有するには、次の手順に従います。
 
 1. Adobe Customer Journey Analytics で、「[!UICONTROL **Workspace**]」タブを選択し、左側のパネルで「[!UICONTROL **プロジェクト**]」を選択します。
 
@@ -109,7 +122,7 @@ ht-degree: 90%
 
    ![プロジェクトを共有ウィンドウ &#x200B;](assets/share-proj-modal.png)
 
-1. 用意されているいずれかのロールフィールドに、受信者または受信者グループを追加します。
+1. 用意されているいずれかの役割フィールドに、受信者または受信者グループを追加します。
 
    **オリジナルを編集：**&#x200B;受信者は、変更内容をプロジェクトに&#x200B;**[!UICONTROL 保存]**&#x200B;し、共同所有者になることができます。 このロールは、プロジェクトを他の同僚と共同管理する場合に役立ちます。 このロールには、共有されたプロジェクトの受信者リストの編集、削除、変更が含まれます。 <br>注：Analysis Workspace は現在、ライブコラボレーションをサポートしていないので、一度に 1 人のユーザーだけがプロジェクトを編集することをお勧めします。 プロジェクトを同時に保存した場合は、最後に保存されたバージョンが保持されます。
 
@@ -176,7 +189,7 @@ Customer Journey Analytics にアクセスできないユーザーに Analysis W
 >
 >* 多数のユーザーが特定のリンクに同時にアクセスしようとすると、プロジェクトにアクセスできなくなる可能性があります。 デフォルトでは、5 分ごとに 190 人を超えるユーザーが 1 つのリンクにアクセスできます。 組織がこの上限に達した場合は、5 分待ってから、もう一度リンクにアクセスしてみてください。
 >
->* [!DNL Healthcare Shield]と[!DNL Privacy & Security Shield]の両方のライセンスで、[!UICONTROL 誰とでも共有]機能を使用するには、CX エンタープライズ認証が必要です。 [!DNL Healthcare Shield]のお客様の場合、「HIPAA準拠」警告が表示されますが、CX Enterpriseに認証した後でもこの機能を使用できます。
+>* [!DNL Healthcare Shield]と[!DNL Privacy & Security Shield]の両方のライセンスで、[!UICONTROL 誰とでも共有]機能を使用するには、CX Enterprise認証が必要です。 [!DNL Healthcare Shield]のお客様の場合、「HIPAA準拠」の警告が表示されますが、CX Enterpriseへの認証後も、この機能を使用できます。
 
 >[!BEGINSHADEBOX]
 
@@ -205,7 +218,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
    * **[!UICONTROL Experience Cloud 認証を要求]：**
 
-     このオプションを有効にすると、プロジェクトにアクセスできるユーザーは、共有するプロジェクトが作成されたCX Enterprise （Experience Cloud）組織にログインできるユーザーのみになります。 ただし、共有相手のユーザーは、Customer Journey Analytics へのアクセス権が不要です。
+     このオプションを有効にすると、プロジェクトにアクセスできるユーザーは、共有するプロジェクトが作成されたCX Enterprise（Experience Cloud）組織にログインできるユーザーのみになります。 ただし、共有相手のユーザーは、Customer Journey Analytics へのアクセス権が不要です。
 
      Customer Journey Analytics 管理者は、[環境設定](/help/analysis-workspace/user-preferences.md)で説明されているように、会社用にこの環境設定を設定できます。 管理者がどのようにこのオプションを設定したかによっては、次のシナリオが発生する可能性があります。
 
@@ -219,7 +232,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
    リンクの共有相手であるユーザーであれば誰でも、Analysis Workspace プロジェクトを表示できます。
 
-1. （オプション）![新しいリンクを生成アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) を選択すると、以前にプロジェクトへのリンクを受信したユーザーからのアクセスを削除できます。 新しいリンクが生成され、プロジェクトへのアクセスを付与するユーザーにそのリンクを共有できます。
+1. （オプション）![新しいリンクを生成アイコン](/help/assets/icons/Refresh.svg) を選択すると、以前にプロジェクトへのリンクを受信したユーザーからのアクセスを削除できます。 新しいリンクが生成され、プロジェクトへのアクセスを付与するユーザーにそのリンクを共有できます。
 
 1. 「**[!UICONTROL 閉じる]**」を選択して、共有ダイアログボックスを閉じます。 変更内容は自動的に保存されます。
 

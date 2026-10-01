@@ -9,24 +9,30 @@ autotag-review: '2026-05-19T10:45:24.919Z'
 TQID: 'https://experienceleague.adobe.com/fPYOLKGTjiZDeSWLRhvkywKht8Yoq4k54EOcazJw74M'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 933
-ht-degree: 12%
-
+source-wordcount: '915'
+ht-degree: 10%
 ---
-
 # データビューの管理
 
 
@@ -43,8 +49,8 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 | 列またはアイコン | 説明 |
 | --- | --- |
 | **[!UICONTROL 名前]** | データビューの名前。 |
-| ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | データビューに関する情報を表示するには、データビュー名の横にある![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。<br/> データビューに関する詳細がポップアップウィンドウに表示されます。 |
-| ![詳細情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 「![その他](/help/assets/icons/More.svg)」を選択すると、コンテキストメニューが開きます。 データビューを<br/>![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** ～ [編集](#edit-data-views)を選択できます。<br/>![&#x200B; コピー](/help/assets/icons/Copy.svg) **[!UICONTROL コピー]**&#x200B;から[&#x200B; データビューをコピー](#copy-data-views)。<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;から[delete](#delete-data-views) データビューを削除します。<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV]**&#x200B;に書き出して[&#x200B; データビューの詳細をCSV ファイルに書き出します](#export-data-views-to-csv)。<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]**&#x200B;から[新しいWorkspace プロジェクト &#x200B;](#create-project-from-data-views)を作成します。<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable forEnable for]** a&rbrace;を1&rbrace;の1&rbrace;を1&rbrace;を1&rbrace;有効にをををに有効に有効有効してをを有効を有効有効有効使用して{a}します。Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Data Insights Agent]**&#x200B;を無効にして、Data Insights Agentのデータビューを無効にします。 |
+| ![情報](/help/assets/icons/InfoOutline.svg) | データビューに関する情報を表示するには、データビュー名の横にある![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択します。<br/> データビューに関する詳細がポップアップウィンドウに表示されます。 |
+| ![詳細情報](/help/assets/icons/More.svg) | 「![その他](/help/assets/icons/More.svg)」を選択すると、コンテキストメニューが開きます。 データビューを<br/>![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** ～ [編集](#edit-data-views)を選択できます。<br/>![&#x200B; コピー](/help/assets/icons/Copy.svg) **[!UICONTROL コピー]**&#x200B;から[&#x200B; データビューをコピー](#copy-data-views)。<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**&#x200B;から[delete](#delete-data-views) データビューを削除します。<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV]**&#x200B;に書き出して[&#x200B; データビューの詳細をCSV ファイルに書き出します](#export-data-views-to-csv)。<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]**&#x200B;から[新しいWorkspace プロジェクト &#x200B;](#create-project-from-data-views)を作成します。<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable forEnable for]** a&rbrace;を1&rbrace;の1&rbrace;を1&rbrace;を1&rbrace;有効にをををに有効に有効有効してをを有効を有効有効有効使用して{a}します。Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Data Insights Agent]**&#x200B;を無効にして、Data Insights Agentのデータビューを無効にします。 |
 | **[!UICONTROL 接続]** | データビューに関連付けられている接続の名前。 |
 | **[!UICONTROL サンドボックス]** | データビューに関連付けられているサンドボックスの名前。 |
 | **[!UICONTROL 所有者]** | データビューの所有者。 |
@@ -59,7 +65,7 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 
 ## データビューを検索
 
-![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ボックスを使用して、データビューをすばやく検索できます。
+![検索](/help/assets/icons/Search.svg) ボックスを使用して、データビューをすばやく検索できます。
 
 ## データビューのフィルタリング
 

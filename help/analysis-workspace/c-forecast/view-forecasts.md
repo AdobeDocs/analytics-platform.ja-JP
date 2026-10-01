@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 5%
+source-wordcount: '360'
+ht-degree: 2%
 ---
 # 予測を表示
 
@@ -32,7 +32,7 @@ ht-degree: 5%
 
 時系列フリーフォームテーブルで予測を表示できます。 [!UICONTROL 予測を表示]が[&#x200B; ユーザー設定](../user-preferences.md)でフリーフォームテーブルに対して有効になっている場合、予測は、テーブルに追加された最初の指標列に対して自動的に表示されます。 追加の列の場合：
 
-1. 列ヘッダーの列設定アイコン ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)を選択し、オプションのリストで&#x200B;**[!UICONTROL 予測を表示]**&#x200B;が選択されていることを確認します。 詳しくは、[列設定](../visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
+1. 列ヘッダーの列設定アイコン ![列設定](/help/assets/icons2/Settings.svg)を選択し、オプションのリストで&#x200B;**[!UICONTROL 予測を表示]**&#x200B;が選択されていることを確認します。 詳しくは、[列設定](../visualizations/freeform-table/column-row-settings/column-settings.md)を参照してください。
 
 1. **[!UICONTROL 列設定]** メニューの外側をクリックして、設定を保存し、更新されたテーブルを表示します。
 
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 折れ線グラフは、予測を表示できる唯一のビジュアライゼーションです。
 
-1. ビジュアライゼーションヘッダーの設定アイコン ![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)を選択し、オプションのリストで&#x200B;**[!UICONTROL 予測を表示]**&#x200B;が選択されていることを確認します。
+1. ビジュアライゼーションヘッダーの設定アイコン ![列設定](/help/assets/icons2/Settings.svg)を選択し、オプションのリストで&#x200B;**[!UICONTROL 予測を表示]**&#x200B;が選択されていることを確認します。
 
 1. （オプション）予測でグラフを適切に拡大/縮小できるようにするには、**[!UICONTROL 予測でY軸を拡大/縮小する]**&#x200B;を選択します。 このオプションは、読みにくいグラフをレンダリングする場合があるため、デフォルトでは選択されません。
 

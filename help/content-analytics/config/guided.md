@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4806'
+source-wordcount: '4800'
 ht-degree: 56%
 ---
 
@@ -382,7 +382,7 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="エクスペリエンスのキャプチャと定義"
->abstract="有効にすると、エクスペリエンスデータが収集され、エクスペリエンス属性が生成されて、エクスペリエンスレポートが使用可能になります。 <br><br/>現在の設定に関連付けられているタグプロパティ内のエクスペリエンスのデータ収集設定を変更するには、![編集](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編集]** を使用します。"
+>abstract="有効にすると、エクスペリエンスデータが収集され、エクスペリエンス属性が生成されて、エクスペリエンスレポートが使用可能になります。 <br><br/>現在の設定に関連付けられているタグプロパティ内のエクスペリエンスのデータ収集設定を変更するには、![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]** を使用します。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"

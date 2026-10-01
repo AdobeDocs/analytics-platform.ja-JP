@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
+source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
 workflow-type: tm+mt
-source-wordcount: '10738'
+source-wordcount: '10677'
 ht-degree: 89%
 ---
 # 接続の作成または編集 {#create-or-edit-a-connection}
@@ -560,7 +560,7 @@ ht-degree: 89%
 
    | 列 | 説明 |
    |---|---|
-   | **[!UICONTROL データセット]** | データセットの名前。 名前を選択すると、Adobe Experience Platform 上のデータセットに移動します。 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)を選択すると、データセットの詳細を含むポップアップが表示されます。 「**[!UICONTROL Platform で編集]**」を選択すると、Experience Platform でデータセットを直接編集できます。 |
+   | **[!UICONTROL データセット]** | データセットの名前。 名前を選択すると、Adobe Experience Platform 上のデータセットに移動します。 ![InfoOutline](/help/assets/icons/InfoOutline.svg)を選択すると、データセットの詳細が表示されるポップアップが表示されます。 「**[!UICONTROL Platform で編集]**」を選択すると、Experience Platform でデータセットを直接編集できます。 |
    | **[!UICONTROL データセットタイプ]** | データセットのタイプ：[イベント](#event-dataset)、[プロファイル](#profile-dataset)、[ルックアップ](#lookup-dataset)、[概要](#summary-dataset)、[アドホック](#ad-hoc-dataset)、[リレーショナル](#relational-dataset)。 |
    | **[!UICONTROL レコード数]** | Adobe Experience Platform のデータセットにおける先月のレコード総数。 |
    | **[!UICONTROL スキーマ]** | データセットのスキーマ。 名前を選択すると、Adobe Experience Platform のスキーマが表示されます。 |
@@ -568,10 +568,10 @@ ht-degree: 89%
    | **[!UICONTROL データセット ID]** | データセットの ID。 |
    | **[!UICONTROL 最終更新日]** | データセットの最終更新日タイムスタンプ。 |
 
-   * データセットのリストに表示される列を変更するには、「![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)」をクリックし、[!UICONTROL テーブルをカスタマイズ]ダイアログで表示する列を選択します。
-   * 特定のデータセットを検索するには、「![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)」検索フィールドを使用します。
-   * 選択したデータセットの表示や非表示を切り替えるには、「![選択](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg)」、「**[!UICONTROL 選択した項目を非表示]**」または「**[!UICONTROL 選択した項目を表示]**」の順に選択します。
-   * 選択したデータセットのリストからデータセットを削除するには、「![閉じる](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)」を使用します。 選択したすべてのデータセットを削除するには、「**[!UICONTROL すべてクリア]**」を選択します。
+   * データセットのリストに表示される列を変更するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg)を選択し、[!UICONTROL &#x200B; テーブルをカスタマイズ &#x200B;] ダイアログに表示する列を選択します。
+   * 特定のデータセットを検索するには、「![検索](/help/assets/icons/Search.svg)」検索フィールドを使用します。
+   * 選択したデータセットの表示と非表示を切り替えるには、![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL 選択したデータセットを非表示]**&#x200B;または&#x200B;**[!UICONTROL 選択したデータセットを表示]**&#x200B;を選択します。
+   * 選択したデータセットのリストからデータセットを削除するには、「![閉じる](/help/assets/icons2/Close.svg)」を使用します。 選択したすべてのデータセットを削除するには、「**[!UICONTROL すべてクリア]**」を選択します。
    * データセットの詳細を表示するには、![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択します。
 
 
@@ -623,7 +623,7 @@ ht-degree: 89%
 
    | 列 | 説明 |
    |---|---|
-   | **[!UICONTROL データセット]** | データセットの名前。 名前を選択すると、Adobe Experience Platform 上のデータセットに移動します。 ![情報](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)を選択すると、データセットの詳細を含むポップアップが表示されます。 「**[!UICONTROL Platform で編集]**」を選択すると、Experience Platform でデータセットを直接編集できます。 |
+   | **[!UICONTROL データセット]** | データセットの名前。 名前を選択すると、Adobe Experience Platform 上のデータセットに移動します。 ![情報](/help/assets/icons/InfoOutline.svg)を選択すると、データセットの詳細を含むポップアップが表示されます。 「**[!UICONTROL Platform で編集]**」を選択すると、Experience Platform でデータセットを直接編集できます。 |
    | **[!UICONTROL データセットタイプ]** | データセットのタイプ：[イベント](#event-dataset)、[プロファイル](#profile-dataset)、[ルックアップ](#lookup-dataset)、[概要](#summary-dataset)、[アドホック](#ad-hoc-dataset)、[リレーショナル](#relational-dataset)。 |
    | **[!UICONTROL レコード数]** | Adobe Experience Platform のデータセットにおける先月のレコード総数。 |
    | **[!UICONTROL スキーマ]** | データセットのスキーマ。 名前を選択すると、Adobe Experience Platform のスキーマが表示されます。 |
@@ -631,10 +631,10 @@ ht-degree: 89%
    | **[!UICONTROL データセット ID]** | データセットの ID。 |
    | **[!UICONTROL 最終更新日]** | データセットの最終更新日タイムスタンプ。 |
 
-   * データセットのリストに表示される列を変更するには、「![列設定](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)」をクリックし、[!UICONTROL テーブルをカスタマイズ]ダイアログで表示する列を選択します。
-   * 特定のデータセットを検索するには、「![検索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)」検索フィールドを使用します。
-   * 選択したデータセットの表示や非表示を切り替えるには、「![選択](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg)」、「**[!UICONTROL 選択した項目を非表示]**」または「**[!UICONTROL 選択した項目を表示]**」の順に選択します。
-   * 選択したデータセットのリストからデータセットを削除するには、「![閉じる](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)」を使用します。 選択したすべてのデータセットを削除するには、「**[!UICONTROL すべてクリア]**」を選択します。
+   * データセットのリストに表示される列を変更するには、「![列設定](/help/assets/icons/ColumnSetting.svg)」をクリックし、[!UICONTROL テーブルをカスタマイズ]ダイアログで表示する列を選択します。
+   * 特定のデータセットを検索するには、「![検索](/help/assets/icons/Search.svg)」検索フィールドを使用します。
+   * 選択したデータセットの表示や非表示を切り替えるには、「![選択](/help/assets/icons/SelectBoxAll.svg)」、「**[!UICONTROL 選択した項目を非表示]**」または「**[!UICONTROL 選択した項目を表示]**」の順に選択します。
+   * 選択したデータセットのリストからデータセットを削除するには、「![閉じる](/help/assets/icons/Close.svg)」を使用します。 選択したすべてのデータセットを削除するには、「**[!UICONTROL すべてクリア]**」を選択します。
    * データセットの詳細を表示するには、![InfoOutline](/help/assets/icons/InfoOutline.svg) を選択します。
 
 
