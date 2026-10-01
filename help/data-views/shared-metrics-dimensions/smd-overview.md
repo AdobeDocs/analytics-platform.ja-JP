@@ -39,7 +39,7 @@ ht-degree: 3%
 
 ## 権限
 
-* [製品管理者](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role)には、[Experience Platform権限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions)のすべてのサンドボックスに対する&#x200B;**データ使用ポリシーの管理**&#x200B;および&#x200B;**データ使用ポリシーの表示**&#x200B;権限も必要です。
+* [製品管理者](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/technotes/access-control#product-administrator-role)には、[Experience Platform権限](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home#permissions)のすべてのサンドボックスに対する&#x200B;**データ使用ポリシーの管理**&#x200B;および&#x200B;**データ使用ポリシーの表示**&#x200B;権限も必要です。
 
 ## ワークフロー
 
