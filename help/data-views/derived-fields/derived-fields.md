@@ -1631,10 +1631,10 @@ URL の一部を取得し、一意のページ識別子として使用してト�
 
 | ページ URL |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/jp/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/jp/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/jp/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -2195,7 +2195,7 @@ Classify 関数の演算子は、[!UICONTROL 値が元の値と等しい場合]�
 
 >[!MORELIKETHIS]
 >
->- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
->- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
->- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
+>- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=ja)
+>- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=ja)
+>- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=ja)
 
