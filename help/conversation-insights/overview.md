@@ -4,20 +4,33 @@ description: 会話インサイトの価値と用語について説明し、会�
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
+autotag-review: '2026-10-02T07:02:10.598Z'
+TQID: 'https://experienceleague.adobe.com/5PahkoK4v7-PemV3onXn-CWL66hqVGuNauDBDlAeoeo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-    internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
+  - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
+    internal-label: ''
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: e550b7005c12bc5e2fb92bea44767bae0d7db3dc
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+source-git-commit: 05d993f3ae8bda2bbf9ce79d5462d47f3d507e92
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 1%
@@ -50,12 +63,12 @@ ht-degree: 1%
 
 ## 概念
 
-会話インサイトの上位レベルでは、[会話](#conversation)は相関する[&#x200B; ターン &#x200B;](#turn)のシーケンスです。 各ターンは、[&#x200B; プロンプト &#x200B;](#prompt)、[応答](#response)、[&#x200B; フィードバック &#x200B;](#feedback)の各イベントを個別に配信できます。 [信号](#signal)は、会話から派生した構造化された観測値です。一方、ブレンドされたデータセットは、ソースイベントと信号をレポート用にまとめます。
+会話インサイトの上位レベルでは、[会話](#conversation)は相関する[ ターン ](#turn)のシーケンスです。 各ターンは、[ プロンプト ](#prompt)、[応答](#response)、[ フィードバック ](#feedback)の各イベントを個別に配信できます。 [信号](#signal)は、会話から派生した構造化された観測値です。一方、ブレンドされたデータセットは、ソースイベントと信号をレポート用にまとめます。
 
 会話インサイトは、エージェントのインタラクションを次のふたつのレベルで分析します。
 
 * [会話](#conversation) レベル：複数のターンを含む、ユーザーとエージェント間の完全なインタラクション。
-* [&#x200B; ターン &#x200B;](#turn) レベル：ユーザープロンプトとエージェント応答で構成される、その会話内の1つのインタラクションサイクル。
+* [ ターン ](#turn) レベル：ユーザープロンプトとエージェント応答で構成される、その会話内の1つのインタラクションサイクル。
 
 エージェントのアプリケーションまたはサービスは、会話関連のエクスペリエンスイベントをExperience Platformに送信します。 プロンプト、レスポンス、フィードバックのイベントデータを個別に取得。 プラットフォームサービスは、これらのイベントを関連付けてターンレベルのレコードにブレンドし、オプションで抽出したシグナルでデータを補完し、結果のデータをCustomer Journey Analyticsレポートで利用できるようにします。
 
@@ -104,7 +117,7 @@ ht-degree: 1%
 * ユーザーのセンチメント
 * サポートされているその他のシグナル
 
-実装の詳細については、[会話インサイトの実装](./implement.md) ドキュメントの[&#x200B; プロンプト &#x200B;](./implement.md#prompt) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./implement.md) ドキュメントの[ プロンプト ](./implement.md#prompt) オブジェクトを参照してください。
 
 ### 応答
 
@@ -135,7 +148,7 @@ ht-degree: 1%
 
 フィードバックは、必ずしも、プロンプトや回答と同時に利用できるわけではありません。 回答を評価した後で、エージェントのアプリケーションまたはサービスから後でフィードバックを送信できます。
 
-実装の詳細については、[会話インサイトの実装](./implement.md) ドキュメントの[&#x200B; フィードバック &#x200B;](./implement.md#feedback) オブジェクトを参照してください。
+実装の詳細については、[会話インサイトの実装](./implement.md) ドキュメントの[ フィードバック ](./implement.md#feedback) オブジェクトを参照してください。
 
 ### シグナル
 
@@ -152,7 +165,7 @@ ht-degree: 1%
 
 エージェントエクスペリエンスアプリケーションで、処理中に呼び出される機能を表すスキルの呼び出しがサポートされている場合は、エージェント情報フィールドグループの一部としてこれらのスキル呼び出しを追加できます。
 
-実装の詳細については、[会話インサイトの実装](./implement.md) ドキュメントの[&#x200B; エージェント情報](./implement.md#agentic-information-field-group) フィールドグループを参照してください。
+実装の詳細については、[会話インサイトの実装](./implement.md) ドキュメントの[ エージェント情報](./implement.md#agentic-information-field-group) フィールドグループを参照してください。
 
 
 ## 仕組み
@@ -165,11 +178,11 @@ ht-degree: 1%
 
 データ収集、信号抽出、会話ブレンドの全体的なプロセスについて以下に説明します。
 
-![会話インサイトの仕組みイラスト &#x200B;](assets/conversation-insights.png){zoomable="yes"}
+![会話インサイトの仕組みイラスト ](assets/conversation-insights.png){zoomable="yes"}
 
 | | 説明 |
 |---|---|
-| 1 | エージェント アプリケーションまたはサービスをインストルメントして、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバック ![Feedback](/help/assets/icons2/Feedback.svg) データセットを含むイベントを作成します。<br/> エージェントアプリケーションまたはサービスのインストルメント方法について詳しくは、[実装ドキュメント &#x200B;](./implement.md)を参照してください。 |
+| 1 | エージェント アプリケーションまたはサービスをインストルメントして、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバック ![Feedback](/help/assets/icons2/Feedback.svg) データセットを含むイベントを作成します。<br/> エージェントアプリケーションまたはサービスのインストルメント方法について詳しくは、[実装ドキュメント ](./implement.md)を参照してください。 |
 | 2 | 信号抽出サービスは、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバックデータセット ![Feedback](/help/assets/icons2/Feedback.svg)から信号を信号イベント ![OnAir](/help/assets/icons/OnAir.svg)として抽出し、これらの信号イベントを新しいデータセットに格納します。<br>この手順は、[会話インサイト設定](./configure.md)の定義の一部として実装されます。 |
 | 3 | 会話ブレンダーサービスは、プロンプト ![CommentText](/help/assets/icons2/CommentText.svg)、応答![CommentReply](/help/assets/icons2/CommentReply.svg)、フィードバック ![Feedback](/help/assets/icons2/Feedback.svg)、およびシグナル ![OnAir](/help/assets/icons/OnAir.svg) イベントデータセットからイベントをブレンドし、ブレンドされた![Merge](/help/assets/icons/Merge.svg) イベントを新しいデータセットに出力します。<br>この手順は、[会話インサイト設定](./configure.md)の定義の一部として実装されます。 |
 | 4 | ブレンドされた![結合](/help/assets/icons/Merge.svg) データセットは接続の一部となり、ブレンドされたデータセットに使用されるスキーマで定義されたコンポーネントはデータビューの一部になります。<br>この手順は、[会話インサイト設定](./configure.md)の定義の一部として実装されます。 |
