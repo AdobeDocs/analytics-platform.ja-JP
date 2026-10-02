@@ -34,17 +34,17 @@ ht-degree: 19%
 
 接続の一部として設定した1つ以上のイベントデータセットでステッチを有効にできます。 ライセンスを取得したCustomer Journey Analytics パッケージによって、ステッチに使用できるイベントデータセットの数が決まります。
 
-接続](/help/connections/create-connection.md)を[作成する場合、または[接続を編集する場合](/help/connections/manage-connections.md#edit-a-connection)は、イベントデータセットの[ データセット設定](/help/connections/create-connection.md#dataset-settings)の一部としてステッチを有効にします。
+接続[&#128279;](/help/connections/create-connection.md)を作成する場合、または[接続を編集する場合](/help/connections/manage-connections.md#edit-a-connection)は、イベントデータセットの[&#x200B; データセット設定](/help/connections/create-connection.md#dataset-settings)の一部としてステッチを有効にします。
 
 ## 前提条件
 
-指定したステッチ方法の前提条件を確認して満たす必要があります。[ フィールドベースのステッチ ](fbs.md#prerequisites)または[ グラフベースのステッチ ](gbs.md#prerequisites)。
+指定したステッチ方法の前提条件を確認して満たす必要があります。[&#x200B; フィールドベースのステッチ &#x200B;](fbs.md#prerequisites)または[&#x200B; グラフベースのステッチ &#x200B;](gbs.md#prerequisites)。
 
 ## プリフライトチェック
 
 前提条件を満たしている場合は、ID合成を有効にする前に、イベントデータセットのデータに対してプリフライトチェックを実行します。
 
-* 永続的なIDまたは人物IDに[Experience Data Model （XDM）スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home) フィールドを使用する場合は、イベントデータセットのスキーマでIDが適切にマークされていることを確認してください。 [ID名前空間の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)を参照してください。
+* 永続的なIDまたは人物IDに[Experience Data Model （XDM）スキーマ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/home) フィールドを使用する場合は、イベントデータセットのスキーマでIDが適切にマークされていることを確認してください。 [ID名前空間の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces)を参照してください。
 * 永続的IDと個人IDの両方のID カバレッジを確認します。
 
   * **[!UICONTROL 永続的ID]**
@@ -75,7 +75,7 @@ ht-degree: 19%
 
 
   * **[!UICONTROL ユーザー ID]**
-    * グラフベースの合成の場合、ID グラフに、選択した永続的ID名前空間と人物ID名前空間のID値をリンクするフラグメントが含まれていることを確認します。 [Experience Platform ID グラフビューア ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}に移動し、永続ID値のサンプルを使用してグラフをクエリします。 確認するには、これらの永続的ID値がグラフ内の人物ID値にリンクされているかどうかを確認します。
+    * グラフベースの合成の場合、ID グラフに、選択した永続的ID名前空間と人物ID名前空間のID値をリンクするフラグメントが含まれていることを確認します。 [Experience Platform ID グラフビューア &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}に移動し、永続ID値のサンプルを使用してグラフをクエリします。 確認するには、これらの永続的ID値がグラフ内の人物ID値にリンクされているかどうかを確認します。
     * フィールドベースのステッチの場合は、個人ID フィールドがnullでない7日間のデータをクエリし、データセット内のすべてのイベントの7日間のデータのクエリで割ります。 この割合は、理想的には5%以上であるべきです。
 
       検証用クエリの例：
@@ -149,7 +149,7 @@ ht-degree: 19%
 
 結合を有効にするには、**[!UICONTROL データセットを追加]**&#x200B;または&#x200B;**[!UICONTROL データセットを編集]** ダイアログの「**[!UICONTROL データセット設定]**」セクションを使用します。
 
-![機能を有効にする際のID ステッチ オプション ](assets/identity-stitching-ui.png)
+![機能を有効にする際のID ステッチ オプション &#x200B;](assets/identity-stitching-ui.png)
 
 1. 「**[!UICONTROL ID ステッチを有効にする]**」を選択します。
 
@@ -171,14 +171,14 @@ ht-degree: 19%
    * 「**[!UICONTROL プライマリ ID名前空間を使用]**」を選択して、プライマリ ID名前空間を使用します。
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
-   人物IDに「**[!UICONTROL ID グラフ]**」を選択した場合（[ グラフベースのステッチ ](/help/stitching/gbs.md)）は、名前空間を選択する必要があります。
+   人物IDに「**[!UICONTROL ID グラフ]**」を選択した場合（[&#x200B; グラフベースのステッチ &#x200B;](/help/stitching/gbs.md)）は、名前空間を選択する必要があります。
 
    >[!NOTE]
    >
    >ID グラフを使用する権利を有していることを確認します。
    >
 
-   その前に、データセットのID グラフの設定が完了したことを確認するために、**[!UICONTROL ID グラフへの変更]** ダイアログが表示されます。 この設定は、[ グラフベースの前提条件](/help/stitching/gbs.md#prerequisites)の一部であり、ID グラフをステッチに使用できます。 続行するには、**[!UICONTROL 続行]**&#x200B;を選択してください。
+   その前に、データセットのID グラフの設定が完了したことを確認するために、**[!UICONTROL ID グラフへの変更]** ダイアログが表示されます。 この設定は、[&#x200B; グラフベースの前提条件](/help/stitching/gbs.md#prerequisites)の一部であり、ID グラフをステッチに使用できます。 続行するには、**[!UICONTROL 続行]**&#x200B;を選択してください。
 
    * **[!UICONTROL 名前空間]** ドロップダウンメニューから名前空間を選択します。
 
@@ -191,7 +191,7 @@ ht-degree: 19%
 
 標準の&#x200B;**[!UICONTROL データセットのプレビュー]** インターフェイスに加えて、個人ベースの接続で[追加](/help/connections/create-connection.md#add-datasets)または[編集](/help/connections/create-connection.md#edit-a-dataset) データセットを追加すると、2つの追加情報パネルが使用できます。
 
-![機能を有効にする際のID ステッチ オプション ](assets/identity-stitching-ui-preview.png)
+![機能を有効にする際のID ステッチ オプション &#x200B;](assets/identity-stitching-ui-preview.png)
 
 #### ステッチ指標
 
@@ -233,12 +233,12 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
 
 不正なIDの使用例：
 
-* ユーザーID フィールドにカスタムまたはプレースホルダー値があります（例：`undefined`）。 このような値は、[ データ品質のステッチとレポートにも影響する可能性があります](/help/stitching/faq.md#undefined-person-id-values)。
+* ユーザーID フィールドにカスタムまたはプレースホルダー値があります（例：`undefined`）。 このような値は、[&#x200B; データ品質のステッチとレポートにも影響する可能性があります](/help/stitching/faq.md#undefined-person-id-values)。
 * フィールドベースのステッチ設定で、複数のユーザーがデバイスを共有し、ユーザー間のトランジションの合計数が50,000を超える場合。 このシナリオでは、ステッチプロセスはそのデバイスの個人ID情報を使用するのをやめ、代わりに永続的ID情報のみを使用します。 その結果、そのデバイスからのすべてのデータセットイベントは、永続的なID ID IDを持つ接続データに送信され、不正なIDの状況が発生する可能性があります。
 
 
 >[!NOTE]
->**[!UICONTROL 不正ID]**&#x200B;を含む&#x200B;**[!UICONTROL 結合指標]**&#x200B;は、限られたデータセットに基づいて計算されます。 結合に使用するデータセットの不正なIDの存在を特定するには、[不正なIDのテクニカルノート ](/help/technotes/badids.md)を参照してください。
+>**[!UICONTROL 不正ID]**&#x200B;を含む&#x200B;**[!UICONTROL 結合指標]**&#x200B;は、限られたデータセットに基づいて計算されます。 結合に使用するデータセットの不正なIDの存在を特定するには、[不正なIDのテクニカルノート &#x200B;](/help/technotes/badids.md)を参照してください。
 >
 
 
@@ -268,7 +268,7 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
 
 ## 制限事項
 
-[ フィールドベースのステッチ制限](/help/stitching/fbs.md#limitations)と[ グラフベースのステッチ制限](/help/stitching/gbs.md#limitations)に加えて、接続インターフェイスでステッチを有効にすると、次の制限が適用されます。
+[&#x200B; フィールドベースのステッチ制限](/help/stitching/fbs.md#limitations)と[&#x200B; グラフベースのステッチ制限](/help/stitching/gbs.md#limitations)に加えて、接続インターフェイスでステッチを有効にすると、次の制限が適用されます。
 
 * イベントデータセットは、1つの接続の一部として1回のみ結合できます。 同じイベントデータセットを複数回定義し、各インスタンスに個別のステッチ設定を使用することはできません。 同じデータセットに異なるステッチ設定を適用する場合は、設定ごとに個別の接続を使用します。
 
