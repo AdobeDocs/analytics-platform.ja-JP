@@ -13,7 +13,7 @@ feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
   - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
-    internal-label: ''
+    internal-label: Conversation Insights
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 05d993f3ae8bda2bbf9ce79d5462d47f3d507e92
+source-git-commit: ebc2d1d9992150683fb642862e0ea29b7f70ddb0
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 5%
@@ -49,7 +49,7 @@ ht-degree: 5%
 
 ## スキーマとデータセット
 
-主な会話イベントのデータセット（プロンプト、応答、フィードバック）を設定します。 プロンプト、応答、フィードバックのデータセットは、[会話イベント フィールドグループ &#x200B;](#conversation-event-field-group)を使用してXDM エクスペリエンスイベントの基本スキーマを拡張する必要があり、オプションで[&#x200B; エージェント情報フィールドグループ &#x200B;](#agentic-information-field-group)とその他[の追加フィールドグループ &#x200B;](#additional-field-groups)を含めることができます。
+主な会話イベントのデータセット（プロンプト、応答、フィードバック）を設定します。 プロンプト、応答、フィードバックのデータセットは、[会話イベント フィールドグループ ](#conversation-event-field-group)を使用してXDM エクスペリエンスイベントの基本スキーマを拡張する必要があり、オプションで[ エージェント情報フィールドグループ ](#agentic-information-field-group)とその他[の追加フィールドグループ ](#additional-field-groups)を含めることができます。
 
 プロンプト、レスポンス、フィードバックに対して個別のデータセットを定義したり、データセットにデータを組み合わせたりできます。 例えば、プロンプトや回答にデータセットを、フィードバックにデータセットを使用できます。 または、[仕組み](/help/conversation-insights/overview.md#how-it-works)に示すように、会話イベントのタイプごとに個別のデータセットを使用します。
 
@@ -70,7 +70,7 @@ ht-degree: 5%
 >データセットには同じ基本スキーマを使用します。
 >
 
-データセットのレイアウトと、これらのデータセットへの会話イベントの配信は、別々の懸念事項です。 データが利用可能になればすぐに各会話イベントを送信し、安定した会話識別子とターン識別子を確保します。 安定したIDは、データセット間で[Conversation Blender サービス &#x200B;](#data-blending)による適切な相関関係を促進します。
+データセットのレイアウトと、これらのデータセットへの会話イベントの配信は、別々の懸念事項です。 データが利用可能になればすぐに各会話イベントを送信し、安定した会話識別子とターン識別子を確保します。 安定したIDは、データセット間で[Conversation Blender サービス ](#data-blending)による適切な相関関係を促進します。
 
 
 ### 会話イベントフィールドグループ
@@ -167,7 +167,7 @@ ht-degree: 5%
 
 #### シグナル
 
-シグナルとは、会話コンテンツに関する体系化された分析観察のことです。 [信号抽出サービス &#x200B;](#signal-extraction)は、標準装備の信号を提供します。 シグナルを提供するためにアクションは必要ありませんが、統合の一部としてシグナルを追加できます。
+シグナルとは、会話コンテンツに関する体系化された分析観察のことです。 [信号抽出サービス ](#signal-extraction)は、標準装備の信号を提供します。 シグナルを提供するためにアクションは必要ありませんが、統合の一部としてシグナルを追加できます。
 
 信号には次のフィールドがあります。
 
