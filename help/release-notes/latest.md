@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 4f3c4a214bb9676ced6fe3c9627c969413013790
+source-git-commit: e550b7005c12bc5e2fb92bea44767bae0d7db3dc
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 19%
+source-wordcount: '1299'
+ht-degree: 18%
 ---
 # 最新のCustomer Journey Analytics リリースノート（2026年9月）
 
@@ -68,7 +68,7 @@ ht-degree: 19%
 | **追加のデータ使用ラベルのサポート**<br/> Customer Journey Analyticsでは、データセット内のエレメントに対する次の追加のデータ使用ラベルがサポートされるようになりました。<ul><li>C2：サードパーティデータの書き出しを制限（現在利用可能）</li><li>C3：直接識別可能なデータの組み合わせを制限（現在利用可能）</li><li>C9: データサイエンスの制限（8月または9月にリリース予定）</li></ul><p>詳しくは、[&#x200B; ラベル、ポリシー、およびマーケティングアクション &#x200B;](/help/data-views/data-governance.md)を参照してください。</p> | | 2026年9月3日（PT） |
 | **同意ポリシーのフィルタリングとレポート**<br/> Adobe Experience Platformの同意ポリシーに一致する訪問者をレポートできるようになりました。 （同意ポリシーのディメンションと指標は、接続のデータビューに追加されます）。<p>さらに、同意しない訪問者をデータがCustomer Journey Analyticsに取り込まれる前に除外することもできます。</p><p>詳しくは、[同意レポートとフィルタリングの概要](/help/connections/consent-reporting-filtering/consent-overview.md)を参照してください。</p> | | 2026年9月21日（PT） |
 | **レポートの日付範囲にセグメントを制限**<br/> Workspace レポートのデータは、セグメントに日付範囲コンポーネントが含まれている場合、レポートの日付範囲を超えて拡張できます。<p>セグメントに含まれる日付コンポーネントに関係なく、レポート日付範囲に結果を制限できる新しいオプションが利用可能になりました。</p><p>このオプションは、最上位コンテナが人物であるセグメントを作成または変更する場合に使用できます。</p><p>詳しくは、[&#x200B; セグメントの構築](/help/components/segments/seg-builder.md#components)を参照してください。</p> | 2026年8月26日（PT） | 2026年9月9日（PT） |
-| **会話インサイトを利用して、Analysis WorkspaceのLLM カスタマーエクスペリエンスを分析**<br/> Customer Journey Analyticsでは、非構造化チャットデータをAnalysis Workspaceに取り込み、プロパティ全体で発生するLLMを活用した閲覧体験と購買体験についてレポートを作成できるようになりました。<p>この機能を使用すると、次のことが可能になります。</p><ul><li>Web SDKを使用して、会話型エージェント（組織のカスタムエージェントまたはAdobe Brand Concierge）からプロンプト、レスポンス、エージェントメタデータを収集します。</li><li>意図、トーン、センチメントを分析することで、顧客が何を求めているのか、担当者がどのように反応するのか、顧客がどのように感じているのかを把握できます。</li><li>既存のスキーマ、データセット、データビューを利用して大規模に分析し、Analysis Workspaceでインサイトを獲得できます。</li><li>エージェントとのやり取りを、より広範なカスタマージャーニーに結び付けることで、結果に会話を結びつけ、コンバージョンやエンゲージメントなどへの実際の影響を測定することができます。</li></ul><p>以前は、LLMを活用したエクスペリエンスを測定するのは困難で、既存のカスタマージャーニーとつながることもほぼ不可能でした。</p><p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年9月30日（PT）<p>（当初は2026年9月22日に予定）</p> |
+| **会話インサイトを利用して、Analysis WorkspaceのLLM カスタマーエクスペリエンスを分析**<br/> Customer Journey Analyticsでは、非構造化チャットデータをAnalysis Workspaceに取り込み、プロパティ全体で発生するLLMを活用した閲覧体験と購買体験についてレポートを作成できるようになりました。<p>この機能を使用すると、次のことが可能になります。</p><ul><li>Web SDKを使用して、会話型エージェント（組織のカスタムエージェントまたはAdobe Brand Concierge）からプロンプト、レスポンス、エージェントメタデータを収集します。</li><li>意図、トーン、センチメントを分析することで、顧客が何を求めているのか、担当者がどのように反応するのか、顧客がどのように感じているのかを把握できます。</li><li>既存のスキーマ、データセット、データビューを利用して大規模に分析し、Analysis Workspaceでインサイトを獲得できます。</li><li>エージェントとのやり取りを、より広範なカスタマージャーニーに結び付けることで、結果に会話を結びつけ、コンバージョンやエンゲージメントなどへの実際の影響を測定することができます。</li></ul><p>以前は、LLMを活用したエクスペリエンスを測定するのは困難で、既存のカスタマージャーニーとつながることもほぼ不可能でした。</p><p>詳しくは、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)を参照してください</p> | | 2026年10月8日（PT）<p>（当初は2026年9月22日に予定）</p> |
 | **時間単位のアラート**<br/> アラートの時間粒度を時間単位に設定できるようになりました。<p>時間単位のアラートは、1時間以内に到着するデータを対象としています。 データの待ち時間が1時間を超える場合、長い粒度を使用すると、アラートで完全なデータが評価されます。 データの到達時間がわからない場合は、データエンジニアに確認してください。</p><p>詳しくは、[&#x200B; アラートの作成](/help/components/c-intelligent-alerts/alert-builder.md#alert-builder)を参照してください。</p> | | 2026年9月30日（PT） |
 | **アラート配信は、設定された遅延に厳密に従います**<br/> データが完了したか、指定されたイベント範囲で受信されたかどうかに関係なく、設定した遅延ウィンドウの最後にアラートが配信されるようになりました。 遅延ウィンドウの後に到着したデータは、アラートに含まれません。<p>以前は、アラートには、設定された遅延ウィンドウの後にアラートが配信されたとしても、遅延データの到着を待つバックグラウンド処理チェックが含まれていました。</p><p>遅延の設定について詳しくは、[&#x200B; アラートの作成](/help/components/c-intelligent-alerts/alert-builder.md#alert-builder)を参照してください。</p> | | 2026年9月30日（PT） |
 | **Adobe Brand Visibilityとの統合**<br/> Adobe Adobe Brand Visibilityを組織のCustomer Journey Analyticsデータと連携させて、AIを活用した発見が、web サイトの実際のエンゲージメントとビジネスの成果にどのように結びつくのかを測定できます。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年9月 |
@@ -105,6 +105,6 @@ ht-degree: 19%
 >* [2026年の以前のCustomer Journey Analytics リリースノート &#x200B;](/help/release-notes/2026.md)
 >* [Adobe Analytics リリースノート](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=ja)
 >* [ストリーミングメディアコレクションのリリースノート](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=ja)
->* [CX エンタープライズ リリース ノート &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)
+>* [CX Enterprise リリースノート &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)
 >* [Customer Journey Analytics ドキュメントの更新](/help/release-notes/doc-changes.md)
 

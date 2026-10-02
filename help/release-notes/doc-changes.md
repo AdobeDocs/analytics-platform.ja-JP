@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2c0efe27451163d9fe4fe0f60bab11151a8ac6f1
+source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
 workflow-type: tm+mt
-source-wordcount: '7162'
+source-wordcount: '7170'
 ht-degree: 96%
 ---
 
@@ -69,6 +69,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 |---|---|
+| **2026年10月** | |
+| 会話インサイト | 会話インサイト用の[&#x200B; ドキュメント &#x200B;](/help/conversation-insights/overview.md)。 |
 | **2026年9月** | |
 | 矢印とフォールアウトのジャーニーキャンバスの比較 | [&#x200B; ジャーニーの各ノード、矢印、フォールアウトに日付範囲の変化率が表示されるように、ジャーニーキャンバスのビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)の「[!UICONTROL 比較先]」設定を更新しました。 |
 | 統合されたブログ投稿 | 以下のブログ記事を掲載しました。<ul><li>[Adobe CJAで「値なし」を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=ja#M598)</li><li>[Adobe Experience PlatformとCustomer Journey Analytics Data Egressの使用例の詳細](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=ja)</li></ul>[&#x200B; データの書き出し](/help/use-cases/data-export/overview.md)のユースケースと、新しい[値なし](/help/use-cases/data-views/no-value.md)のユースケースの記事で。 |

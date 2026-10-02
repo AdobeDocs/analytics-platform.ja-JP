@@ -2,7 +2,7 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 89%
@@ -316,14 +316,6 @@ ht-degree: 89%
     + [JavaScript library](/help/content-analytics/config/tags-agnostic.md)
     + [データ収集](/help/content-analytics/config/datacollection.md)
 
-+ Analytics ダッシュボード {#cja-dashboards}
-  + [概要](../mobile-app/home.md)
-  + [キュレータータスク](../mobile-app/curator.md)
-  + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
-  + [モバイルスコアカードの管理](../mobile-app/manage-scorecard.md)
-  + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
-  + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
-
 + ガイド付き分析 {#guided-analysis}
   + [概要](../guided-analysis/overview.md)
   + [アクティブな増加](../guided-analysis/types/active-growth.md)
@@ -340,13 +332,20 @@ ht-degree: 89%
   + [業界ユースケース](../guided-analysis/industry-use-cases.md)
   + [FAQ](../guided-analysis/faq.md)
 
-+ 会話のインサイト {#conversation-insights}
-  + {hide-from-toc}[概要](/help/conversation-insights/conversation-insights-overview.md)
-  + {hide-from-toc}[設定](/help/conversation-insights/conversation-insights-configure.md)
-  + {hide-from-toc}[管理](/help/conversation-insights/conversation-insights-manage.md)
-  + {hide-from-toc}[実装](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[分析](/help/conversation-insights/conversation-insights-analyze.md)
++ 会話インサイト {#conversation-insights}
+  + [概要](/help/conversation-insights/overview.md)
+  + [設定](/help/conversation-insights/configure.md)
+  + [管理](/help/conversation-insights/manage.md)
+  + [実装方法](/help/conversation-insights/implement.md)
+  + [分析](/help/conversation-insights/analyze.md)
 
++ Analytics ダッシュボード {#cja-dashboards}
+  + [概要](../mobile-app/home.md)
+  + [キュレータータスク](../mobile-app/curator.md)
+  + [モバイルスコアカードの作成](../mobile-app/create-scorecard.md)
+  + [モバイルスコアカードの管理](../mobile-app/manage-scorecard.md)
+  + [ダッシュボードを使用するエグゼクティブの設定](../mobile-app/set-up-execs.md)
+  + [エグゼクティブユーザー向けクイックスタートガイド](../mobile-app/executive.md)
 
 + コンポーネント {#cja-components}
   + [概要](../components/overview.md)

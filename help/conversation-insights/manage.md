@@ -4,7 +4,6 @@ description: 会話インサイト設定を管理する方法について説明�
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,23 +12,23 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
 ---
 # 設定の管理
 
-[会話インサイト設定](/help/conversation-insights/conversation-insights-configure.md)を作成した後、これらの設定を表示、編集、または削除できます。
+[会話インサイト設定](/help/conversation-insights/configure.md)を作成した後、これらの設定を表示、編集、または削除できます。
 
 会話インサイト設定を管理できるのはシステム管理者のみです。
 
-会話インサイトについて詳しくは、[会話インサイトの概要](/help/conversation-insights/conversation-insights-overview.md)を参照してください。
+会話インサイトについて詳しくは、[会話インサイトの概要](/help/conversation-insights/overview.md)を参照してください。
+
 
 ## 既存の設定の表示とフィルター
 
@@ -72,7 +71,7 @@ ht-degree: 6%
 新しい会話インサイト設定を作成するには：
 
 1. 「**[!UICONTROL 設定を作成]**」を選択します。
-1. [**[!UICONTROL 設定を作成]**](./conversation-insights-configure.md) ダイアログを使用して、会話インサイトを設定します。
+1. [**[!UICONTROL 設定を作成]**](./configure.md) ダイアログを使用して、会話インサイトを設定します。
 
 ## 設定の編集
 
@@ -84,7 +83,7 @@ ht-degree: 6%
    * 編集する設定の横にあるチェックボックスを選択し、青いアクションバーから![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**&#x200B;を選択します。
    * 編集する設定の![詳細](/help/assets/icons/More.svg)を選択します。 コンテキストメニューから、![編集](/help/assets/icons/Edit.svg) **[!UICONTROL 編集]**&#x200B;を選択します。
 
-1. 会話インサイトを管理するには、[**[!UICONTROL 設定/_設定の名前_]**](./conversation-insights-configure.md) ダイアログを使用します。
+1. 会話インサイトを管理するには、[**[!UICONTROL 設定/_設定の名前_]**](./configure.md) ダイアログを使用します。
 
 ## 設定の削除
 

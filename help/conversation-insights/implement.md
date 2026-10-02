@@ -4,7 +4,6 @@ description: 会話インサイト用にエージェントアプリケーショ�
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,12 +12,11 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 5%
@@ -39,7 +37,7 @@ ht-degree: 5%
 
 主な会話イベントのデータセット（プロンプト、応答、フィードバック）を設定します。 プロンプト、応答、フィードバックのデータセットは、[会話イベント フィールドグループ &#x200B;](#conversation-event-field-group)を使用してXDM エクスペリエンスイベントの基本スキーマを拡張する必要があり、オプションで[&#x200B; エージェント情報フィールドグループ &#x200B;](#agentic-information-field-group)とその他[の追加フィールドグループ &#x200B;](#additional-field-groups)を含めることができます。
 
-プロンプト、レスポンス、フィードバックに対して個別のデータセットを定義したり、データセットにデータを組み合わせたりできます。 例えば、プロンプトや回答にデータセットを、フィードバックにデータセットを使用できます。 または、[仕組み](/help/conversation-insights/conversation-insights-overview.md#how-it-works)に示すように、会話イベントのタイプごとに個別のデータセットを使用します。
+プロンプト、レスポンス、フィードバックに対して個別のデータセットを定義したり、データセットにデータを組み合わせたりできます。 例えば、プロンプトや回答にデータセットを、フィードバックにデータセットを使用できます。 または、[仕組み](/help/conversation-insights/overview.md#how-it-works)に示すように、会話イベントのタイプごとに個別のデータセットを使用します。
 
 説明するには、次を使用します。
 
@@ -625,7 +623,6 @@ ht-degree: 5%
 ## データ収集
 
 会話インサイトには、次のデータ収集戦略を使用します。
-
 
 ### イベントタイプ
 

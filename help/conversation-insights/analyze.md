@@ -4,7 +4,6 @@ description: 会話インサイトの分析方法を学びましょう。
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,11 +17,12 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
 ---
+
 # 会話インサイトの分析
 
 ## シンプルな分析
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 * 会話インサイトイベントを、他のイベントデータセットや追加のプロファイルおよびルックアップデータセットと組み合わせることができます。 これらのデータセットを、会話インサイト設定で選択した接続に追加します。
 * 会話インサイト設定で選択したデータビューに、追加のコンポーネント（指標とディメンション）を追加します。
-* ...
+
 
 +++ プロジェクト例
 
