@@ -4,21 +4,35 @@ description: 会話インサイト用にエージェントアプリケーショ�
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
+autotag-review: '2026-10-02T07:03:13.165Z'
+TQID: 'https://experienceleague.adobe.com/tjjZwA5Ayvtz35ffQAkcCwhCzBUB6X4puMjFsiJ0HUY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-    internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
+  - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
+    internal-label: Conversation Insights
+role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+source-git-commit: ebc2d1d9992150683fb642862e0ea29b7f70ddb0
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2563'
 ht-degree: 5%
 ---
 # 会話インサイトの実装
@@ -275,7 +289,7 @@ ht-degree: 5%
 | `agents[].name` | string | `"Chatbot Assistant"` | エージェント名 |
 | `agents[].version` | string | `"2.1.3"` | エージェントバージョン |
 | `agents[].score` | number | `0.92` | 返された値のエージェント信頼スコア |
-| `agents[].skills[]` | 配列 | 以下のスキルオブジェクトを参照してください | **非推奨** – 代わりに以下のトップレベル `skills[]`配列を使用します。この配列は、スキル呼び出しの完全な順序付きリストを所有し、`agentID`を介して各1つをエージェントにリンクします |
+| `agents[].skills[]` | 配列 | 以下のスキルオブジェクトを参照してください | **非推奨**。 代わりに、以下のトップレベル `skills[]`配列を使用します。この配列は、スキル呼び出しの完全な順序付きリストを所有し、`agentID`を介して各自をそのエージェントにリンクします |
 | `agents[].skills[].name` | string | `"Intent Recognition"` | スキル名（非推奨の配列） |
 | `agents[].skills[].version` | string | `"1.0.0"` | スキルバージョン（非推奨の配列） |
 | `agents[].skills[].score` | number | `0.95` | スキルの信頼性スコア （0-1） （非推奨の配列） |
@@ -429,11 +443,7 @@ ht-degree: 5%
 * **Web詳細** フィールドグループ。 会話が埋め込まれたweb ページの詳細をキャプチャします。
 * **Commerce詳細** フィールドグループ。 会話の一部として言及された推奨製品の製品詳細を取り込みます。
 
-
-
-お客様は、ソース会話イベントを作成する責任があります。 その後、Adobe Platformは信号抽出とデータブレンドを実行します。 お客様は、シグナル抽出または描画サービスを実装する必要はありません。
-
-このドキュメントでは、会話インサイト MVPの入力要件と現在のエージェント スキーマの更新について説明します。 これには、Conversation Insights 1.0の機能または以降のリリース要件は含まれていません。
+お客様は、ソース会話イベントを作成する責任があります。 Adobeは、信号抽出とデータブレンドを実行します。 お客様は、シグナル抽出または描画サービスを実装する必要はありません。
 
 ### イベントタイプ
 
