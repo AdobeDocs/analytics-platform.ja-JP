@@ -263,7 +263,7 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
   >接続インターフェイスで結合が有効になっているデータセットの場合、既知の制限により、現在バックフィルのステータスを報告できません。
   >
 
-  別の方法を使用して、ステッチされたデータセットのデータがバックフィルされているかどうかを確認します。 例えば、[Experience Platform クエリサービス UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview)を使用して、データセットから関連する期間のイベント数を抽出します。 同じ期間の[Customer Journey Analytics レポート &#x200B;](/help/analysis-workspace/home.md)のイベント指標に対してイベント数を比較します。 それらの数値が一致すれば、バックフィルは完了します。
+  別の方法を使用して、ステッチされたデータセットのデータがバックフィルされているかどうかを確認します。 例えば、[Experience Platform クエリサービス UI](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/overview)を使用して、データセットから関連する期間のイベント数を抽出します。 同じ期間の[Customer Journey Analytics レポート &#x200B;](/help/analysis-workspace/home.md)のイベント指標に対してイベント数を比較します。 それらの数値が一致すれば、バックフィルは完了します。
 
 ## 制限事項
 
