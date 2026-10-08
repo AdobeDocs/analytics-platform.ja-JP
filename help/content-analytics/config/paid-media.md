@@ -4,12 +4,11 @@ description: データセット、接続、データビューなどの自動設�
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: f83d40d33e90ba73f26129ab416f063f361edca7
+source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 4%
 ---
-
 # ペイドメディアの自動設定
 
 Content Analyticsで有料メディアチャネルを有効にして設定を保存すると、Adobeは、有料メディアデータセットのレポート設定を使用して、選択した接続とデータビューを更新します。 デフォルトのディメンション、指標、ルックアップロジック、またはサマリーデータグループを自分で再作成する必要はありません。
@@ -35,7 +34,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 * 概要データセット名、イベントタイプ、およびコンポーネントサフィックス
 * エンティティ
 * 分類
-* 次のネットワークの![&#x200B; チェックマーク &#x200B;](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
+* 次のネットワークの![ チェックマーク ](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -44,7 +43,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 
     >[!AVAILABILITY]
     >
-    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](/help/release-notes/releases.md)を参照してください
+    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md)を参照してください
     >
 
 
@@ -65,7 +64,6 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 別々のルックアップデータセットには、アカウント、キャンペーン、広告グループ、広告、エクスペリエンス、アセットなどが記述されます。 エンティティ GUIDを使用して、名前とメタデータを提供します。 サマリーデータセットと6つのルックアップデータセットの間に1対1のペアリングはありません。
 
 概要データのグループ化は、同等のディメンションをまとめます。グループ化は、6つのパフォーマンス指標の合計を合計しません。
-
 
 ## コンポーネント
 
