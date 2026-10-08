@@ -14,70 +14,127 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: a4fdb1f8d49b42b6de21881e0c8392995124c1ea
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 1%
+source-wordcount: '1191'
+ht-degree: 2%
 ---
 # データフィードのサブイベント
 
 {{release-limited-testing}}
 
-XDM スキーマでは、配列（文字列またはオブジェクト）であるすべてはサブイベントです。 Customer Journey Analyticsのサブイベントは、データフィードの書き出しにその階層で表されます。
-
-Adobe Analyticsでは、サブイベントは1つの列として表されます。
+Customer Journey Analyticsの[ サブイベント ](/help/components/segments/sub-event.md)を使用すると、イベントレベルよりも詳細なレベルでイベントデータを分析できます。
 
 次の情報を使用して、Customer Journey Analytics データフィードでサブイベントを操作する方法を理解します。
 
-## XDM スキーマ、Workspace、データフィードのサブイベント
+## サブイベントについて
 
-XDM スキーマでは、サブイベントを文字列配列またはオブジェクト配列として定義します。
+### XDM スキーマのサブイベント
 
-これらのサブイベントは、Analysis Workspaceで表示するか、データフィードで表示するかによって異なります。
+XDM スキーマでは、配列の各要素（文字列配列またはオブジェクト配列）はサブイベントです。
 
-| 場所 | サブイベントの表現方法 |
-| --- | --- |
-| **Analysis Workspace** | オブジェクトの配列内の個々のオブジェクトは、表示されている階層とは別に、個々のコンポーネントとして選択できます。 |
-| **データフィード** | オブジェクトの配列内のオブジェクトは、階層を維持したままグループとして表されます。 |
+Adobe Experience PlatformのXDM スキーマ内のサブイベントを含むイベントを表示するには、[!UICONTROL **スキーマ**]&#x200B;を選択し、サブイベントを含むイベントを展開します。
+
+次の例では、`Product list items`は様々なサブイベントを含むオブジェクト配列です。
+
+オブジェクト配列とサブイベントを含む![XDM スキーマ ](assets/df-sub-event-schema.png)
+
+### サブイベントの例：購入イベント内の製品
+
+顧客は、コードレスドリル 1個とドリルバッテリーパック 2個の2つの製品を1つの注文で購入します。 実装では、両方の製品を`productListItems` オブジェクト配列に含む単一の購入イベントを送信します。
+
+```json
+{
+  "eventType": "commerce.purchases",
+  "timestamp": "2026-09-16T14:32:07.512Z",
+  "commerce": {
+    "purchases": { "value": 1 }
+  },
+  "productListItems": [
+    { "SKU": "CD-2000", "name": "Cordless Drill", "quantity": 1, "priceTotal": 129.99 },
+    { "SKU": "BP-2000", "name": "Drill Battery Pack", "quantity": 2, "priceTotal": 39.98 }
+  ]
+}
+```
+
+このイベントには、2つのサブイベントが含まれており、`productListItems`配列内の各オブジェクトに1つずつ含まれます。 次の表は、イベントに属するフィールドと、そのサブイベントに属するフィールドを示しています。
+
+| レベル | フィールド | フィールドの内容 |
+| --- | --- | --- |
+| **イベント** | `eventType`, `timestamp`, `commerce.purchases.value` | 購入全体です。 各フィールドには、イベントの1つの値があります。 **注文数**&#x200B;指標は、このイベントに含まれる製品数に関係なく`1`をカウントします。 |
+| **サブイベント** | 各`productListItems` オブジェクトの`SKU`、`name`、`quantity`、`priceTotal` | 購入時の個別商品。 各フィールドには、製品ごとに1つの値があります。 例えば、`quantity`はコードレスドリルの場合は`1`、ドリルバッテリーパックの場合は`2`です。 |
+
+{style="table-layout:auto"}
+
+>[!NOTE]
+>
+>サブイベントには、イベントと共に送信されるデータのみが含まれます。 Customer Journey Analyticsでは、買い物かごの追加やチェックアウトなど、以前のイベントから買い物かごの内容を再構築することはありません。 製品を購入イベントのサブイベントとして表示するには、実装でその購入イベントの`productListItems`に製品を含める必要があります。
 
 ## データフィードへのサブイベントデータの追加
 
-データフィードの構築中にサブイベントである列を追加しようとすると、すべてのピアサブイベントを追加できるダイアログが表示されます。 これらのイベントはすべて、データフィード出力の1列に表示されます。
+データフィードの構築中にサブイベントである列を追加しようとすると、ダイアログが表示され、ピアサブイベントのいずれかを追加するよう求められます。 データフィード出力では、これらのイベントはすべて1列に表示されます。
 
 ## データフィード出力でのサブイベントデータの表示
 
-サブイベントデータ（1つのイベントに複数の商品がある場合など）は、Adobe Analytics データフィードとCustomer Journey Analytics データフィードで表示が異なります。 次の表は、各製品がサブイベントデータをどのように表しているかを比較したものです。
+### Analysis Workspaceとデータフィードのサブイベントの違い
+
+サブイベントは、Customer Journey AnalyticsのAnalysis Workspaceとデータフィードで異なって表示されます。
+
+| 場所 | サブイベントの表現方法 |
+| --- | --- |
+| **Analysis Workspace（Customer Journey Analytics内）** | 表示されている階層とは別に、個々のコンポーネントとして選択できます。 |
+| **データフィード （Customer Journey Analytics内）** | グループとして表され、階層は維持されます。 |
+
+### Adobe AnalyticsとCustomer Journey Analyticsのサブイベントの違い
+
+サブイベントデータ（1回の購入イベントで複数の商品の詳細など）は、Adobe Analytics データフィードとは異なり、Customer Journey Analytics データフィードに表示されます。 次の表は、各製品がサブイベントデータをどのように表しているかを比較したものです。
 
 | 製品 | データフィードでのサブイベントデータの表示方法 | 例：製品リスト |
 | --- | --- | --- |
-| **Adobe Analytics** | 1列の区切り文字列にフラット化されます。 | 製品リストには、複数の製品が1つの文字列でグループ化されています。<p>`;LG Washing Machine 2000;1;1600,;LG Dryer 2000;1;500` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | サブイベントは、XDM スキーマで定義された階層を保持します。 親イベントや兄弟サブイベントと一緒に、同じ列にグループ化されたままになります。 | 製品リストは、XDM スキーマで配列として定義されている階層を維持します。<p>`[{"name":"LG Washing Machine 2000","units":1,"revenue":1600},{"name":"LG Dryer 2000","units":1,"revenue":500}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Adobe Analytics** | 1列の区切り文字列にフラット化されます。 | 製品リストには、複数の製品が1つの文字列でグループ化されています。<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | サブイベントは、XDM スキーマで定義された階層を保持します。 同じ列にグループ化されている間、親イベントと兄弟サブイベントに関係する階層が表示されます。 | 製品リストは、XDM スキーマで配列として定義されている階層を維持します。<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+
+{style="table-layout:auto"}
+
+### Adobe Analyticsとの違い
+
+### Adobe AnalyticsとCustomer Journey Analyticsのデータフィードの出力の違い
+
+サブイベントデータ（1回の購入イベントで複数の商品の詳細など）は、Adobe Analytics データフィードとは異なり、Customer Journey Analytics データフィードに表示されます。 次の表は、各製品がサブイベントデータをどのように表しているかを比較したものです。
+
+| 製品 | データフィードでのサブイベントデータの表示方法 | 例：製品リスト |
+| --- | --- | --- |
+| **Adobe Analytics** | 1列の区切り文字列にフラット化されます。 | 製品リストには、複数の製品が1つの文字列でグループ化されています。<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | サブイベントは、XDM スキーマで定義された階層を保持します。 同じ列にグループ化されている間、親イベントと兄弟サブイベントに関係する階層が表示されます。 | 製品リストは、XDM スキーマで配列として定義されている階層を維持します。<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+
+{style="table-layout:auto"}
+
+## Analysis Workspaceとデータフィード出力のサブイベントの違い
+
+サブイベントは、Customer Journey AnalyticsのAnalysis Workspaceとデータフィードで異なって表示されます。
+
+| 場所 | サブイベントの表現方法 |
+| --- | --- |
+| **Analysis Workspace** | 表示されている階層とは別に、個々のコンポーネントとして選択できます。 |
+| **データフィード** | グループとして表され、階層は維持されます。 |
+
+
+## データフィード出力でのサブイベントデータの表示
+
+サブイベントデータ（1回の購入イベントで複数の商品の詳細など）は、Adobe Analytics データフィードとは異なり、Customer Journey Analytics データフィードに表示されます。 次の表は、各製品がサブイベントデータをどのように表しているかを比較したものです。
+
+| 製品 | データフィードでのサブイベントデータの表示方法 | 例：製品リスト |
+| --- | --- | --- |
+| **Adobe Analytics** | 1列の区切り文字列にフラット化されます。 | 製品リストには、複数の製品が1つの文字列でグループ化されています。<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | サブイベントは、XDM スキーマで定義された階層を保持します。 同じ列にグループ化されている間、親イベントと兄弟サブイベントに関係する階層が表示されます。 | 製品リストは、XDM スキーマで配列として定義されている階層を維持します。<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
 
 {style="table-layout:auto"}
 
 ## データフィード出力のサブイベントデータのクエリ
 
-サブイベントデータ [はCustomer Journey Analytics データフィード &#x200B;](#customer-journey-analytics-vs-adobe-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
+サブイベントデータ [はCustomer Journey Analytics データフィード ](#view-sub-event-data-in-data-feed-output)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
 次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用します。 SnowflakeやDatabricksなどの他のデータウェアハウスも、構文の違いが少なくても同じアプローチをサポートしています。
-
-+++ Adobe Analytics データフィードの商品データのクエリ
-
-Adobe Analytics データフィードでは、2つの商品が一緒に購入されたイベントが、`product_list`列に1つの区切り文字列として表示されます。
-
-```text
-Power Tools;Cordless Drill;1;129.99;event1=1;eVar10=DrillBundle,Power Tools;Drill Battery Pack;2;39.98;event1=1;eVar10=DrillBundle
-```
-
-コードレスドリルを含むイベントを見つけるには、この文字列を正規表現で解析します。
-
-```sql
-SELECT hitid_high, hitid_low, post_evar10
-FROM aa_hit_data
-WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
-```
-
-+++
 
 +++ Customer Journey Analytics データフィードの商品データのクエリ
 
@@ -128,6 +185,24 @@ WHERE item.product = 'Cordless Drill';
 複数の一致する製品を持つイベントが複数の行として表示され、`row_id`などのイベントの列が各行で繰り返されます。 この方法は、製品レベルの詳細が必要な場合にのみ使用してください。 結果のイベントをカウントするには、行をカウントする代わりに`COUNT(DISTINCT row_id)`を使用します。
 
 このアプローチは、製品だけでなく、XDM スキーマ内のあらゆる配列フィールドに適用されます。
+
++++
+
++++ Adobe Analytics データフィードの商品データのクエリ
+
+Adobe Analytics データフィードでは、2つの商品が一緒に購入されたイベントが、`product_list`列に1つの区切り文字列として表示されます。
+
+```text
+Power Tools;Cordless Drill;1;129.99;event1=1;eVar10=DrillBundle,Power Tools;Drill Battery Pack;2;39.98;event1=1;eVar10=DrillBundle
+```
+
+コードレスドリルを含むイベントを見つけるには、この文字列を正規表現で解析します。
+
+```sql
+SELECT hitid_high, hitid_low, post_evar10
+FROM aa_hit_data
+WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
+```
 
 +++
 
