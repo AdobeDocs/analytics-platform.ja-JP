@@ -34,7 +34,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 * 概要データセット名、イベントタイプ、およびコンポーネントサフィックス
 * エンティティ
 * 分類
-* 次のネットワークの![ チェックマーク ](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
+* 次のネットワークの![&#x200B; チェックマーク &#x200B;](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -43,7 +43,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 
     >[!AVAILABILITY]
     >
-    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md)を参照してください
+    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](/help/release-notes/releases.md)を参照してください
     >
 
 
