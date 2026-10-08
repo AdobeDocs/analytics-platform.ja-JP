@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 50673e8c536614e16f10e639b32a01ffd8456086
+source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
 workflow-type: tm+mt
-source-wordcount: '5192'
-ht-degree: 20%
+source-wordcount: '3881'
+ht-degree: 12%
 ---
 # データフィードの作成
 
@@ -65,26 +65,6 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_user_agent"
->title=""
->abstract="ユーザーエージェントデータとデバイス参照データは、同じデータフィード設定に存在できません。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_required_dimensions"
->title="必須ディメンション"
->abstract="すべてのデータフィードには、ディメンション名の横に&#x200B;**必須**&#x200B;ラベルで識別される特定のディメンションを含める必要があります。 これらのディメンションは、イベントレベルの分析に必要な最小限の構造を提供します。"
-
-<!-- markdownlint-enable MD034 -->
-
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -108,7 +88,7 @@ ht-degree: 20%
 
    ページに次のタブが表示されます：[!UICONTROL **詳細**]、[!UICONTROL **データ構造**]、[!UICONTROL **配信**]。
 
-   ![新しいデータフィードのページ &#x200B;](assets/data-feed-new.png)
+   ![新しいデータフィードのページ ](assets/data-feed-new.png)
 
 1. 「[!UICONTROL **詳細**]」タブで、次のフィールドに入力します。
 
@@ -131,7 +111,7 @@ ht-degree: 20%
 
    ここで適用するセグメントは、データビューですでに適用されている可能性のあるセグメントに加えたものです。
 
-1. （オプション）左側のパネルで、**検索** フィールドを使用して、特定のコンポーネントを検索します。 または、**並べ替え** アイコン ![&#x200B; コンポーネントの並べ替えアイコン &#x200B;](/help/assets/icons/SortOrderDown.svg)を選択して、次のいずれかの並べ替えオプションを適用します。
+1. （オプション）左側のパネルで、**検索** フィールドを使用して、特定のコンポーネントを検索します。 または、**並べ替え** アイコン ![ コンポーネントの並べ替えアイコン ](/help/assets/icons/SortOrderDown.svg)を選択して、次のいずれかの並べ替えオプションを適用します。
 
    | オプション | 関数 |
    | --------- | ---------- |
@@ -149,156 +129,7 @@ ht-degree: 20%
 
    <!--add screenshot-->
 
-   +++ データフィードに必ず含まれるディメンション
-
-   次のディメンションは、すべてのデータフィードにデフォルトで含まれており、削除できません。
-
-   | ディメンション名 | メモ | データフィード | その他のレポート |
-   |---|---|---|---|
-   | タイムスタンプ (UTC) | イベントが発生した日時。UTC タイムゾーンで表されます。 サブ秒（マイクロ秒）の精度をサポートします。 | 必須 | 使用不可 |
-   | 行 ID | データフィードに含まれる各行の一意の ID。 | 必須 | 使用不可 |
-   | セッション ID | データフィードに含まれる各セッションの一意の ID。 | 必須 | 使用不可 |
-   | ユーザー ID | データビューと接続の人物ID | 必須 | オプションの標準 |
-   | アカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | アカウントコンテナを使用する際のアカウント ID | 必須 | オプションの標準 |
-
-   +++
-
-   +++ データフィードに含めることができないディメンション
-
-   Customer Journey Analytics標準ディメンションは、データフィードに含めることはできません。 次の表に、これらのディメンションを示します。
-
-   | ディメンション名 | メモ | データフィード |
-   |---|---|---|
-   | 5 分 | イベント発生時の5分間隔（切り捨て） | 使用不可 |
-   | 15 分 | イベント発生時の15分間隔（切り捨て） | 使用不可 |
-   | 30 分 | イベント発生時の30分間隔（切り捨て） | 使用不可 |
-   | 日 | イベント発生日 | 使用不可 |
-   | 曜日 | イベントが発生した曜日 | 使用不可 |
-   | 日付 | イベントが発生した月の日 | 使用不可 |
-   | 時間 | イベントが発生した時間（切り捨て） | 使用不可 |
-   | 時刻 | イベントが発生した日の時間（切り捨て） | 使用不可 |
-   | 分 | イベント発生分（切り捨て） | 使用不可 |
-   | 分 (時間) | イベントが発生した時間の分（切り捨て） | 使用不可 |
-   | 月 | イベントが発生した月 | 使用不可 |
-   | 月 | イベントが発生した年の月 | 使用不可 |
-   | 四半期 | イベントが発生した四半期 | 使用不可 |
-   | 四半期 | イベントが発生した年の四半期 | 使用不可 |
-   | Second | 2番目のイベントが発生しました（切り捨て） | 使用不可 |
-   | 週 | イベントが発生した週 | 使用不可 |
-   | 年間通算週 | イベントが発生した年の週 | 使用不可 |
-   | 年 | イベントが発生した年 | 使用不可 |
-
-   +++
-
-   +++ データフィードに含めることができない指標
-
-   次のCustomer Journey Analytics標準メトリックは、データフィードに含めることはできません。
-
-   | Metric name | メモ | データフィード |
-   |---|---|---|
-   | Adobe訪問者プロファイル | | 使用不可 |
-   | Adobeオポチュニティユニオン | | 使用不可 |
-   | Adobe Opportunities Profile | | 使用不可 |
-   | Adobe会計組合 | | 使用不可 |
-   | Adobe Accounts Profile | | 使用不可 |
-   | Adobe購買グループ組合 | | 使用不可 |
-   | Adobe Buying Groups Profile | | 使用不可 |
-   | Adobeグローバルアカウント組合 | | 使用不可 |
-   | Adobeのグローバルアカウントプロファイル | | 使用不可 |
-   | Adobe労働組合 | | 使用不可 |
-   | Adobe人物プロファイル | | 使用不可 |
-
-   +++
-
-   +++ データフィードで一緒に使用できないディメンション
-
-   >[!IMPORTANT]
-   >
-   >特定のディメンションは、Experience Platform データセットで一緒に使用できないため、同じデータフィードに含めることはできません。
-   >
-   >**User Agent**&#x200B;または&#x200B;**Mobile ID** ディメンションのいずれかをデータフィードに含めることを選択した場合、以下に示すディメンションをデータフィードに追加することはできません。
-   >
-   >Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[&#x200B; データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[&#x200B; デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
-
-   次のディメンションは、**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションと一緒に使用することはできません。
-
-   * ブラウザータイプ
-   * ブラウザー
-   * モバイルの製造元
-   * モバイルデバイスタイプ
-   * モバイルのオーディオ サポート
-   * モバイル DRM
-   * モバイル Java VM
-   * モバイル情報サービス
-   * モバイルの画像サポート
-   * モバイルの画面の色
-   * モバイル インターネット プロトコル
-   * モバイルデバイス番号
-   * モバイルのメール最大長
-   * モバイルデコレーションメール
-   * モバイルプッシュトゥトーク
-   * モバイルの画面の幅
-   * モバイルのブラウザー URL 最大長
-   * モバイルオペレーティングシステム （非推奨）
-   * モバイルの画面の高さ
-   * モバイルのビデオ サポート
-   * モバイルの cookie サポート
-   * モバイルのブックマーク最大長
-   * モバイルの画面のサイズ
-   * モバイルデバイス名
-   * オペレーティングシステムの種類
-   * オペレーティングシステム
-
-   +++
-
-   +++ データフィードで置換する必要がある指標
-
-   次のCustomer Journey Analytics メトリクスを置き換える必要があります。
-
-   | Metric name | メモ | データフィード |
-   |---|---|---|
-   | アカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続で指定されたアカウント IDに基づく | 使用不可。 アカウント IDで異なるカウントを使用します。 |
-   | 購買グループ [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続の購買グループ IDに基づく購買グループ | 使用不可。 購買グループ IDとは異なるカウントを使用します。 |
-   | イベント | 接続内のすべてのイベントデータセットからの行数 | 使用不可。 行IDとは異なるカウントを使用します。 |
-   | グローバルアカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続のグローバルアカウント IDに基づく | 使用不可。 グローバルアカウント IDで異なるカウントを使用します。 |
-   | 商談 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | 接続の商談IDに基づく商談 | 使用不可。 商談IDとは異なるカウントを使用します。 |
-   | People | 接続で指定された人物IDに基づく | 使用不可。 人物IDとは異なるカウントを使用します。 |
-   | 会話数 | 会話数 | 使用不可。 会話IDで異なるカウントを使用します。 |
-   | セッション終了 | セッションの最後のイベントであったイベントの数 | 使用不可 |
-   | セッション開始 | セッションの最初のイベントだったイベントの数 | 使用不可 |
-   | Sessions | データビューのセッション設定にもとづいて | 使用不可。 セッション IDで異なるカウントを使用します。 |
-   | 滞在時間（秒） | 2つの異なるディメンション値の間の時間を合計します | 使用不可 |
-
-   +++
-
-   +++ 標準コンポーネント（任意）
-
-   | コンポーネント名 | タイプ | メモ | データフィード |
-   |---|---|---|---|
-   | 午前／午後 | 時間分割ディメンション | 午前または午後 | 使用不可 |
-   | バッチ ID | ディメンション | Experience Platform バッチの識別子 | 使用可能 |
-   | データセット ID | ディメンション | Experience Platform データセットの識別子 | 使用可能 |
-   | 日付 | 時間分割ディメンション | 1-31 | 使用不可 |
-   | 曜日 | 時間分割ディメンション | 月曜日～日曜日 | 使用不可 |
-   | 年間通算日 | 時間分割ディメンション | 1-366 | 使用不可 |
-   | イベント深度 | ディメンション | 連続数値（1、2、3など） セッション内の各イベントインタラクションに指定されます<p>新しい各セッションの開始時にリセット</p> | 使用可能 |
-   | 時刻 | 時間分割ディメンション | 0-23 | 使用不可 |
-   | 月 | 時間分割ディメンション | 1～12月 | 使用不可 |
-   | 初回セッション | 指標 | レポートウィンドウ内での個人の最初に定義されたセッション | 使用不可 |
-   | セッションを返す | 指標 | ユーザーの初めてのセッションではないセッション | 使用不可 |
-   | 人物ID名前空間 | ディメンション | 人物IDで構成されるIDのタイプ（電子メール IDやCookie IDなど） | 使用可能 |
-   | グローバルアカウント ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ディメンション | グローバルアカウントコンテナを使用する場合のグローバルアカウント ID | 使用可能 |
-   | 商談ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ディメンション | 商談コンテナの使用時の商談ID | 使用可能 |
-   | 購買グループ ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ディメンション | 購買グループコンテナを使用する場合の購買グループ ID | 使用可能 |
-   | 四半期 | 時間分割ディメンション | 第 1 四半期、第 2 四半期、第 3 四半期、第 4 四半期 | 使用不可 |
-   | リピートセッション | 指標 | まだセッションが始まっていない場合 | 使用不可 |
-   | セッションタイプ | ディメンション | 2つの値：初回または再試行 | 使用不可 |
-   | イベントごとの滞在時間 | ディメンション | 滞在時間指標をイベントバケットにバケット化します | 使用不可 |
-   | セッションごとの滞在時間 | ディメンション | 滞在時間指標をセッションバケットにバケット化します | 使用不可 |
-   | 1人当たりの滞在時間 | ディメンション | 滞在時間指標を個人グループにバケット化します | 使用不可 |
-   | 週末/平日 | 時間分割ディメンション | 週末または平日 | 使用不可 |
-
-   +++
+   一部のコンポーネントは、必須、サポートされていない、またはデータフィードに制限があります。 詳しくは、「[ データフィードでのコンポーネントの可用性](/help/components/exports/cja-data-feeds/df-components.md)」を参照してください。
 
 1. （オプション）カンバス上のコンポーネントをドラッグして並べ替えます。 定義した順序は、書き出されたデータフィードファイルの列順序として保持されます。
 
@@ -334,7 +165,7 @@ ht-degree: 20%
    | [!UICONTROL **終了日**]<br/> バックフィル フィードでのみ使用できます | データフィードが終了する日付。 終了日を未来にすることはできません。 日付は、データビューのタイムゾーンに基づいています。 |
    | [!UICONTROL **頻度**]<br/> ライブフィードでのみ利用可能 | データフィードを送信する頻度を選択します。 タイムスタンプが周波数ウィンドウ内にあるイベントは、データフィード配信に含まれます。 [!UICONTROL **ルックバック日付範囲**]&#x200B;および&#x200B;[!UICONTROL **処理遅延**] フィールドは、選択した配信頻度のデータに含まれるイベントにも影響する可能性があります。<p>1時間分のデータまたは1日分のデータを含めるように選択します。</p><ul><li>**毎日**: フィードには、データビューのタイムゾーンの午前0時から午前0時までの1日分のデータが含まれます。</li><li>**時間単位**: フィードには、1時間のデータが含まれます。</li></ul> |
    | [!UICONTROL **粒度**]<br/> バックフィル フィードでのみ使用できます | 過去のデータをチャンクに分割するために使用される時間間隔。 各チャンクには、データビューのタイムゾーンの午前0時から午前0時までの1日分のデータが含まれます。 <p>粒度は、データのグループ化方法を決定します。データの配信頻度は決定しません。 バックフィルのデータは、1日に1回ではなく、できるだけ早く配信されます。</p><p>このフィールドは常に&#x200B;[!UICONTROL **日次**]&#x200B;に設定されているため、変更できません。</p> |
-   | [!UICONTROL **ルックバック日付範囲**] | データフィード配信を処理する際に、Customer Journey Analytics がルックバックする日付範囲を制御します。 デフォルトは30日です。<p>頻度ウィンドウ（時間または日）では、データフィードに含まれるイベントを決定します。一方、**ルックバック日付範囲**&#x200B;では、これらのイベントを正しく分類するために必要な履歴コンテキストを提供します。</p><p>セグメントの選定、ディメンションの永続性、セッションの計算、派生フィールド変換はすべて、含まれるイベントに影響を与える場合があります。</p> <p>このオプションを設定する前に、次の節「[&#x200B; ルックバック日付範囲について](#understand-the-lookback-date-range)」で説明されている詳細と例を参照してください。</p> |
+   | [!UICONTROL **ルックバック日付範囲**] | データフィード配信を処理する際に、Customer Journey Analytics がルックバックする日付範囲を制御します。 デフォルトは30日です。<p>頻度ウィンドウ（時間または日）では、データフィードに含まれるイベントを決定します。一方、**ルックバック日付範囲**&#x200B;では、これらのイベントを正しく分類するために必要な履歴コンテキストを提供します。</p><p>セグメントの選定、ディメンションの永続性、セッションの計算、派生フィールド変換はすべて、含まれるイベントに影響を与える場合があります。</p> <p>このオプションを設定する前に、次の節「[ ルックバック日付範囲について](#data-feed-lookback-date-range)」で説明されている詳細と例を参照してください。</p> |
    | [!UICONTROL **処理遅延**] | Customer Journey Analyticsがデータフィードファイルを処理するまでの待機時間を選択します。 処理遅延の間に発生した遅延イベントは、データフィードに含まれます。 <p>最小の処理遅延は2時間ですが、一部の種類のデータでは、より長い遅延が必要です。 選択する遅延は、ストリーミング、バッチ、ステッチ、ルックアップ、プロファイルデータなど、接続のデータの種類によって異なります。</p><p>接続内の最も遅いデータが処理を完了するのに十分な長さの遅延を選択します。 遅延が短すぎる場合、処理中のデータはデータフィードファイルに含まれません。</p><p>このオプションを設定する前に、以下の節「[処理遅延について](#data-feed-processing-delay)」で説明されている詳細と例を参照してください。</p> |
    | [!UICONTROL **圧縮形式**] | クラウドの宛先に配信されるParquet出力ファイルの圧縮形式を選択します。 次の形式から選択します。<ul><li>[!UICONTROL **Snappy**]：適度なファイルサイズで高速に圧縮および解凍します。 BigQuery、Snowflake、Apache Sparkなどの最新のデータプラットフォームで広くサポートされています。</li><li>[!UICONTROL **GZip**]:Snappyをネイティブにサポートしていないツールなど、幅広い互換性があります。 ダウンストリームパイプラインに広く認識されている圧縮規格が必要な場合に推奨されます。</li><li>[!UICONTROL **Z Standard （Zstd）**]：高速な解凍による高い圧縮効率。 ファイルサイズの最小化が優先され、ツールがZstdをサポートする場合に適しています。</li></ul> |
 
@@ -345,19 +176,19 @@ ht-degree: 20%
    >レポートの宛先を設定する際には、次の点を考慮してください。
    >
    ><!--* Adobe recommends using a cloud account for your report destination. [Legacy FTP and SFTP accounts](/help/components/locations/configure-import-accounts.md) are available, but are not recommended.-->
-   >* 以前に設定したクラウドアカウントはすべて、データフィードに使用できます。 クラウドアカウントは、[&#x200B; コンポーネント/書き出し/場所アカウント &#x200B;](/help/components/exports/cloud-export-accounts.md)の場所マネージャーから設定できます。
+   >* 以前に設定したクラウドアカウントはすべて、データフィードに使用できます。 クラウドアカウントは、[ コンポーネント/書き出し/場所アカウント ](/help/components/exports/cloud-export-accounts.md)の場所マネージャーから設定できます。
    >
    >* Cloud アカウントは、Customer Journey Analytics ユーザーアカウントに関連付けられています。 他のユーザーは、組織内のすべてのユーザーが利用できるようにしない限り、設定したクラウドアカウントを使用または表示できません。
    >
-   >* 場所マネージャーから作成した場所は、[&#x200B; コンポーネント/書き出し/場所](/help/components/exports/cloud-export-locations.md)で編集できます。
+   >* 場所マネージャーから作成した場所は、[ コンポーネント/書き出し/場所](/help/components/exports/cloud-export-locations.md)で編集できます。
 
    以下のフィールドに入力します。
 
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **すべてのユーザーの宛先を表示**] | システム管理者の場合は、このオプションを有効にして、組織内のすべてのユーザーが作成した宛先を表示できます。 このオプションを無効にすると、作成した宛先のみが表示されます。 |
-   | [!UICONTROL **アカウント**] | 次のいずれかの操作を行います。<ul><li>**既存のアカウントを使用：** 「**[!UICONTROL アカウント]**」フィールドの横にあるドロップダウンメニューを選択します。 または、アカウント名の入力を開始し、ドロップダウンメニューから選択します。 <p>アカウントは、設定した場合、または自分が所属する組織と共有されている場合にのみ利用できます。</p></li><li>**新しいアカウントを作成：** **[!UICONTROL アカウント]** ドロップダウンメニューから&#x200B;**[!UICONTROL アカウント]**&#x200B;を追加を選択します。 アカウントの設定方法について詳しくは、[&#x200B; クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。</li></ul> |
-   | [!UICONTROL **場所**] | 次のいずれかの操作を行います。<ul><li>**既存の場所を使用：** 「**[!UICONTROL 場所]**」フィールドの横にあるドロップダウンメニューを選択します。 または、場所の名前を入力し、ドロップダウンメニューから選択します。</li><li>**新しい場所を作成：** **[!UICONTROL 場所]** ドロップダウンメニューから&#x200B;**[!UICONTROL 場所]**&#x200B;を追加を選択します。 場所の設定方法について詳しくは、[&#x200B; クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。</li></ul> |
+   | [!UICONTROL **アカウント**] | 次のいずれかの操作を行います。<ul><li>**既存のアカウントを使用：** 「**[!UICONTROL アカウント]**」フィールドの横にあるドロップダウンメニューを選択します。 または、アカウント名の入力を開始し、ドロップダウンメニューから選択します。 <p>アカウントは、設定した場合、または自分が所属する組織と共有されている場合にのみ利用できます。</p></li><li>**新しいアカウントを作成：** **[!UICONTROL アカウント]** ドロップダウンメニューから&#x200B;**[!UICONTROL アカウント]**&#x200B;を追加を選択します。 アカウントの設定方法について詳しくは、[ クラウド書き出しアカウントの設定](/help/components/exports/cloud-export-accounts.md)を参照してください。</li></ul> |
+   | [!UICONTROL **場所**] | 次のいずれかの操作を行います。<ul><li>**既存の場所を使用：** 「**[!UICONTROL 場所]**」フィールドの横にあるドロップダウンメニューを選択します。 または、場所の名前を入力し、ドロップダウンメニューから選択します。</li><li>**新しい場所を作成：** **[!UICONTROL 場所]** ドロップダウンメニューから&#x200B;**[!UICONTROL 場所]**&#x200B;を追加を選択します。 場所の設定方法について詳しくは、[ クラウド書き出し場所の設定](/help/components/exports/cloud-export-locations.md)を参照してください。</li></ul> |
    | [!UICONTROL **完了時にメールで通知**] | データフィードが正常に送信されるか、送信に失敗した後に通知を配信する1つ以上のメールアドレスを指定します。 複数のメールアドレスはコンマで区切る必要があります。 |
    | [!UICONTROL **マニフェストを有効にする**] | 各データフィード配信にマニフェストファイルを含めるかどうかを選択します。 マニフェストファイルには、データフィードに含まれる各ファイルの情報が含まれます。 |
 
@@ -414,7 +245,7 @@ ht-degree: 20%
 
 データフィードでセッションを操作する際には、次の点を考慮してください。
 
-* ルックバック日付範囲より前にセッションが開始された場合、その以前のイベントは使用できないため、セッション値がAnalysis Workspaceと異なる場合があります。 詳しくは、[&#x200B; データフィードとAnalysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)の間のデータの不一致について参照してください。
+* ルックバック日付範囲より前にセッションが開始された場合、その以前のイベントは使用できないため、セッション値がAnalysis Workspaceと異なる場合があります。 詳しくは、[ データフィードとAnalysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)の間のデータの不一致について参照してください。
 * データビューのセッション設定を変更すると、セッション IDが変更されます。 後の配信のセッション IDは、以前の配信のセッション IDと一致しません。
 
 ### Dimensionの永続性
@@ -489,7 +320,7 @@ Customer Journey Analyticsで利用可能になるまでに、データの種類
 
 到着時間は、収集するデータの種類によって異なります。 収集するデータの種類に応じた遅延を選択します。
 
-* **Edge Networkまたはストリーミング取り込みからのイベントデータセット**：通常、データは60分以内にデータレイクに届きます（[&#x200B; レイテンシ &#x200B;](/help/technotes/guardrails.md#latencies)を参照）。
+* **Edge Networkまたはストリーミング取り込みからのイベントデータセット**：通常、データは60分以内にデータレイクに届きます（[ レイテンシ ](/help/technotes/guardrails.md#latencies)を参照）。
 
 * **Analytics ソースコネクタデータセット**：通常、データは2.25時間以内にデータレイクに到達します（[遅延](/help/technotes/guardrails.md#latencies)を参照）。
 
@@ -511,7 +342,7 @@ Customer Journey Analyticsで利用可能になるまでに、データの種類
 
 #### フェーズ 2：データはデータレイクからCustomer Journey Analyticsに取り込まれる
 
-これには最大90分かかる場合があります（[&#x200B; レイテンシ &#x200B;](/help/technotes/guardrails.md#latencies)を参照）。
+これには最大90分かかる場合があります（[ レイテンシ ](/help/technotes/guardrails.md#latencies)を参照）。
 
 * **結合されたデータセット**：結合は、最大4時間まで追加できます（[遅延](/help/technotes/guardrails.md#latencies)を参照）。 接続でステッチが有効になっている場合は、遅延を少なくとも6時間、場合によっては8時間に設定します。 ステッチリプレイによって更新されるデータは、通常、既に処理されたデータフィードファイルには含まれません。
 
