@@ -23,7 +23,7 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-Customer Journey Analyticsの[ サブイベント ](/help/components/segments/sub-event.md)を使用すると、イベントレベルよりも詳細なレベルでイベントデータを分析できます。
+Customer Journey Analyticsの[&#x200B; サブイベント &#x200B;](/help/components/segments/sub-event.md)を使用すると、イベントレベルよりも詳細なレベルでイベントデータを分析できます。
 
 次の情報を使用して、Customer Journey Analytics データフィードでサブイベントを操作する方法を理解します。
 
@@ -37,7 +37,7 @@ Adobe Experience PlatformのXDM スキーマ内のサブイベントを含むイ
 
 次の例では、`Product list items`は様々なサブイベントを含むオブジェクト配列です。
 
-オブジェクト配列とサブイベントを含む![XDM スキーマ ](assets/df-sub-event-schema.png)
+オブジェクト配列とサブイベントを含む![XDM スキーマ &#x200B;](assets/df-sub-event-schema.png)
 
 ### サブイベントの例：購入イベント内の製品
 
@@ -132,7 +132,7 @@ Adobe Experience PlatformのXDM スキーマ内のサブイベントを含むイ
 
 ## データフィード出力のサブイベントデータのクエリ
 
-サブイベントデータ [はCustomer Journey Analytics データフィード ](#view-sub-event-data-in-data-feed-output)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
+サブイベントデータ [はCustomer Journey Analytics データフィード &#x200B;](#view-sub-event-data-in-data-feed-output)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
 次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用します。 SnowflakeやDatabricksなどの他のデータウェアハウスも、構文の違いが少なくても同じアプローチをサポートしています。
 
