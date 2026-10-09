@@ -132,5 +132,5 @@ Analysis Workspaceでプロジェクトを作成します。
 
 >[!MORELIKETHIS]
 >
->[Meta Ads ソースコネクタ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Meta Ads ソースコネクタ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >[Content Analytics有料メディア自動設定](/help/content-analytics/config/paid-media.md)
