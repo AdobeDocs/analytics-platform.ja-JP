@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1515'
 ht-degree: 89%
 ---
 # Adobe Customer Journey Analytics ガイド {#using}
@@ -313,6 +313,7 @@ ht-degree: 89%
     + [ガイド付き設定](/help/content-analytics/config/guided.md)
     + [手動設定](/help/content-analytics/config/manual.md)
     + [スタンドアロン設定](/help/content-analytics/config/standalone.md)
+    + {hide-from-toc}[有料メディア設定](/help/content-analytics/config/paid-media.md)
     + [JavaScript library](/help/content-analytics/config/tags-agnostic.md)
     + [データ収集](/help/content-analytics/config/datacollection.md)
 
@@ -434,6 +435,7 @@ ht-degree: 89%
       + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[&#x200B; コンポーネントの可用性](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[&#x200B; データフィードのセグメント化](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[&#x200B; データ変換の適用](/help/components/exports/cja-data-feeds/df-data-transformations.md)
       + {hide-from-toc}[データフィードの サブイベント &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)

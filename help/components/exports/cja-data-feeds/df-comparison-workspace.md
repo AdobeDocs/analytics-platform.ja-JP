@@ -15,7 +15,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 ## ルックバック日付範囲（データフィード）とレポート日付範囲（Analysis Workspace）の比較
 
-データフィードのルックバック日付範囲は、Customer Journey Analyticsがデータフィード配信に適格なイベントを検索する際に表示されるルックバック日付範囲を決定します。 例を含むルックバック日付範囲について詳しくは、[&#x200B; ルックバック日付範囲について](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range)を参照してください。
+データフィードのルックバック日付範囲は、Customer Journey Analyticsがデータフィード配信に適格なイベントを検索する際に表示されるルックバック日付範囲を決定します。 例を含むルックバック日付範囲について詳しくは、[&#x200B; ルックバック日付範囲について](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range)を参照してください。
 
 この意味で、ルックバック日付範囲はAnalysis Workspaceのレポート日付範囲と似ています。 しかし、両者には重要な違いがあります。
 
 | 主な違い | レポート日付範囲（Analysis Workspace） | ルックバック日付範囲（データフィード） |
 |---------|---------|----------|
-| **データ境界**<br/> データがレポートまたはフィードに含まれているかどうか | 柔軟な<p>次のいずれかの要因によってイベントが影響を受ける場合、レポートの日付範囲外のイベントは、引き続きWorkspace レポートに含めることができます。</p><ul><li>**Dimensionの永続性**: セッション、カスタム時間、または指標[有効期限](/help/data-views/component-settings/persistence.md#expiration-settings)を使用する場合、レポートの日付範囲を超えて永続化できます。 ユーザー報告ウィンドウ [有効期限](/help/data-views/component-settings/persistence.md#expiration-settings)を使用する場合のレポート日付範囲と同じです。 データは集約されます。</li><li>**セグメントの選定**: セグメントは、デフォルトでレポート日付範囲を超えて拡張できます。<p>ユーザーは、セグメントを作成するときに、レポートの日付範囲にセグメントを制限することができます。<!--add link to new docs--></p></li><li>**セッション計算**: セッションは、レポートの日付範囲を超えて拡張できます。 </li><li>**派生フィールド変換**</li></ul> | 固定<p>ルックバック日付範囲外のイベントは、次の要因の影響を受けるかどうかにかかわらず、データフィードに含まれません。</p></p><ul><li>**Dimensionの永続性**: [有効期限の設定](/help/data-views/component-settings/persistence.md#expiration-settings)に関係なく、ルックバック日付範囲を超えて永続化することはできません。 データは集約されません。</li><li>**セグメントの選定**：常にルックバック日付範囲に制限されます。</li><li>**セッション計算**：常にルックバック日付範囲に制限されます。</li><li>**派生フィールド変換**: コンテナを参照する派生フィールド関数は、データフィードの書き出しでルックバック日付範囲を使用します。</li></ul><p>ルックバック日付範囲の設定について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-a-data-feed)を参照してください。</p> |
+| **データ境界**<br/> データがレポートまたはフィードに含まれているかどうか | 柔軟な<p>次のいずれかの要因によってイベントが影響を受ける場合、レポートの日付範囲外のイベントは、引き続きWorkspace レポートに含めることができます。</p><ul><li>**Dimensionの永続性**: セッション、カスタム時間、または指標[有効期限](/help/data-views/component-settings/persistence.md#expiration-settings)を使用する場合、レポートの日付範囲を超えて永続化できます。 ユーザー報告ウィンドウ [有効期限](/help/data-views/component-settings/persistence.md#expiration-settings)を使用する場合のレポート日付範囲と同じです。 データは集約されます。</li><li>**セグメントの選定**: セグメントは、デフォルトでレポート日付範囲を超えて拡張できます。<p>ユーザーは、セグメントを作成するときに、レポートの日付範囲にセグメントを制限することができます。<!--add link to new docs--></p></li><li>**セッション計算**: セッションは、レポートの日付範囲を超えて拡張できます。 </li><li>**派生フィールド変換**</li></ul> | 固定<p>ルックバック日付範囲外のイベントは、次の要因の影響を受けるかどうかにかかわらず、データフィードに含まれません。</p></p><ul><li>**Dimensionの永続性**: [有効期限の設定](/help/data-views/component-settings/persistence.md#expiration-settings)に関係なく、ルックバック日付範囲を超えて永続化することはできません。 データは集約されません。</li><li>**セグメントの選定**：常にルックバック日付範囲に制限されます。</li><li>**セッション計算**：常にルックバック日付範囲に制限されます。</li><li>**派生フィールド変換**: コンテナを参照する派生フィールド関数は、データフィードの書き出しでルックバック日付範囲を使用します。</li></ul><p>ルックバック日付範囲の設定について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)を参照してください。</p> |
 | **レポート期間**<br/> レポートする期間 | レポートウィンドウ（レポートする時間枠）と同じです。 | レポートを作成する時間枠と同じではありません。 <p>レポートする時間枠は「頻度」ウィンドウで、1時間または1日にすることができます。</p> |
 
 >[!BEGINSHADEBOX]
