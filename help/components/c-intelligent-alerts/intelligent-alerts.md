@@ -48,7 +48,7 @@ Customer Journey Analytics のアラートを使用すると、変更された�
   * 指標の変化を特定の割合で表示。
   * 特定の値の上、下、または等しい指標。 （Select、Prime、またはUltimate パッケージを含むAdobe Analyticsのお客様のみが利用できます）
 
-この[ ビデオチュートリアル ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts)では、アラートの基本的な概要を説明します。
+この[&#x200B; ビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts)では、アラートの基本的な概要を説明します。
 
 
 
@@ -85,4 +85,4 @@ Adobe Customer Journey Analytics でアラートを作成する方法につい�
 
 アラートマネージャーでは、既存のアラートを管理できます。 タグ付け、名前変更、削除など、アラートに対して様々な管理タスクを実行できます。
 
-Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[ アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。
+Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[&#x200B; アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。

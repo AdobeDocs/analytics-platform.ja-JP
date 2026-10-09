@@ -45,7 +45,7 @@ ht-degree: 72%
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ モバイルスコアカード ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}へのアクセスを経営陣に支援するを参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; モバイルスコアカード &#x200B;](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"}へのアクセスを経営陣に支援するを参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -146,11 +146,11 @@ ht-degree: 72%
 
    * タップした間隔（**日**、**週**、**月**、**年**）に応じて、現在の期間またはその直前の日付範囲の 2 つのオプションが表示されます。 次の 2 つのオプションのいずれかをタップして、最初の範囲を選択します。 「**[!UICONTROL 比較]**」リストで、表示されたオプションのいずれかをタップして、この期間のデータを選択した最初の日付範囲と比較します。 画面右上の「**[!UICONTROL 完了]**」をタップします。 「**[!UICONTROL 日付範囲]**」フィールドとスコアカードタイルは、選択した新しい範囲の新しい比較データで更新されます。
 
-1. スコアカードにセグメントを適用するには、セグメント ドロップダウンメニューをタップし、キュレーターが設定したセグメントを選択します。 アプリの[ セグメント ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Workspaceと同じように機能します。
+1. スコアカードにセグメントを適用するには、セグメント ドロップダウンメニューをタップし、キュレーターが設定したセグメントを選択します。 アプリの[&#x200B; セグメント &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=ja)は、Workspaceと同じように機能します。
 
    ![セグメント](assets/segment_filter.png)
 
-1. [!UICONTROL  スコアカード ]の更新プログラムを取得します。 [!UICONTROL  スコアカード ]に、興味を持つ可能性のある指標または分類がすべて含まれていない場合は、Customer Journey Analytics チームに連絡して、スコアカードを更新してください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
+1. [!UICONTROL &#x200B; スコアカード &#x200B;]の更新プログラムを取得します。 [!UICONTROL &#x200B; スコアカード &#x200B;]に、興味を持つ可能性のある指標または分類がすべて含まれていない場合は、Customer Journey Analytics チームに連絡して、スコアカードを更新してください。 更新されたら、画面上のカードをプルダウンすると、最近追加したデータをロードして更新を表示できます。
 
 1. このアプリでフィードバックを残す手順は、次のとおりです。
 

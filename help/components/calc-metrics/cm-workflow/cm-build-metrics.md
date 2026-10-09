@@ -93,7 +93,7 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
    * **[!UICONTROL Customer Journey Analytics のすべての場所]**：計算指標は、Adobe Customer Journey Analytics 全体で使用できます。
    * **[!UICONTROL 次の場所では互換性がありません：]**
      * **[!UICONTROL 実験]**：計算された指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。
-     * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[ サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
+     * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[&#x200B; サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
 
 1. 次のいずれかを選択します。
    * 計算指標を保存する場合は、「**[!UICONTROL 保存]**」。
@@ -171,7 +171,7 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
 * セグメントからセグメントコンテナを追加するには、以下を使用します。
 
   * コンポーネントパネルから ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを&#x200B;**[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のセグメントを検索できます。
-    セグメントの名前を使用すると、セグメントコンテナが**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
+    セグメントの名前を使用すると、セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
 
   * コンポーネントパネルから![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを汎用コンテナにドラッグ＆ドロップします。 コンテナがセグメントコンテナに変更されます。
 

@@ -35,10 +35,10 @@ ht-degree: 1%
 
 Analysis Workspace全体でセグメントを使用するには、コンポーネントパネルの&#x200B;**[!UICONTROL セグメント]**&#x200B;から1つ以上のセグメントをドラッグして、次の場所にドロップします。
 
-* Analysis Workspaceの[ パネル ](/help/analysis-workspace/c-panels/panels.md)が、パネル内のすべてのビジュアライゼーションをセグメント化します。
-* ディメンションを置き換えるAnalysis Workspaceの[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)のヘッダー行。
-* Analysis Workspaceの[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の行で、分類を開始します。
-* Analysis Workspaceの[自由形式テーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の列で、列を追加または置換するか、フィルターを開始します。
-* ビジュアライゼーション用の設定パネルまたはセグメントをドロップできるパネル。 例えば、[ クイックインサイト ](/help/analysis-workspace/c-panels/quickinsight.md) パネルや[主要指標](/help/analysis-workspace/visualizations/key-metric.md)の概要ビジュアライゼーションで
+* Analysis Workspaceの[&#x200B; パネル &#x200B;](/help/analysis-workspace/c-panels/panels.md)が、パネル内のすべてのビジュアライゼーションをセグメント化します。
+* ディメンションを置き換えるAnalysis Workspaceの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)のヘッダー行。
+* Analysis Workspaceの[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の行で、分類を開始します。
+* Analysis Workspaceの[自由形式テーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)の列で、列を追加または置換するか、フィルターを開始します。
+* ビジュアライゼーション用の設定パネルまたはセグメントをドロップできるパネル。 例えば、[&#x200B; クイックインサイト &#x200B;](/help/analysis-workspace/c-panels/quickinsight.md) パネルや[主要指標](/help/analysis-workspace/visualizations/key-metric.md)の概要ビジュアライゼーションで
 * セグメント定義にセグメントを含めるには、セグメントの[定義ビルダー](/help/components/segments/seg-builder.md#definition-builder)が必要です。
-* 計算指標](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md#definition-builder)の[定義ビルダー。計算指標の定義にセグメントを含めます。
+* 計算指標[&#128279;](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md#definition-builder)の定義ビルダー。計算指標の定義にセグメントを含めます。

@@ -74,7 +74,7 @@ Adobe Experience PlatformおよびCustomer Journey Analyticsには、次のよ�
   * [Data Distiller](https://experienceleague.adobe.com/ja/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
   * [接続](/help/connections/overview.md)
-  * [ データビュー](/help/data-views/data-views.md) （[派生フィールド&#x200B;](/help/data-views/derived-fields/derived-fields.md)を含む）
+  * [&#x200B; データビュー](/help/data-views/data-views.md) （[派生フィールド&#x200B;](/help/data-views/derived-fields/derived-fields.md)を含む）
   * [セグメント](/help/components/segments/seg-overview.md)
   * [計算指標](/help/components/calc-metrics/calc-metr-overview.md)
   * [ガイド付き分析：タイムライン](/help/guided-analysis/types/timeline.md)
@@ -94,13 +94,13 @@ Customer Journey Analyticsでは、次の機能を利用して、獲得とアク
 * [ガイド付き分析：純成長](/help/guided-analysis/types/net-growth.md)
 * [ガイド付き分析：トレンド](/help/guided-analysis//types/trends.md)
 * [アトリビューションパネル](/help/analysis-workspace/c-panels/attribution.md)
-* マーケティングチャネルディメンションを含む[ フリーフォームテーブル ](/help/analysis-workspace/c-panels/freeform-panel.md) （[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)を使用して作成）
+* マーケティングチャネルディメンションを含む[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/c-panels/freeform-panel.md) （[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)を使用して作成）
 
 ## エンゲージメントと導入を測定
 
 新規ユーザーの獲得は、商品のトップを拡大しますfunnel. エンゲージメントでは、そうした利用者をfunnelのさらに下に誘導し、成功への障害を取り除くことに焦点を当てます。 その成功は、ビジネスの成功を直接促進します。
 
-![ エンゲージメント分析](/help/guided-analysis/assets/feature-matrix.png)
+![&#x200B; エンゲージメント分析](/help/guided-analysis/assets/feature-matrix.png)
 
 Customer Journey Analyticsの次の機能は、製品のエンゲージメントと採用率を追跡するのに役立ちます。
 
@@ -119,7 +119,7 @@ Customer Journey Analyticsの次の機能は、製品のエンゲージメント
 
 顧客維持率とは、最初の獲得とアクティベーションの後、製品とエンゲージメントし続けるユーザー数を表します。 パフォーマンスの高い製品は、継続的な使用に最も強く相関する機能とのインタラクションを最大化することで、安定したロイヤルティの高い顧客基盤を維持します。 維持しているユーザーは製品に何度も戻って操作しますが、解約したユーザーは返品しません。 製品チームは、リテンションを追跡し、継続的なエンゲージメントを促進する機能を特定し、離反したユーザーをリテンションされたユーザー行動に移行させる介入を設計します。
 
-![ リテンション分析](/help/guided-analysis/assets/retention.png)
+![&#x200B; リテンション分析](/help/guided-analysis/assets/retention.png)
 
 Customer Journey Analyticsの次の機能は、リテンションと解約を効果的に追跡するのに役立ちます。
 
@@ -134,11 +134,11 @@ Customer Journey Analyticsの次の機能は、リテンションと解約を効
 
 Adobe CX Enterpriseでは、次の機能を利用して、インサイトを効果的に活用できます。
 
-* Customer Journey Analyticsからアクティブ化する[ オーディエンスを作成して公開](/help/components/audiences/publish.md)
+* Customer Journey Analyticsからアクティブ化する[&#x200B; オーディエンスを作成して公開](/help/components/audiences/publish.md)
 * CX Enterpriseを通じてオーディエンスを活用：
-  * [AJOとAdobe Targetで実験](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)を実行し、[実験パネル ](/help/analysis-workspace/c-panels/experimentation.md)を使用してCustomer Journey Analyticsのバリエーションの影響を測定します
-  * [AJOのユーザーにアプリ内エンゲージメント ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)を配信します。
-* [Adobe Real-time CDPを使用して外部の宛先にオーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)をアクティベートします。
+  * [AJOとAdobe Targetで実験](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)を実行し、[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用してCustomer Journey Analyticsのバリエーションの影響を測定します
+  * [AJOのユーザーにアプリ内エンゲージメント &#x200B;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)を配信します。
+* [Adobe Real-time CDPを使用して外部の宛先にオーディエンス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)をアクティベートします。
 
 ## 組織全体でインサイトを共有
 
@@ -150,4 +150,4 @@ Adobe Customer Journey Analyticsでは、次の機能を利用して、インサ
 
 * [Share](/help/analysis-workspace/curate-share/share-projects.md)は、特定のビジネス上の質問に合わせたガイド付き分析ビューを提供し、消費者が次の質問をセルフサービスで行えるようにします
 * ガイド付き分析、パネル、ビジュアライゼーションを[Analysis Workspace](/help/analysis-workspace/home.md)の包括的なダッシュボードに組み合わせる
-* [ モバイルスコアカード ](/help/mobile-app/home.md)を、経営陣やその他の外出先の消費者向けに主要な製品インサイトとともに作成します
+* [&#x200B; モバイルスコアカード &#x200B;](/help/mobile-app/home.md)を、経営陣やその他の外出先の消費者向けに主要な製品インサイトとともに作成します

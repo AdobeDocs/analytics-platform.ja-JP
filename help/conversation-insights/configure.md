@@ -46,7 +46,7 @@ ht-degree: 16%
 
 会話インサイト設定を作成または編集できるのはシステム管理者のみです。
 
-[会話インサイト設定インターフェイス ](./manage.md)から設定を作成または編集します。
+[会話インサイト設定インターフェイス &#x200B;](./manage.md)から設定を作成または編集します。
 
 ## 欠落しているブレンド済みデータセットを復元
 
@@ -68,7 +68,7 @@ ht-degree: 16%
 
 1. 「**[!UICONTROL データセット]**」セクションで、次の情報を指定します。
 
-   ![会話インサイトデータセット ](assets/conversation-insights-configuration-datasets.png)
+   ![会話インサイトデータセット &#x200B;](assets/conversation-insights-configuration-datasets.png)
 
    | フィールド | 説明 |
    |---------|----------|
@@ -126,11 +126,11 @@ ht-degree: 16%
 
 ## データビューの検証
 
-[設定手順](#configuration-steps)で設定したデータビューには、[ データビュー](/help/data-views/manage-dataviews.md)の&#x200B;**[!UICONTROL 統合]**&#x200B;の値として&#x200B;**[!UICONTROL 会話インサイト]**&#x200B;があります。
+[設定手順](#configuration-steps)で設定したデータビューには、[&#x200B; データビュー](/help/data-views/manage-dataviews.md)の&#x200B;**[!UICONTROL 統合]**&#x200B;の値として&#x200B;**[!UICONTROL 会話インサイト]**&#x200B;があります。
 
 設定された各データビューについて、次の手順を実行します。
 
-* **Containers**: [Containers タブ ](/help/data-views/create-dataview.md#containers)には、新しい&#x200B;**[!UICONTROL コンテナ名]**: **[!UICONTROL 会話]**&#x200B;と&#x200B;**[!UICONTROL 表示名]**: **[!UICONTROL コンテナ]**&#x200B;が追加の&#x200B;**[!UICONTROL システム]** **[!UICONTROL コンテナタイプ]**&#x200B;として含まれています。
+* **Containers**: [Containers タブ &#x200B;](/help/data-views/create-dataview.md#containers)には、新しい&#x200B;**[!UICONTROL コンテナ名]**: **[!UICONTROL 会話]**&#x200B;と&#x200B;**[!UICONTROL 表示名]**: **[!UICONTROL コンテナ]**&#x200B;が追加の&#x200B;**[!UICONTROL システム]** **[!UICONTROL コンテナタイプ]**&#x200B;として含まれています。
 * **コンポーネント**：追加のスキーマフィールドフォルダーが表示されます。 例：agentExperienceとconversation さらに、次のコンポーネントが自動的に追加されます。
 
   | 指標 | スキーマデータタイプ | スキーマパス |

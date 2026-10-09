@@ -48,7 +48,7 @@ ht-degree: 6%
 
   1. **[!UICONTROL テーブル]** ペインの特定の指標に対して![MoreSmall](/help/assets/icons/MoreSmall.svg)を選択し、**[!UICONTROL フィルター指標]**&#x200B;を選択します。
 
-     指標を表示する「![ セグメント」タブ。](./assets/filter-metric.png){zoomable="yes"}
+     指標を表示する「![&#x200B; セグメント」タブ。](./assets/filter-metric.png){zoomable="yes"}
 
   1. 「**[!UICONTROL セグメント]**」ドロップダウンメニューから1つ以上のセグメントを選択します。 セグメントは、**[!UICONTROL 適用されたセグメント]** リストに追加されます。
 
@@ -111,7 +111,7 @@ Report Builderは、置き換えを反映するためにセグメントのリス
 1. セグメントを定義するには、「**[!UICONTROL セグメント]**」タブを選択します。
 1. ![DataViewSelector](/help/assets/icons/DataViewSelector.svg)を選択します。
 
-   ![ セルからセグメントを選択](assets/select-segment-from-cell.png){zoomable="yes"}
+   ![&#x200B; セルからセグメントを選択](assets/select-segment-from-cell.png){zoomable="yes"}
 
 1. データブロックがセグメントを参照するセルを選択します。
 
@@ -121,7 +121,7 @@ Report Builderは、置き換えを反映するためにセグメントのリス
 
 1. 「**セグメント**」タブから、新しく作成した参照セルセグメントをデータブロックに追加します。
 
-   Sheet1!J1 （All Data） セグメントがテーブルに追加されたことを示す![ セグメント タブ。](assets/segment-from-cell-applied.png){zoomable="yes"}
+   Sheet1!J1 （All Data） セグメントがテーブルに追加されたことを示す![&#x200B; セグメント タブ。](assets/segment-from-cell-applied.png){zoomable="yes"}
 
 1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -133,7 +133,7 @@ Report Builderは、置き換えを反映するためにセグメントのリス
 
 1. 「**[!UICONTROL クイック編集]**」メニューの「**[!UICONTROL セルからのセグメント]**」の下にあるリンクを選択します。
 
-   Sheet1!J1 （All Data） ](assets/select-segment-from-cell-in-sheet.png){zoomable="yes"}を示すセル リンクからの![ セグメント
+   Sheet1!J1 （All Data） ![&#128279;](assets/select-segment-from-cell-in-sheet.png){zoomable="yes"}を示すセル リンクからの セグメント
 
 1. ドロップダウンメニューからセグメントを選択します。
 

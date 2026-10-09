@@ -26,7 +26,7 @@ ht-degree: 83%
 
 Analysis Workspace 内で、コンテキストに応じてデータの異常値を表示および分析できます。
 
-[異常値検出のビデオチュートリアル ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=ja) （4:53）
+[異常値検出のビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=ja) （4:53）
 
 異常値検出は、以前のデータに関連して特定の指標がどのように変化したかを判定するための統計的手法です。
 

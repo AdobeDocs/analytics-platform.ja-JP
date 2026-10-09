@@ -64,7 +64,7 @@ Customer Journey Analytics へのデータの取り込みには、様々なオ�
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)は、Adobe CX Enterpriseのお客様がAdobe Experience Platform Edge Networkを通じてCX Enterpriseの様々なサービスと操作できるようにする、クライアントサイドのJavaScript ライブラリです。
 
-1. [Adobe Experience Platform Web SDK拡張機能をタグ ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja)で構成して、Adobe Experience Platform Edge Networkを介してweb プロパティからCX Enterpriseにデータを送信します。
+1. [Adobe Experience Platform Web SDK拡張機能をタグ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=ja)で構成して、Adobe Experience Platform Edge Networkを介してweb プロパティからCX Enterpriseにデータを送信します。
 1. [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=ja) を使用して、クロスチャネルレポートのための 1 つ以上の[接続](/help/connections/create-connection.md)と[データ表示](/help/data-views/data-views.md)を作成します。
 
 ## バッチ取り込みとストリーミング取り込みによるデータの取り込み

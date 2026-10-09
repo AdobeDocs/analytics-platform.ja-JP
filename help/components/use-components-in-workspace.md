@@ -129,7 +129,7 @@ Analysis Workspace では、次のいずれかの方法でセグメントを使�
 フリーフォームテーブルの列にセグメントを追加すると、セグメントはテーブル列内のすべてのコンテンツに適用されます。 また、セグメントをフォールアウトビジュアライゼーションの一部として追加することもできます。
 
 * コンポーネントでのセグメントの使用
-[計算指標](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注釈](/help/components/annotations/create-annotations.md#annotation-builder)、さらには[ セグメント ](/help/components/segments/seg-builder.md)などのコンポーネントを定義する場合、定義の一部としてセグメントを使用できます。
+[計算指標](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注釈](/help/components/annotations/create-annotations.md#annotation-builder)、さらには[&#x200B; セグメント &#x200B;](/help/components/segments/seg-builder.md)などのコンポーネントを定義する場合、定義の一部としてセグメントを使用できます。
 
 
 ### プロジェクトへの日付範囲の追加

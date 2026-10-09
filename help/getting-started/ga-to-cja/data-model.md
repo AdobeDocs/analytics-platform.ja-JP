@@ -61,8 +61,8 @@ Customer Journey Analyticsでは、次の3つのデータセットタイプを�
 
 | CJAのデータセットタイプ | GA4当量 | What it holds |
 |---|---|---|
-| [!UICONTROL  イベントデータセット ] | GA4 イベントストリーム | 時系列のインタラクション（ページビュー、クリック、購入） |
-| [!UICONTROL  プロファイルデータセット ] | GA4 ユーザーのプロパティ | 個人レベルの属性（CRM フィールド、ロイヤルティステータス、デモグラフィック） |
+| [!UICONTROL &#x200B; イベントデータセット &#x200B;] | GA4 イベントストリーム | 時系列のインタラクション（ページビュー、クリック、購入） |
+| [!UICONTROL &#x200B; プロファイルデータセット &#x200B;] | GA4 ユーザーのプロパティ | 個人レベルの属性（CRM フィールド、ロイヤルティステータス、デモグラフィック） |
 | [!UICONTROL ルックアップデータセット] | 参照テーブルとして使用されるGA4 カスタムディメンション | キー値参照データ（製品カタログ、キャンペーン名） |
 
 Customer Journey Analyticsには、eVar、prop、Success イベントがありません。 あらゆるディメンションと指標は、XDM スキーマフィールドから直接取得されています。 一意のディメンション値の数に制限はありません。
@@ -75,7 +75,7 @@ SDKを通じて、一連のイベントを自動的に収集します。 次の�
 |---|---|
 | `page_view` | `xdm.web.webPageDetails.pageViews` （標準XDM フィールド） |
 | `session_start` | セッション開始（自動、データビューセッション定義ごと） |
-| `first_visit` | [!UICONTROL 最初のセッション ] セグメント |
+| `first_visit` | [!UICONTROL 最初のセッション &#x200B;] セグメント |
 | `scroll` | カスタムイベント（明示的な実装マッピングが必要） |
 | `click` | `xdm.web.webInteraction` フィールド （実装が必要） |
 | `video_start` / `video_complete` | Media Collection スキーマフィールド（Adobe ストリーミングメディアサービスを使用） |
@@ -91,11 +91,11 @@ SDKを通じて、一連のイベントを自動的に収集します。 次の�
 GA4では、カスタムイベントには名前と最大25個のパラメーターがあります。 Customer Journey Analyticsでは、カスタムイベントは、実装中に定義されたカスタム XDM スキーマフィールドにマッピングされます。
 
 * **イベント名**&#x200B;は、XDM フィールドのフィールド値になります（通常は[`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)）。
-* 各&#x200B;**パラメーター**&#x200B;は個別のXDM スキーマフィールドになります。 任意のXDM フィールドは、[ データビューの設定](/help/data-views/component-settings/overview.md)時に、ディメンションまたは指標として公開できます。
+* 各&#x200B;**パラメーター**&#x200B;は個別のXDM スキーマフィールドになります。 任意のXDM フィールドは、[&#x200B; データビューの設定](/help/data-views/component-settings/overview.md)時に、ディメンションまたは指標として公開できます。
 
 >[!NOTE]
 >
->組織のカスタムイベントの特定のXDM フィールドパスは、Web SDKの実装中に決定されます。 レポートを作成する前に、実装チームと協力して特定のフィールドマッピングを理解しましょう。 詳しくは、[ スキーマの構築](../cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。
+>組織のカスタムイベントの特定のXDM フィールドパスは、Web SDKの実装中に決定されます。 レポートを作成する前に、実装チームと協力して特定のフィールドマッピングを理解しましょう。 詳しくは、[&#x200B; スキーマの構築](../cja-upgrade/cja-upgrade-schema-architect.md)を参照してください。
 
 ## ユーザープロパティ
 
@@ -105,4 +105,4 @@ GA4 ユーザープロパティは、ユーザーに設定された永続的な�
 
 このアプローチにより、Customer Journey AnalyticsはGA4のユーザープロパティモデルよりも柔軟性が高まります。GA4では、SDKで定義されたユーザープロパティに制限が設けられていますが、Customer Journey Analyticsプロファイルデータセットには、結合可能なIDを共有する限り、あらゆるシステム（CRM、ロイヤルティプラットフォーム、サポートレコード）の任意の属性を含めることができます。
 
-組織が引き続きAdobe Experience PlatformにGA データを取り込む必要がある場合は、管理者向けの設定ガイドについては、[Google Analyticsの履歴データの取り込み](/help/use-cases/third-party/ga/backfill.md)および[ ストリーミング Google Analytics データの設定](/help/use-cases/third-party/ga/streaming.md)を参照してください。
+組織が引き続きAdobe Experience PlatformにGA データを取り込む必要がある場合は、管理者向けの設定ガイドについては、[Google Analyticsの履歴データの取り込み](/help/use-cases/third-party/ga/backfill.md)および[&#x200B; ストリーミング Google Analytics データの設定](/help/use-cases/third-party/ga/streaming.md)を参照してください。

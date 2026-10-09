@@ -37,19 +37,19 @@ Customer Journey Analyticsでは、さまざまなタイプのセグメントを
 
 デフォルトでは、セグメントを作成できるのは管理者のみです。 ユーザーには、ユーザーが他のコンポーネント（注釈、計算指標など）を表示する方法と同様に、セグメントを表示する権限があります。
 
-ただし、管理者は、[Admin Console](/help/technotes/access-control.md#user-level-access)を介して、CJA Workspace Access ]**の**[!UICONTROL  Reporting Tools ]**の**[!UICONTROL  セグメント作成&#x200B;]**権限をユーザーに付与できます。**[!UICONTROL  Edit permissions for Access
+ただし、管理者は、[Admin Console](/help/technotes/access-control.md#user-level-access)を介して、CJA Workspace Access **の**&#x200B;[!UICONTROL &#x200B; Reporting Tools &#x200B;]&#x200B;**の**&#x200B;[!UICONTROL &#x200B; セグメント作成&#x200B;]&#x200B;**権限をユーザーに付与できます。** Edit permissions for Access
 
 セグメントは、次の方法で作成できます。
 
-![ セグメントを作成する方法](assets/create-filter.png)
+![&#x200B; セグメントを作成する方法](assets/create-filter.png)
 
-* **A**。メインインターフェイスで、**[!UICONTROL コンポーネント]**&#x200B;を選択し、**[!UICONTROL セグメント]**&#x200B;を選択します。 [[!UICONTROL  セグメント ] マネージャー](/help/components/segments/seg-manage.md)から![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**]を選択します。
-* **B**。Workspace プロジェクトで、「![ セグメント ](/help/assets/icons/Segmentation.svg) **セグメント**」の「![追加](/help/assets/icons/Add.svg)」を左パネルから選択します。
+* **A**。メインインターフェイスで、**[!UICONTROL コンポーネント]**&#x200B;を選択し、**[!UICONTROL セグメント]**&#x200B;を選択します。 [[!UICONTROL &#x200B; セグメント &#x200B;] マネージャー](/help/components/segments/seg-manage.md)から![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**]を選択します。
+* **B**。Workspace プロジェクトで、「![&#x200B; セグメント &#x200B;](/help/assets/icons/Segmentation.svg) **セグメント**」の「![追加](/help/assets/icons/Add.svg)」を左パネルから選択します。
 * **C**。Workspace プロジェクトで、ビジュアライゼーションのコンテキストメニューから「**[!UICONTROL 選択範囲からセグメントを作成]**」を選択します。
 * **D**。Workspace プロジェクトで、メニューから「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL セグメントを作成]**」を選択します。
 * **E**。Workspace プロジェクトでは、ショートカット **[!UICONTROL shift+cmd+e]** （macOS）または&#x200B;**[!UICONTROL shift+ctrl+e]** （Windows）を使用します。
 * **F**。***で「![追加](/help/assets/icons/Add.svg)」を選択し、セグメントをここに（または他のコンポーネント）*** ドロップゾーンにドロップします。 このアクションにより、プロジェクトのみのセグメントが作成されます。
 
-新しいセグメントを定義するには、[ セグメントビルダー](/help/components/segments/seg-builder.md)を使用します。
+新しいセグメントを定義するには、[&#x200B; セグメントビルダー](/help/components/segments/seg-builder.md)を使用します。
 
-Workspace プロジェクトでは、[ クイックセグメント ](/help/components/segments/seg-quick.md)を使用してセグメントをすばやく作成することもできます。
+Workspace プロジェクトでは、[&#x200B; クイックセグメント &#x200B;](/help/components/segments/seg-quick.md)を使用してセグメントをすばやく作成することもできます。

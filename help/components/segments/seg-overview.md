@@ -227,7 +227,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 
 >[!MORELIKETHIS]
 >
->[ セグメントの作成](seg-create.md)
+>[&#x200B; セグメントの作成](seg-create.md)
 >[セグメントビルダー](seg-builder.md)
 >[クイックセグメント](seg-quick.md)
 >[順次セグメント](seg-sequential-build.md)

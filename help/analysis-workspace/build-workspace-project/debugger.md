@@ -33,7 +33,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->デバッガーを使用するには、**編集**&#x200B;または&#x200B;**コピー**[ プロジェクト ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)へのアクセス権が必要です。
+>デバッガーを使用するには、**編集**&#x200B;または&#x200B;**コピー**&#x200B;[&#x200B; プロジェクト &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744)へのアクセス権が必要です。
 >
 
 
@@ -53,19 +53,19 @@ ht-degree: 4%
 
 ## デバッガーの使用
 
-デバッガーを有効にすると、プロジェクト内のすべてのビジュアライゼーションに追加の![ バグ ](/help/assets/icons/Bug.svg) アイコンが表示されます。
+デバッガーを有効にすると、プロジェクト内のすべてのビジュアライゼーションに追加の![&#x200B; バグ &#x200B;](/help/assets/icons/Bug.svg) アイコンが表示されます。
 
 特定のビジュアライゼーションにデバッガーを使用するには：
 
-1. ビジュアライゼーションの上部にある「![ バグ ](/help/assets/icons/Bug.svg)」を選択します。
+1. ビジュアライゼーションの上部にある「![&#x200B; バグ &#x200B;](/help/assets/icons/Bug.svg)」を選択します。
 
-   ![ デバッガーのコンテキストメニュー](assets/debugger-context-menu.png)
+   ![&#x200B; デバッガーのコンテキストメニュー](assets/debugger-context-menu.png)
 
 1. コンテキストメニューから適切なアクションを選択します。 使用可能なアクションは、ビジュアライゼーションによって異なり、実行するデバッグのタイプを示します。 例えば、**[!UICONTROL 異常値]**&#x200B;を選択した場合、ビジュアライゼーションの異常値機能をデバッグします。
 1. サブメニューから、タイムスタンプを選択します。
 1. **[!UICONTROL Oberon XML]** デバッグウィンドウが開き、ビジュアライゼーションによって実行される特定の機能の詳細が表示されます。 異常値リクエストの出力の例については、以下を参照してください。
 
-   ![ デバッグリクエストを出力](assets/debugger-oberon.png)
+   ![&#x200B; デバッグリクエストを出力](assets/debugger-oberon.png)
 
    詳細は次のとおりです。
 
@@ -91,8 +91,8 @@ ht-degree: 4%
    * JSON (レスポンス)
    * cURL リクエスト
 
-1. **[!UICONTROL cURL リクエスト]**&#x200B;の下の![ コピー](/help/assets/icons/Copy.svg) **[!UICONTROL クリップボードへのコピー]**&#x200B;を使用して、リクエストをクリップボードにコピーします。
-1. **[!UICONTROL リクエスト]**&#x200B;または&#x200B;**[!UICONTROL 応答]**&#x200B;のテキスト領域のいずれかにカーソルを合わせて表示し、![ コピー](/help/assets/icons/Copy.svg) **[!UICONTROL クリップボードにコピー]**&#x200B;を選択して、そのテキスト領域（XMLまたはJSON）の内容をクリップボードにコピーします。
+1. **[!UICONTROL cURL リクエスト]**&#x200B;の下の![&#x200B; コピー](/help/assets/icons/Copy.svg) **[!UICONTROL クリップボードへのコピー]**&#x200B;を使用して、リクエストをクリップボードにコピーします。
+1. **[!UICONTROL リクエスト]**&#x200B;または&#x200B;**[!UICONTROL 応答]**&#x200B;のテキスト領域のいずれかにカーソルを合わせて表示し、![&#x200B; コピー](/help/assets/icons/Copy.svg) **[!UICONTROL クリップボードにコピー]**&#x200B;を選択して、そのテキスト領域（XMLまたはJSON）の内容をクリップボードにコピーします。
 
 1. コピーした情報と、Analysis Workspace プロジェクトのビジュアライゼーションのトラブルシューティングを行うためにAdobe サポートが要求した情報を交換します。
 

@@ -38,11 +38,11 @@ ht-degree: 22%
 # アラートの管理
 
 
-中央の[!UICONTROL  アラート ]管理インターフェイスから、アラートのフィルタリング、タグ付け、削除、名前の変更、コピー、有効化、更新の無効化、エクスポートを行うことができます。 アラートを管理するには：
+中央の[!UICONTROL &#x200B; アラート &#x200B;]管理インターフェイスから、アラートのフィルタリング、タグ付け、削除、名前の変更、コピー、有効化、更新の無効化、エクスポートを行うことができます。 アラートを管理するには：
 
 * メインインターフェイスで「**[!UICONTROL コンポーネント]**」を選択し、「**[!UICONTROL アラート]**」を選択します。
 
-アラートマネージャーは、[ セグメントマネージャー](/help/components/segments/seg-manage.md)と[計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md)のような構造になっています。
+アラートマネージャーは、[&#x200B; セグメントマネージャー](/help/components/segments/seg-manage.md)と[計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md)のような構造になっています。
 
 
 ## アラートマネージャー
@@ -60,7 +60,7 @@ ht-degree: 22%
 | 列 | 説明 |
 |---|---|
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | ![Star](/help/assets/icons/Star.svg)を優先するか、![StarOutline](/help/assets/icons/StarOutline.svg)をアラートから除外するかを選択します。 |
-| **[!UICONTROL タイトルと説明]** | アラートを編集するには、タイトルリンクを選択します。これにより、[ アラートビルダー](alert-builder.md#alert-builder)が開きます。 |
+| **[!UICONTROL タイトルと説明]** | アラートを編集するには、タイトルリンクを選択します。これにより、[&#x200B; アラートビルダー](alert-builder.md#alert-builder)が開きます。 |
 | **[!UICONTROL タイプ]** | このアラートがCustomer Journey Analytics データ アラートかServer Call usage アラートかを示します。 |
 | **[!UICONTROL 有効]** | アラートが有効か無効かを示します。 |
 | **[!UICONTROL データビュー]** | このアラートが適用されるデータビュー。 |
@@ -79,7 +79,7 @@ ht-degree: 22%
 
 | アイコン | アクション | 説明 |
 |:---:|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 追加]** | [ アラートビルダー](alert-builder.md#alert-builder)を使用して、別のアラートを追加します。 |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL 追加]** | [&#x200B; アラートビルダー](alert-builder.md#alert-builder)を使用して、別のアラートを追加します。 |
 | ![検索](/help/assets/icons/Search.svg) | [!UICONTROL *タイトルで検索*] | リストでアラートが選択されていない場合は、この検索フィールドを使用してアラートを検索します。 |
 | ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 選択したアラートにタグを付けます。 **[!UICONTROL タグのアラート]** ダイアログで、選択したアラートのタグを選択または選択解除します。 選択したアラートのタグを保存するには、**[!UICONTROL 保存]**&#x200B;を選択します。 |
 | ![削除](/help/assets/icons/Delete.svg) | **[!UICONTROL 削除]** | 選択したアラートを削除します。 確認メッセージが表示されます。 |
@@ -97,10 +97,10 @@ ht-degree: 22%
 
 ### フィルターパネル
 
-![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルター]**&#x200B;左側のパネル ➍を使用して、アラートのリストをフィルターできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用するアラートの数が表示されます。
+![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルター]**&#x200B;左側のパネル ➍を使用して、アラートのリストをフィルターできます。 フィルターパネルには、フィルターのタイプと、特定のフィルターを適用するアラートの数が表示されます。
 
 
-1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。 アラートリストの空き容量が必要な場合は、![ フィルター](/help/assets/icons/Filter.svg)をもう一度選択してパネルを閉じることができます。
+1. 「![フィルター](/help/assets/icons/Filter.svg)」を選択して、フィルターパネルを開きます。 アラートリストの空き容量が必要な場合は、![&#x200B; フィルター](/help/assets/icons/Filter.svg)をもう一度選択してパネルを閉じることができます。
 1. 使用可能なフィルターセクションからフィルターを選択します。
 
 
@@ -139,9 +139,9 @@ ht-degree: 22%
 
 アラートは
 
-* [[!UICONTROL  アラート ] リスト ](#alerts-list)で、アラートのタイトルを選択します。
+* [[!UICONTROL &#x200B; アラート &#x200B;] リスト &#x200B;](#alerts-list)で、アラートのタイトルを選択します。
 
-[ アラートビルダー](alert-builder.md#alert-builder)を使用して、アラートを編集します。
+[&#x200B; アラートビルダー](alert-builder.md#alert-builder)を使用して、アラートを編集します。
 
 ## アラートのトラブルシューティング
 
