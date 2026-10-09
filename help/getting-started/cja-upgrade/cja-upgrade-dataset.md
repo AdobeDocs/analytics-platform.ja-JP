@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics のスキーマの作成
-description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパスについて説明します。
+title: Customer Journey Analytics で使用するデータセットの作成
+description: Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする際に、データ用のExperience Platform データセットを作成する方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 91%
 ---
 # Customer Journey Analytics で使用するデータセットの作成 {#upgrade-create-dataset}
 

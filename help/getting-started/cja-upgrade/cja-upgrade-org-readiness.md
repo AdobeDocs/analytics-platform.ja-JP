@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics から Customer Journey Analytics へのアップグレード
-description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨される手順について説明します
+title: 組織が Customer Journey Analytics にアップグレードするための準備
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに備えて、組織を準備する方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -39,14 +39,14 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 15%
+source-wordcount: '1189'
+ht-degree: 14%
 ---
 # 組織が Customer Journey Analytics にアップグレードするための準備
 
-アップグレードを成功させる一環として、（[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)で説明しているように）特定の運用上の考慮事項に焦点を当てて組織を準備します。 組織を準備するには、次のことをお勧めします。
+アップグレードを成功させる一環として、（[Adobe AnalyticsからCustomer Journey Analyticsへのアップグレード ](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)で説明しているように）特定の運用上の考慮事項に焦点を当てて組織を準備します。 組織を準備するには、次のことをお勧めします。
 
 * 主要な関係者からの同意と調整の獲得
 
@@ -173,7 +173,7 @@ Adobe Adobe Analyticsを導入する際は、次の点に重点を置いて徹�
 
   * [Customer Journey Analytics チュートリアル](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/overview)
 
-  * [Customer Journey Analytics とは](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+  * [Customer Journey Analytics とは](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
   * [Customer Journey Analytics の概要](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 

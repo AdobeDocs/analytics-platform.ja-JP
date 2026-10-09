@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analytics のスキーマの作成
-description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパスについて説明します。
+title: Customer Journey Analytics で使用する接続の作成と設定
+description: Adobe Analyticsからアップグレードする際に、Customer Journey Analytics接続を作成し、Experience Platform データセットを追加する方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 100%
+source-wordcount: '1682'
+ht-degree: 98%
 ---
 # Customer Journey Analytics で使用する接続の作成と設定 {#upgrade-create-connection}
 

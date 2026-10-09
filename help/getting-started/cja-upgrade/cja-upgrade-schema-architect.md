@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
     internal-label: Taxonomy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1571'
 ht-degree: 11%
 ---
 # Customer Journey Analytics 用のスキーマを設計する {#upgrade-schema-architect}
@@ -65,7 +65,7 @@ Adobeでは、[Adobe Experience Platform Data Collection](https://experienceleag
 
 ## スキーマとデータビューの比較
 
-Customer Journey Analyticsのデータパイプラインには、データの収集と解釈のために別々の領域が含まれています。 Adobe Analyticsからアップグレードする場合、よくある間違いは、XDMでpropとeVarをビヘイビアーで再作成しようとすることです。 代わりに、Web SDKを使用してデータを収集し、[&#x200B; データビュー](/help/data-views/data-views.md)を使用して、そのデータがレポートでどのように解釈されるかを判断します。
+Customer Journey Analyticsのデータパイプラインには、データの収集と解釈のために別々の領域が含まれています。 Adobe Analyticsからアップグレードする場合、よくある間違いは、XDMでpropとeVarをビヘイビアーで再作成しようとすることです。 代わりに、Web SDKを使用してデータを収集し、[ データビュー](/help/data-views/data-views.md)を使用して、そのデータがレポートでどのように解釈されるかを判断します。
 
 | レイヤー | プライマリ目的 | 柔軟性 | 次の要素 | 次に属しないもの |
 |---|---|---|---|---|
@@ -74,7 +74,7 @@ Customer Journey Analyticsのデータパイプラインには、データの収
 
 ## スキーマとAdobe Analytics データ収集の比較
 
-Customer Journey Analyticsが使用するExperience Data Modelは、他のほとんどのAnalytics ソリューション（Adobe Analyticsを含む）よりも大幅に高い柔軟性を実現します。 強固なスキーマを確立することは、他のAnalytics製品に存在する制約の回避に役立ちます。
+Adobe Analyticsとは異なり、Customer Journey Analyticsは入力データを事前定義された変数に自動的にマッピングしません。 スキーマでフィールドが定義され、データビューでそのレポート方法が決まります。 Customer Journey Analyticsが使用するExperience Data Modelは、他のほとんどのAnalytics ソリューション（Adobe Analyticsを含む）よりも大幅に高い柔軟性を実現します。 強固なスキーマを確立することは、他のAnalytics製品に存在する制約の回避に役立ちます。
 
 | Adobe Analyticsの一般的な習慣 | XDM + Customer Journey Analyticsのより優れたアプローチ |
 |---|---|
@@ -143,8 +143,8 @@ Adobe Analyticsでは、多くのチームが`events`変数を指標を追跡す
 一部の企業では、Customer Journey Analyticsにアップグレードする際にAdobe Analytics レポートを続行する必要があります。 次のアプローチを使用すると、Analytics固有のアーティファクトを長期的なスキーマ設計に導入せずにパリティを維持できます。
 
 1. **Adobe Analyticsが認識し、自動的にマッピングするXDM フィールドパスを使用する：** Edge Networkを通じて認識されたXDM フィールドをAdobe Analyticsに送信すると、追加の設定なしで[自動的にマッピングされます](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
-1. **組織固有の概念にカスタム XDM フィールドを使用：** Analytics変数に自動的にマッピングされていないXDM フィールドは、Adobe Analyticsで[&#x200B; コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)として転送されます。
-1. **Adobe Analytics処理ルールを使用して、これらのコンテキストデータ変数をprop/eVar:** [処理ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)にマッピングすると、カスタム XDM フィールドを任意のeVarまたはpropにマッピングできます。 このコンセプトは、Adobe Analyticsのパリティレポートをサポートし、スキーマをクリーンでCustomer Journey Analyticsを中心に保ちます。
+1. **組織固有の概念にカスタム XDM フィールドを使用：** Analytics変数に自動的にマッピングされていないXDM フィールドは、Adobe Analyticsで[ コンテキストデータ変数](https://experienceleague.adobe.com/ja/docs/analytics/implementation/vars/page-vars/contextdata)として転送されます。
+1. **Adobe Analytics処理ルールを使用して、これらのコンテキストデータ変数をprop/eVar:** [処理ルール ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)にマッピングすると、カスタム XDM フィールドを任意のeVarまたはpropにマッピングできます。 このコンセプトは、Adobe Analyticsのパリティレポートをサポートし、スキーマをクリーンでCustomer Journey Analyticsを中心に保ちます。
 
 ## 関係者の特定と所有権の定義
 
@@ -162,7 +162,7 @@ Adobe Analyticsでは、多くのチームが`events`変数を指標を追跡す
 スキーマの設計では、組織のプライバシーポリシーに従って、プライバシーとガバナンスに対する期待を反映する必要があります。 スキーマを設計する際には、次の点を考慮してください。
 
 * 定義済みのユースケースをサポートするために必要な情報だけを収集。
-* 同意とデータ使用要件が、収集戦略に反映されるようにします。 詳しくは、[Web SDKを使用してお客様の同意データを処理する](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/governance-privacy-security/consent/sdk)を参照してください。
+* 同意とデータ使用要件が、収集戦略に反映されるようにします。 詳しくは、[Web SDKを使用してお客様の同意データを処理する](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk)を参照してください。
 * Adobe Experience Platformのガバナンスツール内で、機密性の高いフィールドがどのようにラベル付けされ、制御されているかを検討します。 詳しくは、[Adobe Customer Journey AnalyticsとData Governance](/help/privacy/privacy-overview.md)を参照してください。
 
 ## 次の手順

@@ -1,6 +1,6 @@
 ---
-title: タグプロパティを作成し、Web SDK 拡張機能を追加します
-description: タグプロパティを作成し、Web SDK 拡張機能を追加する方法について説明します
+title: NPM パッケージを使用したPlatform Web SDKのインストール
+description: Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする際に、NPM パッケージを使用してWeb SDKをインストールする方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -28,12 +28,12 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 73%
+source-wordcount: '146'
+ht-degree: 47%
 ---
-# Edge Network API を使用した Platform Web SDK のインストール {#upgrade-manual}
+# NPM パッケージを使用したPlatform Web SDKのインストール {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -48,7 +48,7 @@ ht-degree: 73%
 
 Adobe Experience Platform Web SDK JavaScript のビルドプロセスを制御することを目的に、NPM パッケージをインストールすると、Platform Web SDK をインストールできます。
 
-1. Web SDK ガイドの「[&#x200B; オプション 3: NPM パッケージの使用](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)」（[Web SDKのインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk)）の節に従います。
+1. Web SDK ガイドの「[ オプション 3: NPM パッケージの使用](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)」（[Web SDKのインストール ](https://experienceleague.adobe.com/ja/docs/experience-platform/edge/fundamentals/installing-the-sdk)）の節に従います。
 
 {{upgrade-final-step}}
 
