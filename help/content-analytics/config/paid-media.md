@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 hold: true
 role: Admin
-source-git-commit: e9274ad7899537837723e2eb9cd842c5449530ff
+source-git-commit: 29a21d57b6b50d873a4464d1a705c1b4855dd3ea
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2502'
 ht-degree: 2%
 ---
 # ペイドメディアの自動設定
@@ -35,7 +35,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 * 概要データセット名、イベントタイプ、およびコンポーネントサフィックス
 * エンティティ
 * 分類
-* 次のネットワークの![&#x200B; チェックマーク &#x200B;](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
+* 次のネットワークの![ チェックマーク ](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -44,7 +44,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 
     >[!AVAILABILITY]
     >
-    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](/help/release-notes/releases.md)を参照してください
+    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md)を参照してください
     >
 
 
@@ -59,12 +59,28 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 | `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | アセット <br/>なし | ![チェックマーク](/help/assets/icons2/Checkmark.svg) | ![チェックマーク](/help/assets/icons2/Checkmark.svg) | | | ![チェックマーク](/help/assets/icons2/Checkmark.svg) | 広告/キャンペーンのコンテキストで<br/> アセットレベルの日々のパフォーマンス <br/>を示します。デモグラフィックや地理的な内訳はありません。 |
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | アセット <br/>年齢、性別 | ![チェックマーク](/help/assets/icons2/Checkmark.svg) | | | | | 広告/キャンペーンのコンテキスト <br/>で、アセットレベルの日々のパフォーマンス <br/>を年齢と性別ごとに分類しました。 |
 
-
 この表では、データセットのカバレッジについて説明しますが、特定のネットワークがすべての指標またはメタデータフィールドに入力されることを保証するものではありません。 分析に必要なフィールドを確認します。 使用できないフィールドまたはサポートされていない分類は、フィールドの測定されたゼロ値と同じではありません。
+
+概要データのグループ化は、同等のディメンションをまとめます。グループ化は、6つのパフォーマンス指標の合計を合計しません。
+
+## ルックアップデータセット
 
 別々のルックアップデータセットには、アカウント、キャンペーン、広告グループ、広告、エクスペリエンス、アセットなどが記述されます。 エンティティ GUIDを使用して、名前とメタデータを提供します。 サマリーデータセットと6つのルックアップデータセットの間に1対1のペアリングはありません。
 
-概要データのグループ化は、同等のディメンションをまとめます。グループ化は、6つのパフォーマンス指標の合計を合計しません。
+ルックアップデータセットは、次の2つの共通の構成要素を共有します。
+
+* **エンティティ ID オブジェクト**：アカウント、広告、広告グループ、アセット、キャンペーン、エクスペリエンスオブジェクトを保存します。 各オブジェクトには、Adobeで生成されたグローバルキーとプラットフォームネイティブ IDが含まれます。
+* **有料メディアコアメタデータ**：名前、ステータス、目的、最適化目標、入札戦略、予算タイプ、予算値、通貨、タイムゾーン、サービングステータス、日付、広告ネットワーク、チャネル、階層パス、ネットワーク、ポートフォリオ識別子など、一般的な説明フィールドを保存します。
+
+| ルックアップデータセット | 主な内容 |
+|---|---|
+| アカウント検索 | 名前、通貨、タイムゾーン、ステータス、支出制限、作成日などのアカウントレベルのメタデータ |
+| キャンペーン検索 | 予算、スケジュール、ターゲティング、コンバージョン追跡、アトリビューション、配置、プロモーションオブジェクト、目的、カタログまたはストア IDのキャンペーン設定 |
+| 広告グループの検索 | キャンペーンのリンク、ステータス、予算、最適化目標、ターゲティングなどの広告グループのメタデータ |
+| 広告ルックアップ | アセット、バリエーション、ディメンション、トラッキング URL、call to action、本文、タイトル、宛先URL、配信ステータス、レビューステータスなどの広告クリエイティブの詳細 |
+| アセット検索 | ディメンション、ファイル詳細、画像プロパティ、メディア URL、使用メタデータ、動画メタデータ、説明、サブタイプ、タイトル、タイプなどのアセットプロパティ |
+| エクスペリエンス検索 | エクスペリエンス ID、アセット、タイトル、説明、call to actionなどのエクスペリエンスレベルのクリエイティブのグループ化 |
+
 
 ## コンポーネント
 
@@ -194,7 +210,7 @@ URLがweb サイトイベントデータでキャプチャされ、web サイト
 
 有料メディアへの投資に関連するアセットのパフォーマンスについてレポートおよび分析する場合は、広告ネットワークの有料メディア設定に特定のアセット UTM パラメーターを追加することを検討してください。 例えば、s`ite_source_name`、`campaign.id`、`adset.id`、`placement`などの標準の動的パラメーターの他に、`aca_asset_id=999999`などの静的カスタムパラメーターを追加します。
 
-このカスタムパラメーターは、ランディングページのURLに追加されます。 例：https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
+このカスタムパラメーターは、ランディングページのURLに追加されます。 例：https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
 
 ページ上のアセットと有料メディアデータとの関係が構築されました。 Analysis Workspaceでこのリレーションを使用して、Content Analytics アセットのメタデータ（**[!UICONTROL Asset Foreground Colors]**&#x200B;など）が有料メディアキャンペーンの成功にどのように貢献しているかを確認します。
 
