@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '7170'
+source-wordcount: '7183'
 ht-degree: 96%
 ---
 
@@ -71,6 +71,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 |---|---|
 | **2026年10月** | |
 | 会話インサイト | 会話インサイト用の[&#x200B; ドキュメント &#x200B;](/help/conversation-insights/overview.md)。 |
+| 2026年10月 | |
+| ブランドの可視性 | 詳しくは、[ブランドの可視性インバウンド統合](/help/integrations/bv/bv.md#inbound-integration)のドキュメントを更新しました。 |
 | **2026年9月** | |
 | 矢印とフォールアウトのジャーニーキャンバスの比較 | [&#x200B; ジャーニーの各ノード、矢印、フォールアウトに日付範囲の変化率が表示されるように、ジャーニーキャンバスのビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)の「[!UICONTROL 比較先]」設定を更新しました。 |
 | 統合されたブログ投稿 | 以下のブログ記事を掲載しました。<ul><li>[Adobe CJAで「値なし」を処理するための完全なプレイブック &#x200B;](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=ja#M598)</li><li>[Adobe Experience PlatformとCustomer Journey Analytics Data Egressの使用例の詳細](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=ja)</li></ul>[&#x200B; データの書き出し](/help/use-cases/data-export/overview.md)のユースケースと、新しい[値なし](/help/use-cases/data-views/no-value.md)のユースケースの記事で。 |
@@ -78,7 +80,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2026年8月** | |
 | オーディエンスの更新に関する情報を明確化 | [&#x200B; オーディエンスを公開](/help/components/audiences/publish.md#audience-builder)すると、更新するようにスケジュールできるオーディエンスの数は、Customer Journey Analyticsの使用権限によって異なり、75 ～ 150であることが明確になりました。 |
 | **2026年7月** | |
-| ブランドの可視性インバウンド統合 | [ブランドの可視性インバウンド統合](/help/integrations/bv.md#inbound-integration)のドキュメント。 |
+| ブランドの可視性 | [ブランドの可視性インバウンド統合](/help/integrations/bv/bv.md#inbound-integration)のドキュメント。 |
 | 使用状況インターフェイス | Connectionsの[使用インターフェイス &#x200B;](/help/connections/manage-connections.md#usage) ドキュメントを更新しました。 |
 | サブイベント分析 | [&#x200B; サブイベント分析](/help/components/segments/sub-event.md)および[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#custom-containers)のドキュメント。 |
 | インライン分類 | [&#x200B; インライン分類](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)のドキュメント。 |

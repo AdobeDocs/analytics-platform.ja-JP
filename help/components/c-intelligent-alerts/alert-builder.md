@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4f3c4a214bb9676ced6fe3c9627c969413013790
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 58%
+ht-degree: 61%
 ---
 # アラートの作成 {#create-alerts}
 
@@ -57,7 +57,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="components_alerts_delay"
 >title="遅延"
->abstract="この遅延後に選択した時間の精度でトリガーにアラートを送信します。 接続からのデータは、1～24時間の間に異なる遅延で到着する可能性があります。 デフォルトの遅延トリガーは、各アラートウィンドウの9時間後です。"
+>abstract="この遅延後に、選択した時間の精度でトリガーにアラートを送信します。 接続からのデータは、1～24 時間の様々な遅延で到着する可能性があります。 デフォルトの遅延トリガーは、各アラート期間の 9 時間後です。"
 
 <!-- markdownlint-enable MD034 -->
 

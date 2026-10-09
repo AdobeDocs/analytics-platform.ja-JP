@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
-ht-degree: 89%
+ht-degree: 90%
 ---
 # 接続の作成または編集 {#create-or-edit-a-connection}
 
@@ -732,8 +732,8 @@ ht-degree: 89%
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
->title="行のフィルタリングを有効にする"
->abstract="行フィルターは、Customer Journey Analyticsに取り込むイベントを決定します。 包含ルールに一致するイベントのみが取り込まれます。 その他のすべてのイベントは永続的に除外され、Customer Journey Analyticsでのレポート、セグメント化、または分析に使用できなくなります。<ul><li>最大10個のフィルターを作成できます。</li><li> フィルターの変更は、変更後に取り込まれた新しいデータにのみ適用され、以前に取り込まれたデータに過去のデータが影響を与えたり、過去のバックフィルをトリガーしたりすることはありません。</li></ul>"
+>title="行フィルタリングを有効にする"
+>abstract="行フィルターは、Customer Journey Analytics に取り込むイベントを決定します。 包含ルールに一致するイベントのみが取り込まれます。 その他のすべてのイベントは永続的に除外され、Customer Journey Analytics でのレポート、セグメント化、または分析に使用できなくなります。<ul><li>最大 10 個のフィルターを作成できます。</li><li> フィルターの変更は、変更後に取り込まれた新しいデータにのみ適用され、以前に取り込まれたデータに遡って影響を与えたり、過去のバックフィルをトリガーしたりすることはありません。</li></ul>"
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_field"
@@ -748,7 +748,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_values"
 >title="値"
->abstract="1つ以上の値を入力します。 正確な文字列値が使用されます。 値を区切るにはコンマを使用します。 各コンマ区切り値は一意と見なされ、条件に含まれます。"
+>abstract="1 つ以上の値を入力します。 正確な文字列値が使用されます。 値を区切るにはコンマを使用します。 各コンマ区切り値は一意と見なされ、条件に含まれます。"
 
 イベントデータセットの特定の設定は、接続のタイプによって異なります。
 
