@@ -35,7 +35,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 * 概要データセット名、イベントタイプ、およびコンポーネントサフィックス
 * エンティティ
 * 分類
-* 次のネットワークの![ チェックマーク ](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
+* 次のネットワークの![&#x200B; チェックマーク &#x200B;](/help/assets/icons2/Checkmark.svg)に入力されるデータセット：
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -44,7 +44,7 @@ Content Analyticsで有料メディアチャネルを有効にして設定を保
 
     >[!AVAILABILITY]
     >
-    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース ](/help/release-notes/releases.md)を参照してください
+    >Pinterest、Snapchat、およびTikTokは、リリースの限定的なテスト段階にあり、お使いの環境ではまだ利用できない場合があります。 機能が一般提供されると、この注記は削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics機能リリース &#x200B;](/help/release-notes/releases.md)を参照してください
     >
 
 
@@ -210,7 +210,7 @@ URLがweb サイトイベントデータでキャプチャされ、web サイト
 
 有料メディアへの投資に関連するアセットのパフォーマンスについてレポートおよび分析する場合は、広告ネットワークの有料メディア設定に特定のアセット UTM パラメーターを追加することを検討してください。 例えば、s`ite_source_name`、`campaign.id`、`adset.id`、`placement`などの標準の動的パラメーターの他に、`aca_asset_id=999999`などの静的カスタムパラメーターを追加します。
 
-このカスタムパラメーターは、ランディングページのURLに追加されます。 例：https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
+このカスタムパラメーターは、ランディングページのURLに追加されます。 例：https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
 
 ページ上のアセットと有料メディアデータとの関係が構築されました。 Analysis Workspaceでこのリレーションを使用して、Content Analytics アセットのメタデータ（**[!UICONTROL Asset Foreground Colors]**&#x200B;など）が有料メディアキャンペーンの成功にどのように貢献しているかを確認します。
 
