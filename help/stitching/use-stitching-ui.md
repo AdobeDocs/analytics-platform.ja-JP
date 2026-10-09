@@ -4,7 +4,6 @@ description: Customer Journey Analyticsでイベントデータセットのス�
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -25,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
+source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1989'
 ht-degree: 18%
 ---
 # ステッチを有効にする
@@ -238,7 +237,7 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
 
 
 >[!NOTE]
->**[!UICONTROL 不正ID]**&#x200B;を含む&#x200B;**[!UICONTROL 結合指標]**&#x200B;は、限られたデータセットに基づいて計算されます。 結合に使用するデータセットの不正なIDの存在を特定するには、[不正なIDのテクニカルノート &#x200B;](/help/technotes/badids.md)を参照してください。
+>**[!UICONTROL 不正ID]**&#x200B;を含む&#x200B;**[!UICONTROL 結合指標]**&#x200B;は、限られたデータセットに基づいて計算されます。 結合に使用するデータセットに不正なIDが存在することを特定するには、[不正なIDのテクニカルノート &#x200B;](/help/technotes/badids.md)を参照してください。
 >
 
 
@@ -250,7 +249,7 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
 
 保存され、ステッチが有効なデータセットを含む有効な初期接続設定の場合：
 
-* ライブデータは、最初は数時間（17時間未満）後にCustomer Journey Analyticsに表示されます。 ライブデータは、ステッチのイネーブルメントが完了した際の実際の瞬間に一致するイベントタイムスタンプ値で始まります。
+* ライブデータは、最初は数時間（14時間未満）後にCustomer Journey Analyticsに表示されます。 新しいライブデータは数時間以内に利用可能です。 ライブデータは、ステッチのイネーブルメントが完了した際の実際の瞬間に一致するイベントタイムスタンプ値で始まります。
 
   ライブデータを確実に取り込むには、データセットの&#x200B;**[!UICONTROL すべての新しいデータの読み込み]** オプションを有効にします。
 
@@ -258,12 +257,14 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
 
 * バックフィルされたデータ（最初に要求された場合）は、ライブデータと同じ時間にCustomer Journey Analyticsに表示されますが、関係するボリュームに応じて、完全に処理するのに数日かかる場合があります。 バックフィルされたデータは、最も古いイベントタイムスタンプ値で始まります。
 
+
   >[!CAUTION]
   >
-  >接続インターフェイスで結合が有効になっているデータセットの場合、既知の制限により、現在バックフィルのステータスを報告できません。
+  >接続インターフェイスで[結合](#enable-stitching)が有効になっているデータセットの場合、既知の制限により、バックフィルのステータスを報告できません。
   >
 
-  別の方法を使用して、ステッチされたデータセットのデータがバックフィルされているかどうかを確認します。 例えば、[Experience Platform クエリサービス UI](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/overview)を使用して、データセットから関連する期間のイベント数を抽出します。 同じ期間の[Customer Journey Analytics レポート &#x200B;](/help/analysis-workspace/home.md)のイベント指標に対してイベント数を比較します。 それらの数値が一致すれば、バックフィルは完了します。
+  別の方法を使用して、ステッチされたデータセットのデータがバックフィルされているかどうかを確認します。 例えば、[Experience Platform クエリサービス UI](https://experienceleague.adobe.com/ja/docs/experience-platform/query/ui/overview)を使用して、データセットから関連する期間のイベント数を抽出します。 同じ期間の[Customer Journey Analytics レポート &#x200B;](/help/analysis-workspace/home.md)の&#x200B;**[!UICONTROL イベント]**&#x200B;指標の値に対して、イベント数が比較されます。 それらの数値が一致すれば、バックフィルは完了します。
+
 
 ## 制限事項
 
