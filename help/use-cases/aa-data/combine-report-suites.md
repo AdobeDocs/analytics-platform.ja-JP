@@ -14,23 +14,23 @@ feature_v2:
     internal-label: Administration
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-    internal-label: Use cases, Use cases (CJA)
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 6db1cfff1578b11a62710382aed783e56996342d
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 55%
 ---
 # 異なるスキーマを持つレポートスイートを結合する
 
-[Analytics ソースコネクタ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)は、Adobe AnalyticsのレポートスイートデータをAdobe Experience Platformに取り込み、Real-time Customer Data PlatformやCustomer Journey Analytics（Customer Journey Analytics）などのAdobe Experience Platform アプリケーションで使用します。 Adobe Experience Platformに取り込まれた各レポートスイートは、個々のソース接続データフローとして設定され、各データフローはAdobe Experience Platform データレイク内のデータセットとして格納されます。 Analytics ソースコネクタは、レポートスイートごとに1つのデータセットを作成します。
+[Analytics ソースコネクタ ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=ja)は、Adobe AnalyticsのレポートスイートデータをAdobe Experience Platformに取り込み、Real-time Customer Data PlatformやCustomer Journey Analytics（Customer Journey Analytics）などのAdobe Experience Platform アプリケーションで使用します。 Adobe Experience Platformに取り込まれた各レポートスイートは、個々のソース接続データフローとして設定され、各データフローはAdobe Experience Platform データレイク内のデータセットとして格納されます。 Analytics ソースコネクタは、レポートスイートごとに1つのデータセットを作成します。
 
-Customer Journey Analyticsのお客様は、[connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja)を使用して、Adobe Experience Platform データレイクからCustomer Journey Analytics Analysis Workspaceにデータセットを統合します。 ただし、接続内でレポートスイートを組み合わせる場合、Adobe Experience Platform [&#x200B; データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用してレポートスイート間のスキーマの違いを解決する必要があります。 その目的は、propやeVarなどのAdobe Analytics変数がCustomer Journey Analyticsで一貫した意味を持つようにすることです。
+Customer Journey Analyticsのお客様は、[connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja)を使用して、Adobe Experience Platform データレイクからCustomer Journey Analytics Analysis Workspaceにデータセットを統合します。 ただし、接続内でレポートスイートを組み合わせる場合、Adobe Experience Platform [ データ準備](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)機能を使用してレポートスイート間のスキーマの違いを解決する必要があります。 その目的は、propやeVarなどのAdobe Analytics変数がCustomer Journey Analyticsで一貫した意味を持つようにすることです。
 
 ## レポートスイート間のスキーマの違いは問題となる
 
@@ -67,14 +67,14 @@ Customer Journey Analyticsで使用するために、2つの異なるレポー�
 
 Experience Platform Data Prep機能は、Analytics ソースコネクタと統合されており、上記のシナリオで説明したスキーマの違いを解決するために使用できます。 これにより、Customer Journey Analytics データビューで一貫した意味を持つeVarが作成されます。 （次に使用する命名規則は、必要に応じてカスタマイズできます。）
 
-1. レポートスイート Aおよびレポートスイート Bのソース接続データフローを作成する前に、[Adobe Experience Platformで新しいスキーマ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=ja)を作成します（この例では&#x200B;**統合スキーマ**&#x200B;と呼びます）。 スキーマに次を追加します。
+1. レポートスイート Aおよびレポートスイート Bのソース接続データフローを作成する前に、[Adobe Experience Platformで新しいスキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=ja)を作成します（この例では&#x200B;**統合スキーマ**&#x200B;と呼びます）。 スキーマに次を追加します。
 
    | 「統合スキーマ」 |
    | --- |
    | **XDM ExperienceEvent** クラス |
    | 「**Adobe Analytics ExperienceEvent テンプレート**」フィールドグループ |
 
-1. スキーマに別のフィールドグループを追加するか、[カスタムフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=ja#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail)してスキーマに追加します。 ここでは、新しいフィールドグループを作成し、**Unified Fields** と呼ぶことにします。 次に、この新しいフィールドグループに次のフィールドを追加します。
+1. スキーマに別のフィールドグループを追加するか、[カスタムフィールドグループを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail)してスキーマに追加します。 ここでは、新しいフィールドグループを作成し、**Unified Fields** と呼ぶことにします。 次に、この新しいフィールドグループに次のフィールドを追加します。
 
    | 「Unified Fields」カスタムフィールドグループ  |
    | --- |
@@ -173,6 +173,6 @@ Data Prep の、異なるスキーマを持つデータセットを組み合わ�
 
 ## Data Prep 対コンポーネント ID
 
-前述のように、Data Prep を使用すると、複数の Adobe Analytics レポートスイート間で異なるフィールドをマッピングできます。 これは、複数のデータセットのデータを1つのCustomer Journey Analytics接続に結合する場合にCustomer Journey Analyticsで役立ちます。 ただし、レポートスイートを個別のCustomer Journey Analytics接続に保持する場合に、これらの接続とデータビュー全体で1つのレポートセットを使用する場合は、Customer Journey Analyticsで基になるコンポーネント IDを変更すると、スキーマが異なる場合でもレポートを互換性のあるものにすることができます。 詳しくは、[コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=ja)を参照してください。
+前述のように、Data Prep を使用すると、複数の Adobe Analytics レポートスイート間で異なるフィールドをマッピングできます。 これは、複数のデータセットのデータを1つのCustomer Journey Analytics接続に結合する場合にCustomer Journey Analyticsで役立ちます。 ただし、レポートスイートを個別のCustomer Journey Analytics接続に保持する場合に、これらの接続とデータビュー全体で1つのレポートセットを使用する場合は、Customer Journey Analyticsで基になるコンポーネント IDを変更すると、スキーマが異なる場合でもレポートを互換性のあるものにすることができます。 詳しくは、[コンポーネント設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html)を参照してください。
 
 コンポーネント IDの変更はCustomer Journey Analyticsのみの機能であり、Real-time Customer ProfileおよびRTCDPに送信されるAnalytics ソースコネクタのデータには影響しません。

@@ -4,27 +4,34 @@ title: アラートの概要
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-TQID: https://experienceleague.adobe.com/kXRxlgfo9-F6KyXQ590--TZOZcVqvHkZZGS6alcAC0E
+TQID: 'https://experienceleague.adobe.com/kXRxlgfo9-F6KyXQ590--TZOZcVqvHkZZGS6alcAC0E'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 478
+source-wordcount: '478'
 ht-degree: 57%
-
 ---
-
 # アラートの概要
 
 Customer Journey Analytics のアラートを使用すると、変更された割合や特定のデータポイントに基づいて通知を受信できます。
@@ -41,7 +48,7 @@ Customer Journey Analytics のアラートを使用すると、変更された�
   * 指標の変化を特定の割合で表示。
   * 特定の値の上、下、または等しい指標。 （Select、Prime、またはUltimate パッケージを含むAdobe Analyticsのお客様のみが利用できます）
 
-この[&#x200B; ビデオチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/data-science/intelligent-alerts)では、アラートの基本的な概要を説明します。
+この[ ビデオチュートリアル ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts)では、アラートの基本的な概要を説明します。
 
 
 
@@ -78,4 +85,4 @@ Adobe Customer Journey Analytics でアラートを作成する方法につい�
 
 アラートマネージャーでは、既存のアラートを管理できます。 タグ付け、名前変更、削除など、アラートに対して様々な管理タスクを実行できます。
 
-Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[&#x200B; アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。
+Adobe Customer Journey Analytics で既存のアラートを管理する方法について詳しくは、[ アラートの管理](/help/components/c-intelligent-alerts/alert-manager.md)を参照してください。

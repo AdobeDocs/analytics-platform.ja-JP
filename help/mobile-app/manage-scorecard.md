@@ -5,31 +5,41 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-TQID: https://experienceleague.adobe.com/Sb4kVGW3EHe85km5NDp-qWQu8MIeW5v2gwrYNTmNevY
+TQID: 'https://experienceleague.adobe.com/Sb4kVGW3EHe85km5NDp-qWQu8MIeW5v2gwrYNTmNevY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Machine learning
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1849
+source-wordcount: '1849'
 ht-degree: 81%
-
 ---
-
 # スコアカードの管理
 
 このトピックでは、Customer Journey Analytics データのキュレーターに、スコアカード要素の表示と管理方法について説明します。
@@ -104,7 +114,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; モバイルスコアカードプロジェクトのデータストーリー](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ モバイルスコアカードプロジェクトのデータストーリー](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -115,14 +125,14 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. モバイルスコアカードプロジェクトから開始します。
 1. ストーリーを作成するタイルを選択します。
-   ![&#x200B; データストーリーの作成](assets/data-story1.png)
+   ![ データストーリーの作成](assets/data-story1.png)
    ![データストーリーアイコンの作成](assets/create-data-story.png){width=".50%"}
 1. スライドを追加して、データストーリーを作成します。 デフォルトでは、最初のスライドが生成されます。
 新しいスライドを追加するには、スライドにポインタを合わせるかクリックして、使用可能な次のオプションから選択します。
    * 「+」記号をタップして、新しいスライドを作成します。
    * 複製アイコンをタップすると、既存のスライドを複製できます。
 1. 空のスライドを作成する場合は、左側のパネルからコンポーネントをドラッグ＆ドロップするか、レイアウトを選択してタイルのデータをスライドに自動入力します。
-   ![&#x200B; データストーリーの作成](assets/data-story2.png)
+   ![ データストーリーの作成](assets/data-story2.png)
    スライドを削除するには、ごみ箱アイコンをタップします。
 
 ### データストーリーのカスタマイズ {#customize-data-story}
@@ -134,7 +144,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 1. タイルをタップします。 選択したタイルは青色で囲まれ、右側のパネルにはタイルのプロパティが表示されます。
 1. タイトル、グラフタイプ、その他のタイルオプションを変更します。
 1. コンポーネントをタイルにドラッグします。
-   ![&#x200B; データストーリーの作成](assets/data-story3.png)
+   ![ データストーリーの作成](assets/data-story3.png)
    ビジュアライゼーションなどのコンポーネントをタイルにドラッグ&amp;ドロップすると、そのコンポーネントがすべてのデータストーリースライドに適用されます。
 1. タイトルにのみ変更を適用するには、Shift キーを押したまま変更を適用します。
    ![データストーリーの作成](assets/data-story4.png)
@@ -155,8 +165,8 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 ナビゲーションバーには、各スライドの内容を表すアイコンが表示されます。 ナビゲーションバーを使用すると、多数のスライドがある場合に、特定のスライドに簡単に移動できます。
 
 タイルとスライドの間を移動するには、ナビゲーションバーをタップします。
-![&#x200B; データストーリーの作成](assets/data-story5.png)
-![&#x200B; データストーリーの作成](assets/data-story-nav.png){width="45%"}
+![ データストーリーの作成](assets/data-story5.png)
+![ データストーリーの作成](assets/data-story-nav.png){width="45%"}
 
 また、キーボードの矢印を使用するか、コンポーネントを選択して画面の左または右に長押ししてスクロールすることで、前後に移動することもできます。
 
@@ -243,11 +253,11 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. スコアカードで、タイルをクリックします。 例えば、このスコアカードで、下部の折れ線グラフをクリックします。
 
-   行の可視化を含む![&#x200B; スコアカード &#x200B;](assets/caption1.png)
+   行の可視化を含む![ スコアカード ](assets/caption1.png)
 
 1. 右上の青いアイコンをタップして、キャプションを生成します。 キャプションは折れ線グラフの下に表示されます。
 
-   ![行の視覚化でインテリジェントなキャプション &#x200B;](assets/caption2.png)
+   ![行の視覚化でインテリジェントなキャプション ](assets/caption2.png)
 
 1. インテリジェントなキャプションをすべて表示するには、右にスワイプします。
 
@@ -255,6 +265,6 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. キャプション内の黒いフラグをタップして、有害なコンテンツや違法なコンテンツなどの問題を報告します。
 
-   ![&#x200B; キャプションに問題を報告](assets/caption-report.png)
+   ![ キャプションに問題を報告](assets/caption-report.png)
 
 1. 「X」をクリックして、**[!UICONTROL レポート結果]** ダイアログを終了します。

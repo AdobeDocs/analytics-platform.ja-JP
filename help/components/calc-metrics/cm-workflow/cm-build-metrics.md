@@ -3,29 +3,37 @@ description: ディメンション、指標、セグメントおよび関数を�
 title: 指標の作成
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-TQID: https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY
+TQID: 'https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1699
+source-wordcount: '1699'
 ht-degree: 93%
-
 ---
-
 # 計算指標の作成 {#build-metrics}
 
 >[!CONTEXTUALHELP]
@@ -85,7 +93,7 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
    * **[!UICONTROL Customer Journey Analytics のすべての場所]**：計算指標は、Adobe Customer Journey Analytics 全体で使用できます。
    * **[!UICONTROL 次の場所では互換性がありません：]**
      * **[!UICONTROL 実験]**：計算された指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。
-     * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[&#x200B; サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
+     * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[ サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
 
 1. 次のいずれかを選択します。
    * 計算指標を保存する場合は、「**[!UICONTROL 保存]**」。
@@ -163,7 +171,7 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
 * セグメントからセグメントコンテナを追加するには、以下を使用します。
 
   * コンポーネントパネルから ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを&#x200B;**[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のセグメントを検索できます。
-    セグメントの名前を使用すると、セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
+    セグメントの名前を使用すると、セグメントコンテナが**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
 
   * コンポーネントパネルから![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを汎用コンテナにドラッグ＆ドロップします。 コンテナがセグメントコンテナに変更されます。
 

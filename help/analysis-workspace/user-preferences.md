@@ -5,35 +5,49 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-TQID: https://experienceleague.adobe.com/5rXDQ-Ygp3TrEMbpK1UaUcRwSrc81VkUKauxth4-AUs
+TQID: 'https://experienceleague.adobe.com/5rXDQ-Ygp3TrEMbpK1UaUcRwSrc81VkUKauxth4-AUs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 4356
+source-wordcount: '4356'
 ht-degree: 93%
-
 ---
-
 # ユーザー環境設定
 
 作成するすべての新規プロジェクトまたはパネルについて、Analysis Workspace および関連コンポーネントのユーザー設定や環境設定を管理できます。 既存のプロジェクトやパネルは影響を受けません。
@@ -85,8 +99,8 @@ ht-degree: 93%
 | **「テンプレート」タブ** | | |
 |  | 「テンプレート」タブを非表示 | 組織内のすべてのユーザーの「テンプレート」タブを非表示にします。 |
 | **プロジェクトの共有** | | |
-| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。 つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。 この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]&#x200B;**／**&#x200B;[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。 このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。 権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。 Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
-| | Experience Cloud 認証を要求 | このオプションが有効になっている場合、Analysis Workspaceの「**[!UICONTROL 誰とでも共有]**」オプションからプロジェクトへのアクセス権を与えられたユーザーは、CX Enterprise （Experience Cloud）資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 誰とでも共有]」共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL CX Enterprise認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーが無効にすることはできません。 ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に[!UICONTROL 誰とでも共有]共有オプションで共有され、[!UICONTROL CX Enterprise認証を必要とする] オプションが有効になっていないすべてのプロジェクトが非アクティブになります。<p>このオプションを有効にし（CX エンタープライズ認証を必要とする）、後で無効にする（リンクを持つユーザーがプロジェクトにアクセスできるようにするため）、以前に[!UICONTROL 誰とでも共有]共有オプションを使用してプロジェクトへのアクセスを受け取ったユーザーは、プロジェクトへのアクセスを自動的に取り戻すことはありません。 この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。 システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。 通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
+| | Workspace ユーザーとのみ共有を許可 | このオプションを有効にすると、組織内のユーザーには&#x200B;**[!UICONTROL 共有]**&#x200B;メニューの「**[!UICONTROL 任意のユーザーと共有]**」オプションが表示されなくなります。 つまり、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、ユーザーは組織内に Analysis Workspace アカウントがない人物とプロジェクトを共有できません。<br/>このオプションは、Healthcare Shield のライセンスを取得した顧客を除くすべての組織（つまり、ユーザーが組織外のユーザーとプロジェクトを共有できる）に対して、デフォルトで無効になっています。 <p>このオプションを有効または無効にする際は、次の点を考慮してください。<ul><li>このオプションを有効にすると、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得したユーザーは、そのプロジェクトにアクセスできなくなります。</li><li>このオプションを有効（Workspace ユーザーとのみ共有を許可）にし、後で無効（任意のユーザーと共有を許可）にする場合、以前に「[!UICONTROL 任意のユーザーと共有]」の共有オプションを通じてプロジェクトへのアクセス権を取得した人物に対するそのプロジェクトへのアクセス権は自動的に回復しません。 この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL **&#x200B;リンクがアクティブです&#x200B;**]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**）。</li><li>**Healthcare Shield のライセンスを取得した顧客の場合**：このオプションはデフォルトで有効になっており、無効にできません。 このオプションを無効にして、ユーザーが「[!UICONTROL 任意のユーザーと共有]」の共有オプションを使用できるようにするには、まず Adobe Admin Console で[!UICONTROL 任意のユーザーとプロジェクトリンクを共有]権限（[!UICONTROL レポートツール]の下にある）を追加する必要があります。 権限が追加されたら、このオプションを無効にして、結果として生じる法的通知を受け入れることができます。 Admin Console で権限を追加する方法について詳しくは、[Admin Console での製品権限の管理](https://helpx.adobe.com/jp/enterprise/using/manage-permissions-and-roles.html)を参照してください。</li></ul> |
+| | Experience Cloud 認証を要求 | このオプションが有効になっている場合、Analysis Workspaceの「**[!UICONTROL 誰とでも共有]**」オプションからプロジェクトへのアクセス権を与えられたユーザーは、CX Enterprise（Experience Cloud）資格情報を使用して認証する必要があります。<p>このオプションを有効にすると、ユーザーが「[!UICONTROL 誰とでも共有]」共有オプションを使用してプロジェクトを共有するたびに、共有ダイアログで「[!UICONTROL CX Enterprise認証を要求]」オプションが有効になり、プロジェクトを共有しているユーザーが無効にすることはできません。 ユーザーがプロジェクトを任意のユーザーと共有できる方法について詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)を参照してください。 <p> <p>このオプションを有効にする際は、次の点を考慮してください。 <ul><li>このオプションを有効にすると、以前に[!UICONTROL Share with anyone]共有オプションで共有され、[!UICONTROL Require CX Enterprise authentication] オプションが有効になっていないすべてのプロジェクトが非アクティブになります。<p>このオプションを有効にし（CX Enterprise認証を必要とする）、後で無効にする（リンクを持つユーザーがプロジェクトにアクセスできるようにする）、以前に[!UICONTROL 誰とでも共有]共有オプションを使用してプロジェクトへのアクセスを受け取ったユーザーは、プロジェクトへのアクセスを自動的に取り戻しません。 この場合、プロジェクトを共有するユーザーは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとプロジェクトを共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-public-link)で説明するように、任意のユーザーとプロジェクトを共有する際に使用できる&#x200B;**「[!UICONTROL リンクがアクティブです]」オプションを有効にする必要があります（[!UICONTROL 共有]**／**[!UICONTROL 任意のユーザーと共有]**／**[!UICONTROL リンクがアクティブです]**）。</li><li>このオプションは、組織に SSO が実装されている場合にのみ使用できます。 システム管理者が組織の SSO を有効にする方法について詳しくは、[ID とシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。</p><p>組織に SSO が設定されている場合は、任意の種類の自動アカウント作成がコンソールに実装されているかどうかを確認します。 通常、[アカウントの自動作成の有効化](https://helpx.adobe.com/jp/enterprise/using/automatic-account-creation.html)で説明するように、システム管理者がこの設定を行います。</li><li>組織が Healthcare Shield のライセンスを取得している場合、このオプションはデフォルトで有効になっており、無効にすることはできません。</li></ul> |
 | プロジェクトのコメント | プロジェクトへのコメントを許可 | このオプションが有効になっている場合、Analysis Workspace の各プロジェクトの右側のパネルでコメント領域を使用できます。 <p>[プロジェクトの作成](/help/analysis-workspace/build-workspace-project/create-projects.md)で説明されているように、プロジェクト所有者は特定のプロジェクトのコメント領域を無効にすることができます。</p> <p>Analysis Workspace プロジェクトへのコメントについて詳しくは、[プロジェクトへのコメントの追加と管理](/help/analysis-workspace/build-workspace-project/comment-projects.md)を参照してください。</p> |
 
 {style="table-layout:auto"}
@@ -106,7 +120,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_sequentialpalette"
 >title="順次パレット"
->abstract="頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。 このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。"
+>abstract="頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。 このパレットでは、明るいカラーから暗いカラーまで、色の明暗が数値の大小を表します。"
 
 すべての新しい Analysis Workspace プロジェクト、新しい Analysis Workspace パネルおよび新しいガイド付き分析に対して、これらの環境設定をカスタマイズできます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の編集](#edit-preferences)を参照してください。
 
@@ -115,7 +129,7 @@ ht-degree: 93%
 <!--
 >[!IMPORTANT]
 >
->You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/browser-language) for the logged in user.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
 -->
 
@@ -124,9 +138,9 @@ ht-degree: 93%
 | --- | --- | --- |
 | **表示** | | |
 |  | [表示密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 左パネル、フリーフォームテーブル、コホートテーブルでの垂直方向のパディングを減らして、画面に表示するコンテンツの量を選択します。 <ul><li>コンパクト</li><li>快適</li><li>拡張（デフォルト）</li></ul> |
-| | [カラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Analysis Workspace とガイド付き分析で使用するビジュアライゼーションのカラーパレットを選択します。 <ul><li> カテゴリ順パレット：Analysis Workspace とガイド付き分析の多くのビジュアライゼーションに適用されます。 各カラーは、個別のカテゴリ値を表します。 アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット：Analysis Workspace とユーザー成長ガイド付き分析のコホートテーブルに適用されます。 このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> 順次パレット：頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。 このパレットは、明るいカラーから暗いカラーまでの数値の意味を保持します。</li></ul> |
+| | [カラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Analysis Workspace とガイド付き分析で使用するビジュアライゼーションのカラーパレットを選択します。 <ul><li> カテゴリ順パレット：Analysis Workspace とガイド付き分析の多くのビジュアライゼーションに適用されます。 各カラーは、個別のカテゴリ値を表します。 アドビが提供するオプションから選択するか、コンマ区切りの 16 進値で定義されたカスタムパレットを入力します。</li><li> 分岐パレット：Analysis Workspace のコホートテーブルとユーザー成長のガイド付き分析に適用されます。 このパレットは、2 つの極値と中央のベースラインによる数値の意味を保持します。<li> シーケンシャルパレット：頻度トレンド（積み重ね棒グラフ）のガイド付き分析に適用されます。 このパレットでは、明るいカラーから暗いカラーまで、色の明暗が数値の大小を表します。</li></ul> |
 | **データ** | | |
-|  | [データビュー](/help/analysis-workspace/c-panels/panels.md#data-view) | テーブルとビジュアライゼーションがデータを導き出すデータを選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択された特定のデータビュー</li></ul> |
+|  | [データビュー](/help/analysis-workspace/c-panels/panels.md#data-view) | テーブルとビジュアライゼーションが参照するデータを選択します。 <ul><li>最新（デフォルト）</li><li>リストから選択された特定のデータビュー</li></ul> |
 |  | [カレンダー](/help/analysis-workspace/c-panels/panels.md#calendar) | 次のリストから選択します。 <ul><li>アドビが指定する範囲（デフォルトは今月）</li><li>「[!UICONTROL デフォルトでパネルカレンダーを基準とした日付範囲コンポーネントを作成]」を有効にすることができます。</li></ul> |
 |  | [パネルタイプ](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>フリーフォーム（デフォルト）</li><li>空白</li><li>クイックインサイト</li></ul> |
 |  | インスタンスのカウント | 「[!UICONTROL 繰り返しインスタンスをカウント]」を有効にして、インスタンスがレポート内でカウントされるかどうかを指定します。 例えば、有効にすると、同じページに対して複数の連続するページビューが複数のページビューとして扱われます。 無効にすると、同じページに対する複数の連続するページビューが、単一のページビューとしてカウントされます。 <p>**メモ：**&#x200B;この設定は、特定の指標（セッションなど）にのみ影響し、フロービジュアライゼーションやフォールアウトビジュアライゼーションには適用されません。</p> |
@@ -166,23 +180,23 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | | テーブルタイプ | <ul><li>フリーフォーム</li><li>テーブルビルダー</li></ul> |
 | | デフォルトのテーブル指標 | <ul><li>イベント</li><li>Sessions</li><li>People</li></ul> |
 | | デフォルトのテーブルディメンション | 分、時間、日、週、月、四半期、年から選択します。 |
-| | 日付の整列 | このオプションを選択して各列の日付を整列させ、すべて同じ行から始まるようにすることもできます。 |
+| | 日付の整列 | このオプションを選択すると、各列の日付が整列され、すべて同じ行から開始されます。 |
 | **[列](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)** | | |
 | | ヘッダーテキストを折り返し | ヘッダーを読みやすく、またテーブルを共有しやすくするため、フリーフォームテーブルでヘッダーテキストを折り返せるようにします。 これは、.pdf レンダリングや、長い名前の指標に役立ちます。 デフォルトで有効です。 |
 | | 合計を表示 | この合計数は通常、[!UICONTROL 総計]と等しいか、そのサブセットです。 「[!UICONTROL なしを含む]」オプションを含む、フリーフォームテーブル内で適用された任意のテーブルセグメントが反映されます。 |
 | | 総計の表示 | この合計数は、収集されたすべてのイベントを表し、*データビューの合計*&#x200B;と呼ばれることもあります。 セグメントがパネルレベルまたはフリーフォームテーブル内で適用されると、この合計は、セグメント条件に一致するすべてのイベントを反映するように調整されます。 [静的な行](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)を含むテーブルや分類では、総計はサポートされません。 |
-| | スパークラインを表示 | グラフの下部に折れ線グラフを表示または非表示にします。 非表示にすると、凡例が変更され、折れ線が表示されなくなります。 |
+| | スパークラインを表示 | グラフの下部に折れ線グラフを表示または非表示にします。 非表示にすると、凡例が変更され、折れ線を視覚的に参照しなくなります。 |
 | | 数値 | セルに指標の数値を表示するかどうかを決定します。 例えば、指標がページビューの場合、数値は行項目のページビュー数です。 |
-| | パーセント | セルに指標の割合の値を表示するかどうかを決定します。 例えば、指標がページビュー数の場合、割合の値は行項目のページ表示回数を列の合計ページ表示回数で割った数になります。  メモ：より正確な数値を示すために、100％を超える割合が表示されるようになりました。 列の幅をさらに大きくできるように、キャップを 1,000％まで拡大する予定です。 |
+| | パーセント | セルに指標の割合の値を表示するかどうかを決定します。 例えば、指標がページビューの場合、割合の値は行項目のページビュー数を列の合計ページビュー数で割った数になります。  メモ：より正確な数値を示すために、100％を超える割合を表示できるようにします。 列の幅を非常に大きくできるようにするために、上限キャップを 1,000％まで移動できます。 |
 | | 異常値を表示 <!-- This setting was moved from the "Project" tab. this is already in the tool/docs under "Freeform table, But the doc doesn't give a definition. --> | この列の値に対して異常値検出を実行するかどうかを決定します。 |
 | | 予測を表示 | 作成する時系列フリーフォームテーブルの最初の指標列に、予測値を自動的に表示するかどうかを指定します。 |
-| | ゼロを値なしとして解釈 | 値が 0 のセルについて、0 を表示するか空白にするかを決定します。 この設定は、まだ終わっていない月の日ごとのデータを確認する際に便利です。  将来の日付のセルに 0 を表示するのではなく、空にすることができます。 グラフにも、この設定が適用されます（例えば、この設定がオンになっている場合、買い物かごには値が 0 の折れ線や棒は表示されません）。 |
-| | 背景 | セルのすべての書式（棒グラフや条件付き書式など）をセルに表示するかどうかを決定します <ul><li>棒グラフ</li> 列の合計を最大値としてセルの値を示す横棒グラフを表示します。 <li>条件付き書式</li>条件付き書式について詳しくは、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)の「条件付き書式」を参照してください。</ul> |
-| | セルのプレビュー | 現在選択されている書式オプションが適用されると各セルがどのように表示されるかを示すプレビューが表示されます。 |
+| | ゼロを値なしとして解釈 | 値が 0 のセルについて、0 を表示するか空白にするかを決定します。 この設定は、月の各日のデータを確認する際に、まだ発生していない日が含まれている場合に便利です。  将来の日付については、0 を表示する代わりに空白セルを表示できます。 チャートにもこの設定が適用されます（例えば、この設定がオンになっている場合、チャートには値が 0 の折れ線や棒グラフは表示されません）。 |
+| | 背景 | セルのすべての書式（横向き棒グラフや条件付き書式など）を表示／非表示にするかどうかを決定します。 <ul><li>棒グラフ</li> 列の合計に対するセルの値を表す横向き棒グラフを表示します。 <li>条件付き書式</li>条件付き書式について詳しくは、[列設定](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)の「条件付き書式」を参照してください。</ul> |
+| | セルのプレビュー | 現在選択されている書式オプションが適用された場合に、各セルがどのように表示されるかを確認できるプレビューを表示します。 |
 | **[行](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
-| | 位置で分類 | 項目自体ではなく項目の位置に分類を保持する場合は、このオプションを選択します。 分類について詳しくは、[ディメンションの分類](/help/components/dimensions/t-breakdown-fa.md)を参照してください。 |
+| | 位置で分類 | 項目自体ではなく項目の位置にブレークダウンを保持する場合は、このオプションを選択します。 分類について詳しくは、[ディメンションの分類](/help/components/dimensions/t-breakdown-fa.md)を参照してください。 |
 | | パーセンテージ計算 | <ul><li>列</li><li>行</li></ul> |
-| | 列の合計（静的行のみ） | <ul><li>行の合計を表示：個々の行項目の合計を表示します </li><li>総計を表示：重複を排除した行の合計を表示します。</li></ul> |
+| | 列合計（静的行のみ） | <ul><li>行の合計を表示：個々の行項目の合計を表示します </li><li>総計を表示：重複を排除した行の合計を表示します。</li></ul> |
 
 ### ビジュアライゼーションの環境設定 {#visalization-preferences}
 
@@ -207,18 +221,18 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 >abstract="[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトのコンテナが含まれていない場合、[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 
-Analysis Workspace で作成するすべての新しいプロジェクトについて、ビジュアライゼーション環境設定を更新できます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の編集](#edit-preferences)を参照してください。
+Analysis Workspace で作成するすべての新しいプロジェクトについて、ビジュアライゼーションの環境設定を更新できます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の編集](#edit-preferences)を参照してください。
 
 これらの同じ環境設定の一部は、個々のビジュアライゼーション用にカスタマイズすることもできます。
 
-使用可能な環境設定の詳細とコンテキストについては、リンクされた節のタイトルを選択してください。
+使用可能な環境設定の詳細とコンテキストについては、リンクされたセクションのタイトルを選択してください。
 
 | セクション | 環境設定 | オプション |
 | --- | --- | --- |
 | **一般的なデフォルト** | | |
 | | 割合 | すべてのビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | すべてのビジュアライゼーションで詳細な凡例テキストを非表示にできます。 |
-| | 項目数の上限を設定 | すべてのビジュアライゼーションで X 軸の項目数を減らします。 この環境設定は、大きなデータセットがある場合に役立ちます。 |
+| | 項目数の上限を設定 | すべてのビジュアライゼーションで X 軸の項目数を減らします。 このユーザー設定は、大きなデータセットがある場合に役立ちます。 |
 | | 2 軸を表示（該当する場合） | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。 この環境設定は、プロットされた指標のスケールが大きく異なる場合に役立ちます。 |
 | | 正規化（該当する場合） | 指標を均等な比率にします。 この環境設定は、プロットされた指標のスケールが大きく異なる場合に役立ちます。 |
 | | Y 軸をゼロに固定 | グラフにプロットされたすべての値がゼロよりもかなり上の場合、グラフのデフォルトでは、Y 軸の一番下はゼロ以外に更新されます。 このチェックボックスをオンにすると、Y 軸はゼロになり、グラフが再描画されます。 |
@@ -226,33 +240,33 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | **[折れ線グラフ](/help/analysis-workspace/visualizations/line.md)** | | |
 | | 割合 | 折れ線グラフビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 折れ線グラフビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
-| | 項目数の上限を設定 | 折れ線グラフのビジュアライゼーションの X 軸の項目数を減らします。 この環境設定は、大きなデータセットがある場合に役立ちます。 |
+| | 項目数の上限を設定 | 折れ線グラフのビジュアライゼーションの X 軸の項目数を減らします。 このユーザー設定は、大きなデータセットがある場合に役立ちます。 |
 | | 2 軸を表示（該当する場合） | 2 つの指標がある場合にのみ適用されます。（ある指標の）Y 軸を左側に、（他の指標の）Y 軸を右側に表示できます。 この環境設定は、プロットされた指標のスケールが大きく異なる場合に役立ちます。 |
 | | 正規化（該当する場合） | 指標を均等な比率にします。 この環境設定は、プロットされた指標のスケールが大きく異なる場合に役立ちます。 |
 | | X 軸を表示 | 折れ線グラフに X 軸を表示します。 |
 | | Y 軸を表示 | 折れ線グラフに Y 軸を表示します。 |
 | | Y 軸を固定 | グラフにプロットされたすべての値がゼロよりもかなり上の場合、グラフのデフォルトでは、Y 軸の一番下はゼロ以外にレンダリングされます。 このチェックボックスをオンにすると、Y 軸はゼロになり、グラフが再描画されます。 |
-| | 異常値で Y 軸のスケールの設定を許可 | グラフに複数の指標がある場合、各異常値の上にマウスポインターを置いて、その指標の信頼帯を表示する必要があります。 ビジュアライゼーションを見やすくするために、異常値検出の信頼区間では、Y 軸は自動的に拡大・縮小されません。 この設定を使用すると、信頼区間でビジュアライゼーションを拡大・縮小できます。 <p>詳しくは、[Analysis Workspace での異常値の表示](/help/analysis-workspace/c-anomaly-detection/view-anomalies.md)を参照してください。</p> |
+| | 異常値で Y 軸のスケールの設定を許可 | グラフに複数の指標がある場合、各異常値にポインタを合わせて、その指標の信頼帯を表示する必要があります。 ビジュアライゼーションを見やすくするために、異常値検出の信頼区間では、Y 軸は自動的に拡大・縮小されません。 この設定を使用すると、信頼区間でビジュアライゼーションを拡大・縮小できます。 <p>詳しくは、[Analysis Workspace での異常値の表示](/help/analysis-workspace/c-anomaly-detection/view-anomalies.md)を参照してください。</p> |
 | | 予測で Y 軸のスケールの設定を許可 | 予測値が履歴値の上限と下限の範囲外にある場合、Y 軸はこれらの予測値に合わせて自動的に拡大・縮小されません。 このオプションをオンにすると、予測値の Y 軸が適切に拡大・縮小されます。 |
 | | 最小値を表示 | 最小値のラベルをオーバーレイして、指標内の谷をすばやくハイライト表示します。 メモ：最小値は、ディメンション内のすべての値ではなく、ビジュアライゼーション内に表示されたデータポイントから得られます。 |
 | | 最大値を表示 | 最大値のラベルをオーバーレイして、指標のピークをすばやくハイライト表示します。 メモ：最大値は、ディメンション内のすべての値ではなく、ビジュアライゼーション内に表示されたデータポイントから得られます。 |
 | | 近似曲線を表示 | 回帰または移動平均の近似曲線を線系列に表示します。 近似曲線は、データにより明確なパターンを表現するのに役立ちます。 |
 | **[コホート](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)** | | |
 | | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/> コンテナ | アカウントベースの [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 接続を使用している場合は、コホート分析用の優先コンテナを選択します。 <p>次のオプションがあります。</p> <ul><li>グローバルアカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>アカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>購買グループ [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>商談 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>ユーザー</li></ul> |
-| | 精度 | トレンドのビジュアライゼーションでは、このドロップダウンから時間の精度（日、週、月など）を。 この変更は、データソーステーブルにも適用されます。 |
+| | 精度 | トレンドのビジュアライゼーションでは、このドロップダウンから時間の精度（日、週、月、四半期、年）を変更できます。 この変更は、データソーステーブルにも適用されます。 |
 | | 割合のみを表示 | 数値を削除し、パーセンテージのみを表示します。 |
 | | 割合を整数に四捨五入 | パーセント値を、小数値ではなく、最も近い整数に丸めます。 |
 | | 割合の平均行を表示 | テーブルの先頭に新しい行を挿入し、各列の値の平均を加算します。 |
 | **[コンビネーショングラフ](/help/analysis-workspace/visualizations/combo-charts.md)** | | |
 | | X 軸を表示 | 複合グラフに X 軸を表示します。 |
 | | Y 軸を表示 | 複合グラフに Y 軸を表示します。 |
-| | 行にバーベルを表示 | 複合グラフの線にバーベルを表示します。 |
+| | 行にバーベルを表示します。 | 複合グラフの線にバーベルを表示します。 |
 | **[主要指標の概要](/help/analysis-workspace/visualizations/key-metric.md)** | | |
 | | 概要表示タイプ | <ul><li>変化率を強調</li><li>数値を強調</li></ul> |
 | | スパークラインを表示 | グラフの下部で折れ線グラフを表示または非表示にします。 非表示にすると、凡例が変更され、折れ線が表示されなくなります。 |
-| | スパークラインに最大値と最小値を表示 | プライマリ折れ線グラフと比較折れ線グラフの最小値と最大値を表示または非表示します。 |
+| | スパークラインに最大値と最小値を表示 | プライマリ折れ線グラフと比較折れ線グラフの最小値と最大値を表示します。 |
 | | 比較を表示 | 比較データを表示します。 非表示の場合、比較折れ線グラフと変更概要オブジェクトの両方が非表示になります。 |
-| | 数値オプション | [!UICONTROL **主要指標の概要**]&#x200B;セクション内 <ul><li>変化率を表示</li><li>生の差異を表示</li>プライマリ日付範囲とセカンダリ日付範囲で、指標の合計値の生の差異を表示または非表示</ul> |
+| | 数値オプション | [!UICONTROL **主要指標の概要**]&#x200B;セクション内 <ul><li>変化率を表示</li><li>生の差異を表示</li>プライマリ日付範囲とセカンダリ日付範囲における指標の合計値の生の差異。</ul> |
 | **[フォールアウト](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
 | | コンテナ | パスを分析する優先コンテナを選択します。 優先コンテナにより、様々な B2B コンテナレベル [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} でのアカウントエンゲージメントや、ユーザーのエンゲージメントを（セッション全体にわたって）ユーザーレベルで理解したり、分析を 1 回のセッションに制限したりできます。 <p>次のオプションがあります。</p> <ul><li>グローバルアカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>アカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>購買グループ [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>商談 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
 | **[フロー](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
@@ -265,16 +279,16 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 | **[ジャーニーキャンバス](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)** | | |
 | | コンテナ | パスを分析する優先コンテナを選択します。 優先コンテナにより、様々な B2B コンテナレベル [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} でのアカウントエンゲージメントや、ユーザーのエンゲージメントを（セッション全体にわたって）ユーザーレベルで理解したり、分析を 1 回のセッションに制限したりできます。 <p>次のオプションがあります。</p> <ul><li>グローバルアカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>アカウント [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>購買グループ [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>商談 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>セッション</li><li>ユーザー</li></ul> |
 | **積み重ねグラフ** | | |
-| | 100% の積み重ね | 積み上げ面、積み上げ棒、または積み上げ横棒のビジュアライゼーションのこの設定は、グラフを「100 % の積み上げ」のビジュアライゼーションに変更します。 <p>詳しくは、[棒グラフおよび積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md)を参照してください。</p> |
+| | 100% の積み重ね | 積み上げ面グラフ、積み上げ棒グラフ、または積み上げ横棒グラフのビジュアライゼーションでこの設定を有効にすると、グラフが「100％積み上げ」ビジュアライゼーションになります。 <p>詳しくは、[棒グラフおよび積み重ね棒グラフ](/help/analysis-workspace/visualizations/bar.md)を参照してください。</p> |
 | **[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | バケット数 | ビジュアライゼーション内の日付範囲（バケット）の数を選択します。 グループの最大数は 50 です。 <p>詳しくは、[ヒストグラム](/help/analysis-workspace/visualizations/histogram.md)を参照してください。</p> |
-| | カウント方法 | 次のオプションから選択します。 <ul><li>ヒット</li><li>セッション</li><li>ユーザー</li></ul> <p>例えば、ページビューで使用する場合は、ユーザーごとのページビュー、訪問のページビュー、イベントごとのページビューを選択できます。 ヒットの場合、フリーフォームテーブルの Y 軸指標として、「回数」が使用されます。</p> |
+| | カウント方法 | 次のオプションから選択します。 <ul><li>ヒット</li><li>セッション</li><li>ユーザー</li></ul> <p>例えば、ページビューで使用する場合は、ユーザーごとのページビュー、訪問あたりのページビュー、イベントごとのページビューを選択できます。 ヒットの場合、フリーフォームテーブルの Y 軸指標として、「回数」が使用されます。</p> |
 | **[変更の概要](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | 値 | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>パーセントの変更</li><li>生の差異</li></ul> |
 | | 割合 | 変更の概要ビジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 変更の概要ビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | **[数値の概要](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
-| | 割合 | 数値の概要ビジュアライゼーションの値をパーセンテージで表示します。 |
+| | 割合 | サマリーナンバービジュアライゼーションの値をパーセンテージで表示します。 |
 | | 凡例を表示 | 数値の概要ビジュアライゼーションの詳細な凡例テキストを非表示にできます。 |
 | | 概要値の基準 | 「最大」、「最小」、「平均」、「中央値」、「合計」から選択します。 |
 | | 値を短縮 | **[!UICONTROL 数値の概要]**&#x200B;セクション内 |

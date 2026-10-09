@@ -4,38 +4,55 @@ title: Analysis Workspace のパフォーマンスの最適化
 feature: Workspace Basics
 role: User, Admin
 exl-id: 226afef7-00da-4ac2-be4e-e19995621c61
-TQID: https://experienceleague.adobe.com/gJaQPkkWeGrjTxlsBV5UoaY8H9quRqc-XrJAxRMSeEU
+TQID: 'https://experienceleague.adobe.com/gJaQPkkWeGrjTxlsBV5UoaY8H9quRqc-XrJAxRMSeEU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Optimization
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: '2547'
 ht-degree: 81%
-
 ---
-
 # Analysis Workspace のパフォーマンスの最適化
 
 Analysis Workspace のプロジェクトのパフォーマンスは、様々な要因の影響を受けます。  これらの要因を理解することで、プロジェクトの計画と構築を最適な方法で進めることができます。
@@ -84,7 +101,7 @@ Analysis Workspace のパフォーマンスについてのインサイトを得�
 
 | 要因 | 定義 | 最適化 |
 | --- | --- | --- |
-| リクエスト数 | プロジェクトに表示されるデータを取得するよう、アドビに対して行われたリクエストの合計数。 クエリには、テーブルに関するランキングされたリクエスト、異常値検出リクエスト、スパークラインリクエスト、左パネルに表示されるコンポーネントなどがあります。 この数値は、折りたたまれたパネルとビジュアライゼーションを除きます。 ガイドラインは 100 です。 | データを特定の目的または関係者のグループに対応する複数のプロジェクトに分割することで、可能な限りプロジェクトを簡素化します。 タグを使用してプロジェクトをテーマに整理し、[ダイレクトリンク](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links)を使用して内部の目次を作成して、関係者が必要なものをより簡単に見つけられるようにします。 |
+| リクエスト数 | プロジェクトに表示されるデータを取得するよう、アドビに対して行われたリクエストの合計数。 クエリには、テーブルに関するランキングされたリクエスト、異常値検出リクエスト、スパークラインリクエスト、左パネルに表示されるコンポーネントなどがあります。 この数値は、折りたたまれたパネルとビジュアライゼーションを除きます。 ガイドラインは 100 です。 | データを特定の目的または関係者のグループに対応する複数のプロジェクトに分割することで、可能な限りプロジェクトを簡素化します。 タグを使用してプロジェクトをテーマに整理し、[ダイレクトリンク](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links)を使用して内部の目次を作成して、関係者が必要なものをより簡単に見つけられるようにします。 |
 | 展開されたパネル（パネルの合計数のうち） | プロジェクト内のパネルの合計数のうち、展開されたパネルの数。 ガイドラインは 5 です。 | プロジェクトを簡略化する手順を実行した後、プロジェクト内の読み込み時に表示する必要のないパネルを折りたたみます。 プロジェクトを開くと、展開されたパネルのみが処理されます。 折りたたまれているパネルは、ユーザーが展開するまで処理されません。 |
 | 展開されたビジュアライゼーションの数（ビジュアライゼーションの合計数のうち） | プロジェクト内の合計のうち、展開されたテーブルおよびビジュアライゼーションの数（非表示のデータソースを含む）。 ガイドラインは 15 です。 | プロジェクトを簡略化する手順を実行した後、読み込み時に表示する必要のないプロジェクト内のビジュアライゼーションを折りたたみます。 レポートの利用者にとって最も重要なビジュアルを優先し、必要に応じて補助ビジュアルを、さらに詳細なパネルまたはプロジェクトに分割します。 |
 | フリーフォームセルの数 | プロジェクト内のフリーフォームテーブルのセルの合計数。すべてのテーブルの行 x 列で計算されます。 この数値は、非表示のデータソースを除外します。 ガイドラインは 4000 です。 | テーブルの列数を減らし、最も重要なデータポイントのみを表示します。 表示される行数を調整したり、テーブルフィルターやセグメントを適用したりして、テーブルの行数を減らします。 |
@@ -113,7 +130,7 @@ Analysis Workspace のパフォーマンスについてのインサイトを得�
 | --- | --- | --- |
 | [!UICONTROL **平均リクエスト時間**] | リクエストが開始されてから完了するまでに必要な時間。 ガイドラインは 15 秒です。 <p>上の[リクエスト処理](#request-processing-diagram)図では、リクエスト時間は、**Analysis Workspace リクエストの開始**&#x200B;から **Analysis Workspace リクエストの完了**&#x200B;までの完全なプロセスを表しています。</p> |  |
 | [!UICONTROL **最長リクエスト時間**] | リクエストが開始されてから完了するまでに必要な時間。 <p>上の[リクエスト処理](#request-processing-diagram)図では、リクエスト時間は、**Analysis Workspace リクエストの開始**&#x200B;から **Analysis Workspace リクエストの完了**&#x200B;までの完全なプロセスを表しています。</p> |  |
-| [!UICONTROL **平均参照時間**] | Analysis Workspace には、任意のセグメントで使用される文字列のハッシュのみが保存されるので、プロジェクトを処理するたびに、ハッシュと適切な値を照合するために&#x200B;**参照**&#x200B;が実行されます。 ガイドラインは 2 秒未満です。<p>ハッシュと一致する可能性のある値の数によっては、これらの参照が、リソースを大量に消費するプロセスになる可能性があります。 </p><p>上の[&#x200B; リクエスト処理](#request-processing-diagram)図では、ルックアップ時間は&#x200B;**ルックアップ** フェーズで表されます（**リクエストエンジン処理** フェーズの時点）。</p> | ここでリクエストの速度が低下している場合はおそらく、プロジェクト内の文字列セグメントが多すぎるか、一致の可能性がある一般的な値を持つ文字列が多すぎることが原因です。 |
+| [!UICONTROL **平均参照時間**] | Analysis Workspace には、任意のセグメントで使用される文字列のハッシュのみが保存されるので、プロジェクトを処理するたびに、ハッシュと適切な値を照合するために&#x200B;**参照**&#x200B;が実行されます。 ガイドラインは 2 秒未満です。<p>ハッシュと一致する可能性のある値の数によっては、これらの参照が、リソースを大量に消費するプロセスになる可能性があります。 </p><p>上の[ リクエスト処理](#request-processing-diagram)図では、ルックアップ時間は&#x200B;**ルックアップ** フェーズで表されます（**リクエストエンジン処理** フェーズの時点）。</p> | ここでリクエストの速度が低下している場合はおそらく、プロジェクト内の文字列セグメントが多すぎるか、一致の可能性がある一般的な値を持つ文字列が多すぎることが原因です。 |
 | [!UICONTROL **平均キュー時間**] | リクエストが処理されるまでのキュー内の待機時間の合計。 ガイドラインは 5 秒未満です。<p>上の[リクエスト処理](#request-processing-diagram)図では、キュー時間は&#x200B;**リクエストエンジンキュー**&#x200B;フェーズと&#x200B;**サーバーキュー**&#x200B;フェーズで表されています。</p> | ここでリクエストの速度が低下する場合は、組織で同時に実行されているリクエストが多すぎることが原因の可能性があります。 オフピーク時にリクエストを実行してみてください。 |
 | [!UICONTROL **平均サーバー処理時間**] | リクエストの処理にかかる平均時間。<p>上の[リクエスト処理](#request-processing-diagram)図では、平均サーバー処理時間が&#x200B;**サーバーキュー**&#x200B;フェーズと&#x200B;**サーバー処理**&#x200B;フェーズで表されています。 ガイドラインは 10 秒です。 | ここでリクエストの速度が低下する場合は、プロジェクトに、長すぎる日付範囲や複雑なビジュアライゼーションが含まれている可能性があります。 処理時間を短縮するには、プロジェクトの日付範囲を短くしてみてください。 |
 | [!UICONTROL **複雑さ**] | すべてのリクエストの処理に同じ時間が必要なわけではありません。 リクエストの複雑さは、リクエストの処理に必要な時間をおおまかに把握するのに役立ちます。 ガイドラインは「中」以下です。 <p>指定できる値には以下のものがあります。</p> <ul><li>[!UICONTROL **低**]</li><li>[!UICONTROL **中**]</li><li>[!UICONTROL **高**]</li></ul>この値は、次の列の値の影響を受けます。<ul><li>[!UICONTROL **月の境界**]</li><li>[!UICONTROL **列**]</li><li>[!UICONTROL **セグメント**]</li></ul> |  |
@@ -128,7 +145,7 @@ Analysis Workspace のパフォーマンスについてのインサイトを得�
 | 要因 | 定義 | 影響元 | 最適化 |
 | --- | --- | --- | --- |
 | セグメントの複雑度 | 複雑なセグメントはプロジェクトのパフォーマンスに大きな影響を与える可能性があります。 | セグメントを複雑にする要因には、以下のものがあります（影響の大きい順［降順］）。 <ul><li>演算子には **[!UICONTROL contains]**（次を含む）、**[!UICONTROL contains any of]**（次のいずれかを含む）、**[!UICONTROL matches]**（次と一致する）、**[!UICONTROL starts with]**（次で開始する）、または **[!UICONTROL ends with]**（次で終わる）などがあります。 </li><li>順次セグメント化（特にディメンション制限（Within／After）が使用されている場合） </li><li>セグメントで使用されるディメンション内の一意のディメンション項目の数（例：ページに一意の項目が10個ある場合はPage = &#39;A&#39;が、ページに一意の項目がある場合はPage = &#39;A&#39;より速い）。ページに一意の項目が100000る場合はPage = &#39;A&#39;が速い </li><li>使用されるディメンションの数（例えば、Page = &#39;Home&#39; と Page = &#39;Search result&#39; は、eVar 1 = &#39;red&#39; と eVar 2 = &#39;blue&#39; の場合より速くなります）</li><li>多くの OR 演算子（AND の代わりに）</li><li>様々なスコープの入れ子になったコンテナ（例えば、「訪問者」内にある「訪問」内のヒット）</li></ul> | 複雑さの要因には回避できないものもありますが、セグメントの複雑さを減らせる機会がないか探してください。 一般的に、より具体的なセグメント条件を指定するほど処理が速くなります。 次に例を示します。<ul><li>コンテナの場合、セグメントの上部にある単一のコンテナを使用すると、一連のネストされたコンテナよりも高速になります。</li><li>演算子を使用した場合、**[!UICONTROL equals]**（次に等しい）は **[!UICONTROL contains]**（次を含む）よりも速く、**[!UICONTROL equals any of]**（次のいずれかと等しい）は **[!UICONTROL contains any of]**（次のいずれかを含む）よりも速くなります。</li><li>多くの条件では、AND 演算子は一連の OR 演算子よりも高速になります。</li></ul> 多くの OR 文を 1 つの&#x200B;**[!UICONTROL equals any of]**（次のいずれかと等しい）文に減らせる機会がないか探します。 |
-| ビジュアライゼーションの複雑さ（セグメント、指標、フィルター） | ビジュアライゼーションの種類（フォールアウトとフリーフォームテーブルなど）は、プロジェクトのパフォーマンスに大きな影響を与えません。 ビジュアライゼーションの複雑さが処理時間を増します。 | ビジュアライゼーションの複雑さが増す要因は、以下のとおりです。<ul><li>リクエストされるデータ範囲</li><li>フリーフォームテーブルの行として使用されるセグメントなど、適用されるセグメントの数</li><li>複雑なセグメントの使用</li><li>フリーフォームテーブルでの[静的項目](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows)の行または列</li><li>フリーフォームテーブルの行に適用されるフィルター</li><li>含まれている指標（特にセグメントを使用する計算指標）の数</li></ul> | プロジェクトの読み込みに想定よりも時間がかかる場合は、可能であれば一部のセグメントを eVar とフィルターに置き換えます。<br><br>業務上重要なデータポイントに対してセグメントと計算指標を使用することが多い場合は、そのデータポイントを現在よりも直接的に把握できるように実装を改良することを検討します。 Adobe Experience Platform のタグとアドビの処理ルールを使用すると、実装の変更を迅速かつ容易に行うことができます。 |
+| ビジュアライゼーションの複雑さ（セグメント、指標、フィルター） | ビジュアライゼーションの種類（フォールアウトとフリーフォームテーブルなど）は、プロジェクトのパフォーマンスに大きな影響を与えません。 ビジュアライゼーションの複雑さが処理時間を増します。 | ビジュアライゼーションの複雑さが増す要因は、以下のとおりです。<ul><li>リクエストされるデータ範囲</li><li>フリーフォームテーブルの行として使用されるセグメントなど、適用されるセグメントの数</li><li>複雑なセグメントの使用</li><li>フリーフォームテーブルでの[静的項目](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows)の行または列</li><li>フリーフォームテーブルの行に適用されるフィルター</li><li>含まれている指標（特にセグメントを使用する計算指標）の数</li></ul> | プロジェクトの読み込みに想定よりも時間がかかる場合は、可能であれば一部のセグメントを eVar とフィルターに置き換えます。<br><br>業務上重要なデータポイントに対してセグメントと計算指標を使用することが多い場合は、そのデータポイントを現在よりも直接的に把握できるように実装を改良することを検討します。 Adobe Experience Platform のタグとアドビの処理ルールを使用すると、実装の変更を迅速かつ容易に行うことができます。 |
 | レポートスイートのサイズ | レポートスイートで収集されるデータの量。 | - | Adobe Analytics の全体的なエクスペリエンスを改善するために、どのような実装の改善が可能かについては、実装チームまたはアドビのエキスパートにご相談ください。 |
 | 同時クエリ | 同時にAdobeに対して要求されたクエリの数。 各組織には、最低 5 件の同時クエリが保証されています。 | レポートに時間がかかる場合、レポートは他のレポートとキューに入っています。つまり、組織は特定のレポートスイートに対して多くの同時リクエストを実行しようとしています。 クエリは、API リクエスト、レポート UI（Analysis Workspace、Report Builder）、スケジュールされたプロジェクト、スケジュールされたレポート、スケジュールされたアラート、およびレポートリクエストを行う同時ユーザーから送られる場合があります。 | レポートスイートのリクエストやスケジュールを、1 日を通じて均等に配分します。 また、可能な場合は、リクエストをピーク外の時間に切り替えます。 月曜日の朝、火曜日の朝、および毎月 1 日は、レポートのピーク時間です。 |
 
@@ -137,6 +154,6 @@ Analysis Workspace のパフォーマンスについてのインサイトを得�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [生産性を向上させるためのヒント](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/tips-to-increase-productivity-in-analysis-workspace){target="_blank"}を参照してください。
+デモビデオについては、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [生産性を向上させるためのヒント](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/tips-to-increase-productivity-in-analysis-workspace){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]

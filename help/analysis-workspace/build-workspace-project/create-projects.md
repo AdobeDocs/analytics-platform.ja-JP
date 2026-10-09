@@ -4,7 +4,7 @@ title: プロジェクトの作成
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-TQID: https://experienceleague.adobe.com/DWTWJ2Bd9iEPO2awiiOLcUzUGPc-clZul3dNFcyWvxk
+TQID: 'https://experienceleague.adobe.com/DWTWJ2Bd9iEPO2awiiOLcUzUGPc-clZul3dNFcyWvxk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -19,7 +19,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
     internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
@@ -29,7 +29,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6bcbf10e6bff660f57f598f6cf75b43eb75c7db3
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 88%
@@ -57,15 +57,15 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 * プロジェクトに[パネル](/help/analysis-workspace/c-panels/panels.md)を追加します。 例えば、 **[!DNL Example Panel]** は ➊ です。
 
 * パネルに[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を追加します。 例：
-  * **[!DNL Line Graph]**&#x200B;[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
-  * **[!DNL Countries]**&#x200B;[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
+  * **[!DNL Line Graph]**[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
+  * **[!DNL Countries]**[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
 * ビジュアライゼーションに[コンポーネント](/help/components/overview.md)を追加します。 例：
-  * **[!DNL Store Country]**&#x200B;[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
-  * **[!DNL People]**&#x200B;[&#x200B;指標](/help/components/apply-create-metrics.md)➎
-  * **[!DNL Avg Order Value]**&#x200B;[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
-  * **[!DNL Mobile App Sessions]**&#x200B;[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
-  * **[!DNL Last Month]**&#x200B;[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
-  * **[!DNL Example]**&#x200B;[&#x200B;注釈](/help/components/annotations/overview.md)➒
+  * **[!DNL Store Country]**[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
+  * **[!DNL People]**[&#x200B;指標](/help/components/apply-create-metrics.md)➎
+  * **[!DNL Avg Order Value]**[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
+  * **[!DNL Mobile App Sessions]**[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
+  * **[!DNL Last Month]**[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
+  * **[!DNL Example]**[&#x200B;注釈](/help/components/annotations/overview.md)➒
 
 
 ## プロジェクト情報および設定 {#project-info-settings}

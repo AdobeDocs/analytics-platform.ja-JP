@@ -3,7 +3,7 @@ description: 組織全体、グループ、または個々のユーザーと指�
 title: 計算指標の共有
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-TQID: https://experienceleague.adobe.com/UkWYd20lqGIhLaBNUGQyy2sstXDBjcBttIwfMP41wNI
+TQID: 'https://experienceleague.adobe.com/UkWYd20lqGIhLaBNUGQyy2sstXDBjcBttIwfMP41wNI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -16,7 +16,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
     internal-label: Calculated metrics
 role_v2:
@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 7%
@@ -42,7 +42,7 @@ ht-degree: 7%
 1. アクションバーから、![共有](/help/assets/icons/ShareAlt.svg) **[!UICONTROL 共有]**&#x200B;を選択します。
 1. **[!UICONTROL 計算指標を共有]** ダイアログで、次の操作を行います。
 
-   ![計算指標を共有ダイアログ &#x200B;](assets/share-calculated-metrics-dialog.png)
+   ![計算指標を共有ダイアログ ](assets/share-calculated-metrics-dialog.png)
 
    1. （オプション）計算指標を共有するグループまたは個人のリストを制限するには、![検索](/help/assets/icons/Search.svg)から&#x200B;*個人またはグループ*&#x200B;を使用します。
 
@@ -54,7 +54,7 @@ ht-degree: 7%
 
 ここでは、計算指標を共有する必要がある場合と、計算指標を共有する必要があるユーザーに関するベストプラクティスをいくつか紹介します。
 
-* 管理者は、組織内の誰もが計算指標を使用することに慣れていると確信している場合にのみ、計算指標を「すべて」と共有します。 また、これらの計算指標を採用することも検討できます。 詳しくは、[計算指標をお気に入りとしてマーク &#x200B;](cm-favorite.md)を参照してください。
+* 管理者は、組織内の誰もが計算指標を使用することに慣れていると確信している場合にのみ、計算指標を「すべて」と共有します。 また、これらの計算指標を採用することも検討できます。 詳しくは、[計算指標をお気に入りとしてマーク ](cm-favorite.md)を参照してください。
 
 * 管理者は、計算指標が特定のグループのユーザー部分にビジネス価値を提供する場合、その計算指標を特定のグループと共有します。
 
