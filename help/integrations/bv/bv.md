@@ -61,7 +61,7 @@ Customer Journey Analyticsとブランドの可視性の連携には、次のふ
 
 LLMのトラフィックは、ふたつの方法でサイトに到達します。 Customer Journey Analyticsは、それぞれの方法で異なるデータソースから測定します。
 
-まず、AIによる回答を読み、クリックしてサイトにアクセスする人が最初に考えられます。 その訪問では、web データの残りの部分を収集するのと同じJavaScriptが実行されます。 したがって、既存のCustomer Journey Analytics web データには、ユーザーを送信した訪問と参照ドメイン（例：chatgpt.com）が含まれます。 Customer Journey Analyticsは、これらの訪問を単独ではAI トラフィックとしてラベル付けしません。 それらを識別してグループ化するには、AI参照ドメインに一致する接続に派生フィールドを作成し、そのフィールドにセグメントとレポートを作成します。 [派生フィールド ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}を参照してください。 ブランドの可視性データセットは必要ありません。
+まず、AIによる回答を読み、クリックしてサイトにアクセスする人が最初に考えられます。 その訪問では、web データの残りの部分を収集するのと同じJavaScriptが実行されます。 したがって、既存のCustomer Journey Analytics web データには、ユーザーを送信した訪問と参照ドメイン（例：chatgpt.com）が含まれます。 Customer Journey Analyticsは、これらの訪問を単独ではAI トラフィックとしてラベル付けしません。 それらを識別してグループ化するには、AI参照ドメインに一致する接続に派生フィールドを作成し、そのフィールドにセグメントとレポートを作成します。 [派生フィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}を参照してください。 ブランドの可視性データセットは必要ありません。
 
 ふたつ目の方法は、ページを直接リクエストするボットやエージェントです。 これには、AI インデックスを構築するweb クローラーや、利用者がAI アシスタントにプロンプトを送信したときに発生するライブフェッチが含まれます。 これらのリクエストはJavaScriptを実行しないため、既存のweb データには記録されません。 ブランドの可視性データセットは、CDN レイヤーからこのトラフィックをキャプチャします。 この節の残りの部分では、そのデータセットについて説明します。
 
@@ -75,7 +75,7 @@ LLMのトラフィックは、ふたつの方法でサイトに到達します�
 
 データセット：
 
-* XDM要約指標クラスに基づく[概要データセット ](/help/data-views/summary-data.md)を使用します。
+* XDM要約指標クラスに基づく[概要データセット &#x200B;](/help/data-views/summary-data.md)を使用します。
 * URLとホスト、時間、ボットの種類、CDN プロバイダー、ステータスなどのリクエスト特性ごとにデータをバケット化します。
 
 >[!NOTE]

@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 # インバウンド統合の設定と設定
 
-この記事では、Customer Journey Analyticsとのブランドの可視性インバウンド統合の設定と設定に関する[前提条件](#prerequisites)、[責任](#responsibilities)、[検証手順](#verification)、[ トラブルシューティング手順](#troubleshoot)および[完了条件](#completion-criteria)について詳しく説明します。
+この記事では、Customer Journey Analyticsとのブランドの可視性インバウンド統合の設定と設定に関する[前提条件](#prerequisites)、[責任](#responsibilities)、[検証手順](#verification)、[&#x200B; トラブルシューティング手順](#troubleshoot)および[完了条件](#completion-criteria)について詳しく説明します。
 
 ## 前提条件
 
@@ -40,7 +40,7 @@ Adobeでハンドオフの両方の部分を確認します。
 1. Adobeは、関連するサイトのログを受信し、検出していることを確認しました。
 
 BYOCDN Log Forwardingは、自動エージェントトラフィック分析に使用されるサーバーサイド CDN リクエストデータを提供します。 このデータは、ブラウザーで実行されているJavaScript タグには依存しません。 必須
-CDN ログフィードは、ダウンストリームのサマリーデータセットに、意図されたブランドの可視性エージェント型トラフィックデータが含まれていることを確認します。 詳しくは、[BYOCDN ログ転送リファレンス ](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)を参照してください。
+CDN ログフィードは、ダウンストリームのサマリーデータセットに、意図されたブランドの可視性エージェント型トラフィックデータが含まれていることを確認します。 詳しくは、[BYOCDN ログ転送リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)を参照してください。
 
 ### 必要な情報
 
@@ -80,7 +80,7 @@ Adobeがマネージドコネクタをスケジュールする前に、Adobe ア
 
 ブランドの可視性は、CDN アクセスログを使用して、ボットや自動エージェントからのリクエストを識別します。 このトラフィックはブラウザーのJavaScript タグを適用しないため、従来のweb分析実装ではキャプチャされません。
 
-インバウンド統合、データセット構造、および使用可能なフィールドの詳細については、[ データセットについて](#about-the-dataset)を参照してください。
+インバウンド統合、データセット構造、および使用可能なフィールドの詳細については、[&#x200B; データセットについて](#about-the-dataset)を参照してください。
 
 マネージドコネクタは、次を使用してExperience Platformでサマリーデータセットを作成します。
 
