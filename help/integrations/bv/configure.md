@@ -40,7 +40,7 @@ Adobeでハンドオフの両方の部分を確認します。
 1. Adobeは、関連するサイトのログを受信し、検出していることを確認しました。
 
 BYOCDN Log Forwardingは、自動エージェントトラフィック分析に使用されるサーバーサイド CDN リクエストデータを提供します。 このデータは、ブラウザーで実行されているJavaScript タグには依存しません。 必須
-CDN ログフィードは、ダウンストリームのサマリーデータセットに、意図されたブランドの可視性エージェント型トラフィックデータが含まれていることを確認します。 詳しくは、[BYOCDN ログ転送リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)を参照してください。
+CDN ログフィードは、ダウンストリームのサマリーデータセットに、意図されたブランドの可視性エージェント型トラフィックデータが含まれていることを確認します。 詳しくは、[BYOCDN ログ転送リファレンス &#x200B;](https://experienceleague.adobe.com/ja/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)を参照してください。
 
 ### 必要な情報
 
