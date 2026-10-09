@@ -90,7 +90,7 @@ SDKを通じて、一連のイベントを自動的に収集します。 次の�
 
 GA4では、カスタムイベントには名前と最大25個のパラメーターがあります。 Customer Journey Analyticsでは、カスタムイベントは、実装中に定義されたカスタム XDM スキーマフィールドにマッピングされます。
 
-* **イベント名**&#x200B;は、XDM フィールドのフィールド値になります（通常は[`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)）。
+* **イベント名**&#x200B;は、XDM フィールドのフィールド値になります（通常は[`xdm.eventType`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/experienceevent)）。
 * 各&#x200B;**パラメーター**&#x200B;は個別のXDM スキーマフィールドになります。 任意のXDM フィールドは、[&#x200B; データビューの設定](/help/data-views/component-settings/overview.md)時に、ディメンションまたは指標として公開できます。
 
 >[!NOTE]

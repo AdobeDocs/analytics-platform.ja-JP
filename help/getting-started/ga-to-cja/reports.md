@@ -244,7 +244,7 @@ Analysis Workspaceでは、次のディメンションがGA4のテクノロジ�
 
 >[!NOTE]
 >
->最新のブラウザーでは、User-Agent文字列の詳細が減少しているため、完全で正確な値は、Web SDK設定で[User-Agent Client Hints](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)を収集することによります。
+>最新のブラウザーでは、User-Agent文字列の詳細が減少しているため、完全で正確な値は、Web SDK設定で[User-Agent Client Hints](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/use-cases/client-hints)を収集することによります。
 
 +++
 
