@@ -23,7 +23,7 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-サブコンテナコンポーネントは、XDM スキーマの配列内またはマップ内のフィールドに基づくディメンションと指標です。 これにより、購入時の個々の商品など、イベントレベルよりも詳細なレベルでデータを分析できます。 セグメントでのデータの使用について詳しくは、[ サブイベント ](/help/components/segments/sub-event.md)を参照してください。
+サブコンテナコンポーネントは、XDM スキーマの配列内またはマップ内のフィールドに基づくディメンションと指標です。 これにより、購入時の個々の商品など、イベントレベルよりも詳細なレベルでデータを分析できます。 セグメントでのデータの使用について詳しくは、[&#x200B; サブイベント &#x200B;](/help/components/segments/sub-event.md)を参照してください。
 
 次の情報を使用して、配列およびマップフィールドのサブコンテナコンポーネントがCustomer Journey Analytics データフィードでどのように表示されるかを理解します。
 
@@ -31,13 +31,13 @@ ht-degree: 1%
 
 ### XDM スキーマのサブコンテナコンポーネント
 
-XDM スキーマでは、配列の各要素（文字列配列またはオブジェクト配列）はサブコンテナです。 マップフィールドの各エントリは、[ データフィードのマップフィールド ](#map-fields-in-data-feeds)で説明されているように、サブコンテナでもあります。 サブコンテナ内のフィールドに基づくディメンションと指標は、サブコンテナコンポーネントです。
+XDM スキーマでは、配列の各要素（文字列配列またはオブジェクト配列）はサブコンテナです。 マップフィールドの各エントリは、[&#x200B; データフィードのマップフィールド &#x200B;](#map-fields-in-data-feeds)で説明されているように、サブコンテナでもあります。 サブコンテナ内のフィールドに基づくディメンションと指標は、サブコンテナコンポーネントです。
 
 Adobe Experience PlatformのXDM スキーマ内のサブコンテナを表示するには、[!UICONTROL **Schemas**]&#x200B;を選択し、サブコンテナを含むイベントを展開します。
 
 次の例では、`Product list items`は、様々なサブコンテナコンポーネントを含むオブジェクト配列です。
 
-オブジェクト配列とサブコンテナコンポーネントを含む![XDM スキーマ ](assets/df-sub-event-schema.png)
+オブジェクト配列とサブコンテナコンポーネントを含む![XDM スキーマ &#x200B;](assets/df-sub-event-schema.png)
 
 ### Analysis Workspaceとデータフィードのサブコンテナの違い
 
@@ -94,21 +94,21 @@ Adobe Experience PlatformのXDM スキーマ内のサブコンテナを表示す
 
 サブコンテナコンポーネントをデータフィードに追加すると、同じサブコンテナから他のコンポーネントを追加するように求めるダイアログが表示されます。
 
-![関連するサブコンテナコンポーネントの追加を求めるダイアログ ](assets/data-feeds-add-subevent.png)
+![関連するサブコンテナコンポーネントの追加を求めるダイアログ &#x200B;](assets/data-feeds-add-subevent.png)
 
 同じサブコンテナのフィールドは、フラットアイテムではなく、折りたたみ可能なネストされたグループとしてキャンバスに表示されます。
 
-![ サブコンテナグループ ](assets/data-feeds-subevent-added.png)
+![&#x200B; サブコンテナグループ &#x200B;](assets/data-feeds-subevent-added.png)
 
 このグループは、基礎となるデータ構造を反映しています。
 
 データフィード出力では、これらのコンポーネントはすべて、ネストされた配列として1列に表示されます。
 
-サブコンテナコンポーネントを含むコンポーネントをデータフィードに追加する方法について詳しくは、[ データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
+サブコンテナコンポーネントを含むコンポーネントをデータフィードに追加する方法について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
 
 ## データフィード出力のサブコンテナデータのクエリ
 
-サブコンテナデータ [はCustomer Journey Analytics データフィード ](#sub-container-differences-between-adobe-analytics-and-customer-journey-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
+サブコンテナデータ [はCustomer Journey Analytics データフィード &#x200B;](#sub-container-differences-between-adobe-analytics-and-customer-journey-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
 次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用します。 SnowflakeやDatabricksなどの他のデータウェアハウスも、構文の違いが少なくても同じアプローチをサポートしています。
 
@@ -184,7 +184,7 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 
 ## データフィードでのマップフィールドの使用
 
-XDM スキーマストアのフィールドにキーと値のペアをマッピングします。 データフィードは、他の[ サブコンテナデータ ](#query-sub-container-data-in-data-feed-output)と同じように、各マップをオブジェクトの配列として書き出します。 各オブジェクトには、マップキーとその値が個別のフィールドとして含まれます。
+XDM スキーマストアのフィールドにキーと値のペアをマッピングします。 データフィードは、他の[&#x200B; サブコンテナデータ &#x200B;](#query-sub-container-data-in-data-feed-output)と同じように、各マップをオブジェクトの配列として書き出します。 各オブジェクトには、マップキーとその値が個別のフィールドとして含まれます。
 
 出力のフィールド名は、データフィード用に設定したコンポーネント IDに由来し、`key`や`value`などの固定名ではありません。 この節の例では、サンプルコンポーネント IDを使用します。
 
