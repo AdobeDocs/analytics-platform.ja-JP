@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1419'
 ht-degree: 43%
 ---
 # データフィードでのコンポーネントの可用性
@@ -98,6 +98,8 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 <!-- markdownlint-disable MD034 -->
 
+<!-- pretty sure this isn't being used -->
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -109,14 +111,20 @@ Customer Journey Analytics標準ディメンションは、データフィード
 >
 >特定のディメンションは、Experience Platform データセットで一緒に使用できないため、同じデータフィードに含めることはできません。
 >
->**User Agent**&#x200B;または&#x200B;**Mobile ID** ディメンションのいずれかをデータフィードに含めることを選択した場合、以下に示すディメンションをデータフィードに追加することはできません。
+>**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションをデータフィードに含める場合、以下に示すディメンションをデータフィードに追加することはできません。
 >
 >Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[&#x200B; データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[&#x200B; デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
 
 次のディメンションは、**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションと一緒に使用することはできません。
 
+>[!NOTE]
+>
+>次のリストでは、デフォルトのディメンション名が使用されます。 データビューで名前が変更されたディメンションは、カスタム名を持つデータフィードに表示されます。
+
+
 * ブラウザータイプ
 * ブラウザー
+* ブラウザー ID
 * モバイルの製造元
 * モバイルデバイスタイプ
 * モバイルのオーディオ サポート
@@ -141,6 +149,7 @@ Customer Journey Analytics標準ディメンションは、データフィード
 * モバイルデバイス名
 * オペレーティングシステムの種類
 * オペレーティングシステム
+* オペレーティングシステム ID
 
 ## 代替が必要な指標 {#substitute-metrics}
 

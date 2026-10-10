@@ -6,31 +6,41 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-TQID: https://experienceleague.adobe.com/mzyzOOuWJ1gOiLnUGvjQGrxysdoAMFm2RrXYQutiMT8
+TQID: 'https://experienceleague.adobe.com/mzyzOOuWJ1gOiLnUGvjQGrxysdoAMFm2RrXYQutiMT8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1530
+source-wordcount: '1530'
 ht-degree: 97%
-
 ---
-
 # Analysis Workspace の概要 {#analysis-workspace-overview}
 
 Analysis Workspace では、分析をすばやく作成してインサイトを収集し、他のユーザーと共有できます。 ドラッグ＆ドロップのブラウザーインターフェイスを使用して、分析の作成、データを活用するビジュアライゼーションの追加、データセットのキュレーション、選択した任意のユーザーとの[プロジェクト](/help/analysis-workspace/build-workspace-project/freeform-overview.md)の共有とスケジュールを行うことができます。
@@ -181,5 +191,5 @@ Analysis Workspace で分析を作成すると、作業内容は[自動保存](/
 
 - Customer Journey Analytics の[ラーニングランディング](/help/getting-started/landing.md#learning)ページ。 このページは、Analysis Workspace を知るのに最適です。 特に「Workspace の基礎を学ぶ」。 このテンプレートでは、Workspace で初めての分析を作成する一般的な用語と手順について説明します。
 - アドビでは、数百もの[Analytics ビデオトレーニングチュートリアル](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/overview)を提供しています。
-- 新機能に関する最新情報については、[CX エンタープライズ版リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current)を参照してください。
+- 新機能に関する更新情報については、[CX Enterprise リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/release-notes/experience-cloud/current)を参照してください。
 

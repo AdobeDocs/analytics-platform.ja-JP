@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analyticsにアップグレードする際の代替方法
-description: Customer Journey Analyticsにアップグレードする際の代替方法について説明します
+title: アップグレードの代替案：Experience Platform Web SDK と Customer Journey Analytics での AppMeasurement データ収集の使用
+description: Web SDKで既存のAppMeasurementまたはAnalytics拡張機能のデータ収集ロジックを使用して、Customer Journey Analyticsにデータを送信する方法を説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 58%
+source-wordcount: '1471'
+ht-degree: 55%
 ---
 # アップグレードの代替案：Experience Platform Web SDK と Customer Journey Analytics での AppMeasurement データ収集の使用 {#data-collection-appmeasurement}
 
@@ -59,7 +59,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="AppMeasurement ロジックを Web SDK を参照するように変更する"
->abstract="この手順は、実装のショートカットを選択したので表示されます。 AppMeasurement ロジックをコピーまたは変更して、s オブジェクトの代わりにデータオブジェクトに値を設定します。 例えば、s.eVar1 の割り当てを data.__adobe.analytics.eVar1 に変更し、これをすべての Analytics 変数に対して繰り返します。"
+>abstract="この手順は、実装ショートカットを選択したために表示されます。 AppMeasurement ロジックをコピーまたは変更して、s オブジェクトの代わりにデータオブジェクトに値を設定します。 例えば、s.eVar1 の割り当てを data.__adobe.analytics.eVar1 に変更し、これをすべての Analytics 変数に対して繰り返します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,7 +71,7 @@ AppMeasurementまたはAnalytics拡張機能のデータ収集ロジックをWeb
 
 ## メリットとデメリット
 
-このメソッドは、両方のメソッドが同じタスクを実行するため、[&#x200B; データレイヤー全体をCustomer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)に送信する場合は相互に排他的です。 （この方法は、データレイヤー全体をAdobeに送信するのに適しています。 propとeVarはすべてdata.__ adobe.analytics._variable-name_）を経由するため、より洗練されています。
+このメソッドは、両方のメソッドが同じタスクを実行するため、[&#x200B; データレイヤー全体をCustomer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)に送信する場合は相互に排他的です。 （この方法は、データレイヤー全体をAdobeに送信するのに適しています。 propとeVarはすべてdata.__ adobe.analytics._variable-name_）を経由するため、より洗練されています。
 
 このアップグレードの代替手段を使用する場合は、次の利点と欠点を考慮してください。
 
@@ -101,7 +101,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-      詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。
+      このデータをAdobe Analyticsにも送信すると、Edge NetworkはこれらのデータオブジェクトフィールドをAdobe Analytics変数に自動的にマッピングします。 サポートされているフィールドの一覧については、[Adobe Analyticsへのデータオブジェクトフィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。 Customer Journey Analyticsはこれらのマッピングを使用しません。 後の手順で、Customer Journey AnalyticsのXDM スキーマにデータオブジェクトフィールドをマッピングします。
 
    1. スキーマの選択。
 
@@ -127,7 +127,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データストリームマッピングを使用すると、データオブジェクトのすべてのフィールドをXDM スキーマにマッピングできます。
 
-      詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
+      Customer Journey Analyticsでは、スキーマにマッピングするデータオブジェクトフィールドのみを使用できます。 詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
 
 {{upgrade-final-step}} を参照してください。
 

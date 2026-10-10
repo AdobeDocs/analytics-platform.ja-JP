@@ -2,36 +2,51 @@
 title: Adobe Customer Journey Analyticsの製品分析
 description: Customer Journey Analyticsで効果的に商品分析を行うために使用できる機能について説明します。
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-TQID: https://experienceleague.adobe.com/24OrFfxJY7XuqMYoTrmijM5xRfsdGhfA-aKe5tY-7xw
+TQID: 'https://experienceleague.adobe.com/24OrFfxJY7XuqMYoTrmijM5xRfsdGhfA-aKe5tY-7xw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+    internal-label: Attribution
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: Data management
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 896
+source-wordcount: '896'
 ht-degree: 6%
-
 ---
-
 # Adobe Customer Journey Analyticsの製品分析
 
 製品分析とは、利用者がジャーニーの各段階で製品とどのように関わっているかを把握するプロセスです。 データを分析して、利用者の行動、製品のパフォーマンス、成長の機会に関するインサイトを明らかにすることが含まれます。 効果的な製品分析は、ユーザーエクスペリエンスの向上、エンゲージメントの促進、ビジネス目標の達成のために、十分な情報にもとづいた意思決定をおこなうのに役立ちます。
@@ -120,7 +135,7 @@ Customer Journey Analyticsの次の機能は、リテンションと解約を効
 Adobe CX Enterpriseでは、次の機能を利用して、インサイトを効果的に活用できます。
 
 * Customer Journey Analyticsからアクティブ化する[&#x200B; オーディエンスを作成して公開](/help/components/audiences/publish.md)
-* CX Enterprise製品を通じてオーディエンスをアクティベーション：
+* CX Enterpriseを通じてオーディエンスを活用：
   * [AJOとAdobe Targetで実験](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)を実行し、[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用してCustomer Journey Analyticsのバリエーションの影響を測定します
   * [AJOのユーザーにアプリ内エンゲージメント &#x200B;](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/channels/in-app/get-started-in-app)を配信します。
 * [Adobe Real-time CDPを使用して外部の宛先にオーディエンス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activation-overview)をアクティベートします。

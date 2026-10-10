@@ -1,6 +1,6 @@
 ---
-title: 接続への Analytics ソースコネクタデータセットの追加
-description: 接続への Analytics ソースコネクタデータセットの追加方法について説明します。
+title: Adobe Analytics の無効化
+description: Customer Journey Analyticsにアップグレードした後にAdobe Analytics データ収集を無効にする方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 100%
+source-wordcount: '145'
+ht-degree: 85%
 ---
 # Adobe Analytics の無効化 {#disable-appmeasurement}
 
@@ -54,7 +54,7 @@ Adobe Analytics を無効にする前に、[Customer Journey Analytics へのア
 
 * **タグ：** Adobe Analytics 拡張機能を無効にする
 
-* **AppMeasurment：** AppMeasurement.js ライブラリ s=newobject を置き換えます
+* **AppMeasurement:** AppMeasurement.js ライブラリ s=newobjectを置換します
 
 >[!NOTE]
 >

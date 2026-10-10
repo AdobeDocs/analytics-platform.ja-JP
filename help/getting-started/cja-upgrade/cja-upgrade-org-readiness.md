@@ -1,6 +1,6 @@
 ---
-title: Adobe Analytics から Customer Journey Analytics へのアップグレード
-description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨される手順について説明します
+title: 組織が Customer Journey Analytics にアップグレードするための準備
+description: Adobe AnalyticsからCustomer Journey Analyticsへのアップグレードに備えて、組織を準備する方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 15%
+source-wordcount: '1189'
+ht-degree: 14%
 ---
 # 組織が Customer Journey Analytics にアップグレードするための準備
 

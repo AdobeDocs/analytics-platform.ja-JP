@@ -1,6 +1,6 @@
 ---
-title: Analytics ソースコネクタのみを使用して Customer Journey Analytics にアップグレードする
-description: Analytics ソースコネクタの作成方法とフィールドのマッピング方法について学ぶ
+title: アップグレードの代替案：Customer Journey Analytics へのアップグレードに、Analytics ソースコネクタのみを使用する
+description: Analytics ソースコネクタをCustomer Journey Analyticsの唯一の実装パスとして使用する利点と欠点を理解します。これは、Adobeでは推奨されないアプローチです。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '437'
+ht-degree: 88%
 ---
 # アップグレードの代替案：Customer Journey Analytics へのアップグレードに、Analytics ソースコネクタのみを使用する {#use-source-connector-exclusively}
 

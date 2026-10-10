@@ -1,6 +1,6 @@
 ---
-title: Customer Journey Analyticsにアップグレードする際の代替方法
-description: Customer Journey Analyticsにアップグレードする際の代替方法について説明します
+title: Customer Journey Analytics へのデータレイヤー送信というアップグレードの代替案
+description: XDM オブジェクトでデータを収集する代わりに、データレイヤー全体をCustomer Journey Analyticsに送信する方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '707'
 ht-degree: 54%
 ---
 # Customer Journey Analytics へのデータレイヤー送信というアップグレードの代替案 {#data-collection-data-layer}

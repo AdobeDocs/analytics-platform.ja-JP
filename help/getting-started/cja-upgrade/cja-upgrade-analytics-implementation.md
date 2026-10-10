@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics の実装と、Customer Journey Analytics へのアップグレードに与える影響について
-description: Adobe Analytics から Customer Journey Analytics へのアップグレード時に推奨されるパスについて説明します。
+description: Adobe Analyticsの実装方法が、Customer Journey Analyticsで使用できるアップグレードパスに与える影響について説明します。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 98%
+source-wordcount: '997'
+ht-degree: 96%
 ---
 # Adobe Analytics の実装と、Customer Journey Analytics へのアップグレードに与える影響について {#implementation-affects-upgrade}
 

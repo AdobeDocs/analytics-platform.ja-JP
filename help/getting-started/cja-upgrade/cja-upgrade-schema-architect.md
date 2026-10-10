@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
     internal-label: Taxonomy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1571'
 ht-degree: 11%
 ---
 # Customer Journey Analytics 用のスキーマを設計する {#upgrade-schema-architect}
@@ -74,7 +74,7 @@ Customer Journey Analyticsのデータパイプラインには、データの収
 
 ## スキーマとAdobe Analytics データ収集の比較
 
-Customer Journey Analyticsが使用するExperience Data Modelは、他のほとんどのAnalytics ソリューション（Adobe Analyticsを含む）よりも大幅に高い柔軟性を実現します。 強固なスキーマを確立することは、他のAnalytics製品に存在する制約の回避に役立ちます。
+Adobe Analyticsとは異なり、Customer Journey Analyticsは入力データを事前定義された変数に自動的にマッピングしません。 スキーマでフィールドが定義され、データビューでそのレポート方法が決まります。 Customer Journey Analyticsが使用するExperience Data Modelは、他のほとんどのAnalytics ソリューション（Adobe Analyticsを含む）よりも大幅に高い柔軟性を実現します。 強固なスキーマを確立することは、他のAnalytics製品に存在する制約の回避に役立ちます。
 
 | Adobe Analyticsの一般的な習慣 | XDM + Customer Journey Analyticsのより優れたアプローチ |
 |---|---|

@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 63%
+source-wordcount: '1117'
+ht-degree: 59%
 ---
 # Platform にデータを送信するように既存の Adobe Analytics Web SDK の実装を設定する {#existing-websdk-implementation}
 
@@ -75,7 +75,7 @@ Adobe Analyticsの実装で既にAdobe Experience Platform Web SDKを使用し�
 
 1. Edge NetworkからPlatformへのデータ送信を開始します。 データオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-   詳しくは、[Adobe Analyticsへのデータオブジェクト変数のマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。
+   Edge Networkは、これらのデータオブジェクトフィールドをAdobe Analytics変数に自動的にマッピングし、アップグレード中もAdobe Analytics レポートを維持します。 サポートされているフィールドの一覧については、[Adobe Analyticsへのデータオブジェクトフィールドマッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。 Customer Journey Analyticsはこれらのマッピングを使用しません。 後の手順で、Customer Journey AnalyticsのXDM スキーマにデータオブジェクトフィールドをマッピングします。
 
 1. スキーマの選択。
 
@@ -101,6 +101,6 @@ Adobe Analyticsの実装で既にAdobe Experience Platform Web SDKを使用し�
 
 1. データストリームマッピングを使用すると、データオブジェクトのすべてのフィールドをXDM スキーマにマッピングできます。
 
-   詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
+   Customer Journey Analyticsでは、スキーマにマッピングするデータオブジェクトフィールドのみを使用できます。 詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
 
 {{upgrade-final-step}}

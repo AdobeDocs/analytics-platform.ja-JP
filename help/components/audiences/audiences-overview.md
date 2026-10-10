@@ -1,33 +1,42 @@
 ---
-title: Customer Journey Analytics オーディエンス公開の概要について学ぶ
-description: Customer Journey Analytics でのオーディエンス公開の概念について説明します
+title: Customer Journey Analytics におけるオーディエンス公開の概要
+description: Customer Journey Analytics におけるオーディエンス公開のコンセプトについて学ぶ
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-TQID: https://experienceleague.adobe.com/x64-Q7kfdcy4pAPrOb-TfliMFMNSTafJILEaxR3qbrs
+TQID: 'https://experienceleague.adobe.com/x64-Q7kfdcy4pAPrOb-TfliMFMNSTafJILEaxR3qbrs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 553
+source-wordcount: '564'
 ht-degree: 80%
-
 ---
-
 # オーディエンス公開の概要
 
 >[!NOTE]
@@ -39,21 +48,21 @@ ht-degree: 80%
 
 Customer Journey Analyticsで発見したオーディエンスを作成して、Adobe Experience Platformの[&#x200B; リアルタイム顧客プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/home)に公開し、顧客のターゲティングとパーソナライズを行うことができます。 （Experience Platform プロファイルデータセットからCustomer Journey Analytics接続にオーディエンスメンバーシップデータを取り込む方法については、[Audience analysisの概要](/help/connections/audience-analysis/audience-analysis-overview.md)を参照してください）。
 
-公開オーディエンスを使用すると、Customer Journey Analytics 内で見つかったインサイトを活用してアクションを行う明確な方法がわかります。 アクションの例として、次のようなものがあります。
+オーディエンスを公開することで、Customer Journey Analytics 内で得られたインサイトを基にアクションを実行するための明確な方法が提供されます。 アクションの例として、次のようなものがあります。
 
 * Adobe Journey Optimizer でジャーニーにオーディエンスを使用する。
 Experience Platform に公開されているオーディエンスの使用について詳しくは、Journey Optimizer ドキュメントの[オーディエンスの基本を学ぶ](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences)を参照してください。
-* Experience Platform の宛先を介してオーディエンスをサードパーティにエクスポートする。
+* Experience Platform の宛先を介してオーディエンスをサードパーティにエクスポートします。
 * Customer Journey Analytics のイベントベースのデータから派生する有用な属性を使用して、リアルタイム顧客プロファイルを充実させる。
-* オーディエンスの公開後に、最少の待ち時間でこれらをすべて行います。
+* オーディエンスの公開後に、最小限の待ち時間でこれらをすべて行います。
 詳しくは、[オーディエンスを作成および公開](/help/components/audiences/publish.md)の[待ち時間に関する考慮事項](/help/components/audiences/publish.md#latency-considerations)を参照してください。
 * 1 回限りのオーディエンスまたは繰り返しオーディエンスの公開。
 
-Customer Journey Analytics で作成するオーディエンスは、プロファイルで有効になっているデータセットに基づいている必要はありません。 プロファイルに関連するデータセットやスキーマを有効にせずに、履歴データを Experience Platform に取り込むことができます。 次に、これらのデータセットを使用して、Customer Journey Analytics で関連するオーディエンスを検出し、これらのオーディエンスを Experience Platform のリアルタイム顧客プロファイルに公開して、アクティベーションを行います。
+Customer Journey Analytics で作成するオーディエンスは、プロファイルで有効になっているデータセットに基づいている必要はありません。 プロファイルに関連するデータセットやスキーマを有効にせずに、履歴データを Adobe Experience Platform に取り込むことができます。 次に、これらのデータセットを使用して Customer Journey Analytics で関連するオーディエンスを検出し、これらのオーディエンスを Adobe Experience Platform のリアルタイム顧客プロファイルに公開して、アクティベーションを行います。
 
 ## 主な用語
 
-**オーディエンス**：名前空間と、その名前空間に関連する特定の ID の両方を持つ ID のセットまたはリスト。 オーディエンスは、Adobe Experience Platform およびこれを基にしたアプリケーション（Customer Journey Analytics など）から転送できます。 オーディエンスには、名前空間を混在させて含めることができます。
+**オーディエンス**：名前空間と、その名前空間に関連する特定の ID の両方を持つ ID のセットまたはリスト。 オーディエンスは、Adobe Experience Platform およびその上に構築されたアプリケーション（Customer Journey Analytics など）から転送できます。 オーディエンスには、名前空間を混在させて含めることができます。
 
 **セグメント**：一連のデータを一定期間評価した場合に、データのサブセットを生成する一連のルール。 セグメントは、他のサポートサービスと組み合わせて、オーディエンスを作成するプロセスで使用できます。 セグメントは Customer Journey Analytics で定義および管理されます。
 
@@ -61,13 +70,13 @@ Customer Journey Analytics で作成するオーディエンスは、プロフ�
 
 * 管理者には、Adobe Admin Console での&#x200B;**[!UICONTROL オーディエンス公開]**&#x200B;権限が自動的に付与されます。
 
-* 管理者と製品プロファイル管理者は、個々のユーザーに&#x200B;**[!UICONTROL オーディエンスの作成]**&#x200B;および&#x200B;**[!UICONTROL オーディエンスの表示]**&#x200B;権限を付与できます。 詳しくは、[ユーザーレベルのアクセス制御](/help/technotes/access-control.md#user-level-access)を参照してください。
+* 管理者と製品プロファイル管理者は、個人ユーザーに&#x200B;**[!UICONTROL オーディエンスの作成]**&#x200B;および&#x200B;**[!UICONTROL オーディエンスの表示]**&#x200B;権限を付与できます。 詳しくは、[ユーザーレベルのアクセス制御](/help/technotes/access-control.md#user-level-access)を参照してください。
 
 * 管理者には Adobe Experience Platform での&#x200B;**[!UICONTROL プロファイル管理]**&#x200B;権限も必要です。
 
 ## データガバナンスと同意
 
-Customer Journey Analytics でオーディエンスを公開すると、オーディエンスで使用されるフィールドに添付されたデータガバナンスラベルとポリシーが記録されます。  任意の Adobe Experience アプリケーションでオーディエンスがアクティブ化されると、関連するすべてのデータガバナンスラベルおよびポリシーをそのオーディエンスで使用でき、適切に実施できるようになります。 [同意の詳細情報](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja#consent-policy)。
+Customer Journey Analytics でオーディエンスを公開すると、オーディエンスで使用されるフィールドに添付されたデータガバナンスラベルとポリシーが記録されます。  任意の Adobe Experience Cloud アプリケーションでオーディエンスがアクティベーションされると、関連するすべてのデータガバナンスラベルおよびポリシーがそのオーディエンスで利用可能になり、適切なポリシーの適用を行うことができます。 [同意の詳細情報](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=ja#consent-policy)。
 
 ## 次の手順
 
