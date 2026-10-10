@@ -71,7 +71,7 @@ AppMeasurementまたはAnalytics拡張機能のデータ収集ロジックをWeb
 
 ## メリットとデメリット
 
-このメソッドは、両方のメソッドが同じタスクを実行するため、[ データレイヤー全体をCustomer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)に送信する場合は相互に排他的です。 （この方法は、データレイヤー全体をAdobeに送信するのに適しています。 propとeVarはすべてdata.__ adobe.analytics._variable-name_）を経由するため、より洗練されています。
+このメソッドは、両方のメソッドが同じタスクを実行するため、[&#x200B; データレイヤー全体をCustomer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)に送信する場合は相互に排他的です。 （この方法は、データレイヤー全体をAdobeに送信するのに適しています。 propとeVarはすべてdata.__ adobe.analytics._variable-name_）を経由するため、より洗練されています。
 
 このアップグレードの代替手段を使用する場合は、次の利点と欠点を考慮してください。
 
@@ -101,7 +101,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データオブジェクトを介して、すべての変数をAppMeasurement形式で送信します。
 
-      このデータをAdobe Analyticsにも送信すると、Edge NetworkはこれらのデータオブジェクトフィールドをAdobe Analytics変数に自動的にマッピングします。 サポートされているフィールドの一覧については、[Adobe Analyticsへのデータオブジェクトフィールドマッピング ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。 Customer Journey Analyticsはこれらのマッピングを使用しません。 後の手順で、Customer Journey AnalyticsのXDM スキーマにデータオブジェクトフィールドをマッピングします。
+      このデータをAdobe Analyticsにも送信すると、Edge NetworkはこれらのデータオブジェクトフィールドをAdobe Analytics変数に自動的にマッピングします。 サポートされているフィールドの一覧については、[Adobe Analyticsへのデータオブジェクトフィールドマッピング &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)を参照してください。 Customer Journey Analyticsはこれらのマッピングを使用しません。 後の手順で、Customer Journey AnalyticsのXDM スキーマにデータオブジェクトフィールドをマッピングします。
 
    1. スキーマの選択。
 
@@ -127,7 +127,7 @@ Web SDKを使用してCustomer Journey Analyticsにデータを送信するた�
 
    1. データストリームマッピングを使用すると、データオブジェクトのすべてのフィールドをXDM スキーマにマッピングできます。
 
-      Customer Journey Analyticsでは、スキーマにマッピングするデータオブジェクトフィールドのみを使用できます。 詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)の[ マッピング ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
+      Customer Journey Analyticsでは、スキーマにマッピングするデータオブジェクトフィールドのみを使用できます。 詳しくは、Experience Platform ドキュメントの[Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)の[&#x200B; マッピング &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)を参照してください。
 
 {{upgrade-final-step}} を参照してください。
 
