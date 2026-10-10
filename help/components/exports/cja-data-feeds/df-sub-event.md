@@ -220,7 +220,7 @@ XDM スキーマストアのフィールドにキーと値のペアをマッピ�
 
 ### ID マップ
 
-[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) フィールドの各IDは、1つのオブジェクトとして書き出されます。 オブジェクトには、ID名前空間（キー）、識別子、認証状態、プライマリフラグが含まれます。 名前空間は、その名前空間内の各IDに対して繰り返されます。
+[`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/profile/identitymap) フィールドの各IDは、1つのオブジェクトとして書き出されます。 オブジェクトには、ID名前空間（キー）、識別子、認証状態、プライマリフラグが含まれます。 名前空間は、その名前空間内の各IDに対して繰り返されます。
 
 データビューにディメンションとして存在し、データフィードに追加したID マップ属性のみが書き出されます。
 
