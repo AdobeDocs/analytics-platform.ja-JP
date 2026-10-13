@@ -96,4 +96,4 @@ Experience PlatformでAdobe Brand Visibility ソースを有効にします。 �
 
 ## アウトバウンド統合
 
-アウトバウンド統合について詳しくは、Adobe Brand Visibility ドキュメントの[Customer Journey Analytics統合](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}を参照してください。
+アウトバウンド統合について詳しくは、Adobe Brand Visibility ドキュメントの[Customer Journey Analytics統合](https://experienceleague.adobe.com/ja/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}を参照してください。
