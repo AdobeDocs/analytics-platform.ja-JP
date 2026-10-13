@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
@@ -29,12 +29,14 @@ AIが主要な発見チャネルに。 ChatGPT、Claude、Copilot、Perplexity�
 
 >[!NOTE]
 >
->ブランドの可視性の有料サービスがプロビジョニングされ、マネージドコネクタを介してExperience Platform設定に接続されている必要があります。
+>ブランドの可視性の有料オファーが必要です。 次に、[Experience Platform サンドボックスでAdobe Brand Visibility ソースを設定して](./configure.md)有効にします。
+>
 
 
 >[!IMPORTANT]
 >
 >この統合の一環として、ブランドの可視性データの一時的な処理が米国で行われます。 データは、Customer Journey Analytics コントラクトで設定されたとおりに、指定したリージョンに最終的に保存されます。
+>
 
 
 ## ユースケース
@@ -68,7 +70,7 @@ LLMのトラフィックは、ふたつの方法でサイトに到達します�
 
 ### データセットのオンボーディング
 
-ブランドの可視性管理コネクタは、サマリーデータセットとしてデータをExperience Platformに配信します。 Customer Journey Analyticsで測定するには、次の2つの設定手順を実行します。
+Experience PlatformでAdobe Brand Visibility ソースを有効にします。 ソースは、サマリーデータセットとしてデータをサンドボックスに配信します。 Customer Journey Analyticsでデータを測定するには、さらに2つの設定手順を実行します。
 
 1. ブランドの可視性データセットを含む接続を作成します。
 2. その接続にデータビューを作成します。 データビューでは、以下のディメンションと指標をAnalysis Workspaceで使用できます。
