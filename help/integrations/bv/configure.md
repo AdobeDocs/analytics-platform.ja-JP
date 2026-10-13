@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 # インバウンド統合の設定と設定
 
-この記事では、Customer Journey Analyticsとのブランドの可視性インバウンド統合を設定および設定するための[前提条件](#prerequisites)、[責任](#responsibilities)、[確認する手順](#verification)、[ トラブルシューティング手順](#troubleshoot)および[完了条件](#completion-criteria)について詳しく説明します。
+この記事では、Customer Journey Analyticsとのブランドの可視性インバウンド統合を設定および設定するための[前提条件](#prerequisites)、[責任](#responsibilities)、[確認する手順](#verification)、[&#x200B; トラブルシューティング手順](#troubleshoot)および[完了条件](#completion-criteria)について詳しく説明します。
 
 ## 前提条件
 
@@ -40,7 +40,7 @@ CDN アクセスログは、ブランドの可視性ソースコネクタを実�
 1. ブランドの可視性は、関連するサイトのログを受信して検出しています。 その後、Experience PlatformのAdobe Brand Visibility ソースでサイトを選択できます。
 
 BYOCDN Log Forwardingは、自動エージェントトラフィック分析に使用されるサーバーサイド CDN リクエストデータを提供します。 このデータは、ブラウザーで実行されているJavaScript タグには依存しません。 必須
-CDN ログフィードは、ダウンストリームのサマリーデータセットに、意図されたブランドの可視性エージェント型トラフィックデータが含まれていることを確認します。 詳しくは、[BYOCDN ログ転送リファレンス ](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)を参照してください。
+CDN ログフィードは、ダウンストリームのサマリーデータセットに、意図されたブランドの可視性エージェント型トラフィックデータが含まれていることを確認します。 詳しくは、[BYOCDN ログ転送リファレンス &#x200B;](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)を参照してください。
 
 ### 必要な情報
 
@@ -80,7 +80,7 @@ CDN ログフィードは、ダウンストリームのサマリーデータセ�
 
 ブランドの可視性は、CDN アクセスログを使用して、ボットや自動エージェントからのリクエストを識別します。 このトラフィックはブラウザーのJavaScript タグを適用しないため、従来のweb分析実装ではキャプチャされません。
 
-インバウンド統合、データセット構造、および使用可能なフィールドの詳細については、[ データセットについて](#about-the-dataset)を参照してください。
+インバウンド統合、データセット構造、および使用可能なフィールドの詳細については、[&#x200B; データセットについて](#about-the-dataset)を参照してください。
 
 ブランドの可視性ソースは、次を使用してExperience Platformでサマリーデータセットを作成します。
 
@@ -126,7 +126,7 @@ CDN ログフィードは、ダウンストリームのサマリーデータセ�
 1. Experience Platformで、データセットを作成するサンドボックスを選択します。 サイトは1回だけ割り当てることができるので、このサンドボックスが必要なものであることを確認してください。
 1. **[!UICONTROL ソース]**、次に&#x200B;**[!UICONTROL カタログ]**、次にAdobe アプリケーションに移動します。 **[!UICONTROL Adobe Brand Visibility]** カードで、「**[!UICONTROL 初めて設定]**」を選択します。 その後、カードに「**[!UICONTROL データを追加]**」と表示されます。
 
-   ![ ソースからブランドの可視性を選択](assets/aep-sources-select-bv.png)
+   ![&#x200B; ソースからブランドの可視性を選択](assets/aep-sources-select-bv.png)
 
 1. 「**[!UICONTROL データを追加]**」を選択します。
 
