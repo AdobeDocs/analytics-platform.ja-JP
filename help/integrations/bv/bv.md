@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
@@ -29,12 +29,14 @@ AIが主要な発見チャネルに。 ChatGPT、Claude、Copilot、Perplexity�
 
 >[!NOTE]
 >
->ブランドの可視性の有料サービスがプロビジョニングされ、マネージドコネクタを介してExperience Platform設定に接続されている必要があります。
+>ブランドの可視性の有料オファーが必要です。 次に、[Experience Platform サンドボックスでAdobe Brand Visibility ソースを設定して](./configure.md)有効にします。
+>
 
 
 >[!IMPORTANT]
 >
 >この統合の一環として、ブランドの可視性データの一時的な処理が米国で行われます。 データは、Customer Journey Analytics コントラクトで設定されたとおりに、指定したリージョンに最終的に保存されます。
+>
 
 
 ## ユースケース
@@ -61,21 +63,21 @@ Customer Journey Analyticsとブランドの可視性の連携には、次のふ
 
 LLMのトラフィックは、ふたつの方法でサイトに到達します。 Customer Journey Analyticsは、それぞれの方法で異なるデータソースから測定します。
 
-まず、AIによる回答を読み、クリックしてサイトにアクセスする人が最初に考えられます。 その訪問では、web データの残りの部分を収集するのと同じJavaScriptが実行されます。 したがって、既存のCustomer Journey Analytics web データには、ユーザーを送信した訪問と参照ドメイン（例：chatgpt.com）が含まれます。 Customer Journey Analyticsは、これらの訪問を単独ではAI トラフィックとしてラベル付けしません。 それらを識別してグループ化するには、AI参照ドメインに一致する接続に派生フィールドを作成し、そのフィールドにセグメントとレポートを作成します。 [派生フィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}を参照してください。 ブランドの可視性データセットは必要ありません。
+まず、AIによる回答を読み、クリックしてサイトにアクセスする人が最初に考えられます。 その訪問では、web データの残りの部分を収集するのと同じJavaScriptが実行されます。 したがって、既存のCustomer Journey Analytics web データには、ユーザーを送信した訪問と参照ドメイン（例：chatgpt.com）が含まれます。 Customer Journey Analyticsは、これらの訪問を単独ではAI トラフィックとしてラベル付けしません。 それらを識別してグループ化するには、AI参照ドメインに一致する接続に派生フィールドを作成し、そのフィールドにセグメントとレポートを作成します。 [派生フィールド ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}を参照してください。 ブランドの可視性データセットは必要ありません。
 
 ふたつ目の方法は、ページを直接リクエストするボットやエージェントです。 これには、AI インデックスを構築するweb クローラーや、利用者がAI アシスタントにプロンプトを送信したときに発生するライブフェッチが含まれます。 これらのリクエストはJavaScriptを実行しないため、既存のweb データには記録されません。 ブランドの可視性データセットは、CDN レイヤーからこのトラフィックをキャプチャします。 この節の残りの部分では、そのデータセットについて説明します。
 
 
 ### データセットのオンボーディング
 
-ブランドの可視性管理コネクタは、サマリーデータセットとしてデータをExperience Platformに配信します。 Customer Journey Analyticsで測定するには、次の2つの設定手順を実行します。
+Experience PlatformでAdobe Brand Visibility ソースを有効にします。 ソースは、サマリーデータセットとしてデータをサンドボックスに配信します。 Customer Journey Analyticsでデータを測定するには、さらに2つの設定手順を実行します。
 
 1. ブランドの可視性データセットを含む接続を作成します。
 2. その接続にデータビューを作成します。 データビューでは、以下のディメンションと指標をAnalysis Workspaceで使用できます。
 
 データセット：
 
-* XDM要約指標クラスに基づく[概要データセット &#x200B;](/help/data-views/summary-data.md)を使用します。
+* XDM要約指標クラスに基づく[概要データセット ](/help/data-views/summary-data.md)を使用します。
 * URLとホスト、時間、ボットの種類、CDN プロバイダー、ステータスなどのリクエスト特性ごとにデータをバケット化します。
 
 >[!NOTE]
@@ -94,4 +96,4 @@ LLMのトラフィックは、ふたつの方法でサイトに到達します�
 
 ## アウトバウンド統合
 
-アウトバウンド統合について詳しくは、Adobe Brand Visibility ドキュメントの[Customer Journey Analytics統合](https://experienceleague.adobe.com/ja/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}を参照してください。
+アウトバウンド統合について詳しくは、Adobe Brand Visibility ドキュメントの[Customer Journey Analytics統合](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}を参照してください。
