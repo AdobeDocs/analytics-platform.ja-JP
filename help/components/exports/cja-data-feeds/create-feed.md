@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
 ht-degree: 12%
@@ -129,7 +129,7 @@ ht-degree: 12%
 
    * 一部のコンポーネントは、必須、サポートされていない、またはデータフィードに制限があります。 詳しくは、「[&#x200B; データフィードでのコンポーネントの可用性](/help/components/exports/cja-data-feeds/df-components.md)」を参照してください。
 
-   * XDM配列フィールド（Adobe Journey Optimizerの提案フィールドなど）またはマップフィールドに属するコンポーネントを追加すると、同じサブコンテナから他のコンポーネントを追加するように求めるダイアログが表示されます。 データフィード出力では、これらのコンポーネントはすべて1列に表示されます。 詳しくは、[&#x200B; データフィードのサブコンテナコンポーネント &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)を参照してください
+   * XDM配列フィールド（Adobe Journey Optimizerの提案フィールドなど）またはマップフィールドに属するコンポーネントを追加すると、同じサブイベントから他のコンポーネントを追加するように求めるダイアログが表示されます。 データフィード出力では、これらのコンポーネントはすべて1列に表示されます。 詳しくは、[&#x200B; データフィードのサブイベントコンポーネント &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)を参照してください
 
 1. （オプション）カンバス上のコンポーネントをドラッグして並べ替えます。 定義した順序は、書き出されたデータフィードファイルの列順序として保持されます。
 

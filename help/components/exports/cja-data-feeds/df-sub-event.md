@@ -1,6 +1,6 @@
 ---
-title: データフィードの配列とマップからのサブコンテナコンポーネント
-description: Customer Journey Analytics データフィードが配列とマップフィールドからサブコンテナコンポーネントを書き出す方法と、データウェアハウスでそれらをクエリする方法について説明します。
+title: データフィードの配列とマップからのサブイベントコンポーネント
+description: Customer Journey Analytics データフィードが配列とマップフィールドからサブイベントコンポーネントを書き出す方法と、データウェアハウスでサブイベントコンポーネントをクエリする方法について説明します。
 hide: true
 feature: Components
 product_v2:
@@ -14,52 +14,52 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
 ---
-# データフィードのサブコンテナコンポーネント
+# データフィードのサブイベントコンポーネント
 
 {{release-limited-testing}}
 
-サブコンテナコンポーネントは、XDM スキーマの配列内またはマップ内のフィールドに基づくディメンションと指標です。 これにより、購入時の個々の商品など、イベントレベルよりも詳細なレベルでデータを分析できます。 セグメントでのデータの使用について詳しくは、[&#x200B; サブイベント &#x200B;](/help/components/segments/sub-event.md)を参照してください。
+サブイベントコンポーネントは、XDM スキーマの配列内またはマップ内のフィールドに基づくディメンションと指標です。 これにより、購入時の個々の商品など、イベントレベルよりも詳細なレベルでデータを分析できます。 セグメントでのデータの使用について詳しくは、[&#x200B; サブイベント &#x200B;](/help/components/segments/sub-event.md)を参照してください。
 
-次の情報を使用して、配列およびマップフィールドのサブコンテナコンポーネントがCustomer Journey Analytics データフィードでどのように表示されるかを理解します。
+次の情報を使用して、配列およびマップフィールドのサブイベントコンポーネントがCustomer Journey Analytics データフィードにどのように表示されるかを理解します。
 
-## サブコンテナコンポーネントについて
+## サブイベントコンポーネントについて
 
-### XDM スキーマのサブコンテナコンポーネント
+### XDM スキーマのサブイベントコンポーネント
 
-XDM スキーマでは、配列の各要素（文字列配列またはオブジェクト配列）はサブコンテナです。 マップフィールドの各エントリは、[&#x200B; データフィードのマップフィールド &#x200B;](#map-fields-in-data-feeds)で説明されているように、サブコンテナでもあります。 サブコンテナ内のフィールドに基づくディメンションと指標は、サブコンテナコンポーネントです。
+XDM スキーマでは、配列の各要素（文字列配列またはオブジェクト配列）はサブイベントです。 マップフィールドの各エントリは、[&#x200B; データフィードのマップフィールド &#x200B;](#use-map-fields-in-data-feeds)で説明されているように、サブイベントでもあります。 サブイベント内のフィールドに基づくディメンションと指標は、サブイベントコンポーネントです。
 
-Adobe Experience PlatformのXDM スキーマ内のサブコンテナを表示するには、[!UICONTROL **Schemas**]&#x200B;を選択し、サブコンテナを含むイベントを展開します。
+Adobe Experience PlatformのXDM スキーマ内のサブイベントを表示するには、[!UICONTROL **Schemas**]&#x200B;を選択し、サブイベントを含むイベントを展開します。
 
-次の例では、`Product list items`は、様々なサブコンテナコンポーネントを含むオブジェクト配列です。
+次の例では、`Product list items`は、様々なサブイベントコンポーネントを含むオブジェクト配列です。
 
-オブジェクト配列とサブコンテナコンポーネントを含む![XDM スキーマ &#x200B;](assets/df-sub-event-schema.png)
+オブジェクト配列とサブイベントコンポーネントを含む![XDM スキーマ &#x200B;](assets/df-sub-event-schema.png)
 
-### Analysis Workspaceとデータフィードのサブコンテナの違い
+### Analysis Workspaceとデータフィードのサブイベントの違い
 
-サブコンテナコンポーネントは、Customer Journey AnalyticsのAnalysis Workspaceとデータフィードで異なって表示されます。
+サブイベントコンポーネントは、Customer Journey AnalyticsのAnalysis Workspaceとデータフィードで異なって表示されます。
 
-| 場所 | サブコンテナコンポーネントの表現方法 |
+| 場所 | サブイベントコンポーネントの表現方法 |
 | --- | --- |
 | **Analysis Workspace（Customer Journey Analytics内）** | 表示されている階層とは別に、個々のコンポーネントとして選択できます。 |
 | **データフィード （Customer Journey Analytics内）** | グループとして表され、階層は維持されます。 |
 
-### Adobe AnalyticsとCustomer Journey Analyticsのサブコンテナの違い
+### Adobe AnalyticsとCustomer Journey Analyticsのサブイベントの違い
 
-サブコンテナデータ（1回の購入イベントで複数の商品の詳細など）は、Adobe Analytics データフィードとはCustomer Journey Analytics データフィードで異なります。 次の表は、各製品がサブコンテナデータをどのように表しているかを比較したものです。
+サブイベントデータ（1回の購入イベントで複数の商品の詳細など）は、Adobe Analytics データフィードとは異なり、Customer Journey Analytics データフィードに表示されます。 次の表は、各製品がサブイベントデータをどのように表しているかを比較したものです。
 
-| 製品 | データフィードでのサブコンテナデータの表示方法 | 例：製品リスト |
+| 製品 | データフィードでのサブイベントデータの表示方法 | 例：製品リスト |
 | --- | --- | --- |
 | **Adobe Analytics** | 1列の区切り文字列にフラット化されます。 | 製品リストには、複数の製品が1つの文字列でグループ化されています。<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | サブコンテナコンポーネントは、XDM スキーマで定義された階層を保持します。 同じ列にグループ化されている間、親イベントと兄弟サブコンテナに関係する階層が表示されます。 | 製品リストは、XDM スキーマで配列として定義されている階層を維持します。<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | サブイベントコンポーネントは、XDM スキーマで定義された階層を保持します。 同じ列にグループ化されている間、親イベントと兄弟サブイベントに関係する階層が表示されます。 | 製品リストは、XDM スキーマで配列として定義されている階層を維持します。<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
 
 {style="table-layout:auto"}
 
-### サブコンテナの例：購入イベント内の製品
+### サブイベントの例：購入イベント内の製品
 
 顧客は、コードレスドリル 1個とドリルバッテリーパック 2個の2つの製品を1つの注文で購入します。 実装では、両方の製品を`productListItems` オブジェクト配列に含む単一の購入イベントを送信します。
 
@@ -77,38 +77,38 @@ Adobe Experience PlatformのXDM スキーマ内のサブコンテナを表示す
 }
 ```
 
-このイベントには、2つのサブコンテナが含まれており、`productListItems`配列内の各オブジェクトに1つずつ含まれます。 次の表は、イベントに属するフィールドと、そのサブコンテナに属するフィールドを示しています。
+このイベントには、2つのサブイベントが含まれており、`productListItems`配列内の各オブジェクトに1つずつ含まれます。 次の表は、イベントに属するフィールドと、そのサブイベントに属するフィールドを示しています。
 
 | レベル | フィールド | フィールドの内容 |
 | --- | --- | --- |
 | **イベント** | `eventType`, `timestamp`, `commerce.purchases.value` | 購入全体です。 各フィールドには、イベントの1つの値があります。 **注文数**&#x200B;指標は、このイベントに含まれる製品数に関係なく`1`をカウントします。 |
-| **サブコンテナ** | 各`productListItems` オブジェクトの`SKU`、`name`、`quantity`、`priceTotal` | 購入時の個別商品。 各フィールドには、製品ごとに1つの値があります。 例えば、`quantity`はコードレスドリルの場合は`1`、ドリルバッテリーパックの場合は`2`です。 |
+| **サブイベント** | 各`productListItems` オブジェクトの`SKU`、`name`、`quantity`、`priceTotal` | 購入時の個別商品。 各フィールドには、製品ごとに1つの値があります。 例えば、`quantity`はコードレスドリルの場合は`1`、ドリルバッテリーパックの場合は`2`です。 |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->サブコンテナには、イベントと共に送信されるデータのみが含まれます。 Customer Journey Analyticsでは、買い物かごの追加やチェックアウトなど、以前のイベントから買い物かごの内容を再構築することはありません。 製品を購入イベントのサブコンテナとして表示するには、実装でその購入イベントの`productListItems`に製品を含める必要があります。
+>サブイベントには、イベントと共に送信されるデータのみが含まれます。 Customer Journey Analyticsでは、買い物かごの追加やチェックアウトなど、以前のイベントから買い物かごの内容を再構築することはありません。 製品を購入イベントのサブイベントとして表示するには、実装でその購入イベントの`productListItems`に製品を含める必要があります。
 
-## データフィードへのサブコンテナコンポーネントの追加
+## データフィードへのサブイベントコンポーネントの追加
 
-サブコンテナコンポーネントをデータフィードに追加すると、同じサブコンテナから他のコンポーネントを追加するように求めるダイアログが表示されます。
+サブイベントコンポーネントをデータフィードに追加すると、同じサブイベントから他のコンポーネントを追加するように求めるダイアログが表示されます。
 
-![関連するサブコンテナコンポーネントの追加を求めるダイアログ &#x200B;](assets/data-feeds-add-subevent.png)
+![関連するサブイベントコンポーネントの追加を求めるダイアログ &#x200B;](assets/data-feeds-add-subevent.png)
 
-同じサブコンテナのフィールドは、フラットアイテムではなく、折りたたみ可能なネストされたグループとしてキャンバスに表示されます。
+同じサブイベントのフィールドは、フラットアイテムではなく、折りたたみ可能なネストされたグループとしてキャンバスに表示されます。
 
-![&#x200B; サブコンテナグループ &#x200B;](assets/data-feeds-subevent-added.png)
+![&#x200B; サブイベントグループ &#x200B;](assets/data-feeds-subevent-added.png)
 
 このグループは、基礎となるデータ構造を反映しています。
 
 データフィード出力では、これらのコンポーネントはすべて、ネストされた配列として1列に表示されます。
 
-サブコンテナコンポーネントを含むコンポーネントをデータフィードに追加する方法について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
+サブイベントコンポーネントを含むコンポーネントをデータフィードに追加する方法について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
 
-## データフィード出力のサブコンテナデータのクエリ
+## データフィード出力のサブイベントデータのクエリ
 
-サブコンテナデータ [はCustomer Journey Analytics データフィード &#x200B;](#sub-container-differences-between-adobe-analytics-and-customer-journey-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
+サブイベントデータ [はCustomer Journey Analytics データフィード &#x200B;](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
 次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用します。 SnowflakeやDatabricksなどの他のデータウェアハウスも、構文の違いが少なくても同じアプローチをサポートしています。
 
@@ -184,7 +184,7 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 
 ## データフィードでのマップフィールドの使用
 
-XDM スキーマストアのフィールドにキーと値のペアをマッピングします。 データフィードは、他の[&#x200B; サブコンテナデータ &#x200B;](#query-sub-container-data-in-data-feed-output)と同じように、各マップをオブジェクトの配列として書き出します。 各オブジェクトには、マップキーとその値が個別のフィールドとして含まれます。
+XDM スキーマストアのフィールドにキーと値のペアをマッピングします。 データフィードは、他の[&#x200B; サブイベントデータ &#x200B;](#query-sub-event-data-in-data-feed-output)と同じように、各マップをオブジェクトの配列として書き出します。 各オブジェクトには、マップキーとその値が個別のフィールドとして含まれます。
 
 出力のフィールド名は、データフィード用に設定したコンポーネント IDに由来し、`key`や`value`などの固定名ではありません。 この節の例では、サンプルコンポーネント IDを使用します。
 
