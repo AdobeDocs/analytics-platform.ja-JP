@@ -48,7 +48,7 @@ Adobe Analysis Workspaceの右側のチャットパネルには、Adobe Workfron
 
 ### WorkspaceのCoworkerとCoworker アプリケーションを選択します
 
-Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション &#x200B;](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
+Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション &#x200B;](https://experienceleague.adobe.com/ja/docs/cx-enterprise-coworker/content/chat/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
 
 | | 従業員向けの製品体験 | 共同作業者アプリケーション |
 | --- | --- | --- |
