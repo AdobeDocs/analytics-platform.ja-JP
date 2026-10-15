@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: c9d7bb10d15aa25bf3fa6dcd2e95fea39cd6faf7
+source-git-commit: 8c27da8181de41a626da4b5bd86fdd945b5bff3a
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 27%
+source-wordcount: '965'
+ht-degree: 24%
 ---
 # 最新のCustomer Journey Analytics リリースノート（2026年10月）
 
@@ -68,6 +68,7 @@ ht-degree: 27%
 | **会話インサイトを利用して、Analysis WorkspaceのLLM カスタマーエクスペリエンスを分析**<br/> Customer Journey Analyticsでは、非構造化チャットデータをAnalysis Workspaceに取り込み、プロパティ全体で発生するLLMを活用した閲覧体験と購買体験についてレポートを作成できるようになりました。<p>この機能を使用すると、次のことが可能になります。</p><ul><li>Web SDKを使用して、会話型エージェント（組織のカスタムエージェントまたはAdobe Brand Concierge）からプロンプト、レスポンス、エージェントメタデータを収集します。</li><li>意図、トーン、センチメントを分析することで、顧客が何を求めているのか、担当者がどのように反応するのか、顧客がどのように感じているのかを把握できます。</li><li>既存のスキーマ、データセット、データビューを利用して大規模に分析し、Analysis Workspaceでインサイトを獲得できます。</li><li>エージェントとのやり取りを、より広範なカスタマージャーニーに結び付けることで、結果に会話を結びつけ、コンバージョンやエンゲージメントなどへの実際の影響を測定することができます。</li></ul><p>以前は、LLMを活用したエクスペリエンスを測定するのは困難で、既存のカスタマージャーニーとつながることもほぼ不可能でした。</p><p>詳しくは、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)を参照してください。</p> | | 2026年10月8日（PT）<p>（当初は2026年9月22日に予定）</p> |
 | **コンポーネントの説明を自動生成** <br/> ディメンション、指標、計算指標、セグメント、日付範囲の説明を自動的に生成できるようになりました。 これにより、Workspace ユーザーは、特に大規模なコンポーネントライブラリを持つ組織で、使用するコンポーネントを理解できます。 <p>1つのコンポーネントに対して説明を生成したり、同時に多くのコンポーネントに対して説明を生成したりできます。</p> <p>（ドキュメントのリンクは以下を参照。）<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | 2026年10月28日（PT） |
 | **Adobe Brand Visibilityとの統合**<br/> Adobe Adobe Brand Visibilityを組織のCustomer Journey Analyticsデータと連携させて、AIを活用した発見が、web サイトの実際のエンゲージメントとビジネスの成果にどのように結びつくのかを測定できます。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年10月 |
+| **Coworkerの製品内エクスペリエンス**<br/> Coworkerは、Analysis Workspaceのチャットパネルで利用できるようになりました。 共同作業者は、開いているプロジェクトをコンテキストとして使用するので、プロジェクトに何が含まれているかを説明せずに分析について質問できます。<p>Adobe Workfrontの製品体験を活用することで、次のことが可能になります。</p><ul><li>進行中のプロジェクトを要約し、インサイトを見つけ出して、根本原因の分析を実行します。</li><li>自然言語プロンプトを使用してプロジェクトを構築および編集します。 例えば、パネルや表を追加したり、データを分類したり、ビジュアライゼーションタイプや日付範囲を変更したり、セグメントを作成したりできます。</li></ul><p>（後で行うドキュメントの更新） <!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | 2026年10月22日（PT）（当初は2026年10月15日に予定） | 未定 |
 
 
 ### Customer Journey Analytics の修正点

@@ -272,7 +272,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_schema"
->title="スキーマの選択"
+>title="スキーマを選択"
 >abstract="マッピングセットは、Analytics 変数を XDM フィールドにマッピングする方法を決定します。<br/>新しいマッピングセットを作成するか、既存のマッピングセットを選択して、複数の移行をまたいで同じマッピングを適用します。 また、他の移行タスクでマッピングセットを参照することもできます。"
 
 <!-- markdownlint-enable MD034 -->
@@ -281,7 +281,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_field_group"
->title="フィールドグループ参照"
+>title="フィールドグループの環境設定"
 >abstract="可能な場合は、標準フィールドグループを選択して、公開済みの Adobe フィールドグループを使用します。 これにより、最大限の一貫性が確保され、標準フィールドが使用できない場合は、カスタムテナントフィールドにフォールバックされます。<br/>可能な場合は、カスタムフィールドグループを選択して、テナント名前空間のカスタムフィールドを使用します。 これにより、最大限の柔軟性が確保されます。"
 
 <!-- markdownlint-enable MD034 -->
