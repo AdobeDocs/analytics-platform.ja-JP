@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '7183'
-ht-degree: 96%
+source-wordcount: '7222'
+ht-degree: 95%
 ---
 
 # Customer Journey Analytics - ドキュメントのアップデート
@@ -70,8 +70,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年10月** | |
+| Content Analyticsの有料メディアチャネル | 有料メディアソースコネクタ（Google AdsやMeta Adsなど）を使用し、Content Analytics有料メディアチャネルを設定および有効にすることで生じるデータセットとデータビューコンポーネントの自動設定に関する包括的な[&#x200B; ドキュメント &#x200B;](/help/content-analytics/config/paid-media.md)。 |
 | 会話インサイト | 会話インサイト用の[&#x200B; ドキュメント &#x200B;](/help/conversation-insights/overview.md)。 |
-| 2026年10月 | |
 | ブランドの可視性 | 詳しくは、[ブランドの可視性インバウンド統合](/help/integrations/bv/bv.md#inbound-integration)のドキュメントを更新しました。 |
 | **2026年9月** | |
 | 矢印とフォールアウトのジャーニーキャンバスの比較 | [&#x200B; ジャーニーの各ノード、矢印、フォールアウトに日付範囲の変化率が表示されるように、ジャーニーキャンバスのビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)の「[!UICONTROL 比較先]」設定を更新しました。 |

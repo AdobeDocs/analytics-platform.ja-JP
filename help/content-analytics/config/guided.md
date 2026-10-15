@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '4800'
-ht-degree: 56%
+source-wordcount: '4844'
+ht-degree: 55%
 ---
 
 # Content Analytics ガイド付き設定
@@ -705,6 +705,11 @@ Experience Platformでソースコネクタを設定したら、「![更新](/he
 * Customer Journey Analytics 接続を更新して、このサンドボックスで接続されているすべてのソースコネクタからの有料メディアデータセットを含めます。
 * 選択したすべてのデータビューで有料メディアのディメンションと指標を有効にします。
 * Workspace レポートで有料メディアチャネルをフィルタリング可能なディメンションとして表示します。
+
+詳細については、[有料メディア自動設定](./paid-media.md)を参照してください。
+
+* 有料メディアソースコネクタの最初の使用に起因する有料メディアデータセットの自動設定。
+* Content Analyticsの有料メディアチャネルの設定とイネーブルメント時に作成されたデータビューコンポーネント。
 
 ### 保存 {#paidmedia-save}
 
