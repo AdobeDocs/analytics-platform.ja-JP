@@ -22,5 +22,5 @@ ht-degree: 0%
 >title="会話のレビュー"
 >abstract="タイムスタンプ、シグナル（意図、センチメント、トーン、フィードバック）など、個々の会話のコンテキストとフローを理解できます。 表示するシグナルを設定します。"
 
-![ チャット ](/help/assets/icons/Chat.svg)
+![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg)
 
