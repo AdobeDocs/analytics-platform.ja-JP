@@ -4,12 +4,11 @@ title: トレンド分析トピック
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 137dba69c8827f3b67d5656760d7715437c58b73
+source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 5%
 ---
-
 # トレンド分析トピック
 
 >[!CONTEXTUALHELP]
@@ -22,7 +21,7 @@ ht-degree: 5%
 >title="トレンド分析トピック"
 >abstract="選択したランキング指標にもとづいてトレンドトピックを分析します。 トピックを選択して、最大5つのレベルまでドリルダウンします。 特定のトピックを検索し、トピックを他の日付範囲と比較します。"
 
-![&#x200B; フィード &#x200B;](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、会話インサイトの一部として、トレンド トピックを探索および分析できます。
+![ フィード ](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、会話インサイトの一部として、トレンド トピックを探索および分析できます。
 
 特定のトピックを検索し、各レベルの各トピックの数と割合を他のデータ範囲と比較できます。
 
@@ -30,7 +29,7 @@ ht-degree: 5%
 
 トレンドトピックのビジュアライゼーションを作成および設定するには：
 
-1. ![&#x200B; フィード &#x200B;](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
+1. ![ フィード ](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
 1. **[!UICONTROL トレンドトピック]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
@@ -44,7 +43,7 @@ ht-degree: 5%
 
 1. ビジュアライゼーションを作成するには、**[!UICONTROL ビルド]**&#x200B;を選択します。 設定値をデフォルトにリセットするには、**[!UICONTROL リセット]**&#x200B;を選択します。
 
-トレンド トピックのビジュアライゼーションを再構成するには、**[!UICONTROL ランキング指標：_ランキング指標_ | サブトピックレベル：_x_]**&#x200B;の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
+トレンド トピックのビジュアライゼーションを再構成するには、**[!UICONTROL ランキング指標：_ランキング指標_ | サブトピックレベル：_x_]**の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
 
 ## 使用
 
@@ -60,7 +59,7 @@ ht-degree: 5%
 
 ## 設定
 
-次の特定の[&#x200B; ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
+次の特定の[ ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
 
 | 設定 | 説明 |
 |---|---|
