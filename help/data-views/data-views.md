@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 88%
@@ -50,7 +50,7 @@ ht-degree: 88%
 >
 >データビューで選択または変更した設定は、遡及的かつ非破壊的です。 つまり、基になるデータが永続的に変更されるわけではありません。
 
-非常に異なるコンポーネントのセット（ディメンション／指標）を使用して、同じ接続の異なるデータビューを作成できます。 または、訪問のタイムアウトやアトリビューションなどのために、異なる設定でデータビューを作成します。例えば、すべてのディメンションが[!UICONTROL &#x200B; ラストタッチ &#x200B;]に設定されたデータビューと、すべてのディメンションが[!UICONTROL &#x200B; ファーストタッチ &#x200B;]に設定された（同じデータセットに基づく）別のデータビューを同時に設定できます。
+非常に異なるコンポーネントのセット（ディメンション／指標）を使用して、同じ接続の異なるデータビューを作成できます。 または、訪問のタイムアウトやアトリビューションなどのために、異なる設定でデータビューを作成します。例えば、すべてのディメンションが[!UICONTROL  ラストタッチ ]に設定されたデータビューと、すべてのディメンションが[!UICONTROL  ファーストタッチ ]に設定された（同じデータセットに基づく）別のデータビューを同時に設定できます。
 
 Customer Journey Analytics のワークスペースプロジェクトは、データビューに基づいています。
 
@@ -91,7 +91,7 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 * データビュー内のコンテナの名前を変更し、名前を変更したコンテナをそのデータビューに基づくすべてのワークスペースプロジェクトに表示できます。
 
-* データビューのData Insights Agentを有効または無効にできます。
+* データビューのData Insights Agentを有効または無効にできます。<!-- FOLLOW-UP: Data Insights Agent has been replaced by Coworker, but this setting is still in the UI. Confirm with the SME. -->
 
 ## データビューの前提条件 {#prerequisites}
 
@@ -116,7 +116,7 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 ## データビューの削除 {#delete}
 
-[!UICONTROL Customer Journey Analytics]でデータビュー[&#128279;](/help/data-views/manage-dataviews.md#delete-data-views)を削除すると、この削除されたデータビューに依存する[!UICONTROL Workspace] プロジェクトが機能しなくなります。
+[!UICONTROL Customer Journey Analytics]でデータビュー](/help/data-views/manage-dataviews.md#delete-data-views)を[削除すると、この削除されたデータビューに依存する[!UICONTROL Workspace] プロジェクトが機能しなくなります。
 
 ## 次の手順
 

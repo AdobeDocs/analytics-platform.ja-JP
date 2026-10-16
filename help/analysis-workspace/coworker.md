@@ -23,9 +23,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 8b1f9d95fb38c0fcb1a7f3d9b41bf3cfb9355ed9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1945'
 ht-degree: 0%
 ---
 # 従業員が製品内で体験できるようにしたい
@@ -42,13 +42,15 @@ Adobe Analysis Workspaceの右側のチャットパネルには、Adobe Workfron
 
   WorkspaceでCoworkerにアクセスできない場合は、管理者にお問い合わせください。 詳しくは、[IMS組織の環境設定](/help/analysis-workspace/user-preferences.md#ims-organization-preferences)を参照してください。<!-- need to update this section with the new toggle -->
 
-<!-- **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]** -->
+<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
+
+* **権限**: [!UICONTROL Adobe Admin Console]では、[!UICONTROL  レポートツール ] **[!UICONTROL Coworker]**&#x200B;権限によって、Coworkerへのアクセス権が決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、この権限を製品プロファイルに追加する必要があります。 詳しくは、[ アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。
 
 * **データビューへのアクセス**：共同作業者は既存のAnalysis Workspaceとデータビューの権限を使用します。 アクセス権のないデータやコンポーネントにはアクセスできません。
 
 ### WorkspaceのCoworkerとCoworker アプリケーションを選択します
 
-Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション &#x200B;](https://experienceleague.adobe.com/ja/docs/cx-enterprise-coworker/content/chat/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
+Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション ](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
 
 | | 従業員向けの製品体験 | 共同作業者アプリケーション |
 | --- | --- | --- |
@@ -69,7 +71,7 @@ Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker ア
 * 折れ線グラフを追加する方法や、値に基づいて表のセルに色を付ける方法など、Analysis Workspaceで行う方法について説明します。
 * 指標やディメンションなどのコンポーネントについて説明します。
 
-詳しくは、[&#x200B; プロジェクトに関する質問](#ask-questions-about-a-project)を参照してください。
+詳しくは、[ プロジェクトに関する質問](#ask-questions-about-a-project)を参照してください。
 
 #### 開いているプロジェクトのビルドと編集
 
@@ -86,11 +88,11 @@ Coworkerに次のようなことを依頼できます。
 * 複数のパネルを使用してプロジェクトを作成するか、プロジェクトをコピーして、別のオーディエンスや地域に合わせます。
 * プロジェクトを保存します。
 
-詳しくは、[&#x200B; プロジェクトの更新](#update-a-project)を参照してください。
+詳しくは、[ プロジェクトの更新](#update-a-project)を参照してください。
 
 ### 同僚がプロジェクトを更新したり、チャットで回答したりすると
 
-チームメンバーは、チャットパネルで回答するか、質問に応じてプロジェクトを変更するかを決定します。 詳細については、[&#x200B; プロジェクトの更新](#update-a-project)および[&#x200B; プロジェクトに関する質問](#ask-questions-about-a-project)を参照してください。
+チームメンバーは、チャットパネルで回答するか、質問に応じてプロジェクトを変更するかを決定します。 詳細については、[ プロジェクトの更新](#update-a-project)および[ プロジェクトに関する質問](#ask-questions-about-a-project)を参照してください。
 
 また、従業員に対して何をすべきかを明確にすることもできます。 例えば、チャット _または_&#x200B;で&#x200B;_のようなフレーズを使用して、チャットパネルで回答を得るために_&#x200B;さんに伝えるか、このテーブル _で_ プロジェクトに追加&#x200B;_または_&#x200B;のようなフレーズを使用してプロジェクトを更新できます。
 
@@ -112,7 +114,7 @@ Coworkerに次のようなことを依頼できます。
 
 1. Customer Journey Analyticsで、既存のWorkspace プロジェクトを開くか、新しいプロジェクトを作成します。
 
-1. **[プレースホルダー：アイコン名や場所など、同僚パネルを開く方法。 スクリーンショットを追加します。]**
+1. ヘッダーの右上隅にある&#x200B;**同僚** アイコン ![同僚](/help/assets/icons/coworker.svg)を選択して、同僚のチャットパネルを開きます。
 
 1. チャットパネルで、共同作業者に何を求めるかを記述します。
 
@@ -147,7 +149,7 @@ Coworkerに次のようなことを依頼できます。
 
 1. Customer Journey Analyticsで、既存のWorkspace プロジェクトを開くか、新しいプロジェクトを作成します。
 
-1. **[プレースホルダー：アイコン名や場所など、同僚パネルを開く方法。 スクリーンショットを追加します。]**
+1. ヘッダーの右上隅にある&#x200B;**同僚** アイコン ![同僚](/help/assets/icons/coworker.svg)を選択して、同僚のチャットパネルを開きます。
 
 1. チャットパネルで、共同作業者に何を求めるかを記述します。
 
@@ -160,7 +162,7 @@ Coworkerに次のようなことを依頼できます。
    | _このパネルの異常にフラグを付ける_ | チャットパネルの異常値について説明します。 同僚にビジュアライゼーションで異常値を表示するように依頼すると、異常値が表示されない場合があります。 [現在の制限](#current-limitations)を参照してください。 |
    | _モバイル訪問の減少に関する根本原因分析を行う_ | チャットパネルに分析を表示し、調査結果をプロジェクトに追加します。 |
    | _値に基づいてセルに色を付けるにはどうすればよいですか？_ | チャットパネルの手順を説明します。 |
-   | _バウンス率メトリックの説明_ | チャットパネルのコンポーネントについて説明します。 説明が[&#x200B; データ要素](/help/components/data-dictionary/data-dictionary-overview.md)から来ていません。 データディクショナリ定義のサポートは、今後のリリースで予定されています。 |
+   | _バウンス率メトリックの説明_ | チャットパネルのコンポーネントについて説明します。 説明が[ データ要素](/help/components/data-dictionary/data-dictionary-overview.md)から来ていません。 データディクショナリ定義のサポートは、今後のリリースで予定されています。 |
 
 1. Workfrontの回答を確認する。 詳しくは、[共同作業者の結果の検証](#verify-coworker-results)を参照してください。
 
@@ -180,7 +182,7 @@ Coworkerの製品内エクスペリエンスには、次の制限があります
 
 * **セグメント定義**：名前でセグメントを参照すると、同僚はセグメントの定義を把握できません。 たとえば、チームメンバーは、セグメント名をもとにセグメントの内容を推測します。 結果に依存する前に、セグメント定義を確認します。
 
-* **データ辞書**：同僚が[&#x200B; データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)に接続されていません。 データ要素の定義を使用して指標とディメンションを説明することはできません。
+* **データ辞書**：同僚が[ データ辞書](/help/components/data-dictionary/data-dictionary-overview.md)に接続されていません。 データ要素の定義を使用して指標とディメンションを説明することはできません。
 
 * **承認済みコンポーネント**：同僚は、類似のコンポーネントよりも承認済みコンポーネントを優先しません。
 

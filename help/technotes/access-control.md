@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 75%
+ht-degree: 74%
 ---
 # アクセス制御
 
@@ -112,7 +112,7 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
 [Admin Console](https://adminconsole.adobe.com/enterprise/) の **Customer Journey Analytics 製品プロファイル**&#x200B;に製品管理者として追加されることに加えて、Customer Journey Analytics 内で次のタスクを完了するには追加の権限が必要です。
 
-* [&#x200B; データビュー](/help/data-views/data-views.md)の作成、更新、削除
+* [ データビュー](/help/data-views/data-views.md)の作成、更新、削除
 * [接続](/help/connections/overview.md)を作成、更新、削除する
 
   このタスクを実行するには、次の権限を提供する&#x200B;**Experience Platform ロール**&#x200B;にユーザーが属している必要があります。
@@ -125,7 +125,7 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
   | [!UICONTROL データ管理] | [!UICONTROL データセットの表示] | データセットおよびスキーマへの読み取り専用アクセス |
   | [!UICONTROL ID 管理] | [!UICONTROL ID 名前空間の表示] | ID 名前空間への読み取り専用アクセス |
 
-  Experience Platform ロールについて詳しくは、[&#x200B; アクセス制御の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)を参照してください。
+  Experience Platform ロールについて詳しくは、[ アクセス制御の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)を参照してください。
 
 * [共有指標とディメンションの管理](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
@@ -134,12 +134,12 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
   | [!UICONTROL サンドボックス] | [!UICONTROL すべて] | すべてのサンドボックスへのアクセス。 |
-  | [!UICONTROL データガバナンス] | [!UICONTROL &#x200B; データ使用ポリシーの表示] | 組織に属するデータ使用ポリシーに対する読み取り専用アクセス。 |
-  | [!UICONTROL データガバナンス] | [!UICONTROL &#x200B; データ使用ポリシーの管理] | データ使用ポリシーの読み取り、作成、編集、および削除へのアクセス。 |
+  | [!UICONTROL データガバナンス] | [!UICONTROL  データ使用ポリシーの表示] | 組織に属するデータ使用ポリシーに対する読み取り専用アクセス。 |
+  | [!UICONTROL データガバナンス] | [!UICONTROL  データ使用ポリシーの管理] | データ使用ポリシーの読み取り、作成、編集、および削除へのアクセス。 |
 
-  Experience Platformの権限について詳しくは、[&#x200B; サンドボックスと権限](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
+  Experience Platformの権限について詳しくは、[ サンドボックスと権限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
 
-* Journey OptimizerがJourney Optimizer Connectionsが存在するCustomer Journey Analyticsと統合されている場合、Connectionsにアクセスするには[ジャーニー権限](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)も追加する必要があります。
+* Journey OptimizerがJourney Optimizer Connectionsが存在するCustomer Journey Analyticsと統合されている場合、Connectionsにアクセスするには[ジャーニー権限](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)も追加する必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
@@ -150,21 +150,21 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
 * [宛先](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/export-datasets)へのデータセットの書き出し
 
-  このタスクを実行するには、次の[宛先の権限](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/home#access-controls)を提供する&#x200B;**Experience Platform ロール**&#x200B;の一部である必要があります。
+  このタスクを実行するには、次の[宛先の権限](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls)を提供する&#x200B;**Experience Platform ロール**&#x200B;の一部である必要があります。
 
   | カテゴリ | 権限 | 説明 |
   |---|---|---|
   | [!UICONTROL 宛先] | [!UICONTROL 宛先の管理] | 宛先接続と宛先アカウントの読み取り、作成および削除へのアクセス。 |
   | [!UICONTROL 宛先] | [!UICONTROL 宛先のアクティブ化] | ユーザーが既存の宛先に対してセグメントをアクティブ化できるようにします。 アクティベーションワークフローのマッピングステップを有効にします。 また、この権限の場合は、データを宛先に対してアクティブ化するユーザーに宛先の表示権限も付与する必要があります。 |
 
-  Experience Platformの権限について詳しくは、[&#x200B; サンドボックスと権限](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
+  Experience Platformの権限について詳しくは、[ サンドボックスと権限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)を参照してください。
 
 
 * [BI 拡張機能](../data-views/bi-extension.md)の使用
 
   ユーザーが BI 拡張機能を使用する場合、製品管理者は以下を行う必要があります。
 
-  * ユーザーのExperience Platform権限に、クエリの管理およびクエリサービス統合オプションを使用してクエリサービスリソースを持つロールが含まれていることを確認する必要があります。 Experience Platform権限について詳しくは、[&#x200B; アクセス制御の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)を参照してください。
+  * ユーザーのExperience Platform権限に、クエリの管理およびクエリサービス統合オプションを使用してクエリサービスリソースを持つロールが含まれていることを確認する必要があります。 Experience Platform権限について詳しくは、[ アクセス制御の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)を参照してください。
 
     | カテゴリ | 権限 | 説明 |
     |---|---|---|
@@ -191,6 +191,8 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
 ![Admin Console 権限](assets/permissions.png)
 
+<!-- FOLLOW-UP (waiting on PM): The AI Assistant: Product Knowledge and Data Insights Agent permissions haven't been updated in the product yet. When the PM confirms the Coworker permission name and category, update both rows below. Links to the retired AI Assistant and Data Insights Agent pages were removed. -->
+
 | カテゴリ | 権限 | 説明 |
 | --- | --- | ---|
 | [!UICONTROL データビュー] | *データビュー名* | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。 この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
@@ -200,15 +202,15 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 | [!UICONTROL レポートツール] | [!UICONTROL Labs のアクセス] | ユーザーは Customer Journey Analytics の「[ラボ](/help/labs/labs.md)」タブにアクセスできます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 注釈の作成] | ユーザーは[注釈](/help/components/annotations/overview.md)を作成できます。 ユーザーは、作成した注釈または共有されている注釈に対してのみ、タグ付け、共有、削除、名前変更を行うことができます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL オーディエンスビュー] | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を表示できます。 |
-| [!UICONTROL レポートツール] | [!UICONTROL オーディエンスの作成] | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 Adobe Experience Platformで[&#x200B; セグメントの管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)が必要です。 |
+| [!UICONTROL レポートツール] | [!UICONTROL オーディエンスの作成] | ユーザーは[オーディエンス](/help/components/audiences/audiences-overview.md)を作成できます。 Adobe Experience Platformで[ セグメントの管理](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/home)が必要です。 |
 | [!UICONTROL レポートツール] | [!UICONTROL データストーリーテリング] | ユーザーは [Workspace プロジェクトに基づいてスライドプレゼンテーションを生成](/help/analysis-workspace/curate-share/generate-slides.md)できます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 監査ログへのアクセス] | [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 任意のユーザーとプロジェクトリンクを共有] | ユーザーは[任意のユーザーとプロジェクトを共有](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)できます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 予測] | ユーザーは Analysis Workspace の[予測](../analysis-workspace/c-forecast/forecasting.md)機能にアクセスできます |
-| [!UICONTROL レポートツール] | [!UICONTROL AI アシスタント：製品知識] | ユーザーは [AI アシスタント](../ai-assistant.md)にアクセスして、製品知識を得ることができます。 |
-| [!UICONTROL レポートツール] | [!UICONTROL Data Insights Agent] | AIを活用したデータインサイト用の[Data Insights Agent](../data-analysis-ai.md)にアクセスできます。 |
+| [!UICONTROL レポートツール] | [!UICONTROL AI アシスタント：製品知識] | ユーザーは製品知識のためにAI アシスタントにアクセスできます。 |
+| [!UICONTROL レポートツール] | [!UICONTROL Data Insights Agent] | Data Insights AgentからAIを活用したデータインサイトにアクセスできます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL インテリジェントキャプション] | ユーザーは[インテリジェントキャプション](/help/analysis-workspace/visualizations/intelligent-captions.md)にアクセスできます |
-| [!UICONTROL レポートツール] | [!UICONTROL MCP アクセス &#x200B;] | [Customer Journey Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/cja/)へのアクセスを許可します。 |
+| [!UICONTROL レポートツール] | [!UICONTROL MCP アクセス ] | [Customer Journey Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/cja/)へのアクセスを許可します。 |
 | [!UICONTROL データビューツール] | [!UICONTROL 完全なテーブルの書き出し] | ユーザーは[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)ことができます。 |
 | [!UICONTROL データビューツール] | [!UICONTROL CJA BI 拡張機能] | ユーザーは [BI 拡張機能](../data-views/bi-extension.md)を使用できます。 |
 
@@ -236,7 +238,7 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 
 1. 特定のデータビューの[!UICONTROL 設定]でセグメントを作成します。ここで、[!UICONTROL 日]はデータアクセス権を付与する日付となります。 詳しくは、[データビューの作成](/help/data-views/create-dataview.md#settings-filters)を参照してください。
 1. データビューを保存します。これにより、基になる接続のデータセットのデータ部分にセグメントが適用されます。 セグメント定義に適合しない行はデータビューから自動的に除外され、このデータビューを使用する際に Analysis Workspace で使用できなくなります。
-1. Admin Consoleで新しい[製品プロファイル &#x200B;](#product-profile-admin-role)を作成し、製品プロファイルにユーザーを追加し、この特定のデータビューのみを製品プロファイルに含めます。
+1. Admin Consoleで新しい[製品プロファイル ](#product-profile-admin-role)を作成し、製品プロファイルにユーザーを追加し、この特定のデータビューのみを製品プロファイルに含めます。
 
 ### 値レベルのアクセス制御
 
