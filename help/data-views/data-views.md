@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 88%
@@ -91,7 +91,7 @@ Customer Journey Analytics のワークスペースプロジェクトは、デ�
 
 * データビュー内のコンテナの名前を変更し、名前を変更したコンテナをそのデータビューに基づくすべてのワークスペースプロジェクトに表示できます。
 
-* データビューのData Insights Agentを有効または無効にできます。
+* データビューのData Insights Agentを有効または無効にできます。<!-- FOLLOW-UP: Data Insights Agent has been replaced by Coworker, but this setting is still in the UI. Confirm with the SME. -->
 
 ## データビューの前提条件 {#prerequisites}
 

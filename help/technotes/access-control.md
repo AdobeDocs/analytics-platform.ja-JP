@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 75%
+ht-degree: 74%
 ---
 # アクセス制御
 
@@ -191,6 +191,8 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
 ![Admin Console 権限](assets/permissions.png)
 
+<!-- FOLLOW-UP (waiting on PM): The AI Assistant: Product Knowledge and Data Insights Agent permissions haven't been updated in the product yet. When the PM confirms the Coworker permission name and category, update both rows below. Links to the retired AI Assistant and Data Insights Agent pages were removed. -->
+
 | カテゴリ | 権限 | 説明 |
 | --- | --- | ---|
 | [!UICONTROL データビュー] | *データビュー名* | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。 この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
@@ -205,8 +207,8 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 | [!UICONTROL レポートツール] | [!UICONTROL 監査ログへのアクセス] | [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) と今後の監査ログ UI に対する権限チェックを実施します。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 任意のユーザーとプロジェクトリンクを共有] | ユーザーは[任意のユーザーとプロジェクトを共有](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)できます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 予測] | ユーザーは Analysis Workspace の[予測](../analysis-workspace/c-forecast/forecasting.md)機能にアクセスできます |
-| [!UICONTROL レポートツール] | [!UICONTROL AI アシスタント：製品知識] | ユーザーは [AI アシスタント](../ai-assistant.md)にアクセスして、製品知識を得ることができます。 |
-| [!UICONTROL レポートツール] | [!UICONTROL Data Insights Agent] | AIを活用したデータインサイト用の[Data Insights Agent](../data-analysis-ai.md)にアクセスできます。 |
+| [!UICONTROL レポートツール] | [!UICONTROL AI アシスタント：製品知識] | ユーザーは製品知識のためにAI アシスタントにアクセスできます。 |
+| [!UICONTROL レポートツール] | [!UICONTROL Data Insights Agent] | Data Insights AgentからAIを活用したデータインサイトにアクセスできます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL インテリジェントキャプション] | ユーザーは[インテリジェントキャプション](/help/analysis-workspace/visualizations/intelligent-captions.md)にアクセスできます |
 | [!UICONTROL レポートツール] | [!UICONTROL MCP アクセス &#x200B;] | [Customer Journey Analytics MCP サーバー](https://developer.adobe.com/analytics-mcp/docs/cja/)へのアクセスを許可します。 |
 | [!UICONTROL データビューツール] | [!UICONTROL 完全なテーブルの書き出し] | ユーザーは[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)ことができます。 |

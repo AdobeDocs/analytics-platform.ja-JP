@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3372'
+source-wordcount: '3367'
 ht-degree: 93%
 ---
 # Adobe Analytics から Customer Journey Analytics へのアップグレード
@@ -187,7 +187,7 @@ Experience Platform Web SDK を使用して十分な履歴データを取得し�
 
    派生フィールドの[マーケティングチャネル機能テンプレート](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"}を使用して、マーケティングチャネルの派生フィールドをすばやく作成します。
 
-1. [Adobe Analyticsのデータを、古い実装のデータと新しい実装のデータをCustomer Journey Analyticsのデータと比較して](https://experienceleague.adobe.com/ja/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/data-insights/data-validation-aa-cja)し、違いとその理由を理解していることを確認します。
+1. [Adobe Analyticsのデータを、古い実装のデータと新しい実装のデータをCustomer Journey Analyticsのデータと比較して](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/data-validation-aa-cja)し、違いとその理由を理解していることを確認します。
 
 1. Analytics ソースコネクタを使用して、Adobe Analytics から履歴データを取り込みます。
 

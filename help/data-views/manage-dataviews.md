@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 10%
@@ -46,6 +46,8 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 
 次の列とアイコンを表に示します。
 
+<!-- FOLLOW-UP (engineering): The Data views table UI still shows a Data Insights Agent column, a Data Insights Agent Status pop-up, and Enable/Disable for Data Insights Agent context menu options. These presumably should change to Coworker. Log with engineering, then update the labels, descriptions, and the data-views-dia-status.png screenshot. -->
+
 | 列またはアイコン | 説明 |
 | --- | --- |
 | **[!UICONTROL 名前]** | データビューの名前。 |
@@ -54,7 +56,7 @@ Customer Journey Analyticsのメインメニューバーから&#x200B;**[!UICONT
 | **[!UICONTROL 接続]** | データビューに関連付けられている接続の名前。 |
 | **[!UICONTROL サンドボックス]** | データビューに関連付けられているサンドボックスの名前。 |
 | **[!UICONTROL 所有者]** | データビューの所有者。 |
-| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | データビューの[Data Insights Agent](/help/data-analysis-ai.md)が&#x200B;**[!UICONTROL 有効]**&#x200B;か&#x200B;**[!UICONTROL 無効]**&#x200B;かを示します。 <br/> 「![InfoOutline](/help/assets/icons/InfoOutline.svg)」を選択すると、データビュー全体で&#x200B;**[!UICONTROL Data Insights Agentのステータス]**&#x200B;を含むポップアップが表示されます。 <br/>![Data Insights Agentの使用状況](/help/data-views/assets/data-views-dia-status.png) |
+| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | データビューの[Data Insights Agent](/help/data-views/create-dataview.md#ai-settings)が&#x200B;**[!UICONTROL 有効]**&#x200B;か&#x200B;**[!UICONTROL 無効]**&#x200B;かを示します。 <br/> 「![InfoOutline](/help/assets/icons/InfoOutline.svg)」を選択すると、データビュー全体で&#x200B;**[!UICONTROL Data Insights Agentのステータス]**&#x200B;を含むポップアップが表示されます。 <br/>![Data Insights Agentの使用状況](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL 統合]** | 他のソリューションとの統合のリスト。 例：Adobe Audience Analysis、Content Analytics、Brand Concierge、Journey Optimizer、GenStudio、Usage Analytics |
 | **[!UICONTROL CJA で使用]** | データビューをCustomer Journey Analyticsで使用するかどうかを示します。 この値は、Adobe Journey Optimizer統合の一部として自動生成されるデータビューに対してのみ&#x200B;**[!UICONTROL Off]**&#x200B;です。 |
 | **[!UICONTROL 作成日]** | データビューの作成時のタイムスタンプ。 |
@@ -166,7 +168,9 @@ Workspace プロジェクトは、データビューインターフェイスか�
 
 ## Data Insights Agentのデータビューを有効または無効にする
 
-[Data Insights Agent](/help/data-analysis-ai.md)のデータビューを有効または無効にできます。
+<!-- FOLLOW-UP: This setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what the setting does now and whether it will be renamed or removed. This also applies to the Data Insights Agent column above. -->
+
+[Data Insights Agent](/help/data-views/create-dataview.md#ai-settings)のデータビューを有効または無効にできます。
 
 1. データビュー名の横にある![詳細](/help/assets/icons/More.svg)を選択します。
 1. コンテキストメニューから「![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]**」または「![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]**」を選択します。

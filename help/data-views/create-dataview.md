@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3122'
+source-wordcount: '3165'
 ht-degree: 77%
 ---
 # データビューの作成または編集
@@ -117,9 +117,20 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 {style="table-layout:auto"}
 
 
-### AI 設定
+### AI 設定 {#ai-settings}
 
-「**[!UICONTROL Data Insights Agentに対して有効にする]**」を選択して、[Data Insights Agent](/help/data-analysis-ai.md)のデータビューを有効にします。 Data Insights Agentは、Customer Journey AnalyticsのAI アシスタントからアクセスできる生成AI会話型エージェントです。 テキストプロンプトを使用してデータをすばやく分析するのに役立ちます。 担当者は、データビューのコンポーネントと実際のデータを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
+<!-- FOLLOW-UP: The Enable for Data Insights Agent setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what this setting does now and whether it will be renamed or removed. This contextual help block was moved here from the retired data-analysis-ai.md page; confirm that the in-product help still resolves. -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-enable-data-insights-data-view"
+>title="Data Insights Agent を有効にする"
+>abstract="このオプションを選択すると、Data Insights Agent で使用するためにこのデータビューが有効になります。 Data Insights Agentは、テキストプロンプトを使用してデータを迅速に分析できる生成AI会話型エージェントです。 データビューのコンポーネントと実際のデータを使用して、Analysis Workspace で関連するビジュアライゼーションを作成します。"
+
+<!-- markdownlint-enable MD034 -->
+
+「**[!UICONTROL Data Insights Agentに対して有効にする]**」を選択して、Data Insights Agentのデータビューを有効にします。 Data Insights Agentは、テキストプロンプトを使用してデータを迅速に分析できる生成AI会話型エージェントです。 担当者は、データビューのコンポーネントと実際のデータを使用して、Analysis Workspaceで関連するビジュアライゼーションを作成します。
 
 
 ### カレンダー

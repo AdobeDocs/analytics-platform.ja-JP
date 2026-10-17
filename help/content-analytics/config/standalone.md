@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '2631'
 ht-degree: 10%
@@ -242,7 +242,7 @@ Content Analyticsの場合、次のCustomer Journey Analytics製品プロファ�
   * 監査ログへのアクセス
   * 誰とでもプロジェクトリンクを共有
   * 予測
-  * AI アシスタント : 製品知識
+  * AI アシスタント：製品知識<!-- FOLLOW-UP (waiting on PM): These two permissions haven't been updated in the product yet. Update when the PM confirms the Coworker permission name. -->
   * Data Insights Agent
   * インテリジェントキャプション
 

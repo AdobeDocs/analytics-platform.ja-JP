@@ -41,17 +41,12 @@ topic_v2:
     internal-label: Governance
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1660'
 ht-degree: 9%
 ---
 # Data storytelling: Workspace レポートからスライドプレゼンテーションを生成する {#generate-powerpoint}
-
->[!NOTE]
->
->Data StorytellingはData Insights Agentの下のスキルであり、対象となるお客様は期間限定で利用できます。 Data Insights Agentへのアクセスは2026年3月31日に終了します。 Data Insights Agentまたはその他のAdobe Experience Platform Agentsを中断することなく引き続き使用するには、Adobeのアカウント担当者にお問い合わせください。Adobe Experience Platform Agent Orchestratorのライセンスについて詳しくは、こちらをご覧ください。
-
 
 [必要な権限](#permission-requirements-to-generate-slides)を持つユーザーは、Analysis Workspace プロジェクトに基づいて.pptx プレゼンテーションを自動生成できます。 これらのスライドプレゼンテーションを作成する際に、Customer Journey Analyticsはデータから主要なインサイトを特定し、関係者が利用できるスライドに変換することで、ストーリーを自動的に作成します。
 

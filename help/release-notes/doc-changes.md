@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '7222'
+source-wordcount: '7309'
 ht-degree: 95%
 ---
 
@@ -70,6 +70,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年10月** | |
+| AI アシスタントとData Insights Agentは同僚に置き換えられました | AI アシスタントとData Insights Agentの記事を削除しました。 Adobe CX Enterprise Coworkerは、その両方の能力に取って代わります。 詳しくは、[同僚チャットによるデータ分析](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)を参照してください。 また、[Customer Journey Analytics機能のサポート &#x200B;](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa)を更新して、この変更を反映しました。 |
 | Content Analyticsの有料メディアチャネル | 有料メディアソースコネクタ（Google AdsやMeta Adsなど）を使用し、Content Analytics有料メディアチャネルを設定および有効にすることで生じるデータセットとデータビューコンポーネントの自動設定に関する包括的な[&#x200B; ドキュメント &#x200B;](/help/content-analytics/config/paid-media.md)。 |
 | 会話インサイト | 会話インサイト用の[&#x200B; ドキュメント &#x200B;](/help/conversation-insights/overview.md)。 |
 | ブランドの可視性 | 詳しくは、[ブランドの可視性インバウンド統合](/help/integrations/bv/bv.md#inbound-integration)のドキュメントを更新しました。 |
@@ -116,7 +117,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2025年11月** | |
 | 1 件の接続の 1 日あたりの行のガードレール | 1 件の接続の 1 日あたりの最大平均行数についての[データ転送制限のガードレール情報](/help/technotes/guardrails.md)を追加しました。 |
 | **2025年10月** | |
-| Data Insights Agent へのアクセスの管理 | [データビューを有効にするための権限要件とプロセス](/help/data-analysis-ai.md#manage-access-to-data-insights-agent)を更新しました。 |
+| Data Insights Agent へのアクセスの管理 | [データビューを有効にするための権限要件とプロセス](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai)を更新しました。 |
 | アトリビューション設定 | モデル、コンテナ、ルックバックウィンドウの新しいアトリビューション設定オプションを反映する追加の更新。 |
 | Experience Platform オーディエンスの取り込みと使用 | [Experience Platform オーディエンスの取り込みと使用](/help/use-cases/data-ingestion/ingest-aep-segments.md)方法に関するユースケースの記事を更新しました。 |
 | Customer Journey Analytics にアップグレードする組織の準備 | [Customer Journey Analytics にアップグレードする組織の準備](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)方法に関する情報を追加しました。 |
@@ -201,7 +202,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2024年6月** | |
 | ストリーミングメディア機能を参照する製品名を更新しました | ストリーミングメディアデータを収集して Analysis Workspace に表示するストリーミングメディア機能のセットを指す場合に、ドキュメント内の「メディア分析」と「ストリーミングメディア」という表記を、「ストリーミングメディアコレクションアドオン」と「ストリーミングメディアコレクション」という名称に置き換えました。 <p>これらの更新は、Customer Journey Analytics のドキュメントと[ストリーミングメディアコレクションのドキュメント](https://experienceleague.adobe.com/ja/docs/media-analytics/using/media-overview)の全体で利用できます。</p> |
 | グラフベースのステッチ | グラフベースのステッチの導入を受けて、[ステッチドキュメント](/help/stitching/overview.md)を更新し、再構築しました。 |
-| AI アシスタント | Customer Journey Analytics 用 AI アシスタントに関する[ドキュメント](../ai-assistant.md)を追加しました。 |
+| AI アシスタント | Customer Journey Analytics 用 AI アシスタントに関する[ドキュメント](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/ai-assistant)を追加しました。 |
 | B2B ルックアップ用にデータセットを変換 | B2B ルックアップデータセットの変換を使用して、アカウント、機会、マーケティングリスト、キャンペーンなどの [B2B データに対するユーザーベースのルックアップ](/help/connections//transform-datasets-b2b-lookups.md)をサポートする方法に関するドキュメントを追加しました。 |
 | 派生フィールド関数と関数テンプレート | 追加の派生フィールド関数（[数学](/help/data-views/derived-fields/derived-fields.md#math)、[次または前](/help/data-views/derived-fields/derived-fields.md#next-or-previous)および[要約](/help/data-views/derived-fields/derived-fields.md#summarize)）と[関数テンプレート](/help/data-views/derived-fields/derived-fields.md#function-templates)に関するドキュメントを追加しました。 |
 | **2024年5月** | |

@@ -23,9 +23,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 8b1f9d95fb38c0fcb1a7f3d9b41bf3cfb9355ed9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1945'
 ht-degree: 0%
 ---
 # 従業員が製品内で体験できるようにしたい
@@ -42,13 +42,15 @@ Adobe Analysis Workspaceの右側のチャットパネルには、Adobe Workfron
 
   WorkspaceでCoworkerにアクセスできない場合は、管理者にお問い合わせください。 詳しくは、[IMS組織の環境設定](/help/analysis-workspace/user-preferences.md#ims-organization-preferences)を参照してください。<!-- need to update this section with the new toggle -->
 
-<!-- **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]** -->
+<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
+
+* **権限**: [!UICONTROL Adobe Admin Console]では、[!UICONTROL &#x200B; レポートツール &#x200B;] **[!UICONTROL Coworker]**&#x200B;権限によって、Coworkerへのアクセス権が決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、この権限を製品プロファイルに追加する必要があります。 詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。
 
 * **データビューへのアクセス**：共同作業者は既存のAnalysis Workspaceとデータビューの権限を使用します。 アクセス権のないデータやコンポーネントにはアクセスできません。
 
 ### WorkspaceのCoworkerとCoworker アプリケーションを選択します
 
-Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション &#x200B;](https://experienceleague.adobe.com/ja/docs/cx-enterprise-coworker/content/chat/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
+Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション &#x200B;](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
 
 | | 従業員向けの製品体験 | 共同作業者アプリケーション |
 | --- | --- | --- |
@@ -112,7 +114,7 @@ Coworkerに次のようなことを依頼できます。
 
 1. Customer Journey Analyticsで、既存のWorkspace プロジェクトを開くか、新しいプロジェクトを作成します。
 
-1. **[プレースホルダー：アイコン名や場所など、同僚パネルを開く方法。 スクリーンショットを追加します。]**
+1. ヘッダーの右上隅にある&#x200B;**同僚** アイコン ![同僚](/help/assets/icons/coworker.svg)を選択して、同僚のチャットパネルを開きます。
 
 1. チャットパネルで、共同作業者に何を求めるかを記述します。
 
@@ -147,7 +149,7 @@ Coworkerに次のようなことを依頼できます。
 
 1. Customer Journey Analyticsで、既存のWorkspace プロジェクトを開くか、新しいプロジェクトを作成します。
 
-1. **[プレースホルダー：アイコン名や場所など、同僚パネルを開く方法。 スクリーンショットを追加します。]**
+1. ヘッダーの右上隅にある&#x200B;**同僚** アイコン ![同僚](/help/assets/icons/coworker.svg)を選択して、同僚のチャットパネルを開きます。
 
 1. チャットパネルで、共同作業者に何を求めるかを記述します。
 
