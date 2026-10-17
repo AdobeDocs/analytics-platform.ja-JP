@@ -7,7 +7,7 @@ hide: true
 source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 0%
+ht-degree: 10%
 ---
 # 会話のレビュー
 
@@ -21,5 +21,5 @@ ht-degree: 0%
 >title="会話のレビュー"
 >abstract="タイムスタンプ、シグナル（意図、センチメント、トーン、フィードバック）など、個々の会話のコンテキストとフローを理解できます。 表示するシグナルを設定します。"
 
-![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg)
+![ チャット ](/help/assets/icons/Chat.svg)
 

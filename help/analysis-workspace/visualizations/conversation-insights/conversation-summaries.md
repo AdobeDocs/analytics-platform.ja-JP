@@ -21,5 +21,5 @@ ht-degree: 13%
 >title="会話の概要"
 >abstract="フィルターされた会話のグループを要約します。 サマリーの長さを制御します。 顧客からの代表的な見積もりを参照して、抽出されたシグナルの正確性を検証します。 見積もりを選択すると、会話全体の再生に移動します。"
 
-![&#x200B; フィード &#x200B;](/help/assets/icons/Summarize.svg)
+![ フィード ](/help/assets/icons/Summarize.svg)
 
