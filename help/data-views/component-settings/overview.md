@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 6283ecbeab12a19fd5b7229dff772afaaedf3296
 workflow-type: tm+mt
-source-wordcount: '4127'
+source-wordcount: '4133'
 ht-degree: 48%
 ---
 # コンポーネント設定 {#component-settings}
@@ -51,7 +51,7 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="コンポーネント設定"
->abstract="名前、説明、コンポーネントに関連するその他の設定を表示および設定します。 このボックスをオンにすると、レポートで管理者以外のユーザーに対してこのコンポーネントが非表示になります。 管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択して、コンポーネントにアクセスできます。"
+>abstract="名前、説明、コンポーネントに関連するその他の設定を表示および設定します。 Analysis Workspace インターフェイスの管理者以外のユーザーからこのコンポーネントを非表示にするには、このチェックボックスをオンにします。 管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択して、コンポーネントにアクセスできます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -72,10 +72,10 @@ ht-degree: 48%
 | 設定 | 説明／使用例 |
 | --- | --- |
 | [!UICONTROL コンポーネントの種類] | 必須。 コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントは対応する「含まれているコンポーネント」領域に移動します。 |
-| [!UICONTROL &#x200B; コンポーネント名] | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
+| [!UICONTROL  コンポーネント名] | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
 | [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
 | [!UICONTROL タグ] | （任意）。 Analysis Workspace UIでの検索やフィルタリングを容易にするために、カスタムタグまたは標準のタグを使用してコンポーネントにタグを付けることができます。 |
-| [!UICONTROL コンテキストラベル] | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[&#x200B; コンテキストラベル &#x200B;](#context-labels)のドロップダウンメニュー。 |
+| [!UICONTROL コンテキストラベル] | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[ コンテキストラベル ](#context-labels)のドロップダウンメニュー。 |
 | [!UICONTROL スキーマフィールド名] | スキーマフィールドの名前。 |
 | [!UICONTROL データセットタイプ] | 必須。 コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
 | [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
@@ -83,7 +83,7 @@ ht-degree: 48%
 | [!UICONTROL コンポーネント ID] | 必須。 [Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) は、このフィールドを使用してコンポーネントを参照します。 データビューの各コンポーネントは、一意である必要があります。 アドビは、各コンポーネントの ID を自動的に生成します。ただし、編集アイコンをクリックして、コンポーネント ID を変更することはできます。 コンポーネント ID を変更すると、このコンポーネントを含む既存の Workspace プロジェクトがすべて機能しなくなります。 単一のデータビュー内では各コンポーネントに一意の ID が必要ですが、他のデータビュー内では同じコンポーネント ID を使用できます。 他のデータビューで同じコンポーネント ID を使用すると、データビューをまたいで Workspace プロジェクトに互換性を持たせることができます。 <br/>プロファイルとルックアップベースのコンポーネントの場合、コンポーネント ID には、データセット ID に基づく ID 接頭辞が付きます（例：`642b28fcc1f0ee1c074265a0.person.name.firstName`）。 Workspace プロジェクトでプロファイルやルックアップベースのコンポーネント（`person.name.firstName` など）を再利用し、このコンポーネントを様々なデータビューで設定する場合は、データビュー全体で確実にコンポーネント ID を一意の名前に変更します（`myUniqueID.person.name.firstName` など）。 |
 | [!UICONTROL パス] | 必須。 コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
 | [!UICONTROL データ使用状況ラベル] | Adobe Experience Platformでこのコンポーネントに割り当てられているデータ使用ラベル。 [詳細情報](/help/data-views/data-governance.md)。 |
-| [!UICONTROL レポートでコンポーネントを非表示] | 管理者以外のユーザーのデータビューからコンポーネントをキュレートできます。 管理者は、Analysis Workspace プロジェクトで「[!UICONTROL すべてのコンポーネントを表示]」をクリックしてアクセスできます。 |
+| [!UICONTROL レポートでコンポーネントを非表示] | 管理者以外のユーザーがAnalysis Workspaceのコンポーネントにアクセスできないようにします。 管理者は、[!UICONTROL すべてのコンポーネントを表示]をクリックして、引き続きアクセスできます。 この設定はAnalysis Workspace インターフェイスにのみ適用され、[CJA API](https://developer.adobe.com/cja-apis/docs/)経由のアクセスを制限しません。 |
 
 {style="table-layout:auto"}
 
@@ -91,7 +91,7 @@ ht-degree: 48%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -106,9 +106,9 @@ ht-degree: 48%
 
 利便性のために、特定のXDM パスを持つフィールドに基づいて、スマートデフォルトのコンテキストラベルがコンポーネントに自動的に適用されます。 例えば、**[!UICONTROL Commerce:Product Category]** コンテキストラベルは、`productListItems.productCategories.categoryName` スキーマパスに基づく&#x200B;**[!UICONTROL Category name]** ディメンションに自動的に適用されます。 ただし、コンテキストラベルは問題なく別のコンポーネントに移動できます。
 
-Adobeが提供するプロジェクトテンプレートを合理化するために、Journey OptimizerやContent Analyticsなどの複数の統合機能が、すぐに利用できるコンポーネントを特定の方法で構築するデータビューを設定します。 適切なコンテキストラベルが自動的に適用されます。 繰り返しますが、これらのコンテキストラベルをデータビューで作成された他のコンポーネントに移動するだけで、カスタムコンポーネントが代わりに使用されます。
+Adobeが提供するプロジェクトテンプレートを合理化するために、いくつかの統合機能（Journey Optimizer、Content Analyticsなど）がデータビューを設定し、事前構築済みのコンポーネントにコンテキストラベルを追加します。 これらのコンテキストラベルは、データビューで作成された他のコンポーネントに移動でき、代わりにカスタムコンポーネントが使用されます。
 
-コンテキストラベルは、プロジェクトテンプレートの公開にも関連しています。 プロジェクトテンプレートを利用すれば、いくつかの用途に特化したユースケースのレポート基盤をすばやく構築できます。 ただし、すべてのテンプレートがあらゆるデータビューに対して意味があるわけではなく、該当しないテンプレートを表示しないようにします。 コンテキストラベルは、選択したデータビューにコンテキストラベルが含まれているかどうかに基づいてテンプレートを表示するために使用されます。  データビュー（コンポーネント）にさらにコンテキストラベルを追加するだけで、より多くのテンプレートが利用できるようになります。 特定のテンプレートを非表示にすることもできます。
+コンテキストラベルは、プロジェクトテンプレートの公開にも関連しています。 プロジェクトテンプレートを利用すれば、いくつかの用途に特化したユースケースのレポート基盤をすばやく構築できます。 ただし、すべてのテンプレートがすべてのデータビューに適用されるわけではなく、適用できないテンプレートを表示する必要はありません。 コンテキストラベルは、選択したデータビューにコンテキストラベルが含まれているかどうかに基づいてテンプレートを表示するために使用されます。  データビュー（コンポーネント）にさらにコンテキストラベルを追加すると、より多くのテンプレートが使用可能になります。 または、コンテキストラベルを削除して、特定のテンプレートを非表示にすることもできます。
 
 >[!NOTE]
 >
@@ -118,26 +118,26 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 コンテキストラベルの利点は次のとおりです。
 
 * **利便性**：すべてのパネルまたはビジュアライゼーションで同じコンポーネントを再選択する必要はありません。
-* **機能のロックを解除**：一部のビジュアライゼーション（[&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md)など）では、どのコンポーネントが緯度と経度であるかに関する知識が必要です。 コンテキストラベルを割り当てると、その情報がビジュアライゼーションに公開されます。
+* **機能のロックを解除**：一部のビジュアライゼーション（[ マップ ](/help/analysis-workspace/visualizations/map.md)など）では、どのコンポーネントが緯度と経度であるかに関する知識が必要です。 コンテキストラベルを割り当てると、その情報がビジュアライゼーションに公開されます。
 * **一貫性**：組織内で、コンテキストラベルを使用するデータビューに基づく1つ以上のプロジェクトで作業する全員が、同じ動作を得ます。
 * **機能とテンプレートの表示**：特定のビジュアライゼーションと機能は、適切なコンテキストラベルが割り当てられている場合にのみ表示されます。 次に例を示します。
 
-  * Customer Journey Analyticsが緯度と経度を表すコンポーネントを認識している場合にのみ、[&#x200B; マップ &#x200B;](/help/analysis-workspace/visualizations/map.md)のビジュアライゼーションが適切に表示されます。
-  * 特定の[&#x200B; テンプレート &#x200B;](/help/analysis-workspace/templates/use-templates.md)は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
+  * Customer Journey Analyticsが緯度と経度を表すコンポーネントを認識している場合にのみ、[ マップ ](/help/analysis-workspace/visualizations/map.md)のビジュアライゼーションが適切に表示されます。
+  * 特定の[ テンプレート ](/help/analysis-workspace/templates/use-templates.md)は、正しいコンテキストラベルが適用され、関連するコンポーネントが使用可能になった場合にのみ表示されます。
 
 コンテキストラベルは、次の状況で必要になる場合があります。
 
-* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用して実験レポートで使用できます。
+* Analysis Workspace プロジェクトの[実験パネル ](/help/analysis-workspace/c-panels/experimentation.md)を使用して、実験レポートで使用できる一連のコンポーネントを定義します。
 
   詳しくは、[Journey Optimizer との統合](/help/integrations/ajo.md#data-view)および[ターゲットレポート](/help/integrations/at.md)を参照してください。
 
-* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[Map](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用できます。
+* Analysis Workspace プロジェクトの[Map](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用できる一連のコンポーネントを定義します。
 
-  詳しくは、[Map](/help/analysis-workspace/visualizations/map.md)の「[&#x200B; データビューにコンテキストラベルを追加](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)」を参照してください。
+  詳しくは、[Map](/help/analysis-workspace/visualizations/map.md)の「[ データビューにコンテキストラベルを追加](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)」を参照してください。
 
   **注意**: マップ ビジュアライゼーションはリリースの限定テスト フェーズにあり、お使いの環境ではまだ利用できない可能性があります。
 
-* Adobe[&#128279;](/help/analysis-workspace/templates/use-templates.md)が提供する テンプレートを表示します。 Adobeが提供する一部のテンプレートは、特定のコンポーネントがデータビューに表示されないため、機能しない場合があります。
+* Adobe](/help/analysis-workspace/templates/use-templates.md)が提供する[ テンプレートを表示します。 Adobeが提供する一部のテンプレートは、特定のコンポーネントがデータビューに表示されないため、機能しない場合があります。
 
   欠落している各コンポーネントに対して、一致するコンテキストラベルがデータビューで使用できます。 一致するコンテキストラベルを、既にデータビューにあるコンポーネントに追加する必要があります。 または、新しいコンポーネントをデータビューに追加し、コンテキストラベルをコンポーネントに追加する必要があります（まだ自動的に指定されていない場合）。
 
@@ -187,19 +187,19 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 
 | 名前 | 説明 |
 |------|-------------|
-| [&#x200B; コンテンツ ID](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content) | 再生されるコンテンツの一意のID。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ ID]** ラジオボタンを有効にします。 |
-| [&#x200B; コンテンツ滞在時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/content-time-spent) | 広告を除くコンテンツの閲覧にかかった時間。 [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ滞在時間]**&#x200B;詳細設定を有効にします。 |
-| [&#x200B; エピソード &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/episode) | シリーズ内のエピソード番号 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、エピソード別のフィルタリングを有効にします。 |
-| イベントタイプ | `media.play`や`media.ping`などのメディアイベントタイプ。 Customer Journey Analyticsで[&#x200B; メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)の派生指標を計算するために必要です。 |
-| [&#x200B; メディア滞在時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/media-time-spent) | コンテンツ、広告、バッファリング、一時停止などの合計時間。 [&#x200B; メディア平均分オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの[&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md) パネルと&#x200B;**[!UICONTROL メディア滞在時間]**&#x200B;詳細設定を有効にします。 |
-| [&#x200B; シーズン &#x200B;](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/season) | シリーズ内の季節番号。 [&#x200B; メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、季節ごとのフィルタリングを有効にします。 |
-| 前回の呼び出しからの経過時間（秒） | 前回のハートビート pingからの秒単位の時間。 Customer Journey Analyticsで[&#x200B; メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生指標を計算するために必要です。この指標は、セッションが引き続きアクティブな場合を識別します。 |
-| [表示](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/show) | プログラムまたはシリーズ名。 [&#x200B; メディア分平均オーディエンス &#x200B;](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルでの表示別フィルタリングを有効にします。 |
-| [開始までの時間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/time-to-start) | コンテンツの選択から再生が開始されるまでの時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [合計バッファー期間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | セッション中にバッファリングに費やされた合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [合計一時停止の期間](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/metrics/total-pause-duration) | セッション中に一時停止された合計時間。 [&#x200B; メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
-| [&#x200B; ビデオの長さ](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content-length) | コンテンツのデュレーション（秒単位）: [&#x200B; メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL 特定コンテンツ]** モードに必要です。 |
-| [&#x200B; ビデオ名](https://experienceleague.adobe.com/ja/docs/media-analytics/using/reporting/dimensions/content-name) | コンテンツの表示名。 [&#x200B; メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL ビデオ名]** ラジオボタンを有効にします。 |
+| [ コンテンツ ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | 再生されるコンテンツの一意のID。 [ メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ ID]** ラジオボタンを有効にします。 |
+| [ コンテンツ滞在時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | 広告を除くコンテンツの閲覧にかかった時間。 [ メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL コンテンツ滞在時間]**&#x200B;詳細設定を有効にします。 |
+| [ エピソード ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | シリーズ内のエピソード番号 [ メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、エピソード別のフィルタリングを有効にします。 |
+| イベントタイプ | `media.play`や`media.ping`などのメディアイベントタイプ。 Customer Journey Analyticsで[ メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)の派生指標を計算するために必要です。 |
+| [ メディア滞在時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | コンテンツ、広告、バッファリング、一時停止などの合計時間。 [ メディア平均分オーディエンス ](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの[ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md) パネルと&#x200B;**[!UICONTROL メディア滞在時間]**&#x200B;詳細設定を有効にします。 |
+| [ シーズン ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | シリーズ内の季節番号。 [ メディアの平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルで、季節ごとのフィルタリングを有効にします。 |
+| 前回の呼び出しからの経過時間（秒） | 前回のハートビート pingからの秒単位の時間。 Customer Journey Analyticsで[ メディア同時視聴者数](/help/analysis-workspace/c-panels/media-concurrent-viewers.md)派生指標を計算するために必要です。この指標は、セッションが引き続きアクティブな場合を識別します。 |
+| [表示](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | プログラムまたはシリーズ名。 [ メディア分平均オーディエンス ](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルでの表示別フィルタリングを有効にします。 |
+| [開始までの時間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | コンテンツの選択から再生が開始されるまでの時間。 [ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [合計バッファー期間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | セッション中にバッファリングに費やされた合計時間。 [ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [合計一時停止の期間](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | セッション中に一時停止された合計時間。 [ メディア再生時間](/help/analysis-workspace/c-panels/media-playback-time-spent.md)の計算に含まれています。 |
+| [ ビデオの長さ](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | コンテンツのデュレーション（秒単位）: [ メディア平均分視聴者](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL 特定コンテンツ]** モードに必要です。 |
+| [ ビデオ名](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | コンテンツの表示名。 [ メディア平均分視聴者数](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) パネルの&#x200B;**[!UICONTROL ビデオ名]** ラジオボタンを有効にします。 |
 
 +++
 
