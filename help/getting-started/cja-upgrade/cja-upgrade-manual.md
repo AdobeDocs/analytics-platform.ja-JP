@@ -1,5 +1,5 @@
 ---
-title: alloy.jsを使用したPlatform Web SDKのインストール
+title: alloy.js を使用した Platform Web SDK のインストール
 description: Platform Web SDKとalloy.jsのインストール方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
@@ -31,9 +31,9 @@ topic_v2:
 source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 88%
+ht-degree: 95%
 ---
-# alloy.jsを使用したPlatform Web SDKのインストール {#upgrade-manual}
+# alloy.js を使用した Platform Web SDK のインストール {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 

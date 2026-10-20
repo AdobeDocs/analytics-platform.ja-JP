@@ -41,7 +41,7 @@ topic_v2:
 source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 55%
+ht-degree: 56%
 ---
 # アップグレードの代替案：Experience Platform Web SDK と Customer Journey Analytics での AppMeasurement データ収集の使用 {#data-collection-appmeasurement}
 
@@ -59,7 +59,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="AppMeasurement ロジックを Web SDK を参照するように変更する"
->abstract="この手順は、実装ショートカットを選択したために表示されます。 AppMeasurement ロジックをコピーまたは変更して、s オブジェクトの代わりにデータオブジェクトに値を設定します。 例えば、s.eVar1 の割り当てを data.__adobe.analytics.eVar1 に変更し、これをすべての Analytics 変数に対して繰り返します。"
+>abstract="この手順は、実装のショートカットを選択したので表示されます。 AppMeasurement ロジックをコピーまたは変更して、s オブジェクトの代わりにデータオブジェクトに値を設定します。 例えば、s.eVar1 の割り当てを data.__adobe.analytics.eVar1 に変更し、これをすべての Analytics 変数に対して繰り返します。"
 
 <!-- markdownlint-enable MD034 -->
 

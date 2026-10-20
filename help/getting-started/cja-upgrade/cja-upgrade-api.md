@@ -1,5 +1,5 @@
 ---
-title: NPM パッケージを使用したPlatform Web SDKのインストール
+title: NPM パッケージを使用した Platform Web SDK のインストール
 description: Adobe AnalyticsからCustomer Journey Analyticsにアップグレードする際に、NPM パッケージを使用してWeb SDKをインストールする方法について説明します。
 role: Admin
 solution: Customer Journey Analytics
@@ -31,9 +31,9 @@ topic_v2:
 source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 47%
+ht-degree: 60%
 ---
-# NPM パッケージを使用したPlatform Web SDKのインストール {#upgrade-manual}
+# NPM パッケージを使用した Platform Web SDK のインストール {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
