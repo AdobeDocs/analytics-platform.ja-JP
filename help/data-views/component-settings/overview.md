@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 6283ecbeab12a19fd5b7229dff772afaaedf3296
 workflow-type: tm+mt
-source-wordcount: '4127'
+source-wordcount: '4133'
 ht-degree: 48%
 ---
 # コンポーネント設定 {#component-settings}
@@ -51,7 +51,7 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="コンポーネント設定"
->abstract="名前、説明、コンポーネントに関連するその他の設定を表示および設定します。 このボックスをオンにすると、レポートで管理者以外のユーザーに対してこのコンポーネントが非表示になります。 管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択して、コンポーネントにアクセスできます。"
+>abstract="名前、説明、コンポーネントに関連するその他の設定を表示および設定します。 Analysis Workspace インターフェイスの管理者以外のユーザーからこのコンポーネントを非表示にするには、このチェックボックスをオンにします。 管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択して、コンポーネントにアクセスできます。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -83,7 +83,7 @@ ht-degree: 48%
 | [!UICONTROL コンポーネント ID] | 必須。 [Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) は、このフィールドを使用してコンポーネントを参照します。 データビューの各コンポーネントは、一意である必要があります。 アドビは、各コンポーネントの ID を自動的に生成します。ただし、編集アイコンをクリックして、コンポーネント ID を変更することはできます。 コンポーネント ID を変更すると、このコンポーネントを含む既存の Workspace プロジェクトがすべて機能しなくなります。 単一のデータビュー内では各コンポーネントに一意の ID が必要ですが、他のデータビュー内では同じコンポーネント ID を使用できます。 他のデータビューで同じコンポーネント ID を使用すると、データビューをまたいで Workspace プロジェクトに互換性を持たせることができます。 <br/>プロファイルとルックアップベースのコンポーネントの場合、コンポーネント ID には、データセット ID に基づく ID 接頭辞が付きます（例：`642b28fcc1f0ee1c074265a0.person.name.firstName`）。 Workspace プロジェクトでプロファイルやルックアップベースのコンポーネント（`person.name.firstName` など）を再利用し、このコンポーネントを様々なデータビューで設定する場合は、データビュー全体で確実にコンポーネント ID を一意の名前に変更します（`myUniqueID.person.name.firstName` など）。 |
 | [!UICONTROL パス] | 必須。 コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
 | [!UICONTROL データ使用状況ラベル] | Adobe Experience Platformでこのコンポーネントに割り当てられているデータ使用ラベル。 [詳細情報](/help/data-views/data-governance.md)。 |
-| [!UICONTROL レポートでコンポーネントを非表示] | 管理者以外のユーザーのデータビューからコンポーネントをキュレートできます。 管理者は、Analysis Workspace プロジェクトで「[!UICONTROL すべてのコンポーネントを表示]」をクリックしてアクセスできます。 |
+| [!UICONTROL レポートでコンポーネントを非表示] | 管理者以外のユーザーがAnalysis Workspaceのコンポーネントにアクセスできないようにします。 管理者は、[!UICONTROL すべてのコンポーネントを表示]をクリックして、引き続きアクセスできます。 この設定はAnalysis Workspace インターフェイスにのみ適用され、[CJA API](https://developer.adobe.com/cja-apis/docs/)経由のアクセスを制限しません。 |
 
 {style="table-layout:auto"}
 
@@ -106,9 +106,9 @@ ht-degree: 48%
 
 利便性のために、特定のXDM パスを持つフィールドに基づいて、スマートデフォルトのコンテキストラベルがコンポーネントに自動的に適用されます。 例えば、**[!UICONTROL Commerce:Product Category]** コンテキストラベルは、`productListItems.productCategories.categoryName` スキーマパスに基づく&#x200B;**[!UICONTROL Category name]** ディメンションに自動的に適用されます。 ただし、コンテキストラベルは問題なく別のコンポーネントに移動できます。
 
-Adobeが提供するプロジェクトテンプレートを合理化するために、Journey OptimizerやContent Analyticsなどの複数の統合機能が、すぐに利用できるコンポーネントを特定の方法で構築するデータビューを設定します。 適切なコンテキストラベルが自動的に適用されます。 繰り返しますが、これらのコンテキストラベルをデータビューで作成された他のコンポーネントに移動するだけで、カスタムコンポーネントが代わりに使用されます。
+Adobeが提供するプロジェクトテンプレートを合理化するために、いくつかの統合機能（Journey Optimizer、Content Analyticsなど）がデータビューを設定し、事前構築済みのコンポーネントにコンテキストラベルを追加します。 これらのコンテキストラベルは、データビューで作成された他のコンポーネントに移動でき、代わりにカスタムコンポーネントが使用されます。
 
-コンテキストラベルは、プロジェクトテンプレートの公開にも関連しています。 プロジェクトテンプレートを利用すれば、いくつかの用途に特化したユースケースのレポート基盤をすばやく構築できます。 ただし、すべてのテンプレートがあらゆるデータビューに対して意味があるわけではなく、該当しないテンプレートを表示しないようにします。 コンテキストラベルは、選択したデータビューにコンテキストラベルが含まれているかどうかに基づいてテンプレートを表示するために使用されます。  データビュー（コンポーネント）にさらにコンテキストラベルを追加するだけで、より多くのテンプレートが利用できるようになります。 特定のテンプレートを非表示にすることもできます。
+コンテキストラベルは、プロジェクトテンプレートの公開にも関連しています。 プロジェクトテンプレートを利用すれば、いくつかの用途に特化したユースケースのレポート基盤をすばやく構築できます。 ただし、すべてのテンプレートがすべてのデータビューに適用されるわけではなく、適用できないテンプレートを表示する必要はありません。 コンテキストラベルは、選択したデータビューにコンテキストラベルが含まれているかどうかに基づいてテンプレートを表示するために使用されます。  データビュー（コンポーネント）にさらにコンテキストラベルを追加すると、より多くのテンプレートが使用可能になります。 または、コンテキストラベルを削除して、特定のテンプレートを非表示にすることもできます。
 
 >[!NOTE]
 >
@@ -127,11 +127,11 @@ Adobeが提供するプロジェクトテンプレートを合理化するため
 
 コンテキストラベルは、次の状況で必要になる場合があります。
 
-* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用して実験レポートで使用できます。
+* Analysis Workspace プロジェクトの[実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)を使用して、実験レポートで使用できる一連のコンポーネントを定義します。
 
   詳しくは、[Journey Optimizer との統合](/help/integrations/ajo.md#data-view)および[ターゲットレポート](/help/integrations/at.md)を参照してください。
 
-* コンポーネントのセットを定義するには、Analysis Workspace プロジェクトの[Map](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用できます。
+* Analysis Workspace プロジェクトの[Map](/help/analysis-workspace/visualizations/map.md) ビジュアライゼーション内で使用できる一連のコンポーネントを定義します。
 
   詳しくは、[Map](/help/analysis-workspace/visualizations/map.md)の「[&#x200B; データビューにコンテキストラベルを追加](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views)」を参照してください。
 

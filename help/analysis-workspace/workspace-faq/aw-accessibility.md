@@ -7,22 +7,26 @@ role: User
 TQID: https://experienceleague.adobe.com/555a8gxm8jBGyatt1Vp6e40Wj2gqgRl95oFiHC4NMhQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Accessibility
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: 547
-ht-degree: 100%
-
+source-wordcount: '903'
+ht-degree: 60%
 ---
-
 # Analysis Workspace のアクセシビリティ
 
 Customer Journey Analytics の主要な分析ツールである [!UICONTROL Analysis Workspace]のアクセシビリティサポートについて説明します。
@@ -63,6 +67,48 @@ Customer Journey Analytics の主要な分析ツールである [!UICONTROL Anal
 1. **[!UICONTROL Enter]** キーを押して選択します。
 1. 矢印キーを使用して、コンポーネントをドロップする領域に移動します。
 1. **[!UICONTROL Enter]** キーを押して、コンポーネントを配置します。
+
+### テーブル列のキーボードナビゲーション {#table-columns}
+
+キーボードを使用して、テーブル列のサイズを変更したり、並べ替えたりできます。 MacOSとWindowsでは、同じキーが機能します。
+
+#### 列のサイズ変更 {#resize-columns}
+
+フリーフォームテーブルおよびコホートテーブルの列のサイズを変更するには、列のサイズを変更する区切り記号（2つの列ヘッダー間の境界）を使用します。
+
+1. 列のサイズ変更の区切り記号にフォーカスが合うまで、**[!UICONTROL Tab]**&#x200B;を押します。
+
+   セパレータにフォーカスがある状態で表示のサイズを変更する方法を説明します。 スクリーンリーダーは、これらの指示と列の現在の幅をパーセンテージとしてアナウンスします。
+
+1. 列のサイズを変更するには、次のキーを使用します。 列のサイズを最小幅または最大幅を超えて変更することはできません。
+
+   | キー | アクション |
+   | --- | --- |
+   | **[!UICONTROL 左向き矢印]** | 区切り記号の左側の列を10 ピクセルずつ狭めます。 |
+   | **[!UICONTROL 右向き矢印]** | 区切り記号の左側の列を10 ピクセル広げます。 |
+   | **[!UICONTROL 入力]** | 列の幅をリセットします。 |
+
+#### 列の並べ替え {#rearrange-columns}
+
+編集できるフリーフォームテーブルでは、列ヘッダーの「**[!UICONTROL 並べ替え]**」メニューを使用して、列を左または右に移動できます。
+
+1. 列ヘッダーの「**[!UICONTROL 並べ替え]**」ボタンにフォーカスが合うまで、**[!UICONTROL Tab]**&#x200B;を押します。
+1. **[!UICONTROL Enter]**、**[!UICONTROL Space]**、または&#x200B;**[!UICONTROL 下向き矢印]**&#x200B;を押して、メニューを開きます。
+1. **[!UICONTROL 列左に移動]**&#x200B;または&#x200B;**[!UICONTROL 列右に移動]**&#x200B;を選択します。
+
+   列を移動せずにメニューを閉じるには、**[!UICONTROL Esc]**&#x200B;を押します。 フォーカスが&#x200B;**[!UICONTROL 並べ替え]** ボタンに戻ります。
+
+   列を移動すると、スクリーンリーダーが列名とそのグループ内での新しい位置をアナウンスします。
+
+キーボードを使用して列を並べ替える場合は、次の点を考慮してください。
+
+* 列は、同じ親ヘッダーの下の同じレベルの列である兄弟の列のグループ内でのみ移動します。 キーボードを使用して列を別のグループに移動したり、列をコピーしたりすることはできません。
+* 親ヘッダーを移動すると、ネストされた列とフィルターが移動します。
+* **[!UICONTROL 列を左に移動]**&#x200B;は、グループの最初の列では無効になっています。 グループの最後の列に対して&#x200B;**[!UICONTROL 列の右に移動]**&#x200B;が無効になっています。
+* **[!UICONTROL 並べ替え]** ボタンは、ドラッグして並べ替えることのできる列に対してのみ使用できます。 次の場合は利用できません。
+  * 読み取り専用テーブルまたはインタラクションが無効になっているテーブル。
+  * 列をドラッグできない[複数のディメンション列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)を持つフリーフォームテーブル。
+  * コホートテーブルの日付列。
 
 ### キーボードショートカット（ホットキー）
 

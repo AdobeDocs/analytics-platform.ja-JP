@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: '7309'
-ht-degree: 95%
+source-wordcount: '7341'
+ht-degree: 94%
 ---
 
 # Customer Journey Analytics - ドキュメントのアップデート
@@ -70,6 +70,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年10月** | |
+| テーブル列のキーボードナビゲーション | スクリーンリーダーのフィードバックを含め、Analysis Workspaceで[&#x200B; サイズ変更](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns)および[&#x200B; テーブル列の並べ替え](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns)をキーボードを使用して行う方法について説明しました。 [&#x200B; テーブル列のアクション &#x200B;](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) セクションをホットキーに追加しました。 |
 | AI アシスタントとData Insights Agentは同僚に置き換えられました | AI アシスタントとData Insights Agentの記事を削除しました。 Adobe CX Enterprise Coworkerは、その両方の能力に取って代わります。 詳しくは、[同僚チャットによるデータ分析](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)を参照してください。 また、[Customer Journey Analytics機能のサポート &#x200B;](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa)を更新して、この変更を反映しました。 |
 | Content Analyticsの有料メディアチャネル | 有料メディアソースコネクタ（Google AdsやMeta Adsなど）を使用し、Content Analytics有料メディアチャネルを設定および有効にすることで生じるデータセットとデータビューコンポーネントの自動設定に関する包括的な[&#x200B; ドキュメント &#x200B;](/help/content-analytics/config/paid-media.md)。 |
 | 会話インサイト | 会話インサイト用の[&#x200B; ドキュメント &#x200B;](/help/conversation-insights/overview.md)。 |
