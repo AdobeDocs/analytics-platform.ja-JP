@@ -477,7 +477,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/jp", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -517,7 +517,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/jp", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -558,7 +558,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/jp", "name": "Home Page" }
   },
   "conversation": {
     "conversationID": "conv-001",
@@ -591,7 +591,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/jp", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-xyz789",
@@ -696,7 +696,7 @@ ht-degree: 5%
     ]
   },
   "web":{
-    "webPageDetails":{ "URL":"https://www.adobe.com", "name":"Home Page" }
+    "webPageDetails":{ "URL":"https://www.adobe.com/jp", "name":"Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",

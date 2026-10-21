@@ -1017,5 +1017,5 @@ ID マップは、[ExperienceEvent XDM](https://experienceleague.adobe.com/ja/do
 >[!MORELIKETHIS]
 >
 >* [データ取り込みの概要](/help/data-ingestion/data-ingestion.md)
->* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=ja)
+>* ブログ：[Adobe Customer Journey Analytics でイベント、ルックアップ、プロファイルのデータセットを活用する方法](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=ja&lang=ja)
 
