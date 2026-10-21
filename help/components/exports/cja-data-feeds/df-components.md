@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
+source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 43%
+source-wordcount: '1548'
+ht-degree: 40%
 ---
 # データフィードでのコンポーネントの可用性
 
@@ -28,7 +28,7 @@ ht-degree: 43%
 
 一部のCustomer Journey Analyticsコンポーネントは、データフィードで使用できません。 ディメンションの中には、すべてのデータフィードに含まれるものもあれば、含まれないコンポーネントもあります。また、一部の指標は代替指標に置き換える必要があります。
 
-次の情報を使用して、[&#x200B; データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
+次の情報を使用して、[ データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
 
 ## 必須ディメンション {#required-dimensions}
 
@@ -98,8 +98,6 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 <!-- markdownlint-disable MD034 -->
 
-<!-- pretty sure this isn't being used -->
-
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -107,20 +105,37 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 <!-- markdownlint-enable MD034 -->
 
->[!IMPORTANT]
->
->特定のディメンションは、Experience Platform データセットで一緒に使用できないため、同じデータフィードに含めることはできません。
->
->**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションをデータフィードに含める場合、以下に示すディメンションをデータフィードに追加することはできません。
->
->Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[&#x200B; データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[&#x200B; デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+特定のディメンションは、Experience Platform データセットでは一緒に使用できません。 データフィードには、次のいずれかのグループのディメンションを含めることができますが、両方のグループのディメンションを含めることはできません。
 
-次のディメンションは、**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションと一緒に使用することはできません。
+* **ユーザーエージェント**&#x200B;および&#x200B;**モバイル ID** ディメンション。<!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
+
+* ブラウザー、モバイルデバイス、オペレーティングシステムのディメンションなど、デバイスのルックアップディメンション。 完全なリストについては、[ デバイス検索ディメンション ](#device-lookup-dimensions)を参照してください。
+
+>[!NOTE]
+>
+>Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[ データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[ デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+
+### ディメンションの競合の解決
+
+一緒に使用できないディメンションを追加すると、追加するディメンションと追加しないディメンションまたは削除するディメンションを一覧表示するダイアログが表示されます。 何が起こるかは、紛争がどこにあるかによって異なります。
+
+* **追加するディメンションは、既にデータフィード内にあるディメンションと競合しています**：追加するディメンションが優先されます。 このダイアログでは、選択内容を追加し、競合するディメンションをデータフィードから削除するように求められます。
+
+* **追加するディメンションが互いに競合しています**: **ユーザーエージェント**&#x200B;および&#x200B;**モバイル ID** ディメンションが優先されます。 ダイアログに追加を求めるプロンプトが表示されます。選択範囲のデバイス参照ディメンションは追加されません。
+
+データフィードを変更しない場合は、**[!UICONTROL キャンセル]**&#x200B;を選択します。
+
+<!--Open questions for Danny Carmen: behavior when a batch contains both groups and the feed already has conflicting dimensions; whether "add all" adds the full selection or only the listed dimensions.-->
+
+### デバイス参照ディメンション {#device-lookup-dimensions}
+
+次のディメンションは、**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションと同じデータフィードに含めることはできません。
 
 >[!NOTE]
 >
 >次のリストでは、デフォルトのディメンション名が使用されます。 データビューで名前が変更されたディメンションは、カスタム名を持つデータフィードに表示されます。
 
+<!--Engineering lists 30 device lookup fields; this list has 28. Likely missing: environment.operatingSystemIDStr and environment.browserIDStr. Confirm display names with Danny Carmen.-->
 
 * ブラウザータイプ
 * ブラウザー
