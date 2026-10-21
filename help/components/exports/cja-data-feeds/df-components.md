@@ -28,7 +28,7 @@ ht-degree: 40%
 
 一部のCustomer Journey Analyticsコンポーネントは、データフィードで使用できません。 ディメンションの中には、すべてのデータフィードに含まれるものもあれば、含まれないコンポーネントもあります。また、一部の指標は代替指標に置き換える必要があります。
 
-次の情報を使用して、[ データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
+次の情報を使用して、[&#x200B; データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
 
 ## 必須ディメンション {#required-dimensions}
 
@@ -109,11 +109,11 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 * **ユーザーエージェント**&#x200B;および&#x200B;**モバイル ID** ディメンション。<!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
 
-* ブラウザー、モバイルデバイス、オペレーティングシステムのディメンションなど、デバイスのルックアップディメンション。 完全なリストについては、[ デバイス検索ディメンション ](#device-lookup-dimensions)を参照してください。
+* ブラウザー、モバイルデバイス、オペレーティングシステムのディメンションなど、デバイスのルックアップディメンション。 完全なリストについては、[&#x200B; デバイス検索ディメンション &#x200B;](#device-lookup-dimensions)を参照してください。
 
 >[!NOTE]
 >
->Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[ データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[ デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+>Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[&#x200B; データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[&#x200B; デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
 
 ### ディメンションの競合の解決
 
