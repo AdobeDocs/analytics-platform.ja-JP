@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 16%
+source-wordcount: '1185'
+ht-degree: 14%
 ---
 # 設定の作成または編集
 
@@ -64,7 +64,7 @@ ht-degree: 16%
    | フィールド | 説明 |
    |---------|----------|
    | **[!UICONTROL 名前]** | 設定の名前を指定します。 |
-   | **[!UICONTROL サンドボックス]** | 接続に追加するプロンプト、応答、フィードバックイベントデータセットを含むExperience Platform サンドボックスを選択します。 |
+   | **[!UICONTROL サンドボックス]** | 接続に追加するプロンプト、応答、フィードバックイベントデータセットを含むExperience Platform サンドボックスを選択します。 選択したサンドボックスに互換性のあるデータセットがない場合は、通知が表示されます。 |
 
 1. 「**[!UICONTROL データセット]**」セクションで、次の情報を指定します。
 
@@ -75,6 +75,13 @@ ht-degree: 16%
    | **[!UICONTROL イベントデータセットのプロンプト]** | プロンプトイベントデータを含むデータセットを選択します。 |
    | **[!UICONTROL 応答イベントデータセット]** | 応答イベントデータを含むデータセットを選択します。 |
    | **[!UICONTROL フィードバックイベントデータセット]** | フィードバックイベントデータを含むデータセットを選択します。 |
+
+   データセットにプロンプトと応答の両方が含まれている場合、**[!UICONTROL プロンプトイベントデータセット]**&#x200B;と&#x200B;**[!UICONTROL 応答イベントデータセット]**&#x200B;に対して同じデータセットを選択します。
+
+   [&#x200B; ブレンドされた会話を指定](#blend-specification) ～ **[!UICONTROL ブレンドされた仕様を設定]**&#x200B;するオプションは、1回のみ使用できます。
+   * この設定は完了しました。
+   * すべてのデータセットを利用できます。
+   * Customer Journey Analytics [接続を編集する権限](/help/technotes/access-control.md)があります。
 
 1. **[!UICONTROL 接続]** セクションで、接続が既に設定されていない場合は、**[!UICONTROL 接続を選択]**&#x200B;して接続を選択します。
 
@@ -123,6 +130,48 @@ ht-degree: 16%
 
    * 設定の変更を無視するには、**[!UICONTROL 終了]**&#x200B;を選択します。
 
+## ブレンド仕様
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_blend_specification"
+>title="ブレンド仕様を設定"
+>abstract="このConversation Insights設定を完了し、すべてのデータセットが使用可能になり、接続を編集するためのCustomer Journey Analytics権限を持っている場合にのみ、ブレンド仕様を編集できます。"
+>additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/technotes/access-control" text="アクセス制御"
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_dataset_winner"
+>title="データセット勝者"
+>abstract="対応する名前のフィールドまたはブレンドされた会話データセット内のフィールド（コンテナの場合）の値を決定するデータセットを選択します。"
+
+設定を作成したら、[&#x200B; プロンプト、応答、フィードバック、およびシグナル データセットの会話のブレンド方法を設定できます](/help/conversation-insights/overview.md#how-it-works)。
+
+この仕様では、ブレンドされた会話データセット内の対応する名前付きフィールド（コンテナの場合）の値を決定するデータセットを選択できます。
+
+例：ブレンドされた会話データセット内の&#x200B;**[!UICONTROL 作成者]** フィールド名を、フィードバックデータセット内の類似の名前付きフィールドから定義する場合は、そのフィールドの&#x200B;**[!UICONTROL データセット勝者]** ドロップダウンメニューから&#x200B;**[!UICONTROL フィードバックデータセット]**&#x200B;を選択します。
+
+ブレンドされた会話を指定するには：
+
+1. **[!UICONTROL ブレンド仕様の設定]**&#x200B;を選択します。
+
+1. **[!UICONTROL ブレンドの仕様]** ダイアログで、各&#x200B;**[!UICONTROL フィールド名]**&#x200B;について、提案された&#x200B;**[!UICONTROL データセットの勝者]**&#x200B;を確認し、必要に応じて別のデータセットを選択します。
+
+   * 有効なフィールドごとに、オプションで別の&#x200B;**[!UICONTROL データセット勝者]**&#x200B;を選択します。 **[!UICONTROL プロンプトデータセット]**、**[!UICONTROL 応答データセット]**、**[!UICONTROL フィードバックデータセット]**&#x200B;のいずれかを選択できます。
+   * 各コンテナフィールドについて、オプションで別の&#x200B;**[!UICONTROL データセット勝者]**&#x200B;を選択して、コンテナに属するすべてのフィールドを更新します。 **[!UICONTROL プロンプトデータセット]**、**[!UICONTROL 応答データセット]**、**[!UICONTROL フィードバックデータセット]**&#x200B;のいずれかを選択できます。
+   * 会話データセット（プロンプト、応答、フィードバック、およびシグナル）間で共有されるフィールドに対して、**[!UICONTROL データセットの勝者]**&#x200B;を選択することはできません。 これらのフィールドは、次のフィールドグループに属しています。
+
+     | フィールド名 | フィールドグループ | データセット勝者 |
+     |---|---|---|
+     | **[!UICONTROL プロンプト]** | `conversation.prompt.*` | **[!UICONTROL プロンプトデータセット]** |
+     | **[!UICONTROL 回答]** | `conversation.response.*` | **[!UICONTROL 応答データセット]** |
+     | **[!UICONTROL フィードバック]** | `conversation.feedback.*` | **[!UICONTROL フィードバックデータセット]** |
+     | **[!UICONTROL agentExperience]** | `agentExperience.*` | **[!UICONTROL 応答データセット]** |
+     | **[!UICONTROL signals]** | `conversation.signals.*` | **[!UICONTROL Signals データセット]** |
+
+   * **[!UICONTROL 会話ID]**&#x200B;や&#x200B;**[!UICONTROL ターン ID]**&#x200B;など、特定のID フィールドに使用できる&#x200B;**[!UICONTROL データセットの勝者]**&#x200B;の選択はありません。
+
+1. **[!UICONTROL 保存]**&#x200B;を選択して、仕様を保存します。 指定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
 
 ## データビューの検証
 

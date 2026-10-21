@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
+source-git-commit: 5f5e011198decd41ced888904b643d817959dab3
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1971'
 ht-degree: 18%
 ---
 # ステッチを有効にする
@@ -252,8 +252,6 @@ ID値が不正IDとしてマークされている場合、そのID値を含む�
 * ライブデータは、最初は数時間（14時間未満）後にCustomer Journey Analyticsに表示されます。 新しいライブデータは数時間以内に利用可能です。 ライブデータは、ステッチのイネーブルメントが完了した際の実際の瞬間に一致するイベントタイムスタンプ値で始まります。
 
   ライブデータを確実に取り込むには、データセットの&#x200B;**[!UICONTROL すべての新しいデータの読み込み]** オプションを有効にします。
-
-  Experience Platform ソースイベントデータセットに取り込まれた新しいデータは、4時間以内にCustomer Journey Analyticsに表示されます。
 
 * バックフィルされたデータ（最初に要求された場合）は、ライブデータと同じ時間にCustomer Journey Analyticsに表示されますが、関係するボリュームに応じて、完全に処理するのに数日かかる場合があります。 バックフィルされたデータは、最も古いイベントタイムスタンプ値で始まります。
 
