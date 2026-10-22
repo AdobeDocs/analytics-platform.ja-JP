@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 9e9722a8c5848cba2e657a9c538d61e9453b0d09
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '514'
 ht-degree: 10%
 ---
 # B2B ルックアップ用にデータセットを変換
@@ -56,9 +56,9 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 >[!PREREQUISITES]
 >
->取り込みを正しく機能させるには、B2B ルックアップデータセットに次のフィールド（B2B ルックアップスキーマで定義されているもの）のデータが入力されていることを検証する必要があります。
+>取り込みを正しく機能させるには、次の表の各データセットに、データが入力された指定されたフィールドが含まれている必要があります。
 >
->| スキーマに準拠するデータを含むデータセット | データが入力されたフィールド |
+>| スキーマに準拠するデータを含むデータセット | 必須フィールドにデータが入力されました |
 >|---|---|
 >| XDM ビジネスアカウントユーザーの関係 | `accountPersonID` |
 >| XDM ビジネスオポチュニティ人物 | `opportunityPersonID` |
