@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 9e9722a8c5848cba2e657a9c538d61e9453b0d09
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '514'
 ht-degree: 10%
 ---
 # B2B ルックアップ用にデータセットを変換
@@ -45,10 +45,10 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 この変換は、次のクラスに基づくB2B ルックアップスキーマのデータを含むデータセットでのみ使用できます。
 
-* [XDM ビジネスアカウントユーザーの関係](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM ビジネスマーケティングリストメンバー](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM Business Campaign Members](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM ビジネスアカウントユーザーの関係](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM ビジネスマーケティングリストメンバー](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -56,9 +56,9 @@ B2B データ（アカウント、商談、マーケティングリスト、キ�
 
 >[!PREREQUISITES]
 >
->取り込みを正しく機能させるには、B2B ルックアップデータセットに次のフィールド（B2B ルックアップスキーマで定義されているもの）のデータが入力されていることを検証する必要があります。
+>取り込みを正しく機能させるには、次の表の各データセットに、データが入力された指定されたフィールドが含まれている必要があります。
 >
->| スキーマに準拠するデータを含むデータセット | データが入力されたフィールド |
+>| スキーマに準拠するデータを含むデータセット | 必須フィールドにデータが入力されました |
 >|---|---|
 >| XDM ビジネスアカウントユーザーの関係 | `accountPersonID` |
 >| XDM ビジネスオポチュニティ人物 | `opportunityPersonID` |
@@ -98,4 +98,4 @@ B2B ルックアップデータセットの変換を有効にするには：
 
 この変換により、4つのスキーマクラスのそれぞれのデータセットが変更され（下の図ではオレンジ色）、各人識別子に対して、ルックアップデータセット内の関連データ（アカウント、商談、マーケティングリスト、またはキャンペーン）用の（オブジェクト）配列が作成されます（下の図ではピンク色）。 この変換により、個人ID ベースの検索を正しく処理できるようになります。
 
-![B2B スキーマ &#x200B;](./assets/b2b-schemas.png)
+![B2B スキーマ ](./assets/b2b-schemas.png)
