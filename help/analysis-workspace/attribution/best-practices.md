@@ -70,7 +70,7 @@ Funnelの上部および下部の分析を実行して、理解を深めます�
 
 仮説を次のように仮定します。*「旅行業界では、顧客は購入する前に多くの調査を行うため、アトリビューション期間は30日ではなく、60日または90日です。」*
 
-この場合、[&#x200B; ルックバックウィンドウ &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models)を90日に変更します。
+この場合、[&#x200B; ルックバックウィンドウ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/models)を90日に変更します。
 
 ## アルゴリズムによるアトリビューション
 
@@ -84,5 +84,5 @@ Funnelの上部および下部の分析を実行して、理解を深めます�
 
 * Analysis Workspace だけに依存するのではなく、データサイエンティストのサービスを使用する必要性が生じる場合があります。
 * Adobe データフィードのように、生データを使用できます。
-* インプレッションデータを考慮する場合は、例えば[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)の使用を検討してください。
+* インプレッションデータを考慮する場合は、例えば[Customer Journey Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)の使用を検討してください。
 
