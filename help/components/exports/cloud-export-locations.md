@@ -22,10 +22,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: a00fca72775c23130ca21baaae83a3e24318e214
+source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
-source-wordcount: '3258'
-ht-degree: 17%
+source-wordcount: '3601'
+ht-degree: 15%
 ---
 # クラウド書き出しの場所を設定 {#configure-cloud-export-locations}
 
@@ -44,6 +44,15 @@ ht-degree: 17%
 >id="cja-export-file-name"
 >title="パスまたはファイル名"
 >abstract="パスまたはファイル名（またはその両方）を指定して、選択した場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。<br/>変数を使用して、パスまたはファイル名を動的にすることができます。 <br/>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2027年1月15日にこの場所に送信される書き出しには、次のファイルパスと名前が含まれます。`[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv` <br/>使用可能な変数のリストについては、以下のリンクを選択してください。"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name-override"
+>title="デフォルトのパスまたはファイル名を上書き"
+>abstract="この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 オーバーライドは、このデータフィードにのみ適用され、データフィードファイルの送信先を決定します。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -110,6 +119,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
    | フィールド | 関数 |
    |---------|----------|
    | [!UICONTROL **接頭辞**] | データを配置するコンテナ内のフォルダー。 静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/` |
+   | [!UICONTROL **既定のパスまたはファイル名を上書き**] | この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 このオプションは、データフィードの場所を使用し、データフィードファイルの送信先を決定する場合にのみ使用できます。 詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)を参照してください。 |
    | [!UICONTROL **パスまたはファイル名**] | パスまたはファイル名（またはその両方）を指定して、この場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。 <p>変数を使用して、パスまたはファイル名を動的にすることができます。 このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>次のいずれかの変数を使用します。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2027年1月15日にこの場所に送信される書き出しには、次のファイルパスと名前が含まれます：`[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv`</p> |
 
    {style="table-layout:auto"}
@@ -147,6 +157,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
    |---------|----------|
    | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するAmazon S3 アカウント内のバケット。 <p>このバケットにファイルをアップロードするには、アドビが提供したユーザー ARN に `S3:PutObject` 権限があることを確認してください。 </p><p>バケット名は、特定の命名ルールを満たす必要があります。 例えば、3〜63 文字までの長さで、小文字、数字、ドット（.）、ハイフン（-）のみで構成でき、先頭と末尾は文字または数字にする必要があります。 [命名規則の完全なリストについては、AWSのドキュメント &#x200B;](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/bucketnamingrules.html)を参照してください。 </p> |
    | [!UICONTROL **接頭辞**] | データを配置するバケット内のフォルダー。 静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
+   | [!UICONTROL **既定のパスまたはファイル名を上書き**] | この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 このオプションは、データフィードの場所を使用し、データフィードファイルの送信先を決定する場合にのみ使用できます。 詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)を参照してください。 |
    | [!UICONTROL **パスまたはファイル名**] | パスまたはファイル名（またはその両方）を指定して、この場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。 <p>変数を使用して、パスまたはファイル名を動的にすることができます。 このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>次のいずれかの変数を使用します。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2027年1月15日にこの場所に送信される書き出しには、次のファイルパスと名前が含まれます：`[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv`</p> |
 
    {style="table-layout:auto"}
@@ -169,6 +180,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
    |---------|----------|
    | [!UICONTROL **バケット**] | Customer Journey Analytics データを送信するGCP アカウント内のバケット。 <p>Adobeが提供するプリンシパルに`roles/storage.objectCreator`権限を付与していることを確認してください。 （プリンシパルは、[Google Cloud Platform アカウントの設定時](/help/components/exports/cloud-export-accounts.md)に提供されます）。 <p>権限の付与について詳しくは、Google Cloud ドキュメントの[バケットレベルのポリシーにプリンシパルを追加する](https://cloud.google.com/storage/docs/access-control/using-iam-permissions?hl=ja#bucket-add)を参照してください。</p><p>組織が[組織ポリシーの制約](https://cloud.google.com/storage/docs/org-policy-constraints)を使用して許可リスト内の Google Cloud Platform アカウントのみを許可している場合は、次のアドビ所有の Google Cloud Platform 組織 ID が必要です。 <ul><li>`DISPLAY_NAME`：`adobe.com`</li><li>`ID`：`178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`：`C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **接頭辞**] | データを配置するバケット内のフォルダー。 静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。 例：folder_name/ |
+   | [!UICONTROL **既定のパスまたはファイル名を上書き**] | この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 このオプションは、データフィードの場所を使用し、データフィードファイルの送信先を決定する場合にのみ使用できます。 詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)を参照してください。 |
    | [!UICONTROL **パスまたはファイル名**] | パスまたはファイル名（またはその両方）を指定して、この場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。 <p>変数を使用して、パスまたはファイル名を動的にすることができます。 このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>次のいずれかの変数を使用します。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2027年1月15日にこの場所に送信される書き出しには、次のファイルパスと名前が含まれます：`[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv`</p> |
 
    {style="table-layout:auto"}
@@ -191,6 +203,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
    |---------|----------|
    | [!UICONTROL **コンテナ名**] | Customer Journey Analytics データを送信する場所を指定したアカウント内のコンテナ。 |
    | [!UICONTROL **接頭辞**] | データを配置するコンテナ内のフォルダー。 静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure SAS アカウントを設定する際に、Key Vault 秘密鍵名フィールドに指定した SAS トークンストアに `Write` 権限があることを確認します。 これにより、SAS トークンで Azure コンテナにファイルを作成できます。 <p>SAS トークンでファイルも上書きする場合は、SAS トークンストアに `Delete` 権限があることを確認します。</p><p>詳しくは、Azure Blob Storage ドキュメントの [Blob Storage のリソース](https://learn.microsoft.com/ja-jp/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources)を参照してください。</p> |
+   | [!UICONTROL **既定のパスまたはファイル名を上書き**] | この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 このオプションは、データフィードの場所を使用し、データフィードファイルの送信先を決定する場合にのみ使用できます。 詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)を参照してください。 |
    | [!UICONTROL **パスまたはファイル名**] | パスまたはファイル名（またはその両方）を指定して、この場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。 <p>変数を使用して、パスまたはファイル名を動的にすることができます。 このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>次のいずれかの変数を使用します。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2027年1月15日にこの場所に送信される書き出しには、次のファイルパスと名前が含まれます：`[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv`</p> |
 
    {style="table-layout:auto"}
@@ -213,6 +226,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
    |---------|----------|
    | [!UICONTROL **コンテナ**] | Customer Journey Analytics データを送信する場所を指定したアカウント内のコンテナ。 以前に作成した Azure アプリケーションにファイルをアップロードする権限を付与します。 |
    | [!UICONTROL **接頭辞**] | データを配置するコンテナ内のフォルダー。 静的なフォルダー名を指定してから、名前の後にスラッシュを追加してフォルダーを作成します。 例：`folder_name/`<p>Azure RBAC アカウントの設定時に指定したアプリケーション ID に、コンテナ（フォルダー）にアクセスするための `Storage Blob Data Contributor` の役割が付与されていることを確認します。</p> <p>詳しくは、[Azure のビルトインの役割](https://learn.microsoft.com/ja-jp/azure/role-based-access-control/built-in-roles)を参照してください。</p> |
+   | [!UICONTROL **既定のパスまたはファイル名を上書き**] | この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 このオプションは、データフィードの場所を使用し、データフィードファイルの送信先を決定する場合にのみ使用できます。 詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)を参照してください。 |
    | [!UICONTROL **パスまたはファイル名**] | パスまたはファイル名（またはその両方）を指定して、この場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。 <p>変数を使用して、パスまたはファイル名を動的にすることができます。 このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>次のいずれかの変数を使用します。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2027年1月15日にこの場所に送信される書き出しには、次のファイルパスと名前が含まれます：`[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv`</p> |
    | [!UICONTROL **アカウント**] | Azure ストレージアカウント。 |
 
@@ -238,6 +252,7 @@ Customer Journey Analytics レポートをクラウドの宛先（[Analysis Work
    | [!UICONTROL **スキーマ**] | 指定されたスキーマは既存のスキーマである必要があります。 作成した役割には、このスキーマにアクセスするための権限が必要です。<p>これは、ステージ名に関連付けられたスキーマです。</p><p>次のコマンドを使用して、Snowflakeのスキーマに権限を作成したロールを付与できます：`GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>詳しくは、Snowflake ドキュメント [&#128279;](https://docs.snowflake.com/en/sql-reference/commands-database)の「Database, Schema, and Share Commands」ページを参照してください。</p> |
    | [!UICONTROL **ステージ名**] | データファイルがSnowflakeに保存される内部ステージの名前。<p>アカウントで指定した役割に、このステージ名への読み取りおよび書き込みアクセス権があることを確認します。 （読み取りと書き込みのアクセス権を付与しているので、Adobeでのみ使用されるステージを使用することをお勧めします）。</p><p>次のコマンドを使用して、Snowflakeのステージ名に読み取りアクセス権と書き込みアクセス権を付与できます：`GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>ロールに権限を付与する方法について詳しくは、[Snowflake ドキュメントの権限の付与](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege)を参照してください。</p> <p>ステージ名について詳しくは、Snowflake ドキュメント [&#128279;](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)の「 ローカルファイルの内部ステージの選択」ページを参照してください。</p> |
    | [!UICONTROL **ステージパス**] | Snowflakeに保存されているデータファイルの場所へのパス。 <p>詳しくは、Snowflake ドキュメント [&#128279;](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage)の「 ローカルファイルの内部ステージの選択」ページを参照してください。</p> |
+   | [!UICONTROL **既定のパスまたはファイル名を上書き**] | この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 このオプションは、データフィードの場所を使用し、データフィードファイルの送信先を決定する場合にのみ使用できます。 詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)を参照してください。 |
    | [!UICONTROL **パスまたはファイル名**] | パスまたはファイル名（またはその両方）を指定して、この場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。 <p>変数を使用して、パスまたはファイル名を動的にすることができます。 このオプションを使用すると、ファイル名の作成とフォルダーの配置を自動化できるため、ファイル名は予測可能であり、フォルダーに論理的に整理されます。 例えば、ファイル名は配達日に応じて名前を付け、各月に対応するフォルダーに配置することができます。</p><p>次のいずれかの変数を使用します。</p><ul><li>**{yyyy}**: 4桁の暦年（大文字と小文字を区別）</li><li>**{yy}**: 2桁の暦年（大文字と小文字を区別）</li><li>**{MM}**: 2桁の月（大文字と小文字を区別）</li><li>**{dd}**: 2桁の日（大文字と小文字を区別）</li><li>**{HH}**: 2桁の時間（大文字と小文字を区別）</li><li>**{mm}**: 2桁の分（大文字と小文字を区別）</li><li>**{ss}**: 2桁の秒（大文字と小文字を区別）</li><li>**{fff}**: 3桁のナノ秒（大文字と小文字を区別）</li><li>**{instance_id}**: リクエスト （インスタンス） UUID</li><li>**{export_id}**：書き出し（スケジュール） UUID</li><li>**{idx}**: インデックスは0から始まります（各ファイルごとに増分）</li><li>**{total}**：転送ジョブ全体の合計ファイル番号</li><li>**{completion_millis}**：転送時間（ミリ秒単位）</li></ul><p>例えば、`${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`を指定した場合、2027年1月15日にこの場所に送信される書き出しには、次のファイルパスと名前が含まれます：`[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv`</p> |
 
    {style="table-layout:auto"}

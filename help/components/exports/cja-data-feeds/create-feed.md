@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 39d7aae2c47754899a2ac7d1a544a0b585d99b8b
+source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 15%
+source-wordcount: '4243'
+ht-degree: 16%
 ---
 # データフィードの作成
 
@@ -71,24 +71,6 @@ ht-degree: 15%
 >id="cja_datafeed_frequency_granularity"
 >title="頻度と精度"
 >abstract="**配信頻度**（ライブフィード）：データフィードが配信される頻度。 1 時間ごとの配信には 1 時間分のデータが含まれ、毎日の配信には 1 日分のデータが含まれます。 ルックバック日付範囲と処理遅延は、含まれるイベントにも影響する可能性があります。<p>**精度**（バックフィルフィード）：過去のデータを分割するのに使用する時間間隔。 各チャンクには 1 日分のデータが含まれ、1 日に 1 回ではなく、できるだけ早く配信されます。 このフィールドは必ず「毎日」に設定され、変更できません。</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name"
->title="パスまたはファイル名"
->abstract="パスまたはファイル名（またはその両方）を指定して、選択した場所のファイルの送信先を指定します。 場所の最上位フォルダーにファイルを保存するには、`/`を指定します。<br/> ライブフィードの場合、変数を使用してパスまたはファイル名を動的にすることができます。 <br/>例えば、`${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`を指定した場合、2027年1月15日に配信されるライブフィードには、次のファイルパスと名前が含まれます。`[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet` <br/>使用可能な変数のリストについては、以下のリンクを選択してください。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name-override"
->title="デフォルトのパスまたはファイル名を上書き"
->abstract="この場所に設定されているデフォルトのパスまたはファイル名を上書きするには、このオプションを有効にします。 オーバーライドは、このデータフィードにのみ適用され、データフィードファイルの送信先を決定します。"
 
 <!-- markdownlint-enable MD034 -->
 

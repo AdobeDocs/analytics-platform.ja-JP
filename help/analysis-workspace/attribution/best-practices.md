@@ -22,17 +22,17 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: c6330935bb6b36fab622b7884e9182ebd4bdc610
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 63%
+source-wordcount: '470'
+ht-degree: 60%
 ---
 # アトリビューションのベストプラクティス
 
 組織に適したアトリビューションモデルの選択は、多くの考慮事項に基づいて行います。 この記事では、メソドロジーと一般的なベストプラクティスについて解説します。
 
 * [探索的分析](#exploratory-analysis)
-* [ルールベースのアトリビューション](#rule-base-attribution)
+* [ルールベースのアトリビューション](#rule-based-attribution)
 * [アルゴリズムによるアトリビューション](#use-algorithmic-attribution)
 
 ## 探索的分析
@@ -46,17 +46,17 @@ ht-degree: 63%
 * これらの動作の割合／分布
 
 例えば、50% の顧客がコンバージョンの前に 3 つのチャネルにタッチした場合、これら 3 つのチャネル間で何らかのインタラクションはありますか。
-その後、ファネルの上下の分析を行って、理解を深めることができます。
+Funnelの上部および下部の分析を実行して、理解を深めます。
 
 ### 上位ファネル分析
 
-上位ファネル分析では、ブランドや製品の認知を高めるために使用されるチャネルを対象とします。 例えば、ほとんどのテレビ広告の目標はブランド認知度の向上です。 テレビ広告は時間の経過とともに忘れられるので、[時間減衰アトリビューションモデル &#x200B;](/help/analysis-workspace/attribution/models.md)を使用することができます。
+上位ファネル分析では、ブランドや製品の認知を高めるために使用されるチャネルを対象とします。 例えば、ほとんどのテレビ広告の目標はブランド認知度の向上です。 テレビ広告は時間の経過とともに忘れられるので、[時間減衰アトリビューションモデル &#x200B;](/help/analysis-workspace/attribution/models.md)を使用します。
 
 ### 下部ファネル分析
 
 下部ファネル分析では、人物が既にブランドを知っていて、コンバージョンすることを求めていると仮定します。 メール、プッシュ通知または Facebook 広告を使用します。
 
-## ルールベースアトリビューション
+## ルールベースのアトリビューション
 
 この手順の目的は、仮説を検証することです。
 
@@ -68,11 +68,15 @@ ht-degree: 63%
 
 **例 2**
 
-仮説が次のようであるとします。*「特定の業界（旅行業界など）では、顧客は製品を購入する前に多くの調査を行うため、アトリビューション期間は30日ではなく60日または90日です。*」
+仮説を次のように仮定します。*「旅行業界では、顧客は購入する前に多くの調査を行うため、アトリビューション期間は30日ではなく、60日または90日です。」*
 
-この場合、[ルックバックウィンドウ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/models)を 90 日に変更します。
+この場合、[&#x200B; ルックバックウィンドウ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/attribution/models)を90日に変更します。
 
 ## アルゴリズムによるアトリビューション
+
+>[!NOTE]
+>
+>アルゴリズムアトリビューションを使用するには、Customer Journey Analytics **Ultimate** パッケージが必要です。 どの Customer Journey Analytics パッケージを使用しているかが不明な場合は、管理者にお問い合わせください。
 
 すべての質問に対して満足のいく回答を提供するアトリビューションモデルがまだない場合は、[アルゴリズムアトリビューション](/help/analysis-workspace/attribution/algorithmic.md)を使用できます。 考えられる多数の仮説と組み合わせを検証することは非常に難しいので、アルゴリズムアトリビューションでは、ビルトインのアルゴリズムを使用して、ディメンション項目全体にクレジットを割り当てます。
 
