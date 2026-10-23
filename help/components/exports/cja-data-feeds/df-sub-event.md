@@ -23,7 +23,7 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-サブイベントコンポーネントは、XDM スキーマの配列内またはマップ内のフィールドに基づくディメンションと指標です。 これにより、購入時の個々の商品など、イベントレベルよりも詳細なレベルでデータを分析できます。 セグメントでのデータの使用について詳しくは、[ サブイベント ](/help/components/segments/sub-event.md)を参照してください。
+サブイベントコンポーネントは、XDM スキーマの配列内またはマップ内のフィールドに基づくディメンションと指標です。 これにより、購入時の個々の商品など、イベントレベルよりも詳細なレベルでデータを分析できます。 セグメントでのデータの使用について詳しくは、[&#x200B; サブイベント &#x200B;](/help/components/segments/sub-event.md)を参照してください。
 
 次の情報を使用して、配列およびマップフィールドのサブイベントコンポーネントがCustomer Journey Analytics データフィードにどのように表示されるかを理解します。
 
@@ -31,13 +31,13 @@ ht-degree: 1%
 
 ### XDM スキーマのサブイベントコンポーネント
 
-XDM スキーマでは、配列の各要素（文字列配列またはオブジェクト配列）はサブイベントです。 マップフィールドの各エントリは、[ データフィードのマップフィールド ](#use-map-fields-in-data-feeds)で説明されているように、サブイベントでもあります。 サブイベント内のフィールドに基づくディメンションと指標は、サブイベントコンポーネントです。
+XDM スキーマでは、配列の各要素（文字列配列またはオブジェクト配列）はサブイベントです。 マップフィールドの各エントリは、[&#x200B; データフィードのマップフィールド &#x200B;](#use-map-fields-in-data-feeds)で説明されているように、サブイベントでもあります。 サブイベント内のフィールドに基づくディメンションと指標は、サブイベントコンポーネントです。
 
 Adobe Experience PlatformのXDM スキーマ内のサブイベントを表示するには、[!UICONTROL **Schemas**]&#x200B;を選択し、サブイベントを含むイベントを展開します。
 
 次の例では、`Product list items`は、様々なサブイベントコンポーネントを含むオブジェクト配列です。
 
-オブジェクト配列とサブイベントコンポーネントを含む![XDM スキーマ ](assets/df-sub-event-schema.png)
+オブジェクト配列とサブイベントコンポーネントを含む![XDM スキーマ &#x200B;](assets/df-sub-event-schema.png)
 
 ### Analysis Workspaceとデータフィードのサブイベントの違い
 
@@ -94,21 +94,21 @@ Adobe Experience PlatformのXDM スキーマ内のサブイベントを表示す
 
 サブイベントコンポーネントをデータフィードに追加すると、同じサブイベントから他のコンポーネントを追加するように求めるダイアログが表示されます。
 
-![関連するサブイベントコンポーネントの追加を求めるダイアログ ](assets/data-feeds-add-subevent.png)
+![関連するサブイベントコンポーネントの追加を求めるダイアログ &#x200B;](assets/data-feeds-add-subevent.png)
 
 同じサブイベントのフィールドは、フラットアイテムではなく、折りたたみ可能なネストされたグループとしてキャンバスに表示されます。
 
-![ サブイベントグループ ](assets/data-feeds-subevent-added.png)
+![&#x200B; サブイベントグループ &#x200B;](assets/data-feeds-subevent-added.png)
 
 このグループは、基礎となるデータ構造を反映しています。
 
 データフィード出力では、これらのコンポーネントはすべて、ネストされた配列として1列に表示されます。
 
-サブイベントコンポーネントを含むコンポーネントをデータフィードに追加する方法について詳しくは、[ データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
+サブイベントコンポーネントを含むコンポーネントをデータフィードに追加する方法について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
 
 ## データフィード出力のサブイベントデータのクエリ
 
-サブイベントデータ [はCustomer Journey Analytics データフィード ](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
+サブイベントデータ [はCustomer Journey Analytics データフィード &#x200B;](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
 次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用しています。この構文では、`UNNEST`は配列を行に展開します。 Snowflakeの`FLATTEN`やDatabricksの`explode`など、独自の配列関数で同じアプローチをサポートするデータウェアハウスもあります。
 
@@ -184,7 +184,7 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 
 ## データフィードでのマップフィールドの使用
 
-XDM スキーマストアのフィールドにキーと値のペアをマッピングします。 データフィードは、他の[ サブイベントデータ ](#query-sub-event-data-in-data-feed-output)と同じように、各マップをオブジェクトの配列として書き出します。 各オブジェクトには、マップキーとその値が個別のフィールドとして含まれます。
+XDM スキーマストアのフィールドにキーと値のペアをマッピングします。 データフィードは、他の[&#x200B; サブイベントデータ &#x200B;](#query-sub-event-data-in-data-feed-output)と同じように、各マップをオブジェクトの配列として書き出します。 各オブジェクトには、マップキーとその値が個別のフィールドとして含まれます。
 
 出力のフィールド名は、データフィード用に設定したコンポーネント IDに由来し、`key`や`value`などの固定名ではありません。 この節の例では、サンプルコンポーネント IDを使用します。
 
