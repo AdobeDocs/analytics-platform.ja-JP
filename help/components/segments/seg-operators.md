@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
+source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1211'
 ht-degree: 31%
 ---
 # 演算子
@@ -53,7 +53,7 @@ ht-degree: 31%
 
 >[!NOTE]
 >
->標準演算子を使用する場合、**[!UICONTROL matches]**&#x200B;と&#x200B;**[!UICONTROL を除き、大文字と小文字を区別せずに入力した値が]**&#x200B;と一致しません。
+>標準演算子を使用する場合、結果は大文字と小文字を区別しません。ただし、**[!UICONTROL 一致]**&#x200B;と&#x200B;**[!UICONTROL 一致しません]**。
 >
 >例えば、**[!UICONTROL Page Name]** **[!UICONTROL equals]** `search results`は、*検索結果*、*検索結果*、*検索結果*&#x200B;を返します。
 

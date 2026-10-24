@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
+source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1303'
 ht-degree: 1%
 ---
 # データフィードのサブイベントコンポーネント
@@ -110,7 +110,7 @@ Adobe Experience PlatformのXDM スキーマ内のサブイベントを表示す
 
 サブイベントデータ [はCustomer Journey Analytics データフィード &#x200B;](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics)で異なって表示されるため、Adobe Analytics データフィードで使用するクエリと使用するクエリは異なります。
 
-次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用します。 SnowflakeやDatabricksなどの他のデータウェアハウスも、構文の違いが少なくても同じアプローチをサポートしています。
+次の例は、特定の製品を含むイベントを検索する方法を示しています。 この例では、Google BigQuery構文を使用しています。この構文では、`UNNEST`は配列を行に展開します。 Snowflakeの`FLATTEN`やDatabricksの`explode`など、独自の配列関数で同じアプローチをサポートするデータウェアハウスもあります。
 
 +++ Customer Journey Analytics データフィードの商品データのクエリ
 
@@ -133,7 +133,7 @@ Customer Journey Analytics データフィードでは、同じ2つの商品が`
 
 **イベントごとに1行を返す**
 
-行数を変更せずにイベントをフィルタリングするには、`EXISTS` サブクエリ内で`UNNEST`を使用します。
+行数を変更せずにイベントをフィルタリングするには、`EXISTS` サブクエリ内で`UNNEST`などの配列関数を使用します。
 
 ```sql
 SELECT row_id, timestamp_utc, product_list_items
@@ -149,7 +149,7 @@ WHERE EXISTS (
 
 **一致する製品ごとに1行を返します**
 
-一致する製品ごとに1行を返すには、`UNNEST`を外部`FROM`句に移動します。
+一致する製品ごとに1行を返すには、配列関数を外部`FROM`句に移動します。
 
 ```sql
 SELECT f.row_id, f.timestamp_utc, item.product, item.quantity, item.revenue
