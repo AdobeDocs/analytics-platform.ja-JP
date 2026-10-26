@@ -129,7 +129,7 @@ ht-degree: 95%
 
 * **セッション**：コンバージョンが発生したセッションの開始時点までを振り返ります。 セッションのルックバックウィンドウは、データビューの変更された[セッションタイムアウト](/help/data-views/create-dataview.md#session-settings)を考慮します。 「**[!UICONTROL セッション]**」を選択すると、[アトリビューションルックバックウィンドウ](#atribution-lookback-window)は自動的に&#x200B;**[!UICONTROL レポートウィンドウ]**&#x200B;に設定され、変更できません。
 * **ユーザー**：ユーザーコンテナの範囲からのコンバージョンを確認します。
-* **会話**：会話コンテナのスコープからコンバージョンを調べます。 このコンテナは、[会話インサイト ](/help/conversation-insights/overview.md)のビジュアライゼーションとコンポーネントで使用できます。
+* **会話**：会話コンテナのスコープからコンバージョンを調べます。 このコンテナは、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)のビジュアライゼーションとコンポーネントで使用できます。
 * **グローバルアカウント** [!BADGE B2B Edition]{type=Informative}：グローバルアカウントコンテナの範囲からのコンバージョンを確認します。
 * **アカウント** [!BADGE B2B Edition]{type=Informative}：ユーザーコンテナの範囲からのコンバージョンを確認します。
 * **オポチュニティ** [!BADGE B2B Edition]{type=Informative}：オポチュニティコンテナの範囲からのコンバージョンを確認します。
@@ -335,5 +335,5 @@ Customer Journey Analytics には前処理と後処理の概念がないので�
 さらに、Customer Journey Analyticsでは、標準XDM スキーマ **のフィールドは、リレーショナルスキーマの類似した名前付きフィールドと**&#x200B;を自動的に結合しません。
 >[!IMPORTANT]
 >
->Customer Journey Analyticsのレポートと分析では、共通の人物IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を[ データセット設定](/help/connections/create-connection.md#relational-dataset)で明示的に設定する必要があります。 <br/><br/>派生フィールド [ フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge-fields)関数を使用して、XDM スキーマとリレーショナルスキーマで類似の名前付きフィールド（オブジェクト配列の一部ではない）を結合することを検討してください。 オブジェクト配列内のフィールドの場合、XDMと関係スキーマの間でフィールドを結合するソリューションは現在存在しません。
+>Customer Journey Analyticsのレポートと分析では、共通の人物IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を[&#x200B; データセット設定](/help/connections/create-connection.md#relational-dataset)で明示的に設定する必要があります。 <br/><br/>派生フィールド [&#x200B; フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge-fields)関数を使用して、XDM スキーマとリレーショナルスキーマで類似の名前付きフィールド（オブジェクト配列の一部ではない）を結合することを検討してください。 オブジェクト配列内のフィールドの場合、XDMと関係スキーマの間でフィールドを結合するソリューションは現在存在しません。
 >

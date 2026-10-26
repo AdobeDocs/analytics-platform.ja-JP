@@ -21,7 +21,7 @@ ht-degree: 7%
 >title="トレンド分析トピック"
 >abstract="選択したランキング指標にもとづいてトレンドトピックを分析します。 トピックを選択して、最大5つのレベルまでドリルダウンします。 特定のトピックを検索し、トピックを他の日付範囲と比較します。"
 
-![ フィード ](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、会話インサイトの一部として、トレンド トピックを探索および分析できます。
+![&#x200B; フィード &#x200B;](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、会話インサイトの一部として、トレンド トピックを探索および分析できます。
 
 特定のトピックを検索し、各レベルの各トピックの数と割合を他のデータ範囲と比較できます。
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 
 トレンドトピックのビジュアライゼーションを作成および設定するには：
 
-1. ![ フィード ](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
+1. ![&#x200B; フィード &#x200B;](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
 1. **[!UICONTROL トレンドトピック]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
@@ -42,13 +42,13 @@ ht-degree: 7%
    1. オプションで、指標に[属性](/help/analysis-workspace/attribution/models.md)を設定する場合は、**[!UICONTROL 属性を設定]**&#x200B;を選択し、**[!UICONTROL モデル]**、**[!UICONTROL コンテナ]**、**[!UICONTROL ルックバックウィンドウ]**&#x200B;を選択します。
 1. ビジュアライゼーションを作成するには、**[!UICONTROL ビルド]**&#x200B;を選択します。 設定値をデフォルトにリセットするには、**[!UICONTROL リセット]**&#x200B;を選択します。
 
-トレンド トピックのビジュアライゼーションを再構成するには、**[!UICONTROL ランキング指標：_ランキング指標_ | サブトピックレベル：_x_]**の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
+トレンド トピックのビジュアライゼーションを再構成するには、**[!UICONTROL ランキング指標：_ランキング指標_ | サブトピックレベル：_x_]**&#x200B;の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
 
 ## 使用
 
 ビジュアライゼーションを使用するには：
 
-![ トレンド トピックのビジュアライゼーションを使用](assets/trending-topics.png)
+![&#x200B; トレンド トピックのビジュアライゼーションを使用](assets/trending-topics.png)
 
 * トピックにカーソルを合わせると、詳細が表示されるポップアップが表示されます。➊
 
@@ -65,11 +65,11 @@ ht-degree: 7%
 
 * 現在のトピック選択の折れ線グラフを表示するには、**[!UICONTROL トレンド トピック]** ビジュアライゼーションに[行](/help/analysis-workspace/visualizations/line.md) ビジュアライゼーションをドロップします。 **[!UICONTROL 行]**&#x200B;のビジュアライゼーションは、**[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションに自動的にリンクされ、選択したトピックの行が表示されます。
 
-  ![ トレンドのトピック行のビジュアライゼーション ](assets/trending-topics-line-viz.png)
+  ![&#x200B; トレンドのトピック行のビジュアライゼーション &#x200B;](assets/trending-topics-line-viz.png)
 
 ## 設定
 
-次の特定の[ ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
+次の特定の[&#x200B; ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
 
 | 設定 | 説明 |
 |---|---|
