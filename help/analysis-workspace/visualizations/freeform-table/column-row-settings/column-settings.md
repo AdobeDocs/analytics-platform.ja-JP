@@ -39,7 +39,7 @@ ht-degree: 74%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [フリーフォームテーブルの行と列の設定](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -105,7 +105,7 @@ ht-degree: 74%
 
 
 
-[&#x200B; データビュー](/help/data-views/component-settings/attribution.md)で設定されているデフォルトのアトリビューションモデルを上書きできます。
+[ データビュー](/help/data-views/component-settings/attribution.md)で設定されているデフォルトのアトリビューションモデルを上書きできます。
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Analysis Workspaceで指標にデフォルト以外のアトリビューショ�
 
 2. **[!UICONTROL 列アトリビューションモデル]**&#x200B;で、「**[!UICONTROL モデル]**」と「**[!UICONTROL ルックバックウィンドウ]**」を選択します。 ルックバックウィンドウでは、各コンバージョンに適用されるデータアトリビューションのウィンドウを決定します。
 
-   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 &#x200B;](assets/attribution-select.png)
+   ![「線形」が選択されていることを示す「列アトリビューションモデル」オプション。 ](assets/attribution-select.png)
 
 
 ### アトリビューションモデル
