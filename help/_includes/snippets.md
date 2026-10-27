@@ -1,7 +1,7 @@
 ---
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
 workflow-type: tm+mt
-source-wordcount: '5584'
+source-wordcount: '5605'
 ht-degree: 95%
 ---
 # スニペット
@@ -129,6 +129,7 @@ ht-degree: 95%
 
 * **セッション**：コンバージョンが発生したセッションの開始時点までを振り返ります。 セッションのルックバックウィンドウは、データビューの変更された[セッションタイムアウト](/help/data-views/create-dataview.md#session-settings)を考慮します。 「**[!UICONTROL セッション]**」を選択すると、[アトリビューションルックバックウィンドウ](#atribution-lookback-window)は自動的に&#x200B;**[!UICONTROL レポートウィンドウ]**&#x200B;に設定され、変更できません。
 * **ユーザー**：ユーザーコンテナの範囲からのコンバージョンを確認します。
+* **会話**：会話コンテナのスコープからコンバージョンを調べます。 このコンテナは、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)のビジュアライゼーションとコンポーネントで使用できます。
 * **グローバルアカウント** [!BADGE B2B Edition]{type=Informative}：グローバルアカウントコンテナの範囲からのコンバージョンを確認します。
 * **アカウント** [!BADGE B2B Edition]{type=Informative}：ユーザーコンテナの範囲からのコンバージョンを確認します。
 * **オポチュニティ** [!BADGE B2B Edition]{type=Informative}：オポチュニティコンテナの範囲からのコンバージョンを確認します。

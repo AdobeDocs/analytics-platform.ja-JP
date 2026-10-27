@@ -27,7 +27,7 @@ topic_v2:
     internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 74%
@@ -99,7 +99,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="デフォルト以外のアトリビューションモデルの使用"
->abstract="この指標では、デフォルト以外のアトリビューションモードは使用できません。"
+>abstract="この指標では、デフォルト以外のアトリビューションモデルは使用できません。"
 
 <!-- markdownlint-enable MD034 -->
 
