@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: 89dc7258649e9c16d6a43c15ced42e1af7c6009a
+source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1522'
 ht-degree: 88%
 ---
 
@@ -524,6 +524,7 @@ ht-degree: 88%
   + クロスチャネルデータ {#cross-channel}
     + [チャネルをまたいだデータの分析](../use-cases/cross-channel/cross-channel.md)
     + [コールセンターデータと web データの読み込み](../use-cases/cross-channel/call-center.md)
+    + {hide-from-toc}[有料メディアデータをweb データと結合](../use-cases/cross-channel/paid-media-web.md)
   + データの書き出し {#data-export}
     + [概要](../use-cases/data-export/overview.md)
     + [BI 拡張機能](../use-cases/data-export/bi-extension.md)
@@ -536,7 +537,6 @@ ht-degree: 88%
   + データ取り込み {#data-ingestion}
     + [Marketo Engage データの取り込みと使用](../use-cases/data-ingestion/marketo.md)
     + [Adobe Experience Platform オーディエンスの取り込みと活用](../use-cases/data-ingestion/ingest-aep-segments.md)
-    + {hide-from-toc}[有料メディアデータを取り込んで使用](/help/use-cases/data-ingestion/paid-media.md)
   + データビュー {#data-views}
     + [データビューのユースケース](/help/use-cases/data-views/data-views-usecases.md)
     + [バインディングディメンションと指標の使用](/help/use-cases/data-views/binding-dimensions-metrics.md)
