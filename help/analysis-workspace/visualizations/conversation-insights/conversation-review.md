@@ -4,10 +4,10 @@ title: 会話のレビュー
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: f1f19b229d06a69ae180bff7dc8648a350465aa0
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 9%
+source-wordcount: '188'
+ht-degree: 8%
 ---
 # 会話のレビュー
 
@@ -22,27 +22,33 @@ ht-degree: 9%
 >abstract="タイムスタンプとシグナルを含め、個々の会話のコンテキストとフローを理解します。 表示するシグナルを設定します。"
 
 
-![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]**&#x200B;のビジュアライゼーションには、顧客とエージェント間の会話の一部として、完全なターンバイターンの交換が表示されます。
+![ チャット ](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]**&#x200B;のビジュアライゼーションには、顧客とエージェント間の完全なターンバイターンの交換が表示されます。
 
 このビジュアライゼーションは、タイムスタンプやシグナルなど、個々の会話のコンテキストとフローを理解するのに役立ちます。 表示するシグナルを設定できます。
 
 ## 作成と設定
 
-![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを作成して設定するには：
+![ チャット ](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを作成して設定するには：
 
-1. ![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
+1. ![ チャット ](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
 1. **[!UICONTROL 会話レビュー]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
-   1. **[!UICONTROL 会話]**&#x200B;を選択します。
+   * **[!UICONTROL 会話]**&#x200B;を選択します。
 
 1. ビジュアライゼーションを作成するには、**[!UICONTROL ビルド]**&#x200B;を選択します。 設定値をデフォルトにリセットするには、**[!UICONTROL リセット]**&#x200B;を選択します。 設定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
 
-**[!UICONTROL 会話レビュー]** ビジュアライゼーションを再設定するには、**[!UICONTROL 会話：_会話_]**&#x200B;の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
+**[!UICONTROL 会話レビュー]** ビジュアライゼーションを再設定するには、![編集](/help/assets/icons/Edit.svg)を選択します。
 
 ## 使用
 
-ビジュアライゼーションを使用するには：
+垂直方向にセグメント化されたスクロールバーを使用して、会話を移動します。
+
+**[!UICONTROL セッション開始]**&#x200B;は、会話の開始を示します。 **[!UICONTROL セッション終了]**&#x200B;は、会話の終了を示します。
+
+![会話のレビュー](assets/conversation-review.png)
 
 
-## 設定
+
+
+
