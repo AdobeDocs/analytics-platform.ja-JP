@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 role: Admin
-source-git-commit: 3fc129c2eeb5fd86e8ef4d885a4682dd819fc481
+source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
 workflow-type: tm+mt
 source-wordcount: '3907'
 ht-degree: 3%
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ランディングページのURLまたは既存のイベントフィールドにIDが表示されるレベルでのみ結合できます。 例えば、キャンペーンのみのタグ付けはキャンペーンレポートをサポートしていますが、広告レベルのレポートはサポートしていません。 エクスペリエンスレベルとアセットレベルの結合には、追加のURL パラメーターが必要で、このガイドの範囲外です。
 
-参照については、[概要データ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/summary-data)および[概要データグループコンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)を参照してください。
+参照については、[概要データ ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/summary-data)および[概要データグループコンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)を参照してください。
 
 ### 結合キーを選択
 
@@ -81,7 +81,7 @@ GUID構造は`{adNetwork}_{accountID}[_{campaignID}[_{adGroupID}[_{adID}]]]`で�
 * [!DNL Customer Journey Analytics]ここで使用されている派生フィールド関数にアクセスできるSelect以降：[URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse)、[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)、[正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace)、および名前のエンリッチメント用に[参照](/help/data-views/derived-fields/derived-fields.md#lookup)。
 * ターゲットサンドボックス内のスキーマ、データセット、データストリームを管理し、検証のためにデータセットとクエリサービスにアクセスするための[!DNL Adobe Experience Platform]権限。
 * ターゲット接続とデータビューを編集するための[!DNL Customer Journey Analytics]権限。
-* 同じサンドボックスで設定され、サマリーデータセットとルックアップデータセットを取り込む有料メディアソースコネクタ。 コネクタの例については、[Meta Ads source](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/meta-ads)を参照してください。
+* 同じサンドボックスで設定され、サマリーデータセットとルックアップデータセットを取り込む有料メディアソースコネクタ。 コネクタの例については、[Meta Ads source](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)を参照してください。
 * クエリ文字列を含むランディングページのURL全体をキャプチャするweb サイトイベント、またはネットワーク IDを含む同等のフィールド。
 
 
@@ -158,7 +158,7 @@ Web サイトで必要なイベントがCustomer Journey Analyticsで使用さ�
 1. データストリームに名前を付け、イベントスキーマをマッピングスキーマとして選択します。
 1. 保存し、**[!UICONTROL Add Service]** > **[!UICONTROL Adobe Experience Platform]**&#x200B;を選択します。
 1. サンドボックスとイベントデータセットを選択し、**[!UICONTROL 保存]**&#x200B;します。
-1. データストリーム IDを使用して、[Experience Platform Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/js-overview)を設定します。
+1. データストリーム IDを使用して、[Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)を設定します。
 
 以下をキャプチャします。
 
@@ -266,7 +266,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 | 2 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URL。 `s_kwcid`のクエリ文字列値を取得します。 |
 | 3 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URL。 `gclid`のクエリ文字列値を取得します。 |
 | 4 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URL。 `fbclid`のクエリ文字列値を取得します。 |
-| 5 | [&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)の場合 ケース | 以下の条件を適用します。 |
+| 5 | ](/help/data-views/derived-fields/derived-fields.md#case-when)の場合[ ケース | 以下の条件を適用します。 |
 
 最後の[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) ルールを設定します。
 
@@ -290,7 +290,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 | 2 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLからレベル固有のUTM パラメーターを読み取ります |
 | 3 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLから`s_kwcid`を読み取る |
 | 4 | [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace) | レベル固有の式をルール 3に適用します。出力`$1` |
-| 5 | [&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)の場合 ケース | ルール 3が設定されている場合はルール 4を返します。設定されていない場合はルール 1を返します。設定されていない場合はルール 2を返します |
+| 5 | ](/help/data-views/derived-fields/derived-fields.md#case-when)の場合[ ケース | ルール 3が設定されている場合はルール 4を返します。設定されていない場合はルール 1を返します。設定されていない場合はルール 2を返します |
 
 次の値を使用します。
 
@@ -306,7 +306,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 
 **[!UICONTROL 最終出力]**&#x200B;を使用して、結果が有料メディア広告サマリーのIDと一致することを確認します。 URLで別のレイアウトが使用されている場合は、`s_kwcid`解析ブランチを保持しないでください。 URLでUTM パラメーターのみを使用する場合は、未使用のルールを省略し、それに応じて後続のルール参照を更新します。
 
-各派生フィールドは、最大5つの[URL解析ルール &#x200B;](/help/data-views/derived-fields/derived-fields.md#url-parse)と1つの[正規表現ルール &#x200B;](/help/data-views/derived-fields/derived-fields.md#regex-replace)をサポートします。 派生フィールドごとに1つのIDを保持します。
+各派生フィールドは、最大5つの[URL解析ルール ](/help/data-views/derived-fields/derived-fields.md#url-parse)と1つの[正規表現ルール ](/help/data-views/derived-fields/derived-fields.md#regex-replace)をサポートします。 派生フィールドごとに1つのIDを保持します。
 
 ### 有料着陸メトリックの作成
 
@@ -322,7 +322,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 
 ### オプションのweb名フィールドの追加
 
-名前でレポートするには、展開されたweb ID ルールの後に[参照ルール &#x200B;](/help/data-views/derived-fields/derived-fields.md#lookup)を含む次の派生フィールドを作成します。
+名前でレポートするには、展開されたweb ID ルールの後に[参照ルール ](/help/data-views/derived-fields/derived-fields.md#lookup)を含む次の派生フィールドを作成します。
 
 | 派生フィールド | 入力 | ルックアップデータセット | 一致するフィールド | リターンフィールド |
 |---|---|---|---|---|
@@ -357,13 +357,13 @@ Web IDとネットワーク派生フィールドをディメンションとし�
 
 1. **[!UICONTROL オーダー]**&#x200B;を複製し、コピーに`Orders (Web)`という名前を付けます。 **[!UICONTROL 注文]**&#x200B;が存在しない場合は、`commerce.purchases.value`を直接追加します。
 1. **[!UICONTROL 収益]**&#x200B;を複製し、コピーに`Revenue (Web)`という名前を付けます。 **[!UICONTROL 収益]**&#x200B;が存在しない場合は、`commerce.order.priceTotal`を直接追加してください。
-1. **[!UICONTROL 注文（Web）]**&#x200B;を小数点以下桁ゼロの10進数で、収益（Web） **を通貨として書式設定します。**
+1. **[!UICONTROL 注文（Web）]**&#x200B;を小数点以下桁ゼロの10進数で、収益（Web） ]**を通貨として書式設定します。**[!UICONTROL 
 1. 両方の指標について、**[!UICONTROL アトリビューション]**&#x200B;を開き、**[!UICONTROL デフォルトのアトリビューションを上書き]**&#x200B;を有効にします。
 1. **[!UICONTROL ラストタッチ]** モデルと&#x200B;**[!UICONTROL セッション]** コンテナを選択します。
 
 既存のレポートを保持するために、元の&#x200B;**[!UICONTROL 注文]**&#x200B;および&#x200B;**[!UICONTROL 収益]**&#x200B;指標を変更しないでください。 表示されているデフォルトが一致するように見える場合でも、この設定では上書きを明示的に有効にする必要があります。
 
-再訪問時のコンバージョンクレジットについては、**[!UICONTROL 人物]** コンテナと適切なルックバックウィンドウを代わりに考慮してください。 [概要データの使用例](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/summary-data)を参照してください。
+再訪問時のコンバージョンクレジットについては、**[!UICONTROL 人物]** コンテナと適切なルックバックウィンドウを代わりに考慮してください。 [概要データの使用例](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data)を参照してください。
 
 web ID ディメンションに永続性を追加するのではなく、指標アトリビューションを使用します。 ランディングとして解釈されるカウントの膨張を避けるために、後のイベントにIDを保持しないでください。これは、キャンペーン行の下に表示されるイベントが変更されるためです。
 
@@ -420,7 +420,7 @@ Web結合の有料メディア広告サマリーから個別のディメンシ�
 
 データビューを保存します。
 
-## 計算指標の作成
+### 計算指標の作成
 
 Workspaceで、**[!UICONTROL コンポーネント]** > **[!UICONTROL 計算指標]**&#x200B;に移動し、設定されたデータビューを使用して次の指標を作成します。
 
@@ -443,9 +443,9 @@ Workspaceで、**[!UICONTROL コンポーネント]** > **[!UICONTROL 計算指�
 1. web広告グループと広告ディメンションごとにキャンペーン行を分割します。 設定された各レベルに概要とweb指標の両方が入力されていることを確認します。
 1. **[!UICONTROL PM ネットワーク （Web）]**&#x200B;を使用して2番目のテーブルを追加し、ネットワークレベルの合計と値なし行を確認します。
 
-   ![有料メディアおよびweb データワークスペースプロジェクト &#x200B;](./assets/paid-media-and-web-data-workspace.png)
+   ![有料メディアおよびweb データワークスペースプロジェクト ](./assets/paid-media-and-web-data-workspace.png)
 
-   ![&#x200B; データのない有料メディアおよびweb データワークスペースプロジェクト &#x200B;](./assets/paid-media-and-web-data-workspace-no-value.png)
+   ![ データのない有料メディアおよびweb データワークスペースプロジェクト ](./assets/paid-media-and-web-data-workspace-no-value.png)
 
 レポートを共有する前に、次の点を確認してください。
 
