@@ -22,15 +22,15 @@ ht-degree: 8%
 >abstract="タイムスタンプとシグナルを含め、個々の会話のコンテキストとフローを理解します。 表示するシグナルを設定します。"
 
 
-![ チャット ](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]**&#x200B;のビジュアライゼーションには、顧客とエージェント間の完全なターンバイターンの交換が表示されます。
+![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]**&#x200B;のビジュアライゼーションには、顧客とエージェント間の完全なターンバイターンの交換が表示されます。
 
 このビジュアライゼーションは、タイムスタンプやシグナルなど、個々の会話のコンテキストとフローを理解するのに役立ちます。 表示するシグナルを設定できます。
 
 ## 作成と設定
 
-![ チャット ](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを作成して設定するには：
+![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを作成して設定するには：
 
-1. ![ チャット ](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
+1. ![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
 1. **[!UICONTROL 会話レビュー]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
