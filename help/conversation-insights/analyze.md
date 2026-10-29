@@ -42,17 +42,17 @@ ht-degree: 0%
 
 +++ プロジェクト例
 
-![会話インサイトの基本的なサンプルプロジェクト ](assets/conversation-insights-analyze-sample-project-basic.png){zoomable="yes"}
+![会話インサイトの基本的なサンプルプロジェクト &#x200B;](assets/conversation-insights-analyze-sample-project-basic.png){zoomable="yes"}
 
 +++
 
 ## 詳細分析
 
-会話の詳細な分析を実行するには、[ トレンド トピック ](/help/analysis-workspace/visualizations/conversation-insights/trending-topics.md)、[会話の概要](/help/analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)、[会話のレビュー](/help/analysis-workspace/visualizations/conversation-insights/conversation-review.md)のビジュアライゼーションを使用します。 これらのビジュアライゼーションは、会話データに対するさまざまな視点を提供します。
+会話の詳細な分析を実行するには、[&#x200B; トレンド トピック &#x200B;](/help/analysis-workspace/visualizations/conversation-insights/trending-topics.md)、[会話の概要](/help/analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)、[会話のレビュー](/help/analysis-workspace/visualizations/conversation-insights/conversation-review.md)のビジュアライゼーションを使用します。 これらのビジュアライゼーションは、会話データに対するさまざまな視点を提供します。
 
 +++ プロジェクト例
 
-![会話インサイトの詳細なサンプルプロジェクト ](assets/conversation-insights-analyze-sample-project-detailed.png){zoomable="yes"}
+![会話インサイトの詳細なサンプルプロジェクト &#x200B;](assets/conversation-insights-analyze-sample-project-detailed.png){zoomable="yes"}
 
 +++
 

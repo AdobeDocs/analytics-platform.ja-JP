@@ -51,7 +51,7 @@ ht-degree: 3%
 >Content Analyticsのエクスペリエンスレベルとアセットレベルの結合には、追加のURL パラメーターが必要で、このガイドの対象外です。
 
 
-参照については、[概要データ ](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/summary-data)および[概要データグループコンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)を参照してください。
+参照については、[概要データ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/summary-data)および[概要データグループコンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)を参照してください。
 
 ### 結合キーを選択
 
@@ -126,8 +126,8 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 
 | | 開始点 | 既存の設定 | 従うべき手順 |
 |---|---|---|---|
-| A | Content Analytics（web、モバイル、有料メディア） | [有料メディアデータセットとコンポーネント ](/help/content-analytics/config/paid-media.md)、およびContent Analytics イベントとルックアップデータセット。 | 必要に応じてweb サイトのイベントデータセットを追加し、web派生フィールドとレポートグループを設定します。 |
-| B | Content Analytics（有料メディアのみ） | [有料メディアデータセットとコンポーネント ](/help/content-analytics/config/paid-media.md)。共有コンテンツ参照データセットも使用できます。 | web サイトのイベントデータセットを追加し、web派生フィールドとレポートグループを設定します。 |
+| A | Content Analytics（web、モバイル、有料メディア） | [有料メディアデータセットとコンポーネント &#x200B;](/help/content-analytics/config/paid-media.md)、およびContent Analytics イベントとルックアップデータセット。 | 必要に応じてweb サイトのイベントデータセットを追加し、web派生フィールドとレポートグループを設定します。 |
+| B | Content Analytics（有料メディアのみ） | [有料メディアデータセットとコンポーネント &#x200B;](/help/content-analytics/config/paid-media.md)。共有コンテンツ参照データセットも使用できます。 | web サイトのイベントデータセットを追加し、web派生フィールドとレポートグループを設定します。 |
 | C | Content Analyticsのプロビジョニング機能のない有料メディア | Experience Platformには有料メディアデータセットがありますが、コネクションとデータビューには有料メディア設定が含まれていません。 | web サイトと有料メディアデータセットを追加してから、有料メディアとweb コンポーネントを作成します。 |
 | D | 有料メディアを使用しないContent Analytics | Content Analyticsのコンポーネントのみ。 | Content Analytics設定で有料メディアチャネルを有効にしてから、既存の設定パスに従います。 |
 
@@ -270,7 +270,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 | 2 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URL。 `s_kwcid`のクエリ文字列値を取得します。 |
 | 3 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URL。 `gclid`のクエリ文字列値を取得します。 |
 | 4 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URL。 `fbclid`のクエリ文字列値を取得します。 |
-| 5 | ](/help/data-views/derived-fields/derived-fields.md#case-when)の場合[ ケース | 以下の条件を適用します。 |
+| 5 | [&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)の場合 ケース | 以下の条件を適用します。 |
 
 最後の[Case When](/help/data-views/derived-fields/derived-fields.md#case-when) ルールを設定します。
 
@@ -294,7 +294,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 | 2 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLからレベル固有のUTM パラメーターを読み取ります。 |
 | 3 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLから`s_kwcid`を読み取ります。 |
 | 4 | [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace) | レベル固有の式をルール 3に適用します。出力`$1`。 |
-| 5 | ](/help/data-views/derived-fields/derived-fields.md#case-when)の場合[ ケース | ルール 3が設定されている場合はルール 4を返します。設定されていない場合はルール 1を返します。設定されていない場合はルール 2を返します。 |
+| 5 | [&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)の場合 ケース | ルール 3が設定されている場合はルール 4を返します。設定されていない場合はルール 1を返します。設定されていない場合はルール 2を返します。 |
 
 次の値を使用します。
 
@@ -310,7 +310,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 
 **[!UICONTROL 最終出力]**&#x200B;を使用して、結果が有料メディア広告サマリーのIDと一致することを確認します。 URLで別のレイアウトが使用されている場合は、`s_kwcid`解析ブランチを保持しないでください。 URLでUTM パラメーターのみを使用する場合は、未使用のルールを省略し、それに応じて後続のルール参照を更新します。
 
-各派生フィールドは、最大5つの[URL解析ルール ](/help/data-views/derived-fields/derived-fields.md#url-parse)と1つの[正規表現ルール ](/help/data-views/derived-fields/derived-fields.md#regex-replace)をサポートします。 派生フィールドごとに1つのIDを保持します。
+各派生フィールドは、最大5つの[URL解析ルール &#x200B;](/help/data-views/derived-fields/derived-fields.md#url-parse)と1つの[正規表現ルール &#x200B;](/help/data-views/derived-fields/derived-fields.md#regex-replace)をサポートします。 派生フィールドごとに1つのIDを保持します。
 
 ### 有料着陸メトリックの作成
 
@@ -326,7 +326,7 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 
 ### オプションのweb名フィールドの追加
 
-名前でレポートするには、展開されたweb ID ルールの後に[参照ルール ](/help/data-views/derived-fields/derived-fields.md#lookup)を含む次の派生フィールドを作成します。
+名前でレポートするには、展開されたweb ID ルールの後に[参照ルール &#x200B;](/help/data-views/derived-fields/derived-fields.md#lookup)を含む次の派生フィールドを作成します。
 
 | 派生フィールド | 入力 | ルックアップデータセット | 一致するフィールド | リターンフィールド |
 |---|---|---|---|---|
@@ -361,7 +361,7 @@ Web IDとネットワーク派生フィールドをディメンションとし�
 
 1. **[!UICONTROL オーダー]**&#x200B;を複製し、コピーに`Orders (Web)`という名前を付けます。 **[!UICONTROL 注文]**&#x200B;が存在しない場合は、`commerce.purchases.value`を直接追加します。
 1. **[!UICONTROL 収益]**&#x200B;を複製し、コピーに`Revenue (Web)`という名前を付けます。 **[!UICONTROL 収益]**&#x200B;が存在しない場合は、`commerce.order.priceTotal`を直接追加してください。
-1. **[!UICONTROL 注文（Web）]**&#x200B;を小数点以下桁ゼロの10進数で、収益（Web） ]**を通貨として書式設定します。**[!UICONTROL 
+1. **[!UICONTROL 注文（Web）]**&#x200B;を小数点以下桁ゼロの10進数で、収益（Web） **を通貨として書式設定します。**
 1. 両方の指標について、**[!UICONTROL アトリビューション]**&#x200B;を開き、**[!UICONTROL デフォルトのアトリビューションを上書き]**&#x200B;を有効にします。
 1. **[!UICONTROL ラストタッチ]** モデルと&#x200B;**[!UICONTROL セッション]** コンテナを選択します。
 
@@ -447,9 +447,9 @@ Workspaceで、**[!UICONTROL コンポーネント]** > **[!UICONTROL 計算指�
 1. web広告グループと広告ディメンションごとにキャンペーン行を分割します。 設定された各レベルに概要とweb指標の両方が入力されていることを確認します。
 1. **[!UICONTROL PM ネットワーク （Web）]**&#x200B;を使用して2番目のテーブルを追加し、ネットワークレベルの合計と値なし行を確認します。
 
-   ![有料メディアおよびweb データワークスペースプロジェクト ](./assets/paid-media-and-web-data-workspace.png)
+   ![有料メディアおよびweb データワークスペースプロジェクト &#x200B;](./assets/paid-media-and-web-data-workspace.png)
 
-   ![ データのない有料メディアおよびweb データワークスペースプロジェクト ](./assets/paid-media-and-web-data-workspace-no-value.png)
+   ![&#x200B; データのない有料メディアおよびweb データワークスペースプロジェクト &#x200B;](./assets/paid-media-and-web-data-workspace-no-value.png)
 
 レポートを共有する前に、次の点を確認してください。
 

@@ -47,12 +47,12 @@ ht-degree: 10%
 1. **[!UICONTROL 会話の概要]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
    1. **[!UICONTROL 指標]**&#x200B;を選択します。 例：**[!UICONTROL Conversations]**。
-   1. 指標でデフォルト以外の[ アトリビューション ](/help/analysis-workspace/attribution/models.md) モデルを使用する場合は、オプションで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択し、**[!UICONTROL モデル]**、**[!UICONTROL コンテナ]**&#x200B;および&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;を選択します。
+   1. 指標でデフォルト以外の[&#x200B; アトリビューション &#x200B;](/help/analysis-workspace/attribution/models.md) モデルを使用する場合は、オプションで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択し、**[!UICONTROL モデル]**、**[!UICONTROL コンテナ]**&#x200B;および&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;を選択します。
    1. オプションで、セグメントをビジュアライゼーションに適用できます。 「**[!UICONTROL セグメント]**」ドロップダウンメニューからセグメントを選択します。
 
 1. ビジュアライゼーションを作成するには、**[!UICONTROL ビルド]**&#x200B;を選択します。 設定値をデフォルトにリセットするには、**[!UICONTROL リセット]**&#x200B;を選択します。 設定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
 
-**[!UICONTROL 会話の概要]** ビジュアライゼーションを再構成するには、**[!UICONTROL 指標：_指標_]**または&#x200B;**[!UICONTROL 指標：_指標_]** | **[!UICONTROL セグメント：_セグメント_]**の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
+**[!UICONTROL 会話の概要]** ビジュアライゼーションを再構成するには、**[!UICONTROL 指標：_指標_]**&#x200B;または&#x200B;**[!UICONTROL 指標：_指標_]** | **[!UICONTROL セグメント：_セグメント_]**&#x200B;の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
 
 ## 使用
 
@@ -62,20 +62,20 @@ ht-degree: 10%
 
 >[!TAB  サブトピック ]
 
-![ サブトピック ](assets/conversation-summaries-subtopics.png)
+![&#x200B; サブトピック &#x200B;](assets/conversation-summaries-subtopics.png)
 
 >[!TAB 口語的なコメント ]
 
-![口語的なコメント ](assets/conversation-summaries-verbatimcomments.png)
+![口語的なコメント &#x200B;](assets/conversation-summaries-verbatimcomments.png)
 
 >[!ENDTABS]
 
-* [ サブトピック ](#settings)が含まれている場合は、**[!UICONTROL サブトピック]**&#x200B;を選択してサブトピックを表示するか、**[!UICONTROL verbatim コメント]**&#x200B;を選択してverbatim コメントを表示します。
+* [&#x200B; サブトピック &#x200B;](#settings)が含まれている場合は、**[!UICONTROL サブトピック]**&#x200B;を選択してサブトピックを表示するか、**[!UICONTROL verbatim コメント]**&#x200B;を選択してverbatim コメントを表示します。
 * **[!UICONTROL 音声コメント]**&#x200B;を選択した場合、![FileSearch](/help/assets/icons/FileSearch.svg)を選択して、音声コメントが属する特定の会話に対する新しい[**[!UICONTROL 会話レビュー]**](./conversation-review.md) ビジュアライゼーションを開きます。
 
 ## 設定
 
-次の特定の[ ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
+次の特定の[&#x200B; ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
 
 | 設定 | 説明 |
 |---|---|
