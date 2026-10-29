@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 27b268c88c84b530d9fbbc454eae23cc43d4d041
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 88%
+source-wordcount: '2035'
+ht-degree: 78%
 ---
 # ビジュアライゼーションの概要
 
@@ -70,7 +70,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; フリーフォームパネルにビジュアライゼーションを追加](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/add-components-to-the-freeform-panel){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ フリーフォームパネルにビジュアライゼーションを追加](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/add-components-to-the-freeform-panel){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -92,14 +92,14 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
    * フリーフォームテーブルのコンテキストメニューから、「**[!UICONTROL 視覚化]**」を選択します。 次に、サブメニューからビジュアライゼーションを選択します。 テーブル内の現在の選択に基づいて、Workspace は提供するビジュアライゼーションを決定し、データを解釈してリクエストされたビジュアライゼーションを作成します。
 
-簡単なビジュアライゼーション（例：[棒](bar.md)の[行](line.md)）を追加すると、ビジュアライゼーションでは、最も近いフリーフォームテーブルがデータソースとして使用されます。 ビジュアライゼーションの[&#x200B; データソース &#x200B;](#data-source)はいつでも変更できます。
+簡単なビジュアライゼーション（例：[棒](bar.md)の[行](line.md)）を追加すると、ビジュアライゼーションでは、最も近いフリーフォームテーブルがデータソースとして使用されます。 ビジュアライゼーションの[ データソース ](#data-source)はいつでも変更できます。
 
 
 ## ビジュアライゼーションの管理
 
 ビジュアライゼーションにカーソルを合わせるか、ビジュアライゼーションを選択すると、ビジュアライゼーションを管理できます。
 
-![&#x200B; ビジュアライゼーションの管理](assets/manage-visualization.png)
+![ ビジュアライゼーションの管理](assets/manage-visualization.png)
 
 * ビジュアライゼーションを折りたたむには、![ChevronDown](/help/assets/icons/ChevronDown.svg)を選択します。
 * 折りたたまれたビジュアライゼーションを表示するには、![ChevronLeft](/help/assets/icons/ChevronLeft.svg)を選択します。
@@ -124,6 +124,30 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 1. 新しいラベルテキストを入力します。
 1. **[!UICONTROL Enter]** キーを押して保存します。
+
+### 簡潔なラベル
+
+ビジュアライゼーションの各系列が同じ指標、セグメント、ディメンション項目、日付範囲を共有する場合、各凡例ラベルがそれを繰り返します。 ラベルは長くなる可能性があり、ラベルを区別するテキストは、各ラベルにカーソルを合わせたときにのみ表示されることがよくあります。
+
+**[!UICONTROL 簡潔なラベル]**&#x200B;設定では、あるラベルと別のラベルを区別する情報にインテリジェントに焦点を当てます。 すべてのラベルに名前が表示される場合にのみ、指標、セグメント、ディメンション項目、日付範囲名が削除されます。 例えば、ソーステーブルのすべての列にセグメントが適用されている場合、そのセグメントは凡例ラベルから削除されます。 1つを除くすべての列にセグメントが適用されている場合でも、凡例ラベルにはセグメントが含まれます。 ラベル全体を表示するには、凡例のラベルにカーソルを合わせます。
+
+簡潔ラベルはデフォルトでオフになっています。 ビジュアライゼーションの簡潔なラベルをオンにするには：
+
+1. ビジュアライゼーションヘッダーで「![設定](/help/assets/icons/Setting.svg) **[!UICONTROL 設定]**」を選択します。
+1. 「**[!UICONTROL 設定]**」タブを選択します。
+1. **[!UICONTROL 凡例の表示]**&#x200B;が選択されていることを確認します。 **[!UICONTROL 簡潔なラベル]**&#x200B;は、凡例が表示されている場合にのみ使用できます。
+1. **[!UICONTROL 簡潔なラベル]**&#x200B;を選択します。
+
+簡潔なラベルは、次のビジュアライゼーションで使用できます。
+
+* [積み重ね領域](area.md)
+* [棒グラフと棒グラフ（積み重ね）](bar.md)
+* [コンボ](combo-charts.md)
+* [ドーナツ](donut.md)
+* [ヒストグラム](histogram.md)
+* [横棒グラフと横棒グラフ](horizontal-bar.md)
+* [行](line.md)
+* [ベン図](venn.md)
 
 
 ## 設定
@@ -152,6 +176,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | **[!UICONTROL 割合 (％)]** | 値を割合で表示します。 |
 | **[!UICONTROL 100％積み重ね]** | グラフを 100％積み上げグラフのビジュアライゼーションに変換します。  面グラフ、棒グラフ、積み重ね横棒グラフのビジュアライゼーションにのみ適用できます。 |
 | **[!UICONTROL 凡例を表示]** | 凡例テキストを表示します。 |
+| **[!UICONTROL 簡潔なラベル]** | 凡例ラベルを短くして、あるラベルと別のラベルを区別する情報に注目します。 すべてのラベルに表示される指標、セグメント、ディメンション項目、日付範囲の名前が削除されます。 この設定は、**[!UICONTROL 凡例表示]**&#x200B;が選択されており、デフォルトではオフになっている場合にのみ使用できます。 詳しくは、[簡潔ラベル ](#concise-labels)を参照してください。 |
 | **[!UICONTROL 項目数の上限を設定]** | ビジュアライゼーションで表示する項目の数を制限します。 選択した場合、最大項目数を定義します。 |
 | **[!UICONTROL 注釈を表示]** | このビジュアライゼーション用に作成された注釈を表示します。 |
 | **[!UICONTROL タイトルを非表示]** | ビジュアライゼーションのタイトルを非表示にします。 |
@@ -179,11 +204,11 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | オプション | 説明 |
 | --- | --- |
 | **[!UICONTROL コピーしたビジュアライゼーションを挿入]** | コピーしたビジュアライゼーションをプロジェクト内の別の場所または完全に別のプロジェクトにペースト（「挿入」）します。 |
-| **[!UICONTROL クリップボードにデータをコピー]** | ビジュアライゼーションからクリップボードに[&#x200B; データ &#x200B;](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)をコピーします。 |
+| **[!UICONTROL クリップボードにデータをコピー]** | ビジュアライゼーションからクリップボードに[ データ ](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)をコピーします。 |
 | **[!UICONTROL クリップボードに選択範囲をコピー]** | [選択範囲](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)をビジュアライゼーションからクリップボードにコピーします。 |
-| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | [&#x200B; ビジュアライゼーションのディメンション項目](/help/analysis-workspace/export/download-send.md#download-items-as-csv) （最大50,000個）をローカルデバイスにダウンロードします。 選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
+| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | [ ビジュアライゼーションのディメンション項目](/help/analysis-workspace/export/download-send.md#download-items-as-csv) （最大50,000個）をローカルデバイスにダウンロードします。 選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
 | **[!UICONTROL ビジュアライゼーションをコピー]** | ビジュアライゼーションをコピーして、プロジェクト内の別の場所または完全に別のプロジェクトにビジュアライゼーションを挿入できるようにします。 |
-| **[!UICONTROL データ CSV をダウンロード]** | [&#x200B; ビジュアライゼーションの表示データ &#x200B;](/help/analysis-workspace/export/download-send.md#download-as-csv)をローカルデバイスにダウンロードします。 |
+| **[!UICONTROL データ CSV をダウンロード]** | [ ビジュアライゼーションの表示データ ](/help/analysis-workspace/export/download-send.md#download-as-csv)をローカルデバイスにダウンロードします。 |
 | **[!UICONTROL 完全なテーブルの書き出し]** | 指定したクラウドの場所に完全なテーブルを書き出します。 詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し](../export/export-cloud.md)を参照してください。 |
 | **[!UICONTROL ビジュアライゼーションを複製]** | ビジュアライゼーションの完全な複製を作成します。 |
 | **[!UICONTROL 説明を編集]** | ビジュアライゼーションの説明テキストを追加（または編集）します。 [テキスト](text.md)を参照してください。 |
