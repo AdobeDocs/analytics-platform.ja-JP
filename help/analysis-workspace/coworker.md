@@ -44,13 +44,13 @@ Adobe Analysis Workspaceの右側のチャットパネルには、Adobe Workfron
 <!--
 FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
 
 -->
 
 ### WorkspaceのCoworkerとCoworker アプリケーションを選択します
 
-Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション &#x200B;](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
+Coworkerの製品内エクスペリエンスには、[CX Enterprise Coworker アプリケーション &#x200B;](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)と同じ機能が多数あり、使用できるスキルも含まれます。 ただし、いつ使用するかを決定する重要な違いがあります。
 
 | | 従業員向けの製品体験 | 共同作業者アプリケーション |
 | --- | --- | --- |
