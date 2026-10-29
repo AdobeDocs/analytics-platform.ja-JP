@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
+source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 40%
+source-wordcount: '1596'
+ht-degree: 39%
 ---
 # データフィードでのコンポーネントの可用性
 
@@ -28,7 +28,7 @@ ht-degree: 40%
 
 一部のCustomer Journey Analyticsコンポーネントは、データフィードで使用できません。 ディメンションの中には、すべてのデータフィードに含まれるものもあれば、含まれないコンポーネントもあります。また、一部の指標は代替指標に置き換える必要があります。
 
-次の情報を使用して、[&#x200B; データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
+次の情報を使用して、[ データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
 
 ## 必須ディメンション {#required-dimensions}
 
@@ -100,7 +100,7 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
->title=""
+>title="一緒に使用できないディメンション"
 >abstract="ユーザーエージェントデータとデバイス参照データは、同じデータフィード設定に存在できません。"
 
 <!-- markdownlint-enable MD034 -->
@@ -109,19 +109,37 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 * **ユーザーエージェント**&#x200B;および&#x200B;**モバイル ID** ディメンション。<!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
 
-* ブラウザー、モバイルデバイス、オペレーティングシステムのディメンションなど、デバイスのルックアップディメンション。 完全なリストについては、[&#x200B; デバイス検索ディメンション &#x200B;](#device-lookup-dimensions)を参照してください。
+* ブラウザー、モバイルデバイス、オペレーティングシステムのディメンションなど、デバイスのルックアップディメンション。 完全なリストについては、[ デバイス検索ディメンション ](#device-lookup-dimensions)を参照してください。
+
+この制限は、これらのディメンションを参照する派生フィールドにも適用されます。
 
 >[!NOTE]
 >
->Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[&#x200B; データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[&#x200B; デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+>Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[ データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[ デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+
+<!--
+SME CHECK (derived fields; from Slack thread with Ron Fulkerson, Matt Freestone, Courtney Ferguson). Assumptions to confirm:
+1. Derived fields are restricted only when combined with dimensions from the other group. They aren't blocked from data feeds entirely.
+2. The restriction applies in both directions. Derived fields that reference User agent or Mobile ID conflict with device lookup dimensions, not only the reverse.
+3. The restriction applies to nested derived fields (a derived field that references another derived field that references a restricted dimension).
+4. "Device Atlas sourced" dimensions are the same set as the device lookup dimensions listed on this page.
+5. The restriction itself is permanent.
+6. Derived fields get the same conflict dialog experience as dimensions (per Matt Freestone). This requires the UI to identify which derived fields reference these dimensions; Courtney Ferguson said the UI doesn't have that information today. Confirm this will be built before release.
+7. The priority rules in "Resolve dimension conflicts" apply to derived fields the same way they apply to the dimensions they reference. For example, a derived field that references User agent takes priority over device lookup dimensions in the same selection.
+8. Editing a derived field that is already in a data feed so that it references a conflicting dimension fails when the user adds the conflicting dimension to the derived field. Does this check every data feed that uses the derived field? What does the error say?
+Open question: Can a derived field that references dimensions from BOTH groups be added to any data feed?
+-->
 
 ### ディメンションの競合の解決
 
-一緒に使用できないディメンションを追加すると、追加するディメンションと追加しないディメンションまたは削除するディメンションを一覧表示するダイアログが表示されます。 何が起こるかは、紛争がどこにあるかによって異なります。
+一緒に使用できないディメンション（これらのディメンションを参照する派生フィールドを含む）を追加すると、追加するディメンションと追加しないディメンションまたは削除するディメンションを一覧表示するダイアログが表示されます。 次の表に、競合の場所に応じて何が起こるかを示します。
 
-* **追加するディメンションは、既にデータフィード内にあるディメンションと競合しています**：追加するディメンションが優先されます。 このダイアログでは、選択内容を追加し、競合するディメンションをデータフィードから削除するように求められます。
+| 対立 | テイク優先度 | 結果 |
+|---|---|---|
+| 追加するディメンションが、データフィード内の既存のディメンションと競合しています | 追加するディメンション | 新しいディメンションは、すでにデータフィードにある競合するディメンションを置き換えます。 |
+| 追加するディメンションが互いに競合しています | **ユーザーエージェント**&#x200B;および&#x200B;**モバイル ID** ディメンション（およびそれらを参照する派生フィールド） | 選択範囲（およびそれらを参照する派生フィールド）内のデバイス参照ディメンションは追加されません。 選択範囲の残りがデータフィードに追加されます。 |
 
-* **追加するディメンションが互いに競合しています**: **ユーザーエージェント**&#x200B;および&#x200B;**モバイル ID** ディメンションが優先されます。 ダイアログに追加を求めるプロンプトが表示されます。選択範囲のデバイス参照ディメンションは追加されません。
+{style="table-layout:auto"}
 
 データフィードを変更しない場合は、**[!UICONTROL キャンセル]**&#x200B;を選択します。
 
@@ -129,7 +147,7 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 ### デバイス参照ディメンション {#device-lookup-dimensions}
 
-次のディメンションは、**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションと同じデータフィードに含めることはできません。
+次のディメンション（およびそれらを参照する派生フィールド）は、**ユーザーエージェント**&#x200B;または&#x200B;**モバイル ID** ディメンションと同じデータフィードに含めることはできません。
 
 >[!NOTE]
 >
