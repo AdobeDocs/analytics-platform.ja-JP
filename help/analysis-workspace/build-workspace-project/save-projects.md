@@ -100,7 +100,7 @@ Analysis Workspace のプロジェクトは、2 分ごとに自動で保存さ�
 
 <!-- 
 Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** |
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=ja) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
 ## 自動保存
