@@ -81,9 +81,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 5aba7dcf73ddd7aee48a945911a8ff4b0f18e2e3
 workflow-type: tm+mt
-source-wordcount: '3102'
+source-wordcount: '3089'
 ht-degree: 98%
 ---
 # Customer Journey Analytics の機能のサポート
@@ -94,7 +94,7 @@ ht-degree: 98%
 
 次の表に、Customer Journey Analyticsで使用できるが、Adobe Analytics ではサポートされていない機能を示します。
 
-<!-- FOLLOW-UP (Thursday): When the in-app Coworker experience launches, point the Coworker row link to /help/analysis-workspace/coworker.md. FOLLOW-UP (later): When Coworker becomes available in Adobe Analytics, remove the "coming soon" sentence and move the Coworker row to the Fully supported table. -->
+<!-- FOLLOW-UP: When Coworker becomes available in Adobe Analytics, remove the "coming soon" sentence and move the Coworker row to the Fully supported table. -->
 
 | 機能 | さらに詳細を表示 |
 | --- | --- |
@@ -104,7 +104,7 @@ ht-degree: 98%
 | **BI 拡張機能** | [BI 拡張機能](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)では、Customer Journey Analytics を PowerBI や Tableau などの一般的な BI ビジュアライゼーションツールに直接接続できます。 この拡張機能を使用すると、Analysis Workspace や他の Customer Journey Analytics レポートインターフェイスで表示される内容と BI レポートを正確に一致させることができます。 この拡張機能は、生データからレポート／指標を再作成する必要なく、Customer Journey Analytics の BI レポートを取得する簡単な方法です。 |
 | **Workspace プロジェクトのコメント** | コメントを使用すると、[Analysis Workspace プロジェクト](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=jp) のコンテキスト内でインサイトを共有し、質問できます。 これにより、データに関する議論を効率化して、議論の対象となっているデータのコンテキスト内に会話を維持できます。 |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/content-analytics/content-analytics) を使用すると、マーケターは、ビジネスによって定義された主要業績評価指標に、コンテンツがどのように影響を与えるかを理解できます。 Content Analytics では、行動データに加えて、コンテンツがどのように消費されるか、またコンテンツがどのような影響を与えるかに関するデータを収集します。 |
-| **Coworker** | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)は、データに関する自然言語の質問に答えるAI チームメイトです。 データビューと実際のデータからのコンポーネントを利用して、ビジュアライゼーションの構築、インサイトの獲得、指標の変化の説明を行います。 Coworkerは、まもなくAdobe Analyticsに登場します。 |
+| **Coworker** | [Adobe CX Enterprise Coworker](/help/analysis-workspace/coworker.md)は、データに関する自然言語の質問に答えるAI チームメイトです。 データビューと実際のデータからのコンポーネントを利用して、ビジュアライゼーションの構築、インサイトの獲得、指標の変化の説明を行います。 Coworkerは、まもなくAdobe Analyticsに登場します。 |
 | **クロスデバイス分析** | Customer Journey Analytics は、未認証セッションと認証済みセッションからのデバイス固有のデータセットのシームレスな組み合わせをサポートします。 Customer Journey Analytics は、履歴データを既知のデバイスにバックフィルする機能を提供します。 Adobe Analytics では、この機能は単一のレポートスイートとデバイスグラフの使用に制限されます。 |
 | **ディメンションの機能強化** | Customer Journey Analytics では、次のディメンションを使用する際の柔軟性が向上します。 <ul><li>**カスタムの数値ベースのディメンション**：[データビュー内に独自の数値ベースのディメンションを作成します](/help/data-views/create-dataview.md#components)。</li><li>**文字列ベースのディメンションの並べ替え**：[フリーフォームテーブルで文字列ベースのディメンションをアルファベット順に並べ替えます。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>Adobe Analytics では、少数のビルトインの数値ディメンションのみが使用でき、文字列ベースのディメンションによる並べ替えはできませんでした。</p> |
 | **派生フィールド** | [派生フィールド](/help/data-views/derived-fields/derived-fields.md)を使用すると、レポート時にデータを変換できます。 データは、その場で結合、修正、作成し、これらの変換は、すべてのレポートに対して遡って適用できます。 |
