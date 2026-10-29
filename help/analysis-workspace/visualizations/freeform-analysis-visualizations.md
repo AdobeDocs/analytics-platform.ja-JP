@@ -70,7 +70,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ フリーフォームパネルにビジュアライゼーションを追加](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/add-components-to-the-freeform-panel){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; フリーフォームパネルにビジュアライゼーションを追加](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/add-components-to-the-freeform-panel){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -92,14 +92,14 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 
    * フリーフォームテーブルのコンテキストメニューから、「**[!UICONTROL 視覚化]**」を選択します。 次に、サブメニューからビジュアライゼーションを選択します。 テーブル内の現在の選択に基づいて、Workspace は提供するビジュアライゼーションを決定し、データを解釈してリクエストされたビジュアライゼーションを作成します。
 
-簡単なビジュアライゼーション（例：[棒](bar.md)の[行](line.md)）を追加すると、ビジュアライゼーションでは、最も近いフリーフォームテーブルがデータソースとして使用されます。 ビジュアライゼーションの[ データソース ](#data-source)はいつでも変更できます。
+簡単なビジュアライゼーション（例：[棒](bar.md)の[行](line.md)）を追加すると、ビジュアライゼーションでは、最も近いフリーフォームテーブルがデータソースとして使用されます。 ビジュアライゼーションの[&#x200B; データソース &#x200B;](#data-source)はいつでも変更できます。
 
 
 ## ビジュアライゼーションの管理
 
 ビジュアライゼーションにカーソルを合わせるか、ビジュアライゼーションを選択すると、ビジュアライゼーションを管理できます。
 
-![ ビジュアライゼーションの管理](assets/manage-visualization.png)
+![&#x200B; ビジュアライゼーションの管理](assets/manage-visualization.png)
 
 * ビジュアライゼーションを折りたたむには、![ChevronDown](/help/assets/icons/ChevronDown.svg)を選択します。
 * 折りたたまれたビジュアライゼーションを表示するには、![ChevronLeft](/help/assets/icons/ChevronLeft.svg)を選択します。
@@ -176,7 +176,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | **[!UICONTROL 割合 (％)]** | 値を割合で表示します。 |
 | **[!UICONTROL 100％積み重ね]** | グラフを 100％積み上げグラフのビジュアライゼーションに変換します。  面グラフ、棒グラフ、積み重ね横棒グラフのビジュアライゼーションにのみ適用できます。 |
 | **[!UICONTROL 凡例を表示]** | 凡例テキストを表示します。 |
-| **[!UICONTROL 簡潔なラベル]** | 凡例ラベルを短くして、あるラベルと別のラベルを区別する情報に注目します。 すべてのラベルに表示される指標、セグメント、ディメンション項目、日付範囲の名前が削除されます。 この設定は、**[!UICONTROL 凡例表示]**&#x200B;が選択されており、デフォルトではオフになっている場合にのみ使用できます。 詳しくは、[簡潔ラベル ](#concise-labels)を参照してください。 |
+| **[!UICONTROL 簡潔なラベル]** | 凡例ラベルを短くして、あるラベルと別のラベルを区別する情報に注目します。 すべてのラベルに表示される指標、セグメント、ディメンション項目、日付範囲の名前が削除されます。 この設定は、**[!UICONTROL 凡例表示]**&#x200B;が選択されており、デフォルトではオフになっている場合にのみ使用できます。 詳しくは、[簡潔ラベル &#x200B;](#concise-labels)を参照してください。 |
 | **[!UICONTROL 項目数の上限を設定]** | ビジュアライゼーションで表示する項目の数を制限します。 選択した場合、最大項目数を定義します。 |
 | **[!UICONTROL 注釈を表示]** | このビジュアライゼーション用に作成された注釈を表示します。 |
 | **[!UICONTROL タイトルを非表示]** | ビジュアライゼーションのタイトルを非表示にします。 |
@@ -204,11 +204,11 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 | オプション | 説明 |
 | --- | --- |
 | **[!UICONTROL コピーしたビジュアライゼーションを挿入]** | コピーしたビジュアライゼーションをプロジェクト内の別の場所または完全に別のプロジェクトにペースト（「挿入」）します。 |
-| **[!UICONTROL クリップボードにデータをコピー]** | ビジュアライゼーションからクリップボードに[ データ ](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)をコピーします。 |
+| **[!UICONTROL クリップボードにデータをコピー]** | ビジュアライゼーションからクリップボードに[&#x200B; データ &#x200B;](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)をコピーします。 |
 | **[!UICONTROL クリップボードに選択範囲をコピー]** | [選択範囲](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)をビジュアライゼーションからクリップボードにコピーします。 |
-| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | [ ビジュアライゼーションのディメンション項目](/help/analysis-workspace/export/download-send.md#download-items-as-csv) （最大50,000個）をローカルデバイスにダウンロードします。 選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
+| **[!UICONTROL 項目を CSV（*ディメンション名*）としてダウンロード]** | [&#x200B; ビジュアライゼーションのディメンション項目](/help/analysis-workspace/export/download-send.md#download-items-as-csv) （最大50,000個）をローカルデバイスにダウンロードします。 選択したディメンションの最大ディメンション項目数は 50,000 個です。 |
 | **[!UICONTROL ビジュアライゼーションをコピー]** | ビジュアライゼーションをコピーして、プロジェクト内の別の場所または完全に別のプロジェクトにビジュアライゼーションを挿入できるようにします。 |
-| **[!UICONTROL データ CSV をダウンロード]** | [ ビジュアライゼーションの表示データ ](/help/analysis-workspace/export/download-send.md#download-as-csv)をローカルデバイスにダウンロードします。 |
+| **[!UICONTROL データ CSV をダウンロード]** | [&#x200B; ビジュアライゼーションの表示データ &#x200B;](/help/analysis-workspace/export/download-send.md#download-as-csv)をローカルデバイスにダウンロードします。 |
 | **[!UICONTROL 完全なテーブルの書き出し]** | 指定したクラウドの場所に完全なテーブルを書き出します。 詳しくは、[Customer Journey Analytics レポートのクラウドへの書き出し](../export/export-cloud.md)を参照してください。 |
 | **[!UICONTROL ビジュアライゼーションを複製]** | ビジュアライゼーションの完全な複製を作成します。 |
 | **[!UICONTROL 説明を編集]** | ビジュアライゼーションの説明テキストを追加（または編集）します。 [テキスト](text.md)を参照してください。 |
