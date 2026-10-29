@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 5%
 ---
 # 会話インサイトの実装
+
+{{release-limited-testing}}
 
 会話データをXDM エクスペリエンスイベントとして生成し、これらの会話エクスペリエンスイベントがデータセットとしてAdobe Experience Platformに格納されるようにするには、エージェントアプリケーションまたはサービスにConversation Insightsを使用するようにインストルメントします。
 

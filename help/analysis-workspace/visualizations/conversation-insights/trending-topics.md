@@ -4,7 +4,7 @@ title: トレンド分析トピック
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 8%
@@ -21,6 +21,8 @@ ht-degree: 8%
 >title="トレンド分析トピック"
 >abstract="選択したランキング指標にもとづいてトレンドトピックを分析します。 トピックを選択して、最大5つのレベルまでドリルダウンします。 特定のトピックを検索し、トピックを他の日付範囲と比較します。"
 
+{{release-limited-testing}}
+
 ![&#x200B; フィード &#x200B;](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、会話インサイトの一部として、トレンド トピックを探索および分析できます。
 
 特定のトピックを検索し、各レベルの各トピックの数と割合を他のデータ範囲と比較できます。
@@ -36,6 +38,7 @@ ht-degree: 8%
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
 >title="デフォルト以外のアトリビューションモデルを使用"
 >abstract="この指標では、デフォルト以外のアトリビューションモデルは使用できません。"
+
 
 **[!UICONTROL トレンドトピック]** ビジュアライゼーションを作成して設定するには：
 
@@ -57,7 +60,7 @@ ht-degree: 8%
 
 * トピックにカーソルを合わせると、詳細が表示されるポップアップが表示されます。➊
 
-* トピックのトレンドのサブトピックを下位レベルで表示するには、特定のレベルのトピックを選択します。 サブレベルで使用できるトピックがない場合は、![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL サブトピックが見つかりません（_topic > subtopic > ...]**）。
+* トピックのトレンドのサブトピックを下位レベルで表示するには、特定のレベルのトピックを選択します。 サブレベルで使用できるトピックがない場合は、![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL トピック > サブトピック _> ...]**&#x200B;のサブトピックが見つかりません。_
 
 * ![検索](/help/assets/icons/Search.svg) **[!UICONTROL _トピックの検索_]**&#x200B;を使用すると、トピックをすばやく検索できます。➋
 

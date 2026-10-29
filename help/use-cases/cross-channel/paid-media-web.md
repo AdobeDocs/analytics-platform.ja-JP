@@ -3,11 +3,10 @@ title: Customer Journey AnalyticsのWeb データを使用した有料メディ�
 description: Adobe Customer Journey Analyticsでweb サイトのイベントとペイドメディアの概要データを連携して、広告費、クリック数、注文数、売上、広告費用対効果を比較できます。
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
 role: Admin
-source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '3907'
+source-wordcount: '3912'
 ht-degree: 3%
 ---
 # 有料メディアデータをweb データに結合
@@ -45,7 +44,12 @@ ht-degree: 3%
 
 ## レポート結合について
 
-ランディングページのURLまたは既存のイベントフィールドにIDが表示されるレベルでのみ結合できます。 例えば、キャンペーンのみのタグ付けはキャンペーンレポートをサポートしていますが、広告レベルのレポートはサポートしていません。 エクスペリエンスレベルとアセットレベルの結合には、追加のURL パラメーターが必要で、このガイドの範囲外です。
+ランディングページのURLまたは既存のイベントフィールドにIDが表示されるレベルでのみ結合できます。 例えば、キャンペーンのみのタグ付けはキャンペーンレポートをサポートしていますが、広告レベルのレポートはサポートしていません。
+
+>[!NOTE]
+>
+>Content Analyticsのエクスペリエンスレベルとアセットレベルの結合には、追加のURL パラメーターが必要で、このガイドの対象外です。
+
 
 参照については、[概要データ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/summary-data)および[概要データグループコンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)を参照してください。
 
@@ -93,7 +97,7 @@ GUID構造は`{adNetwork}_{accountID}[_{campaignID}[_{adGroupID}[_{adID}]]]`で�
 |---|---|---|---|
 | web サイトのURLに表示されるMeta ID | <code>campaign_id={{campaign.id}}</code> | <code>adset_id={{adset.id}}</code> | <code>ad_id={{ad.id}}</code> |
 | UTM パラメーターのMeta ID | <code>utm_campaign={{campaign.id}}</code> | <code>utm_term={{adset.id}}</code> | <code>utm_content={{ad.id}}</code> |
-| UTM パラメーターのGoogle Ads ID | <code>utm_campaign={campaignid}</code> | <code>utm_term={adgroupid}</code> | <code>utm_content={creative}</code> |
+| UTM パラメーターのGoogle Ads ID | <code>utm_campaign={{campaignid}}</code> | <code>utm_term={{adgroupid}}</code> | <code>utm_content={{creative}}</code> |
 
 Meta UTM タグ付けの場合、`utm_source=fb`などのソース値でネットワークを識別できます。 Google Ads UTM タグ付けには、`utm_source=google`などのソース値を使用します。
 
@@ -122,10 +126,10 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 
 | | 開始点 | 既存の設定 | 従うべき手順 |
 |---|---|---|---|
-| A | Content Analytics（web、モバイル、有料メディア） | ペイドメディアデータセットとコンポーネント、Content Analyticsのイベントおよびルックアップデータセット | 必要に応じてweb サイトイベントデータセットを追加し、web派生フィールドとレポートグループを設定します |
-| B | Content Analytics（有料メディアのみ） | 有料メディアデータセットとコンポーネント。共有コンテンツ参照データセットも使用できます | web サイトのイベントデータセットを追加し、web派生フィールドとレポートグループを設定します |
-| C | Content Analyticsのプロビジョニング機能のない有料メディア | Experience Platformには有料メディアデータセットがありますが、コネクションとデータビューには有料メディア設定が含まれていません | web サイトと有料メディアデータセットを追加してから、有料メディアとweb コンポーネントを作成します |
-| D | 有料メディアを使用しないContent Analytics | Content Analytics コンポーネントのみ | Content Analytics設定で有料メディアチャネルを有効にしてから、既存の設定パスに従います |
+| A | Content Analytics（web、モバイル、有料メディア） | [有料メディアデータセットとコンポーネント &#x200B;](/help/content-analytics/config/paid-media.md)、およびContent Analytics イベントとルックアップデータセット。 | 必要に応じてweb サイトのイベントデータセットを追加し、web派生フィールドとレポートグループを設定します。 |
+| B | Content Analytics（有料メディアのみ） | [有料メディアデータセットとコンポーネント &#x200B;](/help/content-analytics/config/paid-media.md)。共有コンテンツ参照データセットも使用できます。 | web サイトのイベントデータセットを追加し、web派生フィールドとレポートグループを設定します。 |
+| C | Content Analyticsのプロビジョニング機能のない有料メディア | Experience Platformには有料メディアデータセットがありますが、コネクションとデータビューには有料メディア設定が含まれていません。 | web サイトと有料メディアデータセットを追加してから、有料メディアとweb コンポーネントを作成します。 |
+| D | 有料メディアを使用しないContent Analytics | Content Analyticsのコンポーネントのみ。 | Content Analytics設定で有料メディアチャネルを有効にしてから、既存の設定パスに従います。 |
 
 Content Analyticsで管理する接続を拡張する場合は、システムがプロビジョニングしたデータセットや読み取り専用コンポーネントを削除または変更しないでください。
 
@@ -143,10 +147,10 @@ Web サイトで必要なイベントがCustomer Journey Analyticsで使用さ�
 
    | フィールドグループ | 必要なデータ |
    |---|---|
-   | AEP Web SDK ExperienceEvent | ページ URL、ページビュー、リファラー、その他のweb コンテキスト |
-   | コマースの詳細 | 購入数、注文額、通貨、購入ID、商品詳細 |
-   | キャンペーンマーケティング詳細（オプション） | トラッキングコード（実装が個別にキャプチャする場合） |
-   | IdentityMapが存在しない場合 | ECIDなどの個人ID |
+   | AEP Web SDK ExperienceEvent | ページ URL、ページビュー、リファラー、その他のweb コンテキスト。 |
+   | コマースの詳細 | 購入数、注文額、通貨、購入ID、商品詳細。 |
+   | キャンペーンマーケティング詳細（オプション） | トラッキングコードは、実装が個別にキャプチャする場合に使用します。 |
+   | IdentityMapが存在しない場合 | ECIDなどの個人ID。 |
 
 1. スキーマを保存します。 このレポートのユースケースでは、プロファイルの有効化は必要ありません。
 1. **[!UICONTROL データ管理]** > **[!UICONTROL データセット]** > **[!UICONTROL データセットの作成]** > **[!UICONTROL スキーマからのデータセットの作成]**&#x200B;に移動します。
@@ -195,11 +199,11 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 
    | 設定 | 値 |
    |---|---|
-   | ユーザー ID | ECID名前空間または実装の人物ID フィールドを持つ`identityMap` |
+   | ユーザー ID | ECID名前空間または実装の人物ID フィールドを持つ`identityMap`。 |
    | タイムスタンプ | `timestamp` |
    | データソースタイプ | web データ |
    | すべての新しいデータを読み込み | 有効化 |
-   | 既存のすべてのデータをバックフィル | 必要な履歴に対して有効 |
+   | 既存のすべてのデータをバックフィル | 必要な履歴の期間に対して有効になります。 |
 
 1. データセットを追加し、接続を保存します。
 
@@ -286,11 +290,11 @@ Web イベントデータセットをCustomer Journey Analyticsに取り込む�
 
 | 規則 | 関数 | 設定 |
 |---|---|---|
-| 1 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLからレベル固有のMeta パラメーターを読み取ります |
-| 2 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLからレベル固有のUTM パラメーターを読み取ります |
-| 3 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLから`s_kwcid`を読み取る |
-| 4 | [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace) | レベル固有の式をルール 3に適用します。出力`$1` |
-| 5 | [&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)の場合 ケース | ルール 3が設定されている場合はルール 4を返します。設定されていない場合はルール 1を返します。設定されていない場合はルール 2を返します |
+| 1 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLからレベル固有のMeta パラメーターを読み取ります。 |
+| 2 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLからレベル固有のUTM パラメーターを読み取ります。 |
+| 3 | [URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse) | ページ URLから`s_kwcid`を読み取ります。 |
+| 4 | [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace) | レベル固有の式をルール 3に適用します。出力`$1`。 |
+| 5 | [&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)の場合 ケース | ルール 3が設定されている場合はルール 4を返します。設定されていない場合はルール 1を返します。設定されていない場合はルール 2を返します。 |
 
 次の値を使用します。
 

@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1650'
 ht-degree: 43%
 ---
 
@@ -227,5 +227,6 @@ Content Analyticsは、AIと生成AIを活用して、被写体、シーン、�
 >[!MORELIKETHIS]
 >
 >[Content Analytics コンポーネント](components.md)
->[テンプレートを使用](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[テンプレートの使用](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[有料メディアデータをweb データに結合](/help/use-cases/cross-channel/paid-media-web.md)
 >

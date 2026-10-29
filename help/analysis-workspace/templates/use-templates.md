@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: d29e3bac31db1a0de40a5ade47ed5ee53fcb5480
 workflow-type: tm+mt
-source-wordcount: '21458'
+source-wordcount: '21470'
 ht-degree: 98%
 ---
 # テンプレートの使用
@@ -1168,20 +1168,20 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 | [!UICONTROL **B2B 購買グループアクティビティ**] | 各アカウント内の購買グループアクティビティを視覚化して、アカウントと購買グループマーケティングプレイを通知します。<p>**このテンプレートは**、どの購買グループと、その購買グループ内のどの人が最も関与しているかを視覚化し、グループ参加における差を強調するのに役立ちます。</p><p>**学習内容に基づいて**、関与していなさそうな購買グループ内の人物とのエンゲージを増やそうと試みるなど、様々な対応ができます。</p> |
 
 
-### Mix Modeler {#mix-modeler-templates}
+### Marketing Campaign Analytics {#marketing-campaign-analytics-templates}
 
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
->title="Mix Modeler で生成された選択したモデルからのインサイトを表示します。"
->abstract="**これにより、** Mix Modeler で生成されたモデルからの増分インサイトを把握できます。 <br/>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul>"
+>title="Marketing Campaign Analyticsで生成された選択したモデルからのインサイトを表示します。"
+>abstract="**これは、Marketing Campaign Analytics（旧Mix Modeler）で生成されたモデルから得られる増分インサイトをより深く理解するのに役立ちます**。 <br/>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul>"
 
 次のテンプレートを表示できます。
 
 &#x200B;| テンプレート名 | このテンプレートを使用する理由 <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Mix Modelerの増分モデルインサイト**] | Mix Modeler で生成された選択したモデルからのインサイトを表示します。<p>**これにより、** Mix Modeler で生成されたモデルからの増分インサイトを把握できます。 <p>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul></p> |
+| [!UICONTROL **Marketing Campaign Analyticsの増分モデルインサイト**] | Marketing Campaign Analyticsで生成された選択したモデルからのインサイトを表示します。<p>**これは、Marketing Campaign Analytics（旧Mix Modeler）で生成されたモデルから得られる増分インサイトをより深く理解するのに役立ちます**。<p>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul></p> |
 
 
 
