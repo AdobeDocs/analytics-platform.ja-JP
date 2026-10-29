@@ -26,12 +26,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
 ---
 # 設定の管理
+
+{{release-limited-testing}}
 
 [会話インサイト設定](/help/conversation-insights/configure.md)を作成した後、これらの設定を表示、編集、または削除できます。
 
@@ -66,7 +68,7 @@ ht-degree: 6%
 
    テーブルに表示する列を設定するには、![ColumnSetting](/help/assets/icons/ColumnSetting.svg)を選択します。 **[!UICONTROL テーブルをカスタマイズ]** ダイアログで、表示する列を選択します。 次に、**[!UICONTROL 適用]**&#x200B;を選択します。
 
-1. （オプション）設定のリストをフィルタリングするには、![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
+1. （オプション）設定のリストをフィルタリングするには、![ フィルター](/help/assets/icons/Filter.svg)を選択し、次のいずれかの条件でフィルタリングします。
 
    * **[!UICONTROL 接続]**
 

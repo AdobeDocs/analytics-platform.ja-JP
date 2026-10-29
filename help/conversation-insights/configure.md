@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1187'
 ht-degree: 14%
 ---
 # 設定の作成または編集
+
+{{release-limited-testing}}
 
 会話インサイトを活用すれば、顧客に提供するエージェント体験から会話を分析できます。 そのようなエージェントの体験は、大規模言語モデル（LLM）にもとづいて提供されるか、または人間の会話にもとづいて提供されます。 たとえば、顧客やコールセンターとのやり取りを担当するチャットボットは、文字起こしを処理します。
 会話インサイトを通じて、実際のユーザーの成果に対するエージェントの影響を把握できます。
@@ -46,7 +48,7 @@ ht-degree: 14%
 
 会話インサイト設定を作成または編集できるのはシステム管理者のみです。
 
-[会話インサイト設定インターフェイス &#x200B;](./manage.md)から設定を作成または編集します。
+[会話インサイト設定インターフェイス ](./manage.md)から設定を作成または編集します。
 
 ## 欠落しているブレンド済みデータセットを復元
 
@@ -68,7 +70,7 @@ ht-degree: 14%
 
 1. 「**[!UICONTROL データセット]**」セクションで、次の情報を指定します。
 
-   ![会話インサイトデータセット &#x200B;](assets/conversation-insights-configuration-datasets.png)
+   ![会話インサイトデータセット ](assets/conversation-insights-configuration-datasets.png)
 
    | フィールド | 説明 |
    |---------|----------|
@@ -78,7 +80,7 @@ ht-degree: 14%
 
    データセットにプロンプトと応答の両方が含まれている場合、**[!UICONTROL プロンプトイベントデータセット]**&#x200B;と&#x200B;**[!UICONTROL 応答イベントデータセット]**&#x200B;に対して同じデータセットを選択します。
 
-   [&#x200B; ブレンドされた会話を指定](#blend-specification) ～ **[!UICONTROL ブレンドされた仕様を設定]**&#x200B;するオプションは、1回のみ使用できます。
+   [ ブレンドされた会話を指定](#blend-specification) ～ **[!UICONTROL ブレンドされた仕様を設定]**&#x200B;するオプションは、1回のみ使用できます。
    * この設定は完了しました。
    * すべてのデータセットを利用できます。
    * Customer Journey Analytics [接続を編集する権限](/help/technotes/access-control.md)があります。
@@ -145,9 +147,9 @@ ht-degree: 14%
 >title="データセット勝者"
 >abstract="対応する名前のフィールドまたはブレンドされた会話データセット内のフィールド（コンテナの場合）の値を決定するデータセットを選択します。"
 
-設定を作成したら、[&#x200B; プロンプト、応答、フィードバック、およびシグナル データセットの会話のブレンド方法を設定できます](/help/conversation-insights/overview.md#how-it-works)。
+設定を作成したら、[ プロンプト、応答、フィードバック、およびシグナル データセットの会話のブレンド方法を設定できます](/help/conversation-insights/overview.md#how-it-works)。
 
-この仕様では、ブレンドされた会話データセット内の対応する名前付きフィールド（コンテナの場合）の値を決定するデータセットを選択できます。
+この仕様では、ブレンドされた会話データセット内の対応する名前のフィールドまたはフィールド（コンテナの場合）の値を決定するデータセットを選択できます。
 
 例：ブレンドされた会話データセット内の&#x200B;**[!UICONTROL 作成者]** フィールド名を、フィードバックデータセット内の類似の名前付きフィールドから定義する場合は、そのフィールドの&#x200B;**[!UICONTROL データセット勝者]** ドロップダウンメニューから&#x200B;**[!UICONTROL フィードバックデータセット]**&#x200B;を選択します。
 
@@ -175,11 +177,11 @@ ht-degree: 14%
 
 ## データビューの検証
 
-[設定手順](#configuration-steps)で設定したデータビューには、[&#x200B; データビュー](/help/data-views/manage-dataviews.md)の&#x200B;**[!UICONTROL 統合]**&#x200B;の値として&#x200B;**[!UICONTROL 会話インサイト]**&#x200B;があります。
+[設定手順](#configuration-steps)で設定したデータビューには、[ データビュー](/help/data-views/manage-dataviews.md)の&#x200B;**[!UICONTROL 統合]**&#x200B;の値として&#x200B;**[!UICONTROL 会話インサイト]**&#x200B;があります。
 
 設定された各データビューについて、次の手順を実行します。
 
-* **Containers**: [Containers タブ &#x200B;](/help/data-views/create-dataview.md#containers)には、新しい&#x200B;**[!UICONTROL コンテナ名]**: **[!UICONTROL 会話]**&#x200B;と&#x200B;**[!UICONTROL 表示名]**: **[!UICONTROL コンテナ]**&#x200B;が追加の&#x200B;**[!UICONTROL システム]** **[!UICONTROL コンテナタイプ]**&#x200B;として含まれています。
+* **Containers**: [Containers タブ ](/help/data-views/create-dataview.md#containers)には、新しい&#x200B;**[!UICONTROL コンテナ名]**: **[!UICONTROL 会話]**&#x200B;と&#x200B;**[!UICONTROL 表示名]**: **[!UICONTROL コンテナ]**&#x200B;が追加の&#x200B;**[!UICONTROL システム]** **[!UICONTROL コンテナタイプ]**&#x200B;として含まれています。
 * **コンポーネント**：追加のスキーマフィールドフォルダーが表示されます。 例：agentExperienceとconversation さらに、次のコンポーネントが自動的に追加されます。
 
   | 指標 | スキーマデータタイプ | スキーマパス |
