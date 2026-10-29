@@ -51,7 +51,7 @@ ht-degree: 3%
 >Content Analyticsのエクスペリエンスレベルとアセットレベルの結合には、追加のURL パラメーターが必要で、このガイドの対象外です。
 
 
-参照については、[概要データ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/summary-data)および[概要データグループコンポーネント設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)を参照してください。
+参照については、[概要データ &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/summary-data)および[概要データグループコンポーネント設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)を参照してください。
 
 ### 結合キーを選択
 
@@ -85,7 +85,7 @@ GUID構造は`{adNetwork}_{accountID}[_{campaignID}[_{adGroupID}[_{adID}]]]`で�
 * [!DNL Customer Journey Analytics]ここで使用されている派生フィールド関数にアクセスできるSelect以降：[URL解析](/help/data-views/derived-fields/derived-fields.md#url-parse)、[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)、[正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace)、および名前のエンリッチメント用に[参照](/help/data-views/derived-fields/derived-fields.md#lookup)。
 * ターゲットサンドボックス内のスキーマ、データセット、データストリームを管理し、検証のためにデータセットとクエリサービスにアクセスするための[!DNL Adobe Experience Platform]権限。
 * ターゲット接続とデータビューを編集するための[!DNL Customer Journey Analytics]権限。
-* 同じサンドボックスで設定され、サマリーデータセットとルックアップデータセットを取り込む有料メディアソースコネクタ。 コネクタの例については、[Meta Ads source](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)を参照してください。
+* 同じサンドボックスで設定され、サマリーデータセットとルックアップデータセットを取り込む有料メディアソースコネクタ。 コネクタの例については、[Meta Ads source](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/connectors/advertising/meta-ads)を参照してください。
 * クエリ文字列を含むランディングページのURL全体をキャプチャするweb サイトイベント、またはネットワーク IDを含む同等のフィールド。
 
 
@@ -162,7 +162,7 @@ Web サイトで必要なイベントがCustomer Journey Analyticsで使用さ�
 1. データストリームに名前を付け、イベントスキーマをマッピングスキーマとして選択します。
 1. 保存し、**[!UICONTROL Add Service]** > **[!UICONTROL Adobe Experience Platform]**&#x200B;を選択します。
 1. サンドボックスとイベントデータセットを選択し、**[!UICONTROL 保存]**&#x200B;します。
-1. データストリーム IDを使用して、[Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)を設定します。
+1. データストリーム IDを使用して、[Experience Platform Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/js-overview)を設定します。
 
 以下をキャプチャします。
 
@@ -367,7 +367,7 @@ Web IDとネットワーク派生フィールドをディメンションとし�
 
 既存のレポートを保持するために、元の&#x200B;**[!UICONTROL 注文]**&#x200B;および&#x200B;**[!UICONTROL 収益]**&#x200B;指標を変更しないでください。 表示されているデフォルトが一致するように見える場合でも、この設定では上書きを明示的に有効にする必要があります。
 
-再訪問時のコンバージョンクレジットについては、**[!UICONTROL 人物]** コンテナと適切なルックバックウィンドウを代わりに考慮してください。 [概要データの使用例](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data)を参照してください。
+再訪問時のコンバージョンクレジットについては、**[!UICONTROL 人物]** コンテナと適切なルックバックウィンドウを代わりに考慮してください。 [概要データの使用例](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/summary-data)を参照してください。
 
 web ID ディメンションに永続性を追加するのではなく、指標アトリビューションを使用します。 ランディングとして解釈されるカウントの膨張を避けるために、後のイベントにIDを保持しないでください。これは、キャンペーン行の下に表示されるイベントが変更されるためです。
 
