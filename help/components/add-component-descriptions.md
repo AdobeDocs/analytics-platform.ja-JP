@@ -38,20 +38,20 @@ Customer Journey Analytics管理者は、データビュー内またはデータ
 
 ## データビュー
 
-データビューに追加したコンポーネントに説明を追加できます。 [ コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
+データビューに追加したコンポーネントに説明を追加できます。 [&#x200B; コンポーネント設定](/help/data-views/component-settings/overview.md)を参照してください。
 
 ## データ辞書
 
 Analysis Workspaceのデータディクショナリは、ユーザーと管理者の両方がCustomer Journey Analytics環境のコンポーネントを追跡し、より深く理解するのに役立ちます。 データディクショナリを使用すると、管理者はAnalysis Workspace内で直接コンポーネントの説明を追加できます。
 
-データディクショナリでのコンポーネント説明の編集について詳しくは、[ データディクショナリでのコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)を参照してください。
+データディクショナリでのコンポーネント説明の編集について詳しくは、[&#x200B; データディクショナリでのコンポーネントエントリの編集](/help/components/data-dictionary/edit-entries-data-dictionary.md)を参照してください。
 
-データディクショナリの一般的な情報については、[ データディクショナリの概要](/help/components/data-dictionary/data-dictionary-overview.md)を参照してください。
+データディクショナリの一般的な情報については、[&#x200B; データディクショナリの概要](/help/components/data-dictionary/data-dictionary-overview.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
->[ データビューコンポーネント設定](/help/data-views/component-settings/overview.md)
->[データ ディクショナリ コンポーネント エントリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>[&#x200B; データビューコンポーネント設定](/help/data-views/component-settings/overview.md)
+>[データ ディクショナリ コンポーネント エントリ &#x200B;](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >
 
 ## 説明の自動生成
@@ -63,7 +63,7 @@ Customer Journey Analyticsでは、各説明を手作業で記述する代わり
 生成された説明：
 
 * 3つ以下の文章です。
-* AI ]**を使用してAdobeによって生成されたテキスト**[!UICONTROL &#x200B;で終わると、説明が生成されたことがユーザーに分かります。
+* AI **を使用してAdobeによって生成されたテキスト**&#x200B;で終わると、説明が生成されたことがユーザーに分かります。
 * 生成後に編集することもできます。
 
 ### 前提条件
@@ -87,10 +87,10 @@ Customer Journey Analyticsの次の領域で説明を生成できます。 一�
 
 | 場所 | サポートされているコンポーネント | 単一コンポーネント | 複数のコンポーネント |
 | --- | --- | --- | --- |
-| [ データディクショナリ ](/help/components/data-dictionary/edit-entries-data-dictionary.md) | <ul><li>ディメンション</li><li>指標</li><li>計算指標</li><li>セグメント</li><li>日付範囲</li></ul> | はい | はい |
-| [データビュー](/help/data-views/component-settings/overview.md) | <ul><li>ディメンション</li><li>指標</li><li>派生フィールド</li><li>共有指標とディメンション （詳細については、[共有指標とディメンション ](#generate-descriptions-for-shared-metrics-and-dimensions)を参照してください）。</li></ul> | はい | はい |
+| [&#x200B; データディクショナリ &#x200B;](/help/components/data-dictionary/edit-entries-data-dictionary.md) | <ul><li>ディメンション</li><li>指標</li><li>計算指標</li><li>セグメント</li><li>日付範囲</li></ul> | はい | はい |
+| [データビュー](/help/data-views/component-settings/overview.md) | <ul><li>ディメンション</li><li>指標</li><li>派生フィールド</li><li>共有指標とディメンション （詳細については、[共有指標とディメンション &#x200B;](#generate-descriptions-for-shared-metrics-and-dimensions)を参照してください）。</li></ul> | はい | はい |
 | [セグメントビルダー](/help/components/segments/seg-builder.md) | セグメント | はい | いいえ |
-| [ セグメントマネージャー](/help/components/segments/seg-manage.md#action-bar) | セグメント | いいえ | はい |
+| [&#x200B; セグメントマネージャー](/help/components/segments/seg-manage.md#action-bar) | セグメント | いいえ | はい |
 | [計算指標ビルダー](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | 計算指標 | はい | いいえ |
 | [計算指標マネージャー](/help/components/calc-metrics/cm-workflow/cm-manager.md#action-bar) | 計算指標 | いいえ | はい |
 | [日付範囲ビルダー](/help/components/date-ranges/create.md#date-range-builder) | 日付範囲 | はい | いいえ |

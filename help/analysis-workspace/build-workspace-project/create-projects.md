@@ -57,15 +57,15 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 * プロジェクトに[パネル](/help/analysis-workspace/c-panels/panels.md)を追加します。 例えば、 **[!DNL Example Panel]** は ➊ です。
 
 * パネルに[ビジュアライゼーション](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)を追加します。 例：
-  * **[!DNL Line Graph]**[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
-  * **[!DNL Countries]**[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
+  * **[!DNL Line Graph]**&#x200B;[&#x200B;折れ線グラフ](/help/analysis-workspace/visualizations/line.md)ビジュアライゼーション➋
+  * **[!DNL Countries]**&#x200B;[&#x200B;フリーフォームテーブル](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)ビジュアライゼーション➌
 * ビジュアライゼーションに[コンポーネント](/help/components/overview.md)を追加します。 例：
-  * **[!DNL Store Country]**[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
-  * **[!DNL People]**[&#x200B;指標](/help/components/apply-create-metrics.md)➎
-  * **[!DNL Avg Order Value]**[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
-  * **[!DNL Mobile App Sessions]**[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
-  * **[!DNL Last Month]**[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
-  * **[!DNL Example]**[&#x200B;注釈](/help/components/annotations/overview.md)➒
+  * **[!DNL Store Country]**&#x200B;[&#x200B;ディメンション](/help/components/dimensions/overview.md)➍
+  * **[!DNL People]**&#x200B;[&#x200B;指標](/help/components/apply-create-metrics.md)➎
+  * **[!DNL Avg Order Value]**&#x200B;[&#x200B;計算指標](/help/components/calc-metrics/calc-metr-overview.md)➏
+  * **[!DNL Mobile App Sessions]**&#x200B;[&#x200B;セグメント](/help/components/segments/seg-overview.md)➐
+  * **[!DNL Last Month]**&#x200B;[&#x200B;日付範囲](/help/components/date-ranges/overview.md)➑
+  * **[!DNL Example]**&#x200B;[&#x200B;注釈](/help/components/annotations/overview.md)➒
 
 
 ## プロジェクト情報および設定 {#project-info-settings}
@@ -99,7 +99,7 @@ Analysis Workspace の[プロジェクト](/help/analysis-workspace/build-worksp
 | 所有者 | プロジェクト所有者名 |
 | 最終変更日 | プロジェクトの最終変更日。 |
 | タグ | プロジェクトに適用されているタグを一覧表示して、分類を容易にします。 |
-| 説明 | 説明は、プロジェクトの目的を明確にするのに役立ちます。 説明をダブルクリックして編集できます。 <p>Adobeで説明を生成するには、説明フィールドの上にある「**[!UICONTROL 説明を生成]**」を選択します。 Adobeは、プロジェクト内のいくつかのパネルを分析し、それらを説明にまとめます。 生成された説明には、AI ]**を使用してAdobeによって生成されたテキスト**[!UICONTROL &#x200B;が含まれており、編集できます。 このオプションを利用するには、組織が生成AIの特定の法的条件に同意する必要があります。</p> |
+| 説明 | 説明は、プロジェクトの目的を明確にするのに役立ちます。 説明をダブルクリックして編集できます。 <p>Adobeで説明を生成するには、説明フィールドの上にある「**[!UICONTROL 説明を生成]**」を選択します。 Adobeは、プロジェクト内のいくつかのパネルを分析し、それらを説明にまとめます。 生成された説明には、AI **を使用してAdobeによって生成されたテキスト**&#x200B;が含まれており、編集できます。 このオプションを利用するには、組織が生成AIの特定の法的条件に同意する必要があります。</p> |
 | 繰り返しインスタンスをカウント | レポート内で繰り返しインスタンスがカウントされるかどうかを指定します。 メモ：この設定は、フローまたはフォールアウトのビジュアライゼーションには適用されません。 |
 | 注釈を表示 | このプロジェクトに対して注釈を表示するかどうかを指定します。 |
 | [プロジェクトカラーパレット](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Workspace で使用する分類カラーパレットは、色弱のユーザー向けに最適化された既定のパレットを選択するか、カスタムパレットを指定することで変更できます。 この機能は、ほとんどのビジュアライゼーションを含む Workspace の多くの機能に影響します。 |
