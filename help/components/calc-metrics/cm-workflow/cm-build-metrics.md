@@ -29,10 +29,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '1699'
-ht-degree: 93%
+source-wordcount: '1747'
+ht-degree: 89%
 ---
 # 計算指標の作成 {#build-metrics}
 
@@ -77,7 +77,7 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
    | **[!UICONTROL プロジェクトのみの指標]** | [単一プロジェクトの計算指標の作成](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project)の説明に従って、単一プロジェクト用に作成された計算指標を編集すると、このダイアログの上部に情報ボックスが表示されます。 <p>この計算指標をすべてのプロジェクトで使用できるようにする場合は、「**[!UICONTROL この指標をすべてのプロジェクトで使用できるようにし、コンポーネントリストに追加]**」オプションを選択します。</p> |
    | **[!UICONTROL タイトル]** ![必須](/help/assets/icons/Required.svg) | 計算指標に名前を付けます（例：`Conversion Rate`）。 |
    | **[!UICONTROL 外部 ID]** ![必須](/help/assets/icons/Required.svg) | 外部 BI ツールと BI 拡張機能を使用する際の計算指標の名前。 値を上書きしない限り、値は自動的に `undefined_xxx` として定義されます。 |
-   | **[!UICONTROL 説明]** | セグメントの説明を入力します（例：`Calculated metric to define the conversion rate.`）。計算指標の数式は既に[!UICONTROL 概要]で自動的に使用できるので、数式を説明する必要はありません。 |
+   | **[!UICONTROL 説明]** | <p>計算指標の説明（例：`Calculated metric to define the conversion rate.`）を入力します。計算指標の式は、[!UICONTROL 概要]で既に自動的に使用可能であるため、計算指標の式を説明する必要はありません。</p><p>Adobeで説明を生成するには、**[!UICONTROL 説明を生成]**&#x200B;を選択します。 このオプションは、計算指標の定義を作成するまで使用できません。</p><p>生成された説明には、AI ]**を使用してAdobeによって生成されたテキスト**[!UICONTROL &#x200B;が含まれており、生成後に編集できます。 詳しくは、[説明の自動生成](/help/components/add-component-descriptions.md#automatically-generate-descriptions)を参照してください。</p> |
    | **[!UICONTROL 形式]** | 計算指標の形式を選択します。**[!UICONTROL 小数]**、**[!UICONTROL 時間]**、**[!UICONTROL 割合]**、**[!UICONTROL 通貨]**&#x200B;から選択できます。 |
    | **[!UICONTROL 小数点以下の桁数]** | 選択した形式の小数点以下の桁数を指定します。 選択した形式が小数、通貨、割合である場合にのみ有効になります。 |
    | **[!UICONTROL 上昇傾向を次の形式で表示]** | 計算指標の上昇傾向を▲ **[!UICONTROL 良好（緑色）]**&#x200B;として表示するか、▼ **[!UICONTROL 不良（赤色）]**&#x200B;として表示するかを指定します。 |
@@ -93,7 +93,7 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
    * **[!UICONTROL Customer Journey Analytics のすべての場所]**：計算指標は、Adobe Customer Journey Analytics 全体で使用できます。
    * **[!UICONTROL 次の場所では互換性がありません：]**
      * **[!UICONTROL 実験]**：計算された指標は、実験パネルを除くすべてのCustomer Journey Analyticsで使用できます。
-     * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[&#x200B; サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
+     * **[!UICONTROL テーブルの書き出し]**：計算された指標は、Workspaceからテーブル全体を書き出す場合を除き、Customer Journey Analytics全体で使用できます。 完全なテーブルを書き出す際に、すべての関数がサポートされるわけではありません。 テーブル全体を書き出す際に計算指標を含める必要がある場合は、サポートされている関数を使用します。 詳細については、[完全なテーブルをクラウドに書き出す](/help/analysis-workspace/export/export-cloud.md)の[ サポートされていない計算指標の関数](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions)を参照してください。
 
 1. 次のいずれかを選択します。
    * 計算指標を保存する場合は、「**[!UICONTROL 保存]**」。
@@ -171,7 +171,7 @@ Customer Journey Analytics には、ディメンション、指標、セグメ�
 * セグメントからセグメントコンテナを追加するには、以下を使用します。
 
   * コンポーネントパネルから ![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを&#x200B;**[!UICONTROL ここに指標、ディメンション、ディメンション項目、フィルター、関数をドラッグ＆ドロップ]**&#x200B;にドラッグ＆ドロップします。 コンポーネントバーの ![検索](/help/assets/icons/Search.svg) を使用して、特定のセグメントを検索できます。
-    セグメントの名前を使用すると、セグメントコンテナが&#x200B;**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
+    セグメントの名前を使用すると、セグメントコンテナが**[!UICONTROL 定義]**&#x200B;に自動的に追加されます。
 
   * コンポーネントパネルから![セグメント化](/help/assets/icons/Segmentation.svg) **[!UICONTROL セグメント]**&#x200B;コンポーネントを汎用コンテナにドラッグ＆ドロップします。 コンテナがセグメントコンテナに変更されます。
 

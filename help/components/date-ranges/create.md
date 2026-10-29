@@ -19,13 +19,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 8ab47e74ee442d97e8e7b1b9e92129025a5b1d1f
 workflow-type: tm+mt
-source-wordcount: 542
-ht-degree: 92%
-
+source-wordcount: '589'
+ht-degree: 85%
 ---
-
 # 日付範囲の作成
 
 
@@ -69,6 +67,11 @@ Should we really mention API here. If so, we can do it all over the place in the
 
 1. この日付範囲の&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。 例：**[!UICONTROL Quarterly]**。
 1. オプションで、「**[!UICONTROL 説明]**」を指定します。
+
+   Adobeで説明を生成するには、**[!UICONTROL 説明を生成]**&#x200B;を選択します。 このオプションは、日付範囲の定義を作成するまで使用できません。
+
+   生成された説明には、AI ]**を使用してAdobeによって生成されたテキスト**[!UICONTROL &#x200B;が含まれており、生成後に編集できます。 詳しくは、[説明の自動生成](/help/components/add-component-descriptions.md#automatically-generate-descriptions)を参照してください。
+
 1. 1つ以上の&#x200B;**[!UICONTROL タグ]**&#x200B;を作成または適用して、セグメントを整理します。 入力を開始すると、選択できる既存のタグが見つかります。 または、**[!UICONTROL Enter]** キーを押して新しいタグを追加します。 「![CrossSize75](/help/assets/icons/CrossSize75.svg)」を選択して、タグを削除します。 |
 1. 最初に開始日を選択し、次に終了日を選択して、「**[!UICONTROL 日付範囲]**」を選択します。
 または、**[!UICONTROL プリセットを選択]**&#x200B;ドロップダウンメニューから「[!UICONTROL *プリセット*]」を選択できます。

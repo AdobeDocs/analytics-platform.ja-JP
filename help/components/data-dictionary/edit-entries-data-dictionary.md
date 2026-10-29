@@ -32,10 +32,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 63%
+source-wordcount: '1523'
+ht-degree: 49%
 ---
 # コンポーネントエントリの編集
 
@@ -57,17 +57,17 @@ Customer Journey Analytics管理者は、特定のデータビューのデータ
 
    コンポーネントのタイプは、カラーとアイコンの両方で識別できます。
 
-   * **ディメンション** ![Dimension アイコン &#x200B;](/help/assets/icons/Data.svg)はオレンジ色です
+   * **ディメンション** ![Dimension アイコン ](/help/assets/icons/Data.svg)はオレンジ色です
 
-   * **セグメント** ![&#x200B; セグメントアイコン &#x200B;](/help/assets/icons/Segmentation.svg)は青です
+   * **セグメント** ![ セグメントアイコン ](/help/assets/icons/Segmentation.svg)は青です
 
-   * **日付範囲** ![日付範囲アイコン &#x200B;](/help/assets/icons/Calendar.svg)は紫色です
+   * **日付範囲** ![日付範囲アイコン ](/help/assets/icons/Calendar.svg)は紫色です
 
-   * **指標** ![指標アイコン &#x200B;](/help/assets/icons/Event.svg)は緑色です
+   * **指標** ![指標アイコン ](/help/assets/icons/Event.svg)は緑色です
 
-   * **Adobe アイコン** ![Adobe アイコン &#x200B;](assets/default-calc-metric-icon.png)は、計算指標テンプレートまたはセグメント テンプレートを示します
+   * **Adobe アイコン** ![Adobe アイコン ](assets/default-calc-metric-icon.png)は、計算指標テンプレートまたはセグメント テンプレートを示します
 
-   * **電卓アイコン** ![電卓アイコン &#x200B;](/help/assets/icons/Calculator.svg)は、組織内のAnalytics管理者によって作成された計算指標を示します
+   * **電卓アイコン** ![電卓アイコン ](/help/assets/icons/Calculator.svg)は、組織内のAnalytics管理者によって作成された計算指標を示します
 
 1. （オプション）**フィルター**&#x200B;アイコン ![データ辞書のフィルターアイコン](/help/assets/icons/Filter.svg) を選択し、次のフィルターオプションのいずれかを選択して、コンポーネントのリストをフィルタリングします。
 
@@ -88,7 +88,7 @@ Customer Journey Analytics管理者は、特定のデータビューのデータ
 
    {style="table-layout:auto"}
 
-1. （オプション）「**並べ替え**」アイコン「![&#x200B; コンポーネントの並べ替え」アイコン「](/help/assets/icons/SortOrderDown.svg)」を選択し、次のいずれかのセグメントオプションを選択してコンポーネントのリストを並べ替えます。
+1. （オプション）「**並べ替え**」アイコン「![ コンポーネントの並べ替え」アイコン「](/help/assets/icons/SortOrderDown.svg)」を選択し、次のいずれかのセグメントオプションを選択してコンポーネントのリストを並べ替えます。
 
    | オプション | 関数 |
    |---------|----------|
@@ -101,17 +101,18 @@ Customer Journey Analytics管理者は、特定のデータビューのデータ
 1. コンポーネントのリストから、編集するコンポーネントを選択します。
 
 1. コンポーネント名の横にある&#x200B;**編集**&#x200B;アイコン ![データ辞書編集アイコン](/help/assets/icons/Edit.svg) を選択します。
+   ![ データディクショナリのコンポーネントダイアログを編集](assets/data-dictionary-edit-component.png)
 
 1. コンポーネントに関する次の情報を編集します。
 
    | オプション | 関数 |
    |---------|----------|
    | **[!UICONTROL 承認済み]** | <p>コンポーネントが管理者にレビューおよび承認されたことを示します。</p><p>管理者には、**[!UICONTROL 承認しない]**&#x200B;のオプションが表示されます。 このオプションを選択すると、コンポーネントがユーザーに「未承認」としてマークされます。</p> |
-   | **[!UICONTROL 未承認]** | <p>コンポーネントがまだ管理者にレビューおよび承認されていないことを示します。</p><p>管理者には、「**[!UICONTROL 承認]**」オプションが表示されます。 このオプションを選択すると、ユーザーに対してコンポーネントが「承認済み」としてマークされます。</p> |
-   | **[!UICONTROL 説明]** | コンポーネントの意図された機能について説明します。 （この情報は、[コンポーネントの説明の追加](/help/components/add-component-descriptions.md)で説明しているように、Analytics 管理者が追加します）。 |
+   | **[!UICONTROL 承認]** | <p>コンポーネントがまだ管理者によってレビューおよび承認されていないことを管理者に示します。</p><p>管理者以外のユーザーには、「**[!UICONTROL 未承認]**」というラベルが表示されます。 このオプションを選択すると、ユーザーに対してコンポーネントが「承認済み」としてマークされます。</p> |
+   | **[!UICONTROL 説明]** | コンポーネントの意図された機能について説明します。 コンポーネントの説明を追加できるのは、Analytics管理者のみです。 <p>次のいずれかの方法で説明を追加できます。</p><ul><li>手動で説明を入力する</li><li>「**[!UICONTROL 説明を生成]**」を選択すると、Adobeで説明が生成されます <p>生成された説明には、AI ]**を使用してAdobeによって生成されたテキスト**[!UICONTROL &#x200B;が含まれており、生成後に編集できます。</p><p>複数のコンポーネントの説明を同時に生成するには、[複数のコンポーネントの説明の生成](#generate-descriptions-for-multiple-components)を参照してください。</p></li></ul> <p>詳しくは、[説明の自動生成](/help/components/add-component-descriptions.md#automatically-generate-descriptions)を参照してください。</p> |
    | **[!UICONTROL 次でよく使用される]** | <p>表示中のコンポーネントと最も一緒に使用されるコンポーネントを表示します。</p><p>指標、計算指標、ディメンション、セグメントおよび日付範囲の 5 つの主要なコンポーネントタイプで最大 5 つのコンポーネントを表示します。</p><p>このリストは、過去 90 日間のデータに基づいています。 表示するアクセス権を持つコンポーネントのみを表示します。</p><p>管理者は、「**[!UICONTROL 常に含める]**」および「**[!UICONTROL 常に除外]**」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。 ユーザーに表示されるコンポーネントをキュレートする前に、まず&#x200B;**すべてを表示** セグメントを適用して、他の管理者によって追加された可能性のある、共有されていないコンポーネントが表示されるようにします。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
    | **[!UICONTROL 類似]** | <p>表示中のコンポーネントと同様の名前を持つコンポーネントを表示します。</p><p>指標、計算指標、ディメンション、セグメントおよび日付範囲の 5 つの主要なコンポーネントタイプで最大 5 つのコンポーネントを表示します。</p><p>表示するためのアクセス権を持つコンポーネントのみを表示します。</p><p>データビュー内の重複したコンポーネントがここに表示されます。 [データ辞書の正常性の監視](/help/components/data-dictionary/monitor-data-dictionary-health.md)で説明しているように、Analytics 管理者はすべての重複するコンポーネントを特定して削除する必要があります。</p><p>管理者は、「**[!UICONTROL 常に含める]**」および「**[!UICONTROL 常に除外]**」ドロップダウンフィールドで目的のコンポーネントを選択することにより、このセクションでユーザーに表示されるコンポーネントをキュレートできます。 ユーザーに表示されるコンポーネントをキュレートする前に、まず&#x200B;**すべてを表示** セグメントを適用して、他の管理者によって追加された可能性のある、共有されていないコンポーネントが表示されるようにします。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**メモ：**&#x200B;現在、「**類似**」セクションには、ユーザー作成のコンポーネントのみが含まれており、アドビ提供のコンポーネントは含まれていません。 アドビ提供のコンポーネントは、今後のリリースで追加される予定です。</p> |
-   | **[!UICONTROL 製品の互換性]** | この計算指標をCustomer Journey Analyticsのどこで使用できるかを示します。 <p>使用可能な値は次のとおりです。</p><ul><li>**[!UICONTROL Customer Journey Analyticsのすべての場所]**：計算された指標は、Analysis WorkspaceやReport Builderなど、Customer Journey Analytics全体で使用できます。</li><li>**[!UICONTROL Customer Journey Analytics のすべての場所 (実験を除く)]**：計算指標は、実験パネルを除く Adobe Customer Journey Analytics 全体で使用できます。</li> <p>計算指標を実験で使用できるかどうかを決定する条件について詳しくは、[&#128279;](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)実験パネル [実験パネル &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)の実験パネル &#x200B;で計算指標を使用するを参照してください。</p></ul> |
+   | **[!UICONTROL 製品の互換性]** | この計算指標をCustomer Journey Analyticsのどこで使用できるかを示します。 <p>使用可能な値は次のとおりです。</p><ul><li>**[!UICONTROL Customer Journey Analyticsのすべての場所]**：計算された指標は、Analysis WorkspaceやReport Builderなど、Customer Journey Analytics全体で使用できます。</li><li>**[!UICONTROL Customer Journey Analytics のすべての場所 (実験を除く)]**：計算指標は、実験パネルを除く Adobe Customer Journey Analytics 全体で使用できます。</li> <p>計算指標を実験で使用できるかどうかを決定する条件について詳しくは、[実験パネル [実験パネル ](/help/analysis-workspace/c-panels/experimentation.md)の実験パネル ](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)で計算指標を使用するを参照してください。</p></ul> |
    | **[!UICONTROL タグ]** | コンポーネントに適用されているすべてのタグを表示します。 管理者アクセス権を持つユーザーは、コンポーネントの編集時にタグを追加できます。 |
    | **[!UICONTROL コンポーネントの種類]** | ディメンション、指標、セグメント、または日付範囲のいずれかであるコンポーネントのタイプをリストします。 |
    | **[!UICONTROL 作成者]** | コンポーネントを作成したユーザーの名前を表示します。 |
@@ -121,3 +122,29 @@ Customer Journey Analytics管理者は、特定のデータビューのデータ
    {style="table-layout:auto"}
 
 1. **保存**&#x200B;アイコン ![データ辞書保存アイコン](/help/assets/icons/SaveFloppy.svg) をクリックして、変更内容を保存します。
+
+## 複数のコンポーネントに対する説明の生成
+
+Customer Journey Analytics管理者は、Adobeで同時に複数のコンポーネントの説明を生成できます。 詳しくは、[説明の自動生成](/help/components/add-component-descriptions.md#automatically-generate-descriptions)を参照してください。
+
+>[!IMPORTANT]
+>
+>複数のコンポーネントの説明を生成すると、選択したコンポーネントの既存の説明が置き換えられます。 既存の説明を上書きしないようにするには、コンポーネントを選択する前に、説明がまだ含まれていないコンポーネントのみを表示するようにリストをフィルターします。
+
+データディクショナリで複数のコンポーネントの説明を生成するには：
+
+1. [ データディクショナリの概要](/help/components/data-dictionary/data-dictionary-overview.md)の「データディクショナリへのアクセス」の説明に従って、データディクショナリを開きます。
+
+1. ドロップダウンメニューで正しいデータビューが選択されていることを確認します。
+
+1. （推奨） **フィルター** アイコン ![ データ要素フィルターアイコン ](/help/assets/icons/Filter.svg)を選択し、**[!UICONTROL 説明が見つからない]**&#x200B;を選択して、説明がないコンポーネントのみを表示します。
+
+1. 説明を生成するコンポーネントを選択します。
+
+1. コンポーネントのリストの上にある「![AI](/help/assets/icons/AI.svg)**[!UICONTROL 説明を生成]**」を選択します。
+
+1. 「**[!UICONTROL 説明を生成]**」を選択して確認します。
+
+   確認メッセージには、追加された説明の数が表示されます。
+
+   多数のコンポーネントを選択した場合、説明はバックグラウンドで生成されます。 リクエストが完了すると、生成された説明の数と失敗した説明の数を示すアプリ内[通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications)が届きます。

@@ -1,7 +1,7 @@
 ---
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5607'
 ht-degree: 95%
 ---
 # スニペット
@@ -94,7 +94,7 @@ ht-degree: 95%
 
 | その他のフィルター | 説明 |
 |---|---|
-| ![その他のフィルター](/help/assets/filter-other.png){width="300"} | 「**[!UICONTROL その他のフィルター]**」セクションでは、他の定義済みフィルターでフィルタリングできます。<ul><li>次のオプションから 1 つ以上を選択できます。<ul><li> **[!UICONTROL すべてを表示]**</li><li>**[!UICONTROL 自分と共有済み]**</li><li>**[!UICONTROL 自分が所有]**</li><li>**[!UICONTROL 承認済み]**</li><li>**[!UICONTROL お気に入り]**</li></ul> 選択できる内容は、役割と権限によって異なります。</li><li>複数のフィルターを選択できます。 使用できるその他のフィルターは、フィルターパネルの他のセクションでの選択によって異なります。</li><li>数値は次の内容を示します。<ul><li>**（1）**：選択した他のフィルターの数（他のフィルターが 1 つ以上選択されている場合）。</li><li>**5︎⃣**：現在のフィルターによって生成された項目に使用できるその他のフィルターの数。</li><li>4︎⃣：特定のその他のフィルターに関連付けられている項目数。</li></ul></li></ul> |
+| ![その他のフィルター](/help/assets/filter-other.png){width="300"} | 「**[!UICONTROL その他のフィルター]**」セクションでは、他の定義済みフィルターでフィルタリングできます。<ul><li>次のオプションから 1 つ以上を選択できます。<ul><li> **[!UICONTROL すべてを表示]**</li><li>**[!UICONTROL 自分と共有済み]**</li><li>**[!UICONTROL 自分が所有]**</li><li>**[!UICONTROL 承認済み]**</li><li>**[!UICONTROL お気に入り]**</li><li>**[!UICONTROL 説明がありません]**</li></ul> 選択できる内容は、役割と権限によって異なります。</li><li>複数のフィルターを選択できます。 使用できるその他のフィルターは、フィルターパネルの他のセクションでの選択によって異なります。</li><li>数値は次の内容を示します。<ul><li>**（1）**：選択した他のフィルターの数（他のフィルターが 1 つ以上選択されている場合）。</li><li>**5︎⃣**：現在のフィルターによって生成された項目に使用できるその他のフィルターの数。</li><li>4︎⃣：特定のその他のフィルターに関連付けられている項目数。</li></ul></li></ul> |
 
 ## 日付範囲のフィルターセクション  {#daterangefiltersection}
 
@@ -129,7 +129,7 @@ ht-degree: 95%
 
 * **セッション**：コンバージョンが発生したセッションの開始時点までを振り返ります。 セッションのルックバックウィンドウは、データビューの変更された[セッションタイムアウト](/help/data-views/create-dataview.md#session-settings)を考慮します。 「**[!UICONTROL セッション]**」を選択すると、[アトリビューションルックバックウィンドウ](#atribution-lookback-window)は自動的に&#x200B;**[!UICONTROL レポートウィンドウ]**&#x200B;に設定され、変更できません。
 * **ユーザー**：ユーザーコンテナの範囲からのコンバージョンを確認します。
-* **会話**：会話コンテナのスコープからコンバージョンを調べます。 このコンテナは、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)のビジュアライゼーションとコンポーネントで使用できます。
+* **会話**：会話コンテナのスコープからコンバージョンを調べます。 このコンテナは、[会話インサイト ](/help/conversation-insights/overview.md)のビジュアライゼーションとコンポーネントで使用できます。
 * **グローバルアカウント** [!BADGE B2B Edition]{type=Informative}：グローバルアカウントコンテナの範囲からのコンバージョンを確認します。
 * **アカウント** [!BADGE B2B Edition]{type=Informative}：ユーザーコンテナの範囲からのコンバージョンを確認します。
 * **オポチュニティ** [!BADGE B2B Edition]{type=Informative}：オポチュニティコンテナの範囲からのコンバージョンを確認します。
@@ -335,5 +335,5 @@ Customer Journey Analytics には前処理と後処理の概念がないので�
 さらに、Customer Journey Analyticsでは、標準XDM スキーマ **のフィールドは、リレーショナルスキーマの類似した名前付きフィールドと**&#x200B;を自動的に結合しません。
 >[!IMPORTANT]
 >
->Customer Journey Analyticsのレポートと分析では、共通の人物IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を[&#x200B; データセット設定](/help/connections/create-connection.md#relational-dataset)で明示的に設定する必要があります。 <br/><br/>派生フィールド [&#x200B; フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge-fields)関数を使用して、XDM スキーマとリレーショナルスキーマで類似の名前付きフィールド（オブジェクト配列の一部ではない）を結合することを検討してください。 オブジェクト配列内のフィールドの場合、XDMと関係スキーマの間でフィールドを結合するソリューションは現在存在しません。
+>Customer Journey Analyticsのレポートと分析では、共通の人物IDまたはアカウント IDに基づいて、リレーショナルデータセットのデータを他のデータセットに結合する方法を[ データセット設定](/help/connections/create-connection.md#relational-dataset)で明示的に設定する必要があります。 <br/><br/>派生フィールド [ フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge-fields)関数を使用して、XDM スキーマとリレーショナルスキーマで類似の名前付きフィールド（オブジェクト配列の一部ではない）を結合することを検討してください。 オブジェクト配列内のフィールドの場合、XDMと関係スキーマの間でフィールドを結合するソリューションは現在存在しません。
 >
