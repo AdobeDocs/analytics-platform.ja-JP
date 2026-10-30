@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
+source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
 workflow-type: tm+mt
-source-wordcount: '7431'
+source-wordcount: '7452'
 ht-degree: 93%
 ---
 
@@ -70,6 +70,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 機能 | 説明 |
 |---|---|
 | **2026年10月** | |
+| データビューのガードレール | 組織のデータビューの最大数（2,000から5,000まで）の[guadrail](/help/technotes/guardrails.md)を更新しました。 |
 | 有料メディアデータをweb データに結合 | [&#x200B; ユースケースガイド &#x200B;](/help/use-cases/cross-channel/paid-media-web.md)有料メディアデータをweb データと結合する方法。 |
 | ビジュアライゼーションの選択をロック | [&#x200B; データソースの管理](/help/analysis-workspace/visualizations/t-sync-visualization.md)を再構築し、データソース設定の設定と選択範囲のロックを分離しました。 また、フリーフォームテーブル内の行にビジュアライゼーションをロックする場合の[&#x200B; ロック選択](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection)の仕組みについても説明しました。これには、ロックされたブレークダウン行がテーブル内に存在しなくなった場合の処理も含まれます。 |
 | セグメント演算子の大文字と小文字の区別 | [標準演算子](/help/components/segments/seg-operators.md#standard-operators)を使用する場合、**[!UICONTROL 一致]**&#x200B;と&#x200B;**[!UICONTROL 一致しない]**&#x200B;を除き、結果は大文字と小文字を区別しないことを明確にしました。 |

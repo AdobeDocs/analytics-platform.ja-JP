@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: 6283ecbeab12a19fd5b7229dff772afaaedf3296
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '4133'
-ht-degree: 48%
+source-wordcount: '4342'
+ht-degree: 45%
 ---
 # コンポーネント設定 {#component-settings}
 
@@ -71,19 +71,19 @@ ht-degree: 48%
 
 | 設定 | 説明／使用例 |
 | --- | --- |
-| [!UICONTROL コンポーネントの種類] | 必須。 コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントは対応する「含まれているコンポーネント」領域に移動します。 |
-| [!UICONTROL &#x200B; コンポーネント名] | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
-| [!UICONTROL 説明] | オプション（推奨）。 コンポーネントに関する情報を他のユーザーに提供します。 |
-| [!UICONTROL タグ] | （任意）。 Analysis Workspace UIでの検索やフィルタリングを容易にするために、カスタムタグまたは標準のタグを使用してコンポーネントにタグを付けることができます。 |
-| [!UICONTROL コンテキストラベル] | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[&#x200B; コンテキストラベル &#x200B;](#context-labels)のドロップダウンメニュー。 |
-| [!UICONTROL スキーマフィールド名] | スキーマフィールドの名前。 |
-| [!UICONTROL データセットタイプ] | 必須。 コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
-| [!UICONTROL データセット] | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
-| [!UICONTROL スキーマタイプ] | コンポーネントのデータタイプを示す編集不可のフィールド。 Platform では、サポートされている任意のスキーマフィールドタイプを使用できますが、Customer Journey Analytics ではすべてのフィールドタイプがサポートされているわけではありません。 次のデータタイプがサポートされています。`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` および `Boolean` です。 現在、ルックアップデータセットでは `String` スキーマデータタイプのみを使用できます。 |
-| [!UICONTROL コンポーネント ID] | 必須。 [Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) は、このフィールドを使用してコンポーネントを参照します。 データビューの各コンポーネントは、一意である必要があります。 アドビは、各コンポーネントの ID を自動的に生成します。ただし、編集アイコンをクリックして、コンポーネント ID を変更することはできます。 コンポーネント ID を変更すると、このコンポーネントを含む既存の Workspace プロジェクトがすべて機能しなくなります。 単一のデータビュー内では各コンポーネントに一意の ID が必要ですが、他のデータビュー内では同じコンポーネント ID を使用できます。 他のデータビューで同じコンポーネント ID を使用すると、データビューをまたいで Workspace プロジェクトに互換性を持たせることができます。 <br/>プロファイルとルックアップベースのコンポーネントの場合、コンポーネント ID には、データセット ID に基づく ID 接頭辞が付きます（例：`642b28fcc1f0ee1c074265a0.person.name.firstName`）。 Workspace プロジェクトでプロファイルやルックアップベースのコンポーネント（`person.name.firstName` など）を再利用し、このコンポーネントを様々なデータビューで設定する場合は、データビュー全体で確実にコンポーネント ID を一意の名前に変更します（`myUniqueID.person.name.firstName` など）。 |
-| [!UICONTROL パス] | 必須。 コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
-| [!UICONTROL データ使用状況ラベル] | Adobe Experience Platformでこのコンポーネントに割り当てられているデータ使用ラベル。 [詳細情報](/help/data-views/data-governance.md)。 |
-| [!UICONTROL レポートでコンポーネントを非表示] | 管理者以外のユーザーがAnalysis Workspaceのコンポーネントにアクセスできないようにします。 管理者は、[!UICONTROL すべてのコンポーネントを表示]をクリックして、引き続きアクセスできます。 この設定はAnalysis Workspace インターフェイスにのみ適用され、[CJA API](https://developer.adobe.com/cja-apis/docs/)経由のアクセスを制限しません。 |
+| **[!UICONTROL コンポーネントの種類]** | 必須。 コンポーネントを指標からDimensionまたはその逆に変更できます。 このドロップダウンの選択を変更すると、コンポーネントは対応する「含まれているコンポーネント」領域に移動します。 |
+| **[!UICONTROL コンポーネント名]** | 必須。 Analysis Workspace に表示されるわかりやすい名前を指定できます。 コンポーネントの名前を変更して、データビューに固有の名前を付けることができます。 |
+| **[!UICONTROL 説明]** | オプション（推奨）。 コンポーネントの意図する機能をユーザーに説明し、その使用方法をユーザーが理解できるようにします。 説明は、[Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md)およびその他のCustomer Journey Analyticsの領域のユーザーに表示されます。 <p>次のいずれかの方法で説明を追加できます。</p><ul><li>手動で説明を入力する</li><li>「**[!UICONTROL 説明を生成]**」を選択すると、Adobeで説明が生成されます <p>生成された説明には、AI **を使用してAdobeによって生成されたテキスト**&#x200B;が含まれており、生成後に編集できます。</p><p>既にデータビューに保存されている指標とディメンションに対してのみ、説明を生成できます。 派生フィールドの場合は、派生フィールドが保存された後にここに説明を生成します。派生フィールドビルダーから説明を生成することはできません。</p><p>データビュー内の共有指標またはディメンションに対して説明を生成する場合、その説明は、共有されているすべてのデータビューに適用されます。</p></li></ul><p>複数のコンポーネントの説明を同時に生成するには：</p><ol><li>（オプション）既存の説明を維持するには、1つなしのコンポーネントのみを表示します。**[!UICONTROL 含まれるコンポーネント]** リストの上の![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択し、**[!UICONTROL その他]**&#x200B;の下で、**[!UICONTROL 説明が見つからない]**&#x200B;を選択し、**[!UICONTROL 適用]**&#x200B;を選択します。 説明を生成すると、既存の説明が上書きされます。</li><li>**[!UICONTROL 含まれるコンポーネント]** リストでコンポーネントを選択します。</li><li>「**[!UICONTROL 説明を生成]**」を選択し、「**[!UICONTROL 説明を生成]**」を選択して確認します。</li><li>データビューを保存します。 保存すると説明が生成されます。</li></ol><p>詳しくは、[説明の自動生成](/help/components/add-component-descriptions.md#automatically-generate-descriptions)を参照してください。</p> |
+| **[!UICONTROL タグ]** | （任意）。 Analysis Workspace UIでの検索やフィルタリングを容易にするために、カスタムタグまたは標準のタグを使用してコンポーネントにタグ付けすることができます。 |
+| **[!UICONTROL コンテキストラベル]** | （任意）。 コンポーネントに適用できる、利用可能なシステム定義[&#x200B; コンテキストラベル &#x200B;](#context-labels)のドロップダウンメニュー。 |
+| **[!UICONTROL スキーマフィールド名]** | スキーマフィールドの名前。 |
+| **[!UICONTROL データセットタイプ]** | 必須。 コンポーネントの元となるデータセットタイプ（イベント、参照、プロファイル）を示す編集不可のフィールド。 |
+| **[!UICONTROL データセット]** | コンポーネントの元のデータセットを示す編集不可のフィールド。 このフィールドには、複数のデータセットを含めることができます。 |
+| **[!UICONTROL スキーマタイプ]** | コンポーネントのデータタイプを示す編集不可のフィールド。 Platform では、サポートされている任意のスキーマフィールドタイプを使用できますが、Customer Journey Analytics ではすべてのフィールドタイプがサポートされているわけではありません。 次のデータタイプがサポートされています。`Integer`、`Int`、`Long`、`Double`、`Float`、`Number`、`Short`、`Byte`、`String` および `Boolean` です。 現在、ルックアップデータセットでは `String` スキーマデータタイプのみを使用できます。 |
+| **[!UICONTROL コンポーネント ID]** | 必須。 [Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) は、このフィールドを使用してコンポーネントを参照します。 データビューの各コンポーネントは、一意である必要があります。 アドビは、各コンポーネントの ID を自動的に生成します。ただし、編集アイコンをクリックして、コンポーネント ID を変更することはできます。 コンポーネント ID を変更すると、このコンポーネントを含む既存の Workspace プロジェクトがすべて機能しなくなります。 単一のデータビュー内では各コンポーネントに一意の ID が必要ですが、他のデータビュー内では同じコンポーネント ID を使用できます。 他のデータビューで同じコンポーネント ID を使用すると、データビューをまたいで Workspace プロジェクトに互換性を持たせることができます。 <br/>プロファイルとルックアップベースのコンポーネントの場合、コンポーネント ID には、データセット ID に基づく ID 接頭辞が付きます（例：`642b28fcc1f0ee1c074265a0.person.name.firstName`）。 Workspace プロジェクトでプロファイルやルックアップベースのコンポーネント（`person.name.firstName` など）を再利用し、このコンポーネントを様々なデータビューで設定する場合は、データビュー全体で確実にコンポーネント ID を一意の名前に変更します（`myUniqueID.person.name.firstName` など）。 |
+| **[!UICONTROL パス]** | 必須。 コンポーネントの元となるスキーマパスを示す編集不可のフィールド。 |
+| **[!UICONTROL データ使用状況ラベル]** | Adobe Experience Platformでこのコンポーネントに割り当てられているデータ使用ラベル。 [詳細情報](/help/data-views/data-governance.md)。 |
+| **[!UICONTROL レポートでコンポーネントを非表示]** | 管理者以外のユーザーがAnalysis Workspaceのコンポーネントにアクセスできないようにします。 管理者は、[!UICONTROL すべてのコンポーネントを表示]をクリックして、引き続きアクセスできます。 この設定はAnalysis Workspace インターフェイスにのみ適用され、[CJA API](https://developer.adobe.com/cja-apis/docs/)経由のアクセスを制限しません。 |
 
 {style="table-layout:auto"}
 
@@ -94,7 +94,6 @@ ht-degree: 48%
 デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [コンポーネントタイプ設定](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
-
 
 ## コンテキストラベル
 

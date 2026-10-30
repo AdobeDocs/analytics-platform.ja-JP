@@ -22,18 +22,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 6883ea7ea65827315805720142186eec75ad7558
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1675'
 ht-degree: 100%
-
 ---
-
 # プロジェクトの概要
 
-Workspace プロジェクトでは、パネル、ビジュアライゼーション、コンポーネントを組み合わせて、分析を作成し、組織内の任意のユーザーと共有できます。 最初のプロジェクトを開始する前に、プロジェクトへのアクセス方法、プロジェクト間の移動方法、およびプロジェクトの管理方法について説明します。
+Workspace プロジェクトでは、パネル、ビジュアライゼーション、コンポーネントを組み合わせて分析を作成し、組織内のユーザーと共有できます。 最初のプロジェクトを開始する前に、プロジェクトへのアクセス方法、ナビゲーション方法、およびプロジェクトの管理方法について確認してください。
 
-Customer Journey Analytics のプロジェクトにアクセスするには、「**[!UICONTROL Workspace]**」を選択します。  **[!UICONTROL プロジェクト]**&#x200B;マネージャーには、自分が所有するすべてのプロジェクトまたは共有されているプロジェクトが一覧表示されます。 環境設定で特に指定しない限り、プロジェクトリストを持つプロジェクトマネージャーにも Customer Journey Analytics のデフォルトのランディングページが表示されます。
+Customer Journey Analytics のプロジェクトにアクセスするには、「**[!UICONTROL Workspace]**」を選択します。  **[!UICONTROL プロジェクト]**&#x200B;マネージャーには、自分が所有するすべてのプロジェクトまたは共有されているプロジェクトが一覧表示されます。 環境設定で別途設定しない限り、プロジェクトリストを備えたプロジェクトマネージャーが、Customer Journey Analytics のデフォルトのランディングページになります。
 
 ![プロジェクトリストを表示するプロジェクトランディングページ](assets/projects.png)
 
@@ -76,12 +74,12 @@ Customer Journey Analytics のプロジェクトにアクセスするには、�
 | **[!UICONTROL 共有リンク（任意のユーザー）]** | Analysis Workspace へのアクセス権を持たない人物を含め、プロジェクトを任意のユーザーと共有するかどうか。 オプションは、![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL アクティブ]**&#x200B;または ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL 非アクティブ]**&#x200B;です。 詳しくは、[プロジェクトの共有](/help/analysis-workspace/curate-share/share-projects.md)の[任意のユーザーとのプロジェクトの共有（ログイン不要）](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)を参照してください。 |
 | **[!UICONTROL プロジェクトの役割]** | プロジェクトでの自分の役割。 オプションは、編集、複製、表示です。 詳しくは、[プロジェクトの役割](/help/analysis-workspace/curate-share/curate.md)を参照してください。 |
 | **[!UICONTROL データビュー]** | プロジェクトが関連付けられているデータビュー。 |
-| **[!UICONTROL 所有者]** | このプロジェクトを作成したユーザー（ユーザー自身、またはユーザー自身とそのプロジェクトを共有した他のユーザー）。 |
+| **[!UICONTROL 所有者]** | このプロジェクトを作成したユーザー（あなた自身、またはこのプロジェクトをあなたと共有した他のユーザー）。 |
 | **[!UICONTROL 共有先]** | プロジェクトが共有されているユーザー。 |
 | **[!UICONTROL 最終変更日時]** | プロジェクトが最後に変更された日付。 |
 | **[!UICONTROL 前回開いた日時]** | プロジェクトが最後に開かれた日時。 |
 | **[!UICONTROL プロジェクト ID]** | プロジェクトの ID。 |
-| **[!UICONTROL 最長の日付範囲]** | プロジェクト内の任意のパネルまたはビジュアライゼーションの最長の日付範囲。 |
+| **[!UICONTROL 最長の日付範囲]** | プロジェクト内のパネルまたはビジュアライゼーションのうち、最も長い日付範囲。 |
 | **[!UICONTROL クエリ数]** | プロジェクトに含まれるクエリの合計数。 |
 | **[!UICONTROL 場所]** | プロジェクトが存在するフォルダー。 |
 
@@ -106,7 +104,7 @@ Customer Journey Analytics のプロジェクトにアクセスするには、�
 | ![ArrowUp](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL 上へ移動]** | ピン留めしたプロジェクトまたはフォルダーをプロジェクトリスト内で上に移動します。 |
 | ![ArrowDown](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL 下へ移動]** | ピン留めしたプロジェクトまたはフォルダーをプロジェクトリスト内で下に移動します。 |
 | ![ラベル](/help/assets/icons/Label.svg) | **[!UICONTROL タグ]** | 1 つ以上のプロジェクトまたはフォルダーにタグを付けます。 1 つ以上のタグを選択するための&#x200B;**[!UICONTROL タグコンポーネント]**&#x200B;ダイアログが表示されます。 「**[!UICONTROL 保存]**」を選択して、選択したプロジェクトまたはフォルダーのタグを保存します。 |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]**&#x200B;または&#x200B;**[!UICONTROL 未承認]** | プロジェクトを承認または未承認にします。 管理者のみがプロジェクトを承認できます。 |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 承認]**&#x200B;または&#x200B;**[!UICONTROL 未承認]** | プロジェクトを承認または承認解除します。 管理者のみがプロジェクトを承認できます。 |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL CSV を書き出し]** | 選択したプロジェクトを `Project List.csv` という名前の CSV ファイルに書き出します。 |
 | ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL プロジェクトを追加]** | 選択したフォルダーに 1 つ以上のプロジェクトを追加します。 **[!UICONTROL プロジェクトを追加]**&#x200B;で、1 つ以上のプロジェクトを選択できます。 「**[!UICONTROL 追加]**」を選択して、プロジェクトをフォルダーに追加します。 詳しくは、[フォルダーへのプロジェクトの追加](workspace-folders/add-projects.md#from-inside-a-folder)を参照してください。 |
 | ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL 移動先]** | 選択した 1 つ以上のプロジェクトをフォルダーに移動します。 **[!UICONTROL フォルダーを選択]**&#x200B;で、選択したプロジェクトを移動するフォルダーを選択し、「**[!UICONTROL 移動]**」を選択します。 詳しくは、[フォルダーへのプロジェクトの追加](workspace-folders/add-projects.md#from-the-project-list)を参照してください。 |
@@ -138,7 +136,7 @@ Customer Journey Analytics のプロジェクトにアクセスするには、�
 
 | データビュー | 説明 |
 |---|---|
-| ![データビュー](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | 「**[!UICONTROL データビュー]**」セクションでは、データビューでフィルタリングできます。 <ul><li>フィルタリングに使用するデータビューを検索するには、![検索](/help/assets/icons/Search.svg) *データビューを検索*&#x200B;を使用します。</li><li>複数のデータビューを選択できます。 使用できるデータビューは、フィルターパネルの他のセクションでの選択によって異なります。</li><li>数値は次の内容を示します。<ul><li>**3︎⃣**：現在のフィルターによって生成されたプロジェクトに使用できるデータビュー数。</li><li>4︎⃣：特定のデータビューに関連付けられているプロジェクト数。</li></ul></li></ul> |
+| ![データビュー](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | 「**[!UICONTROL データビュー]**」セクションでは、データビューでフィルタリングできます。 <ul><li>フィルタリングに使用するデータビューを検索するには、![検索](/help/assets/icons/Search.svg) *データビューを検索*&#x200B;を使用します。</li><li>複数のデータビューを選択できます。 使用できるデータビューは、フィルターパネル内の他のセクションでの選択内容によって異なります。</li><li>数値は次の内容を示します。<ul><li>**3︎⃣**：現在のフィルターによって生成されたプロジェクトに使用できるデータビュー数。</li><li>4︎⃣：特定のデータビューに関連付けられているプロジェクト数。</li></ul></li></ul> |
 
 
 ### 所有者
@@ -159,13 +157,13 @@ Customer Journey Analytics のプロジェクトにアクセスするには、�
 
 | その他のフィルター | 説明 |
 |---|---|
-| ![その他のフィルター](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | 「**[!UICONTROL その他のフィルター]**」セクションでは、他の定義済みフィルターでフィルタリングできます。<ul><li>次のオプションから 1 つ以上を選択できます。<ul><li> **[!UICONTROL すべてを表示]**</li><li>**[!UICONTROL 自分と共有済み]**</li><li>**[!UICONTROL 自分が所有]**</li><li>**[!UICONTROL 承認済み]**</li><li>**[!UICONTROL お気に入り]**</li></ul> 選択できる内容は、役割と権限によって異なります。</li><li>複数のフィルターを選択できます。 使用できるその他のフィルターは、フィルターパネルの他のセクションでの選択によって異なります。</li><li>数値は次の内容を示します。<ul><li>**5︎⃣**：現在のフィルターによって生成されたプロジェクトに使用できるその他のフィルター数。</li><li>4︎⃣：特定のその他のフィルターに関連付けられているプロジェクト数。</li></ul></li></ul> |
+| ![その他のフィルター](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | 「**[!UICONTROL その他のフィルター]**」セクションでは、他の定義済みフィルターでフィルタリングできます。<ul><li>次のオプションから 1 つ以上を選択できます。<ul><li> **[!UICONTROL すべてを表示]**</li><li>**[!UICONTROL 自分と共有済み]**</li><li>**[!UICONTROL 自分が所有]**</li><li>**[!UICONTROL 承認済み]**</li><li>**[!UICONTROL お気に入り]**</li></ul> 選択できる内容は、役割と権限によって異なります。</li><li>複数のフィルターを選択できます。 使用できるその他のフィルターは、フィルターパネルの他のセクションでの選択によって異なります。</li><li>数値は次の内容を示します。<ul><li>**5︎⃣**：現在のフィルターによって生成されたプロジェクトに使用できるその他のフィルター数。</li><li>4︎⃣：特定の別のフィルターに関連付けられているプロジェクト数。</li></ul></li></ul> |
 
 ## 検索
 
 「![検索](/help/assets/icons/Search.svg)」フィールドを使用してプロジェクトとフォルダーを検索するには、検索領域 ➎ を使用します。 入力を開始すると、[プロジェクトリスト](#project-list)が検索入力に基づいて自動的にフィルタリングされます。
 
-また、検索領域には、フィルターパネルから適用されたフィルターも表示されます。
+検索領域には、フィルターパネルから適用されたフィルターも表示されます。
 
 * フィルターを削除するには、フィルターで ![CrossSize75](/help/assets/icons/CrossSize75.svg) を選択します。
 * すべてのフィルターを削除するには、「すべてクリア」を選択します。
@@ -174,8 +172,8 @@ Customer Journey Analytics のプロジェクトにアクセスするには、�
 
 * フィルターを削除するには：
 
-   1. **[!UICONTROL *x *個のフィルター]**![ChevronDown](/help/assets/icons/ChevronDown.svg) を使用して、フィルターのタイプと個々のフィルターを一覧表示するコンテキストメニューを開きます。
-   1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用して、タグを削除します。
+  1. **[!UICONTROL *x *個のフィルター]**![ChevronDown](/help/assets/icons/ChevronDown.svg) を使用して、フィルターのタイプと個々のフィルターを一覧表示するコンテキストメニューを開きます。
+  1. ![CrossSize75](/help/assets/icons/CrossSize75.svg) を使用して、タグを削除します。
 
 
 <!--
@@ -240,7 +238,7 @@ Settings include:
 |  Created By  | Project owner name  |
 |  Last Modified  | Date of last modification to the project.  |
 |  Tags  |Lists any tags applied to a project for easier categorization.  |
-|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it.  |
+|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it. <p>To have Adobe generate a description for you, select **[!UICONTROL Generate description]** below the description field. Adobe analyzes several panels in the project and summarizes them into a description. Generated descriptions include the text **[!UICONTROL Generated by Adobe using AI]** and can be edited. This option requires your organization to agree to certain generative AI legal terms.</p> |
 |  Count repeat instances in project  | Specifies whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |

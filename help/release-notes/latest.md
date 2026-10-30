@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 665ce95d0b2979bb4f3b26f5d5e5c0df75894f19
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 22%
+source-wordcount: '1298'
+ht-degree: 17%
 ---
 # 最新のCustomer Journey Analytics リリースノート（2026年10月）
 
-**最終更新**: 2026年10月22日（PT）
+**最終更新**: 2026年10月29日（PT）
 
 これらのリリースノートは、2026年10月のリリース期間をカバーしています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -68,8 +68,10 @@ ht-degree: 22%
 | **会話インサイトを利用して、Analysis WorkspaceのLLM カスタマーエクスペリエンスを分析**<br/> Customer Journey Analyticsでは、非構造化チャットデータをAnalysis Workspaceに取り込み、プロパティ全体で発生するLLMを活用した閲覧体験と購買体験についてレポートを作成できるようになりました。<p>この機能を使用すると、次のことが可能になります。</p><ul><li>Web SDKを使用して、会話型エージェント（組織のカスタムエージェントまたはAdobe Brand Concierge）からプロンプト、レスポンス、エージェントメタデータを収集します。</li><li>意図、トーン、センチメントを分析することで、顧客が何を求めているのか、担当者がどのように反応するのか、顧客がどのように感じているのかを把握できます。</li><li>既存のスキーマ、データセット、データビューを利用して大規模に分析し、Analysis Workspaceでインサイトを獲得できます。</li><li>エージェントとのやり取りを、より広範なカスタマージャーニーに結び付けることで、結果に会話を結びつけ、コンバージョンやエンゲージメントなどへの実際の影響を測定することができます。</li></ul><p>以前は、LLMを活用したエクスペリエンスを測定するのは困難で、既存のカスタマージャーニーとつながることもほぼ不可能でした。</p><p>詳しくは、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)を参照してください。</p> | 2026年10月29日（PT）<p>（当初は2026年9月22日に予定）</p> | 未定 |
 | **Adobe Brand Visibilityとの統合**<br/> Adobe Adobe Brand Visibilityを組織のCustomer Journey Analyticsデータと連携させて、AIを活用した発見が、web サイトの実際のエンゲージメントとビジネスの成果にどのように結びつくのかを測定できます。<p>詳しくは、[Adobe Brand Visibilityとの連携](/help/integrations/bv/bv.md)を参照してください。</p> | | 2026年10月8日（PT） |
 | **ジャーニーキャンバス：パーセンテージの比較**<br/> ジャーニーを前の期間と比較する際に、新しい[!UICONTROL &#x200B; パーセンテージの比較] オプションを有効にして、各ノード、矢印、フォールアウトのパーセンテーションポイントの変化を表示できるようになりました。 これは、ノード間のリテンションやフォールアウトなどのレートを比較する場合に便利です。ジャーニーのユーザー数が日付範囲によって異なる場合でも、比較は正確に保たれます。<p>詳しくは、[ジャーニーキャンバスのビジュアライゼーションの設定](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)の「パーセンテージの比較」を参照してください。</p> | | 2026年10月19日（PT） |
-| **コンポーネントの説明を自動生成** <br/> ディメンション、指標、計算指標、セグメント、日付範囲の説明を自動的に生成できるようになりました。 これにより、Workspace ユーザーは、特に大規模なコンポーネントライブラリを持つ組織で、使用するコンポーネントを理解できます。 <p>1つのコンポーネントに対して説明を生成したり、同時に多くのコンポーネントに対して説明を生成したりできます。</p> <p>（ドキュメントのリンクは以下を参照。）<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | 2026年10月28日（PT） |
-| **Coworkerの製品内エクスペリエンス**<br/> Coworkerは、Analysis Workspaceのチャットパネルで利用できるようになりました。 共同作業者は、開いているプロジェクトをコンテキストとして使用するので、プロジェクトに何が含まれているかを説明せずに分析について質問できます。<p>Adobe Workfrontの製品体験を活用することで、次のことが可能になります。</p><ul><li>進行中のプロジェクトを要約し、インサイトを見つけ出して、根本原因の分析を実行します。</li><li>自然言語プロンプトを使用してプロジェクトを構築および編集します。 例えば、パネルや表を追加したり、データを分類したり、ビジュアライゼーションタイプや日付範囲を変更したり、セグメントを作成したりできます。</li></ul><p>（後で行うドキュメントの更新） <!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | TBD （当初は2026年10月15日に予定） | 未定 |
+| **ビジュアライゼーションの簡潔な凡例ラベル**<br/> ビジュアライゼーションの凡例ラベルを短くできるようになりました。一目で見分けることができます。 [!UICONTROL 簡潔なラベル &#x200B;]設定では、すべてのラベルが共有する指標、セグメント、ディメンション項目、日付範囲名を削除することで、1つのラベルを他のラベルと区別する情報にインテリジェントに焦点を当てています。<p>簡潔なラベルを使用しない場合、すべての凡例ラベルは共有名を繰り返します。これにより、ホバーでのみ違いが表示される長いラベルが作成される場合があります。</p><p>簡潔なラベルはデフォルトでオフになっており、積み重ねバージョンを含むエリア、バー、コンボ、ドーナツ、ヒストグラム、水平バー、線、ベンのビジュアライゼーションで使用できます。</p><p>詳しくは、[簡潔ラベル &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#concise-labels)を参照してください。</p> | | 2026年10月29日（PT） |
+| **コンポーネントとプロジェクトの説明を自動的に生成する** <br/> ディメンション、指標、計算指標、セグメント、日付範囲の説明を自動的に生成できるようになりました。 これにより、Workspace ユーザーは、特に大規模なコンポーネントライブラリを持つ組織で、使用するコンポーネントを理解できます。 <p>1つのコンポーネントに対して説明を生成したり、同時に多くのコンポーネントに対して説明を生成したりできます。 詳しくは、[説明の自動生成](/help/components/add-component-descriptions.md#automatically-generate-descriptions)を参照してください。</p><p>また、[&#x200B; プロジェクトを保存](/help/analysis-workspace/build-workspace-project/save-projects.md)するとき、または[&#x200B; プロジェクト情報と設定](/help/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings)からWorkspace プロジェクトの説明を生成することもできます。</p> | 2026年10月29日（PT） | 2026年11月18日（PT） |
+| **CX Enterprise Coworker: コンテンツに関する質問** <br/>Content Analyticsからコンテンツに関する正確な回答を得るために、共同作業者チャットを使用できるようになりました。 「前四半期に最も売上を伸ばした画像は？」などの具体的な質問や、「どのようなコンテンツを優先すればよいか？」などの一般的な質問を考えてみましょう。 Adobe Content Analyticsのデータがどのように構造化されているかを理解し、経験豊富なアナリストならではのレポートルールを適用します。そのため、Content Analyticsの専門知識がなくても、マーケターやビジネスユーザーは信頼性の高い結果を得ることができます。<p></p>詳しくは、[同僚チャットでのコンテンツに関する質問](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/content-performance/ask-content-questions)を参照してください | 2026年10月14日（PT） | 未定 |
+| **Coworkerの製品内エクスペリエンス**<br/> Coworkerは、Analysis Workspaceのチャットパネルで利用できるようになりました。 共同作業者は、開いているプロジェクトをコンテキストとして使用するので、プロジェクトに何が含まれているかを説明せずに分析について質問できます。<p>Adobe Workfrontの製品体験を活用することで、次のことが可能になります。</p><ul><li>進行中のプロジェクトを要約し、インサイトを見つけ出して、根本原因の分析を実行します。</li><li>自然言語プロンプトを使用してプロジェクトを構築および編集します。 例えば、パネルや表を追加したり、データを分類したり、ビジュアライゼーションタイプや日付範囲を変更したり、セグメントを作成したりできます。</li></ul><p>詳しくは、[共同作業者に対する製品内エクスペリエンスの使用](/help/analysis-workspace/coworker.md)を参照してください。</p> | 2026年10月29日（PT） | 未定 |
 
 
 ### Customer Journey Analytics の修正点

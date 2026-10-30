@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '3165'
-ht-degree: 77%
+source-wordcount: '3192'
+ht-degree: 76%
 ---
 # データビューの作成または編集
 
@@ -341,7 +341,17 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
   * **[!UICONTROL データタイプ]** - [!UICONTROL 文字列]、[!UICONTROL 整数]、[!UICONTROL 短整数]、[!UICONTROL ブール値]、[!UICONTROL 倍精度]、[!UICONTROL バイト]、[!UICONTROL 長整数]、[!UICONTROL 日付]、[!UICONTROL 日時]から 1 つ以上のデータタイプを選択できます。
   * **[!UICONTROL データセット]** - 1 つ以上のデータセットを選択します。
   * **[!UICONTROL データガバナンス]**: [!UICONTROL &#x200B; カスタムラベル &#x200B;]、[!UICONTROL 契約ラベル &#x200B;]、[!UICONTROL ID ラベル &#x200B;]、[!UICONTROL 機密性ラベル &#x200B;]、[!UICONTROL &#x200B; パートナーエコシステム &#x200B;]、または[!UICONTROL &#x200B; ポリシー] サブカテゴリから1つ以上のラベルを選択します。
-  * **[!UICONTROL その他]** - 「[!UICONTROL データを含む]」、「[!UICONTROL ID である]」、「[!UICONTROL 非推奨ではない]」のオプションを 1 つ以上選択します。
+  * **[!UICONTROL その他]** – 次の1つ以上のオプションを選択します。
+
+    * [!UICONTROL &#x200B; データを含む]
+
+    * [!UICONTROL はID]です
+
+    * [!UICONTROL は非推奨ではありません]
+
+    * [!UICONTROL 説明がありません]
+
+      このオプションを使用すると、複数のコンポーネントに対して同時に[説明を生成](/help/data-views/component-settings/overview.md)するなど、説明がまだ含まれていないコンポーネントのみを表示できます。
 
   「**[!UICONTROL 適用]**」を選択して、フィルターを適用します。
 

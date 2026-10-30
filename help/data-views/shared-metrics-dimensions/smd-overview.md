@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
+source-git-commit: a80a12b061bee5165667b361a9e4bc1888d86c95
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 3%
@@ -49,7 +49,7 @@ ht-degree: 3%
 1. 同じコンポーネント IDを使用するが、異なるコンポーネント設定を持つすべてのコンポーネントを確認します。 重複するコンポーネントの各グループについて、そのコンポーネント IDを共有する他のすべてのコンポーネントに適用する目的のコンポーネント設定を選択します。
 1. 同じコンポーネント IDを使用し、同じコンポーネント設定を持つすべてのコンポーネントを確認します。 これらのディメンションや指標は、容易かつ安全に統合できます。
 
-## [!UICONTROL 共有指標とディメンション &#x200B;] マネージャー
+## [!UICONTROL 共有指標とディメンション &#x200B;] マネージャー {#smd-manager}
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL データビュー]** > **[!UICONTROL 共有メトリクスとディメンション]**
 

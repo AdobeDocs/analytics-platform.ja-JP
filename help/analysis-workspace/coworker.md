@@ -4,7 +4,6 @@ description: Coworkerの製品内エクスペリエンスを自然言語プロ�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -23,14 +22,16 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 88e67c92fc170b340149c9ab73ad5eea2122da2b
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 0%
+source-wordcount: '1960'
+ht-degree: 1%
 ---
 # 従業員が製品内で体験できるようにしたい
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>このセクションで説明している機能は、リリースの限定テスト段階にあり、お使いの環境ではまだ利用できない可能性があります。 さらに、チームメンバーが生成AIを利用すると、不正確な結果や予期しない結果が生じる可能性があります。 共同作業者の反応と、それがプロジェクトに加えた変更を確認してから、それらを実行したり、プロジェクトを共有したりします。
 
 Adobe Analysis Workspaceの右側のチャットパネルには、Adobe Workfrontの製品内エクスペリエンスが表示されます。 Coworkerでは、オープンなプロジェクトをコンテキストとして使用するので、分析について尋ねたり、プロジェクトに何が含まれているかを説明することなく、プロジェクトを構築してもらったりできます。
 
@@ -42,11 +43,14 @@ Adobe Analysis Workspaceの右側のチャットパネルには、Adobe Workfron
 
   WorkspaceでCoworkerにアクセスできない場合は、管理者にお問い合わせください。 詳しくは、[IMS組織の環境設定](/help/analysis-workspace/user-preferences.md#ims-organization-preferences)を参照してください。<!-- need to update this section with the new toggle -->
 
-<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
-
-* **権限**: [!UICONTROL Adobe Admin Console]では、[!UICONTROL &#x200B; レポートツール &#x200B;] **[!UICONTROL Coworker]**&#x200B;権限によって、Coworkerへのアクセス権が決まります。 [製品プロファイル管理者](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)は、この権限を製品プロファイルに追加する必要があります。 詳しくは、[&#x200B; アクセス制御](/help/technotes/access-control.md#access-control)を参照してください。
-
 * **データビューへのアクセス**：共同作業者は既存のAnalysis Workspaceとデータビューの権限を使用します。 アクセス権のないデータやコンポーネントにはアクセスできません。
+
+<!--
+FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
+
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+
+-->
 
 ### WorkspaceのCoworkerとCoworker アプリケーションを選択します
 
