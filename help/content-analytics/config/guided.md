@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4894'
 ht-degree: 55%
 ---
 
@@ -298,6 +298,8 @@ Content Analytics data collectionを追加する接続を選択する必要が�
 
 このセクションでは、Content Analyticsで収集したモバイルデータにエクスペリエンスを含めるように選択できます。  モバイルチャネルのエクスペリエンスは、Adobe Experience Platform SDK Content Analytics版を使用してエクスペリエンスとして登録したものです。
 
+エクスペリエンスディメンションは、データセットとデータビューでデフォルトで有効になっています。 **[!UICONTROL エクスペリエンスを含める]**&#x200B;の選択は、データ収集でContent Analytics エクスペリエンスを有効にすることです。
+
 デフォルトでは、**[!UICONTROL エクスペリエンスを含める]**&#x200B;は無効になっています。
 
 モバイルアプリを実装してエクスペリエンスを登録し、エクスペリエンスビューとエクスペリエンスクリックを追跡する場合にのみ、エクスペリエンスを含めることを検討してください。
@@ -469,7 +471,9 @@ Web チャネルの場合、[&#x200B; エクスペリエンスキャプチャと
 次に該当する場合にのみ、エクスペリエンスを含めることを検討します。
 
 * ページ URL を使用して、サイト上のページを再現できる必要があります。
-* 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再現でき、Cookie やその他のパーソナライゼーションメカニズムに依存しません。
+* 特定のユーザーが表示するテキストコンテンツは、ページ URL を使用して再現でき、Cookie やその他のパーソナライズ機能に依存しません。
+
+エクスペリエンスディメンションは、データセットとデータビューでデフォルトで有効になっています。 **[!UICONTROL エクスペリエンスを含める]**&#x200B;の選択は、データ収集でContent Analytics エクスペリエンスを有効にすることです。
 
 >[!IMPORTANT]
 >
