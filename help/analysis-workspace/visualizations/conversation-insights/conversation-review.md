@@ -7,7 +7,7 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 8%
+ht-degree: 16%
 ---
 # 会話のレビュー
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_button"
 >title="会話のレビュー"
->abstract="顧客とエージェント間の完全なターンバイターン交換を示すビジュアライゼーションを作成します。"
+>abstract="顧客とエージェント間の完全なターンバイターンでのやり取りを示すビジュアライゼーションを作成します。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"

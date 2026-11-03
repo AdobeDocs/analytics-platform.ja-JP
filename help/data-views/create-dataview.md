@@ -126,7 +126,7 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Data Insights Agent を有効にする"
->abstract="このオプションを選択すると、Data Insights Agent で使用するためにこのデータビューが有効になります。 Data Insights Agentは、テキストプロンプトを使用してデータを迅速に分析できる生成AI会話型エージェントです。 データビューのコンポーネントと実際のデータを使用して、Analysis Workspace で関連するビジュアライゼーションを作成します。"
+>abstract="このオプションを選択すると、Data Insights Agent で使用するためにこのデータビューが有効になります。 Data Insights Agent は、テキストプロンプトを使用してデータをすばやく分析できる生成 AI 対話型エージェントです。 データビューのコンポーネントと実際のデータを使用して、Analysis Workspace で関連するビジュアライゼーションを作成します。"
 
 <!-- markdownlint-enable MD034 -->
 

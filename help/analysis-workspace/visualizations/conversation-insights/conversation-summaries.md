@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 10%
+ht-degree: 20%
 ---
-# 会話の概要 {#conversation-summaries}
+# 会話の要約 {#conversation-summaries}
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_button"
->title="会話の概要"
->abstract="フィルターされた会話のグループを要約するビジュアライゼーションを作成します。"
+>title="会話の要約"
+>abstract="フィルタリングされた会話のグループを要約するビジュアライゼーションを作成します。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
->title="会話の概要"
->abstract="フィルターされた会話のグループを要約します。 サマリーの長さを制御します。 顧客からの代表的な見積もりを参照して、抽出されたシグナルの正確性を検証します。 見積もりを選択して、会話の全再生を開きます。"
+>title="会話の要約"
+>abstract="フィルタリングされた会話のグループを要約します。 要約の長さを制御します。 抽出されたシグナルの正確性を検証するために、顧客からの代表的な引用を確認します。 見積もりを選択して、会話の全再生を開きます。"
 
 {{release-limited-testing}}
 

@@ -7,7 +7,7 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 8%
+ht-degree: 16%
 ---
 # トレンド分析トピック {#trending-topics}
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
 >title="トレンド分析トピック"
->abstract="選択したランキング指標にもとづいてトレンドトピックを分析します。 トピックを選択して、最大5つのレベルまでドリルダウンします。 特定のトピックを検索し、トピックを他の日付範囲と比較します。"
+>abstract="選択したランキング指標に基づいてトレンド分析トピックを分析します。 トピックを選択して、最大 5 つのレベルの深さまでドリルダウンします。 特定のトピックを検索して、トピックを他の日付範囲と比較します。"
 
 {{release-limited-testing}}
 
