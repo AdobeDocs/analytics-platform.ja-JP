@@ -3,8 +3,7 @@ description: トレンドのトピックのビジュアライゼーションを�
 title: トレンド分析トピック
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 16%
@@ -23,7 +22,7 @@ ht-degree: 16%
 
 {{release-limited-testing}}
 
-![&#x200B; フィード &#x200B;](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、会話インサイトの一部として、トレンド トピックを探索および分析できます。
+![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)の一部として、トレンド トピックを探索および分析できます。
 
 特定のトピックを検索し、各レベルの各トピックの数と割合を他のデータ範囲と比較できます。
 
@@ -42,7 +41,7 @@ ht-degree: 16%
 
 **[!UICONTROL トレンドトピック]** ビジュアライゼーションを作成して設定するには：
 
-1. ![&#x200B; フィード &#x200B;](/help/assets/icons/Feed.svg) **[!UICONTROL トレンド トピック]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
+1. ![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL トレンド トピック]** ビジュアライゼーションを追加します。 [パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)を参照してください。
 
 1. **[!UICONTROL トレンドトピック]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
