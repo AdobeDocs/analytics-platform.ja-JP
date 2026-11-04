@@ -24,13 +24,11 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 7190b05d8c3d66a6f76ed256af3424ba3c971855
 workflow-type: tm+mt
-source-wordcount: 1117
+source-wordcount: '1119'
 ht-degree: 75%
-
 ---
-
 # [!UICONTROL 永続性] コンポーネントの設定 {#persistence-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -64,7 +62,7 @@ ht-degree: 75%
 | --- | --- |
 | [!UICONTROL 永続化を設定] | ディメンションの永続性を有効にします。 永続性が有効になっていない場合、ディメンションは同じイベント内に存在する指標にのみ関連付けられます。 この設定は、デフォルトで無効になっています。 |
 | [!UICONTROL 配分] | 永続性のためにディメンションで使用される配分モデルを指定します。 オプションは次のとおりです。<ul><li>**[!UICONTROL 直近]**：ディメンションの値は、後続の値で上書きされるまで保持されます</li><li> **[!UICONTROL 元の]**：このディメンションの最初の値は保持され、後続の値によって上書きされません</li><li>**[!UICONTROL すべて]**：このディメンションのすべての値が同時に保持されます</li><li>**[!UICONTROL 最初の事例]**：このディメンションの最初の値が使用され、前後のすべてのイベントに適用されます。</li><li>**[!UICONTROL 最後の事例]**：このディメンションの最後の値が使用され、前後のすべてのイベントに適用されます。</li></ul> |
-| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定します。 オプションは次のとおりです。 <ul><li>**[!UICONTROL セッション]**（デフォルト）</li><li>**[!UICONTROL ユーザー]**</li><li>**[!UICONTROL カスタム時間]**</li><li>**[!UICONTROL 指標]**</li></ul>. 場合によっては、購入時にディメンションが期限切れになるように設定する必要があります（内部検索キーワードやその他のマーチャンダイジングのユースケースなど）。 設定できる最大有効期限は90日です。 配分で「[!UICONTROL すべて]」を選択した場合は、「[!UICONTROL セッション]」または「[!UICONTROL 個人]」の有効期限のみ使用できます。 |
+| [!UICONTROL 有効期限] | ディメンションの永続性ウィンドウを指定します。 オプションは次のとおりです。 <ul><li>**[!UICONTROL セッション]**（デフォルト）</li><li>**[!UICONTROL 人物レポートウィンドウ]**</li><li>**[!UICONTROL カスタム時間]**</li><li>**[!UICONTROL 指標]**</li></ul>. 場合によっては、購入時にディメンションが期限切れになるように設定する必要があります（内部検索キーワードやその他のマーチャンダイジングのユースケースなど）。 設定できる最大有効期限は90日です。 配分で「[!UICONTROL すべて]」を選択した場合は、「[!UICONTROL セッション]」または「[!UICONTROL 個人]」の有効期限のみ使用できます。 |
 
 {style="table-layout:auto"}
 
@@ -126,7 +124,7 @@ ht-degree: 75%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [バインディングディメンション](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
