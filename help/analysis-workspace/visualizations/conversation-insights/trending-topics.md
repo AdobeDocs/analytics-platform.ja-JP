@@ -22,7 +22,7 @@ ht-degree: 16%
 
 {{release-limited-testing}}
 
-![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、[会話インサイト ](/help/conversation-insights/overview.md)の一部として、トレンド トピックを探索および分析できます。
+![分類](/help/assets/icons/Breakdown.svg) **[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションを使用すると、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)の一部として、トレンド トピックを探索および分析できます。
 
 特定のトピックを検索し、各レベルの各トピックの数と割合を他のデータ範囲と比較できます。
 
@@ -46,20 +46,20 @@ ht-degree: 16%
 1. **[!UICONTROL トレンドトピック]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
    1. **[!UICONTROL ランキング指標]**&#x200B;を選択します。 例：**[!UICONTROL Conversations]**。
-   1. 指標でデフォルト以外の[ アトリビューション ](/help/analysis-workspace/attribution/models.md) モデルを使用する場合は、オプションで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択し、**[!UICONTROL モデル]**、**[!UICONTROL コンテナ]**&#x200B;および&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;を選択します。
+   1. 指標でデフォルト以外の[&#x200B; アトリビューション &#x200B;](/help/analysis-workspace/attribution/models.md) モデルを使用する場合は、オプションで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択し、**[!UICONTROL モデル]**、**[!UICONTROL コンテナ]**&#x200B;および&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;を選択します。
 1. ビジュアライゼーションを作成するには、**[!UICONTROL ビルド]**&#x200B;を選択します。 設定値をデフォルトにリセットするには、**[!UICONTROL リセット]**&#x200B;を選択します。
 
-トレンド トピックのビジュアライゼーションを再構成するには、**[!UICONTROL ランキング指標：_ランキング指標_ | サブトピックレベル：_x_]**の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
+トレンド トピックのビジュアライゼーションを再構成するには、**[!UICONTROL ランキング指標：_ランキング指標_ | サブトピックレベル：_x_]**&#x200B;の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
 
 ## 使用
 
 ビジュアライゼーションを使用するには：
 
-![ トレンド トピックのビジュアライゼーションを使用](assets/trending-topics.png)
+![&#x200B; トレンド トピックのビジュアライゼーションを使用](assets/trending-topics.png)
 
 * トピックにカーソルを合わせると、詳細が表示されるポップアップが表示されます。➊
 
-* トピックのトレンドのサブトピックを下位レベルで表示するには、特定のレベルのトピックを選択します。 サブレベルで使用できるトピックがない場合は、![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL トピック > サブトピック _> ...]**のサブトピックが見つかりません。_
+* トピックのトレンドのサブトピックを下位レベルで表示するには、特定のレベルのトピックを選択します。 サブレベルで使用できるトピックがない場合は、![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL トピック > サブトピック _> ...]**&#x200B;のサブトピックが見つかりません。_
 
 * ![検索](/help/assets/icons/Search.svg) **[!UICONTROL _トピックの検索_]**&#x200B;を使用すると、トピックをすばやく検索できます。➋
 
@@ -72,11 +72,11 @@ ht-degree: 16%
 
 * 現在のトピック選択の折れ線グラフを表示するには、**[!UICONTROL トレンド トピック]** ビジュアライゼーションに[行](/help/analysis-workspace/visualizations/line.md) ビジュアライゼーションをドロップします。 **[!UICONTROL 行]**&#x200B;のビジュアライゼーションは、**[!UICONTROL トレンド トピック]**&#x200B;のビジュアライゼーションに自動的にリンクされ、選択したトピックの行が表示されます。
 
-  ![ トレンドのトピック行のビジュアライゼーション ](assets/trending-topics-line-viz.png)
+  ![&#x200B; トレンドのトピック行のビジュアライゼーション &#x200B;](assets/trending-topics-line-viz.png)
 
 ## 設定
 
-次の特定の[ ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
+次の特定の[&#x200B; ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
 
 | 設定 | 説明 |
 |---|---|

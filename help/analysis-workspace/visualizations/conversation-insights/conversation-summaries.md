@@ -22,7 +22,7 @@ ht-degree: 17%
 
 {{release-limited-testing}}
 
-![AI](/help/assets/icons/AI.svg) **[!UICONTROL 会話の要約]** ビジュアライゼーションを使用すると、[会話インサイト ](/help/conversation-insights/overview.md)の一部として、フィルタリングされた会話のグループを要約できます。
+![AI](/help/assets/icons/AI.svg) **[!UICONTROL 会話の要約]** ビジュアライゼーションを使用すると、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)の一部として、フィルタリングされた会話のグループを要約できます。
 
 ビジュアライゼーションには、選択した指標（会話など）の概要が表示され、サブトピックを含めるようにビジュアライゼーションを設定すると、サブトピックまたは口語的なコメントが表示されます。
 
@@ -46,12 +46,12 @@ ht-degree: 17%
 1. **[!UICONTROL 会話の概要]**&#x200B;のビジュアライゼーション設定で、次の操作を行います。
 
    1. **[!UICONTROL 指標]**&#x200B;を選択します。 例：**[!UICONTROL Conversations]**。
-   1. 指標でデフォルト以外の[ アトリビューション ](/help/analysis-workspace/attribution/models.md) モデルを使用する場合は、オプションで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択し、**[!UICONTROL モデル]**、**[!UICONTROL コンテナ]**&#x200B;および&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;を選択します。
+   1. 指標でデフォルト以外の[&#x200B; アトリビューション &#x200B;](/help/analysis-workspace/attribution/models.md) モデルを使用する場合は、オプションで、**[!UICONTROL デフォルト以外のアトリビューションモデルを使用]**&#x200B;を選択し、**[!UICONTROL モデル]**、**[!UICONTROL コンテナ]**&#x200B;および&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;を選択します。
    1. オプションで、セグメントをビジュアライゼーションに適用できます。 「**[!UICONTROL セグメント]**」ドロップダウンメニューからセグメントを選択します。
 
 1. ビジュアライゼーションを作成するには、**[!UICONTROL ビルド]**&#x200B;を選択します。 設定値をデフォルトにリセットするには、**[!UICONTROL リセット]**&#x200B;を選択します。 設定をキャンセルするには、**[!UICONTROL キャンセル]**&#x200B;を選択します。
 
-**[!UICONTROL 会話の概要]** ビジュアライゼーションを再構成するには、**[!UICONTROL 指標：_指標_]**または&#x200B;**[!UICONTROL 指標：_指標_]** | **[!UICONTROL セグメント：_セグメント_]**の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
+**[!UICONTROL 会話の概要]** ビジュアライゼーションを再構成するには、**[!UICONTROL 指標：_指標_]**&#x200B;または&#x200B;**[!UICONTROL 指標：_指標_]** | **[!UICONTROL セグメント：_セグメント_]**&#x200B;の横にある![編集](/help/assets/icons/Edit.svg)を選択します。
 
 ## 使用
 
@@ -61,27 +61,27 @@ ht-degree: 17%
 
 >[!TAB  サブトピック ]
 
-![ サブトピック ](assets/conversation-summaries-subtopics.png)
+![&#x200B; サブトピック &#x200B;](assets/conversation-summaries-subtopics.png)
 
 >[!TAB 口語的なコメント ]
 
-![口語的なコメント ](assets/conversation-summaries-verbatimcomments.png)
+![口語的なコメント &#x200B;](assets/conversation-summaries-verbatimcomments.png)
 
 >[!ENDTABS]
 
-* [ サブトピック ](#settings)が含まれている場合は、**[!UICONTROL サブトピック]**&#x200B;を選択してサブトピックを表示するか、**[!UICONTROL verbatim コメント]**&#x200B;を選択してverbatim コメントを表示します。
+* [&#x200B; サブトピック &#x200B;](#settings)が含まれている場合は、**[!UICONTROL サブトピック]**&#x200B;を選択してサブトピックを表示するか、**[!UICONTROL verbatim コメント]**&#x200B;を選択してverbatim コメントを表示します。
 * **[!UICONTROL 音声コメント]**&#x200B;を選択した場合、![FileSearch](/help/assets/icons/FileSearch.svg)を選択して、音声コメントが属する特定の会話に対する新しい[**[!UICONTROL 会話レビュー]**](./conversation-review.md) ビジュアライゼーションを開きます。
 
 複数の会話レビューをすばやく参照するには：
 
-1. **[!UICONTROL 会話ID]**&#x200B;と&#x200B;**[!UICONTROL 会話の名前]**&#x200B;をディメンションとして含む[ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
+1. **[!UICONTROL 会話ID]**&#x200B;と&#x200B;**[!UICONTROL 会話の名前]**&#x200B;をディメンションとして含む[&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)を作成します。
 1. **[!UICONTROL 会話レビュー]** ビジュアライゼーションのデータソースとしてフリーフォームテーブルを選択します。
 
 フリーフォームテーブルで会話を選択すると、**[!UICONTROL 会話レビュー]**&#x200B;が自動的に更新され、選択した会話の詳細が表示されます。
 
 ## 設定
 
-次の特定の[ ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
+次の特定の[&#x200B; ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)を使用できます。
 
 | 設定 | 説明 |
 |---|---|
