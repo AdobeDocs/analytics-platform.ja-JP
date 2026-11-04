@@ -47,7 +47,7 @@ ht-degree: 0%
 
 <!-- update the following graphic -->
 
-![ ワークスペースとデータフィードのデータの違い](assets/data-feed-data-differences.png)
+![&#x200B; ワークスペースとデータフィードのデータの違い](assets/data-feed-data-differences.png)
 
 
 >[!ENDSHADEBOX]
