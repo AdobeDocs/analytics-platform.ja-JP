@@ -28,16 +28,16 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 82%
+source-wordcount: '1923'
+ht-degree: 81%
 ---
 # フィールドベースのステッチ
 
 フィールドベースの合成では、イベントデータセットと、そのデータセットの永続的ID （cookie）および人物IDを指定します。 フィールドベースの合成では、特定の永続IDを持つ匿名イベントに対して、Customer Journey Analytics data analysisで個人ID情報を使用できるようにします。  その情報は、その特定の永続的IDの個人IDを持つ行から取得されます。
 
-イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[&#x200B; データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
+イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[ データビュー](/help/data-views/data-views.md)で、人物ID コンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
 
 Customer Journey Analyticsをスタンドアロンソリューションとして使用する場合（Experience Platform ID サービスおよび関連するID グラフにアクセスできない場合）は、フィールドベースのステッチを使用できます。 または、使用可能な ID グラフを使用しない場合は、フィールドベースのステッチを使用できます。
 
@@ -235,11 +235,11 @@ Bob が様々なイベントをイベントデータセットの一部として�
 
 - ステッチを適用する Adobe Experience Platform のイベントデータセットには、プロファイルの識別に役立つ次の 2 つの列が必要です。
 
-  - **永続 ID** - 各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
+  - **永続 ID** - 各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurement ライブラリによって生成された訪問者ID、またはEdge Networkによって生成されたECIDなどです。
   - **ユーザー ID** - 一部の行で使用できる識別子。 例えば、プロファイルの認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。 事実上任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチの結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、ユーザー ID を送信する必要があります。 Customer Journey Analytics 接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の識別子を持っていることが推奨されます。
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

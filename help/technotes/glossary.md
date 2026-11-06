@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 95%
+source-wordcount: '328'
+ht-degree: 96%
 ---
 # Customer Journey Analytics の用語集
 
@@ -49,7 +49,7 @@ Customer Journey Analytics の用語には、Adobe Analytics でこれまで使�
 | --- | --- | --- |
 | ルックアップデータセット | 分類 | 1 対 1 の関係があるキーと一致するキー（イベントデータセット内）の値を、指定したデータセットから取得する場合に、ルックアップを使用します。 例えば、イベントデータセット内の「tracking_code」に一致するキーとして「tracking_code」を指定できます。 |
 | Profile データセット | 顧客属性 | エンタープライズ顧客データを顧客関係管理（CRM）データベースに取り込んでいる場合は、そのデータを Adobe Experience Platform のプロファイルデータセットにアップロードできます。 Customer Journey Analytics でそのデータセットへの接続を作成し、データビューを作成したら、ワークスペースでそのデータを利用できます。 |
-| CX Enterprise（Experience Cloud）の組織 | ログイン会社 | [組織とアカウントのリンク](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=ja#topic_C31CB834F109465A82ED57FF0563B3F1)を参照してください。 |
+| Adobe organization | ログイン会社 | [組織とアカウントのリンク](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=ja#topic_C31CB834F109465A82ED57FF0563B3F1)を参照してください。 |
 | 該当なし | レポートスイート | 従来の Adobe Analytics のレポートスイートは存在しなくなりました。 代わりに、接続を確立した Platform データセットから（仮想）[データビュー](/help/data-views/create-dataview.md)を作成します。 |
 | セグメント | セグメント | セグメントは「フィルター」でした。 「セグメント」に名前が変更されました。 |
 | データビュー | 仮想レポートスイート | Adobe Analytics では、仮想レポートスイートは親レポートスイートのフィルターされたビューになります。 仮想レポートスイートと Customer Journey Analytics におけるデータビューの主な違いは、仮想レポートスイートが「ベース」または「親」レポートスイートのサブセットであり、その設定の一部が継承される点です。 親／基本レポートスイートは存在しなくなるので、独自の設定でデータビューを定義します。 |

@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3523'
-ht-degree: 85%
+source-wordcount: '3516'
+ht-degree: 83%
 ---
 # Web SDK経由でのデータ取り込み
 
@@ -110,7 +110,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![&#x200B; スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
+      ![ スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -146,7 +146,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    ![ID オブジェクト](./assets/identification-field.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別する必要があります。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、ECIDとメールアドレスを使用して、サイトにアクセスしているプロファイルを特定します。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -154,7 +154,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    ![ECID を ID として指定](./assets/specify-identity.png)
 
-   Experience Cloud ID を、Adobe Experience Platform Identity Service（ID サービス）が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
+   ECIDは、Adobe Experience Platform ID サービスが同じECIDを持つプロファイルの動作を組み合わせる（ステッチする）ために使用できるプライマリ IDとして指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 ecid 属性にフィンガープリントアイコンが表示されます。
 
@@ -182,7 +182,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
 1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
-Web サイトから取得できるデータをモデル化する、最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすることで、web サイトから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
+Web サイトから取得できるデータをモデル化する、最小限のスキーマを作成しました。 スキーマでは、ECIDとメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすることで、web サイトから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
 
 行動データに加えて、サイトからプロファイル属性データ（ニュースレターを購読しているプロファイルの詳細など）を取り込むこともできます。
 
@@ -194,7 +194,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 - Profile Core v2 フィールドグループに基づいて識別オブジェクトを追加します。
 
-- Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
+- ECIDをプライマリ IDとして、メールをIDとして定義します。
 
 - プロファイル用にスキーマを有効にする
 
@@ -286,7 +286,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
    タグに名前を付け、「**[!UICONTROL Web]**」を選択し、ドメイン名を入力します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![&#x200B; プロパティの作成](./assets/create-property.png)
+   ![ プロパティの作成](./assets/create-property.png)
 
 ### タグの設定
 
@@ -317,7 +317,7 @@ Adobe Experience Platform Web SDK 拡張を作成して設定するには：
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=ja)を参照してください。
 
-Web SDKにはExperience Platform ID サービスが含まれているため、[!UICONTROL Experience Cloud ID サービス &#x200B;] タグ拡張機能をプロパティに追加する必要はありません。
+Web SDKはEdge NetworkからECIDを取得するので、[!UICONTROL Experience Cloud ID Service] タグ拡張機能をプロパティに追加する必要はありません。
 
 #### **データ要素**
 
@@ -577,7 +577,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -602,7 +602,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

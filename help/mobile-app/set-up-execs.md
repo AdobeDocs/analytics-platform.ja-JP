@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '719'
 ht-degree: 65%
 ---
 # ダッシュボードを使用するエグゼクティブユーザーの設定
@@ -83,7 +83,7 @@ ht-degree: 65%
 
    **[!UICONTROL 会社を選択]**&#x200B;画面が表示されます。 この画面には、エグゼクティブユーザーが所属するログイン会社が表示されます。
 
-1. 共有したスコアカードに適用されるログイン会社またはCX Enterprise組織の名前をタップしてもらいます。
+1. 共有したスコアカードに適用されるログイン会社またはAdobe組織の名前をタップしてもらいます。
 
    スコアカードリストに、そのログイン会社のエグゼクティブと共有されているすべてのスコアカードが表示されます。
 

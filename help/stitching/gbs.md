@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 64%
+source-wordcount: '1997'
+ht-degree: 63%
 ---
 # グラフベースのステッチ
 
@@ -43,10 +43,10 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->[ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home)は、追加のライセンスを必要としないコア Experience Platform サービスです。 詳しくは、[Experience Platform インフラストラクチャ内のID サービスの役割について](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)を参照してください。
+>[ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/home)は、追加のライセンスを必要としないコア Experience Platform サービスです。 詳しくは、[Experience Platform インフラストラクチャ内のID サービスの役割について](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)を参照してください。
 >
 
-イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[&#x200B; データビュー](/help/data-views/data-views.md)で、人物ID データビューコンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
+イベントの人物ID情報を取得できない場合は、その&#x200B;*ステッチ解除* イベントの代わりに永続的IDが使用されます。 その結果、結合が有効なデータセットを含む[接続](/help/connections/overview.md)に関連付けられた[ データビュー](/help/data-views/data-views.md)で、人物ID データビューコンポーネントには、イベントレベルで人物ID値または永続的ID値が含まれます。
 
 
 ![グラフベースのステッチ](/help/stitching/assets/gbs.png)
@@ -232,14 +232,14 @@ ht-degree: 64%
 
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
-- ステッチを適用する Adobe Experience Platform のイベントデータセットには、行ごとにプロファイルを識別する 1 つの列（**永続 ID**）が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
+- ステッチを適用する Adobe Experience Platform のイベントデータセットには、行ごとにプロファイルを識別する 1 つの列（**永続 ID**）が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリによって生成された訪問者ID、またはEdge Networkによって生成されたECIDなどです。
 - Experience Platform Identity ServiceのID グラフは、グラフベースのステッチを有効にする前に、サンドボックスレベルで設定する必要があります。
   - ID グラフには、人物IDを解決するためにステッチ中に使用する名前空間（例：`Email`または`Phone`）が必要です。
   - ID グラフには、関連するデータセット（*event*&#x200B;または&#x200B;*profile*&#x200B;のタイプで、ID値を持つ少なくとも2つの有用な名前空間を含む）のID情報を入力する必要があります。
   - 関連IDを保持するすべてのデータセットは、ID グラフデータの取り込みに[有効にする必要があります](faq.md#enable-a-dataset-for-the-identity-service)。 この有効化により、受信IDがすべての必要なソースから時間の経過とともにグラフに追加されます。
   - 既にReal-Time Customer Data ProfileやAdobe Journey Optimizerを使用している場合は、グラフを既にある程度設定しておく必要があります。<br/> グラフベースのステッチで有効になっているデータセットに過去のステッチ バックフィルも必要な場合、グラフには目的のステッチ結果を取得するために、ピリオド全体の過去のIDが既に含まれている必要があります。
 - グラフベースのステッチを使用する場合、イベントデータセットがID グラフに貢献することを想定している場合は、[ID サービスのデータセットを有効にする](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)必要があります。
-- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/fields/identity?lang=en)として定義する必要があります。
+- 永続的IDとユーザーIDは、[identityMap](#identitymap)で使用できます。 または、永続的IDと人物IDは、XDM スキーマのフィールドにすることができます。この場合、フィールドはスキーマのID](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)として[定義する必要があります。
 
 >[!NOTE]
 >

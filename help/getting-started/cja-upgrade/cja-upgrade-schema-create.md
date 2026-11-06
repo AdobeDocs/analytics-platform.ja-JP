@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 94%
 ---
 # Customer Journey Analytics 用にカスタムスキーマを作成する {#create-custom-schema}
 
@@ -153,7 +153,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    ![ID オブジェクト](assets/identification-field.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別する必要があります。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、ECIDとメールアドレスを使用して、サイトにアクセスしているプロファイルを特定します。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -161,7 +161,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    ![ECID を ID として指定](./assets/specify-identity.png)
 
-   Experience Cloud ID を、Adobe Experience Platform Identity Service（ID サービス）が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
+   ECIDは、Adobe Experience Platform ID サービスが同じECIDを持つプロファイルの動作を組み合わせる（ステッチする）ために使用できるプライマリ IDとして指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 ecid 属性にフィンガープリントアイコンが表示されます。
 
@@ -189,7 +189,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
 1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
-   Web サイトから取得できるデータをモデル化する、最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすることで、web サイトから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
+   Web サイトから取得できるデータをモデル化する、最小限のスキーマを作成しました。 スキーマでは、ECIDとメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすることで、web サイトから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
 
    行動データに加えて、サイトからプロファイル属性データ（ニュースレターを購読しているプロファイルの詳細など）を取り込むこともできます。
 
@@ -201,7 +201,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    * Profile Core v2 フィールドグループに基づいて識別オブジェクトを追加します。
 
-   * Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
+   * ECIDをプライマリ IDとして、メールをIDとして定義します。
 
    * プロファイル用にスキーマを有効にする
 

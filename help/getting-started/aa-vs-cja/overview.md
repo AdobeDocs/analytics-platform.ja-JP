@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 98%
 ---
 # Adobe Analytics との比較
 
@@ -85,7 +85,7 @@ Experience Platform は、特定の環境のデータやアプリケーション
 
 ## ID
 
-Customer Journey Analytics は、データを含むデータセットが準拠するスキーマの一部として定義する ID をサポートします。 したがって、ID は Experience Platform の基本概念で、Customer Journey Analytics は「[接続](../../connections/overview.md)」を設定する際（各データセットのユーザー ID を定義）およびクロスチャネル分析の「[ステッチ](../../stitching/overview.md)」を適用する際に使用します。 Experience Platform SDK および API で使用される重要な ID は、Experience Cloud ID（ECID）です。
+Customer Journey Analytics は、データを含むデータセットが準拠するスキーマの一部として定義する ID をサポートします。 したがって、ID は Experience Platform の基本概念で、Customer Journey Analytics は「[接続](../../connections/overview.md)」を設定する際（各データセットのユーザー ID を定義）およびクロスチャネル分析の「[ステッチ](../../stitching/overview.md)」を適用する際に使用します。 Experience Platform SDKとAPIで使用される重要なIDは、ECIDです。
 
 Adobe Analytics は、Adobe Analytics ID（AAID）など、より明確な ID フィールドのセットを使用します。 Analytics ソースコネクタを使用する場合、これらの Adobe Analytics 識別フィールドは特別に処理されます。 詳しくは、[AAID、ECID、AACUSTOMID および Analytics ソースコネクタ](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=ja)を参照してください。
 

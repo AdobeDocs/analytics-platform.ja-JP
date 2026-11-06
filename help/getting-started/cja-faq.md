@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 95%
+source-wordcount: '2322'
+ht-degree: 94%
 ---
 # よくある質問
 
@@ -61,9 +61,9 @@ Adobe Customer Journey Analytics は、次世代の分析製品です。 この�
 +++
 
 
-+++**[!UICONTROL Customer Journey Analytics] には、[!UICONTROL Experience Cloud ID]（ECID）は必要ですか？**
++++**Customer Journey Analytics]のECIDは必要ですか？**[!UICONTROL 
 
-いいえ。[!UICONTROL Customer Journey Analytics] では、[!UICONTROL ECID] か任意に選択した他の ID かに関わらず、データセット内の任意の ID をサポートしています。
+いいえ、[!UICONTROL Customer Journey Analytics]では、ECIDまたは選択した他のIDのいずれであっても、データセット内の任意のIDをサポートしています。
 
 +++
 
@@ -181,7 +181,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## &#x200B;5. [!UICONTROL 接続] データ保持のローリングウィンドウを設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**&#x200B;設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。 これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。 データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。 適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。 これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。 データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。 適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
@@ -222,7 +222,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 ## &#x200B;8. [!UICONTROL Adobe Analytics] コンポーネント
 
-+++**Experience Platform Real-Time CDPまたはその他のCX Enterprise アプリケーションに[!UICONTROL &#x200B; オーディエンス &#x200B;]を[!DNL Customer Journey Analytics]から共有/公開できますか？**
++++**Experience Platform Real-Time CDPまたはその他のCX Enterprise アプリケーションに[!UICONTROL  オーディエンス ]を[!DNL Customer Journey Analytics]から共有/公開できますか？**
 
 Adobe Experience Platform のリアルタイム顧客プロファイルに Customer Journey Analytics で識別された[オーディエンスを作成して公開](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish)し、顧客のターゲティングやパーソナライゼーションを実現できます。
 

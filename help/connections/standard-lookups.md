@@ -29,27 +29,25 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: 442
-ht-degree: 42%
-
+source-wordcount: '451'
+ht-degree: 43%
 ---
-
-# データセットへの標準検索の追加
+# データセットに標準ルックアップを追加
 
 >[!IMPORTANT]
 >
 >標準ルックアップは、Customer Journey AnalyticsのAnalytics ソースコネクタのデータソースでのみ使用できます。 これらは、標準の Adobe Analytics 実装、[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)、または Experience Platform Data Collection API で使用できます。
 >
 
-標準検索（アドビ提供の検索とも呼ばれる）は、Customer Journey Analytics の機能を強化して、単体では役に立たなくても、他のデータと結合すると役立つディメンションや属性についてレポートします。 例としては、モバイルデバイスの属性、OS ディメンションおよびブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。 「標準検索」は、ルックアップデータセットに似ています。 標準参照は、CX Enterprise組織全体に適用されます。 特定のXDM スキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（特定のフィールドについては、以下を参照）。 Adobeで分類するスキーマの場所ごとに、標準的なルックアップデータセットが存在します。
+標準ルックアップ（アドビ提供のルックアップとも呼ばれる）は、単体ではあまり有用ではないものの、他のデータと結合すると有用になる一部のディメンション／属性をレポートする、Customer Journey Analytics の機能を強化します。 例としては、モバイルデバイスの属性、OS ディメンションおよびブラウザーディメンションの属性（ブラウザーのバージョン番号など）があります。 「標準検索」は、ルックアップデータセットに似ています。 標準参照は、Adobeの組織全体に適用されます。 特定のXDM スキーマフィールドを含むすべてのイベントデータセットに自動的に適用されます（特定のフィールドについては、以下を参照）。 Adobeで分類するスキーマの場所ごとに、標準的なルックアップデータセットが存在します。
 
-従来のAdobe Analyticsでは、これらのディメンションは個別に表示されますが、Customer Journey Analyticsでは、データビューを作成する際にこれらのディメンションをアクティブに含める必要があります。 接続ワークフローでは、標準検索用のキーを持つデータセットとしてフラグが付けられたデータセットを選択します。 データビュー UI は、すべての標準検索ディメンションを自動的に認識し、レポートに使用可能として含めます。 すべての地域およびすべてのアカウントにおいて、検索ファイルは自動的に最新の状態に保たれ、使用可能になります。 これらは、顧客に関連付けられた地域固有の組織に保存されます。
+従来のAdobe Analyticsでは、これらのディメンションは個別に表示されますが、Customer Journey Analyticsでは、データビューを作成する際にこれらのディメンションをアクティブに含める必要があります。 接続ワークフローでは、標準ルックアップ用のキーを持つデータセットとしてフラグが付けられたデータセットを選択します。 データビュー UI は、すべての標準ルックアップディメンションを、レポートで利用可能として自動的に含めます。 すべての地域およびすべてのアカウントにおいて、検索ファイルは自動的に最新の状態に保たれ、使用可能になります。 これらは、顧客に関連付けられた地域固有の組織に保存されます。
 
 ## Analytics ソースコネクタデータセットでの標準参照の使用
 
-標準検索データセットは、レポート時に自動的に適用されます。 Analytics ソースコネクタを使用し、Adobeが標準ルックアップを提供するディメンションを取り込んだ場合、この標準ルックアップが自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、標準検索を適用できます。
+標準ルックアップデータセットは、レポート時に自動的に適用されます。 Analytics ソースコネクタを使用し、Adobeが標準ルックアップを提供するディメンションを取り込んだ場合、この標準ルックアップが自動的に適用されます。 イベントデータセットに XDM フィールドが含まれている場合は、標準ルックアップを適用できます。
 
 <!--
 ### Specific IDs that need to be populated
@@ -64,16 +62,16 @@ You need these mixins with the three IDs populated (device/typeID, environment/b
 The catch here is that they can only populate those IDs today if they have a direct relationship with Device Atlas. They are Device Atlas IDs, and they provide an API to allow a customer to look them up. This is a significant hurdle, and we may just want to take the reference to this capability out of the product documentation until we have a productized way to expose the Device Atlas ID lookup functionality.
 -->
 
-### 使用可能な標準検索フィールド
+### 使用可能な標準ルックアップフィールド
 
 * `browser`
-   * `browser`, `group_id`, `id`
+  * `browser`、`group_id`、`id`
 * `browser_group`
-   * `browser_group`, `id`
+  * `browser_group`、`id`
 * `os`
-   * `os`, `group_id`, `id`
+  * `os`、`group_id`、`id`
 * `os_group`
-   * `os_group`, `id`
+  * `os_group`、`id`
 * `mobile_audio_support - multi`
 * `mobile_color_depth`
 * `mobile_cookie_support`
@@ -97,17 +95,17 @@ The catch here is that they can only populate those IDs today if they have a dir
 * `mobile_screen_width`
 * `mobile_video_support - multi`
 
-## 標準検索ディメンションに関するレポート
+## 標準ルックアップディメンションをレポートする
 
-Adobe標準参照ディメンションについてレポートするには、Customer Journey Analyticsで[&#x200B; データビュー](/help/data-views/data-views.md)を作成する際に、これらのディメンションを1つ以上追加する必要があります。 **[!UICONTROL データビュー]** > **[!UICONTROL コンポーネント]**&#x200B;で：
+Adobe標準参照ディメンションについてレポートするには、Customer Journey Analyticsで[ データビュー](/help/data-views/data-views.md)を作成する際に、これらのディメンションを1つ以上追加する必要があります。 **[!UICONTROL データビュー]** > **[!UICONTROL コンポーネント]**&#x200B;で：
 
 1. 左側のパネルのドロップダウンメニューから「**[!UICONTROL スキーマフィールド]**」を選択します。
 1. スキーマフィールドコンテナのリストから「**[!UICONTROL Adobe lookups]**」を選択します。
 1. 追加するディメンションが見つかるまで、**[!UICONTROL ブラウザー]**、**[!UICONTROL モバイル]**、または&#x200B;**[!UICONTROL オペレーティングシステム]**&#x200B;にドリルダウンします。
 1. ディメンションを&#x200B;**[!UICONTROL 含まれるコンポーネント]**&#x200B;内の&#x200B;**[!UICONTROL 指標]**&#x200B;または&#x200B;**[!UICONTROL ディメンション]** テーブルにドラッグします。
 
-   ![&#x200B; コンポーネントの追加リストを表示するデータビューを作成する](assets/add-standard-lookup-dimension.gif)
+   ![ コンポーネントの追加リストを表示するデータビューを作成する](assets/add-standard-lookup-dimension.gif)
 
 その後、Workspaceでルックアップデータを使用できます。
 
-データを表示する![&#x200B; フリーフォームテーブル &#x200B;](assets/gl-reporting.png)
+データを表示する![ フリーフォームテーブル ](assets/gl-reporting.png)
