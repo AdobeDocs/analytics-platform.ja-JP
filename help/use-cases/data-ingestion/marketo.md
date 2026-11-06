@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 9%
@@ -79,7 +79,7 @@ Marketo データにはECIDがネイティブに含まれていませんが、EC
 
 MarketoとCustomer Journey Analytics データをリンクするには、関連するデータセットに[&#x200B; グラフベースのステッチング &#x200B;](/help/stitching/gbs.md)を使用します。 実装に基づいて、使用可能なIDをいくつか使用できます。
 
-* Experience Platform ID サービスによって提供されるECID
+* EXPERIENCE PLATFORM ID サービスによって提供されるECID
 * 電子メール
 * Munchkin ID （Marketo Engageが提供）
 * リセラーID

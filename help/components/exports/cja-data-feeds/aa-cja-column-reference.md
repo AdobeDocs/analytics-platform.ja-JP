@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3921'
+source-wordcount: '3918'
 ht-degree: 48%
 ---
 # Adobe Analytics データフィード列のCustomer Journey Analyticsへのマッピング
@@ -179,7 +179,7 @@ Adobe Analyticsでは、クライアントヒントがこの列に連結され�
 
 +++**`ch_js`**
 
-User-Agent クライアントヒント JavaScript API を通じて収集されたクライアントヒント。
+ユーザーエージェントクライアントヒント JavaScript API を通じて収集されたクライアントヒント。
 
 Adobe Analyticsでは、クライアントヒントがこの列に連結された文字列として含まれていました。 `user_agent`列よりも現代的なアプローチと見なされます。
 
@@ -667,7 +667,7 @@ Java対応ディメンション。 <br>Y：有効<br>N：無効<br>U：不明
 
 +++**`mcvisid`**
 
-Experience Cloud の訪問者 ID。 2 つの連結された 64 ビットの数値から構成され、19 桁にパディングされた 128 ビットの数値。
+ECID: 2 つの連結された 64 ビットの数値から構成され、19 桁にパディングされた 128 ビットの数値。
 
 +++
 

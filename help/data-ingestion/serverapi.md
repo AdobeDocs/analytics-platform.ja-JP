@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2447'
-ht-degree: 63%
+source-wordcount: '2439'
+ht-degree: 61%
 ---
 # Edge Network Server APIを介したデータの取り込み
 
@@ -143,7 +143,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![ID オブジェクト](./assets/identification-field-gaming.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合は、Experience Cloud IDとゲームコンソールへのログインに使用するメールアドレスを使用して、ゲームをプレイしているプロファイルを特定する必要があります。 個人の識別を追跡するために使用できる他の多くの属性があります。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、ゲームをプレイしているプロフィールを、ゲーム機へのログインに使用するECIDとメールアドレスを使用して特定する必要があります。 個人の識別を追跡するために使用できる他の多くの属性があります。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -151,7 +151,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![ECID を ID として指定](./assets/specify-identity-gaming.png)
 
-   Experience Cloud ID を、Adobe Experience Platform Identity Service（ID サービス）が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
+   ECIDは、Adobe Experience Platform ID サービスが同じECIDを持つプロファイルの動作を組み合わせる（ステッチする）ために使用できるプライマリ IDとして指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 ecid 属性にフィンガープリントアイコンが表示されます。
 
@@ -179,7 +179,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
-ゲームから取得できるデータをモデル化する最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすると、コンソールゲームからキャプチャしたデータがリアルタイム顧客プロファイルに追加されます。
+ゲームから取得できるデータをモデル化する最小限のスキーマを作成しました。 スキーマでは、ECIDとメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすると、コンソールゲームからキャプチャしたデータがリアルタイム顧客プロファイルに追加されます。
 
 ビヘイビアーデータの横に、コンソールからプロファイル属性データを取り込むこともできます（コンソールにサインインしているプロファイルの詳細など）。
 
@@ -191,7 +191,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 - Profile Core v2 フィールドグループに基づいて識別オブジェクトを追加します。
 
-- Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
+- ECIDをプライマリ IDとして、メールをIDとして定義します。
 
 - プロファイル用にスキーマを有効にする
 

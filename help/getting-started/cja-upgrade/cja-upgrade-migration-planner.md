@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2335'
 ht-degree: 16%
 ---
 # タグから XDM への移行 {#upgrade-migration-planner}
@@ -80,7 +80,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 * サポートされているAdobe Analyticsの実装（タグのAnalytics拡張機能）。 [&#x200B; サポートされているAdobe Analyticsの実装](#supported-adobe-analytics-implementations)を参照してください。
 
-* 移行するAdobe Tags プロパティに、ログインしているExperience Cloud組織内でアクセスします。
+* 移行するAdobe Tags プロパティに、ログインしているAdobe組織内でアクセスします。
 
 * XDMにマッピングする変数を持つAdobe Analytics レポートスイートにアクセスします。
 
@@ -114,7 +114,7 @@ Migration Plannerは、Analytics拡張機能（タグ）を使用するAdobe Ana
 
 1. 移行するタグプロパティを選択し、[!UICONTROL **次へ**]&#x200B;を選択します。
 
-   サインインしたExperience Cloud組織で使用可能なタグプロパティのみが表示されます。
+   サインインした組織で使用可能なタグプロパティのみが表示されます。
 
 1. 移行するタグライブラリスナップショットを選択し、[!UICONTROL **次へ**]&#x200B;を選択します。
 

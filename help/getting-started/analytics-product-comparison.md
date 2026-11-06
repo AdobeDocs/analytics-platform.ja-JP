@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 44%
+source-wordcount: '461'
+ht-degree: 43%
 ---
 
 # Adobe Analyticsと製品の比較
@@ -37,7 +37,7 @@ ht-degree: 44%
 |---|---|---|---|---|---|---|---|---|
 | **アクセス方法** | ブラウザー | Microsoft Excel | ブラウザー | ブラウザーで設定 | RESTful API ツール | MCP対応ツール | BI ツール | MCP対応ツール |
 | **データの精度** | 集計 | 集計 | 集計 | イベント | 集計 | 集計 | 集計 | 集計 |
-| **Experience Cloud ID（ECID）が使用可能** | いいえ | いいえ | いいえ | はい | いいえ | いいえ | いいえ | いいえ |
+| **ECIDが利用可能** | いいえ | いいえ | いいえ | はい | いいえ | いいえ | いいえ | いいえ |
 | **タイムスタンプが使用可能** | いいえ | いいえ | いいえ | はい | いいえ | いいえ | いいえ | いいえ |
 | **処理レベル** | 完全処理 | 完全に処理され、個別のリアルタイムレポートが表示されます | 完全処理 | 完全処理 | 完全処理 | 完全処理 | 完全処理 | 完全処理 |
 | **ボットフィルタリングが適用される場所** | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 |  |  | [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/bot-detection)内および/または[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | |

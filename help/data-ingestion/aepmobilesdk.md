@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 63%
+source-wordcount: '3504'
+ht-degree: 61%
 ---
 # モバイル SDK経由でのデータ取り込み
 
@@ -147,7 +147,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![ID オブジェクト](./assets/identification-field-mobile.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud IDとメールアドレスを使用して、モバイルアプリを使用してプロファイルを識別する必要があります。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、ECIDとメールアドレスを使用して、モバイルアプリを使用してプロファイルを識別する必要があります。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -155,7 +155,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    ![ECID を ID として指定](./assets/specify-identity-mobile.png)
 
-   Experience Cloud ID を、Adobe Experience Platform Identity Service（ID サービス）が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
+   ECIDは、Adobe Experience Platform ID サービスが同じECIDを持つプロファイルの動作を組み合わせる（ステッチする）ために使用できるプライマリ IDとして指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 ecid 属性にフィンガープリントアイコンが表示されます。
 
@@ -183,7 +183,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
-モバイルアプリケーションから取得できるデータをモデル化する、最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすると、モバイルアプリケーションから取得したデータがリアルタイム顧客プロファイルに追加されます。
+モバイルアプリケーションから取得できるデータをモデル化する、最小限のスキーマを作成しました。 スキーマでは、ECIDとメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすると、モバイルアプリケーションから取得したデータがリアルタイム顧客プロファイルに追加されます。
 
 行動データの横に、モバイルアプリケーションからプロファイル属性データを取り込むこともできます（ニュースレターを購読しているプロファイルの詳細など）。
 
@@ -195,7 +195,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 - Profile Core v2 フィールドグループに基づいて識別オブジェクトを追加します。
 
-- Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
+- ECIDをプライマリ IDとして、メールをIDとして定義します。
 
 - プロファイル用にスキーマを有効にする
 

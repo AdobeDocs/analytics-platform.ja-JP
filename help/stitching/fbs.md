@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 82%
+source-wordcount: '1923'
+ht-degree: 81%
 ---
 # フィールドベースのステッチ
 
@@ -235,7 +235,7 @@ Bob が様々なイベントをイベントデータセットの一部として�
 
 - ステッチを適用する Adobe Experience Platform のイベントデータセットには、プロファイルの識別に役立つ次の 2 つの列が必要です。
 
-  - **永続 ID** - 各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Adobe Experience Platform ID サービスで生成された ECID などです。
+  - **永続 ID** - 各行で使用できる識別子。 例えば、Adobe Analytics AppMeasurement ライブラリによって生成された訪問者ID、またはEdge Networkによって生成されたECIDなどです。
   - **ユーザー ID** - 一部の行で使用できる識別子。 例えば、プロファイルの認証後にハッシュ化されたユーザー名やメールアドレスなどがあります。 事実上任意の識別子を使用できます。 ステッチでは、このフィールドを実際のユーザー ID 情報を保持すると見なされます。 最適なステッチの結果を得るには、データセットのイベント内で、永続 ID ごとに少なくとも 1 回、ユーザー ID を送信する必要があります。 Customer Journey Analytics 接続内にこのデータセットを含める予定がある場合は、他のデータセットも同様の共通の識別子を持っていることが推奨されます。
 
 <!--

@@ -1,58 +1,57 @@
 ---
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 98%
-
+source-wordcount: '443'
+ht-degree: 87%
 ---
-# Customer Journey Analyticsドキュメントへの投稿
+# Adobe Customer Journey Analyticsのドキュメントを読む
 
-アドビのコミュニティや、ドキュメントチーム外部のアドビ従業員からの投稿をお待ちしています。
+コミュニティからの投稿に加え、ドキュメントチーム外部のアドビ従業員からの投稿もお待ちしています。
 
-## Adobe Open Source Code of Practice
+## アドビオープンソース行動規範
 
-このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、[投稿](contributing.md)の記事を参照してください。
+このプロジェクトでは、[アドビのオープンソースの行動規範](code-of-conduct.md)または [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)（英語）を採用しています。 詳しくは、[コントリビューション](contributing.md)の記事を参照してください。
 
-## アドビのコンテンツへの投稿について
+## アドビのコンテンツへのコントリビューションについて
 
-[Adobe Docs 寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
+[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
-投稿方法は、誰がどのような変更を投稿するかに応じて異なります。
+コントリビューションの方法は、誰がどのような変更をコントリビューションするかに応じて異なります。
 
 ### マイナーな変更
 
-厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
+善意で軽微な更新を行う場合は、その記事にアクセスして、「**編集**」リンクをクリックすると、その記事の GitHub ソースに移動します。 次に、GitHub UI を使用して更新を行います。 詳しくは、[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
-このリポジトリのドキュメントおよびコード例については、マイナーな修正または詳細な説明をアドビの利用条件で説明しています。
+このリポジトリー内のドキュメントやコード例に対して提案される軽微な変更や補足説明には、アドビの利用条件が適用されます。
 
-### コミュニティメンバーによる主な変更または新しい記事
+### コミュニティメンバーによる大きな変更または新規記事
 
-アドビコミュニティの一部で、新しい記事を作成したり、大幅な変更を送信したい場合は、Git リポジトリの「問題」タブを使用して、ドキュメントチームとの会話を開始するために問題を送信してください。計画に同意したら、公開および非公開リポジトリの作業を組み合わせて新しいコンテンツを引き出すために、従業員と協力する必要があります。
+アドビコミュニティに参加していて、新しい記事を作成したり、大幅な変更を送信したい場合は、Git リポジトリの「イシュー」タブを使用してイシューを送信し、ドキュメントチームとの議論を開始してください。 計画に同意した後は、社員と協力して、公開リポジトリとプライベートリポジトリの作業を組み合わせて、新しいコンテンツを導入する必要があります。
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### アドビ従業員による大幅な変更
+### アドビの従業員による大きな変更
 
-技術的な記事に貢献することまたは技術的な記事を執筆することが仕事である Adobe Experience Cloud ソリューションのテクニカルライター、プログラムマネージャー、製品チームの開発者は、プライベートリポジトリ（[https://git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)）を使用する必要があります。<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+テクニカルライター、プログラムマネージャー、またはAdobe CX Enterprise ソリューションのプロダクトチームの開発者で、技術記事の投稿や作成を担当する場合は、プライベートリポジトリ [https://git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs)を使用する必要があります。<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## ツールとセットアップ
 
-コミュニティ寄稿者は、基本的な編集に GitHub UI を使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
+コミュニティのコントリビューターは、基本的な編集をするときには GitHub の UI を使用し、大きな変更を加えるときにはリポジトリーをフォークします。
 
-詳しくは、[Adobe Docs 寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
+詳しくは、[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 ## Markdown を使用してトピックをフォーマットする方法
 
-このリポジトリのすべての記事は GitHub Flavored Markdown を使用します。Markdown について詳しくない場合は、以下を参照してください。
+このリポジトリの記事はいずれも GitHub Flavored Markdown（GFM）を使用して書かれています。 Markdown について詳しくない場合は、以下を参照してください。
 
-* [Markdown の基本](https://help.github.com/articles/markdown-basics/)
-* [印刷可能な Markdown のクイックリファレンス](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown の基礎](https://docs.github.com/ja/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
+* [印刷可能なマークダウンのチートシート](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## ラベル
 
-公開リポジトリでは、自動ラベルがプルリクエストに割り当てられ、プルリクエストワークフローの管理と、プルリクエストの処理状況の把握に役立つようになります。
+公開リポジトリでは、プルリクエストに以下のような自動ラベルが割り当てられ、プルリクエストのワークフローを管理し、プルリクエストの処理状況を把握するのに役立ちます。
 
 * **Change sent to author**：保留中のプルリクエストの通知が作成者に送信されました。
 * **ready- to- merge**：プルリクエストレビューチームによるレビューの準備ができました。

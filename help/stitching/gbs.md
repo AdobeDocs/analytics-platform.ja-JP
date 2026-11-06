@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 64%
+source-wordcount: '1997'
+ht-degree: 63%
 ---
 # グラフベースのステッチ
 
@@ -232,7 +232,7 @@ ht-degree: 64%
 
 次の前提条件は、特にグラフベースのステッチに適用されます。
 
-- ステッチを適用する Adobe Experience Platform のイベントデータセットには、行ごとにプロファイルを識別する 1 つの列（**永続 ID**）が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリで生成された訪問者 ID や、Experience Platform ID サービスで生成された ECID などです。
+- ステッチを適用する Adobe Experience Platform のイベントデータセットには、行ごとにプロファイルを識別する 1 つの列（**永続 ID**）が必要です。 例えば、Adobe Analytics AppMeasurement ライブラリによって生成された訪問者ID、またはEdge Networkによって生成されたECIDなどです。
 - Experience Platform Identity ServiceのID グラフは、グラフベースのステッチを有効にする前に、サンドボックスレベルで設定する必要があります。
   - ID グラフには、人物IDを解決するためにステッチ中に使用する名前空間（例：`Email`または`Phone`）が必要です。
   - ID グラフには、関連するデータセット（*event*&#x200B;または&#x200B;*profile*&#x200B;のタイプで、ID値を持つ少なくとも2つの有用な名前空間を含む）のID情報を入力する必要があります。

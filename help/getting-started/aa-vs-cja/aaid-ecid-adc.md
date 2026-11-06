@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '623'
 ht-degree: 90%
 ---
 # AAID、ECID、AACUSTOMID および Analytics ソースコネクタ
@@ -48,9 +48,9 @@ Analytics ソースコネクタで、AAID は、`HEX(post_visid_high) + "-" + HE
 
 ## ECID
 
-ECID （Experience Cloud ID）は、MCID （Marketing Cloud ID）とも呼ばれることもあります。これは、[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja) （AppMeasurement）またはExperience Platform ID サービス（Web SDK）を使用してAnalyticsを実装する際に、Adobe Analyticsに入力される個別のデバイス ID フィールドです。 ECID は、Adobe Analytics データフィードの `mcvisid` 列で表されます。
+ECIDは、MCID （Marketing Cloud ID）とも呼ばれることもあります。これは、[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=ja) （AppMeasurement）またはWeb SDKを使用してAnalyticsを実装する際に、Adobe Analyticsに入力される個別のデバイス ID フィールドです。 ECID は、Adobe Analytics データフィードの `mcvisid` 列で表されます。
 
-ECID がイベントに存在する場合、AAID は、Analytics [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja)が設定されているかどうかに応じて、ECID に基づいている可能性があります。 [Analytics と Experience Cloud ID のリクエスト](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=ja)も参照してください。
+ECID がイベントに存在する場合、AAID は、Analytics [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja)が設定されているかどうかに応じて、ECID に基づいている可能性があります。 [AnalyticsおよびECID リクエスト &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=ja)も参照してください。
 
 ## AACUSTOMID
 

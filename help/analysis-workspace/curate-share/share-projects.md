@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2174'
 ht-degree: 90%
 ---
 # プロジェクトの共有 {#share-projects}
@@ -218,7 +218,7 @@ Analysis Workspace プロジェクトを任意のユーザーと共有するに�
 
    * **[!UICONTROL Experience Cloud 認証を要求]：**
 
-     このオプションを有効にすると、プロジェクトにアクセスできるユーザーは、共有するプロジェクトが作成されたCX Enterprise（Experience Cloud）組織にログインできるユーザーのみになります。 ただし、共有相手のユーザーは、Customer Journey Analytics へのアクセス権が不要です。
+     このオプションを有効にすると、プロジェクトにアクセスできるユーザーは、共有するプロジェクトが作成されたAdobe組織にログインできるユーザーのみになります。 ただし、共有相手のユーザーは、Customer Journey Analytics へのアクセス権が不要です。
 
      Customer Journey Analytics 管理者は、[環境設定](/help/analysis-workspace/user-preferences.md)で説明されているように、会社用にこの環境設定を設定できます。 管理者がどのようにこのオプションを設定したかによっては、次のシナリオが発生する可能性があります。
 

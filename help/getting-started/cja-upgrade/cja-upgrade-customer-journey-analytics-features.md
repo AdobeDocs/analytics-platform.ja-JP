@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 94%
 ---
 # Customer Journey Analytics 独自の機能について理解する {#feature-support-upgrade}
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="複数のデータセットからのヒットをステッチ"
->abstract="データセットのいずれかがプライマリ識別子（Experience Cloud ID など）を共有しない場合でも、ログイン時のユーザー名やメールアドレスなど、別のディメンションを使用して、そのデータを結び付けることができます。"
+>abstract="いずれかのデータセットがプライマリ識別子（ECIDなど）を共有しない場合でも、ログインユーザー名やメールアドレスなどの別のディメンションを使用して、そのデータを結合することができます。"
 
 <!-- markdownlint-enable MD034 -->
 

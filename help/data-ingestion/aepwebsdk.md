@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3523'
-ht-degree: 85%
+source-wordcount: '3516'
+ht-degree: 83%
 ---
 # Web SDK経由でのデータ取り込み
 
@@ -146,7 +146,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    ![ID オブジェクト](./assets/identification-field.png)
 
-   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、Experience Cloud ID とメールアドレスを使用して、サイトを訪問しているプロファイルを識別する必要があります。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
+   ID オブジェクトは、スキーマに ID 機能を追加します。 この場合、ECIDとメールアドレスを使用して、サイトにアクセスしているプロファイルを特定します。 個人の識別情報を追跡するために使用できる属性は他にも多数あります（例：顧客 ID、ロイヤルティ ID）。
 
    「**[!UICONTROL 適用]**」を選択して、このオブジェクトをスキーマに追加します。
 
@@ -154,7 +154,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    ![ECID を ID として指定](./assets/specify-identity.png)
 
-   Experience Cloud ID を、Adobe Experience Platform Identity Service（ID サービス）が同じ ECID を持つプロファイルの動作を組み合わせる（ステッチする）ために使用するプライマリ ID として指定します。
+   ECIDは、Adobe Experience Platform ID サービスが同じECIDを持つプロファイルの動作を組み合わせる（ステッチする）ために使用できるプライマリ IDとして指定します。
 
    「**[!UICONTROL 適用]**」を選択します。 ecid 属性にフィンガープリントアイコンが表示されます。
 
@@ -182,7 +182,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
 1. 「**[!UICONTROL 保存]**」を選択してスキーマを保存します。
 
-Web サイトから取得できるデータをモデル化する、最小限のスキーマを作成しました。 このスキーマを使用することで、Experience Cloud ID とメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすることで、web サイトから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
+Web サイトから取得できるデータをモデル化する、最小限のスキーマを作成しました。 スキーマでは、ECIDとメールアドレスを使用してプロファイルを識別できます。 プロファイルのスキーマを有効にすることで、web サイトから取り込んだデータをリアルタイム顧客プロファイルへと確実に追加できます。
 
 行動データに加えて、サイトからプロファイル属性データ（ニュースレターを購読しているプロファイルの詳細など）を取り込むこともできます。
 
@@ -194,7 +194,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
 - Profile Core v2 フィールドグループに基づいて識別オブジェクトを追加します。
 
-- Experience Cloud ID をプライマリ識別子として定義し、メールを識別子として定義します。
+- ECIDをプライマリ IDとして、メールをIDとして定義します。
 
 - プロファイル用にスキーマを有効にする
 
@@ -317,7 +317,7 @@ Adobe Experience Platform Web SDK 拡張を作成して設定するには：
 
 詳しくは、[Adobe Experience Platform Web SDK 拡張機能の設定](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=ja)を参照してください。
 
-Web SDKにはExperience Platform ID サービスが含まれているため、[!UICONTROL Experience Cloud ID サービス &#x200B;] タグ拡張機能をプロパティに追加する必要はありません。
+Web SDKはEdge NetworkからECIDを取得するので、[!UICONTROL Experience Cloud ID Service] タグ拡張機能をプロパティに追加する必要はありません。
 
 #### **データ要素**
 
