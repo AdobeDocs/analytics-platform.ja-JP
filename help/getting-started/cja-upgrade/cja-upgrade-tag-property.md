@@ -62,6 +62,6 @@ Adobe Experience Platform 内のタグ機能を使用して、サイトにデー
 
    タグに名前を付け、「**[!UICONTROL Web]**」を選択し、ドメイン名を入力します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![ プロパティの作成](assets/create-property.png)
+   ![&#x200B; プロパティの作成](assets/create-property.png)
 
 {{upgrade-final-step}}

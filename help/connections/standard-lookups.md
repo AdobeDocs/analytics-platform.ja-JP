@@ -97,15 +97,15 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 ## 標準ルックアップディメンションをレポートする
 
-Adobe標準参照ディメンションについてレポートするには、Customer Journey Analyticsで[ データビュー](/help/data-views/data-views.md)を作成する際に、これらのディメンションを1つ以上追加する必要があります。 **[!UICONTROL データビュー]** > **[!UICONTROL コンポーネント]**&#x200B;で：
+Adobe標準参照ディメンションについてレポートするには、Customer Journey Analyticsで[&#x200B; データビュー](/help/data-views/data-views.md)を作成する際に、これらのディメンションを1つ以上追加する必要があります。 **[!UICONTROL データビュー]** > **[!UICONTROL コンポーネント]**&#x200B;で：
 
 1. 左側のパネルのドロップダウンメニューから「**[!UICONTROL スキーマフィールド]**」を選択します。
 1. スキーマフィールドコンテナのリストから「**[!UICONTROL Adobe lookups]**」を選択します。
 1. 追加するディメンションが見つかるまで、**[!UICONTROL ブラウザー]**、**[!UICONTROL モバイル]**、または&#x200B;**[!UICONTROL オペレーティングシステム]**&#x200B;にドリルダウンします。
 1. ディメンションを&#x200B;**[!UICONTROL 含まれるコンポーネント]**&#x200B;内の&#x200B;**[!UICONTROL 指標]**&#x200B;または&#x200B;**[!UICONTROL ディメンション]** テーブルにドラッグします。
 
-   ![ コンポーネントの追加リストを表示するデータビューを作成する](assets/add-standard-lookup-dimension.gif)
+   ![&#x200B; コンポーネントの追加リストを表示するデータビューを作成する](assets/add-standard-lookup-dimension.gif)
 
 その後、Workspaceでルックアップデータを使用できます。
 
-データを表示する![ フリーフォームテーブル ](assets/gl-reporting.png)
+データを表示する![&#x200B; フリーフォームテーブル &#x200B;](assets/gl-reporting.png)

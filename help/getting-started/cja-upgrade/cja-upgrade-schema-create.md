@@ -101,7 +101,7 @@ Web SDK 実装用に定義するカスタムスキーマは、Adobe Experience P
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![ スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](assets/create-ee-schema-wizard-step-2.png)
+      ![&#x200B; スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
