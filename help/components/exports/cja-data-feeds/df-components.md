@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
+source-git-commit: e4a2c292024e2d88c3dec02b86711d4f58d1c82c
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 39%
+source-wordcount: '1669'
+ht-degree: 37%
 ---
 # データフィードでのコンポーネントの可用性
 
@@ -28,7 +28,7 @@ ht-degree: 39%
 
 一部のCustomer Journey Analyticsコンポーネントは、データフィードで使用できません。 ディメンションの中には、すべてのデータフィードに含まれるものもあれば、含まれないコンポーネントもあります。また、一部の指標は代替指標に置き換える必要があります。
 
-次の情報を使用して、[&#x200B; データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
+次の情報を使用して、[ データフィードを作成する](/help/components/exports/cja-data-feeds/create-feed.md)際に含めることができるコンポーネントを把握します。
 
 ## 必須ディメンション {#required-dimensions}
 
@@ -94,6 +94,12 @@ Customer Journey Analytics標準ディメンションは、データフィード
 | Adobe労働組合 | | 使用不可 |
 | Adobe人物プロファイル | | 使用不可 |
 
+## 計算指標 {#calculated-metrics}
+
+計算指標をデータフィードに含めることはできません。 計算指標は、多数のイベントを集計してレポート時に計算されるため、個々のイベント行には値がありません。
+
+Customer Journey Analytics以外で計算指標の結果が必要な場合は、[Customer Journey Analytics BI拡張機能](/help/data-views/bi-extension.md)を使用できます。 BI拡張機能は、イベント行ではなくレポートレベルの結果を返すため、置き換えではなくデータフィードと一緒に使用します。
+
 ## 一緒に使用できないディメンション {#incompatible-dimensions}
 
 <!-- markdownlint-disable MD034 -->
@@ -109,13 +115,13 @@ Customer Journey Analytics標準ディメンションは、データフィード
 
 * **ユーザーエージェント**&#x200B;および&#x200B;**モバイル ID** ディメンション。<!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
 
-* ブラウザー、モバイルデバイス、オペレーティングシステムのディメンションなど、デバイスのルックアップディメンション。 完全なリストについては、[&#x200B; デバイス検索ディメンション &#x200B;](#device-lookup-dimensions)を参照してください。
+* ブラウザー、モバイルデバイス、オペレーティングシステムのディメンションなど、デバイスのルックアップディメンション。 完全なリストについては、[ デバイス検索ディメンション ](#device-lookup-dimensions)を参照してください。
 
 この制限は、これらのディメンションを参照する派生フィールドにも適用されます。
 
 >[!NOTE]
 >
->Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[&#x200B; データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[&#x200B; デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
+>Web SDKを使用する場合、この制限は、データがExperience Platform データセットに届く前にデータストリームで適用されます。 詳しくは、データ収集ガイドの「[ データストリームの作成と設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure)」の「[ デバイス検索の設定](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#geolocation-device-lookup)」を参照してください。
 
 <!--
 SME CHECK (derived fields; from Slack thread with Ron Fulkerson, Matt Freestone, Courtney Ferguson). Assumptions to confirm:
