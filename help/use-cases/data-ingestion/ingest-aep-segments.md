@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1679'
 ht-degree: 14%
 ---
 # Experience Platform オーディエンスの取り込みと使用
@@ -363,7 +363,7 @@ Experience Platform UI の場合：
    1. （オプション） **[!UICONTROL 説明]**&#x200B;を入力します。
    1. 「**[!UICONTROL 完了]**」を選択します。
 1. **[!UICONTROL audienceMembershipId]**&#x200B;と&#x200B;**[!UICONTROL audienceMembershipName]**&#x200B;という2つのフィールドを含むカスタムフィールドグループ（例えば、**[!UICONTROL Audience Membership]**&#x200B;という名前）を含むようにスキーマを設定します。
-1. **[!UICONTROL personID]** フィールドが&#x200B;**[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]**&#x200B;であり、**[!UICONTROL Email]**&#x200B;がI&#x200B;**[!UICONTROL ID名前空間]であることを確認し**&#x200B;す。
+1. **[!UICONTROL personID]** フィールドが&#x200B;**[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]**&#x200B;であり、**[!UICONTROL 電子メール]**&#x200B;が&#x200B;**[!UICONTROL ID名前空間]**&#x200B;であることを確認してください。
 
    ![書き出し用セグメント &#x200B;](assets/segment-for-export.png)
 

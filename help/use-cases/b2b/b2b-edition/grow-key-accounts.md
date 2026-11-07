@@ -28,7 +28,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
@@ -65,7 +65,7 @@ B2B企業にとって、主要アカウントの成長と維持は最重要課�
 
 Customer Journey Analytics B2B editionでは、次の機能を使用できます。
 
-![B2B ユースケース – 主要アカウントの拡張 – コラボレーション – 共有](assets/b2b-uc-grow-key-accounts-share.png)
+![B2B ユースケース – 主要アカウントの拡大 – コラボレーション – 共有](assets/b2b-uc-grow-key-accounts-share.png)
 
 1. [注釈](/help/components/annotations/overview.md)
 1. [インテリジェントアラート](/help/components/c-intelligent-alerts/intelligent-alerts.md)

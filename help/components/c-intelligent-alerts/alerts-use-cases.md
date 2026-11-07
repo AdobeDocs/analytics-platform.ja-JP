@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 20%
@@ -47,6 +47,6 @@ ht-degree: 20%
 
 ## スタックアラート
 
-複数のアラートを作成する代わりに、アラートを統合（スタック）できます。 アラートを積み重ねることで、複数のアラートを個別に組み合わせることができます。 以下の例では、いずれかの指標トレッショルドがトリガーされたときにアラートが送信されます。
+複数のアラートを作成する代わりに、アラートを統合（スタック）できます。 アラートを積み重ねることで、複数のアラートを個別に組み合わせることができます。 以下の例では、いずれかの指標のしきい値がトリガーされたときにアラートが送信されます。
 
 ![](assets/alerts-example2.png)

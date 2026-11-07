@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 9%
@@ -75,7 +75,7 @@ Customer Journey AnalyticsのMarketo Engage データについてレポートす
 
 Marketo アクティビティデータをCustomer Journey Analyticsに取り込む場合は、適切なID戦略を選択して、Marketo データをCustomer Journey Analytics データにリンクできるようにする必要があります。
 
-Marketo データにはECIDがネイティブに含まれていませんが、ECID フィールドは、`munchkin.js` ライブラリで収集されるカスタムフィールドとして追加できます。 この追加により、Marketoと既存のCustomer Data Analytics web ジャーニーとの間で共通のIDが作成されます。
+Marketo データにはECIDがネイティブに含まれていませんが、ECID フィールドは、`munchkin.js` ライブラリで収集されるカスタムフィールドとして追加できます。 この追加により、Marketoと既存のCustomer Journey Analytics web データの間に共通のIDが作成されます。
 
 MarketoとCustomer Journey Analytics データをリンクするには、関連するデータセットに[&#x200B; グラフベースのステッチング &#x200B;](/help/stitching/gbs.md)を使用します。 実装に基づいて、使用可能なIDをいくつか使用できます。
 

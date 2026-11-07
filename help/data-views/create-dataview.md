@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3192'
 ht-degree: 76%
@@ -172,7 +172,7 @@ Customer Journey Analytics だけでなく、Adobe Journey Optimizer を使用�
 
 | コンテナ名 | 表示名（デフォルト） | 説明 |
 | --- | --- | --- |
-| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &#x200B; グローバルアカウント &#x200B;]** | [!UICONTROL グローバルアカウント]コンテナには、指定した期間内のグローバルアカウントに対するすべてのセッションとイベントが含まれます。 組織で別の用語を使用している場合は、ここでコンテナの名前を変更できます。 |
+| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL &#x200B; グローバルアカウント &#x200B;]** | [!UICONTROL &#x200B; グローバルアカウント &#x200B;] コンテナには、指定された時間枠内のグローバルアカウントのすべてのセッションとイベントが含まれます。 組織で別の用語を使用している場合は、ここでコンテナの名前を変更できます。 |
 | ユーザー | **[!UICONTROL ユーザー]** | [!UICONTROL ユーザー]コンテナには、指定した期間内の訪問者に対するすべてのセッションとイベントが含まれます。 組織で別の用語（「訪問者」や「ユーザー」など）を使用している場合は、ここでコンテナの名前を変更できます。 |
 | セッション | **[!UICONTROL セッション]** | [!UICONTROL セッション]コンテナでは、特定のセッションのページインタラクション、キャンペーンまたはコンバージョンを識別できます。 このコンテナの名前は、「訪問」または組織が指定したその他の用語に変更できます。 |
 | 機会 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 商談&#x200B;]** | [!UICONTROL 商談]コンテナには、指定した期間内の商談に対するすべてのセッションとイベントが含まれます。 組織で別の用語を使用している場合は、ここでコンテナの名前を変更できます。 |

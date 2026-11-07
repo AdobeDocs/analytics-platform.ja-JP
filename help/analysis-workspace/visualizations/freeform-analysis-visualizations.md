@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 27b268c88c84b530d9fbbc454eae23cc43d4d041
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 78%
@@ -105,7 +105,7 @@ Analysis Workspace では、次のビジュアライゼーションタイプを�
 * 折りたたまれたビジュアライゼーションを表示するには、![ChevronLeft](/help/assets/icons/ChevronLeft.svg)を選択します。
 * ビジュアライゼーションを削除するには、![CrossSize400](/help/assets/icons/CrossSize400.svg)を選択します。 元に戻すには、**[!UICONTROL 編集]**／**[!UICONTROL 元に戻す]**（**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**）を選択します。
 * ビジュアライゼーションをデフォルトの高さに戻すには、![ImageResize](/help/assets/icons/Resize.svg)を選択します。
-* パネル内でビジュアライゼーションを移動するには、![Move](/help/assets/icons/Move.svg)が表示されるたびにビジュアライゼーションをドラッグ&amp;ドロップします（通常はヘッダーにマウスポインターを置いたとき）。
+* パネル内でビジュアライゼーションを移動するには、![Move](/help/assets/icons/Move.svg)が表示されるたびにビジュアライゼーションをドラッグ&amp;ドロップします（通常はヘッダーにカーソルを合わせると）。
 
 
 

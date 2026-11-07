@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 11%
@@ -84,7 +84,7 @@ ht-degree: 11%
       1. **[!UICONTROL これらの設定を]**&#x200B;に適用するレベルを選択するドロップダウンメニューが、前に定義した&#x200B;**[!UICONTROL サーバー]**&#x200B;に設定されていることを確認します。
       1. **[!UICONTROL Connect]**&#x200B;を選択します。
    1. **[!UICONTROL ナビゲーター]** ダイアログで、データビューが取得されます。 この取得には時間がかかる場合があります。 取得すると、Power BI デスクトップに次が表示されます。
-      ![Power BI Destkop Load Data](../assets/powerbi-navigator-load.png)
+      ![Power BI デスクトップ読み込みデータ &#x200B;](../assets/powerbi-navigator-load.png)
       1. 左側のパネルのリストから&#x200B;**[!UICONTROL public.cc_data_view]**&#x200B;を選択します。
       1. 次の 2 つのオプションがあります。
          1. 「**[!UICONTROL 読み込み]**」を選択して続行し、設定を完了します。
@@ -92,7 +92,7 @@ ht-degree: 11%
             ![Power BI Desktop Transform Data](../assets/powerbi-transform-data.png)
             * **[!UICONTROL 閉じて適用]**&#x200B;を選択します。
    1. しばらくすると、**[!UICONTROL public.cc_data_view]**&#x200B;が&#x200B;**[!UICONTROL Data]** ペインに表示されます。 ディメンションと指標を表示するには、![ChevronRight](/help/assets/icons/ChevronRight.svg)を選択します。
-      ![Power BI Destkop Server データが読み込まれました](../assets/powerbi-navigator-loaded.png)
+      ![Power BI Desktop Server Data Loaded](../assets/powerbi-navigator-loaded.png)
 
 
 ## 平らにするか否か
@@ -327,7 +327,7 @@ Lookerは、`FLATTEN` パラメーターに対して次のシナリオをサポ�
    ORDER BY 1,2;
    ```
 
-   シェルを実行します。 以下のスクリーンショットに似た出力が表示されるはずです。
+   シェルを実行します。 以下のスクリーンショットのような出力が表示されます。
 
    ![Jupyter Notebook設定ステップ 5](../assets/jupyter-config-step3.png)
 
@@ -415,7 +415,7 @@ Jupyter Notebookは、`FLATTEN` パラメーターに対して次のシナリオ
    glimpse(dv)
    ```
 
-1. チャンクを実行します。 以下のスクリーンショットに似た出力が表示されるはずです。
+1. チャンクを実行します。 以下のスクリーンショットのような出力が表示されます。
 
    ![RStudio設定ステップ 2](../assets/rstudio-config-step2.png)
 

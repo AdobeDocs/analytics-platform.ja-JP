@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 93%
@@ -221,7 +221,7 @@ Analysis Workspace で作成するすべての新しいプロジェクトにつ�
 >abstract="[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションに使用するデフォルトのコンテナを選択します。 選択したデータビューに選択したデフォルトのコンテナが含まれていない場合、[!UICONTROL ジャーニーキャンバス]ビジュアライゼーションは自動的に別のプライマリコンテナに切り替わります。"
 
 
-Analysis Workspace で作成するすべての新しいプロジェクトについて、ビジュアライゼーションの環境設定を更新できます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の編集](#edit-preferences)を参照してください。
+Analysis Workspace で作成するすべての新しいプロジェクトのビジュアライゼーション環境設定を更新できます。 これらの環境設定へのアクセス方法について詳しくは、[環境設定の編集](#edit-preferences)を参照してください。
 
 これらの同じ環境設定の一部は、個々のビジュアライゼーション用にカスタマイズすることもできます。
 

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1530'
-ht-degree: 97%
+ht-degree: 96%
 ---
 # Analysis Workspace の概要 {#analysis-workspace-overview}
 
@@ -80,7 +80,7 @@ Analysis Workspace の主な機能は、ボタンパネルから使用できま�
 
 ## メニュー
 
-Analysis Workspace のほとんどの機能は、ドラッグ＆ドロップや、パネル、ビジュアライゼーションおよびコンポーネント内のコンテキストメニューから利用できます。
+Analysis Workspaceの機能のほとんどは、ドラッグ&amp;ドロップや、パネル、ビジュアライゼーション、コンポーネント内のコンテキストメニューから利用できます。
 
 Workspace メニューとショートカットまたはホットキーを使用して、機能を利用することもできます。 ショートカットキーは、ブラウザーを実行しているオペレーティングシステムによって異なります。 概要は以下の表を参照してください。
 

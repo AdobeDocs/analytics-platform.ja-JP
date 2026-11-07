@@ -32,7 +32,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 92%
@@ -132,7 +132,7 @@ Analysis Workspace では、次のいずれかの方法でセグメントを使�
 [計算指標](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注釈](/help/components/annotations/create-annotations.md#annotation-builder)、さらには[&#x200B; セグメント &#x200B;](/help/components/segments/seg-builder.md)などのコンポーネントを定義する場合、定義の一部としてセグメントを使用できます。
 
 
-### プロジェクトへの日付範囲の追加
+### プロジェクトに日付範囲を追加する
 
 [日付範囲](/help/components/date-ranges/overview.md)は、Analysis Workspace でのレポート時間枠を決定します。プロジェクト内の 1 つ以上のパネルや、一部のビジュアライゼーション（フリーフォームテーブルなど）に適用できます。
 

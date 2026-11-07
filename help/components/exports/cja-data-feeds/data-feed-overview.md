@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '562'
 ht-degree: 1%
 ---
 # データフィードの概要
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 データフィードは、Customer Journey Analyticsからクラウドに生のイベントレベルのデータを書き出します。 Adobe以外のデータウェアハウスなどのプラットフォームでも、これらのデータを使用できます。
 
-データフィードは、データビューのコンポーネントから構築されます。 含める各ディメンションと指標はデータフィードの列となり、永続性、派生フィールド、セグメントなどのデータビュー設定がデータに適用されます。 ファイルはParquet形式で配信されます。
+データフィードは、データビューのコンポーネントから構築されます。 含める各ディメンションと指標はデータフィードの列となり、永続性、派生フィールド、セグメントなどのデータビュー設定がデータに適用されます。 ファイルは[Parquet形式](/help/components/exports/cja-data-feeds/df-parquet.md)で配信されます。
 
 次の種類のデータフィードを作成できます。
 
@@ -71,13 +71,15 @@ ht-degree: 1%
 
 ### データフィードの計画
 
-* [Customer Journey AnalyticsとAdobe Analyticsのデータフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)：以前にAdobe Analytics データフィードを使用した場合の機能と概念の違いを理解します。
-
 * [&#x200B; データフィードとAnalysis Workspace間のデータの不一致を理解](/help/components/exports/cja-data-feeds/df-comparison-workspace.md): データフィードの出力がAnalysis Workspaceのレポートと一致しない理由を説明します。
 
 * [&#x200B; データフィードでのコンポーネントの可用性](/help/components/exports/cja-data-feeds/df-components.md): データフィードで必須、サポートされていない、または制限されているディメンションと指標について説明します。
 
+* [&#x200B; データフィード内のParquet ファイルの操作](/help/components/exports/cja-data-feeds/df-parquet.md): データフィードでParquetを使用する理由と、データウェアハウス内のファイルをクエリまたは読み込む方法について説明します。
+
 ### Adobe Analytics データフィードからの移行
+
+1. [Customer Journey AnalyticsとAdobe Analyticsのデータフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)：以前にAdobe Analytics データフィードを使用した場合の機能と概念の違いを理解します。
 
 1. [&#x200B; データフィード列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md): Adobe Analytics列のCustomer Journey Analyticsへのマッピング方法に影響する要因を理解します。
 

@@ -21,13 +21,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 798
-ht-degree: 75%
-
+source-wordcount: '798'
+ht-degree: 73%
 ---
-
 # 日付の比較
 
 Analysis Workspaceの日付比較では、日付範囲を含む任意の列を使用して、前年比、四半期比、月比などの共通の日付比較を作成できます。
@@ -91,7 +89,7 @@ Analysis Workspaceの日付比較では、日付範囲を含む任意の列を�
 
 1. 選択した列の上部に、期間が挿入されます。
 
-   ![現在のカレンダー期間と前のカレンダー月の発生件数を示すフリーフォームテーブル。](assets/add-time-period-column2.png)
+   現在のカレンダー期間と前のカレンダー月の発生回数を表示する![&#x200B; フリーフォームテーブル。](assets/add-time-period-column2.png)
 
 1. 期間の列はいくつでも追加でき、異なる日付範囲を組み合わせることもできます。
 

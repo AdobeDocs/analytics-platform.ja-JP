@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 59%
+ht-degree: 58%
 ---
 # オブジェクトの配列を使用
 
@@ -97,7 +97,7 @@ ht-degree: 59%
   * product : name
   * product : order_id
   * product : warranty : coverage
-  * prodcut : warranty : length
+  * 製品：保証：長さ
   * product : warranty : name
   * product : warranty : type
 * **指標：**

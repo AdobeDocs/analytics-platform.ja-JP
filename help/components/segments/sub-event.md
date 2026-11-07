@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 8%
@@ -59,7 +59,7 @@ Customer Journey Analyticsでは、サブイベント分析を使用するデー
 
 セグメンテーションビルダーで、または&#x200B;**[!UICONTROL クイックセグメント]**&#x200B;の一部として、**[!UICONTROL 商品の詳細]** コンテナの&#x200B;**[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL equals]** **[!UICONTROL Professional Suits]**&#x200B;を&#x200B;**[!UICONTROL Include]**&#x200B;に指定します。
 
-![製品カテゴリのプロフェッショナルスーツのサブイベントレベルに関するセグメンテーションを示すパネル &#x200B;](./assets/product-category-segmentation-subevents.png)
+![製品カテゴリのプロフェッショナルスーツのサブイベントレベルのセグメンテーションを示すパネル &#x200B;](./assets/product-category-segmentation-subevents.png)
 
 その結果、少なくとも&#x200B;**[!UICONTROL プロフェッショナルスーツ]** **[!UICONTROL product_category]**&#x200B;を含むすべての注文が考慮され、**[!UICONTROL 収益]**&#x200B;指標には&#x200B;**[!UICONTROL プロフェッショナルスーツ]** **[!UICONTROL product_categorey]**&#x200B;に属する製品の収益のみが含まれます。
 カテゴリについて報告する場合、**[!UICONTROL 専門訴訟]** **[!UICONTROL product_category]**&#x200B;のみが報告されます。
@@ -72,7 +72,7 @@ Customer Journey Analyticsでは、サブイベント分析を使用するデー
 
 セグメンテーションビルダーで、または&#x200B;**[!UICONTROL クイックセグメント]**&#x200B;の一部として、**[!UICONTROL 商品詳細]** コンテナで&#x200B;**[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL equals]** **[!UICONTROL Professional Suits]**&#x200B;を&#x200B;**[!UICONTROL Exclude]**&#x200B;に指定します。
 
-![製品カテゴリを除外するサブヒットレベルにセグメンテーションを表示するパネル Men](./assets/product-category-segmentation-subevents-exclude.png)
+![製品カテゴリを除外するためのサブヒットレベルのセグメンテーションを示すパネル Men](./assets/product-category-segmentation-subevents-exclude.png)
 
 製品レベルで除外するには、少なくとも1つの製品を含むイベントが含まれ、そのスコープ内でサブイベントレベルの除外が適用されます。 この除外は、イベント全体を除外するイベントレベルの除外とは異なります。
 

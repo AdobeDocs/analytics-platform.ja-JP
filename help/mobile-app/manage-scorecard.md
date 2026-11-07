@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 81%
@@ -237,7 +237,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 1. 正しいタイルを選択します。
 1. 右側のパネルの「**[!UICONTROL ドリルイン]**」の下で、削除する&#x200B;**[!UICONTROL 未指定]**&#x200B;の項目があるディメンション項目の横にある右矢印を選択します。
 
-   ![ディメンション名の横に右矢印を指す矢印が付いているプロパティ。](assets/unspecified.png)
+   ![&#x200B; ディメンション名の横にある右向き矢印を指す矢印が付いたプロパティ。](assets/unspecified.png)
 
 1. 「**[!UICONTROL 未指定]**」の横にあるアイコンをクリックして、レポートから未指定のデータを削除します。 （他のディメンション項目も削除できます）
 

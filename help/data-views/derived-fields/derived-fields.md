@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '10578'
 ht-degree: 98%
@@ -1685,7 +1685,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 | `(?:...)` | マーキングのないキャプチャ。 出力文字列で一致を参照できないようにします。 |
 | `a?` | 0 または 1 個の `a`。 |
 | `a*` | 0 個以上の `a`。 |
-| `a+` | 1 個以上の `a`。 |
+| `a+` | `a`の1つ以上。 |
 | `a{3}` | 厳密に 3 個の `a`。 |
 | `a{3,}` | 3 個以上の `a`。 |
 | `a{3,6}` | 3 ～ 6 個の `a`。 |

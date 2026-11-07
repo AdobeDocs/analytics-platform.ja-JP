@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 23%
+ht-degree: 21%
 ---
 # プロジェクトとデータのダウンロード
 
@@ -46,7 +46,7 @@ Customer Journey Analytics データを書き出す他の方法については�
 
 ## プロジェクトをPDFまたはCSV ファイルとしてダウンロード {#download-project}
 
-![「CSV をダウンロード」および「PDF をダウンロード」オプションをハイライト表示するプロジェクトドロップダウンメニュー](assets/download-project.png)
+![&#x200B; プロジェクトのドロップダウンメニューで、「CSVをダウンロード」および「PDFをダウンロード」オプションがハイライト表示されています。](assets/download-project.png)
 
 ### プロジェクトをPDF ファイルとしてダウンロード
 

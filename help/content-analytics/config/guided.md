@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '4894'
 ht-degree: 55%
@@ -72,7 +72,7 @@ Content Analytics 設定にアクセスするには
 | **[!UICONTROL 作成日]** | 設定が作成されたときのタイムスタンプ。 |
 | **[!UICONTROL 変更日]** | 設定が最後に変更されたときのタイムスタンプ。 |
 | **[!UICONTROL サンドボックス]** | Content Analytics が（予定されて）設定および実装される、組織内のサンドボックス。 |
-| **[!UICONTROL ステータス]** | 設定のステータス。 ステータスは、設定が完了した有効なチャネルの数を示します。 ![InfoOutline](/help/assets/icons/InfoOutline.svg)を使用して、より詳細な情報を含むポップアップを開きます。 |
+| **[!UICONTROL ステータス]** | 設定のステータス。 ステータスは、設定が完了した有効なチャネルの数を示します。 ![InfoOutline](/help/assets/icons/InfoOutline.svg)を使用して、詳細を表示するポップアップを開きます。 |
 
 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) を使用して、テーブルをカスタマイズできます。 **[!UICONTROL テーブルをカスタマイズ]**&#x200B;ダイアログに表示する列を選択し、「**[!UICONTROL 適用]**」を選択して変更を適用します。
 

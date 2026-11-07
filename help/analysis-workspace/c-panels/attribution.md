@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer engagement
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 90%
+ht-degree: 89%
 ---
 # アトリビューションパネル {#attribution-panel}
 
@@ -104,7 +104,7 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 
 ### アトリビューションのビジュアライゼーション
 
-次のビジュアライゼーションは、パネルの出力の一部です。
+次のビジュアライゼーションは、パネル出力の一部です。
 
 * **合計指標**：選択したディメンションに起因する、レポート時間枠で発生したコンバージョンの合計数。
 * **アトリビューション比較バー**：選択したディメンションの各ディメンションアイテム間で、アトリビューションされたコンバージョンを視覚的に比較します。 各棒の色は、個別のアトリビューションモデルを表します。

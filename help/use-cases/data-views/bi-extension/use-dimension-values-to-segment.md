@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 0%
+ht-degree: 1%
 ---
 # ディメンション値を使用したセグメント化
 
@@ -121,7 +121,7 @@ Customer Journey Analyticsで&#x200B;**[!UICONTROL タイトル]** `Hunting Prod
    1. フィールドのリストから、**[!UICONTROL &rbrace;‣製品カテゴリ]**&#x200B;を選択します。
 1. フィルターの選択範囲として&#x200B;**[!UICONTROL is]**&#x200B;を指定します。
 
-![AlertRed](/help/assets/icons/AlertRed.svg)のルックは、**[!UICONTROL 製品カテゴリ]**&#x200B;の可能な値のリストを表示しません。
+![AlertRed](/help/assets/icons/AlertRed.svg) Lookerには、**[!UICONTROL 製品カテゴリ]**&#x200B;の可能な値のリストが表示されません。
 
 ![Looker count distinct](../assets/uc10-looker-result.png)
 

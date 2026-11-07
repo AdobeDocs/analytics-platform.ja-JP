@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # インテリジェントキャプション {#intelligent-captions}
 
@@ -105,7 +105,7 @@ Here is an example of what intelligent captions could look like:
 すべてのインテリジェントキャプションを一度に拡張ビューで表示することも、個々のインテリジェントキャプションを 1 つずつビューで表示することもできます。
 
 * すべてのインテリジェントキャプションを表示するには、![すべてのインテリジェントキャプションを表示](/help/assets/icons/Maximize.svg) を選択します。
-* 個々のインテリジェントキャプションを 1 つずつ表示するには、![個々のインテリジェントキャプションを表示](/help/assets/icons/Minimize.svg) を選択します。
+* 個別のインテリジェントなキャプションを1つずつ表示するには、![個別のインテリジェントなキャプションを表示](/help/assets/icons/Minimize.svg)を選択します。
 
 ### 表示の編集 {#edit}
 
@@ -141,7 +141,7 @@ Here is an example of what intelligent captions could look like:
 1. [ビジュアライゼーションの環境設定](/help/analysis-workspace/user-preferences.md#visualizations-preferences)に移動します。
 1. **[!UICONTROL インテリジェントキャプションを表示]**&#x200B;をオフにします。
 
-   ![ インテリジェントキャプションを表示をオフにするオプションを表示する折れ線グラフのビジュアライゼーションオプション。](assets/toggle-captions.png)
+   ![&#x200B; インテリジェントキャプションを表示をオフにするオプションを表示する折れ線グラフのビジュアライゼーションオプション。](assets/toggle-captions.png)
 
 1. 「**[!UICONTROL 保存]**」を選択して環境設定を保存します。
 

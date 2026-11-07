@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1592'
 ht-degree: 3%
@@ -110,7 +110,7 @@ Analysis Workspaceでは、B2B コンテナを使用して、特定のB2B機能�
 
 ## スキーマ
 
-Customer Journey Analytics B2B Editionでは、[Adobe Experience Data Model （XDM） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して、B2B データを標準化し、B2B データのスキーマを定義します。 スキーマは、Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)で提供される標準クラスに基づいて作成することも、独自のカスタムクラスとスキーマを使用することもできます。 [&#x200B; ユースケース &#x200B;](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)記事では、Real-time CDP B2B edition クラスとスキーマを使用していますが、標準クラスとスキーマを使用するには、Real-time CDP B2B edition ライセンスは必要ありません。
+Customer Journey Analytics B2B editionでは、[Adobe Experience Data Model （XDM） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して、B2B データを標準化し、B2B データのスキーマを定義します。 スキーマは、Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)で提供される標準クラスに基づいて作成することも、独自のカスタムクラスとスキーマを使用することもできます。 [&#x200B; ユースケース &#x200B;](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)記事では、Real-time CDP B2B edition クラスとスキーマを使用していますが、標準クラスとスキーマを使用するには、Real-time CDP B2B edition ライセンスは必要ありません。
 
 ## データセット
 
@@ -118,7 +118,7 @@ Customer Journey Analytics B2Bでは、次のデータタイプとデータセ�
 
 | データタイプ | 時系列 | コンテナレコード | フィールドレコード |
 |---|---|---|---|
-| **データセット** | **イベントデータセット**<br/>&#x200B;例：<ul><li>デジタル分析</li><li>CRM イベント</li><li>対面イベント</li><li>コールセンターデータ</li></ul> | **プロファイルデータセット**<br/>&#x200B;例：<ul><li>CRM レコード</li><li>AJO B2B レコード</li><li>CDP レコード</li><ul> | **Classications**<br/>&#x200B;例：<ul><li>キャンペーンレコード</li><li>マーケティングリストレコード</li><li>コンテンツメタデータ</li><li>製品レコード</li></ul> |
+| **データセット** | **イベントデータセット**<br/>&#x200B;例：<ul><li>デジタル分析</li><li>CRM イベント</li><li>対面イベント</li><li>コールセンターデータ</li></ul> | **プロファイルデータセット**<br/>&#x200B;例：<ul><li>CRM レコード</li><li>AJO B2B レコード</li><li>CDP レコード</li><ul> | **分類**<br/>&#x200B;例：<ul><li>キャンペーンレコード</li><li>マーケティングリストレコード</li><li>コンテンツメタデータ</li><li>製品レコード</li></ul> |
 | 要件 | **タイムスタンプ**<br>&#x200B;すべてのレコードに必要：<ul><li>アカウント ID</li><li>グローバルアカウント ID （オプション）</li></ul> | **アカウント ID**<br> レコードには、次のようなコンテナ IDが必要です。<ul><li>アカウント</li><li>ユーザー</li><li>Opportunity</li><li>購買グループ</li></ul> | **一致するキー**<br> レコードには、次のようなコンテナまたはイベントデータセットに含まれるIDが必要です。<ul><li>キャンペーン ID</li><li>コンテンツ ID</li><li>製品 ID</li></ul> |
 
 {style="table-layout:fixed"}

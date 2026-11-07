@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 86%
@@ -140,7 +140,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
 1. 先ほど追加した ID オブジェクトで「**[!UICONTROL メール]**」フィールドをクリックし、[!UICONTROL フィールドプロパティ]パネルの[!UICONTROL ID 名前空間]から **[!UICONTROL ID]** と&#x200B;**[!UICONTROL メール]**&#x200B;を選択します。
 
-   ![メールを ID として指定](./assets/specify-email-loyalty-id.png)
+   ![電子メールをIDとして指定](./assets/specify-email-loyalty-id.png)
 
    メールアドレスを、Adobe Experience Platform の ID サービスがプロファイルを結合（ステッチ）するために使用できる ID として指定します。
 

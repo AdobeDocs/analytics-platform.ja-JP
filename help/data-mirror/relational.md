@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 15%
@@ -330,7 +330,7 @@ Customer Journey Analyticsのインターフェイスで、次の操作を行い
 
       1. ミラーデータを含むデータセットを選択します。 例：**[!UICONTROL event-data-mirror]**。 データセットには&#x200B;**[!UICONTROL リレーショナル]**&#x200B;が&#x200B;**[!UICONTROL データセットタイプ]**&#x200B;として含まれています。
 
-         ![CJA - Connectons - データセットを追加](assets/cja-add-dataset.png)
+         ![CJA – 接続 – データセットを追加](assets/cja-add-dataset.png)
 
       1. 接続に関連する追加のデータセットを追加します。
       1. 「**[!UICONTROL 次へ]**」を選択します。

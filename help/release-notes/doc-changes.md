@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '7452'
-ht-degree: 93%
+ht-degree: 92%
 ---
 
 # Customer Journey Analytics - ドキュメントのアップデート
@@ -99,7 +99,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | **2026年4月** | |
 | 派生フィールドガイドライン | 派生フィールドを操作するための[ガイドライン](/help/use-cases/data-views/derived-fields/guidelines.md)（ベストプラクティス、ガードレール、一般的な落とし穴）付きの記事を追加しました。 |
 | Journey Optimizer を統合する際に含めることができる 2 つのデータセットについて欠落している追加されたドキュメント | IMS 組織で高スループットトランザクションメッセージアドオンが有効になっている場合、[2 つの追加のプロファイル以外のシステム生成データセット](/help/integrations/ajo.md#high-throughput-add-on-datasets)が接続に含まれます。 |
-| 更新されたコホート分析のユースケース | フィードバックに基づいて、コホート分析のユースケースに Analyis Workspace の例を追加しました。 |
+| 更新されたコホート分析のユースケース | フィードバックにもとづいて、Analysis Workspaceの例をコホート分析のユースケースに追加しました。 |
 | **2026年3月** | |
 | パネルの分類 | 新しい[分類](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)機能にサポートするために、[パネルのドロップゾーン](/help/analysis-workspace/c-panels/panels.md#drop-zone)に関するドキュメントを再構築しました。 |
 | 不正な ID（BAVID）に関するテクニカルノート | [不正な ID に関する新しいテクニカルノート](/help/technotes/badids.md)。 このテクニカルノートでは、不正な ID の定義、Customer Journey Analytics インターフェイスで不正な ID が使用される場所、不正な ID の接続内のデータを調査する方法について説明します。 |
@@ -131,7 +131,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | 1900 年より前の日付 | Customer Journey Analytics での 1900 年より前の日付の処理方法に関する[メモ](/help/connections/create-connection.md#datasets)を追加しました。 |
 | リアルタイムレポート | Customer Journey Analytics に[リアルタイムレポート](/help/components/real-time/real-time.md)に関するドキュメントを追加しました。 |
 | 使用状況インターフェイス | 接続の更新済み[使用状況インターフェイス](/help/connections/manage-connections.md#usage)に関するドキュメントを追加しました。 |
-| Journey Optimizer データセットのステッチ | ステッチに使用できる[自動生成された Journey Optimizer データセットのリスト](/help/stitching/overview.md#journey-optimizer-datasets)を文書化しました。 |
+| Journey Optimizer データセットのステッチ | 結合に使用できる自動生成されたJourney Optimizer データセット [&#128279;](/help/stitching/overview.md#journey-optimizer-datasets)の リストを文書化しました。 |
 | コンテキストラベル | データビューコンポーネントでの [コンテキストラベル](/help/data-views/component-settings/overview.md#context-labels) の使用と目的に関する背景情報を追加しました。 |
 | **2025年8月** | |
 | Adobe Advertising との新しい統合 | [Adobe Advertising との統合](/help/integrations/advertising.md)に関する情報を追加しました。 |

@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3765'
-ht-degree: 81%
+ht-degree: 77%
 ---
 # Customer Journey Analytics BI 拡張機能
 
@@ -48,7 +48,7 @@ ht-degree: 81%
 
 [!DNL Customer Journey Analytics BI extension] を使用すると、Customer Journey Analytics で定義した[データビュー](./data-views.md)への SQL アクセスが可能になります。 データエンジニアやアナリストは、Power BI、Tableau Desktop またはその他のビジネスインテリジェンスツールやビジュアライゼーションツール（以降、BI ツールと呼びます）に精通している可能性があります。 Customer Journey Analytics ユーザーが Analysis Workspace プロジェクトを作成する際に使用しているものと同じデータビューに基づいて、レポートおよびダッシュボードを作成できるようになりました。
 
-Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)は、Experience Platform のデータレイクで使用可能なデータへの SQL インターフェイスです。 [!DNL Customer Journey Analytics BI extension] を有効にすると、[!DNL Query Service] の機能が拡張され、Customer Journey Analytics データビューを [!DNL Query Service] セッションのテーブルまたはビューとして表示できるようになります。 その結果、[!DNL Query Service] を PostgresSQL インターフェイスとして使用するビジネスインテリジェンスツールは、この拡張機能のメリットをシームレスに受けられます。
+Adobe Experience Platform [クエリサービス](https://experienceleague.adobe.com/ja/docs/experience-platform/query/home)は、Experience Platform のデータレイクで使用可能なデータへの SQL インターフェイスです。 [!DNL Customer Journey Analytics BI extension] を有効にすると、[!DNL Query Service] の機能が拡張され、Customer Journey Analytics データビューを [!DNL Query Service] セッションのテーブルまたはビューとして表示できるようになります。 その結果、[!DNL Query Service]をPostgreSQL インターフェイスとして使用するビジネスインテリジェンスツールは、この拡張機能からシームレスにメリットを得られます。
 
 主なメリットは次のとおりです。
 
@@ -113,7 +113,7 @@ Adobe Experience Platform [クエリサービス](https://experienceleague.adobe
 
 ### SQL
 
-この機能は、クエリエディターまたは標準の PostgreSQL コマンドラインインターフェイス（CLI）クライアントを使用して SQL 文で直接使用できます。
+クエリエディターまたは標準のPostgreSQL コマンドラインインターフェイス（CLI）クライアントを使用して、SQL ステートメントで直接機能を使用できます。
 
 +++ クエリ編集者
 
@@ -132,7 +132,7 @@ Adobe Experience Platform で：
 
 +++ PostgreSQL CLI
 
-1. Adobe Experience Platform で PostgresQL 資格情報を検索してコピーします。
+1. Adobe Experience PlatformでPostgreSQL資格情報を検索してコピーします。
 
    1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
 
@@ -157,7 +157,7 @@ Adobe Experience Platform で：
 
 +++ Power BI
 
-1. Adobe Experience Platform で PostgresSQL 資格情報の詳細を参照します。
+1. Adobe Experience PlatformでPostgreSQL資格情報の詳細を調べます。
 
    1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
 
@@ -173,9 +173,9 @@ Adobe Experience Platform で：
 
    1. 左側のパネルで「**[!UICONTROL その他...]**」を選択します。
 
-   1. **データを取得**&#x200B;画面で `PostgresSQL` を検索し、リストから 「**[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**」を選択します。
+   1. **データを取得**&#x200B;画面で、`PostgreSQL`を検索し、リストから&#x200B;**[!UICONTROL **&#x200B; PostgreSQL データベース &#x200B;**]**&#x200B;を選択します。
 
-   1. **[!UICONTROL **&#x200B; PostgreSQL データベース&#x200B;**]**&#x200B;ダイアログの場合：
+   1. **[!UICONTROL **&#x200B; PostgreSQL データベース &#x200B;**]** ダイアログで、次の操作を行います。
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -200,7 +200,7 @@ Adobe Experience Platform で：
 
 +++Tableau Desktop
 
-1. Adobe Experience Platform で PostgresSQL 資格情報の詳細を参照します。
+1. Adobe Experience PlatformでPostgreSQL資格情報の詳細を調べます。
 
    1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
 
@@ -214,9 +214,9 @@ Adobe Experience Platform で：
 
    1. 左側のパネルの&#x200B;**[!UICONTROL **&#x200B;サーバーへ&#x200B;**]**&#x200B;から「**[!UICONTROL **&#x200B;その他&#x200B;**]**」を選択します。
 
-   1. リストから「**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**」を選択します。
+   1. リストから&#x200B;**[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]**&#x200B;を選択します。
 
-   1. [!UICONTROL PostgreSQL] ダイアログの場合：
+   1. [!UICONTROL PostgreSQL] ダイアログで、次の操作を行います。
 
       1. Experience Platform クエリ[!UICONTROL 資格情報]の&#x200B;**[!UICONTROL **&#x200B;ホスト&#x200B;**]**&#x200B;パラメーターを「**[!UICONTROL **&#x200B;サーバー&#x200B;**]**」テキストフィールドにペーストします。
 
@@ -246,7 +246,7 @@ Adobe Experience Platform で：
 
 +++ Looker
 
-1. Adobe Experience Platform で PostgresSQL 資格情報の詳細を参照します。
+1. Adobe Experience PlatformでPostgreSQL資格情報の詳細を調べます。
 
    1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
 
@@ -273,7 +273,7 @@ Adobe Experience Platform で：
 
 +++ Jupyter Notebook
 
-1. Adobe Experience Platform で PostgresSQL 資格情報の詳細を参照します。
+1. Adobe Experience PlatformでPostgreSQL資格情報の詳細を調べます。
 
    1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
 
@@ -297,7 +297,7 @@ Adobe Experience Platform で：
 
 +++ RStudio
 
-1. Adobe Experience Platform で PostgresSQL 資格情報の詳細を参照します。
+1. Adobe Experience PlatformでPostgreSQL資格情報の詳細を調べます。
 
    1. 左側のパネル（**[!UICONTROL **&#x200B;データ管理&#x200B;**]**&#x200B;の下）から「**[!UICONTROL **&#x200B;クエリ&#x200B;**]**」を選択します。
 
@@ -355,7 +355,7 @@ prod:cja=> \dv
 
 ### デフォルトと制限
 
-BI 拡張機能を使用する場合、次の追加のデフォルト設定と制限が適用されます。
+BI拡張機能を使用する場合、次の追加のデフォルトと制限が適用されます。
 
 * BI 拡張機能には、クエリ結果の行制限が必要です。 デフォルトは 50 ですが、SQL で `LIMIT n` を使用して上書きできます。`n` は 1～50000 です。
 * BI 拡張機能には、計算に使用する行を制限するために日付範囲が必要です。 デフォルトは過去 30 日間ですが、特別な [`timestamp`](#timestamp) 列または [`daterange`](#date-range) 列を使用して、SQL `WHERE` 句で上書きできます。

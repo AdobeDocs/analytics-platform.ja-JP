@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 84fea2df7c99420099d8203de6fdfda5ddcb4667
+source-git-commit: 616f285c80b32279ea75f22dabe471831153cf2b
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1461'
 ht-degree: 17%
 ---
-# 最新のCustomer Journey Analytics リリースノート（2026年10月）
+# 最新のCustomer Journey Analytics リリースノート（2026年10月～12月）
 
-**最終更新**: 2026年11月4日
+**最終更新**: 2026年11月6日
 
 これらのリリースノートは、2026年10月のリリース期間をカバーしています。 Adobe Customer Journey Analytics リリースは、[継続的な配信モデル](releases.md)に基づいて動作します。このモデルにより、機能のデプロイメントに対する、よりスケーラブルかつ段階的なアプローチが可能になります。 したがって、これらのリリースノートは月に数回更新されます。 リリースノートを定期的に確認してください。
 
@@ -72,6 +72,10 @@ ht-degree: 17%
 | **コンポーネントとプロジェクトの説明を自動的に生成する** <br/> ディメンション、指標、計算指標、セグメント、日付範囲の説明を自動的に生成できるようになりました。 これにより、Workspace ユーザーは、特に大規模なコンポーネントライブラリを持つ組織で、使用するコンポーネントを理解できます。 <p>1つのコンポーネントに対して説明を生成したり、同時に多くのコンポーネントに対して説明を生成したりできます。 詳しくは、[説明の自動生成](/help/components/add-component-descriptions.md#automatically-generate-descriptions)を参照してください。</p><p>また、[&#x200B; プロジェクトを保存](/help/analysis-workspace/build-workspace-project/save-projects.md)するとき、または[&#x200B; プロジェクト情報と設定](/help/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings)からWorkspace プロジェクトの説明を生成することもできます。</p> | 2026年10月29日（PT） | 2026年11月18日（PT） |
 | **CX Enterprise Coworker: コンテンツに関する質問** <br/>Content Analyticsからコンテンツに関する正確な回答を得るために、共同作業者チャットを使用できるようになりました。 「前四半期に最も売上を伸ばした画像は？」などの具体的な質問や、「どのようなコンテンツを優先すればよいか？」などの一般的な質問を考えてみましょう。 Adobe Content Analyticsのデータがどのように構造化されているかを理解し、経験豊富なアナリストならではのレポートルールを適用します。そのため、Content Analyticsの専門知識がなくても、マーケターやビジネスユーザーは信頼性の高い結果を得ることができます。<p></p>詳しくは、[同僚チャットでのコンテンツに関する質問](https://experienceleague.adobe.com/ja/docs/coworker/content/chat/use-cases/data-insights/content-performance/ask-content-questions)を参照してください | 2026年10月14日（PT） | 2026年11月3日（PT） |
 | **Coworkerの製品内エクスペリエンス**<br/> Coworkerは、Analysis Workspaceのチャットパネルで利用できるようになりました。 共同作業者は、開いているプロジェクトをコンテキストとして使用するので、プロジェクトに何が含まれているかを説明せずに分析について質問できます。<p>Adobe Workfrontの製品体験を活用することで、次のことが可能になります。</p><ul><li>進行中のプロジェクトを要約し、インサイトを見つけ出して、根本原因の分析を実行します。</li><li>自然言語プロンプトを使用してプロジェクトを構築および編集します。 例えば、パネルや表を追加したり、データを分類したり、ビジュアライゼーションタイプや日付範囲を変更したり、セグメントを作成したりできます。</li></ul><p>詳しくは、[共同作業者に対する製品内エクスペリエンスの使用](/help/analysis-workspace/coworker.md)を参照してください。</p> | 2026年10月29日（PT） | 未定 |
+| **Customer Journey Analytics API：高度な日付傾向レポート**<br/>&#x200B;日付範囲の比較やセグメントの追加など、日付傾向レポートの高度な機能について説明する新しいガイドです。<p>詳しくは、Customer Journey Analytics API ドキュメントの[高度な日付トレンドレポート &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/advanced)を参照してください。</p> | | 2026年11月1日（PT） |
+| **Customer Journey Analytics API：繰り返しレポートの自動作成**<br/>&#x200B;新しいガイドでは、スケジュールに関する新しい指標を使用して、自動ワークフロー用に繰り返しCustomer Journey Analytics レポートを設定する方法について説明します。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年11月30日（PT） |
+| **Customer Journey Analytics API：内訳レポート**<br/>&#x200B;新しいガイドでは、簡単な内訳レポートリクエストについて説明し、例を紹介します。 このガイドでは、単純な分類と[複数ディメンションレポート &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim)の違いについても説明します。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年11月30日（PT） |
+| **Customer Journey Analytics API：データビューのベストプラクティス**<br/>&#x200B;新しいガイドでは、複数のAPI サービスをまたいでデータビュー識別子を操作するためのベストプラクティスについて説明します。<p>（ドキュメントのリンクは以下を参照。）</p> | | 2026年11月30日（PT） |
 
 
 ### Customer Journey Analytics の修正点

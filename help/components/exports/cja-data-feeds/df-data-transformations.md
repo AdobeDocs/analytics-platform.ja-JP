@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2dfdb8ea1cc0648fa1cffae9ac7823786ff3f11b
+source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1689'
 ht-degree: 5%
 ---
 # データフィードにデータ変換を適用する
@@ -69,7 +69,7 @@ ht-degree: 5%
 | **複数のフィールドを1つに結合** | 使用不可 | [&#x200B; フィールドを結合](/help/data-views/derived-fields/derived-fields.md#merge) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 容易/中程度 | |
 | **URLをコンポーネントに解析** | [部分文字列](/help/data-views/component-settings/substring.md) （URL解析メソッド） | [URL解析](/help/data-views/derived-fields/derived-fields.md#urlparse) | コンポーネント設定<p>限定的な派生フィールドのいずれかを使用しないため、推奨されます。</p> | 困難<p>同じコンポーネントを抽出するには、カスタム文字列解析が必要です。</p> | <!-- Possible discrepancy: in the component settings meeting, Matt and Derek described all Substring methods, including URL parse, as roughly interchangeable across component setting, derived field, and SQL ("either one would work... maybe a preference"), which is a looser SQL-difficulty read than "Difficult." Flagged for Luke to reconcile; not changed without confirmation. --> |
 | **数値フィールドに対して基本的な計算を実行** | 使用不可 | [数学](/help/data-views/derived-fields/derived-fields.md#math) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 容易/中程度 | |
-| **ディメンション値をイベント全体で保持** | [永続性](/help/data-views/component-settings/persistence.md) | 現在利用できません<!-- Derek: considering adding this to FDL and surfacing it in derived fields; not currently possible. --> | コンポーネント設定<p>使いやすさと、限定的な派生フィールドを使用しないため、おすすめです。</p> | 困難 | ルックバック日付範囲は、スコープ依存派生フィールド関数と同じように操作します。 [処理ウィンドウについて](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-window)を参照してください。 |
+| **ディメンション値をイベント全体で保持** | [永続性](/help/data-views/component-settings/persistence.md) | 現在利用できません<!-- Derek: considering adding this to FDL and surfacing it in derived fields; not currently possible. --> | コンポーネント設定<p>使いやすさと、限定的な派生フィールドを使用しないため、おすすめです。</p> | 困難 | スコープ依存派生フィールド関数と同じように、処理ウィンドウを操作します。 [処理ウィンドウについて](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-window)を参照してください。 |
 | **正規表現を使用して値を置き換える** | [部分文字列](/help/data-views/component-settings/substring.md) （Regex メソッド） | [正規表現の置換](/help/data-views/derived-fields/derived-fields.md#regex-replace) | コンポーネント設定<p>3つのアプローチはすべて同じ結果を生成しますが、次の理由からコンポーネント設定を優先します。</p><ul><li>同じロジックがAnalysis Workspaceとデータフィード出力の両方に一貫して適用されます（SQLでは不可能）</li><li>制限付きの派生フィールドは使用されません。</li></ul> | 容易/中程度 | |
 | **セッション内の次または前の値を解決** | 使用不可 | [次または前](/help/data-views/derived-fields/derived-fields.md#next-previous) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 困難 | 範囲の設定によって異なります。 [範囲の設定がデータフィードに与える影響](#scope-settings)を参照してください。 |
 | **2つの日付の差分を返す** | 使用不可 | [日付計算](/help/data-views/derived-fields/derived-fields.md#datemath) | 派生フィールド<p>Analysis Workspaceとデータフィード出力の両方で同じロジックが一貫して適用されるため、使いやすくするために推奨されます。</p> | 困難 | 範囲の設定によって異なります。 [範囲の設定がデータフィードに与える影響](#scope-settings)を参照してください。 |
@@ -82,10 +82,10 @@ ht-degree: 5%
 
 ### 範囲の設定がデータフィードに与える影響 {#scope-settings}
 
-日付計算、重複排除、次または前、および各要約は、イベント、セッション、または人物の&#x200B;[!UICONTROL **スコープ**]&#x200B;設定によって異なります（使用可能なオプションは機能によって異なります）。 深度には設定可能な範囲フィールドはありませんが、標準のイベント深度ディメンションと同様に、本質的にセッションに関連付けられています。 スコープを持つフィールドは、そのスコープ内のすべての行に同じ値を書き込み、その値はルックバック日付範囲内のデータによって異なります。
+日付計算、重複排除、次または前、および各要約は、イベント、セッション、または人物の&#x200B;[!UICONTROL **スコープ**]&#x200B;設定によって異なります（使用可能なオプションは機能によって異なります）。 深度には設定可能な範囲フィールドはありませんが、標準のイベント深度ディメンションと同様に、本質的にセッションに関連付けられています。 スコープを持つフィールドは、そのスコープ内のすべての行に同じ値を書き込み、その値は[処理ウィンドウ &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-window)内のデータによって異なります。
 <!-- Open question as of 2026-09-09: is the lookback date range boundary anchored to a fixed point (e.g., midnight), or does it float with the feed run time, and is this configurable? Pending confirmation from Ron Fulkerson. -->
 
-[処理ウィンドウ &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-window)はデータフィード配信ごとに前にスライドするため、同じフィールドは、既に発生したイベントであっても、後の配信で異なる値を返すことができます。
+処理ウィンドウはデータフィード配信ごとに前にスライドするため、同じフィールドは、既に発生したイベントであっても、後の配信で異なる値を返すことができます。
 
 スコープサイズに伴うリスクの増加：個人の履歴はフィード実行内に自然な時間境界がないので、個人のスコープはセッションのスコープよりもリスクが高くなります。
 

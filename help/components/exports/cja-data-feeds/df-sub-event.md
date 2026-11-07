@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1320'
 ht-degree: 1%
 ---
 # データフィードのサブイベントコンポーネント
@@ -102,7 +102,7 @@ Adobe Experience PlatformのXDM スキーマ内のサブイベントを表示す
 
 このグループは、基礎となるデータ構造を反映しています。
 
-データフィード出力では、これらのコンポーネントはすべて、ネストされた配列として1列に表示されます。
+データフィード出力では、これらのコンポーネントはすべて、ネストされた配列として1列に表示されます。 Parquet ファイルは、ネストされた配列をネイティブにサポートします。 詳しくは、[&#x200B; データフィードでのParquet ファイルの操作](/help/components/exports/cja-data-feeds/df-parquet.md)を参照してください。
 
 サブイベントコンポーネントを含むコンポーネントをデータフィードに追加する方法について詳しくは、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)を参照してください。
 

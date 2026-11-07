@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Customer Journey Analytics の概要
 
@@ -52,7 +52,7 @@ Customer Journey Analytics アーキテクチャの概要を以下に示しま�
 
 ![Customer Journey Analytics アーキテクチャ](assets/cja-overview.png)
 
-このアーキテクチャは、Customer Journey Analytics でどのように次の操作を実行できるかを示しています。
+このアーキテクチャでは、Customer Journey Analyticsで次のことが可能になります。
 
 * 複数のデータセット ![データ](/help/assets/icons/Data.svg) を[接続](/help/connections/overview.md)で組み合わせます。
 * 接続で定義したデータセットから使用可能なフィールドに基づいて、[データビュー](/help/data-views/data-views.md)でディメンション ![ディメンション](/help/assets/icons/Dimensions.svg) と指標 ![イベント](/help/assets/icons/Event.svg) を定義および設定します。
@@ -131,7 +131,7 @@ Adobe Experience Platform を使用すると、顧客データとコンテンツ
 
 >[!BEGINSHADEBOX]
 
-Customer Journey Analytics のデータの操作方法に関する概要ビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analytics のデータの操作](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"}を参照してください。
+Customer Journey Analyticsでのデータの操作方法について詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analyticsでのデータの操作](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 

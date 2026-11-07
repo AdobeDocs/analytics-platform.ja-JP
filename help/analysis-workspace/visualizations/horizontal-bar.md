@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 65%
+ht-degree: 58%
 ---
 # 積み重ね横棒グラフ
 
@@ -46,7 +46,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 <!-- markdownlint-enable MD034 -->
 
 
-この ![GraphBarVertical](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL 横棒グラフ]**&#x200B;ビジュアライゼーションでは、1 つ以上の指標の様々な値を表す横棒グラフが表示されます。
+![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]**&#x200B;のビジュアライゼーションには、1つ以上の指標に対する様々な値を表す水平バーが表示されます。
 
 ![ページビュー数、ページ速度、訪問回数、入口、出口などの指標を示す横棒グラフ。](assets/horizontal-bar.png)
 
