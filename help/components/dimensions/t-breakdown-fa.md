@@ -75,7 +75,7 @@ Analysis Workspaceでは、適切な指標やディメンション、セグメ�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの内訳](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの内訳](https://video.tv.adobe.com/v/327337?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -102,7 +102,7 @@ Analysis Workspaceでは、適切な指標やディメンション、セグメ�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの位置別の内訳](https://video.tv.adobe.com/v/24033){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの位置別の内訳](https://video.tv.adobe.com/v/327412?captions=jpn){target="_blank"}を参照してください。
 
 {{videoaa}}
 
