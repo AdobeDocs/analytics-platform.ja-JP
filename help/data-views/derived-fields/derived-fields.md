@@ -71,7 +71,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->派生フィールドを操作する際のベストプラクティス、ガードレール、よくある落とし穴については、[ ガイドライン ](/help/use-cases/data-views/derived-fields/guidelines.md)を参照してください。
+>派生フィールドを操作する際のベストプラクティス、ガードレール、よくある落とし穴については、[&#x200B; ガイドライン &#x200B;](/help/use-cases/data-views/derived-fields/guidelines.md)を参照してください。
 >
 
 ## 派生フィールドインターフェイス {#interface}
@@ -313,9 +313,9 @@ ht-degree: 98%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
+![区切りリストルールビルダーですべての値を取得のスクリーンショット &#x200B;](assets/function-template-get-all-values-in-delimited-list.png)
 
-派生フィールドは、[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[ サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
+派生フィールドは、[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
 
 +++
 
@@ -343,7 +343,7 @@ ht-degree: 98%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
+![区切りリストルールビルダーでの最後の値の取得のスクリーンショット &#x200B;](assets/function-template-get-last-value-in-delimited-list.png)
 
 +++
 
@@ -470,9 +470,9 @@ ht-degree: 98%
 
 {{select-package}}
 
-テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[ ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
+テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[&#x200B; ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![UTM パラメーター解析ルールビルダーのスクリーンショット ](assets/function-template-utm-parameters-parse.png)
+![UTM パラメーター解析ルールビルダーのスクリーンショット &#x200B;](assets/function-template-utm-parameters-parse.png)
 
 +++
 
@@ -1802,7 +1802,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 ## カスタムコンテナ
 
-派生フィールドは、[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[ サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
+派生フィールドは、[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
 
 +++
 
@@ -2029,7 +2029,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Screen Height` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 ![型キャストルールのスクリーンショット 1](assets/typecast-1.png)
 
@@ -2044,7 +2044,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc2-derivedfield}
 
-`Revenue (integer)` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Revenue (integer)` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 
 +++

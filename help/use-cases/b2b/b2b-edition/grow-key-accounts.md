@@ -43,20 +43,20 @@ B2B企業にとって、主要アカウントの成長と維持は最重要課�
 
 アドホックなリードコンバージョンレポートを作成して配信し、アカウントがsales funnelをどのように通過するのかを把握します。
 
-[ フォールアウト ](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) ビジュアライゼーションを使用すると、順次ジャーニーの事前定義されたステップ間のコンバージョン率と脱落を視覚化できます。
+[&#x200B; フォールアウト &#x200B;](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) ビジュアライゼーションを使用すると、順次ジャーニーの事前定義されたステップ間のコンバージョン率と脱落を視覚化できます。
 
 ### 例
 
 アカウントのセールスfunnel（リードから商談まで）の上部のフォールアウトを確認します。
 
-1. [ フォールアウト ](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) ビジュアライゼーションを作成して設定します。
+1. [&#x200B; フォールアウト &#x200B;](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) ビジュアライゼーションを作成して設定します。
 1. ![設定](/help/assets/icons/Setting.svg)を選択して、**[!UICONTROL フォールアウトコンテナ]**&#x200B;として&#x200B;**[!UICONTROL アカウント]**&#x200B;を選択します。
 1. 最初のタッチポイントは、**[!UICONTROL すべてのアカウント]**&#x200B;を読み取る必要があります。
 1. 新しいタッチポイントを追加：**[!UICONTROL リードフォーム：完了が存在します]**。
 1. 新しいタッチポイントを追加：**[!UICONTROL 生成されたリードが存在します]**。
 1. 新しいタッチポイントを追加します：**[!UICONTROL MQLが有効です]**。
 
-   ![B2B – 主要アカウントの成長 – 販売段階の進行 – フォールアウト ](assets/b2b-uc-grow-key-accounts-fallout.png)
+   ![B2B – 主要アカウントの成長 – 販売段階の進行 – フォールアウト &#x200B;](assets/b2b-uc-grow-key-accounts-fallout.png)
 
 
 ## コラボレーション

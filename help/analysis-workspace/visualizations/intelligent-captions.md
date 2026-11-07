@@ -141,7 +141,7 @@ Here is an example of what intelligent captions could look like:
 1. [ビジュアライゼーションの環境設定](/help/analysis-workspace/user-preferences.md#visualizations-preferences)に移動します。
 1. **[!UICONTROL インテリジェントキャプションを表示]**&#x200B;をオフにします。
 
-   ![ インテリジェントキャプションを表示をオフにするオプションを表示する折れ線グラフのビジュアライゼーションオプション。](assets/toggle-captions.png)
+   ![&#x200B; インテリジェントキャプションを表示をオフにするオプションを表示する折れ線グラフのビジュアライゼーションオプション。](assets/toggle-captions.png)
 
 1. 「**[!UICONTROL 保存]**」を選択して環境設定を保存します。
 

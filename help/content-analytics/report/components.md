@@ -179,9 +179,9 @@ Content Analytics では、Customer Journey Analytics で既に使用可能な�
 
 ## 有料メディア
 
-これらのコンポーネントは、**有料メディア** チャネルが[Adobe Experience Platform有料メディアソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)を通じて有効になっている場合に、データビューに追加されます。 webやモバイルのコンテンツと並行して、有料メディアのキャンペーン、クリエイティブ、支出に関するレポートを作成できます。 可用性と入力された値は、広告ネットワークとレポートの粒子によって異なります。
+これらのコンポーネントは、**有料メディア** チャネルが[Adobe Experience Platform有料メディアソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)を通じて有効になっている場合に、データビューに追加されます。 webやモバイルのコンテンツと並行して、有料メディアのキャンペーン、クリエイティブ、支出に関するレポートを作成できます。 可用性と入力された値は、広告ネットワークとレポートの粒子によって異なります。
 
-上記のAI生成の[ アセット属性](#asset-attributes)および[ エクスペリエンス属性](#experience-attributes)も、有料メディアクリエイターが利用できます。 同様の特徴化は、web、モバイル、有料メディアのチャネルでも実行されます。
+上記のAI生成の[&#x200B; アセット属性](#asset-attributes)および[&#x200B; エクスペリエンス属性](#experience-attributes)も、有料メディアクリエイターが利用できます。 同様の特徴化は、web、モバイル、有料メディアのチャネルでも実行されます。
 
 ### 有料メディアのディメンション
 

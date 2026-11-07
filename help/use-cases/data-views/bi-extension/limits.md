@@ -40,7 +40,7 @@ ht-degree: 1%
 
 使用例の&#x200B;**[!UICONTROL Limit]** パネルの例：
 
-![Customer Journey Analytics制限パネル ](../assets/cja-limit.png)
+![Customer Journey Analytics制限パネル &#x200B;](../assets/cja-limit.png)
 
 +++
 
@@ -61,11 +61,11 @@ ht-degree: 1%
    1. **[!UICONTROL 合計回数]**&#x200B;を選択します。
 
 1. **[!UICONTROL フィルター]** ペインで、次の操作を行います。
-   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL daterange is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 相対日付]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
-   1. 値&#x200B;]****[!UICONTROL &#x200B;が過去&#x200B;]**`1`**[!UICONTROL &#x200B;暦年&#x200B;]**の場合、フィルターを**[!UICONTROL &#x200B;項目を表示するように定義します。
+   1. 値&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B;が過去&#x200B;]&#x200B;**`1`**&#x200B;[!UICONTROL &#x200B;暦年&#x200B;]&#x200B;**の場合、フィルターを**&#x200B;項目を表示するように定義します。
    1. 「**[!UICONTROL フィルターを適用]**」を選択します。
-   1. このビジュアル ]**の**[!UICONTROL  フィルターから&#x200B;**[!UICONTROL product_name is （All）]**&#x200B;を選択します。
+   1. このビジュアル **の** フィルターから&#x200B;**[!UICONTROL product_name is （All）]**&#x200B;を選択します。
    1. **[!UICONTROL 上位N]**&#x200B;を&#x200B;**[!UICONTROL フィルタータイプ]**&#x200B;として選択します。
    1. **[!UICONTROL 項目を表示]** **[!UICONTROL 上位]** `5` **[!UICONTROL を値]**&#x200B;で選択します。
    1. **[!UICONTROL データ]** ペインから&#x200B;**[!UICONTROL 合計回数]**&#x200B;をドラッグ&amp;ドロップし、**[!UICONTROL ここにデータフィールドを追加]**&#x200B;します。
@@ -76,7 +76,7 @@ ht-degree: 1%
 
    Power BI デスクトップは以下のようになります。
 
-   日付範囲名をフィルターに使用する![Power BI デスクトップ ](../assets/uc12-powerbi-final.png)
+   日付範囲名をフィルターに使用する![Power BI デスクトップ &#x200B;](../assets/uc12-powerbi-final.png)
 
 BI拡張機能を使用してPower BI Desktopで実行されるクエリに`limit`文が含まれていますが、想定されているものではありません。 上位5件に対する制限は、明示的な製品名の結果を使用してPower BI Desktopによって適用されます。
 
@@ -225,7 +225,7 @@ GROUP BY 1
 1. 「**[!UICONTROL フィルター]**」の下の「**[!UICONTROL + フィルター]**」を選択します。
 1. **[!UICONTROL フィルターを追加]** ダイアログ：
    1. **[!UICONTROL ‣ Cc データビュー]**&#x200B;を選択
-   1. フィールドのリストから、**[!UICONTROL }‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**を選択します。
+   1. フィールドのリストから、**[!UICONTROL &rbrace;‣ Daterange Date]**、次に&#x200B;**[!UICONTROL Daterange Date]**&#x200B;を選択します。
       ![Looker フィルター](../assets/uc2-looker-filter.png)
 1. **[!UICONTROL Cc データビューの日付変更日]** フィルターを&#x200B;**[!UICONTROL が範囲]** **[!UICONTROL 2023/01/01]** **[!UICONTROL から（前）]** **[!UICONTROL 2024/01/01]**&#x200B;に指定します。
 1. 左側のパネルの&#x200B;**[!UICONTROL ‣ Cc データビュー]** セクションから：

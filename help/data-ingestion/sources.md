@@ -103,7 +103,7 @@ Adobe Experience Platform に取り込まれるすべてのデータは、デー
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![ スキーマ ](./assets/create-pr-schema-wizard-step-2.png)の名前を付けるフィールドを表示するスキーマウィンドウを作成します
+      ![&#x200B; スキーマ &#x200B;](./assets/create-pr-schema-wizard-step-2.png)の名前を付けるフィールドを表示するスキーマウィンドウを作成します
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -244,7 +244,7 @@ Adobe Experience Platform に取り込むことができるロイヤルティデ
 
 Adobe Analytics ソースコネクタの使用方法については、[従来のAdobe Analyticsからのデータの取り込みと使用](./analytics.md)を参照してください。
 
-HTTP API ソースコネクタの使用方法については、[ ストリーミングデータの取り込みと使用](./streaming.md)を参照してください。
+HTTP API ソースコネクタの使用方法については、[&#x200B; ストリーミングデータの取り込みと使用](./streaming.md)を参照してください。
 
 ソースコネクタの概要（各コネクタの詳細情報へのリンクを含む）については、[ソースコネクタの概要](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions)を参照してください。
 
@@ -295,7 +295,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    1. 「**[!UICONTROL 保存]**」を選択します。
 
-[接続](/help/connections/overview.md)を作成すると、[ データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス ](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。
+[接続](/help/connections/overview.md)を作成すると、[&#x200B; データセットの選択と結合](/help/connections/combined-dataset.md)、[接続のデータセットのステータスとデータ取り込みのステータス &#x200B;](/help/connections/manage-connections.md)など、様々な管理タスクを実行できます。
 
 ## データビューを設定
 
@@ -331,7 +331,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -356,7 +356,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]にディメンションと指標をドラッグ&amp;ドロップします。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 
