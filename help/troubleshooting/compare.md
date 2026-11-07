@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 100%
+ht-degree: 96%
 ---
 # Analytics Source Connector データと Adobe Analytics の比較
 
@@ -60,7 +60,7 @@ ht-degree: 100%
   >
   >Adobe では、Adobe Analytics のディメンションで「[!UICONTROL 最新（最後）]」の配分を使用することを強くお勧めします。 この配分設定により、Customer Journey Analytics でのアトリビューションの柔軟性が大幅に向上します。
 
-* **訪問定義**：個々のディメンションと指標の設定に加えて、データビュー自体には、訪問者データの解釈方法を根本的に変更する設定が含まれています。 例えば、データビュー全体（Adobe Analytics の[仮想レポートスイート](https://experienceleague.adobe.com/ja/docs/analytics/components/virtual-report-suites/vrs-about)と同様）にセグメントを適用できます。 また、訪問期間の定義を変更したり、目的のイベントで自動的に新しい訪問を開始したりすることもできます。 これらの設定は、Customer Journey Analytics と Adobe Analytics のレポートの違いに大きな影響を与える可能性があります。
+* **訪問の定義**：個々のディメンションと指標の設定に加えて、データビュー自体には、訪問者データの解釈方法を根本的に変更する設定が含まれています。 例えば、データビュー全体（Adobe Analytics の[仮想レポートスイート](https://experienceleague.adobe.com/ja/docs/analytics/components/virtual-report-suites/vrs-about)と同様）にセグメントを適用できます。 また、訪問期間の定義を変更したり、目的のイベントで自動的に新しい訪問を開始したりすることもできます。 これらの設定は、Customer Journey Analytics と Adobe Analytics のレポートの違いに大きな影響を与える可能性があります。
 
 ## 製品間のレコード数の確認
 

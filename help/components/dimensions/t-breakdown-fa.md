@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6db1cfff1578b11a62710382aed783e56996342d
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 57%
@@ -32,11 +32,11 @@ ht-degree: 57%
 
 Analysis Workspaceでは、適切な指標やディメンション、セグメント、タイムラインなどの分析ブレークダウン値を使用してクエリを構築し、特定のニーズに合わせて無制限にデータを分類できます。
 
-1. [&#x200B; フリーフォームテーブル &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)で、選択した1つ以上の行のコンテキストメニューから、**[!UICONTROL 分類]** ![&#x200B; シェブロン右](/help/assets/icons/ChevronRight.svg)を選択します。
+1. [ フリーフォームテーブル ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)で、選択した1つ以上の行のコンテキストメニューから、**[!UICONTROL 分類]** ![ シェブロン右](/help/assets/icons/ChevronRight.svg)を選択します。
 
    ![選択範囲からアラートを作成を表示する手順の結果。](assets/breakdown.png)
 
-1. サブメニューから、**[!UICONTROL ディメンション]**、**[!UICONTROL 指標]**、**[!UICONTROL セグメント]**&#x200B;または&#x200B;**[!UICONTROL 日付範囲]**&#x200B;を選択し、項目を選択します。 または、**[!UICONTROL *検索&#x200B;*]**&#x200B;フィールドでコンポーネントを検索します。
+1. サブメニューから、**[!UICONTROL ディメンション]**、**[!UICONTROL 指標]**、**[!UICONTROL セグメント]**&#x200B;または&#x200B;**[!UICONTROL 日付範囲]**&#x200B;を選択し、項目を選択します。 または、**[!UICONTROL *検索&#x200B;*]**フィールドでコンポーネントを検索します。
 
 選択した期間にわたって、ディメンション項目またはオーディエンスセグメント別に指標を分類できます。 より詳細なレベルまで、さらにドリルダウンすることもできます。
 
@@ -66,7 +66,7 @@ Analysis Workspaceでは、適切な指標やディメンション、セグメ�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis WorkspaceのDimension](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis WorkspaceのDimension](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -75,7 +75,7 @@ Analysis Workspaceでは、適切な指標やディメンション、セグメ�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの内訳](https://video.tv.adobe.com/v/327337?captions=jpn&quality=12&learn=on){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの内訳](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -84,7 +84,7 @@ Analysis Workspaceでは、適切な指標やディメンション、セグメ�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; ディメンションと指標の追加](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ ディメンションと指標の追加](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -93,7 +93,7 @@ Analysis Workspaceでは、適切な指標やディメンション、セグメ�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; フリーフォームテーブルでのディメンションの操作](https://experienceleague.adobe.com/ja/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ フリーフォームテーブルでのディメンションの操作](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -102,7 +102,7 @@ Analysis Workspaceでは、適切な指標やディメンション、セグメ�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの位置別の内訳](https://video.tv.adobe.com/v/327412?captions=jpn){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensionの位置別の内訳](https://video.tv.adobe.com/v/24033){target="_blank"}を参照してください。
 
 {{videoaa}}
 

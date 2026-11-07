@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 59%
+ht-degree: 58%
 ---
 # オブジェクトの配列を使用
 
@@ -97,7 +97,7 @@ ht-degree: 59%
   * product : name
   * product : order_id
   * product : warranty : coverage
-  * prodcut : warranty : length
+  * 製品：保証：長さ
   * product : warranty : name
   * product : warranty : type
 * **指標：**
@@ -295,5 +295,5 @@ Customer Journey Analyticsでは、同じ名前の指標が異なるオブジェ
 
 ## 制限事項
 
-Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [&#x200B; リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[&#x200B; データモデルの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-model-limits)」と「[&#x200B; データサイズの制限](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
+Customer Journey Analyticsで使用され、Experience Platformのスキーマの一部としてモデル化されるデータの配列には、制限が適用されます。 [ リアルタイム顧客プロファイルデータとセグメント化のデフォルトガードレール ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/guardrails)の「[ データモデルの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)」と「[ データサイズの制限](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)」を参照してください。
 

@@ -35,9 +35,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2771'
 ht-degree: 95%
 ---
 # モバイルスコアカードの作成 {#create-a-mobile-scorecard}
@@ -57,7 +57,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [モバイルスコアカードの作成](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ モバイルスコアカードの作成](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -70,7 +70,7 @@ Analytics スコアカードには、以下に示すように、エグゼクテ�
 
 ![モバイルスコアカードのデモを示す Analytics スコアカードの例](assets/intro_scorecard.png)
 
-このスコアカードのキュレーターは、スコアカードビルダーを使用して、エグゼクティブコンシューマーのスコアカードに表示するタイルを設定できます。 また、タイルをタップした後に詳細ビューや分類を調整する方法も設定できます。 スコアカードビルダーインターフェイスを次に示します。
+このスコアカードのキュレーターは、スコアカードビルダーを使用して、エグゼクティブ消費者のスコアカードに表示するタイルを設定できます。 また、タイルをタップした後に詳細ビューや分類を調整する方法も設定できます。 スコアカードビルダーインターフェイスを次に示します。
 
 ![新しいモバイルスコアカードウィンドウを示すスコアカードビルダー。](assets/scorecard_builder.png)
 
@@ -209,7 +209,7 @@ Analytics ダッシュボードには、4 つのビジュアライゼーショ�
 1. 正しいタイルを選択します。
 1. 右側のパネルの「**[!UICONTROL ドリルイン]**」の下で、削除する&#x200B;**[!UICONTROL 未指定]**&#x200B;の項目があるディメンション項目の横にある右矢印を選択します。
 
-   ![ディメンション名の横に右矢印を指す矢印が付いているプロパティ。](assets/unspecified.png)
+   ![ ディメンション名の横にある右向き矢印を指す矢印が付いたプロパティ。](assets/unspecified.png)
 
 1. 「**[!UICONTROL 未指定]**」の横にあるアイコンをクリックして、レポートから未指定のデータを削除します。 （他のディメンション項目も削除できます）
 
@@ -285,7 +285,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 >[!BEGINSHADEBOX]
 
-デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [モバイルスコアカードプロジェクトのデータストーリー](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
+デモビデオについて詳しくは、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [モバイルスコアカードプロジェクトのデータストーリー](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
 
 {{videoaa}}
 
@@ -298,14 +298,14 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. モバイルスコアカードプロジェクトから開始します。
 1. ストーリーを作成するタイルを選択します。
-   ![&#x200B; データストーリーの作成](assets/data-story1.png)
+   ![ データストーリーの作成](assets/data-story1.png)
    ![データストーリーアイコンの作成](assets/create-data-story.png){width=".50%"}
 1. スライドを追加して、データストーリーを作成します。 デフォルトでは、最初のスライドが生成されます。
 新しいスライドを追加するには、スライドにポインタを合わせるかクリックして、使用可能な次のオプションから選択します。
    * 「+」記号をタップして、新しいスライドを作成します。
    * 複製アイコンをタップすると、既存のスライドを複製できます。
 1. 空のスライドを作成する場合は、左側のパネルからコンポーネントをドラッグ＆ドロップするか、レイアウトを選択してタイルのデータをスライドに自動入力します。
-   ![&#x200B; データストーリーの作成](assets/data-story2.png)
+   ![ データストーリーの作成](assets/data-story2.png)
    スライドを削除するには、ごみ箱アイコンをタップします。
 
 ### データストーリーのカスタマイズ {#customize-data-story}
@@ -317,7 +317,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 1. タイルをタップします。 選択したタイルは青色で囲まれ、右側のパネルにはタイルのプロパティが表示されます。
 1. タイトル、グラフタイプ、その他のタイルオプションを変更します。
 1. コンポーネントをタイルにドラッグします。
-   ![&#x200B; データストーリーの作成](assets/data-story3.png)
+   ![ データストーリーの作成](assets/data-story3.png)
    ビジュアライゼーションなどのコンポーネントをタイルにドラッグ&amp;ドロップすると、そのコンポーネントがすべてのデータストーリースライドに適用されます。
 1. タイトルにのみ変更を適用するには、Shift キーを押したまま変更を適用します。
    ![データストーリーの作成](assets/data-story4.png)
@@ -338,8 +338,8 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 ナビゲーションバーには、各スライドの内容を表すアイコンが表示されます。 ナビゲーションバーを使用すると、多数のスライドがある場合に、特定のスライドに簡単に移動できます。
 
 タイルとスライドの間を移動するには、ナビゲーションバーをタップします。
-![&#x200B; データストーリーの作成](assets/data-story5.png)
-![&#x200B; データストーリーの作成](assets/data-story-nav.png){width="45%"}
+![ データストーリーの作成](assets/data-story5.png)
+![ データストーリーの作成](assets/data-story-nav.png){width="45%"}
 
 また、キーボードの矢印を使用するか、コンポーネントを選択して画面の左または右に長押ししてスクロールすることで、前後に移動することもできます。
 

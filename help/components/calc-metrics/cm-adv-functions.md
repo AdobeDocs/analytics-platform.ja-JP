@@ -24,13 +24,11 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 5381
+source-wordcount: '5381'
 ht-degree: 96%
-
 ---
-
 # 高度な関数
 
 [計算指標ビルダー](cm-workflow/cm-build-metrics.md)では、統計関数および数学関数を適用できます。 この記事では、高度な関数とその定義をアルファベット順に示します。
@@ -904,7 +902,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; テーブル &#x200B;]{type="Neutral"} ログ回帰：Y = a ln （X） + b. 相関係数を返します。
+[!BADGE  テーブル ]{type="Neutral"} ログ回帰：Y = a ln （X） + b. 相関係数を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -926,7 +924,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; テーブル &#x200B;]{type="Neutral"} ログ回帰：Y = a ln （X） + b. b を返します。
+[!BADGE  テーブル ]{type="Neutral"} ログ回帰：Y = a ln （X） + b. b を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -972,7 +970,7 @@ CDF-Z(-3) ? 0.0013499
 
 ![効果](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE &#x200B; テーブル &#x200B;]{type="Neutral"} ログ回帰：Y = a ln （X） + b. a を返します。
+[!BADGE  テーブル ]{type="Neutral"} ログ回帰：Y = a ln （X） + b. a を返します。
 
 | 引数 | 説明 |
 |---|---|
@@ -1765,7 +1763,7 @@ TANH(metric)
 
 |  Argument  | Description  |
 |---|---|
-|  *metric* | The angle in radians for which you want to find the hyperbolic tanget.  |
+|  *metric* | The angle in radians for which you want to find the hyperbolic tangent.  |
 
 ## IF (Row)
 

@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '7127'
 ht-degree: 86%
@@ -71,9 +71,9 @@ ht-degree: 86%
 
 **[!UICONTROL リスト]**&#x200B;インターフェイスは、接続のデフォルトのインターフェイスです。 選択されていない場合は、「**[!UICONTROL リスト]**」タブを選択してインターフェイスにアクセスします。
 
-**[!UICONTROL リスト]**&#x200B;インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
+**[!UICONTROL リスト]**インターフェイスには、使用可能なすべての接続のテーブルが表示されます。
 △
-![&#x200B; リストビュー](assets/list-view.png)
+![ リストビュー](assets/list-view.png)
 
 テーブルでは、次の列またはアイコンを使用できます。
 
@@ -102,7 +102,7 @@ ht-degree: 86%
 
 ### 接続を絞り込む
 
-接続のリストにフィルターを適用するには、![&#x200B; フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
+接続のリストにフィルターを適用するには、![ フィルター](/help/assets/icons/Filter.svg)を選択します。 次のフィルターオプションから選択します。
 
 | フィルターオプション | 説明 |
 |---------|----------|
@@ -113,7 +113,7 @@ ht-degree: 86%
 | **[!UICONTROL CJA で使用]** | 「**[!UICONTROL オン]**」を選択すると、Customer Journey Analytics での使用が有効になっている接続のみが表示されます。 「**[!UICONTROL オフ]**」を選択すると、Customer Journey Analytics での使用がまだ有効になっていない接続のみが表示されます。 |
 | **[!UICONTROL 統合]** | 選択した統合を持つ接続のみが表示されます。 |
 
-「![&#x200B; フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
+「![ フィルター](/help/assets/icons/Filter.svg) **[!UICONTROL フィルターを非表示]**」を選択して、フィルターペインを非表示にします。
 
 ### 接続の編集
 
@@ -304,8 +304,8 @@ Customer Journey Analytics から接続を削除するには：
 | **[!UICONTROL 追加されたバッチ]** | 選択した日付範囲で接続に追加されたバッチの数。 |
 | **[!UICONTROL 前回追加した日時]** | 接続に追加された最新のバッチのタイムスタンプ。 |
 | **[!UICONTROL データソースタイプ]** | ソースタイプ。 データセットを接続に追加する際に、ソースタイプを定義します。 |
-| **[!UICONTROL データセットタイプ]** | [データセットタイプ](create-connection.md#dataset-types)。 タイプには、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;を指定できます。 アドホックデータセットまたはリレーショナルデータセットは、**[!UICONTROL （アドホック）]**&#x200B;または&#x200B;**[!UICONTROL （リレーショナル）]**&#x200B;で識別されます。 例えば、**[!UICONTROL イベント （アドホック）]**&#x200B;や&#x200B;**[!UICONTROL ルックアップ（リレーショナル）]**&#x200B;などです。 |
-| **[!UICONTROL ステッチ]** | 接続UI[&#128279;](/help/stitching/use-stitching-ui.md)でデータセットのステッチが[有効になっている場合、値は&#x200B;**[!UICONTROL true]**&#x200B;です。 それ以外の場合、値は&#x200B;**[!UICONTROL false]**&#x200B;です。 ステッチ プロシージャ &#x200B;](/help/stitching//use-stitching.md)に対する リクエストの結果であるステッチされたデータセットは、このテーブルでステッチされたものとして識別されず、デフォルトでは&#x200B;**[!UICONTROL false]**&#x200B;の値を持ちます。 |
+| **[!UICONTROL データセットタイプ]** | [データセットタイプ](create-connection.md#dataset-types)。 タイプには、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;を指定できます。 アドホックまたはリレーショナルデータセットは、**[!UICONTROL （Adhoc）]**&#x200B;または&#x200B;**[!UICONTROL （Relational）]**&#x200B;によって識別されます。 例えば、**[!UICONTROL イベント （アドホック）]**&#x200B;や&#x200B;**[!UICONTROL ルックアップ（リレーショナル）]**&#x200B;などです。 |
+| **[!UICONTROL ステッチ]** | 接続UI](/help/stitching/use-stitching-ui.md)でデータセットのステッチが[有効になっている場合、値は&#x200B;**[!UICONTROL true]**&#x200B;です。 それ以外の場合、値は&#x200B;**[!UICONTROL false]**&#x200B;です。 ステッチ プロシージャ ](/help/stitching//use-stitching.md)に対する[ リクエストの結果であるステッチされたデータセットは、このテーブルでステッチされたものとして識別されず、デフォルトでは&#x200B;**[!UICONTROL false]**&#x200B;の値を持ちます。 |
 | **[!UICONTROL スキーマ]** | データセットのベースとなる Experience Platform スキーマ。 |
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットが新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：データセットが新しいデータを読み込むように設定されていない場合。 |
 | **[!UICONTROL データセットを変換]** | 適用可能な B2B ルックアップデータセットの変換ステータス。 詳しくは、[B2B ルックアップ用にデータセットを変換](transform-datasets-b2b-lookups.md)を参照してください。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：変換に対して有効である適用可能なデータセットの場合。 <p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：変換に対して有効でない適用可能なデータセットの場合。<p>**[!UICONTROL 該当なし]**：変換に対して適用可能でない他のすべてのデータセットの場合。 |
@@ -346,13 +346,13 @@ Customer Journey Analytics から接続を削除するには：
 
 | 詳細 | 説明 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID &#x200B;]** | 接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID &#x200B;]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL グローバルアカウント ID ]** | 接続のグローバルアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されているアカウントベースの接続にのみ適用できます。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL アカウント ID ]** | 接続のアカウント ID として指定した ID。 グローバルアカウントコンテナが設定されていないアカウントベースの接続にのみ適用できます。 |
 | **[!UICONTROL ユーザー ID]** | 接続のユーザー ID として指定した ID。 |
 | **[!UICONTROL キー]** | ルックアップデータセットに指定したキー。 |
 | **[!UICONTROL 一致するキー]** | ルックアップデータセットに指定した一致するキー。 |
 | **[!UICONTROL タイムスタンプ]** | イベントデータセットに定義されたタイムスタンプ。 |
-| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。 データが追加されると、レポートにデータが表示されるまでの待ち時間は発生しません。 ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
+| **[!UICONTROL 使用可能なレコード]** | カレンダーを通じて選択された特定の期間に、このデータセットに対して取り込まれた行の合計数。 データが追加されると、レポートにデータが表示されるまでの待ち時間は発生しません。 ただし、最新の接続を作成すると、[遅延](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq)が発生します。 |
 | **[!UICONTROL 追加されたレコード]** | 選択した日付範囲で接続に追加されたデータセットのレコード（行）の数。 |
 | **[!UICONTROL スキップされたレコード]** | 選択した日付範囲で接続のデータ転送中にスキップされたデータセットのレコード（行）の数。 |
 | **[!UICONTROL 追加されたバッチ]** | 接続に追加されたバッチ数。 |
@@ -361,7 +361,7 @@ Customer Journey Analytics から接続を削除するには：
 | **[!UICONTROL 新しいデータをインポート]** | データセットの新しいデータの読み込みのステータス： <p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _オン]**：データセットが新しいデータを読み込むように設定されている場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _x オフ_]**：データセットが新しいデータを読み込むように設定されていない場合。 |
 | **[!UICONTROL データをバックフィル]** | データセットのバックフィルデータのステータス。<p>![ステータス（赤色）](assets/status-red.svg) **[!UICONTROL _x _バックフィル失敗]**：失敗したバックフィルの数の場合。<p>![ステータス（赤色）](assets/status-orange.svg) **[!UICONTROL _x _バックフィル処理中]**：処理中のバックフィルの数の場合。<p>![ステータス（緑色）](assets/status-green.svg) **[!UICONTROL _x _バックフィル完了]**：完了したバックフィルの数の場合。<p>![ステータス（グレー）](assets/status-gray.svg) **[!UICONTROL _オフ_]**：バックフィルが定義されていない場合。<p>データセットの過去のバックフィルの概要を示すダイアログを表示するには、 <img src="./assets/pastbackfill.svg" alt="過去のバックフィル" width="15"/> **[!UICONTROL 過去のバックフィル]** を選択します。 |
 | **[!UICONTROL データソースタイプ]** | データセットを接続に追加した際に定義されるデータソースタイプ。 |
-| **[!UICONTROL データセットタイプ]** | [データセットタイプ](create-connection.md#dataset-types)。 タイプには、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;を指定できます。 アドホックデータセットまたはリレーショナルデータセットは、**[!UICONTROL （アドホック）]**&#x200B;または&#x200B;**[!UICONTROL （リレーショナル）]**&#x200B;で識別されます。 例えば、**[!UICONTROL イベント （アドホック）]**&#x200B;や&#x200B;**[!UICONTROL ルックアップ（リレーショナル）]**&#x200B;などです。 |
+| **[!UICONTROL データセットタイプ]** | [データセットタイプ](create-connection.md#dataset-types)。 タイプには、**[!UICONTROL イベント]**、**[!UICONTROL プロファイル]**、**[!UICONTROL ルックアップ]**、**[!UICONTROL 概要]**&#x200B;を指定できます。 アドホックまたはリレーショナルデータセットは、**[!UICONTROL （Adhoc）]**&#x200B;または&#x200B;**[!UICONTROL （Relational）]**&#x200B;によって識別されます。 例えば、**[!UICONTROL イベント （アドホック）]**&#x200B;や&#x200B;**[!UICONTROL ルックアップ（リレーショナル）]**&#x200B;などです。 |
 | **[!UICONTROL スキーマ]** | このデータセットのベースとなる Experience Platform スキーマ。 |
 | **[!UICONTROL データセット ID]** | Experience Platform で生成されたデータセット ID。 |
 
@@ -572,7 +572,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 詳細分類]**&#x200B;テーブルを使用すると、、接続別、データセット別別、サンドボックス別、タグ別に詳細な指標を表示できます。 データセット名はレポート期間中に変更される場合があるので、データセットは名前ではなく ID を使用してレポートされます。 不明なデータセットまたは接続は、ID を使用してレポートされます。
 
-  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット &#x200B;]は表示されなくなります。
+  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット ]は表示されなくなります。
 
   * 分類を変更するには、「**[!UICONTROL 表示別]**」と「**[!UICONTROL 分類別]**」の組み合わせを選択します。
 
@@ -621,7 +621,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 月間Content Analytics行]** サブパネルは、毎月システムに追加される月間Content Analytics レコードの合計数を測定し、insightにデータの増加と取り込み率を提供します。 サブパネルには、今月取り込まれた行数の合計数と前月からの変化の概要が表示されます。
 
-  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![ カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
 
   +++
 
@@ -629,7 +629,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 詳細分類]**&#x200B;テーブルを使用すると、、接続別、データセット別別、サンドボックス別、タグ別に詳細な指標を表示できます。 データセット名はレポート期間中に変更される場合があるので、データセットは名前ではなく ID を使用してレポートされます。 不明なデータセットまたは接続は、ID を使用してレポートされます。
 
-  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット &#x200B;]は表示されなくなります。
+  2024年9月より前の数か月間については、データはデータセットレベルで収集され、わかりやすくするために[!UICONTROL その他のデータセット]として表示されます。 2024年9月以降、データは詳細なデータセットレベルで収集され、[!UICONTROL その他のデータセット ]は表示されなくなります。
 
   * 分類を変更するには、「**[!UICONTROL 表示別]**」と「**[!UICONTROL 分類別]**」の組み合わせを選択します。
 
@@ -729,7 +729,7 @@ Customer Journey Analytics から接続を削除するには：
 
   **[!UICONTROL 月次メディア開始]** サブパネルは、毎月システムに追加される月次メディア開始レコードの合計数を測定し、insightにデータの増加と取り込み率を提供します。 サブパネルには、今月取り込まれた行数の合計数と前月からの変化の概要が表示されます。
 
-  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![&#x200B; カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
+  ビジュアライゼーションのデータポイントにポインタを合わせると、詳細を含むポップアップが表示されます。 **[!UICONTROL 時間範囲]**&#x200B;を選択するか、![ カレンダー](/help/assets/icons/Calendar.svg)を使用して時間範囲を選択できます。
 
   +++
 

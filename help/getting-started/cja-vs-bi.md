@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Customer Journey Analytics と BI ソリューションの比較
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 従来のカスタマージャーニー分析のアプローチでよくある障害は、それが顧客中心ではないことです。 各チームは、サイロにデータを収集し、自分たちがアクセスできるデータに基づいてエクスペリエンスを分析および最適化します。
 
-![この節で説明する従来の BI ワークフロー](./assets/biworkflow.png)
+![この節の説明に従った従来のBI ワークフロー](./assets/biworkflow.png)
 
 特定のデジタルキャンペーンが異なるデータサイロに保存されたオフラインアクションに与える影響を理解するには、BI チームのキューにリクエストを発行します。 BI チームは、データを取得して変換するために必要なクエリを作成します。 生データが取得されると、BI チームはビジュアライゼーションを作成します。 データはあなたと共有され、あなたはインサイトを丹念に調べて、他のシステムでのアクティベーションのためにデータを抽出します。
 

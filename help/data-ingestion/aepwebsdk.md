@@ -45,7 +45,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3516'
 ht-degree: 83%
@@ -110,7 +110,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
    1. スキーマの&#x200B;**[!UICONTROL スキーマ表示名]**&#x200B;と&#x200B;**[!UICONTROL 説明]**（オプション）を入力します。
 
-      ![&#x200B; スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
+      ![ スキーマフィールドに名前を付けるを示すスキーマを作成ウィンドウ](./assets/create-ee-schema-wizard-step-2.png)
 
    1. 「**[!UICONTROL 完了]**」を選択します。
 
@@ -152,7 +152,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
 1. 先ほど追加した ID オブジェクトで「**[!UICONTROL ecid]**」フィールドをクリックし、右パネルの [!UICONTROL ID 名前空間]リストから **[!UICONTROL ID]**、**[!UICONTROL プライマリ ID]** および **[!UICONTROL ECID]** を選択します。
 
-   ![ECID を ID として指定](./assets/specify-identity.png)
+   ![ECIDをIDとして指定](./assets/specify-identity.png)
 
    ECIDは、Adobe Experience Platform ID サービスが同じECIDを持つプロファイルの動作を組み合わせる（ステッチする）ために使用できるプライマリ IDとして指定します。
 
@@ -160,7 +160,7 @@ Web サイトを訪問するプロファイルからの最小限のデータ（�
 
 1. 先ほど追加した ID オブジェクトで「**[!UICONTROL メール]**」フィールドをクリックし、[!UICONTROL フィールドプロパティ]パネルの[!UICONTROL ID 名前空間]リストから **[!UICONTROL ID]** と&#x200B;**[!UICONTROL メール]**&#x200B;を選択します。
 
-   ![メールを ID として指定](./assets/specify-email-identity.png)
+   ![電子メールをIDとして指定](./assets/specify-email-identity.png)
 
    メールアドレスを、Adobe Experience Platform Identity Service（ID サービス）がプロファイルの動作を組み合わせる（ステッチする）ために使用するもう 1 つの ID として指定します。
 
@@ -286,7 +286,7 @@ Web サイトから取得できるデータをモデル化する、最小限の�
 
    タグに名前を付け、「**[!UICONTROL Web]**」を選択し、ドメイン名を入力します。 「**[!UICONTROL 保存]**」を選択して続行します。
 
-   ![&#x200B; プロパティの作成](./assets/create-property.png)
+   ![ プロパティの作成](./assets/create-property.png)
 
 ### タグの設定
 
@@ -577,7 +577,7 @@ Adobe Experience Platform データを Customer Journey Analytics で使用す�
 
    設定をそのままにし、「**[!UICONTROL 保存して終了]**」を選択します。
 
-データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[&#x200B; データビューの概要](../data-views/data-views.md)を参照してください。
+データビューの作成と編集方法、データビューで使用できるコンポーネント、セグメントとセッションの設定の使用方法について詳しくは、[ データビューの概要](../data-views/data-views.md)を参照してください。
 
 
 ## プロジェクトの設定
@@ -602,7 +602,7 @@ Analysis Workspace は、データに基づき、分析をすばやく構築し�
 
    ![ワークスペースでデータ表示を選択](./assets/cja-projects-3.png)します。
 
-5. 最初のレポートを作成するには、[!UICONTROL &#x200B; パネル &#x200B;]の[!UICONTROL 自由形式テーブル &#x200B;]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
+5. 最初のレポートを作成するには、[!UICONTROL  パネル ]の[!UICONTROL 自由形式テーブル ]で、ディメンションと指標のドラッグ&amp;ドロップを開始します。 例えば、`Program Points Balance` および `Page View` 指標、`email` をディメンションにドラッグすると、web サイトを訪問し、ロイヤルティポイントを収集するロイヤルティプログラムに参加しているプロファイルの概要をすばやく把握できます。
 
    ![ワークスペース - 最初のレポート](./assets/cja-projects-5.png)
 

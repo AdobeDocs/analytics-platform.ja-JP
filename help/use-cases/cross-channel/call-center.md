@@ -29,7 +29,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 88%
@@ -64,10 +64,10 @@ Customer Journey Analytics には、様々なソースのデータセットを 1
 
 ## ユーザー ID をステッチ
 
-Customer Journey Analyticsでは、[結合データセット &#x200B;](/help/connections/combined-dataset.md)を生成するための共通IDが必要です。
+Customer Journey Analyticsでは、[結合データセット ](/help/connections/combined-dataset.md)を生成するための共通IDが必要です。
 
 * 両方のデータセットのすべてのイベントに共通の識別子がすでに存在する場合は、この手順をスキップして接続の作成に進むことができます。
-* いずれかのデータセットが一部のイベントに対してのみ共通の識別子を持つ場合は、これらの2つのデータセットのクロスチャネル分析を有効にする手順に[&#x200B; ステッチ &#x200B;](/help/stitching/overview.md)を使用してデータを結合できます。
+* いずれかのデータセットが一部のイベントに対してのみ共通の識別子を持つ場合は、これらの2つのデータセットのクロスチャネル分析を有効にする手順に[ ステッチ ](/help/stitching/overview.md)を使用してデータを結合できます。
 
 ## Customer Journey Analytics で接続を作成する
 
@@ -91,7 +91,7 @@ Customer Journey Analyticsでは、[結合データセット &#x200B;](/help/con
 
 このビジュアライゼーションは、CCA がデータをどの程度適切にステッチしているかを理解するのに役立ちます。
 
-1. 2つのセグメントを作成します。 これらの2つのセグメントで使用される変数は、上記と同じ変数で、各イベントのデータソースを反映しています。 詳しくは、[&#x200B; セグメントの作成](/help/components/segments/seg-create.md)を参照してください。
+1. 2つのセグメントを作成します。 これらの2つのセグメントで使用される変数は、上記と同じ変数で、各イベントのデータソースを反映しています。 詳しくは、[ セグメントの作成](/help/components/segments/seg-create.md)を参照してください。
    * データセット ID が web データと等しいユーザーコンテナ
    * データセット ID がコールセンターデータと等しいユーザーコンテナ
 2. Analysis Workspace で、[Venn](/help/analysis-workspace/visualizations/venn.md) ビジュアライゼーションをワークスペースキャンバスにドラッグします。
@@ -137,7 +137,7 @@ Customer Journey Analyticsでは、[結合データセット &#x200B;](/help/con
 
 1. 左側の「**[!UICONTROL ビジュアライゼーション]**」タブをクリックし、ヒストグラムビジュアライゼーションをワークスペースキャンバスにドラッグします。
 2. 左側の「**[!UICONTROL コンポーネント]**」タブをクリックし、問い合わせ指標をヒストグラムビジュアライゼーションにドラッグします。
-3. ビジュアライゼーションの中央にある「**[!UICONTROL 詳細設定を表示]**」をクリックし、目的のグループをカスタマイズします。
+3. ビジュアライゼーションの中央にある「**[!UICONTROL 詳細設定を表示]**」をクリックし、目的のバケットをカスタマイズします。
 4. 「**[!UICONTROL 作成]**」をクリックします。
 
 <!--
@@ -163,7 +163,7 @@ Slide 4
 
 Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
-wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
+wanted to understand when someone interacts with a facet, what's the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
 use sequential segments, but you lose the ability to use attribution IQ
 

@@ -25,15 +25,13 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 484
-ht-degree: 4%
-
+source-wordcount: '484'
+ht-degree: 5%
 ---
 
-
-# Content Analytics JavaScript library
+# コンテンツ分析のための JavaScript ライブラリ
 
 Adobe Content Analytics JavaScript ライブラリを使用すると、Experience Platform Edge Networkを介してAdobe Experience Platformにコンテンツデータを送信することで、web サイト上のコンテンツ関連イベントを追跡できます。 このライブラリは、Adobe Experience Platform タグを使用せずにContent Analyticsを実装する場合に使用します。
 
@@ -73,7 +71,7 @@ Adobe Content Analytics JavaScript ライブラリを使用すると、Experienc
 
 CDNから直接ライブラリを読み込みます。
 
-1. [Web SDK JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library)を初期化し、Content Analytics バンドルを読み込みます。
+1. [Web SDK JavaScript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を初期化し、Content Analytics バンドルを読み込みます。
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -95,7 +93,7 @@ CDNから直接ライブラリを読み込みます。
    ```
 
    場所
-   * `alloy/2.x.x`は、[Web SDK JavaScript ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/install/library)を使用するバージョンを指します。
+   * `alloy/2.x.x`は、[Web SDK JavaScript ライブラリ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)を使用するバージョンを指します。
    * `content-analytics/1.x.x`は、Content Analytics SDK ライブラリを使用するバージョンを指します。
 
 2. スタンドアロン ビルドでは、`window.contentAnalytics`が初期化関数として公開されます。
@@ -121,7 +119,7 @@ initializeContentLibrary({
 
 | オプション | タイプ | デフォルト | 説明 |
 |--------|------|---------|-------------|
-| `includeExperiences` | ブール型 | `false` | ページ/エクスペリエンスビューの追跡を有効にする |
+| `includeExperiences` | ブール値 | `false` | ページ/エクスペリエンスビューの追跡を有効にする |
 | `experienceConfigurations` | 配列 | - | ドメイン正規表現とクエリパラメーターによるエクスペリエンスの定義 |
 
 `experienceConfigurations`の各エントリは次を受け入れます。

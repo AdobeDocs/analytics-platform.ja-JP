@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '10578'
 ht-degree: 98%
@@ -71,7 +71,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->派生フィールドを操作する際のベストプラクティス、ガードレール、よくある落とし穴については、[&#x200B; ガイドライン &#x200B;](/help/use-cases/data-views/derived-fields/guidelines.md)を参照してください。
+>派生フィールドを操作する際のベストプラクティス、ガードレール、よくある落とし穴については、[ ガイドライン ](/help/use-cases/data-views/derived-fields/guidelines.md)を参照してください。
 >
 
 ## 派生フィールドインターフェイス {#interface}
@@ -313,9 +313,9 @@ ht-degree: 98%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーですべての値を取得のスクリーンショット &#x200B;](assets/function-template-get-all-values-in-delimited-list.png)
+![区切りリストルールビルダーですべての値を取得のスクリーンショット ](assets/function-template-get-all-values-in-delimited-list.png)
 
-派生フィールドは、[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
+派生フィールドは、[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[ サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
 
 +++
 
@@ -343,7 +343,7 @@ ht-degree: 98%
 
 テンプレートを使用するには、テンプレート内のルールの一部として一覧表示されている各関数に対して正しいパラメーターを指定する必要があります。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![区切りリストルールビルダーでの最後の値の取得のスクリーンショット &#x200B;](assets/function-template-get-last-value-in-delimited-list.png)
+![区切りリストルールビルダーでの最後の値の取得のスクリーンショット ](assets/function-template-get-last-value-in-delimited-list.png)
 
 +++
 
@@ -470,9 +470,9 @@ ht-degree: 98%
 
 {{select-package}}
 
-テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[&#x200B; ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
+テンプレートを使用するには、テンプレート内のルールの一部としてリストされている各関数のパラメーターを指定する必要があります。 使用していないUTM クエリパラメーターの関数（例：[URLを解析](#url-parse)）または関数内のパラメーター（例：[連結](#concatenate)と[ ケース時](#case-when)）を削除します。 詳しくは、[関数リファレンス](#function-reference)を参照してください。
 
-![UTM パラメーター解析ルールビルダーのスクリーンショット &#x200B;](assets/function-template-utm-parameters-parse.png)
+![UTM パラメーター解析ルールビルダーのスクリーンショット ](assets/function-template-utm-parameters-parse.png)
 
 +++
 
@@ -1631,10 +1631,10 @@ URL の一部を取得し、一意のページ識別子として使用してト�
 
 | ページ URL |
 |---|
-| `https://business.adobe.com/jp/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/jp/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/jp/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/jp/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -1685,7 +1685,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 | `(?:...)` | マーキングのないキャプチャ。 出力文字列で一致を参照できないようにします。 |
 | `a?` | 0 または 1 個の `a`。 |
 | `a*` | 0 個以上の `a`。 |
-| `a+` | 1 個以上の `a`。 |
+| `a+` | `a`の1つ以上。 |
 | `a{3}` | 厳密に 3 個の `a`。 |
 | `a{3,}` | 3 個以上の `a`。 |
 | `a{3,6}` | 3 ～ 6 個の `a`。 |
@@ -1802,7 +1802,7 @@ Customer Journey Analytics では、Perl 正規表現構文のサブセットを
 
 ## カスタムコンテナ
 
-派生フィールドは、[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[&#x200B; サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
+派生フィールドは、[ カスタムコンテナ ](/help/data-views/create-dataview.md#containers-1)として使用できるようになりました。データビューで選択し、ワークスペースプロジェクトの[ サブイベント分析](/help/components/segments/sub-event.md)に使用できます。
 
 +++
 
@@ -2029,7 +2029,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc1-derivedfield}
 
-`Screen Height` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Screen Height` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 画面の高さ]」フィールドを[!UICONTROL 文字列][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 ![型キャストルールのスクリーンショット 1](assets/typecast-1.png)
 
@@ -2044,7 +2044,7 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 ### 派生フィールド {#typecast-uc2-derivedfield}
 
-`Revenue (integer)` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数]&#x200B;[!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
+`Revenue (integer)` の派生フィールドを定義します。 [!UICONTROL TYPECAST] 関数を使用して、「[!UICONTROL 売上高]」フィールドを[!UICONTROL 整数][!UICONTROL に型キャスト]し、新しい派生フィールドに格納するルールを定義します。
 
 
 +++
@@ -2114,8 +2114,8 @@ storeID を含むデータを収集します。 storeID の最初の 2 文字に
 
 | [!DNL Page URL] |
 |----|
-| `https://www.adobe.com/jp/?cid=abc123` |
-| `https://www.adobe.com/jp/?em=email1234&cid=def123` |
+| `https://www.adobe.com/?cid=abc123` |
+| `https://www.adobe.com/?em=email1234&cid=def123` |
 | `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` |
 
 {style="table-layout:auto"}
@@ -2195,7 +2195,7 @@ Classify 関数の演算子は、[!UICONTROL 値が元の値と等しい場合]�
 
 >[!MORELIKETHIS]
 >
->- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=ja)
->- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=ja)
->- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=ja)
+>- [ブログ：データを最大限に活用：Customer Journey Analytics で派生フィールドを使用するためのフレームワーク](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [ブログ：Customer Journey Analytics の派生フィールドのユースケース](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [ブログ：Adobe Customer Journey Analytics 派生フィールドの機能強化](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 

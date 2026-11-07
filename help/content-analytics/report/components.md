@@ -29,7 +29,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 58%
@@ -56,7 +56,7 @@ Content Analytics では、Customer Journey Analytics で既に使用可能な�
 |---|---|---|
 | ID SOURCE | Content Analyticsの場合、値は`ContentAnalytics`です。 | ディメンション |
 | チャネル | エクスペリエンスのチャネル。 値は`Web`、`Mobile`または`Paid Media`のいずれかです。 | ディメンション |
-| コンテンツエクスペリエンス ID | エクスペリエンスの一意の ID。 <br>**web**&#x200B;の場合：web ページのURL。 <br/>**詳細なweb**&#x200B;の場合：接頭辞`web-`を持つコンテンツペイロード（テキスト、画像、cta）に基づいてハッシュ計算されたクライアントサイド。 <br/>**mobile**&#x200B;の場合：接頭辞`mobile-`が付いたコンテンツペイロード（テキスト、画像、cta）に基づいてハッシュ計算されたクライアントサイド。 | ディメンション |
+| コンテンツエクスペリエンス ID | エクスペリエンスの一意の ID。 <br>**web**&#x200B;の場合：web ページのURL。 <br/>詳細なweb **の場合：コンテンツペイロード （テキスト、画像、cta）に基づくハッシュ計算されたクライアントサイド （接頭辞`web-`）。**<br/>**mobile**&#x200B;の場合：接頭辞`mobile-`が付いたコンテンツペイロード（テキスト、画像、cta）に基づいてハッシュ計算されたクライアントサイド。 | ディメンション |
 | Content Experience Source | **web**&#x200B;の場合：web ページのURL。<br/>**mobile**&#x200B;の場合：Experience Platform Mobile SDKを通じて渡された画面名。 | ディメンション |
 | エクスペリエンスチャネル （非推奨） | エクスペリエンスのチャネル。 値は`Web`または`Mobile`です。 | ディメンション |
 | エクストラの体験 | 追跡するその他のデータ。 準備が整いました。 | ディメンション |
@@ -73,7 +73,7 @@ Content Analytics では、Customer Journey Analytics で既に使用可能な�
 | タイトル | 説明 | タイプ |
 |---|---|---|
 | エクスペリエンス属性 | ![AI による生成](/help/assets/icons/AI.svg) すべてのエクスペリエンス属性名と値の完全なリスト | ディメンション<br>派生フィールド |
-| エクスペリエンスの読みやすさスコア | ![AI による生成](/help/assets/icons/AI.svg) エクスペリエンスの読みやすさスコア | ディメンション |
+| エクスペリエンスの読みやすさスコア | エクスペリエンスの![AIが](/help/assets/icons/AI.svg)読みやすさスコアを生成しました | ディメンション |
 | エクスペリエンスキーワード | ![AI による生成](/help/assets/icons/AI.svg) エクスペリエンスのキーワード。 | ディメンション<br>派生フィールド |
 | エクスペリエンス説得戦略 | ![AI による生成](/help/assets/icons/AI.svg) 特定のエクスペリエンスに存在する説得戦略。 可能な値は、ソーシャルアイデンティティ、ソーシャルプルーフ、オーソリティ、コンクリートネス、フット・イン・ザ・ドア、リアクタンスの克服、レシプロシティ、アンカリングとコンパリゾン、ソーシャルインパクト、スカーシティ、およびアンスロポモーフィズムです。 | ディメンション<br/>派生フィールド |
 | エクスペリエンスのナラティブ数 | ![AI による生成](/help/assets/icons/AI.svg) マーケターの視点からの関連性に基づいてエクスペリエンスが構築されるナラティブ。 | ディメンション<br/>派生フィールド |
@@ -179,9 +179,9 @@ Content Analytics では、Customer Journey Analytics で既に使用可能な�
 
 ## 有料メディア
 
-これらのコンポーネントは、**有料メディア** チャネルが[Adobe Experience Platform有料メディアソースコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)を通じて有効になっている場合に、データビューに追加されます。 webやモバイルのコンテンツと並行して、有料メディアのキャンペーン、クリエイティブ、支出に関するレポートを作成できます。 可用性と入力された値は、広告ネットワークとレポートの粒子によって異なります。
+これらのコンポーネントは、**有料メディア** チャネルが[Adobe Experience Platform有料メディアソースコネクタ ](https://experienceleague.adobe.com/ja/docs/experience-platform/sources/home)を通じて有効になっている場合に、データビューに追加されます。 webやモバイルのコンテンツと並行して、有料メディアのキャンペーン、クリエイティブ、支出に関するレポートを作成できます。 可用性と入力された値は、広告ネットワークとレポートの粒子によって異なります。
 
-上記のAI生成の[&#x200B; アセット属性](#asset-attributes)および[&#x200B; エクスペリエンス属性](#experience-attributes)も、有料メディアクリエイターが利用できます。 同様の特徴化は、web、モバイル、有料メディアのチャネルでも実行されます。
+上記のAI生成の[ アセット属性](#asset-attributes)および[ エクスペリエンス属性](#experience-attributes)も、有料メディアクリエイターが利用できます。 同様の特徴化は、web、モバイル、有料メディアのチャネルでも実行されます。
 
 ### 有料メディアのディメンション
 

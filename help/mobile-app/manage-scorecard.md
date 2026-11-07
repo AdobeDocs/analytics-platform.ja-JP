@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 81%
@@ -114,7 +114,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; モバイルスコアカードプロジェクトのデータストーリー](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ モバイルスコアカードプロジェクトのデータストーリー](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -125,14 +125,14 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. モバイルスコアカードプロジェクトから開始します。
 1. ストーリーを作成するタイルを選択します。
-   ![&#x200B; データストーリーの作成](assets/data-story1.png)
+   ![ データストーリーの作成](assets/data-story1.png)
    ![データストーリーアイコンの作成](assets/create-data-story.png){width=".50%"}
 1. スライドを追加して、データストーリーを作成します。 デフォルトでは、最初のスライドが生成されます。
 新しいスライドを追加するには、スライドにポインタを合わせるかクリックして、使用可能な次のオプションから選択します。
    * 「+」記号をタップして、新しいスライドを作成します。
    * 複製アイコンをタップすると、既存のスライドを複製できます。
 1. 空のスライドを作成する場合は、左側のパネルからコンポーネントをドラッグ＆ドロップするか、レイアウトを選択してタイルのデータをスライドに自動入力します。
-   ![&#x200B; データストーリーの作成](assets/data-story2.png)
+   ![ データストーリーの作成](assets/data-story2.png)
    スライドを削除するには、ごみ箱アイコンをタップします。
 
 ### データストーリーのカスタマイズ {#customize-data-story}
@@ -144,7 +144,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 1. タイルをタップします。 選択したタイルは青色で囲まれ、右側のパネルにはタイルのプロパティが表示されます。
 1. タイトル、グラフタイプ、その他のタイルオプションを変更します。
 1. コンポーネントをタイルにドラッグします。
-   ![&#x200B; データストーリーの作成](assets/data-story3.png)
+   ![ データストーリーの作成](assets/data-story3.png)
    ビジュアライゼーションなどのコンポーネントをタイルにドラッグ&amp;ドロップすると、そのコンポーネントがすべてのデータストーリースライドに適用されます。
 1. タイトルにのみ変更を適用するには、Shift キーを押したまま変更を適用します。
    ![データストーリーの作成](assets/data-story4.png)
@@ -165,8 +165,8 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 ナビゲーションバーには、各スライドの内容を表すアイコンが表示されます。 ナビゲーションバーを使用すると、多数のスライドがある場合に、特定のスライドに簡単に移動できます。
 
 タイルとスライドの間を移動するには、ナビゲーションバーをタップします。
-![&#x200B; データストーリーの作成](assets/data-story5.png)
-![&#x200B; データストーリーの作成](assets/data-story-nav.png){width="45%"}
+![ データストーリーの作成](assets/data-story5.png)
+![ データストーリーの作成](assets/data-story-nav.png){width="45%"}
 
 また、キーボードの矢印を使用するか、コンポーネントを選択して画面の左または右に長押ししてスクロールすることで、前後に移動することもできます。
 
@@ -237,7 +237,7 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 1. 正しいタイルを選択します。
 1. 右側のパネルの「**[!UICONTROL ドリルイン]**」の下で、削除する&#x200B;**[!UICONTROL 未指定]**&#x200B;の項目があるディメンション項目の横にある右矢印を選択します。
 
-   ![ディメンション名の横に右矢印を指す矢印が付いているプロパティ。](assets/unspecified.png)
+   ![ ディメンション名の横にある右向き矢印を指す矢印が付いたプロパティ。](assets/unspecified.png)
 
 1. 「**[!UICONTROL 未指定]**」の横にあるアイコンをクリックして、レポートから未指定のデータを削除します。 （他のディメンション項目も削除できます）
 
@@ -253,11 +253,11 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. スコアカードで、タイルをクリックします。 例えば、このスコアカードで、下部の折れ線グラフをクリックします。
 
-   行の可視化を含む![&#x200B; スコアカード &#x200B;](assets/caption1.png)
+   行の可視化を含む![ スコアカード ](assets/caption1.png)
 
 1. 右上の青いアイコンをタップして、キャプションを生成します。 キャプションは折れ線グラフの下に表示されます。
 
-   ![行の視覚化でインテリジェントなキャプション &#x200B;](assets/caption2.png)
+   ![行の視覚化でインテリジェントなキャプション ](assets/caption2.png)
 
 1. インテリジェントなキャプションをすべて表示するには、右にスワイプします。
 
@@ -265,6 +265,6 @@ Analysis Workspace のモバイルスコアカードプロジェクトでデー�
 
 1. キャプション内の黒いフラグをタップして、有害なコンテンツや違法なコンテンツなどの問題を報告します。
 
-   ![&#x200B; キャプションに問題を報告](assets/caption-report.png)
+   ![ キャプションに問題を報告](assets/caption-report.png)
 
 1. 「X」をクリックして、**[!UICONTROL レポート結果]** ダイアログを終了します。

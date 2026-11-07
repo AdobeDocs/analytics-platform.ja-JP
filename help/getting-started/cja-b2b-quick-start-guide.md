@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 77%
+ht-degree: 75%
 ---
 # B2B Edition のクイックスタートガイド
 
@@ -46,16 +46,16 @@ Customer Journey Analytics B2B Edition を実装するには、まず B2B に固
 Customer Journey Analytics B2B Edition を実装する場合、次の前提条件が適用されます。
 
 * Customer Journey Analytics で管理タスクを実行するために必要な[アクセス制御と権限](/help/technotes/access-control.md)を持っている。
-* Customer Journey Analytics B2B Edition のアドオンパッケージを購入している。
+* Customer Journey Analytics B2B edition アドオンパッケージを購入しました。
 
 
 ## ワークフロー
 
 | タスク | 詳細 |
 | --- | --- |
-| **手順 1：B2B データの Experience Platform への取り込み** | この手順は Adobe Experience Platform 上で実行され、いくつかのサブ手順が含まれます。<ul><li>**手順 1a：データスキーマの準備**：[Adobe エクスペリエンスデータモデル（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して B2B データを標準化し、B2B データ管理の[スキーマを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)します。<br/> スキーマは、Real-time CDP B2B edition[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)で提供されている標準クラスに基づいて作成するか、独自のカスタムクラスとスキーマを使用できます。 [&#x200B; ユースケース &#x200B;](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)記事では、Real-time CDP B2B edition クラスとスキーマを使用していますが、標準クラスとスキーマを使用するには、Real-time CDP B2B edition ライセンスは必要ありません。</li><li>**手順 1b：スキーマに基づいたデータセットの作成**：Platform 内のデータは、アカウントデータ、商談データ、購買グループデータ、キャンペーンデータ、マーケティングリストデータ、メールデータセット、CRM データセット、POS データセットなどのデータセットで構成されます。 各データセットは、データのスキーマとバッチで構成されます。 [Experience Platform でデータセットを作成](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=ja)できます。</li><li>**手順 1c：Experience Platform へのデータの取り込み**：[いくつかのオプションがあります](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home)。</li></ul> |
+| **手順 1：B2B データの Experience Platform への取り込み** | この手順は Adobe Experience Platform 上で実行され、いくつかのサブ手順が含まれます。<ul><li>**手順 1a：データスキーマの準備**：[Adobe エクスペリエンスデータモデル（XDM）](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ja)を使用して B2B データを標準化し、B2B データ管理の[スキーマを定義](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)します。<br/> スキーマは、Real-time CDP B2B edition](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/schemas/b2b)で提供されている[標準クラスに基づいて作成するか、独自のカスタムクラスとスキーマを使用できます。 [ ユースケース ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)記事では、Real-time CDP B2B edition クラスとスキーマを使用していますが、標準クラスとスキーマを使用するには、Real-time CDP B2B edition ライセンスは必要ありません。</li><li>**手順 1b：スキーマに基づいたデータセットの作成**：Platform 内のデータは、アカウントデータ、商談データ、購買グループデータ、キャンペーンデータ、マーケティングリストデータ、メールデータセット、CRM データセット、POS データセットなどのデータセットで構成されます。 各データセットは、データのスキーマとバッチで構成されます。 [Experience Platform でデータセットを作成](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=ja)できます。</li><li>**手順 1c：Experience Platform へのデータの取り込み**：[いくつかのオプションがあります](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/home)。</li></ul> |
 | **手順 2：プラットフォームデータセットと Customer Journey Analytics 間の接続の作成** | 接続を使用すれば、Adobe Experience Platform のデータセットを Workspace に統合できます。 Experience Platform データセットに関するレポートを作成するには、まず Experience Platform とワークスペースのデータセット間で接続を確立する必要があります。 B2B Edition との接続を設定する際には、追加のオプションがあります。 <br>詳しくは、[接続の作成または編集](/help/connections/create-connection.md)を参照してください。 |
-| **手順 3：データビューの作成** | データビューとは、データが&#x200B;*フィルタリングされている*&#x200B;ビューです。 訪問のタイムアウト、アトリビューションなどの様々な設定を使用して、同じ接続に対して異なるデータビューを作成します。 1 つのデータセットに対して複数のデータビューを作成できます。 B2B editionを使用している場合は、データビューを設定する際に、さらにオプションがあります。<br>詳しくは、[&#x200B; データビューの作成](/help/data-views/create-dataview.md)を参照してください。 |
+| **手順 3：データビューの作成** | データビューとは、データが&#x200B;*フィルタリングされている*&#x200B;ビューです。 訪問のタイムアウト、アトリビューションなどの様々な設定を使用して、同じ接続に対して異なるデータビューを作成します。 1 つのデータセットに対して複数のデータビューを作成できます。 B2B editionを使用している場合は、データビューを設定する際に、さらにオプションがあります。<br>詳しくは、[ データビューの作成](/help/data-views/create-dataview.md)を参照してください。 |
 | **手順 4：ワークスペースでのクロスチャネルデータのレポート** | 接続とデータビューを作成したら、Analysis Workspaceの機能と柔軟性を使用して、取り込んだB2B データを分析します。<br>詳しくは、[基本分析](/help/analysis-workspace/perform-basic-analysis.md)および[高度な分析](/help/analysis-workspace/perform-adv-analysis.md)を実行するを参照してください。 |
 
 <!--

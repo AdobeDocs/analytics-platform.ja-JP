@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer engagement
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 90%
+ht-degree: 89%
 ---
 # アトリビューションパネル {#attribution-panel}
 
@@ -57,7 +57,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics![&#128279;](/help/assets/icons/CustomerJourneyAnalytics.svg)_&#x200B;**&#x200B;**&#x200B;_<br/>_ アトリビューションパネル [&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/attribution)を参照してください。 アトリビューションパネル _。
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の&#x200B;_Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg)_****_<br/>_ アトリビューションパネル ](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/panels/attribution)を参照してください。[ アトリビューションパネル _。![
 
 >[!ENDSHADEBOX]
 
@@ -92,7 +92,7 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 
    ![選択した複数のディメンションと指標を表示するアトリビューションパネルウィンドウ。](assets/attribution-panel.png)
 
-1. **[!UICONTROL 含まれるモデル]**&#x200B;から1つ以上の[属性モデル &#x200B;](#attribution-models)を選択し、**[!UICONTROL コンテナ]**&#x200B;から[&#x200B; コンテナ &#x200B;](#container)を選択し、比較に使用する&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;から[&#x200B; ルックバックウィンドウ &#x200B;](#lookback-window)を選択します。
+1. **[!UICONTROL 含まれるモデル]**&#x200B;から1つ以上の[属性モデル ](#attribution-models)を選択し、**[!UICONTROL コンテナ]**&#x200B;から[ コンテナ ](#container)を選択し、比較に使用する&#x200B;**[!UICONTROL ルックバックウィンドウ]**&#x200B;から[ ルックバックウィンドウ ](#lookback-window)を選択します。
 
 1. 「**[!UICONTROL 作成]**」を選択して、パネル内のビジュアライゼーションを作成します。
 
@@ -104,7 +104,7 @@ Customer Journey Analytics を使用すると、以下が可能になるので�
 
 ### アトリビューションのビジュアライゼーション
 
-次のビジュアライゼーションは、パネルの出力の一部です。
+次のビジュアライゼーションは、パネル出力の一部です。
 
 * **合計指標**：選択したディメンションに起因する、レポート時間枠で発生したコンバージョンの合計数。
 * **アトリビューション比較バー**：選択したディメンションの各ディメンションアイテム間で、アトリビューションされたコンバージョンを視覚的に比較します。 各棒の色は、個別のアトリビューションモデルを表します。

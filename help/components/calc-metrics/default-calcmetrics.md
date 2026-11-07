@@ -23,14 +23,14 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 83%
+ht-degree: 80%
 ---
 # 計算指標テンプレート
 
-Customer Journey Analyticsには、最も一般的なユースケースをカバーする以下の計算指標テンプレートが用意されています。 これらのAdobe定義の計算指標は、小さな![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴによって識別されます。 これらの指標をすばやくフィルターするには、[&#x200B; コンポーネントフィルター](/help/components/overview.md#filter)で![&#x200B; ラベル &#x200B;](/help/assets/icons/Label.svg) **[!UICONTROL Adobe テンプレート]**&#x200B;を選択します。
+Customer Journey Analyticsには、最も一般的なユースケースをカバーする以下の計算指標テンプレートが用意されています。 これらのAdobe定義の計算指標は、小さな![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ロゴによって識別されます。 これらの指標をすばやくフィルターするには、[ コンポーネントフィルター](/help/components/overview.md#filter)で![ ラベル ](/help/assets/icons/Label.svg) **[!UICONTROL Adobe テンプレート]**&#x200B;を選択します。
 
 | 計算指標名 | 説明<br/>数式 |
 |---------|----------|
@@ -44,7 +44,7 @@ Customer Journey Analyticsには、最も一般的なユースケースをカバ
 | **[!UICONTROL マルチチャネルセッション率]** | 1 つのチャネルのみを含むセッションと比較した、複数のチャネル (web トラフィックやモバイルトラフィックなど) を含む、発生したセッションの割合。 |
 | **[!UICONTROL マルチチャネルユーザー率]** | 1 つのチャネルにのみ参加した人物と、複数のチャネルに参加した人物の比率。 |
 | **[!UICONTROL モバイルアプリセッション]** | モバイルアプリで発生したセッション数。 |
-| **[!UICONTROL Web + アプリクロスチャネルセッション]** | Web トラフィックとモバイルトラフィックの両方を含む、発生したセッション数。 |
+| **[!UICONTROL Web + アプリクロスチャネルセッション]** | Web トラフィックとモバイルトラフィックの両方を含む、発生したセッションの数。 |
 | **[!UICONTROL 通話コスト]** | コールセンターコールの合計コスト。<!-- <p>Summary: Call length</p> --> |
 | **[!UICONTROL 平均呼び出し時間]** | コールセンターに対して行われた呼び出しの平均時間。 |
 | **[!UICONTROL 通話あたりの平均コスト]** | コールセンターへの平均通話コスト。 |

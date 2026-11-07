@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 93%
+ht-degree: 90%
 ---
 # 権限の不足
 
@@ -56,7 +56,7 @@ ht-degree: 93%
    * AEP-Default-All-Users 製品プロファイルのユーザーである必要があります。 このプロファイルに自分自身を追加する権限がない場合は、管理者にお問い合わせください。 詳しくは、[アクセス制御の階層とワークフロー](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ja#access-control-hierarchy-and-workflow)を参照してください。
 
 
-1. Adobe Experience Platform UI に移動します。
+1. Adobe Experience Platform UIに移動します。
 
 1. 左側のパネルから「**[!UICONTROL 権限]**」を選択します。
 

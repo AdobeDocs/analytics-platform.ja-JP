@@ -17,13 +17,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 219
-ht-degree: 91%
-
+source-wordcount: '219'
+ht-degree: 87%
 ---
-
 # ビジュアライゼーションカラーパレット {#visualization-color-palettes}
 
 <!-- markdownlint-disable MD034 -->

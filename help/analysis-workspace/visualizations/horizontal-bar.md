@@ -19,16 +19,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 65%
+ht-degree: 58%
 ---
 # 積み重ね横棒グラフ
 
 >[!BEGINSHADEBOX]
 
-_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版の![横棒と横棒の積み重ね](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_この記事の_&#x200B;横棒と横棒の積み重ね[&#128279;](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar)を参照してください。_
+_この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版の[横棒と横棒の積み重ね](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_この記事の_&#x200B;横棒と横棒の積み重ね](https://experienceleague.adobe.com/ja/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar)を参照してください。_![
 
 >[!ENDSHADEBOX]
 
@@ -46,7 +46,7 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 <!-- markdownlint-enable MD034 -->
 
 
-この ![GraphBarVertical](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL 横棒グラフ]**&#x200B;ビジュアライゼーションでは、1 つ以上の指標の様々な値を表す横棒グラフが表示されます。
+![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]**&#x200B;のビジュアライゼーションには、1つ以上の指標に対する様々な値を表す水平バーが表示されます。
 
 ![ページビュー数、ページ速度、訪問回数、入口、出口などの指標を示す横棒グラフ。](assets/horizontal-bar.png)
 
@@ -72,13 +72,13 @@ _この記事では、この記事の_ ![AdobeAnalytics](/help/assets/icons/Adob
 
 >[!BEGINSHADEBOX]
 
-デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [&#x200B; エリアのビジュアライゼーション &#x200B;](https://experienceleague.adobe.com/ja/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"}を参照してください。
+デモ動画については、![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [ エリアのビジュアライゼーション ](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"}を参照してください。
 
 >[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >
->[&#x200B; パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[ パネルへのビジュアライゼーションの追加](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[ビジュアライゼーション設定](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[ビジュアライゼーションコンテキストメニュー](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
