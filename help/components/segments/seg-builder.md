@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 24613d361b6b3058b1c4911a9df3654da91b2c88
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 71%
+source-wordcount: '1962'
+ht-degree: 67%
 ---
 # セグメントの作成 {#build-segments}
 
@@ -80,7 +80,7 @@ ht-degree: 71%
 
 ## 定義ビルダー
 
-セグメント定義を作成するには、セグメントビルダーを使用します。 この作成では、コンポーネント、コンテナ、演算子およびロジックを使用します。
+セグメント定義を作成するには、セグメントビルダーを使用します。 この構造では、コンポーネント、コンテナ、演算子、ロジックを使用します。
 
 定義のタイプと範囲を設定できます。
 
@@ -88,6 +88,10 @@ ht-degree: 71%
 1. **[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]** ドロップダウンメニューから定義の範囲を選択します：**[!UICONTROL Event]**、**[!UICONTROL セッション]**、**[!UICONTROL 人]**、**[!UICONTROL グローバルアカウント]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL Account]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、**[!UICONTROL Opportunity]**&#x200B;[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、または&#x200B;**[!UICONTROL Buying Group]**&#x200B;[!BADGE 。]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 これらの設定は、いつでも後から変更できます。
+
+>[!NOTE]
+>
+>セグメントビルダーインターフェイスでは、[API](https://developer.adobe.com/cja-apis/docs/endpoints/segments/#create-a-segment)を介して作成されたすべてのセグメント定義をサポートしていません。 このページは正常に読み込まれなかったり、これらのセグメントのエラーがスローされたりする可能性があります。
 
 ### コンポーネント
 
@@ -111,7 +115,7 @@ ht-degree: 71%
 
    このオプションは、**[!UICONTROL 含める]**&#x200B;または&#x200B;**[!UICONTROL 除外]** ドロップダウンメニューから&#x200B;[!UICONTROL **人物**]&#x200B;が定義のスコープ（コンテナ）として選択されている場合にのみ表示されます。
 
-   **メモ**：この機能はリリースの限定テスト段階にあり、お使いの環境ではまだ利用できない可能性があります。 機能が一般公開されたら、このメモは削除されます。 Customer Journey Analytics リリースプロセスについて詳しくは、[Customer Journey Analytics 機能リリース](/help/release-notes/releases.md)を参照してください。
+
 
 1. （オプション）デフォルトの演算子を変更します。
 
@@ -137,7 +141,7 @@ ht-degree: 71%
 * 既存のコンポーネントをコンテナに追加するには、コンテナにコンポーネントをドラッグ＆ドロップします。
 * 別のコンポーネントをコンテナに追加するには、コンポーネントパネルからコンテナにコンポーネントをドラッグ＆ドロップします。 青色の挿入線をガイドとして使用します。
 * 別のコンポーネントをコンテナの外側に追加するには、コンポーネントパネルからコンポーネントをドラッグ＆ドロップし、コンテナの外側でメイン定義コンテナの内側に配置します。 青色の挿入線をガイドとして使用します。
-* コンテナ内のコンポーネント間、コンテナ間またはコンテナとコンポーネント間のロジックを変更するには、適切な「**[!UICONTROL および]**」、「**[!UICONTROL または]**」、「**[!UICONTROL 次に]**」を選択します。 「次へ」を選択すると、セグメントを連続したセグメントに変換できます。 詳しくは、[順次セグメントの作成](seg-sequential-build.md)を参照してください。
+* コンポーネント、コンテナ、またはコンテナとコンポーネントの間のロジックを変更するには、適切な&#x200B;**[!UICONTROL And]**、**[!UICONTROL Or]**、**[!UICONTROL Then]**&#x200B;を選択します。 「次へ」を選択すると、セグメントを連続したセグメントに変換できます。 詳しくは、[順次セグメントの作成](seg-sequential-build.md)を参照してください。
 * コンテナレベルを切り替えるには、![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL グローバルアカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![&#x200B; アカウント &#x200B;](/help/assets/icons/Account.svg) **[!UICONTROL アカウント]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![商談](/help/assets/icons/Opportunity.svg) **[!UICONTROL 商談]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL 購買グループ]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}、![Web ページ &#x200B;](/help/assets/icons/WebPage.svg) **[!UICONTROL イベント]**、![訪問](/help/assets/icons/Visit.svg) **[!UICONTROL セッション]**、![&#x200B; ユーザー](/help/assets/icons/User.svg) **[!UICONTROL 人物]**&#x200B;または![&#x200B; レイヤー](/help/assets/icons/Layer.svg) **[!UICONTROL オブジェクト]**。 ![&#x200B; レイヤー](/help/assets/icons/Layer.svg) **[!UICONTROL オブジェクト]**&#x200B;を選択する場合は、使用する[&#x200B; カスタムコンテナ &#x200B;](/help/data-views/create-dataview.md#containers-1)を選択します。 例えば、ProductsやContent Assetsです。
 
 コンテナ内の ![設定](/help/assets/icons/Setting.svg) は、次のアクションに使用できます。
@@ -203,7 +207,7 @@ ht-degree: 71%
 
 
 
-セグメントビルダーでディメンションを使用する際、このディメンションのアトリビューションモデルを指定するオプションがあります。 選択したアトリビューションモデルによって、ディメンションコンポーネントに指定した条件に対して選定されるデータが決まります。
+セグメントビルダーでディメンションを使用する場合、そのディメンションのアトリビューションモデルを指定するオプションがあります。 選択したアトリビューションモデルによって、ディメンションコンポーネントに指定した条件に対して選定されるデータが決まります。
 
 ディメンションコンポーネント内で ![設定](/help/assets/icons/Setting.svg) を選択し、ポップアップからアトリビューションモデルのいずれかを選択します。
 
