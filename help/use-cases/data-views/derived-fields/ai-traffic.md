@@ -48,7 +48,7 @@ topic_v2:
     internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 3%
@@ -59,7 +59,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[検出方法](#detection-methods)、[検出シグネチャ &#x200B;](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
+>[検出方法](#detection-methods)、[検出シグネチャ ](#detection-signatures)および[実装戦略](#implementation)の有効性は、特定のデータ収集方法、Experience Platform データセットのカバレッジ、およびCustomer Journey Analyticsの実装によって異なります。 テクノロジー環境、データガバナンスポリシー、導入アプローチによって、成果は異なる場合があります。 Experience Edgeを使用する場合は、生のユーザーエージェント文字列を記録するか、デバイス情報を収集するかを選択する必要があります。
 >
 
 ## 検出方法
@@ -150,7 +150,7 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 </tr>
 <tr>
 <td><strong>Perplexity-User</strong></td>
-<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +<a href="https://www.perplexity.ai/useragent" target="_blank" rel="noopener nofollow noreferrer">https://www.perplexity.ai/useragent</a>)</code></td>
+<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +<a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">https://www.perplexity.ai/useragent</a>)</code></td>
 <td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">ユーザーが「Perplexity citation」（robots.txtをバイパス）をクリックすると、ページが読み込まれる</a></td>
 </tr>
 <tr>
@@ -190,17 +190,17 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 </tr>
 <tr>
 <td><strong>Applebot-Extended</strong></td>
-<td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://www.apple.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
+<td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
 <td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">AppleのAIを活用した将来のAI モデルに向けたweb クローラー（オプトイン）</a></td>
 </tr>
 <tr>
 <td><strong>Bytespider</strong></td>
-<td><code>Mozilla/5.0 (compatible; Bytespider/1.0; +<a href="https://www.bytedance.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.bytedance.com/bot.html</a>)</code></td>
+<td><code>Mozilla/5.0 (compatible; Bytespider/1.0; +http://www.bytedance.com/bot.html)</code></td>
 <td>ByteDanceのTikTokおよびその他のサービス向けAI データコレクター</td>
 </tr>
 <tr>
 <td><strong>MistralAI-User</strong></td>
-<td><code>Mozilla/5.0 (compatible; MistralAI-User/1.0; +<a href="https://mistral.ai/bot" target="_blank" rel="noopener nofollow noreferrer">https://mistral.ai/bot</a>)</code></td>
+<td><code>Mozilla/5.0 (compatible; MistralAI-User/1.0; +<a href="https://docs.mistral.ai/robots" target="_blank" rel="noopener nofollow noreferrer">https://mistral.ai/bot</a>)</code></td>
 <td><a href="https://docs.mistral.ai/robots/" target="_blank" rel="noopener nofollow noreferrer">Mistralの「Le Chat」アシスタント用のリアルタイム引用フェッチャー</a></td>
 </tr>
 <tr>
@@ -291,12 +291,12 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 ## 実装
 
-[派生フィールド &#x200B;](#derived-fields)、[&#x200B; セグメント &#x200B;](#segments)、[&#x200B; ワークスペースプロジェクト &#x200B;](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[&#x200B; データビュー](/help/data-views/data-views.md)、および[&#x200B; ワークスペースプロジェクト &#x200B;](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
+[派生フィールド ](#derived-fields)、[ セグメント ](#segments)、[ ワークスペースプロジェクト ](#workspace-project)の具体的な設定と設定により、一般的なCustomer Journey Analytics設定（[connection](/help/connections/overview.md)、[ データビュー](/help/data-views/data-views.md)、および[ ワークスペースプロジェクト ](/help/analysis-workspace/home.md)）内のLLMとAI生成トラフィックについてレポートできます。
 
 
 ### 派生フィールド
 
-検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[&#x200B; ユーザーエージェント ID](#user-agent-identification)、[&#x200B; クエリパラメーター検出](#query-parameter-detection)、[&#x200B; リファラー分類](#referrer-classification)の派生フィールドを定義します。
+検出方法と検出信号を設定するには、派生フィールドを基盤として使用します。 例えば、[ ユーザーエージェント ID](#user-agent-identification)、[ クエリパラメーター検出](#query-parameter-detection)、[ リファラー分類](#referrer-classification)の派生フィールドを定義します。
 
 #### LLM/AI ユーザーエージェントの識別
 
@@ -323,19 +323,19 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 
 専用セグメントを設定して、LLMとAIが生成したトラフィックに関連するイベント、セッション、人物を特定するのに役立ちます。 例えば、先ほど作成した派生フィールドを使用して、LLMとAIが生成したトラフィックを識別するセグメントを定義します。
 
-![LLMとAI生成トラフィックセグメント &#x200B;](assets/aitraffic-segment.png){zoomable="yes"}
+![LLMとAI生成トラフィックセグメント ](assets/aitraffic-segment.png){zoomable="yes"}
 
 
 ### ワークスペースプロジェクト
 
 派生フィールドとセグメントを使用して、LLMとAIが生成したトラフィックをレポートし、分析します。 例えば、以下の注釈付きプロジェクトを参照してください。
 
-![LLMとAI生成トラフィックのWorkspace プロジェクト &#x200B;](assets/aitraffic-workspace.png){zoomable="yes"}
+![LLMとAI生成トラフィックのWorkspace プロジェクト ](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
 >[!MORELIKETHIS]
 >
->このユースケース記事は、ブログ記事[Adobe Customer Journey AnalyticsでのLLMおよびAI生成トラフィックのトラッキングと分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=ja)に基づいています。
+>このユースケース記事は、ブログ記事[Adobe Customer Journey AnalyticsでのLLMおよびAI生成トラフィックのトラッキングと分析](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)に基づいています。
 >
 >
