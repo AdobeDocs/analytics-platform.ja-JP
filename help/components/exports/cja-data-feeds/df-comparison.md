@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
+source-git-commit: 7f081993082ce478cc0032ece7f100eb0fb40438
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2111'
 ht-degree: 1%
 ---
 # Customer Journey AnalyticsとAdobe Analyticsのデータフィードの比較
@@ -100,6 +100,7 @@ Customer Journey AnalyticsとAdobe Analyticsの両方のデータフィードで
 | **永続性モデル**<br/> ディメンション値が1つのイベントから次のイベントまで保持されるかどうか。 | 柔軟性： データビューの永続性設定（割り当てと有効期限）は、フィードが生成されるレポート時に適用されます。 データビューで使用できるすべての割り当て設定をサポートします：**元**、**最新**、**すべて**、**最初の既知**、および&#x200B;**最後の既知**。 | **最新（ラストタッチ）**&#x200B;と&#x200B;**元の値（ファーストタッチ）**&#x200B;のアトリビューションモデルのみが表されます。 線形配分は、ラストタッチと同じように処理されます。 |
 | **サブイベント処理**<br/> データフィード出力でサブイベントがどのように表示されるか。 | 1行で表されますが、関係階層は保持されます。 詳しくは、「[&#x200B; データフィードのサブイベントコンポーネント &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)」を参照してください。 | フラット化された区切り文字列として1行で表されます。 文字列を解析するには、カスタムロジックが必要です。 |
 | **出力ファイル形式**<br/> クラウドの宛先に配信されるデータフィード出力ファイルに使用される形式。 | PARQUET<p>複雑なネスト化および構造化データをネイティブにサポート。 `post_product_list`などのフィールドは、構造化配列/ネストされたオブジェクトとして表されます。 </p><p>BigQuery、Snowflake、Apache Sparkなど、Parquetに対応したツールが必要です。</p><p>スキーマ構造は、出力ファイル内に埋め込まれます。</p><p>詳しくは、[&#x200B; データフィードでのParquet ファイルの操作](/help/components/exports/cja-data-feeds/df-parquet.md)を参照してください。</p> | TSV<p>人間が読むことができるフラットな行。 構造化データはネイティブにサポートされません。製品リストなどの複雑なフィールドは、カスタム解析ロジックを必要とする独自の区切り文字列としてエンコードする必要があります。</p> |
+| **圧縮形式**<br/>&#x200B;出力ファイルの圧縮方法。 | Snappy、GZip、Z Standard （Zstd）: 圧縮は各Parquet ファイル内に適用されるので、Parquetを読み込むツールは、最初に解凍することなく、ファイルを直接読み込むことができます。<p>形式を比較して1つを選択するには、[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)の&#x200B;**圧縮形式**&#x200B;設定を参照してください。</p> | Gzip （`.tar.gz`）またはZip （`.zip`）。 圧縮はファイル全体に適用されます。 |
 | **出力ファイルのパス**<br/>&#x200B;配信された出力ファイルに使用されるディレクトリ構造。 | **Hive スタイルのパーティション パス** （例：`year=2024/month=01/day=15/`）を使用して、DatabricksやApache Sparkなどのデータレイク環境でデータをクエリする際に、効率的なパーティションのプルーニングを可能にします。 | フラットディレクトリ構造を使用します。 Hive スタイルのパスはサポートされていません。 |
 | **配信先**<br/> データフィード出力ファイルを送信できるクラウドストレージの場所。 | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform。 | Amazon S3、Azure RBAC、Azure SAS、Google Cloud Platform。 <p>**SFTP**&#x200B;もサポートしています。</p> |
 | **Analysis Workspaceとの類似性**<br/> データフィードビルダーでAnalysis Workspaceと同じコンポーネントと用語が使用されているかどうか。 | データフィードの左側のパネルはWorkspaceの左側のパネルと似ており、データフィードで使用できるコンポーネントはWorkspaceでも使用できます。 | Analysis Workspaceに表示される変数名と必ずしも一致しない変数名の静的リスト。 |
