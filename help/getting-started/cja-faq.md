@@ -61,7 +61,7 @@ Adobe Customer Journey Analytics は、次世代の分析製品です。 この�
 +++
 
 
-+++**Customer Journey Analytics]のECIDは必要ですか？**[!UICONTROL 
++++**Customer Journey AnalyticsのECIDは必要ですか？**
 
 いいえ、[!UICONTROL Customer Journey Analytics]では、ECIDまたは選択した他のIDのいずれであっても、データセット内の任意のIDをサポートしています。
 
@@ -181,7 +181,7 @@ Customer Journey Analytics に対する使用権があれば、Experience Platfo
 
 ## &#x200B;5. [!UICONTROL 接続] データ保持のローリングウィンドウを設定 {#data-retention}
 
-[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。 これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。 データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。 適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
+[**[!UICONTROL 周期的なデータ期間を有効化&#x200B;]**&#x200B;設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=ja#create-connection)を使用すると、Customer Journey Analytics データ保持を月単位（3 か月や 6 か月など）の周期的な期間として定義できます。 これは、[!UICONTROL データセット]レベルではなく、[!UICONTROL 接続]レベルで設定されます。 データ保持は、イベントデータセットのタイムスタンプに基づいており、イベントデータセットにのみ適用されます。 適用可能なタイムスタンプがないので、プロファイルまたはルックアップデータセットのデータ保持設定は存在しません。
 
 主な利点は、該当する有用なデータのみを保存またはレポートして、有用でなくなった古いデータを削除できるという点です。 契約上の上限を超えないようにし、超過コストのリスクを軽減します。
 
@@ -222,7 +222,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 ## &#x200B;8. [!UICONTROL Adobe Analytics] コンポーネント
 
-+++**Experience Platform Real-Time CDPまたはその他のCX Enterprise アプリケーションに[!UICONTROL  オーディエンス ]を[!DNL Customer Journey Analytics]から共有/公開できますか？**
++++**Experience Platform Real-Time CDPまたはその他のCX Enterprise アプリケーションに[!UICONTROL &#x200B; オーディエンス &#x200B;]を[!DNL Customer Journey Analytics]から共有/公開できますか？**
 
 Adobe Experience Platform のリアルタイム顧客プロファイルに Customer Journey Analytics で識別された[オーディエンスを作成して公開](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-components/audiences/publish)し、顧客のターゲティングやパーソナライゼーションを実現できます。
 
@@ -285,7 +285,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 Adobe CX Enterpriseでは、Regional Data Collection （RDC）を使用して、訪問者とAdobeおよびアドビ以外のソリューションとの間のインタラクションが、可能な限り訪問者に近い場所で行われるようにします。 データがデータ収集センター （DCC、Edge サイトとも呼ばれ、Platform Edge Network の一部）に地域的に収集されると、データストリームやイベント転送の設定に基づいて、安全な接続を介して関連ソリューションに転送されます。
 
-Edge Networkでのデータの流れの図については、[ データ収集の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/home)を参照してください。
+Edge Networkでのデータの流れの図については、[&#x200B; データ収集の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/home)を参照してください。
 
 地域データ収集プロセスでは、次の手順に従います。
 
