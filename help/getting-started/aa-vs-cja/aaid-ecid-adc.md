@@ -48,7 +48,7 @@ Analytics ソースコネクタで、AAID は、`HEX(post_visid_high) + "-" + HE
 
 ## ECID
 
-ECIDは、MCID （Marketing Cloud ID）とも呼ばれることもあります。これは、[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/en/docs/id-service/using/implementation/implementation-guides) （AppMeasurement）またはWeb SDKを使用してAnalyticsを実装する際に、Adobe Analyticsに入力される個別のデバイス ID フィールドです。 ECID は、Adobe Analytics データフィードの `mcvisid` 列で表されます。
+ECIDは、MCID （Marketing Cloud ID）とも呼ばれることもあります。これは、[訪問者ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/id-service/using/implementation/implementation-guides) （AppMeasurement）またはWeb SDKを使用してAnalyticsを実装する際に、Adobe Analyticsに入力される個別のデバイス ID フィールドです。 ECID は、Adobe Analytics データフィードの `mcvisid` 列で表されます。
 
 ECID がイベントに存在する場合、AAID は、Analytics [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja)が設定されているかどうかに応じて、ECID に基づいている可能性があります。 [AnalyticsおよびECID リクエスト &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=ja)も参照してください。
 
