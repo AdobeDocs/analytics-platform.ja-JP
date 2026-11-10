@@ -48,7 +48,7 @@ topic_v2:
     internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 3%
@@ -150,7 +150,7 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 </tr>
 <tr>
 <td><strong>Perplexity-User</strong></td>
-<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +<a href="https://www.perplexity.ai/useragent" target="_blank" rel="noopener nofollow noreferrer">https://www.perplexity.ai/useragent</a>)</code></td>
+<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +<a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">https://www.perplexity.ai/useragent</a>)</code></td>
 <td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">ユーザーが「Perplexity citation」（robots.txtをバイパス）をクリックすると、ページが読み込まれる</a></td>
 </tr>
 <tr>
@@ -190,17 +190,17 @@ LLMとAI エージェントは、デジタルプロパティを利用する際�
 </tr>
 <tr>
 <td><strong>Applebot-Extended</strong></td>
-<td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://www.apple.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
+<td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
 <td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">AppleのAIを活用した将来のAI モデルに向けたweb クローラー（オプトイン）</a></td>
 </tr>
 <tr>
 <td><strong>Bytespider</strong></td>
-<td><code>Mozilla/5.0 (compatible; Bytespider/1.0; +<a href="https://www.bytedance.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.bytedance.com/bot.html</a>)</code></td>
+<td><code>Mozilla/5.0 (compatible; Bytespider/1.0; +http://www.bytedance.com/bot.html)</code></td>
 <td>ByteDanceのTikTokおよびその他のサービス向けAI データコレクター</td>
 </tr>
 <tr>
 <td><strong>MistralAI-User</strong></td>
-<td><code>Mozilla/5.0 (compatible; MistralAI-User/1.0; +<a href="https://mistral.ai/bot" target="_blank" rel="noopener nofollow noreferrer">https://mistral.ai/bot</a>)</code></td>
+<td><code>Mozilla/5.0 (compatible; MistralAI-User/1.0; +<a href="https://docs.mistral.ai/robots" target="_blank" rel="noopener nofollow noreferrer">https://mistral.ai/bot</a>)</code></td>
 <td><a href="https://docs.mistral.ai/robots/" target="_blank" rel="noopener nofollow noreferrer">Mistralの「Le Chat」アシスタント用のリアルタイム引用フェッチャー</a></td>
 </tr>
 <tr>

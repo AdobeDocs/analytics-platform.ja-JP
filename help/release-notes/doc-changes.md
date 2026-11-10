@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7436'
 ht-degree: 92%
 ---
 
@@ -165,7 +165,7 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 | メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、Adobe Analytics のストリーミングメディアデータを、Web SDK で使用される同じフィールドに自動的にマッピングします。 以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 [詳細情報](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025年2月** |  |
 | メディアコレクション：新しいメディアレポート XDM 用のアドビソースコネクタの更新 | Analytics ソースコネクタは、[Adobe Analytics のストリーミングメディアデータ](https://experienceleague.adobe.com/ja/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=ja)を、Web SDK で使用する同じフィールドに自動的にマッピングします。 以前は、データは古い場所と新しい場所の両方にマッピングされていましたが、今後は新しい場所のみが使用されます。 |
-| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=ja)するようになりました。 |
+| BI 拡張機能 – サポートの拡張 | Customer Journey Analytics BI 拡張機能は、[Looker、Jupyter Notebook、R Studio をサポート](/help/use-cases/data-views/bi-extension-usecases.md)するようになりました。 |
 | **2025年1月** |  |
 | 接続の使用状況エクスペリエンスの更新 | 接続の「[使用状況](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage)」タブでは、コアデータ、取り込まれたデータ、履歴データなどのレポート可能な行数のビジュアライゼーションが強化されました。 また、接続別、データセット別、サンドボックス別、タグ別に使用状況データを表示して分類することもできます。 |
 | 使用状況指標 | 改善された[使用状況指標](/help/connections/manage-connections.md#usage)インターフェイスに関するドキュメントを更新しました。 |

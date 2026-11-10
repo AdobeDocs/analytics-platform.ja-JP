@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 94%
+source-wordcount: '2334'
+ht-degree: 93%
 ---
 # よくある質問
 
@@ -285,7 +285,7 @@ Adobe Analytics の [!UICONTROL eVar]、[!UICONTROL prop] および[!UICONTROL �
 
 Adobe CX Enterpriseでは、Regional Data Collection （RDC）を使用して、訪問者とAdobeおよびアドビ以外のソリューションとの間のインタラクションが、可能な限り訪問者に近い場所で行われるようにします。 データがデータ収集センター （DCC、Edge サイトとも呼ばれ、Platform Edge Network の一部）に地域的に収集されると、データストリームやイベント転送の設定に基づいて、安全な接続を介して関連ソリューションに転送されます。
 
-![Edge Network を使用したデータフロー](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=ja)
+Edge Networkでのデータの流れの図については、[&#x200B; データ収集の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/home)を参照してください。
 
 地域データ収集プロセスでは、次の手順に従います。
 
@@ -315,4 +315,4 @@ RDC には現在、次の場所が含まれています（変更される場合�
 Adobe Customer Journey Analytics では Adobe Experience Platform からのデータセットが必要なため、データストリーム／イベント転送設定では、Adobe Experience Platform サービスを使用して、地域のデータセンターから Adobe Experience Platform インスタンスが配置されているデータセンターにデータをルーティングする必要があります。 Customer Journey Analytics とそのサポートサービスおよびインフラストラクチャは、同じ Adobe Experience Platform インスタンスにデプロイされます。
 
 
-Adobe Experience Platform Edge Network とその地域のデータセンターを超えたデータ収集プロセスについて詳しくは、[データ収集の概要](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=ja)を参照してください。
+Adobe Experience Platform Edge Network とその地域のデータセンターを超えたデータ収集プロセスについて詳しくは、[データ収集の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/home)を参照してください。
