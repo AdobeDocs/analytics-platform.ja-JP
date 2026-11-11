@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '7436'
+source-wordcount: '7485'
 ht-degree: 92%
 ---
 
@@ -69,6 +69,8 @@ Customer Journey Analytics ドキュメントには、初回リリース以降�
 
 | 機能 | 説明 |
 |---|---|
+| **2026年11月** | |
+| 指標の重複排除の範囲 | [指標の重複排除スコープがPerson](/help/data-views/component-settings/metric-deduplication.md)に設定された際に適用された注意を削除しました。この際、指標は完全な暦月で評価されたと記載されていました。 重複排除スコープが「個人」に設定されている指標の場合、重複排除は、選択したレポートウィンドウ内でのみ適用されるようになりました。 |
 | **2026年10月** | |
 | データビューのガードレール | 組織のデータビューの最大数（2,000から5,000まで）の[guadrail](/help/technotes/guardrails.md)を更新しました。 |
 | 有料メディアデータをweb データに結合 | [&#x200B; ユースケースガイド &#x200B;](/help/use-cases/cross-channel/paid-media-web.md)有料メディアデータをweb データと結合する方法。 |

@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 76%
+source-wordcount: '303'
+ht-degree: 73%
 ---
 # 指標の重複の除外コンポーネントの設定 {#metric-deduplication-component-settings}
 
@@ -54,6 +54,3 @@ ht-degree: 76%
 
 {style="table-layout:auto"}
 
->[!CAUTION]
->
->_ユーザー_&#x200B;範囲での重複排除は、UTC 時間で完全な月数で評価されます。 部分的な月のレポートウィンドウでは、最初または最後のインスタンスが 1 か月以内に発生したものの、レポート日以外に発生した場合、そのインスタンスは完全には表示されない可能性があります。
