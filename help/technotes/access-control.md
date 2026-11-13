@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: a48eccd77887e94bce5c0ef18bd070877601ddbd
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 74%
+source-wordcount: '1773'
+ht-degree: 72%
 ---
 # アクセス制御
 
@@ -195,7 +195,7 @@ Customer Journey Analytics は、製品管理者の役割、製品プロファ�
 
 | カテゴリ | 権限 | 説明 |
 | --- | --- | ---|
-| [!UICONTROL データビュー] | *データビュー名* | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えた場合、この製品プロファイルの一部であるユーザーは、既存のすべてのデータビューおよび新しく作成されたデータビューを表示できます。 この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。 |
+| [!UICONTROL データビュー] | *データビュー名* | **[!UICONTROL 自動インクルード]**&#x200B;を&#x200B;**[!UICONTROL オン]**&#x200B;に切り替えると、この製品プロファイルの一部であるユーザーは、既存および新しく作成されたすべてのデータビューを表示できます。 これには、Adobeが作成するデータビューが含まれます。<p>この設定が&#x200B;**[!UICONTROL オフ]**&#x200B;の場合、ユーザーがアクセスできる特定のデータビューを選択できます。  </p> |
 | [!UICONTROL レポートツール] | [!UICONTROL ガイド付き分析へのアクセス] | ユーザーは[ガイド付き分析](/help/guided-analysis/overview.md)にアクセスできます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL 計算指標の作成] | ユーザーは[計算指標](/help/components/calc-metrics/calc-metr-overview.md)を作成できます。 ユーザーは、作成した計算指標または共有された計算指標のみにタグ付け、共有、削除、名前変更を行うことができます。 |
 | [!UICONTROL レポートツール] | [!UICONTROL セグメントの作成] | ユーザーは[セグメント](/help/components/segments/seg-overview.md)を作成できます。 ユーザーは、作成したセグメントまたは共有されたセグメントのみにタグ付け、共有、削除、名前変更を行うことができます。 |
@@ -245,3 +245,6 @@ Customer Journey Analytics では、従来の Adobe Analytics の場合とは異
 データビューへのアクセス権を持つユーザーは、管理者がこのデータビューに含めた指標およびディメンションのみを操作できます。 管理者は、データビューで[包含/除外機能](/help/data-views/component-settings/include-exclude-values.md)または[値のグループ化](../data-views/component-settings/value-bucketing.md) コンポーネント設定を使用して、データビューから特定のディメンション値を除外または集計できます。
 
 例えば、データセットの個々の患者データを含むコンポーネントから、データビューで「*高血圧*」と呼ばれる指標を作成します。 値のグループ化を使用すると、グループ化された値のみにアクセスできるので、データのユーザーは個々の患者のデータを見ることができません。
+
+
+
