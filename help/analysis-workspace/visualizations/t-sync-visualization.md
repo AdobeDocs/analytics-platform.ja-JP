@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 18%
+ht-degree: 22%
 ---
 # データソースの管理 {#manage-data-sources}
 
@@ -39,7 +39,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="テーブルの表示"
->abstract="**[!UICONTROL テーブルを表示]**&#x200B;を選択すると、元のデータソースとは別に、現在のビジュアライゼーション用に新しいデータソースが生成されます。"
+>abstract="「**[!UICONTROL テーブルを表示]**」を選択して、元のデータソースとは別に、現在のビジュアライゼーション用の新しいデータソースを生成します。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
@@ -61,7 +61,7 @@ Analysis Workspaceの各ビジュアライゼーションは、データソー�
 
 1. 「**[!UICONTROL データソース]**」タブを選択します。
 
-   ![&#x200B; データソース、リンクされたビジュアライゼーション、およびロック選択設定を示す「データソース」タブ。](assets/lock-selection.png)
+   ![ データソース、リンクされたビジュアライゼーション、およびロック選択設定を示す「データソース」タブ。](assets/lock-selection.png)
 
 1. 次のいずれかの設定を行います。
 
@@ -70,7 +70,7 @@ Analysis Workspaceの各ビジュアライゼーションは、データソー�
    | **[!UICONTROL データソース]** | ビジュアライゼーションの基となるデータソースを選択します。 |
    | **[!UICONTROL リンクされたビジュアライゼーション]** | データソース（フリーフォームテーブル）にリンクされているすべてのビジュアライゼーションを一覧表示します。 |
    | **[!UICONTROL データソースを表示]** | ビジュアライゼーションに対応するデータソース（フリーフォームテーブル）を表示または非表示にします。 |
-   | **[!UICONTROL 選択範囲をロック]** | データソースで現在選択されている行にビジュアライゼーションをロックしてから、**[!UICONTROL 選択した位置]**&#x200B;または&#x200B;**[!UICONTROL 選択した項目]**&#x200B;を選択します。 [選択範囲をロック &#x200B;](#lock-selection)を参照してください。 |
+   | **[!UICONTROL 選択範囲をロック]** | データソースで現在選択されている行にビジュアライゼーションをロックしてから、**[!UICONTROL 選択した位置]**&#x200B;または&#x200B;**[!UICONTROL 選択した項目]**&#x200B;を選択します。 [選択範囲をロック ](#lock-selection)を参照してください。 |
 
 ## 選択をロック {#lock-selection}
 
