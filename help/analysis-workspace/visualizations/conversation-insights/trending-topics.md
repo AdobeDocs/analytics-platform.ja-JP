@@ -6,14 +6,14 @@ role: User
 source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 16%
+ht-degree: 25%
 ---
 # トレンド分析トピック {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
 >title="トレンド分析トピック"
->abstract="階層的なドリルダウンを使用して、トレンドのトピックを出現率や割合で分類し、会話における重要なテーマを特定できるビジュアライゼーションを作成します。"
+>abstract="階層的なドリルダウンを使用して、トレンド分析トピックを発生回数や割合で分類し、会話の重要なテーマを特定できるビジュアライゼーションを作成します。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
@@ -31,7 +31,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel"
 >title="デフォルト以外のアトリビューションモデルを使用"
->abstract="この指標のデフォルト以外のアトリビューションモデルを有効にします。"
+>abstract="選択した指標に対してデフォルト以外のアトリビューションモデルを有効にします。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"

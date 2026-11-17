@@ -42,7 +42,7 @@ topic_v2:
 source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
 source-wordcount: '4342'
-ht-degree: 45%
+ht-degree: 46%
 ---
 # コンポーネント設定 {#component-settings}
 
@@ -51,7 +51,7 @@ ht-degree: 45%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="コンポーネント設定"
->abstract="名前、説明、コンポーネントに関連するその他の設定を表示および設定します。 Analysis Workspace インターフェイスの管理者以外のユーザーからこのコンポーネントを非表示にするには、このチェックボックスをオンにします。 管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択して、コンポーネントにアクセスできます。"
+>abstract="名前、説明、コンポーネントに関連するその他の設定を表示および設定します。 Analysis Workspace のインターフェイスで、このコンポーネントを管理者以外のユーザーに対して非表示にするには、このチェックボックスをオンにします。 管理者は、Workspace プロジェクトで「**[!UICONTROL すべてのコンポーネントを表示]**」を選択して、コンポーネントにアクセスできます。"
 
 <!-- markdownlint-enable MD034 -->
 

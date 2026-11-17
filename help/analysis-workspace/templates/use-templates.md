@@ -1174,14 +1174,14 @@ Analysis Workspace のテンプレート（または会社テンプレート）�
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
->title="Marketing Campaign Analyticsで生成された選択したモデルからのインサイトを表示します。"
->abstract="**これは、Marketing Campaign Analytics（旧Mix Modeler）で生成されたモデルから得られる増分インサイトをより深く理解するのに役立ちます**。 <br/>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul>"
+>title="Marketing Campaign Analytics によって生成された、選択したモデルからのインサイトを表示します。"
+>abstract="**これにより、** Marketing Campaign Analytics（以前の Mix Modeler）で生成されたモデルからの増分インサイトを把握できます。 <br/>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul>"
 
 次のテンプレートを表示できます。
 
 &#x200B;| テンプレート名 | このテンプレートを使用する理由 <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Marketing Campaign Analyticsの増分モデルインサイト**] | Marketing Campaign Analyticsで生成された選択したモデルからのインサイトを表示します。<p>**これは、Marketing Campaign Analytics（旧Mix Modeler）で生成されたモデルから得られる増分インサイトをより深く理解するのに役立ちます**。<p>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul></p> |
+| [!UICONTROL **Marketing Campaign Analyticsの増分モデルインサイト**] | Marketing Campaign Analytics によって生成された、選択したモデルからのインサイトを表示します。<p>**これにより、** Marketing Campaign Analytics（以前の Mix Modeler）で生成されたモデルからの増分インサイトを把握できます。<p>**得られた結果に基づいて、**&#x200B;次のことができるようになります。<ul><li>組織のマーケティングアクティビティの影響を視覚化し、定量化します。</li><li>パフォーマンスの高いチャネルを特定します。</li><li>最適化が必要なチャネルを特定します。</li></ul></p> |
 
 
 

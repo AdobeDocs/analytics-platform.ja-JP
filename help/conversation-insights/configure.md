@@ -33,7 +33,7 @@ topic_v2:
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 14%
+ht-degree: 18%
 ---
 # 設定の作成または編集
 
@@ -137,15 +137,15 @@ ht-degree: 14%
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_blend_specification"
->title="ブレンド仕様を設定"
->abstract="このConversation Insights設定を完了し、すべてのデータセットが使用可能になり、接続を編集するためのCustomer Journey Analytics権限を持っている場合にのみ、ブレンド仕様を編集できます。"
+>title="ブレンド仕様の設定"
+>abstract="ブレンド仕様を編集できるのは、この会話インサイト設定を完了し、すべてのデータセットが使用可能になり、接続を編集するための Customer Journey Analytics 権限を持っている場合のみです。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/analytics-platform/using/technotes/access-control" text="アクセス制御"
 
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_dataset_winner"
 >title="データセット勝者"
->abstract="対応する名前のフィールドまたはブレンドされた会話データセット内のフィールド（コンテナの場合）の値を決定するデータセットを選択します。"
+>abstract="ブレンドされた会話データセット内の、対応する名前のフィールド（コンテナの場合はフィールド群）の値を決定するデータセットを選択します。"
 
 設定を作成したら、[&#x200B; プロンプト、応答、フィードバック、およびシグナル データセットの会話のブレンド方法を設定できます](/help/conversation-insights/overview.md#how-it-works)。
 

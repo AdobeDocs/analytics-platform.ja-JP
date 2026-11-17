@@ -6,7 +6,7 @@ role: User
 source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 17%
+ht-degree: 22%
 ---
 # 会話の要約 {#conversation-summaries}
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
 >title="会話の要約"
->abstract="フィルタリングされた会話のグループを要約します。 要約の長さを制御します。 抽出されたシグナルの正確性を検証するために、顧客からの代表的な引用を確認します。 見積もりを選択して、会話の全再生を開きます。"
+>abstract="フィルタリングされた会話のグループを要約します。 要約の長さを制御します。 抽出されたシグナルの正確性を検証するために、顧客からの代表的な引用を確認します。 引用を選択して、会話全体の再生を開きます。"
 
 {{release-limited-testing}}
 
@@ -32,7 +32,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel"
 >title="デフォルト以外のアトリビューションモデルを使用"
->abstract="この指標のデフォルト以外のアトリビューションモデルを有効にします。"
+>abstract="選択した指標に対してデフォルト以外のアトリビューションモデルを有効にします。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"

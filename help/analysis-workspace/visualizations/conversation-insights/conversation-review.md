@@ -6,7 +6,7 @@ role: User
 source-git-commit: 6b84720eae3c0c6cd6cfd204591fb9d5f1f5cdb0
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 16%
+ht-degree: 26%
 ---
 # 会話のレビュー
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"
 >title="会話のレビュー"
->abstract="タイムスタンプとシグナルを含め、個々の会話のコンテキストとフローを理解します。 表示するシグナルを設定します。"
+>abstract="タイムスタンプやシグナルなど、個々の会話のコンテキストとフローについて説明します。 表示するシグナルを設定します。"
 
 
 ![&#x200B; チャット &#x200B;](/help/assets/icons/Chat.svg) **[!UICONTROL 会話レビュー]**&#x200B;のビジュアライゼーションでは、[会話インサイト &#x200B;](/help/conversation-insights/overview.md)の一部として、顧客とエージェント間の完全なターンバイターン交換が表示されます。
