@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics ガイド
 user-guide-description: Adobe Customer Journey Analytics とは何か、また Experience Platform のデータを使って Analysis Workspace をどのように利用するかを学びます。
 breadcrumb-title: Customer Journey Analytics ガイド
-source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
+source-git-commit: 3199a70eee577f4e283208e2c5089c05fe20ed0d
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1528'
 ht-degree: 88%
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 88%
 + アップグレードと比較 {#compare-aa-cja}
   + Customer Journey Analytics にアップグレード {#upgrade-to-cja}
     + {hide-from-toc}[今すぐはじめる](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-    + {hide-from-toc}[&#x200B; アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+    + {hide-from-toc}[ アップグレードパスを選択](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
     + {hide-from-toc}[Platformにデータを送信](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + {hide-from-toc}[履歴データを保持](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [推奨されるアップグレードプロセス](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
@@ -204,7 +204,7 @@ ht-degree: 88%
     + [ホットキー](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [カラーパレット](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [表示密度](../analysis-workspace/build-workspace-project/view-density.md)
-    + {hide-from-toc}[&#x200B; キャッシュされた結果を使用](../analysis-workspace/build-workspace-project/cached-results.md)
+    + {hide-from-toc}[ キャッシュされた結果を使用](../analysis-workspace/build-workspace-project/cached-results.md)
     + [デバッガー](../analysis-workspace/build-workspace-project/debugger.md)
   + テンプレート {#templates}
     + [テンプレートの使用](../analysis-workspace/templates/use-templates.md)
@@ -241,6 +241,9 @@ ht-degree: 88%
       + [概要](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
       + [設定](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [トラブルシューティング](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+    + マトリックス {#matrix}
+      + {hide-from-toc}[概要](../analysis-workspace/visualizations/matrix/matrix.md)
+      + {hide-from-toc}[設定](../analysis-workspace/visualizations/matrix/configure-matrix.md)
     + [会話のレビュー](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
     + [会話の要約](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
     + [トレンド分析トピック](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
@@ -435,13 +438,13 @@ ht-degree: 88%
       + {hide-from-toc}[概要](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[Adobe Analytics データフィードの比較](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc}[Workspaceとデータフィードの比較](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
-      + {hide-from-toc}[&#x200B; コンポーネントの可用性](/help/components/exports/cja-data-feeds/df-components.md)
+      + {hide-from-toc}[ コンポーネントの可用性](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[列のマッピングの準備](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-      + {hide-from-toc}[&#x200B; マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-      + {hide-from-toc}[&#x200B; データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
-      + {hide-from-toc}[&#x200B; データフィードのセグメント化](/help/components/exports/cja-data-feeds/df-segmentation.md)
-      + {hide-from-toc}[&#x200B; データ変換の適用](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[&#x200B; サブイベントコンポーネント &#x200B;](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[ マップ列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+      + {hide-from-toc}[ データフィードの作成](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[ データフィードのセグメント化](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc}[ データ変換の適用](/help/components/exports/cja-data-feeds/df-data-transformations.md)
+      + {hide-from-toc}[ サブイベントコンポーネント ](/help/components/exports/cja-data-feeds/df-sub-event.md)
       + {hide-from-toc}[Parquet ファイルを使用](/help/components/exports/cja-data-feeds/df-parquet.md)
   + データ辞書 {#data-dictionary}
     + [概要](../components/data-dictionary/data-dictionary-overview.md)
@@ -486,7 +489,7 @@ ht-degree: 88%
 
 + 合計母集団レポート {#tpr}
   + {hide-from-toc}[概要](/help/tpr/tpr.md)
-  + {hide-from-toc}[共有ルックアップ &#x200B;](/help/tpr/shared-lookups.md)
+  + {hide-from-toc}[共有ルックアップ ](/help/tpr/shared-lookups.md)
 
 + アドビの統合 {#integrations}
   + [概要](/help/integrations/overview.md)
@@ -580,7 +583,7 @@ ht-degree: 88%
       + [セッション再生を結合](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [ヒートマップを使用](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [摩擦イベントを追加](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + {hide-from-toc}[Source コネクタ &#x200B;](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc}[Source コネクタ ](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + ラボ {#labs}
   + [ラボユーザーガイド](../labs/labs.md)
