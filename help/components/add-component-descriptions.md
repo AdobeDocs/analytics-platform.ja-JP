@@ -25,7 +25,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: b46a27ff9faca74c3c2baa7938a588b643633705
+source-git-commit: 3199a70eee577f4e283208e2c5089c05fe20ed0d
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 10%
@@ -55,8 +55,6 @@ Analysis Workspaceのデータディクショナリは、ユーザーと管理�
 >
 
 ## 説明の自動生成
-
-{{release-limited-testing-section}}
 
 Customer Journey Analyticsでは、各説明を手作業で記述する代わりに、生成AIを使用して説明を記述できます。 1つのコンポーネントの説明を生成したり、同時に多くのコンポーネントの説明を生成したりできます。
 
