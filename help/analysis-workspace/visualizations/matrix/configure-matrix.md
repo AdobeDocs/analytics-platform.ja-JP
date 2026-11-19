@@ -46,7 +46,7 @@ ht-degree: 4%
 
    または
 
-   [&#x200B; ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)の「[&#x200B; ビジュアライゼーションをパネル &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)に追加」セクションで説明されている方法で、行列ビジュアライゼーションを追加します。
+   [ ビジュアライゼーションの概要](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)の「[ ビジュアライゼーションをパネル ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)に追加」セクションで説明されている方法で、行列ビジュアライゼーションを追加します。
 
    <!-- add screenshot of the Matrix configuration fields -->
 
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 ## トレンドデータの表示
 
-[行のビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/line.md)で、セルの傾向データを表示できます。 線のビジュアライゼーションは、選択した指標がパネルの日付範囲でどのように変化するかを示します。 表示される行は、行列が[重複数または相関強度](#view-overlap-count-or-correlation-strength)を示すかどうかに応じて異なります。
+[行のビジュアライゼーション ](/help/analysis-workspace/visualizations/line.md)で、セルの傾向データを表示できます。 線のビジュアライゼーションは、選択した指標がパネルの日付範囲でどのように変化するかを示します。 表示される行は、行列が[重複数または相関強度](#view-overlap-count-or-correlation-strength)を示すかどうかに応じて異なります。
 
 トレンドデータを表示するには：
 
@@ -146,9 +146,9 @@ ht-degree: 4%
 
 ## ベンのビジュアライゼーションで重複を表示する
 
-[&#x200B; ベン ビジュアライゼーション &#x200B;](/help/analysis-workspace/visualizations/venn.md)では、行ディメンション項目とセルの列ディメンション項目の重なりを表示できます。
+[ ベン ビジュアライゼーション ](/help/analysis-workspace/visualizations/venn.md)では、行ディメンション項目とセルの列ディメンション項目の重なりを表示できます。
 
-行列のビジュアライゼーションまたはベンのビジュアライゼーションを使用するタイミングについて詳しくは、[行列の概要](/help/analysis-workspace/visualizations/matrix/matrix.md)の行列、フリーフォームテーブル、ベンまたは散布図のビジュアライゼーション [&#128279;](/help/analysis-workspace/visualizations/matrix/matrix.md#choose-between-matrix-freeform-table-venn-or-scatter-visualizations)を参照してください。
+行列のビジュアライゼーションまたはベンのビジュアライゼーションを使用するタイミングについて詳しくは、[行列の概要](/help/analysis-workspace/visualizations/matrix/matrix.md)の行列、フリーフォームテーブル、ベンまたは散布図のビジュアライゼーション ](/help/analysis-workspace/visualizations/matrix/matrix.md#choose-between-matrix-freeform-table-venn-or-scatter-visualizations)を参照してください。[
 
 ベンのビジュアライゼーションでオーバーラップを表示するには：
 
