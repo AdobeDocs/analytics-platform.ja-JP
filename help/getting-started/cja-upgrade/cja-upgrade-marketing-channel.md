@@ -72,11 +72,11 @@ Customer Journey AnalyticsのマーケティングチャネルをExperience Plat
 
 {{upgrade-final-step}}
 
-# Adobe Adobe AnalyticsとCustomer Journey Analyticsのマーケティングチャネルの違い
+&#x200B;# Adobe Adobe AnalyticsとCustomer Journey Analyticsのマーケティングチャネルの違い
 
 派生フィールドは、Adobe Analyticsのマーケティングチャネルに対して同様のルールベースの処理ロジックを提供しますが、2つのプラットフォーム間のアーキテクチャの違いにより、2つのプラットフォーム間で結果が異なる場合があります。
 
-* [ ラストタッチチャネルの上書き](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)設定は、Adobe Analyticsでのみサポートされています
+* [&#x200B; ラストタッチチャネルの上書き](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)設定は、Adobe Analyticsでのみサポートされています
 
-* [ マーケティングチャネルの有効期限](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)は、非アクティブな期間の後に開始されますが、Customer Journey Analyticsの永続性の有効期限は、値のインスタンス化に基づきます。
+* [&#x200B; マーケティングチャネルの有効期限](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)は、非アクティブな期間の後に開始されますが、Customer Journey Analyticsの永続性の有効期限は、値のインスタンス化に基づきます。
 

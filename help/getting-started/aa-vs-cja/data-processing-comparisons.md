@@ -41,14 +41,14 @@ ht-degree: 57%
 
 データをレポートで活用する前に、データを処理する機能が必要になる場合がよくあります。 データの収集からレポートやビジュアライゼーションの生成に至るまで、ジャーニーの複数の段階でそのデータを処理できます。
 
-Adobe Analyticsでは、データの処理のほとんどはデータを収集した直後に行われ、レポートスイートに送信された後に永続的に行われます。 VISTA ルール、処理ルール、およびマーケティングチャネル処理ルールなどの機能を使用して、この&#x200B;**収集時間処理**をサポートできます。
-レポート作成時には、ディメンションの分解、セグメンテーションの適用、別のアトリビューションモデルの選択など、追加の処理を適用できます。 この**レポート時の処理**&#x200B;はその場で行われます。
+Adobe Analyticsでは、データの処理のほとんどはデータを収集した直後に行われ、レポートスイートに送信された後に永続的に行われます。 VISTA ルール、処理ルール、およびマーケティングチャネル処理ルールなどの機能を使用して、この&#x200B;**収集時間処理**&#x200B;をサポートできます。
+レポート作成時には、ディメンションの分解、セグメンテーションの適用、別のアトリビューションモデルの選択など、追加の処理を適用できます。 この&#x200B;**レポート時の処理**&#x200B;はその場で行われます。
 
 Adobe Analytics では、通常、レポート時の処理は、収集時に発生する処理量よりも少ない処理量を表します。
 
 ![Adobe Analytics の収集時の処理](../assets/aa-processing.png)
 
-対照的にCustomer Journey Analyticsは、データを整理して保存する前に、収集時間の前処理を最小限に抑えるように設計されています。 Customer Journey Analyticsの基盤となるアーキテクチャは、レポート時に保存されたデータを操作するように設計されています。 Customer Journey Analyticsは、Analysis Workspaceだけでなく、レポート時処理機能も備えています。 追加のレポート時処理機能は、データビューの[ コンポーネント ](/help/data-views/component-settings/overview.md)および[派生フィールド ](/help/data-views/derived-fields/derived-fields.md)の定義を通じて使用できます。
+対照的にCustomer Journey Analyticsは、データを整理して保存する前に、収集時間の前処理を最小限に抑えるように設計されています。 Customer Journey Analyticsの基盤となるアーキテクチャは、レポート時に保存されたデータを操作するように設計されています。 Customer Journey Analyticsは、Analysis Workspaceだけでなく、レポート時処理機能も備えています。 追加のレポート時処理機能は、データビューの[&#x200B; コンポーネント &#x200B;](/help/data-views/component-settings/overview.md)および[派生フィールド &#x200B;](/help/data-views/derived-fields/derived-fields.md)の定義を通じて使用できます。
 
 ![Customer Journey Analytics のレポート時の処理](../assets/cja-processing.png)
 
@@ -56,7 +56,7 @@ Adobe Analytics では、通常、レポート時の処理は、収集時に発�
 
 例えば、*訪問回数*&#x200B;は、データ処理時にAdobe Analyticsの指標として定義されます。 *セッション*&#x200B;は、レポート時にCustomer Journey Analyticsの指標として計算されます。 その結果、Customer Journey Analytics データビューのセッション定義のルールに基づいて、2つの指標が異なる場合があります。
 
-さらに、Analyticsは、データ収集時に使用可能な[識別方法](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview)によって、*ユニーク訪問者*&#x200B;を識別します。 Customer Journey Analyticsは、接続のイベント [ データセット設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#dataset-settings)で人物IDとして設定されたフィールドによって&#x200B;*人物*&#x200B;を識別します。
+さらに、Analyticsは、データ収集時に使用可能な[識別方法](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview)によって、*ユニーク訪問者*&#x200B;を識別します。 Customer Journey Analyticsは、接続のイベント [&#x200B; データセット設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#dataset-settings)で人物IDとして設定されたフィールドによって&#x200B;*人物*&#x200B;を識別します。
 
 
 
