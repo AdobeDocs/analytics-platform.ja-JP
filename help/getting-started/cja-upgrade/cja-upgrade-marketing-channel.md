@@ -27,10 +27,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 57%
 ---
 # Customer Journey Analytics のマーケティングチャネル派生フィールドの作成 {#create-marketing-channel-derived-field}
 
@@ -47,8 +47,7 @@ ht-degree: 100%
 
 Analytics ソースコネクタを使用すると、マーケティングチャネルデータがそのコネクタを通じて Customer Journey Analytics に送られます。 マーケティングチャネルのルールは従来の Adobe Analytics で構成されており、一部のルールはサポートされません。 詳しくは、[マーケティングチャネルディメンションの使用](/help/use-cases/aa-data/marketing-channels.md)を参照してください。
 
-Experience Platform Web SDK を使用する際に Customer Journey Analytics でマーケティングチャネルを利用するには、データビューで派生フィールドを使用して、Customer Journey Analytics 用に同じマーケティングチャネルと処理ルールを再作成できます。
-
+Customer Journey AnalyticsのマーケティングチャネルをExperience Platform Web SDKで使用するには、データビューで派生フィールドを使用して、同じマーケティングチャネルと処理ルールを再作成します。
 1. Customer Journey Analytics で、マーケティングチャネルを追加するデータビューを選択します。
 
 1. データビューで、「**[!UICONTROL コンポーネント]**」タブを選択します。
@@ -61,7 +60,7 @@ Experience Platform Web SDK を使用する際に Customer Journey Analytics で
 
 1. **[!UICONTROL マーケティングチャネル]**&#x200B;テンプレートを空白のキャンバスにドラッグします。
 
-1. 各マーケティングチャネルのロジックをカスタマイズし、Adobe Analytics 環境で各チャネルの識別に使用するロジックと一致するようにします。
+1. 各マーケティングチャネルのロジックをカスタマイズ。 Adobe Analytics環境の各チャネルを特定するために使用するロジックと一致することを確認してください。
 
    組織に固有の追加チャネルを識別するには、出力チャネル名を変更するか、ロジックを追加します。
 
@@ -72,3 +71,12 @@ Experience Platform Web SDK を使用する際に Customer Journey Analytics で
    新しい派生フィールドは、データビューの左側のパネルにあるスキーマフィールドの一部として、派生フィールド／コンテナに追加されます。
 
 {{upgrade-final-step}}
+
+&#x200B;# Adobe Adobe AnalyticsとCustomer Journey Analyticsのマーケティングチャネルの違い
+
+派生フィールドは、Adobe Analyticsのマーケティングチャネルに対して同様のルールベースの処理ロジックを提供しますが、2つのプラットフォーム間のアーキテクチャの違いにより、2つのプラットフォーム間で結果が異なる場合があります。
+
+* [&#x200B; ラストタッチチャネルの上書き](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)設定は、Adobe Analyticsでのみサポートされています
+
+* [&#x200B; マーケティングチャネルの有効期限](https://experienceleague.adobe.com/ja/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)は、非アクティブな期間の後に開始されますが、Customer Journey Analyticsの永続性の有効期限は、値のインスタンス化に基づきます。
+

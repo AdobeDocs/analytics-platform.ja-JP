@@ -32,17 +32,17 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 388edf58e0950e0d018ce08b2aa2d0a562252c5a
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 63%
+source-wordcount: '1373'
+ht-degree: 57%
 ---
 # Adobe Analytics と Customer Journey Analytics におけるデータ処理の比較
 
 データをレポートで活用する前に、データを処理する機能が必要になる場合がよくあります。 データの収集からレポートやビジュアライゼーションの生成に至るまで、ジャーニーの複数の段階でそのデータを処理できます。
 
-Adobe Analytics では、データの処理のほとんどは、データの収集直後に行われます。 VISTA ルール、処理ルール、マーケティングチャネル処理ルールなどの機能を使用して、この&#x200B;**収集時間処理**&#x200B;をサポートできます。
-その後、データは保存され、レポート時に追加の処理を適用できます。 例えば、ディメンションの分類、セグメント化の適用、別のアトリビューションモデルの選択などを行うことができます。 この&#x200B;**レポート時の処理**&#x200B;はその場で行われます。
+Adobe Analyticsでは、データの処理のほとんどはデータを収集した直後に行われ、レポートスイートに送信された後に永続的に行われます。 VISTA ルール、処理ルール、およびマーケティングチャネル処理ルールなどの機能を使用して、この&#x200B;**収集時間処理**&#x200B;をサポートできます。
+レポート作成時には、ディメンションの分解、セグメンテーションの適用、別のアトリビューションモデルの選択など、追加の処理を適用できます。 この&#x200B;**レポート時の処理**&#x200B;はその場で行われます。
 
 Adobe Analytics では、通常、レポート時の処理は、収集時に発生する処理量よりも少ない処理量を表します。
 
@@ -52,11 +52,13 @@ Adobe Analytics では、通常、レポート時の処理は、収集時に発�
 
 ![Customer Journey Analytics のレポート時の処理](../assets/cja-processing.png)
 
-様々なレポート機能におけるデータ処理の違いを理解することは、どの指標がどこで利用でき、なぜ異なるのかを理解するのに役立ちます。
+様々なレポート機能に対するデータ処理の違いを理解すると、どの指標が使用できるか、またそれらが異なる場合がある理由を理解するのに役立ちます。
 
 例えば、*訪問回数*&#x200B;は、データ処理時にAdobe Analyticsの指標として定義されます。 *セッション*&#x200B;は、レポート時にCustomer Journey Analyticsの指標として計算されます。 その結果、Customer Journey Analytics データビューのセッション定義のルールに基づいて、2つの指標が異なる場合があります。
 
-また、指標としての訪問とセッションは、Analytics ソースコネクタで作成されたデータセットでは使用できません。 そのため、比較を行うには、クエリロジックでセッションを定義する必要があります。
+さらに、Analyticsは、データ収集時に使用可能な[識別方法](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/overview)によって、*ユニーク訪問者*&#x200B;を識別します。 Customer Journey Analyticsは、接続のイベント [&#x200B; データセット設定](https://experienceleague.adobe.com/ja/docs/analytics-platform/using/cja-connections/create-connection#dataset-settings)で人物IDとして設定されたフィールドによって&#x200B;*人物*&#x200B;を識別します。
+
+
 
 ## 用語 {#terms}
 
